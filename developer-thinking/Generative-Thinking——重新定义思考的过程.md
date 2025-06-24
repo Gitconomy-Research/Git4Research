@@ -39,41 +39,6 @@
 
 在本理论框架的探索中，我们初步构想/假设Generative Thinking 的运作与高效能发挥，深植于以下三个核心的“原生”能力。这些能力为上层的方法论要素构筑了技术与认知支撑。在此基础上，我们进一步提出一系列“内核”行动构成了实践 Generative Thinking 的核心行为循环，将其命名为**GENESIS模型**。本章旨在阐述这一初步的理论构成，为后续的实践验证与深入研究奠定假设性基础。
 
-```mermaid
-flowchart TD
-    subgraph GenerativeThinkingFramework
-        subgraph CoreActions
-            direction LR
-            B1[Generate 生成行动]:::action
-            B2[Explore 探索行动]:::action
-            B3[Nurture 培育行动]:::action
-            B4[Evaluate 评估行动]:::action
-            B5[Synthesize 综合行动]:::action
-            B6[Iterate 迭代行动]:::action
-            B7[Steer 引导行动]:::action
-        end
-
-        subgraph CoreCapabilities
-            direction LR
-            A1[数据原生 Data-Native]:::capability
-            A2[AI原生 AI-Native]:::capability
-            A3[提示词原生 Prompt-Native]:::capability
-        end
-    end
-
-    %% 可选连线
-    B1 -.-> A1
-    B4 -.-> A2
-    B7 -.-> A3
-
-    %% 样式定义
-    classDef capability fill:#f9f7e8,stroke:#e8c210,stroke-width:2px,stroke-dasharray:5 5;
-    classDef action fill:#e6f2ff,stroke:#4da6ff,stroke-width:2px;
-    classDef framework fill:#f0f7ee,stroke:#2cbe4e,stroke-width:3px;
-    class GenerativeThinkingFramework framework;
-```
-图：生成式思维理论的基础框架示意图
-
 ### 3.1 三大“原生”基础能力
 
 **1. 数据原生（Data-Native）**
