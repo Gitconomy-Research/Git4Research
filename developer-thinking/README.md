@@ -59,7 +59,7 @@
 
 | 文章标题 | 简要介绍 | 链接 |
 | :--- | :--- | :--- |
-| **Markdown ThinkingGenerative Thinking——重新定义思考的过程结构化思维与创作的新范式** | 探讨如何利用Markdown作为一种思维工具，通过结构化写作来澄清思路、组织知识和提升创作效率。 | [阅读全文](./Markdown-Thinking——结构化思维与创作的新范式.md)  |
+| **Markdown Thinking——结构化思维与创作的新范式** | 探讨如何利用Markdown作为一种思维工具，通过结构化写作来澄清思路、组织知识和提升创作效率。 | [阅读全文](./Markdown-Thinking——结构化思维与创作的新范式.md)  |
 | **Generative Thinking理论的初步探索—重新定义思考的过程** | Generative Thinking代表了人类认知演化的新方向，通过将生成置于思维的核心，我们开启了一个充满可能性的认知空间。 | [阅读全文](./Generative-Thinking——重新定义思考的过程.md)  |
 
 ## 如何贡献与交流
