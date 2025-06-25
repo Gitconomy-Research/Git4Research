@@ -1,6 +1,6 @@
 # 第一天：初识AI大模型与提示词工程
 
-## 第1章 AI时代的来临——核心概念解析
+## 模块一 AI时代的来临——核心概念解析
 
 ### 1.1 AIGC：正在发生的创造力革命
 
@@ -50,7 +50,7 @@ xychart-beta
 驱动AIGC应用的核心技术，是近年来取得突破性进展的“大模型”（Large Model）。理解大模型，是理解当前人工智能浪潮的关键。
 
 -----
-
+梳理一个所有引用的汇总表
 > **概念解析 1.1：大模型 (Large Model)**
 >
 > **定义**：大模型，通常指参数数量巨大（从数十亿到数万亿级别）的深度学习模型。其能力来源于两个核心要素：
@@ -62,7 +62,7 @@ xychart-beta
 
   * **1.2.1 参数规模与性能表现**
 
-大型语言模型的核心特征体现在其庞大的参数规模上。关于模型规模与性能之间的关系，来自OpenAI的研究者Kaplan等人在其关于模型扩展定律的里程碑式研究中发现²，模型性能与参数规模、数据集大小及计算预算之间存在可预测的幂律关系（Scaling Laws）。
+大型语言模型的核心特征体现在其庞大的参数规模上。关于模型规模与性能之间的关系，来自OpenAI的研究者Kaplan等人在其关于模型扩展定律的里程碑式研究中发现²，模型性能与参数规模、数据集大小及计算预算之间存在zong jie可预测的幂律关系（Scaling Laws）。
 
 随后，来自DeepMind的Hoffmann等人在对Chinchilla模型的研究中³，对这一定律进行了重要的修正与补充。他们证明，在计算资源最优化的训练中，数据规模与模型参数规模应等比例增加。遵循这一“规模化”思想，现代大模型的参数量持续突破上限，例如GPT-4据估计已拥有约1.76万亿参数，从而展现出卓越的性能优势。
 
@@ -71,7 +71,7 @@ xychart-beta
 模型的强大能力根植于其所训练的海量、多样化的文本语料。其背后的核心理论，正如前文所述，是表示学习¹。在发表于《自然》杂志的著名综述中，深度学习的三位奠基人LeCun、Bengio和Hinton进一步阐明⁴，深度神经网络正是通过堆叠多个处理层，来逐层学习和构建这些日益抽象的数据表示。
 
   * **1.2.3 Transformer架构突破**
-	
+	梳理一个所有引用的汇总表
 在模型架构层面，谷歌的研究团队在他们那篇影响深远的论文《Attention Is All You Need》中，首次提出了Transformer架构⁵。其核心创新在于完全依赖自注意力机制（Self-Attention），取代了此前序列建模中常用的循环或卷积结构。正是这一突破性的架构，为后续一系列成功的预训练模型，如谷歌的BERT模型⁶和OpenAI的GPT系列⁷，奠定了坚实的技术基础。
 
   * **1.2.4 涌现能力现象**
@@ -82,7 +82,7 @@ xychart-beta
 
 ### 1.3 大模型与AIGC的关系
 
-大模型与AIGC之间，是**引擎与应用**的关系。大模型是底层的技术基座，而AIGC是上层的应用形态。
+大模型与AIGC之间，是**引擎与应用**的关系。大模型是底层的技术基座，zong jie而AIGC是上层的应用形态。
 
 可以设想一个场景：用户在AIGC应用（如一个智能聊天程序）的界面输入一个问题。这个问题作为“提示词”（Prompt）被发送给后台的大模型。大模型解析这个提示词的意图，调动其内部存储的庞大知识进行运算和推理，生成一段回答。最后，这段回答通过AIGC应用的界面呈现给用户。
 
@@ -96,7 +96,7 @@ xychart-beta
 
 -----
 
-### 第1章小结
+### 模块小结
 
 在本章中，我们奠定了理解当前人工智能浪潮的理论基石。我们首先通过张首晟教授的“能量-信息双密度”理论，从宏观视角认识到AIGC不仅是一项技术革新，更是达到了足以引发社会变革的科技革命临界点。接着，我们深入剖析了这场革命的核心引擎——大模型，明确了其能力来源于庞大的参数和海量的数据。
 
@@ -104,7 +104,7 @@ xychart-beta
 
 技术层面，我们确立了其本质是一种先进的表示学习系统¹，并了解了其发展背后的三大支柱：指导模型规模化发展的扩展定律²'³，奠定其架构基础的革命性Transformer架构⁵，以及解释其能力飞跃的涌现能力⁸现象。最后，我们厘清了**大模型（引擎）与AIGC（应用）**之间的关系，为后续学习AI如何赋能创造力做好了准备。
 
-## 第2章 技术溯源与产业生态——AI技术发展路线概述
+## 模块二 技术溯源与产业生态——AI技术发展路线概述
 
 ### 2.1 技术演进：从特征工程到表示学习
 
@@ -282,7 +282,7 @@ graph TD
 我们还考察了全球AI产业的两种主流生态模式——以OpenAI为代表的闭源API模式和以Meta、Hugging Face社区为代表的开源社区模式，并了解了国内“百模大战”下商业与开源并存的繁荣景象。最后，通过在生产力、内容创作、软件开发和科学研究等领域的具体案例，我们直观地感受到了这项技术正在对社会各方面产生的深远影响。
 
 -----
-## 第3章 与AI对话的艺术——提示词工程基础
+## 模块三 与AI对话的艺术——提示词工程基础
 
 ### 3.1 提示词：驾驭大模型的缰绳
 
@@ -499,7 +499,7 @@ graph TD
         ```
 
 -----
-### 第3章小结
+### 模块小结
 
 本章我们聚焦于如何与AI进行高效沟通的核心技能——提示词工程。我们明确了“输入决定输出”的基本原则，并将提示词理解为驾驭大模型的“语言”。在理论层面，我们追溯到其学术基石，即GPT-3论文中提出的上下文学习（In-context Learning）¹¹，并了解了其关键机制，如少量样本学习（Few-shot Learning）。
 
@@ -507,7 +507,7 @@ graph TD
 
 -----
 
-## 第4章 实践之路：实验环境概览
+## 模块四 实践之路：实验环境概览
 
 ### 4.1 主流实践模式
 
@@ -614,7 +614,9 @@ graph TD
 | **华为 ModelArts** | 盘古 (Pangu) 系列 | 昇腾芯片+MindSpore框架的全栈自主技术体系 | 面向政企、强调自主可控的全流程开发平台 |
 | **百度 Qianfan** | 文心 (ERNIE) 系列 | 中文理解能力强，与搜索、知识图谱等生态联动 | 企业级MaaS平台，打造AI原生应用的强大引擎 |
 
----
+---好的，我们来将整个AIGC综合创作实践项目完全融入 **ModelScope** 的生态系统中。下面的步骤将指导您如何利用ModelScope平台上的模型和工具，从零开始完成关于“拓扑学”的图文并茂的科普微型作品。
+
+-----
 ### **4.2.3 本教材的平台选型理由**
 
 通过以上对比可以看出，各大平台各有侧重。企业级平台功能强大，但通常更适合有一定开发经验和预算的团队。对于本课程而言，我们的核心目标是**降低入门门槛，让初学者能快速上手体验和学习**。因此，我们选择**阿里ModelScope**作为主要的实验平台，主要基于其**开放、免费、社区驱动以及对中文开发者友好**的特性。
@@ -653,7 +655,7 @@ graph TD
 
 -----
 
-### 第4章小结
+### 模块小结
 
 本章为我们即将开始的动手实践铺平了道路。我们首先了解了与大模型交互开发的三种主流模式：无需配置、适合学习的云端Notebook模式；保障隐私、需要专业能力的本地化部署模式；以及应用最广、可扩展性强的API调用模式。
 
@@ -661,15 +663,15 @@ graph TD
 
 -----
 
-## 第5章 第一次接触：基础模型调用实验
+## 实验模块 基础模型调用实验
 
-### 5.1 实验目标
+### 1. 实验目标
 
 本次实验将带领大家完成AI学习旅程中的第一个里程碑——成功调用一个真实的AI模型。通过这个简单却意义重大的实验，你将亲手编写代码，让计算机理解并回应你的问题。这种体验就像第一次成功编译"Hello World"程序一样令人兴奋，但意义更加深远：你正在与具有智能特征的系统进行对话。
 
 实验结束后，你将掌握ModelScope平台的基本操作流程，理解模型加载、调用和输出的完整过程。更重要的是，这个实验将帮助你建立对AI系统运作方式的直观认识，为后续的深入学习打下坚实基础。我们特意选择了轻量级模型，确保即使在普通配置的电脑上也能流畅运行，让每位同学都能获得成功的体验。
 
-### 5.2 实验准备
+### 2. 实验准备
 
 在开始编程之前，需要完成一些简单的准备工作。首先访问ModelScope官网（modelscope.cn），这是阿里巴巴开发的模型托管平台，提供了丰富的中文AI模型资源。注册过程非常简单，只需要手机号码即可完成。建议使用Chrome或Firefox浏览器，以获得最佳的使用体验。
 
@@ -679,7 +681,7 @@ graph TD
 
 ---
 
-### 动手实验 5.1："Hello, AI"——首次模型调用
+### 动手实验："Hello, AI"——首次模型调用
 
 #### 实验环境检查
 
@@ -870,16 +872,28 @@ for length in lengths:
 
 ```
 实验1：温度参数对创造性的影响
-==================================================
+===================# 《AI思维与创造力第一课》第二天课程讲义设计指南
 
-温度=0.1时的故事：
-给我讲一个故事。我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我们家是一个小县城，我
+## 一、 第二天课程目标
 
-温度=0.5时的故事：
-给我讲一个故事吧。我们的一个女孩子，她是一个很有爱心的女孩子，她很喜欢我，她很喜欢我，她很喜欢我。我们在一起的时候，她总是给我安慰，但是我不知道怎么办，她总是不理我，她总是让我难过，她总是让我伤心，
+第二天的课程将是理论与实践深度融合的一天，学生将通过两个紧密相连的动手实验模块，将第一天所学的理论知识，创造性地应用在文本和图像两大核心AIGC场景中，完成一次从抽象概念到生动作品的完整创作体验。
 
-温度=1.0时的故事：
-给我讲一个故事，以前父母在深圳工作的时候，去年已经搬家了，也就是刚搬进来的时候。后来爸妈找了个小伙伴开始，每天夜里老公熬夜就到幼儿园了。刚开始的时候家里条件不行，有很多年轻人都上班，还能偷偷睡觉，老
+具体而言，学生在完成本天课程后，在知识与技能层面将达成以下学习目标：
+
+1.  **理解核心原理**：能用自己的语言简述文字生成大模型（如GPT系列）和图像生成大模型（如扩散模型）的基本工作原理，并理解`Temperature`、`Seed`等关键参数的实际作用。
+2.  **掌握进阶提示词技巧**：熟练运用“费曼技巧”、“风格迁移”、“故事引擎”等高级提示词模式进行创意文本生成，并掌握文生图提示词的“黄金公式”，能够编写出包含多维元素的图像提示词。
+3.  **独立完成创意生成任务**：能够根据具体目标（如创作科普推文、小说片段、概念海报、绘本插图），独立设计、测试和迭代提示词，并成功生成符合要求的AIGC作品。
+4.  **实现跨模态项目融合**：具备将AI生成的文本内容与图像内容相结合，创作出图文并茂的、统一主题的初级跨模态作品的能力。
+
+第二天的学习将会为后续学习打下的基础：
+
+1.  **构建“人机协同创作”的思维模式**：通过亲身实践，学生将不再视AI为简单的工具，而是开始建立一种将其作为“创意伙伴”或“灵感催化剂”的协作思维，这是未来AI时代的核心素养。
+2.  **奠定探索更前沿AIGC领域的基础**：掌握了文本和图像这两大最主流的AIGC模态的实践方法后，学生将具备快速学习和迁移到AI视频、音乐、3D模型生成等更前沿领域的能力。
+3.  **夯实AI应用开发的实践起点**：今天所学的“通过代码/API调用模型以完成特定任务”的实践经验，是未来进行模型微调、构建AI Agent、开发完整AI应用等一切更高级操作的、必不可少的实践起点。
+
+-----
+
+行，有很多年轻人都上班，还能偷偷睡觉，老
 
 
 实验2：长度限制的影响
@@ -1018,7 +1032,7 @@ def creative_writing():
 
 -----
 
-### 第5章小结
+### 模块小结
 
 在本章中，我们完成了从理论到实践的关键一跃。通过“Hello, AI”动手实验，我们达成了本次课程的首个实践里程碑。我们不仅熟悉了ModelScope Notebook这一在线开发环境，更重要的是，亲手编写了Python代码，并成功地加载和调用了一个真实的大语言模型。
 
@@ -1062,18 +1076,3 @@ def creative_writing():
 
 -----
 
-### 注释与参考文献 (Notes and References)
-
-1. Bengio, Y., Courville, A., & Vincent, P. (2013). Representation learning: A review and new perspectives. IEEE Transactions on Pattern Analysis and Machine Intelligence, 35(8), 1798–1828.
-2. Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., ... & Amodei, D. (2020). Scaling laws for neural language models. arXiv preprint arXiv:2001.08361.
-3. Hoffmann, J., Borgeaud, S., Obika, A., Hron, A., van den Oord, A., Buchatskaya, E., ... & Sigaud, O. (2022). Training compute-optimal large language models. arXiv preprint arXiv:2203.15556.
-4. LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. Nature, 521(7553), 436–444.
-5. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. In Advances in Neural Information Processing Systems 30 (pp. 5998–6008).
-6. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) (pp. 4171–4186).
-7. Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., & Sutskever, I. (2019). Language models are unsupervised multitask learners. OpenAI Blog, 1(8).
-8. Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Borgeaud, S., ... & Le, Q. V. (2022). Emergent abilities of large language models. Transactions on Machine Learning Research.
-9. Schaeffer, R., Miranda, B., & Koyejo, S. (2023). Are emergent abilities of large language models a mirage? arXiv preprint arXiv:2304.15004.
-10. Sahoo, P., Singh, A. K., Saha, S., & Tirkha, A. (2024). A systematic survey of prompt engineering in large language models. arXiv preprint arXiv:2402.07927.
-11. Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language models are few-shot learners. In Advances in Neural Information Processing Systems 33 (pp. 1877–1901).
-12. Wei, J., Wang, X., Schuurmans, D., Bosma, M., Xia, F., Chi, E., ... & Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. In Advances in Neural Information Processing Systems 35 (pp. 24824–24837).
-13. Parnami, A., & Lee, M. (2022). Learning from few examples: A survey. ACM Computing Surveys, 54(9), 1–38.
