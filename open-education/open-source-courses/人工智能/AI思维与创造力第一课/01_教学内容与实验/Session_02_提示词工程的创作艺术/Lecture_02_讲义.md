@@ -106,7 +106,7 @@ print("="*50)
 # 4. 循环测试不同温度参数
 for temp in temperatures_to_test:
     print(f"\n正在使用 temperature = {temp} 进行生成...")
-
+    
     # 调用模型，并传入当前的温度参数
     # do_sample=True 是必须的，这样temperature参数才会生效
     result = chat_pipeline(
@@ -115,7 +115,7 @@ for temp in temperatures_to_test:
         temperature=temp,
         do_sample=True  
     )
-
+    
     # 打印对应温度下的生成结果
     print(f"输出结果: {result['text']}")
     print("-"*40)
@@ -237,13 +237,13 @@ for temp in temperatures_to_test:
    - 时间：[时间背景]
    - 地点：[地点背景]
    - 主角：[主角设定]，性格特点(After-Class Exercises)**是[特点]
-
+   
 2. 情节发展：
    - 开端：[冲突或问题的引入]
    - 发展：[尝试解决问题]
    - 高潮：[关键转折点]
    - 结局：[问题解决方式]
-
+   
 3. 主题：故事应该传达[主题/教训]的思想
 4. 风格：采用[风格]的叙事方式
 
@@ -260,7 +260,7 @@ for temp in temperatures_to_test:
 请创作一段关于[话题]的对话。对话应包含以下角色：
 
 1. [角色1]：[该角色的立场和特点]
-2. [角色2]：[该角色的立场和特点]
+2. [角色2]：[该角色的立场和特点] 
 3. [角色3]：[该角色的立场和特点]
 
 对话应包含以下要点：
@@ -384,7 +384,7 @@ Stable Diffusion（Rombach et al., 2022）是扩散模型从研究走向应用�
 **后处理技术** 包括使用 Real-ESRGAN 等AI放大工具提升分辨率，通过 inpainting 修复局部问题，以及使用 img2img 进行风格调整。这些技术的组合应用，能够将AI生成的图像提升到专业水准。
 
 ---
-### *动手实验2.1：在 ModelScope 上运行 Stable Diffusion XL 文生图模型*
+### *动手实验2.1：在 ModelScope 上运行 Stable Diffusion XL 文生图模型* 
 
 1.  **对比感知**：亲身体验在“资源充足”和“资源受限”两种情境下，文生图模型的性能差异。
 2.  **技能掌握**：熟练运用`FP16`、`xformers`等关键技术，对大型AI模型进行显存和速度优化。
@@ -454,6 +454,7 @@ try:
         torch_dtype=torch.float32,
         use_safetensors=True
     ).to("cuda")
+r
     load_time = time.time() - start_time
     mem_after_load = get_gpu_memory_usage()
     print(f"模型加载完成。耗时: {load_time:.2f} 秒")
@@ -463,7 +464,7 @@ try:
     # [中文提示词替换]
     prompt = "一张可爱小狗在花丛中玩耍的照片"
     print(f"\n开始生成图像 (1024x1024)，提示词: '{prompt}'")
-
+    
     gen_start_time = time.time()
     image_baseline = pipe_baseline(prompt=prompt, height=1024, width=1024, num_inference_steps=25).images[0]
     gen_time = time.time() - gen_start_time
@@ -471,7 +472,7 @@ try:
 
     print(f"图像生成完成。耗时: {gen_time:.2f} 秒")
     print(f"生成期间，峰值显存占用: {mem_after_gen - mem_before:.2f} MB")
-
+    
     display(image_baseline)
 
 except Exception as e:
@@ -614,7 +615,7 @@ display(final_image)
 | 内存清理 | 推荐 | 推荐 | - |
 
 **高效工作技巧**：
-
+   
 ```python
 # 批量生成多张图像
 prompts = [
@@ -622,7 +623,7 @@ prompts = [
     "a steampunk airship flying over Victorian London",
     "an astronaut riding a horse on Mars, digital art"
 ]
-
+   
 for i, prompt in enumerate(prompts):
     image = generate_image(prompt, seed=i)
     image.save(f"image_{i}.jpg")
@@ -635,26 +636,26 @@ for i, prompt in enumerate(prompts):
 # 创建参数网格实验
    resolutions = [(768, 768), (1024, 768), (1024, 1024)]
    steps_options = [20, 25, 30]
-
+   
    for res in resolutions:
        for steps in steps_options:
            print(f"测试: {res}分辨率, {steps}步数")
-           image = generate_image("a beautiful landscape",
-                                 height=res[0],
+           image = generate_image("a beautiful landscape", 
+                                 height=res[0], 
                                  width=res[1],
                                  steps=steps)
            播放生成的 MP4 视频image.save(f"output_{res[0]}x{res[1]}_{steps}steps.jpg")
 ```
 
 **资源监控技巧**：
-
+   
    ```python
    # 添加资源监控
    def print_gpu_memory():
        total = torch.cuda.get_device_properties(0).total_memory / 1024**3
        used = torch.cuda.memory_allocated() / 1024**3
        print(f"GPU显存: {used:.1f}/{total:.1f} GB ({used/total*100:.1f}%)")
-
+   
    print_gpu_memory()  # 生成前
    image = generate_image("a cat in space")
    print_gpu_memory()  # 生成后
@@ -755,7 +756,7 @@ D --> J[风格迁移]
   | `[uv_break]`   | 单词级停顿              | 用于中英文混合场景 |  
 - **多说话人支持**：可固定音色向量（`spk_emb`）实现角色一致性，支持音色融合与导入导出[1](@ref)  
 
-#### 技术架构
+#### 技术架构 
 
 - **端到端合成**：基于Transformer，跳过音素处理直接生成波形，显存占用约1.1GB（CPU可运行）  
 - **长文本优化**：内置分段处理机制，支持≤1000字文本保持韵律连贯
@@ -778,7 +779,7 @@ F --> G[保存WAV]
 ##### 依赖安装  
 ```bash
 # ModelScope环境安装核心依赖（CPU版）  
-!pip install modelscope ChatTTS torch==2.2.2 torchaudio soundfile
+!pip install modelscope ChatTTS torch==2.2.2+cpu torchaudio soundfile
 ```
 
 #### 模型下载与加载
@@ -787,7 +788,7 @@ F --> G[保存WAV]
 #加载本地模型
 
 import ChatTTS
-import IPython
+import IPython 
 from IPython.display import display, Audio
 import soundfile as sf
 from modelscope import snapshot_download
@@ -828,7 +829,7 @@ chat.load(source="local", custom_path=MODEL_DIR, compile=False)
 texts = ["今天的天气真不错[oral_3]"]
 
 wavs = chat.infer(
-    texts,
+    texts, 
     use_decoder=True,
     do_text_normalization=True  # 关闭文本归一化
 )
@@ -1492,16 +1493,16 @@ final_content = project.get_final_result()
             <h1>数学家的魔法</h1>
             <h2>如何把甜甜圈变成咖啡杯？</h2>
         </div>
-
+        
         <div class="image-container">
             <img src="topology_visualization.png" alt="由ModelScope通义万相生成的拓扑学可视化图像">
         </div>
-
+        
         <div class="content">
             <p>想象一下，你手里有一块神奇的黏土...</p>
             <p>...</p>
         </div>
-
+        
         <div class="footer">
             <p>© 2025 AIGC综合创作实践 | 创作平台：ModelScope</p>
         </div>
@@ -1524,7 +1525,7 @@ final_content = project.get_final_result()
 
 这个实验虽然聚焦于一个具体的科普作品，但它完整地展示了现代AIGC内容创作的基本模式。当前许多创意工作流的核心，正是**确立创意构思、设计精准的提示词、整合多模态输出，并由人类进行最终的审美和逻辑把关**。随着学习的深入，你会接触到更复杂的模型（如视频和音频生成）和更丰富的协同创作场景，但今天掌握的这个基本开发与创作流程，将是你未来探索一切可能性的坚实基础。
 
-## 4. 课后练习
+## 4. 课后练习 
 
 为了巩固和拓展你在本次实验中学到的技能，请尝试完成以下练习。这些练习将鼓励你探索新的主题和更复杂的创作形式。
 
@@ -1578,3 +1579,4 @@ final_content = project.get_final_result()
 
 [此处粘贴你的科普文章全文]
 ```
+
