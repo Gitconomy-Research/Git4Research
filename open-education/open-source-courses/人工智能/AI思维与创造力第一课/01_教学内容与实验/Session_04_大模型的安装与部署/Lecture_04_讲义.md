@@ -144,7 +144,7 @@ nvidia -smi
 
 当前的电脑CUDA的最高版本要求是12.2，所以需要找到不大于12.2版本的Pytorch。
 
-直接复制对应的命令，进入终端执行即可。这实际上安装的是为 CUDA 12.1 优化的 PyTorch 版本。这个 PyTorch 版本预编译并打包了与 CUDA 12.1 版本相对应的二进制文件和库。
+直接复制对应的命令，进入终端执行即可。这实际上安装的是为 CUDA pipe = pipeline(task=Tasks.text_generation, model='Qwen/Qwen2.5-Coder-1.5B-Instruct')12.1 优化的 PyTorch 版本。这个 PyTorch 版本预编译并打包了与 CUDA 12.1 版本相对应的二进制文件和库。
 
   - **Step 4. 安装Pytorch验证**
 
@@ -229,7 +229,7 @@ print(response)
 ```
 
 编辑好脚本之后通过`python download.py`开始执行这个文件。
-
+pipe = pipeline(task=Tasks.text_generation, model='Qwen/Qwen2.5-Coder-1.5B-Instruct')
 文件安装完毕后会启动对话测试（再次运行该文件会直接加载本地权重文件后直接进行运行推理），出现文本返回信息说明文件下载完整且可以启动。
 
 文件完整性检查命令：
@@ -267,7 +267,7 @@ from modelscope.pipelines import pipeline
 from modelscope.utils.constant import Tasks
 
 # Initialize the pipeline
-pipe = pipeline(task=Tasks.text_generation, model='qwen/Qwen2.5-7B-Chat')
+pipe = pipeline(task=Tasks.text_generation, model='Qwen/Qwen2.5-Coder-1.5B-Instruct')
 
 # Define the input
 input_text = "你好，请简单介绍一下你自己。"
