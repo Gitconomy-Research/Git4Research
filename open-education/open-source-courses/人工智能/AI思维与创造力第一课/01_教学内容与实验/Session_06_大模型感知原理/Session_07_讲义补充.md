@@ -20,14 +20,14 @@ CNN主要由输入层、卷积层（Convolutional Layer）、池化层（Pooling
 ```mermaid
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
 graph TD
-    A["`**输入**\n(图像/数据)`"]:::input -->
+    A["`**输入**<br>(图像/数据)`"]:::input -->
     B{"`**卷积层 1**\n+ ReLU`"}:::feature
     B --> C{"`**池化层 1**`"}:::feature
     C --> D{"`**卷积层 2**\n+ ReLU`"}:::feature
     D --> E{"`**池化层 2**`"}:::feature
     E --> F["..."]:::feature
     F --> G["`**全连接层**`"]:::fc
-    G --> H["`**输出**\n(分类/回归)`"]:::output
+    G --> H["`**输出**<br>(分类/回归)`"]:::output
 
     subgraph "`**特征提取**`"
         B; C; D; E; F
@@ -155,9 +155,9 @@ graph TD
         A["`**输入嵌入**`"]:::encoder
         B["`**位置编码**`"]:::encoder
         C{"`**多头自注意力**`"}:::encoder
-        D["`残差连接 &\n层归一化`"]:::encoder_mid
+        D["`残差连接 &<br>层归一化`"]:::encoder_mid
         E{"`**前馈神经网络**`"}:::encoder
-        F["`残差连接 &\n层归一化`"]:::encoder_mid
+        F["`残差连接 &<br>层归一化`"]:::encoder_mid
         G["`**编码器输出**`"]:::encoder_out
         A --> B --> C --> D --> E --> F --> G
     end
@@ -166,11 +166,11 @@ graph TD
         H["`**输出嵌入**`"]:::decoder
         I["`**位置编码**`"]:::decoder
         J{"`**带掩码的多头自注意力**`"}:::decoder
-        K["`残差连接 &\n层归一化`"]:::decoder_mid
+        K["`残差连接 &\<br>层归一化`"]:::decoder_mid
         L{"`**多头注意力\n(Encoder-Decoder)**`"}:::decoder
-        M["`残差连接 &\n层归一化`"]:::decoder_mid
+        M["`残差连接 &\<br>层归一化`"]:::decoder_mid
         N{"`**前馈神经网络**`"}:::decoder
-        O["`残差连接 &\n层归一化`"]:::decoder_mid
+        O["`残差连接 &\<br>层归一化`"]:::decoder_mid
         P["`**线性层 + Softmax**`"]:::decoder_out
         Q["`**输出概率**`"]:::final_out
         H --> I --> J --> K --> L
