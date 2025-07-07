@@ -23,7 +23,7 @@ graph TD
     A["`**输入**<br>(图像/数据)`"]:::input -->
     B{"`**卷积层 1**\n+ ReLU`"}:::feature
     B --> C{"`**池化层 1**`"}:::feature
-    C --> D{"`**卷积层 2**\n+ ReLU`"}:::feature
+    C --> D{"`**卷积层 2**<br>+ ReLU`"}:::feature
     D --> E{"`**池化层 2**`"}:::feature
     E --> F["..."]:::feature
     F --> G["`**全连接层**`"]:::fc
