@@ -1491,55 +1491,184 @@ Transformer的宏观架构沿用了在机器翻译等序列到序列（Seq2Seq�
 
 ```mermaid
 graph TD
-    subgraph Encoder["编码器<br>(Encoder)"]
-        direction TB
-        A["输入<br>(Inputs)"]:::input -->
-        B["输入嵌入<br>(Input Embedding)"]:::embedding
-        B --> C["位置编码<br>(Positional Encoding)"]:::embedding
-        C --> D{"N层编码器层<br>(N x Encoder Layer)"}:::block
-        subgraph EncoderLayer["编码器层<br>(Encoder Layer)"]
-            direction TB
-            E["多头注意力<br>(Multi-Head Attention)"]:::attention -->
-            F["残差&归一化<br>(Add & Norm)"]:::block
-            F --> G["前馈全连接<br>(Feed Forward)"]:::ffn
-            G --> H["残差&归一化<br>(Add & Norm)"]:::block
-        end
-    end
+    A["编码器<br>Encoder"]:::celloutput -->|自注意力<br>Self-attention| B["解码器<br>Decoder"]:::celloutput
+    B -->|输出生成<br>Output generation| C["最终输出<br>Final output"]:::celloutput
+    A --> D["位置编码<br>Positional encoding"]:::celloutput
+    B --> E["自注意力掩码<br>Masking for self-attention"]:::celloutput
 
-    subgraph Decoder["解码器<br>(Decoder)"]
-        direction TB
-        I["输出<br>(Outputs)"]:::input -->
-        J["输出嵌入<br>(Output Embedding)"]:::embedding
-        J --> K["位置编码<br>(Positional Encoding)"]:::embedding
-        K --> L{"N层解码器层<br>(N x Decoder Layer)"}:::block
-        subgraph DecoderLayer["解码器层<br>(Decoder Layer)"]
-            direction TB
-            M["掩码多头注意力<br>(Masked Multi-Head Attention)"]:::attention -->
-            N["残差&归一化<br>(Add & Norm)"]:::block
-            N --> O["多头注意力<br>(Multi-Head Attention)"]:::attention
-            O --> P["残差&归一化<br>(Add & Norm)"]:::block
-            P --> Q["前馈全连接<br>(Feed Forward)"]:::ffn
-            Q --> R["残差&归一化<br>(Add & Norm)"]:::block
-        end
-    end
+    %% 推荐视觉增强: 给每类节点加配色
+    style A fill:#d5e9f6,stroke:#1d6fa5,stroke-width:2px
+    style B fill:#fff5cc,stroke:#b9a600,stroke-width:2px
+    style C fill:#e1f7e7,stroke:#31916b,stroke-width:2px
+    style D fill:#ecf4fc,stroke:#6c92b9,stroke-width:2px
+    style E fill:#fbe4e6,stroke:#be3650,stroke-width:2px
 
-    D --> O
-    R --> S["线性变换<br>(Linear)"]:::linear
-    S --> T["Softmax激活<br>(Softmax)"]:::softmax
-    T --> U["输出概率<br>(Output Probabilities)"]:::output
-
-    classDef input font-weight:bold,color:#111,fill:#bbdefb,stroke:#1976d2,stroke-width:2px;
-    classDef embedding font-weight:bold,color:#111,fill:#b2ebf2,stroke:#0097a7,stroke-width:2px;
-    classDef attention font-weight:bold,color:#111,fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;
-    classDef block font-weight:bold,color:#111,fill:#dcedc8,stroke:#689f38,stroke-width:2px;
-    classDef ffn font-weight:bold,color:#111,fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px;
-    classDef linear font-weight:bold,color:#111,fill:#e1bee7,stroke:#8e24aa,stroke-width:2px;
-    classDef softmax font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
-    classDef output font-weight:bold,color:#111,fill:#c8e6c9,stroke:#388e3c,stroke-width:2px;
+	 classDef celloutput font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
 ```
 
   * **编码器栈 (Encoder Stack)**：由N=6个相同的层堆叠而成。 每一层包含两个子层：一个 **多头自注意力（Multi-Head Self-Attention）机制** 和一个 **位置前馈网络（Position-wise Feed-Forward Network）**。 编码器的职责是接收并处理整个输入序列（例如，一句待翻译的德语），并为序列中的每个词生成一个富含上下文信息的表示向量 z。
   * **解码器栈 (Decoder Stack)**：同样由N=6个相同的层堆叠而成。 每一层包含三个子层：一个 **带掩码的多头自注意力（Masked Multi-Head Self-Attention）机制**，一个 **多头交叉注意力（Multi-Head Cross-Attention）机制** （它关注编码器的输出），以及一个位置前馈网络。 解码器的职责是利用编码器生成的表示 z，以自回归（auto-regressive）的方式，一次一个地生成输出序列中的词（例如，翻译后的英语句子）。
+
+## 3.2 Transformer框架机制解析
+
+把Transformer想象成一个分工明确、善于沟通的专业翻译团队：
+
+这个团队有两个核心部门：**理解部（Encoder）**和**写作部（Decoder）**。他们的共同任务是把一句话，比如“我有一只猫”，精准地翻译成“I have a cat”。
+
+### 3.2.1 第一步：准备工作
+
+在正式翻译前，团队需要做两项基础准备：
+
+1.  **查字典 (词 Embedding)**: 团队成员会把原句中的每个中文词（“我”，“有”，“一只”，“猫”）都在一本特殊的“概念词典”里查一遍。这本词典不只是给出单一的定义，而是将每个词转换成一组能够代表其丰富、 nuanced 含义的数字。
+
+2.  **排座位 (位置 Embedding)**: 这个团队有一个独特的工作习惯：他们会同时审视整句话的所有词汇，而不是按照顺序依次阅读。为了确保词语的原始顺序不被打乱（这对于理解句子至关重要），他们会给每个词分配一个独一无二的“座位号”。这样，即使是同时处理，也能清晰地知道每个词在句子中的具体位置。
+
+```mermaid
+graph TD
+    subgraph 我
+        direction TB
+        A1[词 Embedding]
+        A2[位置 Embedding]
+        A1 -- + --> A3[Transformer 表示 x]
+        A2 -- + --> A3
+    end
+    subgraph 有
+        direction TB
+        B1[词 Embedding]
+        B2[位置 Embedding]
+        B1 -- + --> B3[Transformer 表示 x]
+        B2 -- + --> B3
+    end
+    subgraph 一只
+        direction TB
+        C1[词 Embedding]
+        C2[位置 Embedding]
+        C1 -- + --> C3[Transformer 表示 x]
+        C2 -- + --> C3
+    end
+    subgraph 猫
+        direction TB
+        D1[词 Embedding]
+        D2[位置 Embedding]
+        D1 -- + --> D3[Transformer 表示 x]
+        D2 -- + --> D3
+    end
+    A3 --> E
+    B3 --> E
+    C3 --> E
+    D3 --> E
+    E[我有一只猫]
+
+    %% 区块配色
+    style A1 fill:#ffdddd,stroke:#d33,stroke-width:2px
+    style A2 fill:#ffdddd,stroke:#d33,stroke-width:2px
+    style A3 fill:#ffe5e5,stroke:#d33,stroke-width:2px
+
+    style B1 fill:#ddffdd,stroke:#050,stroke-width:2px
+    style B2 fill:#ddffdd,stroke:#050,stroke-width:2px
+    style B3 fill:#e5ffe5,stroke:#050,stroke-width:2px
+
+    style C1 fill:#eef9ff,stroke:#2a69ac,stroke-width:2px
+    style C2 fill:#eef9ff,stroke:#2a69ac,stroke-width:2px
+    style C3 fill:#cbeafe,stroke:#2a69ac,stroke-width:2px
+
+    style D1 fill:#fff9db,stroke:#cb9800,stroke-width:2px
+    style D2 fill:#fff9db,stroke:#cb9800,stroke-width:2px
+    style D3 fill:#fdf6b2,stroke:#cb9800,stroke-width:2px
+
+    style E fill:#ddddff,stroke:#5555ff,stroke-width:2px
+```
+
+### 3.2.2第二步：理解部（Encoder）的工作
+
+准备工作完成后，附有“字典含义”和“座位号”的中文原句被提交给**理解部**。
+
+* **核心工作：召开内部研讨会 (Self-Attention)**
+    理解部由六位专家组成（对应六个Encoder block）。他们不会孤立地看待每个词，而是会针对每一个词，召开一次全面的“内部研讨会”。
+
+    * 例如，在分析“猫”这个词时，专家们会同时回顾句子中的“我”和“有”。通过这种方式，他们能准确地判断出这里的“猫”指的是“我所拥有的那只猫”，而不是一个泛指的、抽象的动物概念。
+    * 这种让句子中的每一个词都与其他所有词进行关联和“沟通”，从而深刻理解其在特定上下文中的准确含义的机制，就是**自注意力机制 (Self-Attention)**。
+
+* **最终成果：形成深度理解报告**
+    经过六位专家（六个层级）层层递进、越来越深入的研讨后，理解部最终会产出一份详尽的“理解报告”（即编码信息矩阵C）。这份报告不仅包含了每个词的含义，更重要的是，它蕴含了对整个句子结构、语义和上下文的深刻洞察。随后，这份报告将被转交给写作部。
+
+```mermaid
+flowchart TD
+    A["输入矩阵 X<br>Input Matrix X"]:::celloutput
+    B["掩码多头注意力<br>nMasked Multi-Head Attention"]:::celloutput
+    C["Q, K, V 计算<br>Q, K, V Calculation"]:::celloutput
+    D["Q * K^T 计算<br>Q * K^T"]:::celloutput
+    E["归一化 Softmax<br>Softmax"]:::celloutput
+    F["掩码注意力输出<br>Masked Attention Output"]:::celloutput
+    G["线性层<br>Linear Layer"]:::celloutput
+    H["解码器产出 Z<br>Decoder Output Z"]:::celloutput
+    I["第二次多头注意力<br>Second Multi-Head Attention"]:::celloutput
+    J["来自编码器的 Q, K<br>Q, K from Encoder"]:::celloutput
+    K["最终输出 Z<br>Final Output Z"]:::celloutput
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+
+    style A fill:#ffd6af,stroke:#d18509,stroke-width:2px
+    style B fill:#ffe599,stroke:#cab200,stroke-width:2px
+    style C fill:#c9ffd1,stroke:#179a3d,stroke-width:2px
+    style D fill:#b8d8ff,stroke:#1f61d0,stroke-width:2px
+    style E fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+    style F fill:#f6cbfc,stroke:#9c1eb1,stroke-width:2px
+    style G fill:#e2f0cb,stroke:#789262,stroke-width:2px
+    style H fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+    style I fill:#fce3d9,stroke:#e87b46,stroke-width:2px
+    style J fill:#cff7f1,stroke:#25baa5,stroke-width:2px
+    style K fill:#fffccf,stroke:#cfc82d,stroke-width:2px
+
+	classDef celloutput font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
+```
+
+### 3.2.3第三步：写作部（Decoder）的工作
+
+**写作部**同样由六位专家（对应六个Decoder block）构成。他们的任务是依据理解部提供的“深度报告”，逐词构建出流畅、准确的英文句子。
+
+1.  **写下第一个词：**
+    * 写作专家首先会仔细研究理解部的“深度报告”。他会向这份报告“提问”：“基于你对‘我有一只猫’这句话的全面理解，翻译成英文时，最应该以哪个词作为开头？”
+    * 报告中的信息会强烈指向“我”这个核心概念，因此，写作专家会写下第一个词："I"。
+
+2.  **写下第二个词：**
+    * 此时，写作专家手头有了两份关键的参考资料：1）他刚刚完成的第一个词 "I"。2）那份来自理解部的、内容详尽的“深度报告”。
+    * 他会同时关注这两个信息源：
+        * **回顾已写内容 (Masked Self-Attention)**: 他会审视自己刚刚写下的 "I"，以确保接下来要写的词能在语法和逻辑上与之顺畅衔接。为了模拟真实的创作过程并防止“作弊”（即偷看标准答案），他会刻意“蒙住眼睛”，不去看正确答案中 "I" 后面的任何词。
+        * **再次咨询深度报告 (Encoder-Decoder Attention)**: 他会带着已有的 "I" 去再次“咨询”深度报告：“我已经写下了‘I’，现在请结合你对原始中文句子的理解，告诉我下一个最合适的词是什么？” 报告会分析出“有”（have）这个概念在当前节点最为重要，于是他会接着写下 "have"。
+
+```mermaid
+%%{init: {"flowchart": {"nodeTextColor": "#000", "nodeFontWeight": "bold"}} }%%
+graph TD
+    A["输入矩阵X<br>Input Matrix X"]:::celloutput --> B["多头注意力<br>Multi-Head Attention"]:::celloutput --> C["残差连接归一化<br>Add & Norm"]:::celloutput --> D["前馈网络<br>Feed Forward"]:::celloutput --> E["残差连接归一化<br>Add & Norm"]:::celloutput
+    E --> F["编码器输出矩阵C<br>Encoder Output Matrix C"]:::celloutput
+    B -- 自注意力<br>Self-Attention --> F
+
+    style A fill:#e7f4ff,stroke:#369,stroke-width:2px
+    style B fill:#fff2dd,stroke:#cb9800,stroke-width:2px
+    style C fill:#ffe5e5,stroke:#d33,stroke-width:2px
+    style D fill:#e1f7e7,stroke:#31916b,stroke-width:2px
+    style E fill:#fbe4e6,stroke:#be3650,stroke-width:2px
+    style F fill:#e1e7fa,stroke:#4967b2,stroke-width:2px
+
+	classDef celloutput font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
+```
+
+这个创作过程会不断地循环下去，直到写作部认为整个句子已经表达完整，并最终输出一个代表“结束”的特殊标记。
+
+### 3.2.4 工作机制小结
+
+* **高效的并行处理**：与传统的、需要按顺序逐词处理的模型不同，Transformer的理解部（Encoder）可以像一个高效的团队一样，同时审视和处理一整句话中的所有词汇。这种并行处理能力极大地提升了模型的训练速度和效率。
+* **注意力是所有能力的核心**：无论是理解部内部为了厘清上下文关系而召开的“内部研讨会”（Self-Attention），还是写作部在创作过程中不断参考理解报告的“咨询会议”（Encoder-Decoder Attention），**注意力机制**都是Transformer模型施展其强大语言能力的根本。它使得模型能够在处理信息的过程中，智能、动态地判断出哪些部分在当前步骤中最为关键，从而做出最精准的决策。
 
 ## 3.2 核心机制：缩放点积自注意力
 
@@ -1703,6 +1832,63 @@ Transformer是一个非常深的网络（例如，N=6层，每层又包含多个
 2.  *位置编码**：由于Transformer本身不处理时序，我们需要告诉它每个词的位置。模型会为位置0、1、2生成对应的位置向量 `P_0`, `P_1`, `P_2`。
 3.  *最终输入**：将词嵌入和位置编码相加，得到每个词的最终输入向量 `X_我 = E_我 + P_0`，`X_爱 = E_爱 + P_1`，`X_机器 = E_机器 + P_2`。这三个向量组成一个矩阵，作为编码器第一层的输入。
 
+```mermaid
+flowchart TD
+    A["输入句子<br/>Input Sentence<br/>[“我”, “爱”, “机器”]"]:::celloutput
+    B["词嵌入<br/>Word Embedding"]:::celloutput
+    C["“我”的词向量<br/>Embedding for “我”<br/>E_我"]:::celloutput
+    D["“爱”的词向量<br/>Embedding for “爱”<br/>E_爱"]:::celloutput
+    E["“机器”的词向量<br/>Embedding for “机器”<br/>E_机器"]:::celloutput
+
+    F["位置编码<br/>Positional Encoding"]:::celloutput
+    G["位置0编码<br/>Positional Encoding<br/>for Position 0<br/>P_0"]:::celloutput
+    H["位置1编码<br/>Positional Encoding<br/>for Position 1<br/>P_1"]:::celloutput
+    I["位置2编码<br/>Positional Encoding<br/>for Position 2<br/>P_2"]:::celloutput
+
+    J["最终输入“我”<br/>Final Input for “我”<br/>X_我 = E_我 + P_0"]:::celloutput
+    K["最终输入“爱”<br/>Final Input for “爱”<br/>X_爱 = E_爱 + P_1"]:::celloutput
+    L["最终输入“机器”<br/>Final Input for “机器”<br/>X_机器 = E_机器 + P_2"]:::celloutput
+
+    M["输入矩阵<br/>Input Matrix<br/>for Encoder Layer"]:::celloutput
+
+    A --> B
+    A --> F
+    B --> C
+    B --> D
+    B --> E
+    F --> G
+    F --> H
+    F --> I
+    C --> J
+    G --> J
+    D --> K
+    H --> K
+    E --> L
+    I --> L
+    J --> M
+    K --> M
+    L --> M
+
+    style A fill:#ffe599,stroke:#d2af00,stroke-width:2px
+    style B fill:#fffbcf,stroke:#cab200,stroke-width:2px
+    style C fill:#f9e0d8,stroke:#ea8600,stroke-width:2px
+    style D fill:#f9e0d8,stroke:#ea8600,stroke-width:2px
+    style E fill:#f9e0d8,stroke:#ea8600,stroke-width:2px
+
+    style F fill:#c9ffd1,stroke:#179a3d,stroke-width:2px
+    style G fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+    style H fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+    style I fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+
+    style J fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style K fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style L fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+
+    style M fill:#ffd6af,stroke:#d18509,stroke-width:2px
+
+	classDef celloutput font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
+```
+
 #### **第2步：自注意力机制——赋予上下文**
 
 这是Transformer的核心。我们以计算“爱”这个词的新表示为例：
@@ -1716,6 +1902,78 @@ Transformer是一个非常深的网络（例如，N=6层，每层又包含多个
     * `Z_爱 = (w₁ * V_我) + (w₂ * V_爱) + (w₃ * V_机器)`
 
 经过这一步，`Z_爱` 不再仅仅代表“爱”这个词本身，而是**一个结合了“我”作为主语和“机器”作为宾语的、富含上下文信息的“爱”**。这个过程对所有词同时进行，所以“我”和“机器”也获得了各自的上下文向量。
+
+```mermaid
+flowchart TD
+    A["输入矩阵 X<br/>Input Matrix X"]:::celloutput
+    B["“爱”的输入向量<br/>Input Vector for “爱”<br/>(X_爱)"]:::celloutput
+    C["“我”的输入向量<br/>Input Vector for “我”<br/>(X_我)"]:::celloutput
+    D["“机器”的输入向量<br/>Input Vector for “机器”<br/>(X_机器)"]:::celloutput
+
+    B --> E["线性变换得到 Q_爱<br/>Linear Transformation for Q_爱"]:::celloutput
+    B --> F["线性变换得到 K_爱<br/>Linear Transformation for K_爱"]:::celloutput
+    B --> G["线性变换得到 V_爱<br/>Linear Transformation for V_爱"]:::celloutput
+    C --> H["线性变换得到 Q_我<br/>Linear Transformation for Q_我"]:::celloutput
+    C --> I["线性变换得到 K_我<br/>Linear Transformation for K_我"]:::celloutput
+    C --> J["线性变换得到 V_我<br/>Linear Transformation for V_我"]:::celloutput
+    D --> K["线性变换得到 Q_机器<br/>Linear Transformation for Q_机器"]:::celloutput
+    D --> L["线性变换得到 K_机器<br/>Linear Transformation for K_机器"]:::celloutput
+    D --> M["线性变换得到 V_机器<br/>Linear Transformation for V_机器"]:::celloutput
+
+    E --> N["计算注意力分数<br/>Compute Attention Scores<br/>Q_爱 • K_我"]:::celloutput
+    F --> O["计算注意力分数<br/>Compute Attention Scores<br/>Q_爱 • K_爱"]:::celloutput
+    G --> P["计算注意力分数<br/>Compute Attention Scores<br/>Q_爱 • K_机器"]:::celloutput
+
+    N --> Q["“爱”与“我”的分数<br/>Score for '爱' and '我' (得分1)"]:::celloutput
+    O --> R["“爱”与“爱”的分数<br/>Score for '爱' and '爱' (得分2)"]:::celloutput
+    P --> S["“爱”与“机器”的分数<br/>Score for '爱' and '机器' (得分3)"]:::celloutput
+
+    Q --> T["缩放并做Softmax<br/>Scale and Apply Softmax"]:::celloutput
+    R --> T
+    S --> T
+
+    T --> U["注意力权重<br/>Attention Weights<br/>w₁, w₂, w₃"]:::celloutput
+    U --> V["加权求和得到新向量<br/>Weighted Sum of Vectors"]:::celloutput
+    V --> W["“爱”的新向量<br/>New Vector for '爱'<br/>(Z_爱)"]:::celloutput
+
+    W --> X["含上下文的输出<br/>Final Output with Contextual Info<br/>for '爱'"]:::celloutput
+    X --> Y["所有词的上下文表示<br/>Contextualized Representations<br/>for All Words"]:::celloutput
+
+    style A fill:#ffd6af,stroke:#d18509,stroke-width:2px
+    style B fill:#f6e0cc,stroke:#ea8600,stroke-width:2px
+    style C fill:#ffe599,stroke:#cab200,stroke-width:2px
+    style D fill:#d1f0c9,stroke:#179a3d,stroke-width:2px
+
+    style E fill:#c9ffd1,stroke:#1a9641,stroke-width:2px
+    style F fill:#c9ffd1,stroke:#1a9641,stroke-width:2px
+    style G fill:#c9ffd1,stroke:#1a9641,stroke-width:2px
+
+    style H fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+    style I fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+    style J fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+
+    style K fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style L fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style M fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+
+    style N fill:#f2fdcf,stroke:#9dbc24,stroke-width:2px
+    style O fill:#f2fdcf,stroke:#9dbc24,stroke-width:2px
+    style P fill:#f2fdcf,stroke:#9dbc24,stroke-width:2px
+
+    style Q fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+    style R fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+    style S fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+
+    style T fill:#b2f0fa,stroke:#189eb6,stroke-width:2px
+    style U fill:#d1f0c9,stroke:#179a3d,stroke-width:2px
+    style V fill:#b4b7f8,stroke:#5329ba,stroke-width:2px
+    style W fill:#ffd6af,stroke:#d18509,stroke-width:2px
+
+    style X fill:#ffe599,stroke:#cab200,stroke-width:2px
+    style Y fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+
+	classDef celloutput font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
+```
 
 #### **第3步：编码器输出**
 
@@ -1750,6 +2008,62 @@ Transformer是一个非常深的网络（例如，N=6层，每层又包含多个
     * **掩码自注意力**：解码器内部对当前序列进行处理。
     * **交叉注意力**：解码器根据“I love...”的状态生成查询`Q_解码器`，它去矩阵**C**中寻找“love”的对象。这次，它会给予“机器”的键向量`K_机器`最高的注意力。
 3.  **预测**：模型最终预测出下一个词是“machines”。
+
+```mermaid
+flowchart TD
+    A["解码器接收编码矩阵 C<br/>Decoder Receives Encoded Matrix C"]:::celloutput --> B["起始符&quot;&lt;begin&gt;&quot;初始化解码器<br/>Decoder Start with &lt;begin&gt; Token"]:::celloutput
+
+    B --> C["Masked Self-Attention on<br/>&lt;begin&gt; Token<br/>对&lt;begin&gt;做掩码自注意力"]:::celloutput
+    C --> D["生成交叉注意力查询Q_decoder<br/>Generate Query Q_decoder for Cross Attention"]:::celloutput
+    D --> E["与编码器C做交叉注意力<br/>Cross-Attention with Encoder Matrix C<br/>(K_我, K_爱, K_机器)"]:::celloutput
+    E --> F["计算“I”注意力分数<br/>Attention Score Calculation for 'I'"]:::celloutput
+    F --> G["预测输出“I”<br/>Prediction: 'I'"]:::celloutput
+    G --> H["当前序列<br/>Output Sequence [&lt;begin&gt;, I]"]:::celloutput
+
+    H --> I["Masked Self-Attention on<br/>[&lt;begin&gt;, I]<br/>对 [&lt;begin&gt;, I] 掩码自注意力"]:::celloutput
+    I --> J["生成Q_decoder用于交叉注意力<br/>Generate Query Q_decoder for Cross Attention"]:::celloutput
+    J --> K["与编码器C做交叉注意力<br/>Cross-Attention with Encoder Matrix C<br/>(K_我, K_爱, K_机器)"]:::celloutput
+    K --> L["计算“love”注意力分数<br/>Attention Score Calculation for 'love'"]
+    L --> M["预测输出“love”<br/>Prediction: 'love'"]:::celloutput
+    M --> N["当前序列<br/>Output Sequence [&lt;begin&gt;, I, love]"]:::celloutput
+
+    N --> O["Masked Self-Attention on<br/>[&lt;begin&gt;, I, love]<br/>对 [&lt;begin&gt;, I, love] 掩码自注意力"]:::celloutput
+    O --> P["生成Q_decoder用于交叉注意力<br/>Generate Query Q_decoder for Cross Attention"]:::celloutput
+    P --> Q["与编码器C做交叉注意力<br/>Cross-Attention with Encoder Matrix C<br/>(K_我, K_爱, K_机器)"]:::celloutput
+    Q --> R["计算“machines”注意力分数<br/>Attention Score Calculation for 'machines'"]:::celloutput
+    R --> S["预测输出“machines”<br/>Prediction: 'machines'"]:::celloutput
+    S --> T["最终序列<br/>Final Output Sequence [&lt;begin&gt;, I, love, machines]"]:::celloutput
+
+    T --> U["最终翻译结果<br/>Final Translation: “I love machines”"]:::celloutput
+
+    style A fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+    style B fill:#ffe599,stroke:#cab200,stroke-width:2px
+    style C fill:#ffd6af,stroke:#d18509,stroke-width:2px
+    style D fill:#f6e0cc,stroke:#ea8600,stroke-width:2px
+    style E fill:#c9ffd1,stroke:#179a3d,stroke-width:2px
+    style F fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+    style G fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style H fill:#d1f0c9,stroke:#179a3d,stroke-width:2px
+
+    style I fill:#ffd6af,stroke:#d18509,stroke-width:2px
+    style J fill:#f6e0cc,stroke:#ea8600,stroke-width:2px
+    style K fill:#c9ffd1,stroke:#179a3d,stroke-width:2px
+    style L fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+    style M fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style N fill:#d1f0c9,stroke:#179a3d,stroke-width:2px
+
+    style O fill:#ffd6af,stroke:#d18509,stroke-width:2px
+    style P fill:#f6e0cc,stroke:#ea8600,stroke-width:2px
+    style Q fill:#c9ffd1,stroke:#179a3d,stroke-width:2px
+    style R fill:#fff0f0,stroke:#d75d5d,stroke-width:2px
+    style S fill:#f3e2ff,stroke:#c981f5,stroke-width:2px
+    style T fill:#d1f0c9,stroke:#179a3d,stroke-width:2px
+
+    style U fill:#d6eaff,stroke:#489fd6,stroke-width:2px
+
+	classDef celloutput font-weight:bold,color:#111,fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
+```
+
 
 #### **结束生成**
 
@@ -2039,7 +2353,7 @@ except KeyError as e:
 
 ### 大模型技术核心术语表 (Glossary)
 
-#### **A**
+**A**
 
 * **Agent (智能体)**
     一个具备自主性、能够感知环境、进行规划并执行动作以达成目标的AI系统。它能调用工具与外部世界交互，从被动的应答者进化为主动的“行动者”。
@@ -2050,7 +2364,7 @@ except KeyError as e:
 * **Artificial Intelligence (AI / 人工智能)**
     计算机科学的一个分支，旨在创造能够模仿、扩展和超越人类智能的机器或系统。其发展经历了符号主义、连接主义等多个阶段。
 
-#### **C**
+**C**
 
 * **Chunking (分块)**
     在检索增强生成（RAG）中，将长文档分割成更小、更易于管理和检索的语义片段的过程。
@@ -2061,7 +2375,7 @@ except KeyError as e:
 * **ControlNet**
     一种能对扩散模型（Diffusion Model）进行精准空间控制的神经网络结构。它通过接收额外的条件输入（如边缘图、姿态骨架等），来指导图像的生成过程，实现对构图和内容的精确控制。
 
-#### **D**
+**D**
 
 * **Deep Learning (深度学习)**
     机器学习的一个子领域，利用包含多个处理层的深度神经网络（DNN）从海量数据中学习复杂的模式和特征。它是当前大语言模型的技术基石。
@@ -2069,12 +2383,12 @@ except KeyError as e:
 * **Diffusion Model (扩散模型)**
     当前最先进的图像生成模型之一。其核心原理包含两个过程：一个“前向过程”不断向图像添加噪声直至其变为纯噪声，一个“反向过程”学习从纯噪声中逐步去噪，最终恢复出清晰的图像。
 
-#### **E**
+**E**
 
 * **Embedding (嵌入)**
     将离散的输入（如单词、句子、图像块）转换为连续、稠密的低维向量的过程。这是让计算机能够“理解”和处理现实世界信息的关键一步。
 
-#### **F**
+**F**
 
 * **Fine-Tuning (FT / 微调)**
     在已经预训练好的模型基础上，使用特定领域或任务的数据集继续进行训练，以使模型的能力适应新需求的過程。这是实现模型“专业化”的关键技术。
@@ -2082,12 +2396,12 @@ except KeyError as e:
 * **Function Calling (函数调用)**
     见 **Tool Use**。
 
-#### **G**
+**G**
 
 * **GPT (Generative Pre-trained Transformer)**
     由OpenAI开发的著名大语言模型系列。它代表了一种技术范式：首先在海量数据上进行“生成式预训练”，然后再针对具体任务进行微调或通过提示进行使用。
 
-#### **I**
+**I**
 
 * **In-Context Learning (ICL / 上下文学习)**
     大语言模型的一项核心能力，指模型能够在不更新自身权重的情况下，仅通过在提示（Prompt）中提供少量任务示例（shots），就能学会并执行该任务。
@@ -2095,7 +2409,7 @@ except KeyError as e:
 * **Instruction Tuning (指令微调)**
     一种特殊的微调方法，使用大量由“指令”和“期望输出”构成的数据对来训练模型。其目的是让模型更好地理解并遵循人类的指令。
 
-#### **L**
+**L**
 
 * **Large Language Model (LLM / 大语言模型)**
     指参数规模通常达到数十亿甚至万亿级别的超大型语言模型。它们通过在海量文本数据上进行预训练，获得了强大的自然语言理解和生成能力。
@@ -2103,12 +2417,12 @@ except KeyError as e:
 * **LoRA (Low-Rank Adaptation / 低秩适配)**
     一种非常流行的参数高效微调（PEFT）技术。它通过冻结预训练模型的原始权重，并在其旁边增加和训练微小的“低秩”矩阵（适配器），来高效地调整模型行为，极大地降低了微调的计算和存储成本。
 
-#### **M**
+**M**
 
 * **MVP (Minimum Viable Product / 最小可行产品)**
     在产品开发中，用最少的资源和时间开发出的包含核心功能、能够满足早期用户需求并进行市场验证的简化版产品。这是敏捷开发中的一个重要概念。
 
-#### **P**
+**P**
 
 * **Parameter (参数)**
     在神经网络中，指模型在训练过程中学习到的权重（weights）和偏置（biases）。参数的数量（规模）是衡量大模型容量和复杂度的关键指标。
@@ -2125,12 +2439,12 @@ except KeyError as e:
 * **Prompt Engineering (提示工程)**
     设计、构建和优化输入文本（即“提示”），以最大限度地引导大语言模型生成准确、相关和高质量输出的一门艺术和科学。
 
-#### **Q**
+**Q**
 
 * **QLoRA**
     LoRA的一种进一步优化版本，通过在模型加载时进行更低精度的量化（4-bit）和引入其他优化技术，进一步显著降低了微调所需的显存。
 
-#### **R**
+**R**
 
 * **RAG (Retrieval-Augmented Generation / 检索增强生成)**
     一种将信息检索系统与大语言模型生成器相结合的架构。在生成答案前，系统会先从一个外部知识库（如向量数据库）中检索相关信息，并将其作为上下文提供给模型，以提高答案的准确性和时效性，并减少“幻觉”。
@@ -2138,12 +2452,12 @@ except KeyError as e:
 * **ReAct (Reason and Act / 思考与行动)**
     一种强大的智能体（Agent）框架。它引导模型交替生成“思考”（Reasoning，对问题进行分解和规划）和“行动”（Acting，选择并调用工具）的轨迹，从而解决复杂问题。
 
-#### **S**
+**S**
 
 * **Self-Attention (自注意力机制)**
     Transformer架构的核心组件。它允许模型在处理序列中的一个元素时，能够权衡并关注序列中所有其他元素对该元素的重要性，从而有效地捕捉长距离依赖关系。
 
-#### **T**
+**T**
 
 * **Tool Use (工具使用)**
     也常被称为“函数调用”（Function Calling），指大模型作为智能体（Agent）的核心，能够调用外部的API或函数来获取实时信息（如天气、股价）、执行计算或操作其他软件的能力，极大地扩展了模型的边界。
@@ -2151,7 +2465,7 @@ except KeyError as e:
 * **Transformer**
     一种于2017年被提出的深度学习模型架构，现已成为几乎所有主流大语言模型的基础。它完全基于自注意力机制，特别擅长处理序列数据。
 
-#### **V**
+**V**
 
 * **Vector Database (向量数据库)**
     专门为存储、索引和高效查询高维向量数据而设计的数据库。在RAG、语义搜索等AI应用中，它被用来快速找到与给定查询向量最相似的向量。
@@ -2159,7 +2473,7 @@ except KeyError as e:
 * **ViT (Vision Transformer / 视觉Transformer)**
     将Transformer架构成功应用于计算机视觉领域的模型。它通过将图像分割成一系列小块（patches）并将其作为序列输入，实现了与传统卷积网络（CNN）相媲美甚至超越的性能。
 
-#### **Z**
+ **Z**
 
 * **Zero-Shot Learning (零样本学习)**
     指模型在没有见过任何特定任务的训练样本的情况下，直接执行该任务的能力。例如，一个强大的视觉语言模型可以直接对它从未被训练过来分类的物体进行分类。
