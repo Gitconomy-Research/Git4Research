@@ -1,0 +1,86 @@
+<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.step-box { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1.5; rx: 8; }
+.actor-box { fill: #fff; stroke-width: 2; rx: 10; }
+.step-text { font-size: 14px; font-weight: bold; fill: #343a40; }
+.desc-text { font-size: 12px; fill: #6c757d; }
+.flow-arrow { stroke: #adb5bd; stroke-width: 2; marker-end: url(#arrowhead-flow); }
+.feedback-loop { stroke: #e74c3c; stroke-width: 2; marker-end: url(#arrowhead-feedback); stroke-dasharray: 5 3; }
+.final-box { fill: #eafaf1; stroke: #a3e4d7; }
+.final-text { font-weight: bold; fill: #0e6655; }
+</style>
+<defs>
+<marker id="arrowhead-flow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#adb5bd" />
+</marker>
+<marker id="arrowhead-feedback" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c" />
+</marker>
+</defs>
+
+<!-- Actors -->
+<rect x="50" y="50" width="120" height="50" class="actor-box" stroke="#3498db"/>
+<text x="110" y="80" text-anchor="middle" class="step-text" fill="#3498db">学生</text>
+
+<rect x="340" y="50" width="120" height="50" class="actor-box" stroke="#f39c12"/>
+<text x="400" y="80" text-anchor="middle" class="step-text" fill="#f39c12">生成式AI</text>
+
+<rect x="630" y="50" width="120" height="50" class="actor-box" stroke="#2ecc71"/>
+<text x="690" y="80" text-anchor="middle" class="step-text" fill="#2ecc71">开源社区</text>
+
+<!-- Step 1 -->
+<g transform="translate(50, 150)">
+    <rect width="250" height="60" class="step-box"/>
+    <text x="125" y="25" text-anchor="middle" class="step-text">1. 提出具体问题</text>
+    <text x="125" y="48" text-anchor="middle" class="desc-text">需要对项目有初步理解</text>
+</g>
+<line x1="175" y1="210" x2="175" y2="240" class="flow-arrow"/>
+
+<!-- Interaction Student -> AI -->
+<line x1="175" y1="100" x2="380" y2="100" class="flow-arrow"/>
+
+<!-- Step 2 -->
+<g transform="translate(275, 240)">
+    <rect width="250" height="60" class="step-box"/>
+    <text x="125" y="25" text-anchor="middle" class="step-text">2. 生成代码草稿</text>
+    <text x="125" y="48" text-anchor="middle" class="desc-text">AI作为起点，而非终点</text>
+</g>
+<line x1="175" y1="270" x2="275" y2="270" class="flow-arrow"/>
+
+<!-- Step 3 -->
+<g transform="translate(50, 330)">
+    <rect width="250" height="60" class="step-box"/>
+    <text x="125" y="25" text-anchor="middle" class="step-text">3. 理解、整合与测试</text>
+    <text x="125" y="48" text-anchor="middle" class="desc-text">学生对代码质量负责</text>
+</g>
+<line x1="300" y1="360" x2="500" y2="360" class="flow-arrow"/>
+
+<!-- Step 4 -->
+<g transform="translate(500, 330)">
+    <rect width="250" height="60" class="step-box"/>
+    <text x="125" y="25" text-anchor="middle" class="step-text">4. 提交拉取请求(PR)</text>
+    <text x="125" y="48" text-anchor="middle" class="desc-text">将工作成果公开化</text>
+</g>
+<line x1="625" y1="390" x2="625" y2="420" class="flow-arrow"/>
+
+<!-- Interaction PR -> Community -->
+<line x1="625" y1="330" x2="625" y2="100" class="flow-arrow"/>
+
+<!-- Step 5 -->
+<g transform="translate(500, 420)">
+    <rect width="250" height="60" class="step-box"/>
+    <text x="125" y="25" text-anchor="middle" class="step-text">5. 公开同行评审</text>
+    <text x="125" y="48" text-anchor="middle" class="desc-text">接受全球同伴与导师的检验</text>
+</g>
+
+<!-- Feedback Loop -->
+<path d="M 500 450 C 400 450, 400 360, 300 360" class="feedback-loop" fill="none"/>
+<text x="350" y="420" class="desc-text" fill="#e74c3c">6. 回应反馈，迭代修改</text>
+
+<!-- Final Step -->
+<g transform="translate(275, 510)">
+    <rect width="250" height="60" class="step-box final-box"/>
+    <text x="125" y="35" text-anchor="middle" class="step-text final-text">AI成为智能伙伴，而非作弊工具</text>
+</g>
+
+</svg>

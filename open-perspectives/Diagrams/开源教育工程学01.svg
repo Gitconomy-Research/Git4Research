@@ -1,0 +1,47 @@
+<svg width="800" height="300" viewBox="0 0 800 300" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.arrow { stroke: #999; stroke-width: 2; marker-end: url(#arrowhead); }
+.line { stroke: #ccc; stroke-width: 1; stroke-dasharray: 5 5; }
+.box { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1.5; rx: 8; }
+.title { font-size: 16px; font-weight: bold; fill: #343a40; }
+.desc { font-size: 12px; fill: #6c757d; }
+.state-text { font-size: 14px; font-weight: bold; }
+</style>
+<defs>
+<marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#999" />
+</marker>
+</defs>
+<line x1="50" y1="150" x2="750" y2="150" class="arrow" />
+<line x1="266" y1="100" x2="266" y2="200" class="line" />
+<line x1="532" y1="100" x2="532" y2="200" class="line" />
+
+<g transform="translate(60, 100)">
+    <rect width="180" height="100" class="box" />
+    <text x="90" y="35" text-anchor="middle" class="title">脆弱 (Fragile)</text>
+    <text x="90" y="65" text-anchor="middle" class="desc">
+        <tspan>在压力和混乱下</tspan>
+        <tspan x="90" dy="1.4em">表现恶化，容易崩溃</tspan>
+    </text>
+</g>
+<g transform="translate(310, 100)">
+    <rect width="180" height="100" class="box" />
+    <text x="90" y="35" text-anchor="middle" class="title">韧性 (Resilient)</text>
+    <text x="90" y="65" text-anchor="middle" class="desc">
+        <tspan>能抵抗冲击</tspan>
+        <tspan x="90" dy="1.4em">并恢复到初始状态</tspan>
+    </text>
+</g>
+<g transform="translate(560, 100)">
+    <rect width="180" height="100" class="box" />
+    <text x="90" y="35" text-anchor="middle" class="title">反脆弱 (Antifragile)</text>
+    <text x="90" y="65" text-anchor="middle" class="desc">
+        <tspan>从冲击和混乱中受益</tspan>
+        <tspan x="90" dy="1.4em">变得更加强大</tspan>
+    </text>
+</g>
+
+<text x="150" y="80" text-anchor="middle" class="state-text" fill="#e74c3c">传统教育产出</text>
+<text x="650" y="80" text-anchor="middle" class="state-text" fill="#27ae60">未来教育目标</text>
+
+</svg>

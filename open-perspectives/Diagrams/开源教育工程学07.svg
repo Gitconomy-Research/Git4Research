@@ -1,0 +1,61 @@
+<svg width="800" height="550" viewBox="0 0 800 550" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.stage-title { font-size: 16px; font-weight: bold; }
+.bloom-level { font-size: 12px; font-style: italic; fill: #555; }
+.action-text { font-size: 13px; fill: #333; }
+.arrow { fill: #3498DB; }
+.u-path { stroke: #3498DB; stroke-width: 3; fill: none; stroke-dasharray: 10, 5; }
+.principle { font-size: 14px; font-weight: bold; fill: #E67E22; }
+</style>
+<path class="u-path" d="M150,100 C150,300 150,400 400,400 C650,400 650,300 650,100" />
+<!-- Stage 1 -->
+<g transform="translate(100, 80)">
+<text x="0" y="0" class="stage-title" fill="#2980B9">阶段一：感知与解构</text>
+<text x="0" y="20" class="bloom-level">布鲁姆层次: 记忆 → 理解 → 分析</text>
+<foreignObject x="0" y="40" width="180" height="100">
+<p xmlns="http://www.w3.org/1999/xhtml" class="action-text">
+成为社区“人类学家”，阅读文档，记住规范。
+</p>
+</foreignObject>
+<text x="0" y="100" class="principle">应用「第一性原理」</text>
+</g>
+<!-- Stage 2 -->
+<g transform="translate(260, 420)">
+<text x="0" y="0" class="stage-title" text-anchor="middle" fill="#16A085">阶段二：沉浸与构想</text>
+<text x="0" y="20" class="bloom-level" text-anchor="middle">布鲁姆层次: 分析 → 创造(萌芽)</text>
+<foreignObject x="-90" y="35" width="180" height="100">
+<p xmlns="http://www.w3.org/1999/xhtml" class="action-text" style="text-align:center;">
+连接内在动机，寻找“为何解决”，构想本质方案。
+</p>
+</foreignObject>
+<text x="0" y="90" text-anchor="middle" class="principle">U型理论谷底: 自然流现</text>
+</g>
+<!-- Stage 3 -->
+<g transform="translate(520, 80)">
+<text x="0" y="0" class="stage-title" fill="#27AE60">阶段三：原型与行动</text>
+<text x="0" y="20" class="bloom-level">布鲁姆层次: 应用 → 分析 → 评价</text>
+<foreignObject x="0" y="40" width="180" height="100">
+<p xmlns="http://www.w3.org/1999/xhtml" class="action-text">
+快速构建最小可行贡献(PR)，在“做”中学。
+</p>
+</foreignObject>
+<text x="0" y="100" class="principle">践行「知行合一」</text>
+</g>
+<!-- Stage 4 -->
+<g transform="translate(400, 50)">
+<text x="0" y="0" class="stage-title" text-anchor="middle" fill="#D35400">阶段四：融合与创造</text>
+<text x="0" y="20" class="bloom-level" text-anchor="middle">布鲁姆层次: 评价 → 创造</text>
+<foreignObject x="-90" y="35" width="180" height="100">
+<p xmlns="http://www.w3.org/1999/xhtml" class="action-text" style="text-align:center;">
+融合社区反馈，迭代完善，实现高阶价值创造。
+</p>
+</foreignObject>
+</g>
+<!-- Arrows -->
+<g transform="translate(240, 250) rotate(45)">
+<path d="M-15,0 L15,0 L10,-5 M15,0 L10,5" stroke="#3498DB" stroke-width="2" fill="none"/>
+</g>
+<g transform="translate(560, 250) rotate(-45)">
+<path d="M-15,0 L15,0 L10,-5 M15,0 L10,5" stroke="#3498DB" stroke-width="2" fill="none"/>
+</g>
+</svg>

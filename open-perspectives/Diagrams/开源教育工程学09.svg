@@ -1,0 +1,57 @@
+<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.platform-core { fill: #f4f6f7; stroke: #aab7b8; stroke-width: 2; }
+.platform-text { font-size: 18px; font-weight: bold; fill: #212f3d; }
+.actor-node { stroke-width: 2; }
+.actor-text { font-size: 14px; font-weight: bold; }
+.flow-line { stroke-width: 1.5; marker-end: url(#arrowhead-flow); stroke-dasharray: 4 2; }
+.flow-text { font-size: 11px; }
+</style>
+<defs>
+<marker id="arrowhead-flow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" />
+</marker>
+</defs>
+
+<rect x="250" y="250" width="300" height="100" rx="15" class="platform-core"/>
+<text x="400" y="280" text-anchor="middle" class="platform-text">教育开发者平台</text>
+<text x="400" y="305" text-anchor="middle" font-size="12px" fill="#566573">(EduDevRel as a Service)</text>
+<text x="400" y="325" text-anchor="middle" font-size="12px" fill="#566573">体验编排 &amp; 价值网络</text>
+
+<g>
+    <circle cx="150" cy="150" r="40" fill="#eafaf1" stroke="#a3e4d7" class="actor-node"/>
+    <text x="150" y="155" text-anchor="middle" class="actor-text" fill="#0e6655">学生</text>
+</g>
+<g>
+    <circle cx="400" cy="100" r="40" fill="#e8daef" stroke="#c39bd3" class="actor-node"/>
+    <text x="400" y="105" text-anchor="middle" class="actor-text" fill="#5b2c6f">教师</text>
+</g>
+<g>
+    <circle cx="650" cy="150" r="40" fill="#d4e6f1" stroke="#a9cce3" class="actor-node"/>
+    <text x="650" y="155" text-anchor="middle" class="actor-text" fill="#1b4f72">企业</text>
+</g>
+<g>
+    <circle cx="150" cy="450" r="40" fill="#fdedec" stroke="#f1948a" class="actor-node"/>
+    <text x="150" y="455" text-anchor="middle" class="actor-text" fill="#b03a2e">开源社区</text>
+</g>
+<g>
+    <circle cx="650" cy="450" r="40" fill="#fdebd0" stroke="#f5b041" class="actor-node"/>
+    <text x="650" y="455" text-anchor="middle" class="actor-text" fill="#af691a">开源组织</text>
+</g>
+
+<path d="M190,165 L260,255" class="flow-line" stroke="#0e6655"/>
+<text x="200" y="220" class="flow-text" fill="#0e6655">贡献/学习数据</text>
+<path d="M260,345 L190,435" class="flow-line" stroke="#b03a2e"/>
+<text x="200" y="380" class="flow-text" fill="#b03a2e">真实项目/任务</text>
+
+<path d="M400,140 L400,250" class="flow-line" stroke="#5b2c6f"/>
+<text x="410" y="200" class="flow-text" fill="#5b2c6f">OER/课程模块</text>
+
+<path d="M610,165 L540,255" class="flow-line" stroke="#1b4f72"/>
+<text x="580" y="220" class="flow-text" fill="#1b4f72">导师/实习机会</text>
+<path d="M540,345 L610,435" class="flow-line" stroke="#af691a"/>
+<text x="580" y="380" class="flow-text" fill="#af691a">OSPO支持/活动</text>
+
+<path d="M280,350 C180,350 180,190 280,190" class="flow-line" stroke="#1abc9c" fill="none"/>
+<text x="190" y="270" class="flow-text" fill="#1abc9c">能力认证/证书</text>
+</svg>

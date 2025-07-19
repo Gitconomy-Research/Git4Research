@@ -1,0 +1,47 @@
+<svg width="900" height="600" viewBox="0 0 900 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.main-bone { stroke: #34495e; stroke-width: 3; marker-end: url(#arrowhead-bone); }
+.sub-bone { stroke: #34495e; stroke-width: 2; }
+.bone-label { font-size: 16px; font-weight: bold; fill: #2c3e50; }
+.cause-text { font-size: 13px; fill: #34495e; }
+.head-text { font-size: 20px; font-weight: bold; fill: #c0392b; }
+</style>
+<defs>
+<marker id="arrowhead-bone" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#34495e" />
+</marker>
+</defs>
+<!-- Main Bone -->
+<line x1="50" y1="300" x2="750" y2="300" class="main-bone"/>
+<rect x="750" y="270" width="140" height="60" rx="5" fill="#ecf0f1" stroke="#c0392b" stroke-width="2"/>
+<text x="820" y="305" text-anchor="middle" class="head-text">成本效益困境</text>
+
+<!-- Bone 1: Student -->
+<line x1="150" y1="150" x2="300" y2="300" class="sub-bone"/>
+<text x="140" y="140" text-anchor="end" class="bone-label">学生因素</text>
+<text x="155" y="170" class="cause-text">畏难情绪，缺乏自信</text>
+<text x="155" y="200" class="cause-text">时间冲突，学业压力</text>
+<text x="155" y="230" class="cause-text">动力不足，目标模糊</text>
+
+<!-- Bone 2: University -->
+<line x1="150" y1="450" x2="300" y2="300" class="sub-bone"/>
+<text x="140" y="470" text-anchor="end" class="bone-label">高校因素</text>
+<text x="155" y="380" class="cause-text">师资匮乏，课程陈旧</text>
+<text x="155" y="410" class="cause-text">评价体系单一（唯分数论）</text>
+<text x="155" y="440" class="cause-text">IP政策模糊，缺乏制度保障</text>
+
+<!-- Bone 3: Enterprise -->
+<line x1="550" y1="150" x2="400" y2="300" class="sub-bone"/>
+<text x="560" y="140" class="bone-label">企业因素</text>
+<text x="555" y="170" class="cause-text">活动驱动，缺乏长期主义</text>
+<text x="555" y="200" class="cause-text">导师资源投入不足</text>
+<text x="555" y="230" class="cause-text">项目任务质量参差不齐</text>
+
+<!-- Bone 4: Ecosystem -->
+<line x1="550" y1="450" x2="400" y2="300" class="sub-bone"/>
+<text x="560" y="470" class="bone-label">生态因素</text>
+<text x="555" y="380" class="cause-text">产学研协同机制不畅</text>
+<text x="555" y="410" class="cause-text">社区文化对新人不够友好</text>
+<text x="555" y="440" class="cause-text">价值认可链条断裂</text>
+
+</svg>

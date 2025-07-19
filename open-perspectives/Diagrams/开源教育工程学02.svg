@@ -1,0 +1,45 @@
+<svg width="800" height="500" viewBox="0 0 800 500" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.axis-label { font-size: 14px; font-weight: bold; fill: #333; }
+.quad-label { font-size: 18px; font-weight: bold; }
+.point-label { font-size: 14px; font-weight: bold; }
+.item-text { font-size: 12px; fill: #555; }
+.arrow { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }
+.line { stroke: #ccc; stroke-width: 2; }
+</style>
+<defs>
+<marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+</marker>
+</defs>
+
+<line x1="100" y1="250" x2="700" y2="250" class="line" />
+<line x1="400" y1="50" x2="400" y2="450" class="line" />
+
+<text x="710" y="255" class="axis-label">参与成本 (Cost)</text>
+<text x="395" y="40" text-anchor="end" class="axis-label" transform="rotate(-90, 400, 40)">参与效益 (Benefit)</text>
+<text x="250" y="270" text-anchor="middle" class="item-text">低成本</text>
+<text x="550" y="270" text-anchor="middle" class="item-text">高成本</text>
+<text x="380" y="150" text-anchor="end" class="item-text">高收益</text>
+<text x="380" y="350" text-anchor="end" class="item-text">低收益</text>
+
+<text x="250" y="80" class="quad-label" fill="#2ECC71">理想区 (Ideal Zone)</text>
+<text x="550" y="80" class="quad-label" fill="#F39C12">价值陷阱 (Value Trap)</text>
+<text x="250" y="420" class="quad-label" fill="#3498DB">潜力区 (Potential Zone)</text>
+<text x="550" y="420" class="quad-label" fill="#E74C3C">困境区 (Dilemma Zone)</text>
+
+<circle cx="580" cy="370" r="10" fill="#E74C3C"/>
+<rect x="595" y="340" width="160" height="60" rx="5" fill="#FFF" stroke="#E74C3C" stroke-width="1.5"/>
+<text x="605" y="360" class="point-label">当前师生现状</text>
+<text x="605" y="380" class="item-text">高学习曲线、时间冲突</text>
+<text x="605" y="395" class="item-text">回报不明确、缺乏指导</text>
+
+<circle cx="220" cy="120" r="10" fill="#2ECC71"/>
+<rect x="235" y="90" width="150" height="60" rx="5" fill="#FFF" stroke="#2ECC71" stroke-width="1.5"/>
+<text x="245" y="110" class="point-label">期望达成的状态</text>
+<text x="245" y="130" class="item-text">低参与门槛、AI辅助</text>
+<text x="245" y="145" class="item-text">明确的学业与职业回报</text>
+
+<path d="M 570,360 C 450,350 350,150 230,130" stroke="#3498DB" stroke-width="3" stroke-dasharray="8 4" fill="none"/>
+<text x="400" y="220" class="axis-label" fill="#3498DB">通过系统性框架实现转变</text>
+</svg>

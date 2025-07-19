@@ -1,0 +1,60 @@
+<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.layer-rect { rx: 15; ry: 15; stroke-width: 2; }
+.layer-text { font-size: 20px; font-weight: bold; }
+.desc-text { font-size: 14px; }
+.participant-text { font-size: 12px; font-weight: bold; }
+</style>
+<!-- Outermost Layer: The Discipline -->
+<g>
+    <rect x="50" y="50" width="700" height="500" class="layer-rect" fill="#eafaf1" stroke="#a3e4d7"/>
+    <text x="400" y="90" text-anchor="middle" class="layer-text" fill="#0e6655">开源教育工程学 (Open Source Education Engineering)</text>
+    <text x="400" y="120" text-anchor="middle" class="desc-text" fill="#117a65">设计、构建、运营和优化开源学习生态的系统性方法</text>
+</g>
+
+<!-- Layer 2: The Paradigm -->
+<g>
+    <rect x="100" y="150" width="600" height="380" class="layer-rect" fill="#e8f6f3" stroke="#a2d9ce"/>
+    <text x="400" y="185" text-anchor="middle" class="layer-text" fill="#148f77">核心教学法：生成式教育 x 开源工程学</text>
+    <text x="400" y="210" text-anchor="middle" class="desc-text" fill="#16a085">“第二课堂”的“操作系统”</text>
+</g>
+
+<!-- Layer 3: The Framework & Method -->
+<g>
+    <rect x="150" y="240" width="500" height="260" class="layer-rect" fill="#d4e6f1" stroke="#a9cce3"/>
+    <text x="280" y="275" text-anchor="middle" class="layer-text" fill="#1b4f72">E5框架 (硬件)</text>
+    <text x="520" y="275" text-anchor="middle" class="layer-text" fill="#5b2c6f">U-First方法 (软件)</text>
+    <line x1="400" y1="250" x2="400" y2="490" stroke-dasharray="5 5" stroke="#85c1e9"/>
+</g>
+
+<!-- Layer 4: The Platform -->
+<g>
+    <rect x="200" y="300" width="400" height="170" class="layer-rect" fill="#f4ecf7" stroke="#d7bde2"/>
+    <text x="400" y="335" text-anchor="middle" class="layer-text" fill="#6c3483">未来基础设施：教育开发者平台</text>
+    <text x="400" y="360" text-anchor="middle" class="desc-text" fill="#884ea0">理论体系的终极实现形态</text>
+</g>
+
+<!-- Core Participants -->
+<g>
+    <circle cx="280" cy="420" r="25" fill="#fdedec" stroke="#f1948a"/>
+    <text x="280" y="425" text-anchor="middle" class="participant-text" fill="#b03a2e">学生</text>
+</g>
+<g>
+    <circle cx="340" cy="420" r="25" fill="#fdedec" stroke="#f1948a"/>
+    <text x="340" y="425" text-anchor="middle" class="participant-text" fill="#b03a2e">教师</text>
+</g>
+<g>
+    <circle cx="400" cy="420" r="25" fill="#fdedec" stroke="#f1948a"/>
+    <text x="400" y="425" text-anchor="middle" class="participant-text" fill="#b03a2e">企业</text>
+</g>
+<g>
+    <circle cx="460" cy="420" r="25" fill="#fdedec" stroke="#f1948a"/>
+    <text x="460" y="425" text-anchor="middle" class="participant-text" fill="#b03a2e">社区</text>
+</g>
+<g>
+    <circle cx="520" cy="420" r="25" fill="#fdedec" stroke="#f1948a"/>
+    <text x="520" y="425" text-anchor="middle" class="participant-text" fill="#b03a2e">开源组织</text>
+</g>
+
+
+</svg>

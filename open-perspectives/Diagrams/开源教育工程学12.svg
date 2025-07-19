@@ -1,0 +1,122 @@
+<svg width="1000" height="600" viewBox="0 0 1000 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.board-bg { fill: #fdfefe; }
+.column { fill: #f4f6f7; stroke: #e5e8e8; stroke-width: 1; rx: 12; }
+.column-header { font-size: 20px; font-weight: bold; fill: #2c3e50; }
+.card { fill: white; stroke: #dfe4e6; stroke-width: 1.5; rx: 8; }
+.tag { rx: 4; }
+.tag-text { font-size: 11px; font-weight: bold; fill: white; }
+.card-title { font-size: 16px; font-weight: bold; fill: #34495e; }
+.card-content { font-size: 13px; fill: #566573; }
+</style>
+
+<g transform="translate(50, 30)">
+    <rect width="280" height="540" class="column"/>
+    <text x="140" y="45" text-anchor="middle" class="column-header">大学 (University)</text>
+
+    <g transform="translate(20, 80)">
+        <rect width="240" height="150" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#0052cc;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">制度保障</text>
+        <text x="15" y="55" class="card-title">设立开源项目办公室 (OSPO)</text>
+        <text class="card-content">
+            <tspan x="25" y="80">• 制定全校开源战略与IP政策。</tspan>
+            <tspan x="25" y="100">• 对接外部基金会与企业资源。</tspan>
+            <tspan x="25" y="120">• 为师生项目合规性与可持续性护航。</tspan>
+        </text>
+    </g>
+
+    <g transform="translate(20, 250)">
+        <rect width="240" height="150" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#4c9aff;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">教学融合</text>
+        <text x="15" y="55" class="card-title">构建“社-课-赛-证”体系</text>
+        <text class="card-content">
+            <tspan x="25" y="80"><tspan font-weight="bold">社:</tspan> 扶持学生开源社团。</tspan>
+            <tspan x="25" y="100"><tspan font-weight="bold">课:</tspan> 开设OSSE课程，改革学分认证。</tspan>
+            <tspan x="25" y="120"><tspan font-weight="bold">赛:</tspan> 组织或参与高水平开源竞赛。</tspan>
+            <tspan x="25" y="140"><tspan font-weight="bold">证:</tspan> 引入行业认可的能力认证。</tspan>
+        </text>
+    </g>
+
+     <g transform="translate(20, 420)">
+        <rect width="240" height="130" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#1d84a7;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">政策改革</text>
+        <text x="15" y="55" class="card-title">改革IP与学分认证政策</text>
+        <text class="card-content">
+            <tspan x="25" y="80">• 制定清晰、友好的开源IP政策。</tspan>
+            <tspan x="25" y="100">• 允许开源贡献转换为学分或毕业</tspan>
+            <tspan x="35" y="115">设计。</tspan>
+        </text>
+    </g>
+</g>
+
+<g transform="translate(360, 30)">
+    <rect width="280" height="540" class="column"/>
+    <text x="140" y="45" text-anchor="middle" class="column-header">企业/基金会 (Industry)</text>
+
+    <g transform="translate(20, 80)">
+        <rect width="240" height="130" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#d97008;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">生态投资</text>
+        <text x="15" y="55" class="card-title">投资“赋能型”项目</text>
+        <text class="card-content">
+            <tspan x="25" y="80">• 持续支持“校源行”、GSoC等项目。</tspan>
+            <tspan x="25" y="100">• 从一次性赞助转向长期生态建设。</tspan>
+        </text>
+    </g>
+
+    <g transform="translate(20, 230)">
+        <rect width="240" height="150" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#ef7700;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">人才培育</text>
+        <text x="15" y="55" class="card-title">投入真实导师与核心项目</text>
+        <text class="card-content">
+            <tspan x="25" y="80">• 激励资深工程师担任社区导师。</tspan>
+            <tspan x="25" y="100">• 开放具有真实商业价值的核心项目</tspan>
+            <tspan x="35" y="115">任务，而非边缘工作。</tspan>
+        </text>
+    </g>
+     <g transform="translate(20, 400)">
+        <rect width="240" height="110" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#f39c12;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">招聘导向</text>
+        <text x="15" y="55" class="card-title">在招聘中明确认可贡献</text>
+        <text class="card-content">
+            <tspan x="25" y="80">• 职位描述中欢迎附上GitHub Profile。</tspan>
+            <tspan x="25" y="100">• 面试中围绕开源项目深入交流。</tspan>
+        </text>
+    </g>
+</g>
+
+<g transform="translate(670, 30)">
+    <rect width="280" height="540" class="column"/>
+    <text x="140" y="45" text-anchor="middle" class="column-header">学生 (Student)</text>
+
+    <g transform="translate(20, 80)">
+        <rect width="240" height="130" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#5243aa;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">思维转变</text>
+        <text x="15" y="55" class="card-title">视开源为核心发展战略</text>
+        <text class="card-content">
+            <tspan x="25" y="80">认识到参与开源是与课程学习同等</tspan>
+            <tspan x="25" y="95">重要的、贯穿大学生涯的长期个人</tspan>
+            <tspan x="25" y="110">投资，而非简单的“课外活动”。</tspan>
+        </text>
+    </g>
+
+    <g transform="translate(20, 230)">
+        <rect width="240" height="150" class="card"/>
+        <rect x="15" y="15" width="70" height="20" class="tag" style="fill:#6554c0;"/>
+        <text x="50" y="29" text-anchor="middle" class="tag-text">主动行动</text>
+        <text x="15" y="55" class="card-title">主动策划与管理数字身份</text>
+        <text class="card-content">
+            <tspan x="25" y="80">从入学起，就有意识地将GitHub</tspan>
+            <tspan x="25" y="95">Profile作为最重要的专业作品集来</tspan>
+            <tspan x="25" y="110">建设和维护，记录每一个有价值的</tspan>
+            <tspan x="25" y="125">项目与代码。</tspan>
+        </text>
+    </g>
+</g>
+</svg>

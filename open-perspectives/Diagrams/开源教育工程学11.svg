@@ -1,0 +1,53 @@
+<svg width="800" height="500" viewBox="0 0 800 500" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<style>
+.flow-circle { stroke-width: 2; }
+.flow-text-title { font-size: 18px; font-weight: bold; }
+.flow-text-desc { font-size: 12px; }
+.flow-arrow { fill: #adb5bd; }
+.core-text { font-size: 16px; font-weight: bold; fill: #343a40; }
+</style>
+<g transform="translate(400, 250)">
+<circle r="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+<text y="-10" text-anchor="middle" class="core-text">价值流转与增值</text>
+<text y="15" text-anchor="middle" font-size="12px" fill="#6c757d">(Value Flow &amp; Amplification)</text>
+    <g transform="translate(0, -150)">
+        <circle r="50" fill="#eafaf1" stroke="#a3e4d7" class="flow-circle"/>
+        <text text-anchor="middle" y="-10" class="flow-text-title" fill="#0e6655">F</text>
+        <text text-anchor="middle" y="15" class="flow-text-desc" fill="#117a65">知识流转</text>
+    </g>
+    <g transform="translate(150, 0)">
+        <circle r="50" fill="#e8f6f3" stroke="#a2d9ce" class="flow-circle"/>
+        <text text-anchor="middle" y="-10" class="flow-text-title" fill="#148f77">L</text>
+        <text text-anchor="middle" y="15" class="flow-text-desc" fill="#16a085">学习者中心协作</text>
+    </g>
+    <g transform="translate(0, 150)">
+        <circle r="50" fill="#d4e6f1" stroke="#a9cce3" class="flow-circle"/>
+        <text text-anchor="middle" y="-10" class="flow-text-title" fill="#1b4f72">O</text>
+        <text text-anchor="middle" y="15" class="flow-text-desc" fill="#21618c">开放生态参与</text>
+    </g>
+    <g transform="translate(-150, 0)">
+        <circle r="50" fill="#f4ecf7" stroke="#d7bde2" class="flow-circle"/>
+        <text text-anchor="middle" y="-10" class="flow-text-title" fill="#6c3483">W</text>
+        <text text-anchor="middle" y="15" class="flow-text-desc" fill="#884ea0">有价值贡献与认可</text>
+    </g>
+
+    <defs>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" class="flow-arrow"/>
+        </marker>
+    </defs>
+    <g transform="translate(75, -75) rotate(45)">
+        <path d="M-15,0 L15,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    <g transform="translate(75, 75) rotate(135)">
+        <path d="M-15,0 L15,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    <g transform="translate(-75, 75) rotate(225)">
+        <path d="M-15,0 L15,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+    <g transform="translate(-75, -75) rotate(315)">
+        <path d="M-15,0 L15,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrowhead)"/>
+    </g>
+</g>
+
+</svg>
