@@ -17,7 +17,7 @@
 成为社区“人类学家”，阅读文档，记住规范。
 </p>
 </foreignObject>
-<text x="0" y="100" class="principle">应用「第一性原理」</text>
+<text x="0" y="110" class="principle">应用「第一性原理」</text>
 </g>
 <!-- Stage 2 -->
 <g transform="translate(380, 420)">
@@ -28,7 +28,7 @@
 连接内在动机，寻找“为何解决”，构想本质方案。
 </p>
 </foreignObject>
-<text x="0" y="90" text-anchor="middle" class="principle">U型理论谷底: 自然流现</text>
+<text x="0" y="100" text-anchor="middle" class="principle">U型理论谷底: 自然流现</text>
 </g>
 <!-- Stage 3 -->
 <g transform="translate(520, 80)">
@@ -39,7 +39,7 @@
 快速构建最小可行贡献(PR)，在“做”中学。
 </p>
 </foreignObject>
-<text x="0" y="100" class="principle">践行「知行合一」</text>
+<text x="0" y="110" class="principle">践行「知行合一」</text>
 </g>
 <!-- Stage 4 -->
 <g transform="translate(400, 50)">
