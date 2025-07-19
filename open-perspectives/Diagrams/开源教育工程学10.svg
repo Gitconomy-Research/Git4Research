@@ -1,4 +1,4 @@
-<svg width="800" height="550" viewBox="0 0 800 550" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="550" viewBox="0 0 800 550" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .axis-label { font-size: 14px; font-weight: bold; fill: #333; }
 .quad-label { font-size: 18px; font-weight: bold; }
@@ -6,6 +6,7 @@
 .arrow { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }
 .line { stroke: #ccc; stroke-width: 2; }
 .path-arrow { stroke: #e74c3c; stroke-width: 3; fill: none; stroke-dasharray: 8 4; marker-end: url(#arrowhead-path); }
+.license-text { font-size: 12px; font-family: sans-serif; fill: #444; }
 </style>
 <defs>
 <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -16,12 +17,8 @@
 </marker>
 </defs>
 
-<!-- Axes -->
-
 <line x1="50" y1="275" x2="750" y2="275" class="line" />
 <line x1="400" y1="50" x2="400" y2="500" class="line" />
-
-<!-- Axis Labels -->
 
 <text x="760" y="270" class="axis-label">关系深度</text>
 <text x="395" y="40" text-anchor="end" class="axis-label" transform="rotate(-90, 400, 50)">价值范畴</text>
@@ -29,8 +26,6 @@
 <text x="575" y="295" text-anchor="middle">长期 / 战略型</text>
 <text x="380" y="400" text-anchor="end">个体价值</text>
 <text x="380" y="150" text-anchor="end">生态价值</text>
-
-<!-- Quadrant 1: Bottom-Left -->
 
 <g transform="translate(125, 325)">
 <rect width="250" height="150" fill="#f39c12" fill-opacity="0.1"/>
@@ -44,8 +39,6 @@
 </foreignObject>
 </g>
 
-<!-- Quadrant 2: Top-Left -->
-
 <g transform="translate(125, 75)">
 <rect width="250" height="150" fill="#3498db" fill-opacity="0.1"/>
 <text x="125" y="30" text-anchor="middle" class="quad-label" fill="#3498db">人才管道</text>
@@ -57,8 +50,6 @@
 </p>
 </foreignObject>
 </g>
-
-<!-- Quadrant 3: Bottom-Right -->
 
 <g transform="translate(425, 325)">
 <rect width="250" height="150" fill="#9b59b6" fill-opacity="0.1"/>
@@ -72,8 +63,6 @@
 </foreignObject>
 </g>
 
-<!-- Quadrant 4: Top-Right -->
-
 <g transform="translate(425, 75)">
 <rect width="250" height="150" fill="#2ecc71" fill-opacity="0.1"/>
 <text x="125" y="30" text-anchor="middle" class="quad-label" fill="#2ecc71">生态共创</text>
@@ -86,8 +75,13 @@
 </foreignObject>
 </g>
 
-<!-- Path Arrow -->
-
 <path d="M250,400 C 350,300 450,200 550,150" class="path-arrow"/>
 <text x="450" y="270" fill="#e74c3c" font-weight="bold" transform="rotate(-30, 450, 270)">价值演进路径</text>
+
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="400" y="535" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
+
 </svg>

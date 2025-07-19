@@ -1,17 +1,37 @@
-<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .platform-core { fill: #f4f6f7; stroke: #aab7b8; stroke-width: 2; }
 .platform-text { font-size: 18px; font-weight: bold; fill: #212f3d; }
 .actor-node { stroke-width: 2; }
 .actor-text { font-size: 14px; font-weight: bold; }
-.flow-line { stroke-width: 1.5; marker-end: url(#arrowhead-flow); stroke-dasharray: 4 2; }
+.flow-line { stroke-width: 1.5; marker-end: url(#arrowhead-flow); stroke-dasharray: 4 2; fill: none; }
 .flow-text { font-size: 11px; }
+.ecosystem-loop {
+    stroke-width: 3;
+    stroke: #1abc9c;
+    stroke-dasharray: 10 5;
+    fill: none;
+}
+.loop-text {
+    font-size: 14px;
+    font-weight: bold;
+    fill: #16a085;
+    text-anchor: middle;
+}
+.license-text {
+    font-size: 12px;
+    font-family: sans-serif;
+    fill: #444;
+}
 </style>
 <defs>
 <marker id="arrowhead-flow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
 <path d="M 0 0 L 10 5 L 0 10 z" />
 </marker>
 </defs>
+
+<ellipse cx="400" cy="300" rx="320" ry="220" class="ecosystem-loop"/>
+<text x="400" y="545" class="loop-text">生态价值闭环 (Ecosystem Value Loop)</text>
 
 <rect x="250" y="250" width="300" height="100" rx="15" class="platform-core"/>
 <text x="400" y="280" text-anchor="middle" class="platform-text">教育开发者平台</text>
@@ -39,19 +59,31 @@
     <text x="650" y="455" text-anchor="middle" class="actor-text" fill="#af691a">开源组织</text>
 </g>
 
-<path d="M190,165 L260,255" class="flow-line" stroke="#0e6655"/>
-<text x="200" y="220" class="flow-text" fill="#0e6655">贡献/学习数据</text>
-<path d="M260,345 L190,435" class="flow-line" stroke="#b03a2e"/>
-<text x="200" y="380" class="flow-text" fill="#b03a2e">真实项目/任务</text>
+<g fill="#0e6655">
+    <path d="M185,169 L265,255" class="flow-line" stroke="#0e6655"/>
+    <text x="210" y="225" class="flow-text">贡献/学习数据</text>
+</g>
+<g fill="#5b2c6f">
+    <path d="M400,140 L400,250" class="flow-line" stroke="#5b2c6f"/>
+    <text x="410" y="200" class="flow-text">OER/课程模块</text>
+</g>
+<g fill="#1b4f72">
+    <path d="M615,169 L535,255" class="flow-line" stroke="#1b4f72"/>
+    <text x="560" y="225" class="flow-text">导师/实习机会</text>
+</g>
+<g fill="#b03a2e">
+    <path d="M265,345 L185,431" class="flow-line" stroke="#b03a2e"/>
+    <text x="200" y="380" class="flow-text">真实项目/任务</text>
+</g>
+<g fill="#af691a">
+    <path d="M535,345 L615,431" class="flow-line" stroke="#af691a"/>
+    <text x="560" y="380" class="flow-text">OSPO支持/活动</text>
+</g>
 
-<path d="M400,140 L400,250" class="flow-line" stroke="#5b2c6f"/>
-<text x="410" y="200" class="flow-text" fill="#5b2c6f">OER/课程模块</text>
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="400" y="585" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
 
-<path d="M610,165 L540,255" class="flow-line" stroke="#1b4f72"/>
-<text x="580" y="220" class="flow-text" fill="#1b4f72">导师/实习机会</text>
-<path d="M540,345 L610,435" class="flow-line" stroke="#af691a"/>
-<text x="580" y="380" class="flow-text" fill="#af691a">OSPO支持/活动</text>
-
-<path d="M280,350 C180,350 180,190 280,190" class="flow-line" stroke="#1abc9c" fill="none"/>
-<text x="190" y="270" class="flow-text" fill="#1abc9c">能力认证/证书</text>
 </svg>

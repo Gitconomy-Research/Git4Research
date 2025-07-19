@@ -1,15 +1,21 @@
-<svg width="800" height="500" viewBox="0 0 800 500" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="500" viewBox="0 0 800 500" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .flow-circle { stroke-width: 2; }
 .flow-text-title { font-size: 18px; font-weight: bold; }
 .flow-text-desc { font-size: 12px; }
 .flow-arrow { fill: #adb5bd; }
 .core-text { font-size: 16px; font-weight: bold; fill: #343a40; }
+.license-text { font-size: 12px; font-family: sans-serif; fill: #444; }
 </style>
+<defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" class="flow-arrow"/>
+    </marker>
+</defs>
 <g transform="translate(400, 250)">
-<circle r="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
-<text y="-10" text-anchor="middle" class="core-text">价值流转与增值</text>
-<text y="15" text-anchor="middle" font-size="12px" fill="#6c757d">(Value Flow &amp; Amplification)</text>
+    <circle r="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+    <text y="-10" text-anchor="middle" class="core-text">价值流转与增值</text>
+    <text y="15" text-anchor="middle" font-size="12px" fill="#6c757d">(Value Flow &amp; Amplification)</text>
     <g transform="translate(0, -150)">
         <circle r="50" fill="#eafaf1" stroke="#a3e4d7" class="flow-circle"/>
         <text text-anchor="middle" y="-10" class="flow-text-title" fill="#0e6655">F</text>
@@ -31,11 +37,6 @@
         <text text-anchor="middle" y="15" class="flow-text-desc" fill="#884ea0">有价值贡献与认可</text>
     </g>
 
-    <defs>
-        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-            <path d="M 0 0 L 10 5 L 0 10 z" class="flow-arrow"/>
-        </marker>
-    </defs>
     <g transform="translate(75, -75) rotate(45)">
         <path d="M-15,0 L15,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrowhead)"/>
     </g>
@@ -49,5 +50,11 @@
         <path d="M-15,0 L15,0" stroke="#adb5bd" stroke-width="2" marker-end="url(#arrowhead)"/>
     </g>
 </g>
+
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="400" y="485" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
 
 </svg>

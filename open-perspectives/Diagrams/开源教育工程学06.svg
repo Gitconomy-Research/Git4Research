@@ -1,4 +1,4 @@
-<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="600" viewBox="0 0 800 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .step-box { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 1.5; rx: 8; }
 .actor-box { fill: #fff; stroke-width: 2; rx: 10; }
@@ -8,6 +8,7 @@
 .feedback-loop { stroke: #e74c3c; stroke-width: 2; marker-end: url(#arrowhead-feedback); stroke-dasharray: 5 3; }
 .final-box { fill: #eafaf1; stroke: #a3e4d7; }
 .final-text { font-weight: bold; fill: #0e6655; }
+.license-text { font-size: 12px; font-family: sans-serif; fill: #444; }
 </style>
 <defs>
 <marker id="arrowhead-flow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -18,7 +19,6 @@
 </marker>
 </defs>
 
-<!-- Actors -->
 <rect x="50" y="50" width="120" height="50" class="actor-box" stroke="#3498db"/>
 <text x="110" y="80" text-anchor="middle" class="step-text" fill="#3498db">学生</text>
 
@@ -28,7 +28,6 @@
 <rect x="630" y="50" width="120" height="50" class="actor-box" stroke="#2ecc71"/>
 <text x="690" y="80" text-anchor="middle" class="step-text" fill="#2ecc71">开源社区</text>
 
-<!-- Step 1 -->
 <g transform="translate(50, 150)">
     <rect width="250" height="60" class="step-box"/>
     <text x="125" y="25" text-anchor="middle" class="step-text">1. 提出具体问题</text>
@@ -36,10 +35,8 @@
 </g>
 <line x1="175" y1="210" x2="175" y2="240" class="flow-arrow"/>
 
-<!-- Interaction Student -> AI -->
 <line x1="175" y1="100" x2="380" y2="100" class="flow-arrow"/>
 
-<!-- Step 2 -->
 <g transform="translate(275, 240)">
     <rect width="250" height="60" class="step-box"/>
     <text x="125" y="25" text-anchor="middle" class="step-text">2. 生成代码草稿</text>
@@ -47,7 +44,6 @@
 </g>
 <line x1="175" y1="270" x2="275" y2="270" class="flow-arrow"/>
 
-<!-- Step 3 -->
 <g transform="translate(50, 330)">
     <rect width="250" height="60" class="step-box"/>
     <text x="125" y="25" text-anchor="middle" class="step-text">3. 理解、整合与测试</text>
@@ -55,7 +51,6 @@
 </g>
 <line x1="300" y1="360" x2="500" y2="360" class="flow-arrow"/>
 
-<!-- Step 4 -->
 <g transform="translate(500, 330)">
     <rect width="250" height="60" class="step-box"/>
     <text x="125" y="25" text-anchor="middle" class="step-text">4. 提交拉取请求(PR)</text>
@@ -63,24 +58,26 @@
 </g>
 <line x1="625" y1="390" x2="625" y2="420" class="flow-arrow"/>
 
-<!-- Interaction PR -> Community -->
 <line x1="625" y1="330" x2="625" y2="100" class="flow-arrow"/>
 
-<!-- Step 5 -->
 <g transform="translate(500, 420)">
     <rect width="250" height="60" class="step-box"/>
     <text x="125" y="25" text-anchor="middle" class="step-text">5. 公开同行评审</text>
     <text x="125" y="48" text-anchor="middle" class="desc-text">接受全球同伴与导师的检验</text>
 </g>
 
-<!-- Feedback Loop -->
 <path d="M 500 450 C 400 450, 400 360, 300 360" class="feedback-loop" fill="none"/>
 <text x="350" y="420" class="desc-text" fill="#e74c3c">6. 回应反馈，迭代修改</text>
 
-<!-- Final Step -->
 <g transform="translate(275, 510)">
     <rect width="250" height="60" class="step-box final-box"/>
     <text x="125" y="35" text-anchor="middle" class="step-text final-text">AI成为智能伙伴，而非作弊工具</text>
 </g>
+
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="400" y="585" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
 
 </svg>

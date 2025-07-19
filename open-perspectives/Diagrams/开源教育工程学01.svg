@@ -1,4 +1,4 @@
-<svg width="800" height="300" viewBox="0 0 800 300" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="300" viewBox="0 0 800 300" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .arrow { stroke: #999; stroke-width: 2; marker-end: url(#arrowhead); }
 .line { stroke: #ccc; stroke-width: 1; stroke-dasharray: 5 5; }
@@ -6,6 +6,7 @@
 .title { font-size: 16px; font-weight: bold; fill: #343a40; }
 .desc { font-size: 12px; fill: #6c757d; }
 .state-text { font-size: 14px; font-weight: bold; }
+.license-text { font-size: 12px; font-family: sans-serif; fill: #444; }
 </style>
 <defs>
 <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
@@ -43,5 +44,11 @@
 
 <text x="150" y="80" text-anchor="middle" class="state-text" fill="#e74c3c">传统教育产出</text>
 <text x="650" y="80" text-anchor="middle" class="state-text" fill="#27ae60">未来教育目标</text>
+
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="400" y="285" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
 
 </svg>

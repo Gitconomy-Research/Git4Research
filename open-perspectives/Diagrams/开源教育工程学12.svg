@@ -1,4 +1,4 @@
-<svg width="1000" height="600" viewBox="0 0 1000 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="600" viewBox="0 0 1000 600" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .board-bg { fill: #fdfefe; }
 .column { fill: #f4f6f7; stroke: #e5e8e8; stroke-width: 1; rx: 12; }
@@ -8,6 +8,7 @@
 .tag-text { font-size: 11px; font-weight: bold; fill: white; }
 .card-title { font-size: 16px; font-weight: bold; fill: #34495e; }
 .card-content { font-size: 13px; fill: #566573; }
+.license-text { font-size: 12px; font-family: sans-serif; fill: #444; }
 </style>
 
 <g transform="translate(50, 30)">
@@ -119,4 +120,11 @@
         </text>
     </g>
 </g>
+
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="500" y="585" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
+
 </svg>

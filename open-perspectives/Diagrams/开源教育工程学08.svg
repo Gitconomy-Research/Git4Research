@@ -1,4 +1,4 @@
-<svg width="900" height="400" viewBox="0 0 900 400" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="400" viewBox="0 0 900 400" font-family="Inter, 'Noto Sans SC', sans-serif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 .e-box { fill: #f8f9fa; stroke-width: 2; rx: 10; }
 .e-title { font-size: 18px; font-weight: bold; }
@@ -6,6 +6,7 @@
 .e-action-title { font-size: 13px; font-weight: bold; fill: #333; }
 .e-action-item { font-size: 12px; fill: #444; }
 .arrow { fill: #ccc; }
+.license-text { font-size: 12px; font-family: sans-serif; fill: #444; }
 </style>
 
 <g transform="translate(10, 50)">
@@ -13,16 +14,16 @@
     <text x="80" y="30" text-anchor="middle" class="e-title" fill="#E74C3C">E1: Eliminate</text>
     <text x="80" y="55" text-anchor="middle" class="e-subtitle">消除疑虑</text>
     <text x="15" y="85" class="e-action-title">核心行动:</text>
-    <text x="15" y="105" class="e-action-item">• 制定IP政策</text>
-    <text x="15" y="125" class="e-action-item">• 提供入门指南</text>
-    <text x="15" y="145" class="e-action-item">• 创造心理安全区</text>
+    <text x="25" y="105" class="e-action-item">• 制定IP政策</text>
+    <text x="25" y="125" class="e-action-item">• 提供入门指南</text>
+    <text x="25" y="145" class="e-action-item">• 创造心理安全区</text>
     <text x="15" y="175" class="e-action-title">案例:</text>
     <text x="15" y="195" class="e-action-item">
-        <tspan>• 高校OSPO发布对师生</tspan>
+        <tspan x="25">• 高校OSPO发布对师生</tspan>
         <tspan x="25" dy="1.4em">友好的IP条款</tspan>
     </text>
     <text x="15" y="235" class="e-action-item">
-        <tspan>• 制作Git</tspan>
+        <tspan x="25">• 制作Git</tspan>
         <tspan x="25" dy="1.4em">“新手村”教程</tspan>
     </text>
 </g>
@@ -34,16 +35,16 @@
     <text x="80" y="30" text-anchor="middle" class="e-title" fill="#F39C12">E2: Elevate</text>
     <text x="80" y="55" text-anchor="middle" class="e-subtitle">能力提升</text>
     <text x="15" y="85" class="e-action-title">核心行动:</text>
-    <text x="15" y="105" class="e-action-item">• 完善课程体系</text>
-    <text x="15" y="125" class="e-action-item">• 引入AI助教</text>
-    <text x="15" y="145" class="e-action-item">• 夯实技能基础</text>
+    <text x="25" y="105" class="e-action-item">• 完善课程体系</text>
+    <text x="25" y="125" class="e-action-item">• 引入AI助教</text>
+    <text x="25" y="145" class="e-action-item">• 夯实技能基础</text>
     <text x="15" y="175" class="e-action-title">案例:</text>
     <text x="15" y="195" class="e-action-item">
-        <tspan>• 开设《开源软件工程》</tspan>
+        <tspan x="25">• 开设《开源软件工程》</tspan>
         <tspan x="25" dy="1.4em">课程</tspan>
     </text>
     <text x="15" y="235" class="e-action-item">
-        <tspan>• 引入CodeGeeX, Copilot</tspan>
+        <tspan x="25">• 引入CodeGeeX, Copilot</tspan>
         <tspan x="25" dy="1.4em">辅助学习</tspan>
     </text>
 </g>
@@ -55,16 +56,16 @@
     <text x="80" y="30" text-anchor="middle" class="e-title" fill="#3498DB">E3: Experience</text>
     <text x="80" y="55" text-anchor="middle" class="e-subtitle">实践赋能</text>
     <text x="15" y="85" class="e-action-title">核心行动:</text>
-    <text x="15" y="105" class="e-action-item">• 对接真实项目</text>
-    <text x="15" y="125" class="e-action-item">• 参与品牌活动</text>
-    <text x="15" y="145" class="e-action-item">• 提供真实练兵场</text>
+    <text x="25" y="105" class="e-action-item">• 对接真实项目</text>
+    <text x="25" y="125" class="e-action-item">• 参与品牌活动</text>
+    <text x="25" y="145" class="e-action-item">• 提供真实练兵场</text>
     <text x="15" y="175" class="e-action-title">案例:</text>
     <text x="15" y="195" class="e-action-item">
-        <tspan>• 参与GSoC, 开源之夏</tspan>
+        <tspan x="25">• 参与GSoC, 开源之夏</tspan>
         <tspan x="25" dy="1.4em">(OSPP)</tspan>
     </text>
     <text x="15" y="235" class="e-action-item">
-        <tspan>• 对接openEuler,</tspan>
+        <tspan x="25">• 对接openEuler,</tspan>
         <tspan x="25" dy="1.4em">MindSpore项目</tspan>
     </text>
 </g>
@@ -76,16 +77,16 @@
     <text x="80" y="30" text-anchor="middle" class="e-title" fill="#2ECC71">E4: Engage</text>
     <text x="80" y="55" text-anchor="middle" class="e-subtitle">生态融入</text>
     <text x="15" y="85" class="e-action-title">核心行动:</text>
-    <text x="15" y="105" class="e-action-item">• 以赛促学</text>
-    <text x="15" y="125" class="e-action-item">• 建设校园社团</text>
-    <text x="15" y="145" class="e-action-item">• 扩展生态影响力</text>
+    <text x="25" y="105" class="e-action-item">• 以赛促学</text>
+    <text x="25" y="125" class="e-action-item">• 建设校园社团</text>
+    <text x="25" y="145" class="e-action-item">• 扩展生态影响力</text>
     <text x="15" y="175" class="e-action-title">案例:</text>
     <text x="15" y="195" class="e-action-item">
-        <tspan>• 组织“开放原子杯”等</tspan>
+        <tspan x="25">• 组织“开放原子杯”等</tspan>
         <tspan x="25" dy="1.4em">开源大赛</tspan>
     </text>
     <text x="15" y="235" class="e-action-item">
-        <tspan>• 扶持开放原子开源社团等</tspan>
+        <tspan x="25">• 扶持开放原子开源社团等</tspan>
         <tspan x="25" dy="1.4em">学生社团</tspan>
     </text>
 </g>
@@ -97,17 +98,24 @@
     <text x="80" y="30" text-anchor="middle" class="e-title" fill="#8E44AD">E5: Entrust</text>
     <text x="80" y="55" text-anchor="middle" class="e-subtitle">信任建立</text>
     <text x="15" y="85" class="e-action-title">核心行动:</text>
-    <text x="15" y="105" class="e-action-item">• 新型评价体系</text>
-    <text x="15" y="125" class="e-action-item">• 打造“第二简历”</text>
-    <text x="15" y="145" class="e-action-item">• 提供明确激励</text>
+    <text x="25" y="105" class="e-action-item">• 新型评价体系</text>
+    <text x="25" y="125" class="e-action-item">• 打造“第二简历”</text>
+    <text x="25" y="145" class="e-action-item">• 提供明确激励</text>
     <text x="15" y="175" class="e-action-title">案例:</text>
     <text x="15" y="195" class="e-action-item">
-        <tspan>• 开源贡献纳入</tspan>
+        <tspan x="25">• 开源贡献纳入</tspan>
         <tspan x="25" dy="1.4em">毕业设计</tspan>
     </text>
     <text x="15" y="235" class="e-action-item">
-        <tspan>• Git Profile作为</tspan>
+        <tspan x="25">• Git Profile作为</tspan>
         <tspan x="25" dy="1.4em">能力证明</tspan>
     </text>
 </g>
+
+<a xlink:href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+  <text x="450" y="385" class="license-text" text-anchor="middle">
+    本作品采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可 (CC BY-SA 4.0)
+  </text>
+</a>
+
 </svg>
