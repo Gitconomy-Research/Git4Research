@@ -20,7 +20,7 @@
 <text x="0" y="100" class="principle">应用「第一性原理」</text>
 </g>
 <!-- Stage 2 -->
-<g transform="translate(260, 420)">
+<g transform="translate(380, 420)">
 <text x="0" y="0" class="stage-title" text-anchor="middle" fill="#16A085">阶段二：沉浸与构想</text>
 <text x="0" y="20" class="bloom-level" text-anchor="middle">布鲁姆层次: 分析 → 创造(萌芽)</text>
 <foreignObject x="-90" y="35" width="180" height="100">
