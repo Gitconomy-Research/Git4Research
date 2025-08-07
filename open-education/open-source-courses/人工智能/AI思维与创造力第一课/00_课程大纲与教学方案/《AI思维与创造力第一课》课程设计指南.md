@@ -165,7 +165,10 @@ Brown, T. (2009). Change by design: How design thinking transforms organizations
 ## 参考文献
 
 [1] McGowan, H. (2017). Preparing students to lose their jobs. Michigan Economic Development Corporation.
-https://www.michiganbusiness.org/globalassets/documents/collaborative-development-council/preparing_students_to_lose_their_jobs.pdf
-[2] Scharmer, C. O. (2016). Theory U: Leading from the future as it emerges (2nd ed.). Berrett-Koehler Publishers.
-[3] Brown, T. (2009). Change by design: How design thinking transforms organizations and inspires innovation. HarperBusiness.
-[4] Schwaber, K., & Sutherland, J. (2020). The Scrum guide: The definitive guide to Scrum: The rules of the game (2nd ed.). Scrum.org.
+https://www.michiganbusiness.org/globalassets/documents/collaborative-development-council/preparing_students_to_lose_their_jobs.pdf <br>
+[2] Scharmer, C. O. (2016). Theory U: Leading from the future as it emerges (2nd ed.). Berrett-Koehler Publishers. <br>
+[3] Brown, T. (2009). Change by design: How design thinking transforms organizations and inspires innovation. HarperBusiness. <br>
+[4] Schwaber, K., & Sutherland, J. (2020). The Scrum guide: The definitive guide to Scrum: The rules of the game (2nd ed.). Scrum.org. <br>
+
+作者：野行僧郭晧|Gitconomy Research <br>
+本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可。详见 http://creativecommons.org/licenses/by-nc-sa/4.0/
