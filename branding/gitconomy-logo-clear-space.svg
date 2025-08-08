@@ -1,0 +1,66 @@
+<svg width="750" height="250" viewBox="0 0 750 250" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;display=swap');
+            .logo-font {
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 80px;
+                letter-spacing: -2px;
+            }
+            .digital-blue { fill: #0099FF; }
+            .eco-green { fill: #009900; }
+        </style>
+
+        <g id="GitconomyLogo">
+            <text class="logo-font" x="0" y="0">
+                <tspan class="digital-blue">Git</tspan>
+                <tspan class="eco-green" dx="-5">ɔ</tspan>
+                <tspan class="digital-blue" dx="-5">onomy</tspan>
+            </text>
+        </g>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#F3F4F6" />
+
+    <g transform="translate(145, 180)">
+
+        <use href="#GitconomyLogo" />
+
+        <g id="x-measurement" transform="translate(138, -63)">
+             <path d="M0,0 L0,58" stroke="#E11D48" stroke-width="2" stroke-dasharray="4 2"/>
+             <path d="M-5,0 L5,0" stroke="#E11D48" stroke-width="2"/>
+             <path d="M-5,58 L5,58" stroke="#E11D48" stroke-width="2"/>
+             <text x="10" y="33" fill="#E11D48" font-family="monospace" font-size="20px" font-weight="bold">x</text>
+        </g>
+
+        <rect
+            x="-58" y="-73"
+            width="550" height="90"
+            fill="rgba(0, 153, 255, 0.1)"
+            stroke="rgba(0, 153, 255, 0.5)"
+            stroke-width="2"
+            stroke-dasharray="6 4"
+            rx="10"
+        />
+
+        <path d="M0,-15 L0,-73" stroke="rgba(0,0,0,0.4)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text text-anchor="middle" x="-20" y="-40" fill="#374151" font-family="monospace" font-size="16px">x</text>
+
+        <path d="M0,80 L0,123" stroke="rgba(0,0,0,0.4)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text text-anchor="middle" x="-20" y="105" fill="#374151" font-family="monospace" font-size="16px">x</text>
+
+        <path d="M0,0 L-58,0" stroke="rgba(0,0,0,0.4)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text text-anchor="middle" x="-29" y="-10" fill="#374151" font-family="monospace" font-size="16px">x</text>
+
+        <path d="M310,0 L368,0" stroke="rgba(0,0,0,0.4)" stroke-width="1.5" stroke-dasharray="3 3"/>
+        <text text-anchor="middle" x="339" y="-10" fill="#374151" font-family="monospace" font-size="16px">x</text>
+
+    </g>
+
+    <text x="350" y="40" text-anchor="middle" font-size="20" font-family="Inter, sans-serif" fill="#111827" font-weight="bold">安全空间 (Clear Space) 规范</text>
+    <text x="350" y="70" text-anchor="middle" font-size="14" font-family="Inter, sans-serif" fill="#4B5563">
+        安全空间的最小距离 (x) 由LOGO中字母 "ɔ" 的高度决定。
+    </text>
+
+</svg>
