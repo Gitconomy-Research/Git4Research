@@ -171,5 +171,5 @@ Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社�
 在任何情况下，若应用尺寸小于此规定，应考虑使用简化的品牌符号或仅使用“Gitconomy”文字标识，以避免视觉模糊，损害品牌形象。
 
 
-作者：野行僧郭晧|Gitconomy Research
+作者：野行僧郭晧|Gitconomy Research <br>
 本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可。详见 http://creativecommons.org/licenses/by-nc-sa/4.0/
