@@ -1,5 +1,5 @@
 # Gitconomy Research视觉识别系统的符号学与战略解析
-![Gitconomy Reserch社区Logo](./gitconomy-logo-primary-v1.svg)
+![Gitconomy Reserch社区Logo](./gitconomy-logo-horizontal.png)
 ## 一、视觉宣言：融合开放协作与科学探究
 
 ## 1.1 核心命题
