@@ -27,16 +27,16 @@
 
         <use href="#GitconomyLogo" />
 
-        <g id="x-measurement" transform="translate(138, -63)">
-             <path d="M0,0 L0,58" stroke="#E11D48" stroke-width="2" stroke-dasharray="4 2"/>
-             <path d="M-5,0 L5,0" stroke="#E11D48" stroke-width="2"/>
-             <path d="M-5,58 L5,58" stroke="#E11D48" stroke-width="2"/>
-             <text x="10" y="33" fill="#E11D48" font-family="monospace" font-size="20px" font-weight="bold">x</text>
+        <g id="x-measurement" transform="translate(138, -65)">
+             <path d="M0,20 L0,65" stroke="#E11D48" stroke-width="2" stroke-dasharray="4 2"/>
+             <path d="M-5,20 L5,20" stroke="#E11D48" stroke-width="2"/>
+             <path d="M-5,65 L5,65" stroke="#E11D48" stroke-width="2"/>
+             <text x="-15" y="50" fill="#E11D48" font-family="monospace" font-size="20px" font-weight="bold">x</text>
         </g>
 
         <rect
             x="-58" y="-73"
-            width="550" height="90"
+            width="550" height="100"
             fill="rgba(0, 153, 255, 0.1)"
             stroke="rgba(0, 153, 255, 0.5)"
             stroke-width="2"
