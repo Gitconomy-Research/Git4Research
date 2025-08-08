@@ -1,6 +1,6 @@
 # Git4Research：人人都是研究员
 
-![Gitconomy Reserch社区Logo](./branding/gitconomy-logo-horizontal.svg)
+![Gitconomy Reserch社区Logo](./branding/gitconomy-logo-horizontalpng)
 
 Git4Research不仅仅是一个开放研究的项目，它是一个旨在**彻底改变传统学术研究模式**的创新框架。我们通过集成**开放科学**的核心原则与**前沿AI技术**，构建一个去中心化、协作化、智能化的未来研究生态。
 
