@@ -109,6 +109,8 @@ Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社�
 
 详细的社区LOGO使用规范请参考[Gitconomy Research视觉识别系统的符号学与战略解析](https://gitcode.com/Gitconomy-Research/Git4Research方案A：分布式学习旅程 |  方案B：高强度训练营 (Bootcamp) | 方案C：混合式冲刺|/blob/main/branding/LOGO_GUIDELINES.md)
 
+---
+
 ## 核心开发者&维护者
 
 |姓名|邮件|
