@@ -105,9 +105,10 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社区强有力的“图腾”符号。它清晰地传达了项目独特的价值主张:
 
 - “研究开源” ：“研究”的动作由中心的放大镜直观体现。被研究的“开源”客体，则通过开源绿以及名称中的“Git”共同指代。
-- “用开源的方式” ：这种研究的方式或精神，则由更深层的符号’ɔ’来传达。它体现在由Copyleft理念所支撑的、自给自足的**生态系统之中，也体现在“Git”**所代表的开放、透明、去中心化的协作精神之中。
+- “用开源的方式” ：这种研究的方式或精神，则由更深层的符号’ɔ’来传达。它体现在由Copyleft理念所支撑的、自给自足的生态系统之中，也体现在“Git”所代表的开放、透明、去中心化的协作精神之中。
 
-详细的社区LOGO使用规范请参考[Gitconomy Research视觉识别系统的符号学与战略解析](https://gitcode.com/Gitconomy-Research/Git4Research方案A：分布式学习旅程 |  方案B：高强度训练营 (Bootcamp) | 方案C：混合式冲刺|/blob/main/branding/LOGO_GUIDELINES.md)
+
+详细的社区LOGO使用规范请参考[](./branding/LOGO_GUIDELINES.md)
 
 ---
 
