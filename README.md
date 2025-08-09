@@ -61,7 +61,7 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 
 本项目目前包含三大核心栏目，分别从前瞻思考、思维模式与实践资源三个维度，为学习者和开发者提供支持。
 
-* **1. [格物新质专栏](./open-perspectives/README.md)**
+**1. [格物新质专栏](./open-perspectives/README.md)**
     * 本栏目聚焦于前沿科技与未来洞察，深入探讨人工智能等技术如何重塑我们的认知、研究范式与社会结构。如果你对技术的深层影响和未来趋势感兴趣，这里将为你提供一系列具有启发性的深度观点。
 
       1) [开源软件基金如何应用开放组织原则？](https://gitcode.com/Git2Fab/Git4Research/blob/main/open-perspectives/%E5%BC%80%E6%BA%90%E8%BD%AF%E4%BB%B6%E5%9F%BA%E9%87%91%E5%A6%82%E4%BD%95%E5%BA%94%E7%94%A8%E5%BC%80%E6%94%BE%E7%BB%84%E7%BB%87%E5%8E%9F%E5%88%99%EF%BC%9F.md)<br>
@@ -70,13 +70,13 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
       4) [关于政府开源政策规划与实施的一些思考](https://gitcode.com/Git2Fab/Git4Research/blob/main/open-perspectives/%E5%85%B3%E4%BA%8E%E6%94%BF%E5%BA%9C%E5%BC%80%E6%BA%90%E6%94%BF%E7%AD%96%E8%A7%84%E5%88%92%E4%B8%8E%E5%AE%9E%E6%96%BD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83.md)<br>
       5) [关开源教育工程学——高等教育创新的理论与实践探索](https://gitcode.com/Git2Fab/Git4Research/blob/main/open-perspectives/%E5%BC%80%E6%BA%90%E6%95%99%E8%82%B2%E5%B7%A5%E7%A8%8B%E5%AD%A6%E2%80%94%E2%80%94%E9%AB%98%E7%AD%89%E6%95%99%E8%82%B2%E5%88%9B%E6%96%B0%E7%9A%84%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5%E6%8E%A2%E7%B4%A2.md)<br>
 
-* **2. [开发者思维专栏](./developer-thinking/README.md)**
+**2. [开发者思维专栏](./developer-thinking/README.md)**
     * 本栏目致力于探讨现代开发者所需的核心思维模式与工程素养。内容将超越具体的编程语言或框架，聚焦于如何高效学习、如何构建稳固的知识体系、如何进行有效的团队协作，以及如何培养卓越的工程品味。我们相信，优秀的思维模式是驱动技术能力持续成长的关键。（内容即将上线，敬请期待）
 
       1) [Markdown Thinking——结构化思维与创作的新范式](https://gitcode.com/Git2Fab/Git4Research/blob/main/developer-thinking/Markdown-Thinking%E2%80%94%E2%80%94%E7%BB%93%E6%9E%84%E5%8C%96%E6%80%9D%E7%BB%B4%E4%B8%8E%E5%88%9B%E4%BD%9C%E7%9A%84%E6%96%B0%E8%8C%83%E5%BC%8F.md)<br>
       2) [Generative Thinking理论的初步探索—重新定义思考的过程](https://gitcode.com/Git2Fab/Git4Research/blob/main/developer-thinking/Generative-Thinking%E2%80%94%E2%80%94%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E6%80%9D%E8%80%83%E7%9A%84%E8%BF%87%E7%A8%8B.md)<br>
 
-* **3. [开放教育资源专栏](./open-education/README.md)**
+**3. [开放教育资源专栏](./open-education/README.md)**
     * 本栏目提供一系列可直接用于教学和自学的开源课程与实践项目。我们致力于将前沿的技术，转化为结构清晰、易于上手的教学内容，并提供完整的配套资源。
     * **人工智能课程:**
         * [**《AI思维与创造力第一课》课程指南**](./open-education/open-source-courses/人工智能/AI思维与创造力第一课/README.md) - 本系列课程的完整入口，带你从零开始，通过动手实践掌握AIGC大模型的核心应用。
@@ -104,8 +104,8 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 
 Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社区强有力的“图腾”符号。它清晰地传达了项目独特的价值主张:
 
-- “研究开源”：“研究”的动作由中心的放大镜直观体现。被研究的“开源”客体，则通过开源绿以及名称中的“Git”共同指代。
-- “用开源的方式”：这种研究的方式或精神，则由更深层的符号’ɔ’来传达。它体现在由Copyleft理念所支撑的、自给自足的生态系统之中，也体现在“Git”所代表的开放、透明、去中心化的协作精神之中。
+* “研究开源”：“研究”的动作由中心的放大镜直观体现。被研究的“开源”客体，则通过开源绿以及名称中的“Git”共同指代。
+* “用开源的方式”：这种研究的方式或精神，则由更深层的符号’ɔ’来传达。它体现在由Copyleft理念所支撑的、自给自足的生态系统之中，也体现在“Git”所代表的开放、透明、去中心化的协作精神之中。
 
 详细的社区LOGO使用规范请参考[LOGO规范说明文档](./branding/LOGO_GUIDELINES.md)
 
