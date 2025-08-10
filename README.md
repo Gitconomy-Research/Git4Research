@@ -75,8 +75,8 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 
 本栏目致力于探讨现代开发者所需的核心思维模式与工程素养。内容将超越具体的编程语言或框架，聚焦于如何高效学习、如何构建稳固的知识体系、如何进行有效的团队协作，以及如何培养卓越的工程品味。我们相信，优秀的思维模式是驱动技术能力持续成长的关键。
 
-1) [Markdown Thinking——结构化思维与创作的新范式](./developer-thinking/Markdown-Thinking——结构化思维与创作的新范式.md)<br>
-2) [Generative Thinking理论的初步探索—重新定义思考的过程](./developer-thinking/Generative-Thinking理论的初步探索—重新定义思考的过程.md)<br>
+1) [Markdown Thinking——结构化思维与创作的新范式](./developer-thinking/Markdown-Thinking——结构化思维与创作的新范式.md) <br>
+2) [Generative Thinking理论的初步探索—重新定义思考的过程](./developer-thinking/Generative-Thinking理论的初步探索—重新定义思考的过程.md) <br>
 
 **3. [开放教育资源专栏](./open-education/README.md)**
 本栏目提供一系列可直接用于教学和自学的开源课程与实践项目。我们致力于将前沿的技术，转化为结构清晰、易于上手的教学内容，并提供完整的配套资源。
