@@ -60,23 +60,23 @@
 
     <!-- 道轴上的知识点 -->
     <!-- 第一级知识点 -->
-    <circle cx="0" cy="-150" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="0" cy="-150" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="0" y="-147" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">系统思维</text>
 
-    <circle cx="-40" cy="-130" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-40" cy="-130" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-40" y="-127" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">MECE原则</text>
 
-    <circle cx="40" cy="-130" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="-130" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="40" y="-127" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">第一性原理</text>
 
     <!-- 第二级知识点 -->
-    <circle cx="0" cy="-225" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="0" cy="-225" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="0" y="-222" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">JTBD框架</text>
 
     <circle cx="-50" cy="-200" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-50" y="-197" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">HMW方法</text>
 
-    <circle cx="50" cy="-200" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="50" cy="-200" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="50" y="-197" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">批判性思维</text>
 
     <!-- 连接线 -->
