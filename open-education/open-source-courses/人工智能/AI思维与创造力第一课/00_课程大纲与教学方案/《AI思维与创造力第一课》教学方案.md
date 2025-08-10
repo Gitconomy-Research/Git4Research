@@ -108,7 +108,7 @@
 │   │   └── AI产品解构：绘制“数据-模型-决策”因果图
 │   ├── 📄 1.3 元学习与学习者主权
 │   │   ├── “学习日志”与吉布斯反思循环工作坊
-│   │   └── GitCode主权实践：建立个人学习版本库
+│   │   └── GitCode实践：建立个人学习版本库
 │   └── 📄 1.4 AI技术基础与环境搭建
 │       ├── Python核心语法与虚拟环境（venv）配置
 │       └── 开发工具链：Jupyter Lab与Git入门
@@ -201,14 +201,14 @@
 总而言之，核心理论为技术能力的提升提供了方向感、深度和可持续性，确保学习者不仅仅是一个“会用工具的工匠”，而是一个“知道为何而做、如何做得更好的创造者”。
 
 ![雷达知识图谱](./../02_参考资料库/课程图表/Syllabus-04.svg)
-*图：课程AI思维与创造力第一课 - 雷达知识图谱*
+*图4：AI思维与创造力第一课-雷达知识图谱*
 
 ## 理论参考文献
 
-[1] Aristotle. (1998). Metaphysics (H. Lawson-Tancred, Trans.). Penguin Classics. (Original work published ca. 350 B.C.E.).
-[2] Minto, B. (2009). The pyramid principle: Logic in writing and thinking. Financial Times/Prentice Hall.
-[3] Bertalanffy, L. von. (1968). General system theory: Foundations, development, applications. George Braziller.
-[4] Christensen, C. M., Hall, T., Dillon, K., & Duncan, D. S. (2016). Competing against luck: The story of innovation and customer choice. Harper Business.
-[5] Basadur, M. (2004). Leading others to think innovatively together: Creative leadership. The Leadership Quarterly, 15(1), 103–121.
-[6] Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist, 34(10), 906–911.
-[7] Ebbinghaus, H. (2013). Memory: A contribution to experimental psychology. Dover Publications. (Original work published 1885).
+[1] Aristotle. (1998). Metaphysics (H. Lawson-Tancred, Trans.). Penguin Classics. (Original work published ca. 350 B.C.E.). <br>
+[2] Minto, B. (2009). The pyramid principle: Logic in writing and thinking. Financial Times/Prentice Hall.  <br>
+[3] Bertalanffy, L. von. (1968). General system theory: Foundations, development, applications. George Braziller.  <br>
+[4] Christensen, C. M., Hall, T., Dillon, K., & Duncan, D. S. (2016). Competing against luck: The story of innovation and customer choice. Harper Business.  <br>
+[5] Basadur, M. (2004). Leading others to think innovatively together: Creative leadership. The Leadership Quarterly, 15(1), 103–121.  <br>
+[6] Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist, 34(10), 906–911.  <br>
+[7] Ebbinghaus, H. (2013). Memory: A contribution to experimental psychology. Dover Publications. (Original work published 1885).  <br>
