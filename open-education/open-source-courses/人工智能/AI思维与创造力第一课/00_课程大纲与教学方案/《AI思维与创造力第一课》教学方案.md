@@ -11,7 +11,7 @@
 基于学习科学原理，设计了三种独立的认知升级路径，以满足不同学习者的目标与场景：
 
 ![教学场景比较](./../02_参考资料库/课程图表/Syllabus-01.svg)
-*图：不同认知路径的教学场景比较*
+*图1：不同认知路径的教学场景比较*
 
 1. **方案A （分布式学习旅程）** 充分利用“间隔效应”，通过拉长学习周期，在每次学习之间留出充足的消化、反思和实践时间，旨在实现最深刻、最持久的思维模式转变。
 
@@ -80,7 +80,7 @@
 #### 3.1.4 教学安排总览
 
 ![分布式教学场景总揽](./../02_参考资料库/课程图表/Syllabus-02.svg)
-*图：分布式教学场景总揽*
+*图2：分布式教学场景总揽*
 
 | 周次 | 周末工作坊 (2天) | 周间任务（自驱学习） |
 | :--- | :--- | :--- |
@@ -187,7 +187,7 @@
 我们可以用一个简单的图谱来表示这种关系：
 
 ![核心理论与技术能力进化的关系](./../02_参考资料库/课程图表/Syllabus-03.svg)
-*图：课程核心理论与技术能力进化的关系图*
+*图3：课程核心理论与技术能力进化的关系图*
 
 | **核心理论 (道)** | **如何赋能 (How it Empowers)** | **技术能力 (术)** |
 | :--- | :--- | :--- |
@@ -213,3 +213,7 @@
 [5] Basadur, M. (2004). Leading others to think innovatively together: Creative leadership. The Leadership Quarterly, 15(1), 103–121.  <br>
 [6] Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist, 34(10), 906–911.  <br>
 [7] Ebbinghaus, H. (2013). Memory: A contribution to experimental psychology. Dover Publications. (Original work published 1885).  <br>
+
+---
+作者：野行僧郭晧|Gitconomy Research <br>
+本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可。详见 http://creativecommons.org/licenses/by-nc-sa/4.0/
