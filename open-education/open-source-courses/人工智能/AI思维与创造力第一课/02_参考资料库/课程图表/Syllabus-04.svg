@@ -1,4 +1,3 @@
-
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
   <defs>
     <!-- 渐变和滤镜定义 -->
@@ -49,7 +48,7 @@
     <line x1="-300" y1="0" x2="300" y2="0" stroke="#e0e0e0" stroke-width="1.5" opacity="0.9"/>
 
     <!-- 绘制中心节点 -->
-    <circle cx="0" cy="0" r="60" fill="url(#center-glow)" filter="url(#shadow)"/>
+    <circle cx="0" cy="0" r="50" fill="url(#center-glow)" filter="url(#shadow)"/>
     <text x="0" y="-10" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">AI思维与</text>
     <text x="0" y="10" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">创造力第一课</text>
 
@@ -66,22 +65,22 @@
     <circle cx="-40" cy="-130" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-40" y="-127" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">MECE原则</text>
 
-    <circle cx="40" cy="-130" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="-130" r="15" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="40" y="-127" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">第一性原理</text>
 
     <!-- 第二级知识点 -->
-    <circle cx="0" cy="-225" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="0" cy="-225" r="15" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="0" y="-222" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">JTBD框架</text>
 
-    <circle cx="-50" cy="-200" r="25" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-50" cy="-200" r="15" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-50" y="-197" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">HMW方法</text>
 
-    <circle cx="50" cy="-200" r="30" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="50" cy="-200" r="15" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="50" y="-197" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">批判性思维</text>
 
     <!-- 连接线 -->
-    <line x1="0" y1="-60" x2="0" y2="-125" stroke="#00796b" stroke-width="1" opacity="0.6"/>
-    <line x1="0" y1="-175" x2="0" y2="-200" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-50" x2="0" y2="-135" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-150" x2="0" y2="-210" stroke="#00796b" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="-150" x2="-40" y2="-130" stroke="#00796b" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="-150" x2="40" y2="-130" stroke="#00796b" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="-225" x2="-50" y2="-200" stroke="#00796b" stroke-width="1" opacity="0.6"/>
@@ -97,28 +96,28 @@
 
     <!-- 法轴上的知识点 -->
     <!-- 第一级知识点 -->
-    <circle cx="150" cy="0" r="25" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="150" cy="0" r="15" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="150" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#1976d2" text-anchor="middle">学习者主权</text>
 
-    <circle cx="130" cy="-40" r="25" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="130" cy="-40" r="15" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="130" y="-37" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#1976d2" text-anchor="middle">元认知实践</text>
 
-    <circle cx="130" cy="40" r="25" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="130" cy="40" r="15" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="130" y="43" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#1976d2" text-anchor="middle">间隔效应</text>
 
     <!-- 第二级知识点 -->
-    <circle cx="225" cy="0" r="25" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="225" cy="0" r="15" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="225" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#1976d2" text-anchor="middle">吉布斯循环</text>
 
-    <circle cx="200" cy="-50" r="25" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="200" cy="-50" r="15" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="200" y="-47" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#1976d2" text-anchor="middle">学习日志</text>
 
-    <circle cx="200" cy="50" r="25" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="200" cy="50" r="15" fill="white" stroke="#1976d2" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="200" y="53" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#1976d2" text-anchor="middle">GitCode</text>
 
     <!-- 连接线 -->
-    <line x1="60" y1="0" x2="125" y2="0" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
-    <line x1="175" y1="0" x2="200" y2="0" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="50" y1="0" x2="135" y2="0" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="150" y1="0" x2="210" y2="0" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
     <line x1="150" y1="0" x2="130" y2="-40" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
     <line x1="150" y1="0" x2="130" y2="40" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
     <line x1="225" y1="0" x2="200" y2="-50" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
@@ -134,31 +133,31 @@
 
     <!-- 术轴上的知识点 -->
     <!-- 第一级知识点 -->
-    <circle cx="0" cy="150" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="0" cy="150" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="0" y="153" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">Python基础</text>
 
-    <circle cx="-40" cy="130" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-40" cy="130" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-40" y="133" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">开发环境</text>
 
-    <circle cx="40" cy="130" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="40" cy="130" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="40" y="133" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">Git版本控制</text>
 
     <!-- 第二级知识点 -->
-    <circle cx="0" cy="225" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="0" cy="225" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="0" y="228" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">提示工程</text>
 
-    <circle cx="-50" cy="200" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-50" cy="200" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-50" y="203" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">API调用</text>
 
-    <circle cx="50" cy="200" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="50" cy="200" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="50" y="203" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">注意力机制</text>
 
-    <circle cx="80" cy="240" r="25" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="80" cy="240" r="15" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="80" y="243" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">LoRA微调</text>
 
     <!-- 连接线 -->
-    <line x1="0" y1="60" x2="0" y2="125" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
-    <line x1="0" y1="175" x2="0" y2="200" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="50" x2="0" y2="135" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="150" x2="0" y2="210" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="150" x2="-40" y2="130" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="150" x2="40" y2="130" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
     <line x1="0" y1="225" x2="-50" y2="200" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
@@ -175,28 +174,28 @@
 
     <!-- 器轴上的知识点 -->
     <!-- 第一级知识点 -->
-    <circle cx="-150" cy="0" r="25" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-150" cy="0" r="15" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-150" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">敏捷学习</text>
 
-    <circle cx="-130" cy="-40" r="25" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-130" cy="-40" r="15" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-130" y="-37" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">创造节奏</text>
 
-    <circle cx="-130" cy="40" r="25" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-130" cy="40" r="15" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-130" y="43" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">学习点数</text>
 
     <!-- 第二级知识点 -->
-    <circle cx="-225" cy="0" r="25" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-225" cy="0" r="15" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-225" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">AI应用开发</text>
 
-    <circle cx="-200" cy="-50" r="25" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-200" cy="-50" r="15" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-200" y="-47" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">Web应用</text>
 
-    <circle cx="-200" cy="50" r="25" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+    <circle cx="-200" cy="50" r="15" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
     <text x="-200" y="53" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">数据分析</text>
 
     <!-- 连接线 -->
-    <line x1="-60" y1="0" x2="-125" y2="0" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
-    <line x1="-175" y1="0" x2="-200" y2="0" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-50" y1="0" x2="-135" y2="0" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-150" y1="0" x2="-210" y2="0" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
     <line x1="-150" y1="0" x2="-130" y2="-40" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
     <line x1="-150" y1="0" x2="-130" y2="40" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
     <line x1="-225" y1="0" x2="-200" y2="-50" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
