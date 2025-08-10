@@ -78,6 +78,8 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 1) [Markdown Thinking——结构化思维与创作的新范式](./developer-thinking/Markdown-Thinking——结构化思维与创作的新范式.md) <br>
 2) [Generative Thinking理论的初步探索—重新定义思考的过程](./developer-thinking/Generative-Thinking理论的初步探索—重新定义思考的过程.md) <br>
 
+<br>
+
 **3. [开放教育资源专栏](./open-education/README.md)**
 本栏目提供一系列可直接用于教学和自学的开源课程与实践项目。我们致力于将前沿的技术，转化为结构清晰、易于上手的教学内容，并提供完整的配套资源。
 
@@ -107,6 +109,8 @@ Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社�
 
 * **共享** — 在任何媒介或格式下复制并传播材料。
 * **演绎** — 在任何用途下，重新混合、转换和基于材料进行创作。
+
+<br>
 
 只要您遵守以下许可条款：
 
