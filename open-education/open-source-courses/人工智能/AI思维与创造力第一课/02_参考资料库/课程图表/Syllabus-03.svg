@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <!-- 背景 -->
+  <rect width="1000" height="600" fill="#f8f9fa" rx="10" ry="10" />
+
+  <!-- 标题 -->
+  <text x="500" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">核心理论与技术能力进化的关系</text>
+
+  <!-- 表头 -->
+  <rect x="100" y="90" width="250" height="60" rx="8" ry="8" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="225" y="130" text-anchor="middle" font-size="20" font-weight="bold" fill="#1890ff">核心理论 (道)</text>
+
+  <rect x="350" y="90" width="300" height="60" rx="8" ry="8" fill="#fff7e6" stroke="#fa8c16" stroke-width="2" />
+  <text x="500" y="130" text-anchor="middle" font-size="20" font-weight="bold" fill="#fa8c16">如何赋能 (How it Empowers)</text>
+
+  <rect x="650" y="90" width="250" height="60" rx="8" ry="8" fill="#fcf4ff" stroke="#722ed1" stroke-width="2" />
+  <text x="775" y="130" text-anchor="middle" font-size="20" font-weight="bold" fill="#722ed1">技术能力 (术)</text>
+
+  <!-- 第一性原理行 -->
+  <rect x="100" y="150" width="250" height="100" rx="5" ry="5" fill="#e6f7ff" opacity="0.7" />
+  <text x="225" y="195" text-anchor="middle" font-size="18" font-weight="bold" fill="#1890ff">第一性原理</text>
+
+  <rect x="350" y="150" width="300" height="100" rx="5" ry="5" fill="#fff7e6" opacity="0.7" />
+  <text x="500" y="185" text-anchor="middle" font-size="16" fill="#fa8c16">思考根本问题</text>
+  <text x="500" y="215" text-anchor="middle" font-size="16" fill="#fa8c16">设计创新交互</text>
+
+  <rect x="650" y="150" width="250" height="100" rx="5" ry="5" fill="#fcf4ff" opacity="0.7" />
+  <text x="775" y="180" text-anchor="middle" font-size="16" fill="#722ed1">`个人项目` 的价值定义</text>
+  <text x="775" y="210" text-anchor="middle" font-size="16" fill="#722ed1">`个性化AI交互设计`</text>
+
+  <!-- 系统思维行 -->
+  <rect x="100" y="250" width="250" height="100" rx="5" ry="5" fill="#e6f7ff" opacity="0.7" />
+  <text x="225" y="295" text-anchor="middle" font-size="18" font-weight="bold" fill="#1890ff">系统思维</text>
+
+  <rect x="350" y="250" width="300" height="100" rx="5" ry="5" fill="#fff7e6" opacity="0.7" />
+  <text x="500" y="285" text-anchor="middle" font-size="16" fill="#fa8c16">规划应用架构</text>
+  <text x="500" y="315" text-anchor="middle" font-size="16" fill="#fa8c16">洞察数据关联</text>
+
+  <rect x="650" y="250" width="250" height="100" rx="5" ry="5" fill="#fcf4ff" opacity="0.7" />
+  <text x="775" y="280" text-anchor="middle" font-size="16" fill="#722ed1">`AI应用开发` 的顶层设计</text>
+  <text x="775" y="310" text-anchor="middle" font-size="16" fill="#722ed1">`数据驱动决策` 的全局观</text>
+
+  <!-- 元认知行 -->
+  <rect x="100" y="350" width="250" height="100" rx="5" ry="5" fill="#e6f7ff" opacity="0.7" />
+  <text x="225" y="395" text-anchor="middle" font-size="18" font-weight="bold" fill="#1890ff">元认知</text>
+
+  <rect x="350" y="350" width="300" height="100" rx="5" ry="5" fill="#fff7e6" opacity="0.7" />
+  <text x="500" y="385" text-anchor="middle" font-size="16" fill="#fa8c16">诊断学习障碍</text>
+  <text x="500" y="415" text-anchor="middle" font-size="16" fill="#fa8c16">优化学习策略</text>
+
+  <rect x="650" y="350" width="250" height="100" rx="5" ry="5" fill="#fcf4ff" opacity="0.7" />
+  <text x="775" y="395" text-anchor="middle" font-size="16" fill="#722ed1">贯穿所有技术节点的学习过程</text>
+
+  <!-- 间隔效应行 -->
+  <rect x="100" y="450" width="250" height="100" rx="5" ry="5" fill="#e6f7ff" opacity="0.7" />
+  <text x="225" y="495" text-anchor="middle" font-size="18" font-weight="bold" fill="#1890ff">间隔效应</text>
+
+  <rect x="350" y="450" width="300" height="100" rx="5" ry="5" fill="#fff7e6" opacity="0.7" />
+  <text x="500" y="495" text-anchor="middle" font-size="16" fill="#fa8c16">保证知识的长期记忆与内化</text>
+
+  <rect x="650" y="450" width="250" height="100" rx="5" ry="5" fill="#fcf4ff" opacity="0.7" />
+  <text x="775" y="495" text-anchor="middle" font-size="16" fill="#722ed1">整个技术能力阶梯的有效攀登</text>
+
+  <!-- 箭头连接 -->
+  <!-- 第一性原理的连接 -->
+  <line x1="200" y1="200" x2="320" y2="200" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="320,200 310,195 310,205" fill="#1890ff" />
+
+  <line x1="580" y1="200" x2="620" y2="200" stroke="#fa8c16" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="620,200 610,195 610,205" fill="#fa8c16" />
+
+  <!-- 系统思维的连接 -->
+  <line x1="200" y1="300" x2="320" y2="300" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="320,300 310,295 310,305" fill="#1890ff" />
+
+  <line x1="580" y1="300" x2="620" y2="300" stroke="#fa8c16" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="620,300 610,295 610,305" fill="#fa8c16" />
+
+  <!-- 元认知的连接 -->
+  <line x1="200" y1="400" x2="320" y2="400" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="320,400 310,395 310,405" fill="#1890ff" />
+
+  <line x1="580" y1="400" x2="620" y2="400" stroke="#fa8c16" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="620,400 610,395 610,405" fill="#fa8c16" />
+
+  <!-- 间隔效应的连接 -->
+  <line x1="200" y1="500" x2="320" y2="500" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="320,500 310,495 310,505" fill="#1890ff" />
+
+  <line x1="580" y1="500" x2="620" y2="500" stroke="#fa8c16" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="620,500 610,495 610,505" fill="#fa8c16" />
+
+  <!-- 总结说明 -->
+  <rect x="100" y="570" width="800" height="2" fill="#333" />
+  <text x="500" y="590" text-anchor="middle" font-size="16" fill="#333" font-style="italic">
+    核心理论为技术能力提供方向感、深度和可持续性，塑造"知道为何而做、如何做得更好的创造者"
+  </text>
+</svg>

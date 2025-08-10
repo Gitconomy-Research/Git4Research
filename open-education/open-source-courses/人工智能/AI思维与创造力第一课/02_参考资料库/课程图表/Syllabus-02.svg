@@ -1,0 +1,217 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" width="1200" height="950" style="font-family: Arial, sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="950" fill="#f8f9fa" rx="8" ry="8" />
+
+  <!-- 标题 -->
+  <text x="600" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">《分布式学习旅程》- AI思维与创造力课程</text>
+
+  <!-- 图例 -->
+  <rect x="50" y="70" width="15" height="15" fill="#1890ff" rx="2" ry="2" />
+  <text x="75" y="83" font-size="14" fill="#333">周末工作坊</text>
+
+  <rect x="180" y="70" width="15" height="15" fill="#91caff" rx="2" ry="2" opacity="0.6" />
+  <text x="205" y="83" font-size="14" fill="#333">周间任务</text>
+
+  <line x1="310" y1="77" x2="370" y2="77" stroke="#ff4d4f" stroke-width="3" />
+  <text x="380" y="83" font-size="14" fill="#333">情感曲线</text>
+
+  <circle cx="470" cy="77" r="8" fill="#52c41a" />
+  <text x="490" y="83" font-size="14" fill="#333">关键里程碑</text>
+
+  <!-- 时间线背景 -->
+  <rect x="100" y="110" width="1000" height="60" fill="#f0f0f0" rx="5" ry="5" />
+
+  <!-- 时间段标记 -->
+  <line x1="100" y1="140" x2="1100" y2="140" stroke="#d9d9d9" stroke-width="2" />
+
+  <line x1="300" y1="120" x2="300" y2="160" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="500" y1="120" x2="500" y2="160" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="700" y1="120" x2="700" y2="160" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="900" y1="120" x2="900" y2="160" stroke="#d9d9d9" stroke-width="2" />
+
+  <text x="200" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">第一周</text>
+  <text x="400" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">第二周</text>
+  <text x="600" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">第三周</text>
+  <text x="800" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">第四周</text>
+  <text x="1000" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">第五周</text>
+
+  <!-- 学习阶段 -->
+  <rect x="100" y="180" width="200" height="40" fill="#e6f7ff" rx="5" ry="5" stroke="#1890ff" stroke-width="2" />
+  <text x="200" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#1890ff">解构与奠基</text>
+
+  <rect x="300" y="180" width="200" height="40" fill="#fff7e6" rx="5" ry="5" stroke="#fa8c16" stroke-width="2" />
+  <text x="400" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#fa8c16">洞察与重构</text>
+
+  <rect x="500" y="180" width="200" height="40" fill="#fcf4ff" rx="5" ry="5" stroke="#722ed1" stroke-width="2" />
+  <text x="600" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#722ed1">人机共创与直觉AI</text>
+
+  <rect x="700" y="180" width="200" height="40" fill="#f6ffed" rx="5" ry="5" stroke="#52c41a" stroke-width="2" />
+  <text x="800" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#52c41a">原型与评估</text>
+
+  <rect x="900" y="180" width="200" height="40" fill="#fff2e8" rx="5" ry="5" stroke="#fa541c" stroke-width="2" />
+  <text x="1000" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#fa541c">综合与新起点</text>
+
+  <!-- 周末工作坊区域 -->
+  <text x="20" y="270" font-size="16" font-weight="bold" fill="#333">周末工作坊</text>
+
+  <!-- 第一周工作坊 -->
+  <rect x="120" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="200" y="290" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Day 1-2</text>
+  <text x="200" y="315" text-anchor="middle" font-size="12" fill="white">破旧立新与第一性原理</text>
+  <text x="200" y="335" text-anchor="middle" font-size="12" fill="white">学习者主权的开启</text>
+
+  <!-- 第二周工作坊 -->
+  <rect x="320" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="400" y="290" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Day 3-4</text>
+  <text x="400" y="315" text-anchor="middle" font-size="12" fill="white">系统洞察的艺术</text>
+  <text x="400" y="335" text-anchor="middle" font-size="12" fill="white">从问题到机遇</text>
+
+  <!-- 第三周工作坊 -->
+  <rect x="520" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="600" y="290" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Day 5-6</text>
+  <text x="600" y="315" text-anchor="middle" font-size="12" fill="white">机器的语言</text>
+  <text x="600" y="335" text-anchor="middle" font-size="12" fill="white">让抽象变得可触</text>
+
+  <!-- 第四周工作坊 -->
+  <rect x="720" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="800" y="290" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Day 7-8</text>
+  <text x="800" y="315" text-anchor="middle" font-size="12" fill="white">创造的节奏与叙事</text>
+  <text x="800" y="335" text-anchor="middle" font-size="12" fill="white">策展你的成长</text>
+
+  <!-- 第五周工作坊 -->
+  <rect x="920" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="1000" y="290" text-anchor="middle" font-size="14" fill="white" font-weight="bold">Day 9-10</text>
+  <text x="1000" y="315" text-anchor="middle" font-size="12" fill="white">个人项目展示与质询</text>
+  <text x="1000" y="335" text-anchor="middle" font-size="12" fill="white">元认知叙事与展望</text>
+
+  <!-- 学习理论路径 - 带箭头的虚线 -->
+  <text x="120" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="middle">悬挂判断</text>
+  <text x="600" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="middle">内在呈现</text>
+  <text x="1080" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="end">行动实践</text>
+
+  <!-- 从悬挂判断到内在呈现的箭头 -->
+  <line x1="180" y1="400" x2="550" y2="400" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="540,395 550,400 540,405" fill="#722ed1" />
+
+  <!-- 从内在呈现到行动实践的箭头 -->
+  <line x1="650" y1="400" x2="1020" y2="400" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="1010,395 1020,400 1010,405" fill="#722ed1" />
+
+  <!-- 周间任务区域 -->
+  <text x="20" y="440" font-size="16" font-weight="bold" fill="#333">周间任务</text>
+
+  <!-- 第一周周间任务 -->
+  <rect x="120" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="200" y="460" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">反思与应用</text>
+  <text x="200" y="485" text-anchor="middle" font-size="11" fill="#333">• 结构化思维应用</text>
+  <text x="200" y="505" text-anchor="middle" font-size="11" fill="#333">• AI开发环境搭建</text>
+  <text x="200" y="525" text-anchor="middle" font-size="11" fill="#333">• 元认知日志启动</text>
+
+  <!-- 第二周周间任务 -->
+  <rect x="320" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="400" y="460" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">反思与应用</text>
+  <text x="400" y="485" text-anchor="middle" font-size="11" fill="#333">• 深化用户洞察</text>
+  <text x="400" y="505" text-anchor="middle" font-size="11" fill="#333">• 挑战转化为机会点</text>
+  <text x="400" y="525" text-anchor="middle" font-size="11" fill="#333">• AI产品创新构思</text>
+
+  <!-- 第三周周间任务 -->
+  <rect x="520" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="600" y="460" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">反思与应用</text>
+  <text x="600" y="485" text-anchor="middle" font-size="11" fill="#333">• Python人机对话实现</text>
+  <text x="600" y="505" text-anchor="middle" font-size="11" fill="#333">• 高级提示工程实践</text>
+  <text x="600" y="525" text-anchor="middle" font-size="11" fill="#333">• AI解决方案探索</text>
+
+  <!-- 第四周周间任务 -->
+  <rect x="720" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="800" y="460" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">项目冲刺与成长策展</text>
+  <text x="800" y="485" text-anchor="middle" font-size="11" fill="#333">• 可交互AI应用原型</text>
+  <text x="800" y="505" text-anchor="middle" font-size="11" fill="#333">• Streamlit/Gradio实践</text>
+  <text x="800" y="525" text-anchor="middle" font-size="11" fill="#333">• 个人成长证据梳理</text>
+
+  <!-- 第五周周间任务 -->
+  <rect x="920" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="1000" y="460" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">最终产出完善与提交</text>
+  <text x="1000" y="485" text-anchor="middle" font-size="11" fill="#333">• 最终AI项目完成</text>
+  <text x="1000" y="505" text-anchor="middle" font-size="11" fill="#333">• 证据组合包提交</text>
+  <text x="1000" y="525" text-anchor="middle" font-size="11" fill="#333">• 未来学习路径规划</text>
+
+  <!-- 情感曲线 -->
+  <text x="20" y="580" font-size="16" font-weight="bold" fill="#333">情感曲线</text>
+
+  <!-- 情感曲线背景和网格 -->
+  <rect x="100" y="570" width="1000" height="200" fill="white" rx="5" ry="5" stroke="#d9d9d9" stroke-width="1" />
+
+  <!-- 水平参考线 -->
+  <line x1="100" y1="640" x2="1100" y2="640" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="80" y="645" text-anchor="end" font-size="12" fill="#666">中性</text>
+
+  <line x1="100" y1="600" x2="1100" y2="600" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="80" y="605" text-anchor="end" font-size="12" fill="#666">积极</text>
+
+  <line x1="100" y1="680" x2="1100" y2="680" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="80" y="685" text-anchor="end" font-size="12" fill="#666">挑战</text>
+
+  <!-- 垂直参考线 -->
+  <line x1="300" y1="570" x2="300" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <line x1="500" y1="570" x2="500" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <line x1="700" y1="570" x2="700" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <line x1="900" y1="570" x2="900" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+
+  <!-- 情感曲线路径 -->
+  <path d="M 120,685
+           C 150,665 170,705 200,715
+           S 250,695 300,675
+           S 350,655 400,665
+           S 450,685 500,655
+           S 550,625 600,635
+           S 650,655 700,645
+           S 750,625 800,615
+           S 850,605 900,625
+           S 950,645 1000,605
+           S 1050,585 1080,585"
+        fill="none" stroke="#ff4d4f" stroke-width="3" />
+
+  <!-- 情感阶段标注 -->
+  <text x="200" y="745" text-anchor="middle" font-size="11" fill="#ff4d4f">期待与不确定</text>
+  <text x="350" y="645" text-anchor="middle" font-size="11" fill="#ff4d4f">认知重构</text>
+  <text x="550" y="620" text-anchor="middle" font-size="11" fill="#ff4d4f">能力提升</text>
+  <text x="830" y="600" text-anchor="middle" font-size="11" fill="#ff4d4f">创造自信</text>
+  <text x="1050" y="570" text-anchor="middle" font-size="11" fill="#ff4d4f">成就感</text>
+
+  <!-- 关键里程碑 -->
+  <text x="20" y="800" font-size="16" font-weight="bold" fill="#333">关键里程碑</text>
+
+  <!-- 里程碑点  -->
+  <circle cx="200" cy="800" r="10" fill="#52c41a" />
+  <text x="200" y="830" text-anchor="middle" font-size="12" fill="#333">AI开发环境搭建完成</text>
+
+  <circle cx="400" cy="800" r="10" fill="#52c41a" />
+  <text x="400" y="830" text-anchor="middle" font-size="12" fill="#333">AI产品机会点确立</text>
+
+  <circle cx="600" cy="800" r="10" fill="#52c41a" />
+  <text x="600" y="830" text-anchor="middle" font-size="12" fill="#333">Python人机交互实现</text>
+
+  <circle cx="800" cy="800" r="10" fill="#52c41a" />
+  <text x="800" y="830" text-anchor="middle" font-size="12" fill="#333">交互式AI应用原型</text>
+
+  <circle cx="1000" cy="800" r="10" fill="#52c41a" />
+  <text x="1000" y="830" text-anchor="middle" font-size="12" fill="#333">认知操作系统1.0</text>
+
+  <text x="20" y="870" font-size="16" font-weight="bold" fill="#333">最终产出</text>
+
+  <!-- 最终产出内容框 -->
+  <rect x="100" y="850" width="1000" height="100" fill="#f0f0ff" rx="5" ry="5" stroke="#9254de" stroke-width="2" />
+
+  <!-- 最终产出三大项 -->
+  <rect x="120" y="860" width="300" height="80" rx="5" ry="5" fill="#9254de" opacity="0.2" stroke="#9254de" stroke-width="1" />
+  <text x="270" y="890" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">个人"证据组合包"</text>
+  <text x="270" y="910" text-anchor="middle" font-size="11" fill="#333">深度内化的学习旅程，包含代码片段和项目链接</text>
+
+  <rect x="450" y="860" width="300" height="80" rx="5" ry="5" fill="#9254de" opacity="0.2" stroke="#9254de" stroke-width="1" />
+  <text x="600" y="890" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">可在线演示的个人AI项目</text>
+  <text x="600" y="910" text-anchor="middle" font-size="11" fill="#333">综合应用系统思维、Python和AI开发能力</text>
+
+  <rect x="780" y="860" width="300" height="80" rx="5" ry="5" fill="#9254de" opacity="0.2" stroke="#9254de" stroke-width="1" />
+  <text x="930" y="890" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">个人认知操作系统1.0</text>
+</svg>

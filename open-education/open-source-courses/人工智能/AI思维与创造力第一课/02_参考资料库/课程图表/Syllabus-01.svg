@@ -1,0 +1,203 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" style="font-family: Arial, sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="800" fill="#f8f9fa" rx="8" ry="8" />
+
+  <!-- 标题 -->
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">《AI思维与创造力第一课》三种教学方案对比</text>
+
+  <!-- 三列背景 -->
+  <rect x="100" y="90" width="320" height="680" fill="#e6f7ff" rx="8" ry="8" opacity="0.5" stroke="#1890ff" stroke-width="2" />
+  <rect x="440" y="90" width="320" height="680" fill="#fff7e6" rx="8" ry="8" opacity="0.5" stroke="#fa8c16" stroke-width="2" />
+  <rect x="780" y="90" width="320" height="680" fill="#f6ffed" rx="8" ry="8" opacity="0.5" stroke="#52c41a" stroke-width="2" />
+
+  <!-- 方案标题 -->
+  <text x="260" y="120" text-anchor="middle" font-size="22" font-weight="bold" fill="#1890ff">方案A：分布式学习旅程</text>
+  <text x="600" y="120" text-anchor="middle" font-size="22" font-weight="bold" fill="#fa8c16">方案B：高强度训练营</text>
+  <text x="940" y="120" text-anchor="middle" font-size="22" font-weight="bold" fill="#52c41a">方案C：混合式冲刺</text>
+
+  <!-- 模型结构 -->
+  <text x="600" y="160" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">模型结构</text>
+
+  <!-- 方案A时间结构 -->
+  <g transform="translate(120, 180)">
+    <!-- 周末1 -->
+    <rect x="0" y="0" width="40" height="60" fill="#1890ff" rx="4" ry="4" />
+    <text x="20" y="40" text-anchor="middle" font-size="12" fill="white">周末1</text>
+
+    <!-- 周中1 -->
+    <line x1="40" y1="30" x2="90" y2="30" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,3" />
+    <text x="65" y="20" text-anchor="middle" font-size="10" fill="#1890ff">周中实践</text>
+
+    <!-- 周末2 -->
+    <rect x="90" y="0" width="40" height="60" fill="#1890ff" rx="4" ry="4" />
+    <text x="110" y="40" text-anchor="middle" font-size="12" fill="white">周末2</text>
+
+    <!-- 周中2 -->
+    <line x1="130" y1="30" x2="180" y2="30" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,3" />
+    <text x="155" y="20" text-anchor="middle" font-size="10" fill="#1890ff">周中实践</text>
+
+    <!-- 周末3 -->
+    <rect x="180" y="0" width="40" height="60" fill="#1890ff" rx="4" ry="4" />
+    <text x="200" y="40" text-anchor="middle" font-size="12" fill="white">周末3</text>
+
+    <!-- 省略号 -->
+    <text x="235" y="30" text-anchor="middle" font-size="16" fill="#1890ff">...</text>
+
+    <!-- 周末5 -->
+    <rect x="260" y="0" width="40" height="60" fill="#1890ff" rx="4" ry="4" />
+    <text x="280" y="40" text-anchor="middle" font-size="12" fill="white">周末5</text>
+  </g>
+
+  <!-- 方案A描述 -->
+  <text x="260" y="270" text-anchor="middle" font-size="14" fill="#333">5个周末（10天），分散在5周时间</text>
+  <text x="260" y="290" text-anchor="middle" font-size="14" fill="#333">每周一个为期2天的深度工作坊</text>
+
+  <!-- 方案B时间结构 -->
+  <g transform="translate(460, 180)">
+    <rect x="0" y="0" width="280" height="60" fill="#fa8c16" rx="4" ry="4" />
+    <line x1="56" y1="0" x2="56" y2="60" stroke="white" stroke-width="1" />
+    <line x1="112" y1="0" x2="112" y2="60" stroke="white" stroke-width="1" />
+    <line x1="168" y1="0" x2="168" y2="60" stroke="white" stroke-width="1" />
+    <line x1="224" y1="0" x2="224" y2="60" stroke="white" stroke-width="1" />
+
+    <text x="28" y="40" text-anchor="middle" font-size="12" fill="white">第1天</text>
+    <text x="84" y="40" text-anchor="middle" font-size="12" fill="white">第2天</text>
+    <text x="140" y="40" text-anchor="middle" font-size="12" fill="white">第3天</text>
+    <text x="196" y="40" text-anchor="middle" font-size="12" fill="white">第4天</text>
+    <text x="252" y="40" text-anchor="middle" font-size="12" fill="white">第5天</text>
+  </g>
+
+  <!-- 方案B描述 -->
+  <text x="600" y="270" text-anchor="middle" font-size="14" fill="#333">连续5天全日制沉浸式学习</text>
+  <text x="600" y="290" text-anchor="middle" font-size="14" fill="#333">每天8小时+晚间项目实践</text>
+
+  <!-- 方案C时间结构 -->
+  <g transform="translate(800, 180)">
+    <!-- 线下开营 -->
+    <rect x="0" y="0" width="60" height="60" fill="#52c41a" rx="4" ry="4" />
+    <text x="30" y="30" text-anchor="middle" font-size="12" fill="white">线下</text>
+    <text x="30" y="45" text-anchor="middle" font-size="12" fill="white">开营</text>
+
+    <!-- 线上实践 -->
+    <line x1="60" y1="30" x2="220" y2="30" stroke="#52c41a" stroke-width="4" stroke-dasharray="10,4" />
+    <text x="140" y="20" text-anchor="middle" font-size="12" fill="#52c41a">线上项目实践（3周）</text>
+
+    <!-- 线下闭营 -->
+    <rect x="220" y="0" width="60" height="60" fill="#52c41a" rx="4" ry="4" />
+    <text x="250" y="30" text-anchor="middle" font-size="12" fill="white">线下</text>
+    <text x="250" y="45" text-anchor="middle" font-size="12" fill="white">闭营</text>
+  </g>
+
+  <!-- 方案C描述 -->
+  <text x="940" y="270" text-anchor="middle" font-size="14" fill="#333">3天线下开营 + 3周线上项目</text>
+  <text x="940" y="290" text-anchor="middle" font-size="14" fill="#333">+ 2天线下闭营</text>
+
+  <!-- 核心理念 -->
+  <text x="600" y="340" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">核心理念</text>
+
+  <rect x="120" y="360" width="280" height="80" rx="8" ry="8" fill="white" stroke="#1890ff" stroke-width="2" />
+  <text x="260" y="380" text-anchor="middle" font-size="16" font-weight="bold" fill="#1890ff">深度内化与转化</text>
+  <text x="260" y="405" text-anchor="middle" font-size="14" fill="#333">利用"间隔效应"，最大化长期知识</text>
+  <text x="260" y="425" text-anchor="middle" font-size="14" fill="#333">留存与思维模式的根本转变</text>
+
+  <rect x="460" y="360" width="280" height="80" rx="8" ry="8" fill="white" stroke="#fa8c16" stroke-width="2" />
+  <text x="600" y="380" text-anchor="middle" font-size="16" font-weight="bold" fill="#fa8c16">快速部署与应用</text>
+  <text x="600" y="405" text-anchor="middle" font-size="14" fill="#333">通过高强度"集中练习"，在最短时间</text>
+  <text x="600" y="425" text-anchor="middle" font-size="14" fill="#333">内完成核心技能的密集输入与项目产出</text>
+
+  <rect x="800" y="360" width="280" height="80" rx="8" ry="8" fill="white" stroke="#52c41a" stroke-width="2" />
+  <text x="940" y="380" text-anchor="middle" font-size="16" font-weight="bold" fill="#52c41a">动能激发与实践</text>
+  <text x="940" y="405" text-anchor="middle" font-size="14" fill="#333">结合沉浸式体验与线上实践灵活性</text>
+  <text x="940" y="425" text-anchor="middle" font-size="14" fill="#333">在团队协作与项目交付间取得平衡</text>
+
+  <!-- 认知负荷 & 反思深度 -->
+  <text x="600" y="480" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">认知负荷和反思深度</text>
+
+  <!-- 方案A认知负荷 -->
+  <text x="150" y="510" font-size="14" font-weight="bold" fill="#333">认知负荷:</text>
+  <rect x="230" y="500" width="150" height="20" rx="10" ry="10" fill="#eee" />
+  <rect x="230" y="500" width="30" height="20" rx="10" ry="10" fill="#1890ff" />
+  <text x="270" y="515" font-size="14" fill="#333">低</text>
+
+  <!-- 方案A反思深度 -->
+  <text x="150" y="540" font-size="14" font-weight="bold" fill="#333">反思深度:</text>
+  <rect x="230" y="530" width="150" height="20" rx="10" ry="10" fill="#eee" />
+  <rect x="230" y="530" width="150" height="20" rx="10" ry="10" fill="#1890ff" />
+  <text x="390" y="545" font-size="14" fill="white">深</text>
+
+  <!-- 方案B认知负荷 -->
+  <text x="490" y="510" font-size="14" font-weight="bold" fill="#333">认知负荷:</text>
+  <rect x="570" y="500" width="150" height="20" rx="10" ry="10" fill="#eee" />
+  <rect x="570" y="500" width="150" height="20" rx="10" ry="10" fill="#fa8c16" />
+  <text x="730" y="515" font-size="14" fill="white">极高</text>
+
+  <!-- 方案B反思深度 -->
+  <text x="490" y="540" font-size="14" font-weight="bold" fill="#333">反思深度:</text>
+  <rect x="570" y="530" width="150" height="20" rx="10" ry="10" fill="#eee" />
+  <rect x="570" y="530" width="30" height="20" rx="10" ry="10" fill="#fa8c16" />
+  <text x="610" y="545" font-size="14" fill="#333">浅</text>
+
+  <!-- 方案C认知负荷 -->
+  <text x="830" y="510" font-size="14" font-weight="bold" fill="#333">认知负荷:</text>
+  <rect x="910" y="500" width="150" height="20" rx="10" ry="10" fill="#eee" />
+  <rect x="910" y="500" width="75" height="20" rx="10" ry="10" fill="#52c41a" />
+  <text x="950" y="515" font-size="14" fill="white">中</text>
+
+  <!-- 方案C反思深度 -->
+  <text x="830" y="540" font-size="14" font-weight="bold" fill="#333">反思深度:</text>
+  <rect x="910" y="530" width="150" height="20" rx="10" ry="10" fill="#eee" />
+  <rect x="910" y="530" width="75" height="20" rx="10" ry="10" fill="#52c41a" />
+  <text x="950" y="545" font-size="14" fill="white">中</text>
+
+  <!-- 适用人群 -->
+  <text x="600" y="590" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">适用人群</text>
+
+  <rect x="120" y="610" width="280" height="70" rx="8" ry="8" fill="white" stroke="#1890ff" stroke-width="2" />
+  <text x="260" y="635" text-anchor="middle" font-size="14" fill="#333">寻求思维模式根本转变的个人</text>
+  <text x="260" y="655" text-anchor="middle" font-size="14" fill="#333">希望将学习与工作结合的在职人士</text>
+  <text x="260" y="675" text-anchor="middle" font-size="14" fill="#333">重视长期价值的学习者</text>
+
+  <rect x="460" y="610" width="280" height="70" rx="8" ry="8" fill="white" stroke="#fa8c16" stroke-width="2" />
+  <text x="600" y="635" text-anchor="middle" font-size="14" fill="#333">企业内部技能强化、团队集训</text>
+  <text x="600" y="655" text-anchor="middle" font-size="14" fill="#333">时间受限但需快速掌握技能的团队</text>
+  <text x="600" y="675" text-anchor="middle" font-size="14" fill="#333">职业转换者</text>
+
+  <rect x="800" y="610" width="280" height="70" rx="8" ry="8" fill="white" stroke="#52c41a" stroke-width="2" />
+  <text x="940" y="635" text-anchor="middle" font-size="14" fill="#333">企业内部创新团队孵化</text>
+  <text x="940" y="655" text-anchor="middle" font-size="14" fill="#333">需要兼顾工作与深度学习的场景</text>
+  <text x="940" y="675" text-anchor="middle" font-size="14" fill="#333">希望平衡效率与深度的学习者</text>
+
+  <!-- 优势与风险 -->
+  <text x="600" y="710" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">核心优势 vs 潜在风险</text>
+
+  <g transform="translate(120, 730)">
+    <!-- 优势 -->
+    <rect x="0" y="0" width="135" height="25" fill="#1890ff" rx="4" ry="4" />
+    <text x="67.5" y="17" text-anchor="middle" font-size="12" fill="white">学习效果最持久</text>
+
+    <!-- 风险 -->
+    <rect x="145" y="0" width="135" height="25" fill="#ff4d4f" rx="4" ry="4" opacity="0.7" />
+    <text x="212.5" y="17" text-anchor="middle" font-size="12" fill="white">需长期保持投入</text>
+  </g>
+
+  <g transform="translate(460, 730)">
+    <!-- 优势 -->
+    <rect x="0" y="0" width="135" height="25" fill="#fa8c16" rx="4" ry="4" />
+    <text x="67.5" y="17" text-anchor="middle" font-size="12" fill="white">周期短，见效快</text>
+
+    <!-- 风险 -->
+    <rect x="145" y="0" width="135" height="25" fill="#ff4d4f" rx="4" ry="4" opacity="0.7" />
+    <text x="212.5" y="17" text-anchor="middle" font-size="12" fill="white">内化程度低</text>
+  </g>
+
+  <g transform="translate(800, 730)">
+    <!-- 优势 -->
+    <rect x="0" y="0" width="135" height="25" fill="#52c41a" rx="4" ry="4" />
+    <text x="67.5" y="17" text-anchor="middle" font-size="12" fill="white">平衡效率与深度</text>
+
+    <!-- 风险 -->
+    <rect x="145" y="0" width="135" height="25" fill="#ff4d4f" rx="4" ry="4" opacity="0.7" />
+    <text x="212.5" y="17" text-anchor="middle" font-size="12" fill="white">需强自驱力</text>
+  </g>
+</svg>
