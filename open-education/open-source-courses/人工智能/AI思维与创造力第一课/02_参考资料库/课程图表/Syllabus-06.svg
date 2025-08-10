@@ -1,0 +1,119 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 740" width="1000" height="740">
+  <!-- 背景 -->
+  <rect width="1000" height="740" fill="#f8f9fa" rx="8" ry="8" />
+
+  <!-- 标题 -->
+  <text x="500" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">高强度训练营课程框架</text>
+  <text x="500" y="80" text-anchor="middle" font-size="16" fill="#666">核心理论与技术能力在跨时间学习中的进化关系</text>
+
+  <!-- 核心理论区域背景 -->
+  <rect x="50" y="120" width="240" height="470" rx="10" ry="10" fill="#e6f7ff" stroke="#00796b" stroke-width="2" />
+  <text x="170" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#00796b">核心理论 (道)</text>
+
+  <!-- 赋能通道背景 -->
+  <rect x="310" y="120" width="380" height="470" rx="10" ry="10" fill="#fcf4ff" stroke="#722ed1" stroke-width="2" />
+  <text x="500" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#722ed1">如何赋能</text>
+
+  <!-- 技术能力区域背景 -->
+  <rect x="710" y="120" width="240" height="470" rx="10" ry="10" fill="#fff7e6" stroke="#f57c00" stroke-width="2" />
+  <text x="830" y="150" text-anchor="middle" font-size="20" font-weight="bold" fill="#f57c00">技术能力 (术)</text>
+
+  <!-- 核心理论元素 -->
+  <!-- 第一性原理 -->
+  <rect x="70" y="190" width="200" height="80" rx="8" ry="8" fill="white" stroke="#00796b" stroke-width="2" />
+  <text x="170" y="220" text-anchor="middle" font-size="16" font-weight="bold" fill="#00796b">第一性原理</text>
+  <text x="170" y="245" text-anchor="middle" font-size="12" fill="#00796b">从基本原理出发的思考方式</text>
+
+  <!-- 系统思维 -->
+  <rect x="70" y="290" width="200" height="80" rx="8" ry="8" fill="white" stroke="#00796b" stroke-width="2" />
+  <text x="170" y="320" text-anchor="middle" font-size="16" font-weight="bold" fill="#00796b">系统思维</text>
+  <text x="170" y="345" text-anchor="middle" font-size="12" fill="#00796b">整体视角与关联分析</text>
+
+  <!-- 元认知 -->
+  <rect x="70" y="390" width="200" height="80" rx="8" ry="8" fill="white" stroke="#00796b" stroke-width="2" />
+  <text x="170" y="420" text-anchor="middle" font-size="16" font-weight="bold" fill="#00796b">元认知</text>
+  <text x="170" y="445" text-anchor="middle" font-size="12" fill="#00796b">对自身思考过程的觉察</text>
+
+  <!-- 集中练习 -->
+  <rect x="70" y="490" width="200" height="80" rx="8" ry="8" fill="white" stroke="#00796b" stroke-width="2" />
+  <text x="170" y="520" text-anchor="middle" font-size="16" font-weight="bold" fill="#00796b">集中练习</text>
+  <text x="170" y="545" text-anchor="middle" font-size="12" fill="#00796b">高强度、有目标的实践</text>
+
+  <!-- 赋能通道元素 -->
+  <!-- 第一性原理赋能 -->
+  <rect x="350" y="190" width="300" height="80" rx="8" ry="8" fill="white" stroke="#722ed1" stroke-width="2" />
+  <text x="500" y="220" text-anchor="middle" font-size="14" font-weight="bold" fill="#722ed1">快速穿透问题，直击项目核心价值</text>
+  <text x="500" y="245" text-anchor="middle" font-size="12" fill="#722ed1">识别关键约束与突破点</text>
+
+  <!-- 系统思维赋能 -->
+  <rect x="350" y="290" width="300" height="80" rx="8" ry="8" fill="white" stroke="#722ed1" stroke-width="2" />
+  <text x="500" y="320" text-anchor="middle" font-size="14" font-weight="bold" fill="#722ed1">快速构建应用蓝图，识别关键节点</text>
+  <text x="500" y="345" text-anchor="middle" font-size="12" fill="#722ed1">在复杂系统中找到最佳切入点</text>
+
+  <!-- 元认知赋能 -->
+  <rect x="350" y="390" width="300" height="80" rx="8" ry="8" fill="white" stroke="#722ed1" stroke-width="2" />
+  <text x="500" y="420" text-anchor="middle" font-size="14" font-weight="bold" fill="#722ed1">在高压下进行即时复盘，最大化效率</text>
+  <text x="500" y="445" text-anchor="middle" font-size="12" fill="#722ed1">快速调整学习策略与实践方向</text>
+
+  <!-- 集中练习赋能 -->
+  <rect x="350" y="490" width="300" height="80" rx="8" ry="8" fill="white" stroke="#722ed1" stroke-width="2" />
+  <text x="500" y="520" text-anchor="middle" font-size="14" font-weight="bold" fill="#722ed1">保障核心技能的快速掌握</text>
+  <text x="500" y="545" text-anchor="middle" font-size="12" fill="#722ed1">形成技能的肌肉记忆</text>
+
+  <!-- 技术能力元素 -->
+  <!-- 项目价值快速定义与验证 -->
+  <rect x="730" y="190" width="200" height="80" rx="8" ry="8" fill="white" stroke="#f57c00" stroke-width="2" />
+  <text x="830" y="220" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">项目价值快速定义</text>
+  <text x="830" y="245" text-anchor="middle" font-size="12" fill="#f57c00">精准把握需求与价值</text>
+
+  <!-- AI应用架构的快速设计 -->
+  <rect x="730" y="290" width="200" height="80" rx="8" ry="8" fill="white" stroke="#f57c00" stroke-width="2" />
+  <text x="830" y="320" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">AI应用架构快速设计</text>
+  <text x="830" y="345" text-anchor="middle" font-size="12" fill="#f57c00">合理规划技术栈与模块</text>
+
+  <!-- 快速迭代与调试 -->
+  <rect x="730" y="390" width="200" height="80" rx="8" ry="8" fill="white" stroke="#f57c00" stroke-width="2" />
+  <text x="830" y="420" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">快速迭代与调试</text>
+  <text x="830" y="445" text-anchor="middle" font-size="12" fill="#f57c00">敏捷应对变化与挑战</text>
+
+  <!-- 技术能力栈快速贯通 -->
+  <rect x="730" y="490" width="200" height="80" rx="8" ry="8" fill="white" stroke="#f57c00" stroke-width="2" />
+  <text x="830" y="520" text-anchor="middle" font-size="16" font-weight="bold" fill="#f57c00">技术能力栈快速贯通</text>
+  <text x="830" y="545" text-anchor="middle" font-size="12" fill="#f57c00">全栈整合与实际应用</text>
+
+  <!-- 连接线 - 从理论到赋能 -->
+  <path d="M 270,230 C 290,230 330,230 350,230" fill="none" stroke="#00796b" stroke-width="2" />
+  <polygon points="345,225 350,230 345,235" fill="#00796b" />
+
+  <path d="M 270,330 C 290,330 330,330 350,330" fill="none" stroke="#00796b" stroke-width="2" />
+  <polygon points="345,325 350,330 345,335" fill="#00796b" />
+
+  <path d="M 270,430 C 290,430 330,430 350,430" fill="none" stroke="#00796b" stroke-width="2" />
+  <polygon points="345,425 350,430 345,435" fill="#00796b" />
+
+  <path d="M 270,530 C 290,530 330,530 350,530" fill="none" stroke="#00796b" stroke-width="2" />
+  <polygon points="345,525 350,530 345,535" fill="#00796b" />
+
+  <!-- 连接线 - 从赋能到技术 -->
+  <path d="M 650,230 C 670,230 710,230 730,230" fill="none" stroke="#f57c00" stroke-width="2" />
+  <polygon points="725,225 730,230 725,235" fill="#f57c00" />
+
+  <path d="M 650,330 C 670,330 710,330 730,330" fill="none" stroke="#f57c00" stroke-width="2" />
+  <polygon points="725,325 730,330 725,335" fill="#f57c00" />
+
+  <path d="M 650,430 C 670,430 710,430 730,430" fill="none" stroke="#f57c00" stroke-width="2" />
+  <polygon points="725,425 730,430 725,435" fill="#f57c00" />
+
+  <path d="M 650,530 C 670,530 710,530 730,530" fill="none" stroke="#f57c00" stroke-width="2" />
+  <polygon points="725,525 730,530 725,535" fill="#f57c00" />
+
+  <!-- 5天密集训练循环椭圆背景 -->
+  <ellipse cx="500" cy="645" rx="450" ry="35" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" />
+
+  <!-- 5天密集训练循环文字 -->
+  <text x="500" y="650" text-anchor="middle" font-size="16" font-weight="bold" fill="#3f51b5">5天密集训练循环</text>
+
+  <!-- 底部说明 -->
+  <text x="500" y="720" text-anchor="middle" font-size="14" fill="#666">通过紧密耦合的理论-实践融合，将学习者打造成"能迅速交付有效成果的创造者"</text>
+</svg>
