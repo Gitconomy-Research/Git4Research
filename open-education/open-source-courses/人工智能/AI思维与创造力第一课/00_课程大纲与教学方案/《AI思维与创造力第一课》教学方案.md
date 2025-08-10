@@ -88,45 +88,7 @@
 | **第二周** | **洞察与重构** <br> Day 3-4: 系统洞察的艺术、从问题到机遇 | **反思与应用：**<br>深化用户洞察，将挑战转化为AI产品的创新机会点。 |
 | **第三周** | **人机共创与直觉AI** <br> Day 5-6: 机器的语言、让抽象变得可触 | **反思与应用：**<br>掌握高级人机对话的Python实现，并探索AI解决方案。 |
 | **第四周** | **原型与评估** <br> Day 7-8: 创造的节奏与叙事、策展你的成长 | **项目冲刺与成长策展：**<br>将想法转化为可交互的AI应用原型，并开始梳理个人成长证据。 |
-| **第五周** | **综合与新起点** <br> Day 9-10: 个人项目展示与<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
-  <g transform="translate(250, 250)">
-    <!-- Draw radar background -->
-    <circle cx="0" cy="0" r="200" fill="none" stroke="black" stroke-width="1"/>
-    <circle cx="0" cy="0" r="150" fill="none" stroke="black" stroke-width="1"/>
-    <circle cx="0" cy="0" r="100" fill="none" stroke="black" stroke-width="1"/>
-    <circle cx="0" cy="0" r="50" fill="none" stroke="black" stroke-width="1"/>
-
-    <!-- Draw lines for each axis (道, 法, 术, 器) -->
-    <line x1="0" y1="0" x2="0" y2="-200" stroke="black" stroke-width="1"/>
-    <line x1="0" y1="0" x2="173.21" y2="-173.21" stroke="black" stroke-width="1"/>
-    <line x1="0" y1="0" x2="173.21" y2="173.21" stroke="black" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="200" stroke="black" stroke-width="1"/>
-
-    <!-- Labels for each axis -->
-    <text x="-10" y="-210" font-family="Arial" font-size="14" text-anchor="middle">道</text>
-    <text x="160" y="-160" font-family="Arial" font-size="14" text-anchor="middle">法</text>
-    <text x="160" y="160" font-family="Arial" font-size="14" text-anchor="middle">术</text>
-    <text x="-10" y="210" font-family="Arial" font-size="14" text-anchor="middle">器</text>
-
-    <!-- Draw lines for each knowledge point (枝叶) -->
-    <line x1="0" y1="0" x2="0" y2="-50" stroke="black" stroke-width="1"/>
-    <line x1="0" y1="0" x2="50" y2="-50" stroke="black" stroke-width="1"/>
-    <line x1="0" y1="0" x2="50" y2="50" stroke="black" stroke-width="1"/>
-    <line x1="0" y1="0" x2="0" y2="100" stroke="black" stroke-width="1"/>
-
-    <!-- Knowledge points as branches -->
-    <text x="-10" y="-60" font-family="Arial" font-size="12" text-anchor="middle">知识点1</text>
-    <text x="30" y="-60" font-family="Arial" font-size="12" text-anchor="middle">知识点2</text>
-    <text x="30" y="60" font-family="Arial" font-size="12" text-anchor="middle">知识点3</text>
-    <text x="-10" y="110" font-family="Arial" font-size="12" text-anchor="middle">知识点4</text>
-
-    <!-- Draw main outcomes (外围) -->
-    <text x="0" y="250" font-family="Arial" font-size="14" text-anchor="middle">数学与物理素养</text>
-    <text x="250" y="250" font-family="Arial" font-size="14" text-anchor="middle">理性思维</text>
-    <text x="250" y="300" font-family="Arial" font-size="14" text-anchor="middle">自我进化</text>
-  </g>
-</svg>
-质询、元认知叙事与展望 | **最终产出完善与提交：**<br>完成并展示最终AI项目与“证据组合包”。 |
+| **第五周** | **综合与新起点** <br> Day 9-10: 个人项目展示与质询、元认知叙事与展望 | **最终产出完善与提交：**<br>完成并展示最终AI项目与“证据组合包”。 |
 
 *表3：教学安排概览*
 
