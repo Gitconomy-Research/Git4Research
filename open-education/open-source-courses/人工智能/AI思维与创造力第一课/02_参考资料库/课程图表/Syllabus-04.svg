@@ -84,8 +84,8 @@
 
     <!-- 法轴 - 右方 -->
     <line x1="0" y1="0" x2="300" y2="0" stroke="#1976d2" stroke-width="2" opacity="0.8"/>
-    <text x="315" y="0" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#1976d2" text-anchor="middle" font-weight="bold">法</text>
-    <text x="315" y="20" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle">学习科学与元认知</text>
+    <text x="350" y="0" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#1976d2" text-anchor="middle" font-weight="bold">法</text>
+    <text x="350" y="20" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle">学习科学与元认知</text>
 
     <!-- 法轴上的知识点 -->
     <!-- 第一级知识点 -->
@@ -149,8 +149,8 @@
 
     <!-- 器轴 - 左方 -->
     <line x1="0" y1="0" x2="-300" y2="0" stroke="#c2185b" stroke-width="2" opacity="0.8"/>
-    <text x="-315" y="0" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#c2185b" text-anchor="middle" font-weight="bold">器</text>
-    <text x="-315" y="20" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle">整合与产出</text>
+    <text x="-350" y="0" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#c2185b" text-anchor="middle" font-weight="bold">器</text>
+    <text x="-350" y="20" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle">整合与产出</text>
 
     <!-- 器轴上的知识点 -->
     <!-- 第一级知识点 -->
