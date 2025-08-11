@@ -131,7 +131,7 @@
 
 如果你修复了课程材料中的错误、优化了代码示例，或有任何能够改进课程的贡献，我们非常欢迎你[提交](https://gitcode.com/Gitconomy-Research/Git4Research/pulls)到本仓库。
 
-贡献者：
+核心贡献者：
 
 |姓名| 邮件|
 |---|---|
