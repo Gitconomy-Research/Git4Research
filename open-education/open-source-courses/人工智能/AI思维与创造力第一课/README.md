@@ -129,7 +129,7 @@
 
 如果你在学习过程中遇到任何问题，或对课程内容有任何疑问和建议，请通过本仓库的[Issues页面](https://gitcode.com/Gitconomy-Research/Git4Research/issues)提出。
 
-如果你修复了课程材料中的错误、优化了代码示例，或有任何能够改进课程的贡献，我们非常欢迎你[提交](https://gitcode.com/Gitconomy-Research/Git4Research/pulls)。
+如果你修复了课程材料中的错误、优化了代码示例，或有任何能够改进课程的贡献，我们非常欢迎你[提交](https://gitcode.com/Gitconomy-Research/Git4Research/pulls)到本仓库。
 
 贡献者：
 
