@@ -33,12 +33,12 @@
   <rect x="640" y="90" width="320" height="600" fill="#fff7e6" rx="8" ry="8" opacity="0.5" stroke="#fa8c16" stroke-width="2" />
   <rect x="980" y="90" width="320" height="600" fill="#f6ffed" rx="8" ry="8" opacity="0.5" stroke="#52c41a" stroke-width="2" />
 
-  <!-- 方案标题 -->
-  <text x="460" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#1890ff">方案A：分布式学习旅程</text>
-  <text x="800" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#fa8c16">方案B：高强度训练营</text>
-  <text x="1140" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#52c41a">方案C：混合式冲刺</text>
+  <!-- 场景标题 -->
+  <text x="460" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#1890ff">场景A：分布式学习旅程</text>
+  <text x="800" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#fa8c16">场景B：高强度训练营</text>
+  <text x="1140" y="140" text-anchor="middle" font-size="22" font-weight="bold" fill="#52c41a">场景C：混合式冲刺</text>
 
-  <!-- 方案A时间结构 -->
+  <!-- 场景A时间结构 -->
   <g transform="translate(320, 180)">
     <!-- 周末1 -->
     <rect x="0" y="0" width="40" height="60" fill="#1890ff" rx="4" ry="4" />
@@ -68,11 +68,11 @@
     <text x="280" y="40" text-anchor="middle" font-size="12" fill="white">周末5</text>
   </g>
 
-  <!-- 方案A描述 -->
+  <!-- 场景A描述 -->
   <text x="460" y="270" text-anchor="middle" font-size="14" fill="#333">5个周末（10天），分散在5周时间</text>
   <text x="460" y="290" text-anchor="middle" font-size="14" fill="#333">每周一个为期2天的深度工作坊</text>
 
-  <!-- 方案B时间结构 -->
+  <!-- 场景B时间结构 -->
   <g transform="translate(660, 180)">
     <rect x="0" y="0" width="280" height="60" fill="#fa8c16" rx="4" ry="4" />
     <line x1="56" y1="0" x2="56" y2="60" stroke="white" stroke-width="1" />
@@ -87,11 +87,11 @@
     <text x="252" y="40" text-anchor="middle" font-size="12" fill="white">第5天</text>
   </g>
 
-  <!-- 方案B描述 -->
+  <!-- 场景B描述 -->
   <text x="800" y="270" text-anchor="middle" font-size="14" fill="#333">连续5天全日制沉浸式学习</text>
   <text x="800" y="290" text-anchor="middle" font-size="14" fill="#333">每天8小时+晚间项目实践</text>
 
-  <!-- 方案C时间结构 -->
+  <!-- 场景C时间结构 -->
   <g transform="translate(1000, 180)">
     <!-- 线下开营 -->
     <rect x="0" y="0" width="60" height="60" fill="#52c41a" rx="4" ry="4" />
@@ -108,7 +108,7 @@
     <text x="250" y="45" text-anchor="middle" font-size="12" fill="white">闭营</text>
   </g>
 
-  <!-- 方案C描述 -->
+  <!-- 场景C描述 -->
   <text x="1140" y="270" text-anchor="middle" font-size="14" fill="#333">3天线下开营 + 3周线上项目</text>
   <text x="1140" y="290" text-anchor="middle" font-size="14" fill="#333">+ 2天线下闭营</text>
 
@@ -129,37 +129,37 @@
   <text x="1140" y="385" text-anchor="middle" font-size="14" fill="#333">在团队协作与项目交付间取得平衡</text>
 
   <!-- 认知负荷 & 反思深度 -->
-  <!-- 方案A认知负荷 -->
+  <!-- A认知负荷 -->
   <text x="350" y="430" font-size="14" font-weight="bold" fill="#333">认知负荷:</text>
   <rect x="430" y="420" width="150" height="20" rx="10" ry="10" fill="#eee" />
   <rect x="430" y="420" width="30" height="20" rx="10" ry="10" fill="#1890ff" />
   <text x="470" y="435" font-size="14" fill="#333">低</text>
 
-  <!-- 方案A反思深度 -->
+  <!-- 场景A反思深度 -->
   <text x="350" y="460" font-size="14" font-weight="bold" fill="#333">反思深度:</text>
   <rect x="430" y="450" width="150" height="20" rx="10" ry="10" fill="#eee" />
   <rect x="430" y="450" width="150" height="20" rx="10" ry="10" fill="#1890ff" />
   <text x="590" y="465" font-size="14" fill="white">深</text>
 
-  <!-- 方案B认知负荷 -->
+  <!-- 场景B认知负荷 -->
   <text x="690" y="430" font-size="14" font-weight="bold" fill="#333">认知负荷:</text>
   <rect x="770" y="420" width="150" height="20" rx="10" ry="10" fill="#eee" />
   <rect x="770" y="420" width="150" height="20" rx="10" ry="10" fill="#fa8c16" />
   <text x="930" y="435" font-size="14" fill="white">极高</text>
 
-  <!-- 方案B反思深度 -->
+  <!-- 场景B反思深度 -->
   <text x="690" y="460" font-size="14" font-weight="bold" fill="#333">反思深度:</text>
   <rect x="770" y="450" width="150" height="20" rx="10" ry="10" fill="#eee" />
   <rect x="770" y="450" width="30" height="20" rx="10" ry="10" fill="#fa8c16" />
   <text x="810" y="465" font-size="14" fill="#333">浅</text>
 
-  <!-- 方案C认知负荷 -->
+  <!-- 场景C认知负荷 -->
   <text x="1030" y="430" font-size="14" font-weight="bold" fill="#333">认知负荷:</text>
   <rect x="1110" y="420" width="150" height="20" rx="10" ry="10" fill="#eee" />
   <rect x="1110" y="420" width="75" height="20" rx="10" ry="10" fill="#52c41a" />
   <text x="1150" y="435" font-size="14" fill="white">中</text>
 
-  <!-- 方案C反思深度 -->
+  <!-- 场景C反思深度 -->
   <text x="1030" y="460" font-size="14" font-weight="bold" fill="#333">反思深度:</text>
   <rect x="1110" y="450" width="150" height="20" rx="10" ry="10" fill="#eee" />
   <rect x="1110" y="450" width="75" height="20" rx="10" ry="10" fill="#52c41a" />
