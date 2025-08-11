@@ -58,23 +58,23 @@
 
     <!-- 道轴上的知识点 - 换成圆角矩形 -->
     <!-- 第一级知识点 -->
-    <rect x="-40" y="-165" width="80" height="24" rx="12" ry="12" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="0" y="-150" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">第一性原理</text>
 
-    <rect x="-75" y="-135" width="80" height="24" rx="12" ry="12" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-35" y="-120" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">MECE原则</text>
 
-    <rect x="5" y="-135" width="80" height="24" rx="12" ry="12" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="45" y="-120" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">系统思维</text>
 
     <!-- 第二级知识点 -->
-    <rect x="-40" y="-240" width="80" height="24" rx="12" ry="12" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="0" y="-225" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">JTBD框架</text>
 
-    <rect x="-90" y="-210" width="80" height="24" rx="12" ry="12" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-50" y="-195" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">HMW方法</text>
 
-    <rect x="10" y="-210" width="80" height="24" rx="12" ry="12" fill="white" stroke="#00796b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="50" y="-195" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#00796b" text-anchor="middle">批判性思维</text>
 
     <!-- 连接线 -->
@@ -132,23 +132,23 @@
 
     <!-- 术轴上的知识点  -->
     <!-- 第一级知识点 -->
-    <rect x="-40" y="141" width="80" height="24" rx="12" ry="12" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="0" y="156" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">Python基础</text>
 
-    <rect x="-75" y="111" width="80" height="24" rx="12" ry="12" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-35" y="126" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">API调用</text>
 
-    <rect x="5" y="111" width="80" height="24" rx="12" ry="12" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="45" y="126" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">提示工程</text>
 
     <!-- 第二级知识点 -->
-    <rect x="-40" y="216" width="80" height="24" rx="12" ry="12" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="0" y="231" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">自注意力机制</text>
 
-    <rect x="-90" y="186" width="80" height="24" rx="12" ry="12" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-50" y="201" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">LoRA微调</text>
 
-    <rect x="10" y="186" width="80" height="24" rx="12" ry="12" fill="white" stroke="#f57c00" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="50" y="201" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#f57c00" text-anchor="middle">数据可视化</text>
 
     <!-- 连接线 -->
@@ -169,23 +169,23 @@
 
     <!-- 器轴上的知识点  -->
     <!-- 第一级知识点 -->
-    <rect x="-190" y="-12" width="80" height="24" rx="12" ry="12" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-150" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">敏捷开发</text>
 
-    <rect x="-175" y="-52" width="80" height="24" rx="12" ry="12" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-135" y="-37" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">项目管理</text>
 
-    <rect x="-175" y="28" width="80" height="24" rx="12" ry="12" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-135" y="43" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">快速原型</text>
 
     <!-- 第二级知识点 -->
-    <rect x="-270" y="-12" width="80" height="24" rx="12" ry="12" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-230" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">Web应用</text>
 
-    <rect x="-245" y="-62" width="80" height="24" rx="12" ry="12" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-205" y="-47" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">Streamlit</text>
 
-    <rect x="-245" y="38" width="80" height="24" rx="12" ry="12" fill="white" stroke="#c2185b" stroke-width="1.5" filter="url(#shadow)"/>
+
     <text x="-205" y="53" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#c2185b" text-anchor="middle">交互设计</text>
 
     <!-- 连接线 -->
