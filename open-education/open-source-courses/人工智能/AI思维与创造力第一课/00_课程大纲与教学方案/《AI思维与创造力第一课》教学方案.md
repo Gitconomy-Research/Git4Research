@@ -36,7 +36,7 @@
 
 2. **方案B （高强度训练营）** 则是一种“集中练习”模式，它刻意将认知负荷推向极限，适合那些目标明确、希望在最短时间内快速掌握核心技能并立即投身实践的学习者，例如职业转换者。
 
-3. **方案C （混合式冲刺）** 则是对二者的平衡，它通过初期的沉浸式体验快速建立学习动能，再结合线上的分布式项目实践，兼顾了效Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist, 34(10), 906–911.率与深度。
+3. **方案C （混合式冲刺）** 则是对二者的平衡，它通过初期的沉浸式体验快速建立学习动能，再结合线上的分布式项目实践，兼顾了效率与深度。
 
 因此，选择哪种方案，取决于您的核心目标：是追求思维模式的根本重塑，还是高效的技能部署，亦或是二者之间的平衡。
 
@@ -96,11 +96,13 @@
 - 一个经过数周打磨、可在线演示的最终个人AI项目，综合体现系统思维、创造力方法、Python编程和AI应用开发能力。
 - 一份个人化的认知操作系统1.0版蓝图与未来迭代计划，作为持续学习的起点。
 
-#### 3.1.4 教学安排总览
+#### 3.1.4 教学框架
 
 ![分布式教学框架](./../02_参考资料库/课程图表/Syllabus-02.svg)
-
+ 
 *图：分布式教学场景框架*
+
+分布式学习之类的教学安排遵循“间隔效应”原理，将为期五周的学习旅程分解为“周末沉浸式工作坊”与“周间自驱式学习”的交替循环 。每个周末，学员将深度投入一个核心模块，从思维奠基、用户洞察，到人机共创与原型构建；随后的周间则提供充足的时间进行反思、应用与项目冲刺，确保知识在理论与实践的交替中得到深度内化，最终在第五周完成个人项目与“证据组合包”的综合展示 。
 
 | **周次** | **周末工作坊 (2天)** | **周间任务（自驱学习）** |
 | :--- | :--- | :--- |
@@ -391,11 +393,13 @@
 *   一个**经过迭代、更为扎实的团队AI项目**，可进行现场演示，充分体现团队的集体智慧与协同开发能力。
 *   一份**团队认知操作系统章程**，明确团队在未来项目中可持续沿用的思维模型、协作流程与工具集。
 
-#### 3.3.4 教学安排总览
+#### 3.3.4 教学框架
 
 ![混合冲刺教学框架](./../02_参考资料库/课程图表/Syllabus-08.svg)
 
 *图：混合冲刺教学场景框架*
+
+混合冲刺的教学安排通过“开营-冲刺-闭营”的三段式结构，在效率与深度间取得平衡 。第一阶段为期三天的线下开营，旨在通过密集输入和团队熔炼，快速激发项目动能并完成立项。第二阶段是为期三周的线上项目冲刺，团队成员在此期间进行异步协作与敏捷开发，并由教练提供线上辅导。第三阶段则回归线下，用两天时间完成最终的成果整合、项目路演与深度复盘
 
 | **阶段** | **核心主题** | **学习内容与实践活动** |
 | :--- | :--- | :--- |
@@ -407,7 +411,7 @@
 
 #### 3.3.5 课程大纲
 
-混合式冲刺课程通过“开营-冲刺-闭营”的三段式结构，引导团队完成一次兼具效率与深度的创新实践。它始于线下集中的动能激发与团队熔炼，中经为期三周的线上异步开发与迭代，最终以线下整合交付与深度复盘收官，旨在将团队协作与扎实的项目成果完美结合。
+混合式冲刺课程通始于线下集中的动能激发与团队熔炼，中经为期三周的线上异步开发与迭代，最终以线下整合交付与深度复盘收官，旨在将团队协作与扎实的项目成果完美结合。
 
 ```
 📁 AI思维与创造力第一课 (混合式冲刺)/
@@ -478,10 +482,9 @@
 [2] Minto, B. (2009). The pyramid principle: Logic in writing and thinking. Financial Times/Prentice Hall.  <br>
 [3] Bertalanffy, L. von. (1968). General system theory: Foundations, development, applications. George Braziller.  <br>
 [4] Christensen, C. M., Hall, T., Dillon, K., & Duncan, D. S. (2016). Competing against luck: The story of innovation and customer choice. Harper Business.  <br>
-[5] Basadur, M. (2004). Leading others to think innovatively together: Creative leadership. The Leadership Quarterly, 15(1), 103–121.  <br>
+[5] Basadur, M. (2004). Leading others to think innovatively together: Creative leadership. The Leadership Quarterly, 15(1), 103–121.分布式学习之类的教学安排遵循“间隔效应”原理，将为期五周的学习旅程分解为“周末沉浸式工作坊”与“周间自驱式学习”的交替循环 。每个周末，学员将深度投入一个核心模块，从思维奠基、用户洞察，到人机共创与原型构建；随后的周间则提供充足的时间进行反思、应用与项目冲刺，确保知识在理论与实践的交替中得到深度内化，最终在第五周完成个人项目与“证据组合包”的综合展示 。   <br>
 [6] Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. American Psychologist, 34(10), 906–911.  <br>
 [7] Ebbinghaus, H. (2013). Memory: A contribution to experimental psychology. Dover Publications. (Original work published 1885).  <br>
-
 [8] Gibbs, G. (1988). Learning by doing: A guide for tutors. Further Education Unit.
 
 ---
