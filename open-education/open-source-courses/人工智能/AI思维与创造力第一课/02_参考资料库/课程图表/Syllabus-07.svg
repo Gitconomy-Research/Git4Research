@@ -192,7 +192,7 @@
 
     <!-- 认知操作系统1.0 - 右上角 -->
     <g transform="translate(170, -170)">
-      <circle cx="0" cy="0" r="40" fill="white" stroke="#3f51b5" stroke-width="2" filter="url(#shadow)"/>
+      <circle cx="0" cy="0" r="40" fill="white" stroke="#3f51b5" stroke-width="2" filter="url(#sha#dow)"/>
       <text x="0" y="-12" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#3f51b5" text-anchor="middle" font-weight="bold">认知</text>
       <text x="0" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#3f51b5" text-anchor="middle" font-weight="bold">操作系统</text>
       <text x="0" y="18" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#3f51b5" text-anchor="middle" font-weight="bold">1.0</text>
