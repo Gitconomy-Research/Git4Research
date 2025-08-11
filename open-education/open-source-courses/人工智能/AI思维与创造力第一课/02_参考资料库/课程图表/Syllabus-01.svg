@@ -4,7 +4,7 @@
   <rect width="1200" height="800" fill="#f8f9fa" rx="8" ry="8" />
 
   <!-- 标题 -->
-  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">《AI思维与创造力第一课》三种教学方案对比</text>
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">《AI思维与创造力第一课》三种学习路径</text>
 
   <!-- 三列背景 -->
   <rect x="100" y="90" width="320" height="680" fill="#e6f7ff" rx="8" ry="8" opacity="0.5" stroke="#1890ff" stroke-width="2" />
