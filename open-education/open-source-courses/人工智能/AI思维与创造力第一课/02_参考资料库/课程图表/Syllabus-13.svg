@@ -1,0 +1,49 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <text x="400" y="50" font-size="24" font-weight="bold" text-anchor="middle" fill="#343a40">核心学习体验设计：一座“认知健身房”</text>
+
+  <g id="central-hub" transform="translate(400, 325)">
+    <circle cx="0" cy="0" r="85" fill="#005a9c"/>
+    <text x="0" y="-10" font-size="22" font-weight="bold" fill="white" text-anchor="middle">认知</text>
+    <text x="0" y="22" font-size="22" font-weight="bold" fill="white" text-anchor="middle">健身房</text>
+  </g>
+
+  <g stroke="#adb5bd" stroke-width="2" stroke-dasharray="6 3">
+    <line x1="335" y1="265" x2="275" y2="225"/>
+    <line x1="465" y1="265" x2="525" y2="225"/>
+    <line x1="335" y1="385" x2="275" y2="425"/>
+    <line x1="465" y1="385" x2="525" y2="425"/>
+  </g>
+
+  <g id="quadrant1" transform="translate(50, 100)">
+    <rect x="0" y="0" width="300" height="150" fill="white" stroke="#dee2e6" stroke-width="1"/>
+    <text x="150" y="35" font-size="18" font-weight="bold" text-anchor="middle" fill="#005a9c">学习场域</text>
+    <text x="150" y="65" font-size="14" text-anchor="middle" fill="#4a90e2">从“独立学习者”到“学习共同体”</text>
+    <text x="150" y="100" font-size="12" text-anchor="middle" fill="#495057">• 团队项目 • 同伴反馈 •</text>
+    <text x="150" y="120" font-size="12" text-anchor="middle" fill="#495057">• 集体智慧 • 心理安全 •</text>
+  </g>
+
+  <g id="quadrant2" transform="translate(450, 100)">
+    <rect x="0" y="0" width="300" height="150" fill="white" stroke="#dee2e6" stroke-width="1"/>
+    <text x="150" y="35" font-size="18" font-weight="bold" text-anchor="middle" fill="#005a9c">学习节奏</text>
+    <text x="150" y="65" font-size="14" text-anchor="middle" fill="#4a90e2">在“慢思考”与“快迭代”中切换</text>
+    <text x="150" y="100" font-size="12" text-anchor="middle" fill="#495057">• 深度洞察 • 敏捷冲刺 •</text>
+    <text x="150" y="120" font-size="12" text-anchor="middle" fill="#495057">• 认知双元 • 张弛有度 •</text>
+  </g>
+
+  <g id="quadrant3" transform="translate(50, 400)">
+    <rect x="0" y="0" width="300" height="150" fill="white" stroke="#dee2e6" stroke-width="1"/>
+    <text x="150" y="35" font-size="18" font-weight="bold" text-anchor="middle" fill="#005a9c">学习方式</text>
+    <text x="150" y="65" font-size="14" text-anchor="middle" fill="#4a90e2">在“认知冲突”与“安全试错”中成长</text>
+    <text x="150" y="100" font-size="12" text-anchor="middle" fill="#495057">• 挑战假设 • 有价值的失败 •</text>
+    <text x="150" y="120" font-size="12" text-anchor="middle" fill="#495057">• 建设性不适 • 大胆探索 •</text>
+  </g>
+
+  <g id="quadrant4" transform="translate(450, 400)">
+    <rect x="0" y="0" width="300" height="150" fill="white" stroke="#dee2e6" stroke-width="1"/>
+    <text x="150" y="35" font-size="18" font-weight="bold" text-anchor="middle" fill="#005a9c">学习产出</text>
+    <text x="150" y="65" font-size="14" text-anchor="middle" fill="#4a90e2">将“过程产品化”，实现学习者主权</text>
+    <text x="150" y="100" font-size="12" text-anchor="middle" fill="#495057">• 思维日志 • 成长轨迹 •</text>
+    <text x="150" y="120" font-size="12" text-anchor="middle" fill="#495057">• 证据组合包 • 宝贵资产 •</text>
+  </g>
+</svg>
