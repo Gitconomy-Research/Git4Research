@@ -1,4 +1,4 @@
-<svg width="800" height="1100" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+<svg width="800" height="1250" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
   <defs>
     <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
@@ -30,27 +30,42 @@
   <line class="connector" x1="400" y1="190" x2="400" y2="230"/>
 
   <g transform="translate(50, 230)">
-    <g>
-      <rect class="box analysis-box" width="325" height="120"/>
-      <text x="162.5" y="30" class="box-title">2a. 定量分析与画像生成</text>
-      <text x="162.5" y="55" class="box-text">
-        <tspan x="162.5" dy="0">分析封闭式问题 (背景、动机、偏好)</tspan>
-        <tspan x="162.5" dy="1.2em">生成当期学员群体画像报告</tspan>
-        <tspan x="162.5" dy="1.2em">为教学策略微调提供数据支持</tspan>
-      </text>
-    </g>
+    <rect class="box analysis-box" width="325" height="100"/>
+    <text x="162.5" y="30" class="box-title">2a.1 单变量分析 (描述性统计)</text>
+    <text x="162.5" y="55" class="box-text">
+      <tspan x="162.5" dy="0">绘制各变量分布图</tspan>
+      <tspan x="162.5" dy="1.2em">(直方图/条形图)</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="212.5" y1="330" x2="212.5" y2="370"/>
 
-    <g transform="translate(375, 0)">
-      <rect class="box analysis-box" width="325" height="120"/>
-      <text x="162.5" y="30" class="box-title">2b. 定性分析与案例提炼</text>
-      <text x="162.5" y="55" class="box-text">
-        <tspan x="162.5" dy="0">组织“案例共创工作坊”</tspan>
-        <tspan x="162.5" dy="1.2em">对开放性回答进行主题分析 (亲和图法)</tspan>
-        <tspan x="162.5" dy="1.2em">识别3-5个高频、高价值的核心挑战</tspan>
-      </text>
-    </g>
+  <g transform="translate(50, 370)">
+    <rect class="box analysis-box" width="325" height="120"/>
+    <text x="162.5" y="30" class="box-title">2a.2 双变量分析 (推断性统计)</text>
+    <text x="162.5" y="55" class="box-text">
+      <tspan x="162.5" dy="0">卡方检验</tspan>
+      <tspan x="162.5" dy="1.2em">(如: 动机 vs 方案偏好)</tspan>
+      <tspan x="162.5" dy="1.5em">方差分析 (ANOVA)</tspan>
+      <tspan x="162.5" dy="1.2em">(如: 技能 vs 方案偏好)</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="212.5" y1="490" x2="212.5" y2="530"/>
+
+  <g transform="translate(50, 530)">
+    <rect class="box output-box" width="325" height="70"/>
+    <text x="162.5" y="35" class="box-title">2a.3 生成学员群体画像报告</text>
+    <text x="162.5" y="55" class="box-text">为教学策略微调提供数据支持</text>
   </g>
 
+  <g transform="translate(425, 230)">
+    <rect class="box analysis-box" width="325" height="120"/>
+    <text x="162.5" y="30" class="box-title">2b. 定性分析与案例提炼</text>
+    <text x="162.5" y="55" class="box-text">
+      <tspan x="162.5" dy="0">组织“案例共创工作坊”</tspan>
+      <tspan x="162.5" dy="1.2em">对开放性回答进行主题分析 (亲和图法)</tspan>
+      <tspan x="162.5" dy="1.2em">识别3-5个高频、高价值的核心挑战</tspan>
+    </text>
+  </g>
   <line class="connector" x1="587.5" y1="350" x2="587.5" y2="390"/>
 
   <g transform="translate(437.5, 390)">
@@ -61,7 +76,6 @@
       <tspan x="150" dy="1.2em">有吸引力的“案例简介”</tspan>
     </text>
   </g>
-
   <line class="connector" x1="587.5" y1="470" x2="587.5" y2="510"/>
 
   <g transform="translate(437.5, 510)">
@@ -73,7 +87,6 @@
       <tspan x="150" dy="1.2em">正式公布当期“顶石案例”</tspan>
     </text>
   </g>
-
   <line class="connector" x1="587.5" y1="600" x2="587.5" y2="640"/>
 
   <g transform="translate(437.5, 640)">
@@ -82,9 +95,10 @@
     <text x="150" y="55" class="box-text">形成本期课程的创新使命</text>
   </g>
 
-  <line class="connector" x1="587.5" y1="710" x2="587.5" y2="750"/>
+  <line class="connector" x1="587.5" y1="710" x2="587.5" y2="790"/>
+  <line class="connector" x1="212.5" y1="600" x2="587.5" y2="790"/>
 
-  <g transform="translate(437.5, 750)">
+  <g transform="translate(437.5, 790)">
     <rect class="box process-box" width="300" height="120"/>
     <text x="150" y="30" class="box-title">6. 课程内容快速适配</text>
     <text x="150" y="55" class="box-text">
@@ -95,15 +109,15 @@
     </text>
   </g>
 
-  <line class="connector" x1="587.5" y1="870" x2="587.5" y2="910"/>
+  <line class="connector" x1="587.5" y1="910" x2="587.5" y2="950"/>
 
-  <g transform="translate(437.5, 910)">
+  <g transform="translate(437.5, 950)">
     <rect class="box output-box" width="300" height="70"/>
     <text x="150" y="35" class="box-title">7. 最终版教学材料</text>
     <text x="150" y="55" class="box-text">准备好迎接当期课程启动</text>
   </g>
 
-  <g transform="translate(50, 1050)">
+  <g transform="translate(50, 1100)">
     <text x="0" y="15" font-size="14" font-weight="bold">图例 (Legend):</text>
     <rect x="100" y="5" width="20" height="20" class="process-box" rx="4"/>
     <text x="130" y="20" class="legend-text">流程步骤</text>
