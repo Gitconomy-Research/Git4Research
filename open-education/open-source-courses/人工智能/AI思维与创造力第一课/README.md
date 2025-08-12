@@ -140,8 +140,8 @@
 核心贡献者：
 
 |姓名| 邮件|
-|---|---|
-|作者：|野行僧郭晧|Gitconomy Research| 
+| :--- | :--- |
+|作者：|野行僧郭晧|Gitconomy Research|
 
 ---
 本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区，保留所有权利。
