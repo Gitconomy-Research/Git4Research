@@ -1,87 +1,88 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 475" font-family="Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 730">
   <!-- Background -->
-  <rect width="1200" height="475" fill="#f9fafb" />
+  <rect width="1000" height="730" fill="#f8f9fa" rx="10" ry="10"/>
 
   <!-- Title -->
-  <text x="600" y="50" font-size="24" font-weight="bold" text-anchor="middle" fill="#111827">《AI思维与创造力第一课》课程设计原则</text>
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">课程目标体系：从表层到深层的能力培养</text>
 
-  <!-- Principle 1 -->
-  <rect x="25" y="100" width="210" height="320" rx="15" fill="#fff7ed" stroke="#f59e0b" stroke-width="2" />
-  <text x="130" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#b45309">原则一：逆向设计</text>
-  <text x="130" y="155" font-size="14" text-anchor="middle" fill="#b45309">确立课程之"法"</text>
-  <line x1="95" y1="170" x2="165" y2="170" stroke="#b45309" stroke-width="1" />
-  <text x="130" y="190" font-size="12" text-anchor="middle" fill="#6b7280">从"北极星指标"出发</text>
-  <text x="130" y="215" font-size="12" text-anchor="middle" fill="#6b7280">"三年后，学员能独立做什么？"</text>
-  <text x="130" y="245" font-size="12" text-anchor="middle" fill="#6b7280">三大核心能力维度：</text>
-  <text x="130" y="270" font-size="12" text-anchor="middle" fill="#6b7280">- 独立拆解能力</text>
-  <text x="130" y="290" font-size="12" text-anchor="middle" fill="#6b7280">（系统思维）</text>
-  <text x="130" y="315" font-size="12" text-anchor="middle" fill="#6b7280">- 整合创造能力</text>
-  <text x="130" y="335" font-size="12" text-anchor="middle" fill="#6b7280">（创造力方法）</text>
-  <text x="130" y="360" font-size="12" text-anchor="middle" fill="#6b7280">- 持续进化能力</text>
-  <text x="130" y="380" font-size="12" text-anchor="middle" fill="#6b7280">（元学习）</text>
+  <!-- Main Framework Box -->
+  <rect x="50" y="70" width="900" height="610" fill="#fff" stroke="#ddd" stroke-width="2" rx="8" ry="8"/>
 
-  <!-- Principle 2 -->
-  <rect x="255" y="100" width="210" height="320" rx="15" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
-  <text x="360" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#1d4ed8">原则二：分层嵌套</text>
-  <text x="360" y="155" font-size="14" text-anchor="middle" fill="#1d4ed8">构建"法"的内在架构</text>
-  <line x1="325" y1="170" x2="395" y2="170" stroke="#1d4ed8" stroke-width="1" />
-  <text x="360" y="190" font-size="12" text-anchor="middle" fill="#6b7280">三层协同架构：</text>
-  <text x="360" y="220" font-size="12" text-anchor="middle" fill="#6b7280">- 宏观脊梁</text>
-  <text x="360" y="240" font-size="12" text-anchor="middle" fill="#6b7280">（U型理论+设计思维）</text>
-  <text x="360" y="260" font-size="12" text-anchor="middle" fill="#6b7280">慢循环与情感主线</text>
-  <text x="360" y="290" font-size="12" text-anchor="middle" fill="#6b7280">- 微观节拍</text>
-  <text x="360" y="310" font-size="12" text-anchor="middle" fill="#6b7280">（敏捷/精益思维）</text>
-  <text x="360" y="330" font-size="12" text-anchor="middle" fill="#6b7280">快循环与肌肉记忆</text>
-  <text x="360" y="360" font-size="12" text-anchor="middle" fill="#6b7280">- 底层支撑</text>
-  <text x="360" y="380" font-size="12" text-anchor="middle" fill="#6b7280">（建构主义）</text>
-  <text x="360" y="400" font-size="12" text-anchor="middle" fill="#6b7280">个性化与自主性</text>
+  <!-- Three Dimensions Section - Top -->
+  <rect x="100" y="100" width="800" height="280" fill="#f5f5f5" stroke="#ddd" stroke-width="2" rx="6" ry="6"/>
+  <text x="500" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">三个递进阶段：从认知到价值</text>
 
-  <!-- Principle 3 -->
-  <rect x="485" y="100" width="210" height="320" rx="15" fill="#ecfdf5" stroke="#16a34a" stroke-width="2" />
-  <text x="590" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#166534">原则三：体验设计</text>
-  <text x="590" y="155" font-size="14" text-anchor="middle" fill="#166534">训练应用"法"的"术"</text>
-  <line x1="555" y1="170" x2="625" y2="170" stroke="#166534" stroke-width="1" />
-  <text x="590" y="190" font-size="12" text-anchor="middle" fill="#6b7280">教室即"认知健身房"：</text>
-  <text x="590" y="220" font-size="12" text-anchor="middle" fill="#6b7280">- 认知冲突驱动之术</text>
-  <text x="590" y="240" font-size="12" text-anchor="middle" fill="#6b7280">制造矛盾，迫使二阶思考</text>
-  <text x="590" y="260" font-size="12" text-anchor="middle" fill="#6b7280">慢思考与快迭代间切换</text>
-  <text x="590" y="290" font-size="12" text-anchor="middle" fill="#6b7280">- 具身认知实践之术</text>
-  <text x="590" y="310" font-size="12" text-anchor="middle" fill="#6b7280">抽象概念→身体经验</text>
-  <text x="590" y="330" font-size="12" text-anchor="middle" fill="#6b7280">多感官通道获取认知</text>
-  <text x="590" y="360" font-size="12" text-anchor="middle" fill="#6b7280">- 微习惯固化之术</text>
-  <text x="590" y="380" font-size="12" text-anchor="middle" fill="#6b7280">思维日志、影子实验</text>
-  <text x="590" y="400" font-size="12" text-anchor="middle" fill="#6b7280">低成本日常训练</text>
+  <!-- Dimension 1: 认知维度 -->
+  <rect x="120" y="150" width="240" height="210" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="2" rx="6" ry="6"/>
+  <text x="240" y="175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">认知维度</text>
+  <text x="240" y="200" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2e7d32">从表面功能到深层原理</text>
+  <text x="240" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">• 系统性理解力</text>
+  <text x="240" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">• "数据-模型-决策"三角关系</text>
+  <text x="240" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">• 识别技术能力边界</text>
+  <text x="240" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">• 察觉"技术幻觉"和潜在偏见</text>
+  <text x="240" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b5e20">目标：认知上的清醒</text>
 
-  <!-- Principle 4 -->
-  <rect x="715" y="100" width="210" height="320" rx="15" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" />
-  <text x="820" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#b45309">原则四：评估体系</text>
-  <text x="820" y="155" font-size="14" text-anchor="middle" fill="#b45309">以"器"为证，检验"法"与"术"</text>
-  <line x1="785" y1="170" x2="855" y2="170" stroke="#b45309" stroke-width="1" />
-  <text x="820" y="190" font-size="12" text-anchor="middle" fill="#6b7280">"证据组合包"体系：</text>
-  <text x="820" y="220" font-size="12" text-anchor="middle" fill="#6b7280">- 成长轨迹可视化</text>
-  <text x="820" y="240" font-size="12" text-anchor="middle" fill="#6b7280">提交成长证据而非成果</text>
-  <text x="820" y="260" font-size="12" text-anchor="middle" fill="#6b7280">拆解深度对比、迭代记录</text>
-  <text x="820" y="290" font-size="12" text-anchor="middle" fill="#6b7280">- "思维镜片"元认知自评</text>
-  <text x="820" y="310" font-size="12" text-anchor="middle" fill="#6b7280">U型镜片、敏捷镜片</text>
-  <text x="820" y="330" font-size="12" text-anchor="middle" fill="#6b7280">建构主义镜片</text>
-  <text x="820" y="360" font-size="12" text-anchor="middle" fill="#6b7280">- "AI思维挑战赛"</text>
-  <text x="820" y="380" font-size="12" text-anchor="middle" fill="#6b7280">72小时团队创意集市</text>
-  <text x="820" y="400" font-size="12" text-anchor="middle" fill="#6b7280">最小可行故事原型</text>
+  <!-- Dimension 2: 方法维度 -->
+  <rect x="380" y="150" width="240" height="210" fill="#e3f2fd" stroke="#90caf9" stroke-width="2" rx="6" ry="6"/>
+  <text x="500" y="175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0d47a1">方法维度</text>
+  <text x="500" y="200" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1565c0">将思维模型转化为实践能力</text>
+  <text x="500" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1976d2">• 第一性原理拆解复杂问题</text>
+  <text x="500" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1976d2">• 人机协同的全新工作流</text>
+  <text x="500" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1976d2">• 精益思维迭代创造力</text>
+  <text x="500" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1976d2">• 元学习——学习如何学习</text>
+  <text x="500" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#0d47a1">目标：成为认知发展的首席架构师</text>
 
-  <!-- Principle 5 -->
-  <rect x="945" y="100" width="210" height="320" rx="15" fill="#fee2e2" stroke="#ef4444" stroke-width="2" />
-  <text x="1050" y="130" font-size="18" font-weight="bold" text-anchor="middle" fill="#b91c1c">原则五：生态化迭代</text>
-  <text x="1050" y="155" font-size="14" text-anchor="middle" fill="#b91c1c">让"器"承载"道"的延续</text>
-  <line x1="1015" y1="170" x2="1085" y2="170" stroke="#b91c1c" stroke-width="1" />
-  <text x="1050" y="190" font-size="12" text-anchor="middle" fill="#6b7280">课程自身为MVP：</text>
-  <text x="1050" y="220" font-size="12" text-anchor="middle" fill="#6b7280">- 课程即版本库</text>
-  <text x="1050" y="240" font-size="12" text-anchor="middle" fill="#6b7280">学员Fork官方课程库</text>
-  <text x="1050" y="260" font-size="12" text-anchor="middle" fill="#6b7280">获取学习路径主权</text>
-  <text x="1050" y="290" font-size="12" text-anchor="middle" fill="#6b7280">- 假设驱动迭代</text>
-  <text x="1050" y="310" font-size="12" text-anchor="middle" fill="#6b7280">每期基于核心假设</text>
-  <text x="1050" y="330" font-size="12" text-anchor="middle" fill="#6b7280">设立可量化北极星指标</text>
-  <text x="1050" y="360" font-size="12" text-anchor="middle" fill="#6b7280">- 终极自检：</text>
-  <text x="1050" y="380" font-size="12" text-anchor="middle" fill="#6b7280">课程能否"自毁"？</text>
-  <text x="1050" y="400" font-size="12" text-anchor="middle" fill="#6b7280">传授生成知识的能力</text>
+  <!-- Dimension 3: 价值维度 -->
+  <rect x="640" y="150" width="240" height="210" fill="#fff3e0" stroke="#ffcc80" stroke-width="2" rx="6" ry="6"/>
+  <text x="760" y="175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">价值维度</text>
+  <text x="760" y="200" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ef6c00">伦理判断力和社会责任感</text>
+  <text x="760" y="230" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">• 形成核心价值观</text>
+  <text x="760" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">• "创造性怀疑"精神</text>
+  <text x="760" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">• 识别分析AI社会风险</text>
+  <text x="760" y="305" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">• 将伦理考量融入方案设计</text>
+  <text x="760" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#e65100">目标：成为负责任的创造者</text>
+
+  <!-- Four Observable Abilities Section - Bottom (with increased spacing) -->
+  <rect x="100" y="430" width="800" height="230" fill="#f5f5f5" stroke="#ddd" stroke-width="2" rx="6" ry="6"/>
+  <text x="500" y="460" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">四个能力维度：可观测的表现</text>
+
+  <!-- Ability 1: 认知深度 - Using consistent color: lavender -->
+  <rect x="120" y="480" width="180" height="160" fill="#f3e5f5" stroke="#ce93d8" stroke-width="2" rx="6" ry="6"/>
+  <text x="210" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">认知深度</text>
+  <text x="210" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 绘制AI技术因果关系图</text>
+  <text x="210" y="555" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 识别技术幻觉与真实能力</text>
+  <text x="210" y="590" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">关联：认知维度</text>
+  <text x="210" y="610" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">系统性本质的深刻理解</text>
+
+  <!-- Ability 2: 思维弹性 - Using consistent color: lavender -->
+  <rect x="320" y="480" width="180" height="160" fill="#f3e5f5" stroke="#ce93d8" stroke-width="2" rx="6" ry="6"/>
+  <text x="410" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">思维弹性</text>
+  <text x="410" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 多角度问题重构任务</text>
+  <text x="410" y="555" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 灵活调整思路</text>
+  <text x="410" y="590" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">关联：方法维度</text>
+  <text x="410" y="610" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">系统思维与敏捷思维习惯</text>
+
+  <!-- Ability 3: 创造潜力 - Using consistent color: lavender -->
+  <rect x="520" y="480" width="180" height="160" fill="#f3e5f5" stroke="#ce93d8" stroke-width="2" rx="6" ry="6"/>
+  <text x="610" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">创造潜力</text>
+  <text x="610" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 设计人类监督机制</text>
+  <text x="610" y="555" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 制作可交互的低保真原型</text>
+  <text x="610" y="590" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">关联：方法维度</text>
+  <text x="610" y="610" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">人机共创的结构化流程</text>
+
+  <!-- Ability 4: 伦理敏感度 - Using consistent color: lavender -->
+  <rect x="720" y="480" width="180" height="160" fill="#f3e5f5" stroke="#ce93d8" stroke-width="2" rx="6" ry="6"/>
+  <text x="810" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4a148c">伦理敏感度</text>
+  <text x="810" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 演绎技术对不同人群影响</text>
+  <text x="810" y="555" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6a1b9a">• 分析AI方案的社会风险</text>
+  <text x="810" y="590" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">关联：价值维度</text>
+  <text x="810" y="610" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4a148c" font-style="italic">将伦理判断力内化为行动指南</text>
+
+  <!-- Evolution Flow Arrows for dimensions -->
+  <path d="M240,401 L500,401 L750,401" stroke="#333" stroke-width="3" fill="none"/>
+  <polygon points="760,400 750,395 750,410" fill="#333"/>
+
+  <!-- Bottom note -->
+  <rect x="300" y="670" width="400" height="40" fill="#ffebee" stroke="#ffcdd2" stroke-width="2" rx="20" ry="20"/>
+  <text x="500" y="695" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#b71c1c">"深度认知进化，而非仅仅掌握操作技巧"</text>
 </svg>
