@@ -1,0 +1,108 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 520" width="1300" height="520">
+  <!-- Background -->
+  <rect width="1300" height="520" fill="#f9f9f9"/>
+
+  <!-- Title -->
+  <text x="700" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">关键工具类型适用场景对比</text>
+
+  <!-- Horizontal connectors -->
+  <path d="M300,250 L400,250" stroke="#ccc" stroke-width="2"/>
+  <path d="M600,250 L700,250" stroke="#ccc" stroke-width="2"/>
+  <path d="M900,250 L1000,250" stroke="#ccc" stroke-width="2"/>
+
+  <!-- Low-code Platform -->
+  <g transform="translate(100,100)">
+    <rect width="200" height="300" rx="10" fill="#e1f5fe" stroke="#29b6f6" stroke-width="2"/>
+    <circle cx="100" cy="60" r="30" fill="#29b6f6"/>
+    <path d="M100,45 L100,75 M85,60 L115,60" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">低代码平台</text>
+    <text x="100" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">代表工具: Dify.ai/Coze</text>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">核心定位:</text>
+    <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">LLM应用开发与运营平台</text>
+
+    <text x="100" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">适用场景:</text>
+    <text x="100" y="225" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 快速验证想法</text>
+    <text x="100" y="245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 搭建原型让用户测试</text>
+    <text x="100" y="265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 管理知识库与对话</text>
+    <text x="100" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 简化应用运营</text>
+  </g>
+
+  <!-- AI-native IDE -->
+  <g transform="translate(400,100)">
+    <rect width="200" height="300" rx="10" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2"/>
+    <circle cx="100" cy="60" r="30" fill="#66bb6a"/>
+    <path d="M85,50 L115,70 M85,70 L115,50" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">AI原生IDE</text>
+    <text x="100" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">代表工具: Cursor/Trae</text>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">核心定位:</text>
+    <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">一站式AI应用开发环境</text>
+
+    <text x="100" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">适用场景:</text>
+    <text x="100" y="225" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 提升专业开发效率</text>
+    <text x="100" y="245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 调试复杂Agent</text>
+    <text x="100" y="265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 可视化决策路径</text>
+    <text x="100" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 代码重构与理解</text>
+  </g>
+
+  <!-- Application Frameworks -->
+  <g transform="translate(700,100)">
+    <rect width="200" height="300" rx="10" fill="#fff8e1" stroke="#ffd54f" stroke-width="2"/>
+    <circle cx="100" cy="60" r="30" fill="#ffd54f"/>
+    <path d="M85,60 L115,60 M100,45 L100,75" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">应用编排框架</text>
+    <text x="100" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">代表工具: LangChain,</text>
+    <text x="100" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">LlamaIndex</text>
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">核心定位:</text>
+    <text x="100" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">开源AI应用开发代码库</text>
+
+    <text x="100" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">适用场景:</text>
+    <text x="100" y="235" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 追求灵活性与定制</text>
+    <text x="100" y="255" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 系统集成</text>
+    <text x="100" y="275" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 深度嵌入现有软件</text>
+  </g>
+
+  <!-- Local LLM Runner -->
+  <g transform="translate(1000,100)">
+    <rect width="200" height="300" rx="10" fill="#f3e5f5" stroke="#ab47bc" stroke-width="2"/>
+    <circle cx="100" cy="60" r="30" fill="#ab47bc"/>
+    <path d="M90,60 L110,60 M100,50 L100,70" stroke="white" stroke-width="6" stroke-linecap="round"/>
+
+    <text x="100" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">本地LLM运行器</text>
+    <text x="100" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">代表工具: Ollama</text>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">核心定位:</text>
+    <text x="100" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">本地运行开源LLM的工具</text>
+
+    <text x="100" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">适用场景:</text>
+    <text x="100" y="225" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 数据隐私与离线运行</text>
+    <text x="100" y="245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 无网络环境下运行</text>
+    <text x="100" y="265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 自由、低成本的模型实验</text>
+    <text x="100" y="285" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 测试最新开源大模型</text>
+  </g>
+
+  <!-- Legend - aligned with each column -->
+  <text x="200" y="420" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">快速构建与运营</text>
+  <rect x="192.5" y="430" width="15" height="15" fill="#e1f5fe" stroke="#29b6f6" stroke-width="1"/>
+
+  <text x="500" y="420" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">开发调试环境</text>
+  <rect x="492.5" y="430" width="15" height="15" fill="#e8f5e9" stroke="#66bb6a" stroke-width="1"/>
+
+  <text x="800" y="420" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">灵活定制与集成</text>
+  <rect x="792.5" y="430" width="15" height="15" fill="#fff8e1" stroke="#ffd54f" stroke-width="1"/>
+
+  <text x="1100" y="420" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">本地隐私与实验</text>
+  <rect x="1092.5" y="430" width="15" height="15" fill="#f3e5f5" stroke="#ab47bc" stroke-width="1"/>
+
+  <!-- Deployment complexity indicator -->
+  <text x="600" y="460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">开发复杂度</text>
+  <line x1="200" y1="480" x2="1080" y2="480" stroke="#666" stroke-width="2"/>
+  <text x="200" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">低</text>
+  <text x="1080" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">高</text>
+
+  <!-- Arrows -->
+  <polygon points="200,480 210,475 210,485" fill="#666"/>
+  <polygon points="1080,480 1070,475 1070,485" fill="#666"/>
+</svg>
