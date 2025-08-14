@@ -89,7 +89,124 @@
                         <div class="flex items-center p-4 bg-blue-50 rounded-lg">
                             <span class="text-3xl mr-4">💡</span>
                             <div>
-                                <h4 class="font-bold">周间自驱式任务</h4>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <!-- 背景和标题 -->
+  <rect width="1000" height="700" fill="#f8f9fa" />
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">AI开发工具系统架构图</text>
+
+  <!-- 图例 -->
+  <rect x="800" y="80" width="20" height="20" fill="#4285f4" rx="4" ry="4" />
+  <text x="830" y="95" font-family="Arial, sans-serif" font-size="14" fill="#333">核心组件</text>
+
+  <rect x="800" y="110" width="20" height="20" fill="#34a853" rx="4" ry="4" />
+  <text x="830" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">替代选项</text>
+
+  <rect x="800" y="140" width="20" height="20" fill="#fbbc05" rx="4" ry="4" />
+  <text x="830" y="155" font-family="Arial, sans-serif" font-size="14" fill="#333">数据流</text>
+
+  <rect x="800" y="170" width="20" height="20" stroke="#ea4335" stroke-width="2" fill="none" rx="4" ry="4" />
+  <text x="830" y="185" font-family="Arial, sans-serif" font-size="14" fill="#333">系统层级</text>
+
+  <!-- 系统层级框架 -->
+  <!-- 用户交互层 -->
+  <rect x="100" y="100" width="800" height="100" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">用户交互层</text>
+
+  <!-- 应用编排层 -->
+  <rect x="100" y="220" width="800" height="100" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">应用编排层</text>
+
+  <!-- LLM与向量层 -->
+  <rect x="100" y="340" width="800" height="160" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="365" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">LLM与向量层</text>
+
+  <!-- 数据处理层 -->
+  <rect x="100" y="520" width="800" height="100" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">数据处理层</text>
+
+  <!-- 用户交互层组件 -->
+  <rect x="200" y="130" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="260" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Streamlit</text>
+
+  <rect x="450" y="130" width="120" height="60" fill="#34a853" rx="8" ry="8" />
+  <text x="510" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Gradio</text>
+
+  <rect x="700" y="130" width="120" height="60" fill="#34a853" rx="8" ry="8" opacity="0.6" />
+  <text x="760" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">其他UI框架</text>
+
+  <!-- 应用编排层组件 -->
+  <rect x="200" y="250" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="260" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">LangChain</text>
+
+  <rect x="450" y="250" width="120" height="60" fill="#34a853" rx="8" ry="8" />
+  <text x="510" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">LlamaIndex</text>
+
+  <rect x="700" y="250" width="120" height="60" fill="#34a853" rx="8" ry="8" opacity="0.6" />
+  <text x="760" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">其他框架</text>
+
+  <!-- LLM与向量层组件 -->
+  <!-- LLM部分 -->
+  <rect x="150" y="380" width="300" height="100" fill="#4285f4" rx="8" ry="8" opacity="0.9" />
+  <text x="300" y="410" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">大语言模型 (LLM)</text>
+  <text x="300" y="440" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">本地模型 / API调用</text>
+  <text x="300" y="460" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">OpenAI, Llama, 等</text>
+
+  <!-- 向量存储部分 -->
+  <rect x="550" y="380" width="140" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="620" y="415" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">ChromaDB</text>
+
+  <rect x="710" y="380" width="140" height="60" fill="#34a853" rx="8" ry="8" />
+  <text x="780" y="415" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">FAISS</text>
+
+  <rect x="630" y="450" width="140" height="40" fill="#34a853" rx="8" ry="8" opacity="0.6" />
+  <text x="700" y="475" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">其他向量库</text>
+
+  <!-- 数据处理层组件 -->
+  <rect x="200" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="260" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">文档加载器</text>
+
+  <rect x="350" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="410" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">文本分割器</text>
+
+  <rect x="500" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="560" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">嵌入模型</text>
+
+  <rect x="650" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="710" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">数据转换器</text>
+
+  <!-- 连接线 - 数据流 -->
+  <!-- 用户交互层到应用编排层 -->
+  <path d="M 260 190 L 260 250" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 510 190 L 510 250" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 应用编排层到LLM与向量层 -->
+  <path d="M 260 310 L 260 380" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 510 310 L 620 380" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 320 310 L 780 380" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- LLM与向量层之间 -->
+  <path d="M 450 430 L 550 410" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 450 430 L 710 410" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- LLM与向量层到数据处理层 -->
+  <path d="M 300 480 L 300 550" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 620 440 L 560 550" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 780 440 L 710 550" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 数据处理层内部 -->
+  <path d="M 320 580 L 350 580" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 470 580 L 500 580" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 620 580 L 650 580" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 自下而上的数据流 -->
+  <path d="M 410 550 L 410 480 L 300 480" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 560 550 L 560 480 L 620 440" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 工作流标记 -->
+  <text x="50" y="650" font-family="Arial, sans-serif" font-size="14" fill="#333" font-style="italic">数据流向: 从数据处理 → 向量存储 → LLM生成 → 应用编排 → 用户界面</text>
+</svg>
+              <h4 class="font-bold">周间自驱式任务</h4>
                                 <p class="text-sm">消化、反思、应用与巩固</p>
                             </div>
                         </div>

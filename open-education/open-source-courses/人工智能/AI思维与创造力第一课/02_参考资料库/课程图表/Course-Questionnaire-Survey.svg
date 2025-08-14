@@ -1,0 +1,135 @@
+<svg width="800" height="1250" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
+    </marker>
+    <style>
+    .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #212529; }
+    .subtitle { font-size: 14px; text-anchor: middle; fill: #6c757d; }
+    .box { stroke: #adb5bd; stroke-width: 1.5; rx: 8; ry: 8; }
+    .process-box { fill: #e7f5ff; }
+    .analysis-box { fill: #fff9db; }
+    .community-box { fill: #e6fcf5; }
+    .output-box { fill: #f8f0fc; }
+    .box-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #343a40; }
+    .box-text { font-size: 13px; text-anchor: middle; fill: #495057; }
+    .connector { stroke: #495057; stroke-width: 2; marker-end: url(#arrowhead); }
+    .legend-text { font-size: 12px; }
+    </style>
+  </defs>
+
+  <text x="400" y="50" class="title">《AI思维与创造力第一课》</text>
+  <text x="400" y="75" class="subtitle">课前调研数据分析与应用流程</text>
+
+  <g transform="translate(250, 120)">
+    <rect class="box process-box" width="300" height="70"/>
+    <text x="150" y="35" class="box-title">1. 问卷数据收集</text>
+    <text x="150" y="55" class="box-text">收集所有学员的课前调研问卷反馈</text>
+  </g>
+
+  <line class="connector" x1="400" y1="190" x2="400" y2="230"/>
+
+  <g transform="translate(50, 230)">
+    <rect class="box analysis-box" width="325" height="100"/>
+    <text x="162.5" y="30" class="box-title">2a.1 单变量分析 (描述性统计)</text>
+    <text x="162.5" y="55" class="box-text">
+      <tspan x="162.5" dy="0">绘制各变量分布图</tspan>
+      <tspan x="162.5" dy="1.2em">(直方图/条形图)</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="212.5" y1="330" x2="212.5" y2="370"/>
+
+  <g transform="translate(50, 370)">
+    <rect class="box analysis-box" width="325" height="120"/>
+    <text x="162.5" y="30" class="box-title">2a.2 双变量分析 (推断性统计)</text>
+    <text x="162.5" y="55" class="box-text">
+      <tspan x="162.5" dy="0">卡方检验</tspan>
+      <tspan x="162.5" dy="1.2em">(如: 动机 vs 方案偏好)</tspan>
+      <tspan x="162.5" dy="1.5em">方差分析 (ANOVA)</tspan>
+      <tspan x="162.5" dy="1.2em">(如: 技能 vs 方案偏好)</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="212.5" y1="490" x2="212.5" y2="530"/>
+
+  <g transform="translate(50, 530)">
+    <rect class="box output-box" width="325" height="70"/>
+    <text x="162.5" y="35" class="box-title">2a.3 生成学员群体画像报告</text>
+    <text x="162.5" y="55" class="box-text">为教学策略微调提供数据支持</text>
+  </g>
+
+  <g transform="translate(425, 230)">
+    <rect class="box analysis-box" width="325" height="120"/>
+    <text x="162.5" y="30" class="box-title">2b. 定性分析与案例提炼</text>
+    <text x="162.5" y="55" class="box-text">
+      <tspan x="162.5" dy="0">组织“案例共创工作坊”</tspan>
+      <tspan x="162.5" dy="1.2em">对开放性回答进行主题分析 (亲和图法)</tspan>
+      <tspan x="162.5" dy="1.2em">识别3-5个高频、高价值的核心挑战</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="587.5" y1="350" x2="587.5" y2="390"/>
+
+  <g transform="translate(437.5, 390)">
+    <rect class="box output-box" width="300" height="80"/>
+    <text x="150" y="35" class="box-title">3. 生成候选案例池</text>
+    <text x="150" y="55" class="box-text">
+      <tspan x="150" dy="0">为每个候选案例撰写简洁、</tspan>
+      <tspan x="150" dy="1.2em">有吸引力的“案例简介”</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="587.5" y1="470" x2="587.5" y2="510"/>
+
+  <g transform="translate(437.5, 510)">
+    <rect class="box community-box" width="300" height="90"/>
+    <text x="150" y="30" class="box-title">4. 社群投票与最终确定</text>
+    <text x="150" y="55" class="box-text">
+      <tspan x="150" dy="0">向全体学员发布候选案例与简介</tspan>
+      <tspan x="150" dy="1.2em">组织线上投票，凝聚社群共识</tspan>
+      <tspan x="150" dy="1.2em">正式公布当期“顶石案例”</tspan>
+    </text>
+  </g>
+  <line class="connector" x1="587.5" y1="600" x2="587.5" y2="640"/>
+
+  <g transform="translate(437.5, 640)">
+    <rect class="box output-box" width="300" height="70"/>
+    <text x="150" y="35" class="box-title">5. 顶石案例确定</text>
+    <text x="150" y="55" class="box-text">形成本期课程的创新使命</text>
+  </g>
+
+  <line class="connector" x1="587.5" y1="710" x2="587.5" y2="790"/>
+  <line class="connector" x1="212.5" y1="600" x2="587.5" y2="790"/>
+
+  <g transform="translate(437.5, 790)">
+    <rect class="box process-box" width="300" height="120"/>
+    <text x="150" y="30" class="box-title">6. 课程内容快速适配</text>
+    <text x="150" y="55" class="box-text">
+      <tspan x="150" dy="0">启动“案例启动工具包”SOP</tspan>
+      <tspan x="150" dy="1.2em">情境化核心教学资产</tspan>
+      <tspan x="150" dy="1.2em">(讲义、Code Lab、讨论主题等)</tspan>
+      <tspan x="150" dy="1.2em">准备与案例相关的专属资源</tspan>
+    </text>
+  </g>
+
+  <line class="connector" x1="587.5" y1="910" x2="587.5" y2="950"/>
+
+  <g transform="translate(437.5, 950)">
+    <rect class="box output-box" width="300" height="70"/>
+    <text x="150" y="35" class="box-title">7. 最终版教学材料</text>
+    <text x="150" y="55" class="box-text">准备好迎接当期课程启动</text>
+  </g>
+
+  <g transform="translate(50, 1100)">
+    <text x="0" y="15" font-size="14" font-weight="bold">图例 (Legend):</text>
+    <rect x="100" y="5" width="20" height="20" class="process-box" rx="4"/>
+    <text x="130" y="20" class="legend-text">流程步骤</text>
+
+    <rect x="230" y="5" width="20" height="20" class="analysis-box" rx="4"/>
+    <text x="260" y="20" class="legend-text">分析与提炼</text>
+
+    <rect x="360" y="5" width="20" height="20" class="community-box" rx="4"/>
+    <text x="390" y="20" class="legend-text">社群共创</text>
+
+    <rect x="490" y="5" width="20" height="20" class="output-box" rx="4"/>
+    <text x="520" y="20" class="legend-text">关键交付物</text>
+  </g>
+
+</svg>

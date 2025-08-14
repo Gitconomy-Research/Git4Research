@@ -1,0 +1,124 @@
+<svg width="1120" height="750" viewBox="0 0 1120 750" xmlns="http://www.w3.org/2000/svg">
+  <title>本地 RAG 工具链 · 决策卡片（五段结构）</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="hdr1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="hdr2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <linearGradient id="hdr3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="hdr4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="hdr5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <style>
+      .title{font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:26px;font-weight:800;fill:#0f172a}
+      .subtitle{font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:13px;fill:#475569}
+      .card{fill:#ffffff;stroke:#c7d2fe;stroke-width:1.2;rx:14;filter:url(#shadow)}
+      .hdr{fill:#fff; opacity:0.0}
+      .htext{font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:16px;font-weight:700;fill:#ffffff}
+      .body{font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:14px;fill:#0f172a}
+      .hint{font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:12px;fill:#475569}
+      .badge{font-family:system-ui,Segoe UI,Arial,sans-serif;font-size:12px;font-weight:700;fill:#0f172a}
+      .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:13px; fill:#0f172a}
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#c7d2fe" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1120" height="820" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="40" y="54" class="title">本地 RAG 工具链 · 决策卡片</text>
+  <text x="40" y="78" class="subtitle">五段结构：离线起跑 / 速度优先 / 质量优先 / 规模化 / 工程化演示</text>
+
+  <!-- Grid layout: 2 x 3 (last spans) -->
+  <!-- Card 1 -->
+  <g transform="translate(40,110)">
+    <rect width="500" height="200" class="card"/>
+    <rect x="0" y="0" width="500" height="42" fill="url(#hdr1)" rx="14"/>
+    <text x="16" y="27" class="htext">1) 完全离线和最快起跑</text>
+    <g transform="translate(16,58)">
+      <text class="badge">推荐栈：</text>
+      <text x="74" y="0" class="mono">Ollama + LangChain + Chroma + Streamlit</text>
+      <text y="30" class="body">• 适用：课堂实验 / MVP / 小型知识库 / 无网环境</text>
+      <text y="54" class="body">• 要点：Chroma 本地持久化；cosine 相似度 + 向量归一化</text>
+      <text y="78" class="body">• 切分：先调 <tspan class="mono">chunk_size/overlap</tspan> 再谈模型大小</text>
+      <text y="102" class="hint">何时升级：速度或质量瓶颈 / 文档量暴增 / 需要服务化</text>
+    </g>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(580,110)">
+    <rect width="500" height="200" class="card"/>
+    <rect x="0" y="0" width="500" height="42" fill="url(#hdr2)" rx="14"/>
+    <text x="16" y="27" class="htext">2) 速度优先 / 内存可控</text>
+    <g transform="translate(16,58)">
+      <text class="badge">推荐栈：</text>
+      <text x="74" y="0" class="mono">FAISS（IVF/HNSW） + BGE-small</text>
+      <text y="30" class="body">• IVF：<tspan class="mono">nlist ≈ 4×√N</tspan>；<tspan class="mono">nprobe</tspan> 为 <tspan class="mono">nlist</tspan> 的 5–10%</text>
+      <text y="54" class="body">• HNSW：<tspan class="mono">M=16–32</tspan>，<tspan class="mono">efC=100–400</tspan>，查询 <tspan class="mono">efS=64–256</tspan></text>
+      <text y="78" class="body">• BGE-small：低显存、召回稳，适合中小规模</text>
+      <text y="102" class="hint">何时升级：召回不稳或答案跑题 → 加重排；数据上百万 → 换向量库</text>
+    </g>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(40,330)">
+    <rect width="500" height="200" class="card"/>
+    <rect x="0" y="0" width="500" height="42" fill="url(#hdr3)" rx="14"/>
+    <text x="16" y="27" class="htext">3) 质量优先</text>
+    <g transform="translate(16,58)">
+      <text class="badge">推荐栈：</text>
+      <text x="74" y="0" class="mono">在检索后加入 BGE-reranker；调大嵌入模型</text>
+      <text y="30" class="body">• 两阶段：向量召回 Top-k → BGE-reranker 重排 Top-r（10–50）</text>
+      <text y="54" class="body">• 嵌入升档：<tspan class="mono">bge-base/large</tspan>（或同级别多语大模型）</text>
+      <text y="78" class="body">• 评测：引入 RAGAS（Faithfulness / Context Recall）</text>
+      <text y="102" class="hint">何时升级：仍漏召或吞吐受限 → 迁移 Qdrant/Milvus 或引入 vLLM</text>
+    </g>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(580,330)">
+    <rect width="500" height="200" class="card"/>
+    <rect x="0" y="0" width="500" height="42" fill="url(#hdr4)" rx="14"/>
+    <text x="16" y="27" class="htext">4) 规模化 / 持久化</text>
+    <g transform="translate(16,58)">
+      <text class="badge">推荐栈：</text>
+      <text x="74" y="0" class="mono">Qdrant / Milvus</text>
+      <text y="30" class="body">• Qdrant：HNSW + 强持久化，易部署与迁移</text>
+      <text y="54" class="body">• Milvus：IVF/HNSW/NSG 多索引，生态完备</text>
+      <text y="78" class="body">• 资源估：内存 ≈ 向量数 × 维度 × 4B（不含索引与元数据）</text>
+      <text y="102" class="hint">实践：离线批量建库 + 压缩/量化；并发写入注意分片与缓存</text>
+    </g>
+  </g>
+
+  <!-- Card 5 (wide) -->
+  <g transform="translate(40,550)">
+    <rect width="1040" height="220" class="card"/>
+    <rect x="0" y="0" width="1040" height="42" fill="url(#hdr5)" rx="14"/>
+    <text x="16" y="27" class="htext">5) 需要演示工程化</text>
+    <g transform="translate(16,58)">
+      <text class="badge">推荐栈：</text>
+      <text x="74" y="0" class="mono">vLLM + FastAPI + Phoenix(OpenInference) + Docker</text>
+
+      <g transform="translate(0,26)">
+        <text class="body">• vLLM：GPU 高吞吐推理；FastAPI：统一 RAG/Agent 服务接口</text>
+        <text y="24" class="body">• Phoenix：请求链路、延迟、失败率可观测；Docker：保证可复现</text>
+        <text y="48" class="body">•（可选）嵌入服务化：HuggingFace TEI 托管大尺寸嵌入模型</text>
+        <text y="72" class="hint">扩展：K8s + Ingress + CI/CD → 多实例滚动发布、灰度与弹性伸缩</text>
+      </g>
+    </g>
+  </g>
+</svg>

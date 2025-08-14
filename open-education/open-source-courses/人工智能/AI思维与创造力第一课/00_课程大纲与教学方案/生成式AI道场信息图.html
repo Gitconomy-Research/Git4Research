@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成式AI道场：从业者认知精通指南</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #F8FAFC;
+            color: #0F172A;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-card {
+            border: 1px solid #E2E8F0;
+            background-color: #FFFFFF;
+            transition: all 0.3s ease-in-out;
+        }
+        .flow-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -2px rgba(15, 23, 42, 0.05);
+            border-color: #38BDF8;
+        }
+        .flow-arrow {
+            color: #FACC15;
+            font-size: 2rem;
+            line-height: 1;
+        }
+        .section-title-underline {
+            background: linear-gradient(to right, #34D399, #FACC15, #FB7185);
+            height: 4px;
+            width: 8rem;
+            margin: 0.5rem auto 2rem auto;
+            border-radius: 2px;
+        }
+        .tool-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s;
+        }
+        .tool-card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-[#004AAD] text-white text-center py-12 px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4">生成式AI道场</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-[#CDE6FF]">在人机共生的未来，成为智慧的驾驭者。</p>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <section id="tiers" class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900">四层一体的学习架构</h2>
+            <div class="section-title-underline"></div>
+            <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">
+                道场将八大理论整合为四个递进的层次，从思维地基到系统格局，再到创新行动与自我进化，形成一个完整的认知能力提升闭环。
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flow-card p-6 rounded-xl text-center shadow-md">
+                    <div class="text-5xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold text-emerald-500">认知基础层</h3>
+                    <p class="text-sm text-gray-500 mt-2">第一性原理 & MECE原则</p>
+                </div>
+                <div class="flow-card p-6 rounded-xl text-center shadow-md">
+                    <div class="text-5xl mb-4">🌐</div>
+                    <h3 class="text-xl font-bold text-amber-500">系统视角层</h3>
+                    <p class="text-sm text-gray-500 mt-2">系统思维</p>
+                </div>
+                <div class="flow-card p-6 rounded-xl text-center shadow-md">
+                    <div class="text-5xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold text-rose-500">创新方法层</h3>
+                    <p class="text-sm text-gray-500 mt-2">JTBD & HMW方法</p>
+                </div>
+                <div class="flow-card p-6 rounded-xl text-center shadow-md">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold text-sky-500">学习优化层</h3>
+                    <p class="text-sm text-gray-500 mt-2">元认知, 间隔效应 & 吉布斯循环</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="deep-dive" class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900">核心理论深度解析</h2>
+            <div class="section-title-underline"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-emerald-500 mb-4 text-center">第一性原理 vs. 类比思维</h3>
+                    <p class="text-center text-gray-600 mb-8">
+                        在提示工程中，第一性原理思维要求我们解构问题本质，而非简单套用模板。这种方法能带来更根本、更高效的指令，实现颠覆性创新。
+                    </p>
+                    <div class="chart-container h-64 md:h-72">
+                        <canvas id="firstPrinciplesChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-amber-500 mb-4 text-center">RAG的系统思维分析</h3>
+                    <p class="text-center text-gray-600 mb-8">
+                        检索增强生成（RAG）是一个复杂的动态系统。通过系统思维，我们可以识别其反馈回路和杠杆点，从而进行更有效的优化。
+                    </p>
+                    <div class="chart-container h-64 md:h-72">
+                        <canvas id="ragSystemChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-rose-500 mb-4 text-center">JTBD驱动的AI产品战略</h3>
+                    <p class="text-center text-gray-600 mb-8">
+                        Jobs-to-be-Done (JTBD) 框架能有效避免技术驱动陷阱，确保AI应用真正解决用户的核心“工作”，从而大幅提升产品成功率。
+                    </p>
+                    <div class="chart-container h-64 md:h-72">
+                        <canvas id="jtbdChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-sky-500 mb-4 text-center">间隔效应：构建长期技能记忆</h3>
+                    <p class="text-center text-gray-600 mb-8">
+                        与“填鸭式”学习相比，将练习分散在不同时间段（间隔学习）能显著提高对高级提示工程等复杂技能的长期记忆效果。
+                    </p>
+                    <div class="chart-container h-64 md:h-72">
+                        <canvas id="spacingEffectChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="toolkit" class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900">本地核心工具链</h2>
+            <div class="section-title-underline"></div>
+            <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">
+                道场推荐一套完全由顶级开源项目组成的本地工具链，覆盖从数据处理、向量化、检索到交互的完整RAG流程。
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="tool-card rounded-lg p-6 shadow-md">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">应用编排框架</h4>
+                    <p class="text-sm text-gray-500 mb-4">将RAG的复杂流程封装为标准化的组件和链条，让开发者能聚焦于业务逻辑。</p>
+                    <div class="flex space-x-4">
+                        <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LangChain</span>
+                        <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full">LlamaIndex</span>
+                    </div>
+                </div>
+                <div class="tool-card rounded-lg p-6 shadow-md">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">向量存储与检索</h4>
+                    <p class="text-sm text-gray-500 mb-4">为存储和高效查询高维向量数据而设计的专用数据库，是实现语义搜索核心技术。</p>
+                    <div class="flex space-x-4">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">ChromaDB</span>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-0.5 rounded-full">FAISS</span>
+                    </div>
+                </div>
+                <div class="tool-card rounded-lg p-6 shadow-md">
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">前端交互界面</h4>
+                    <p class="text-sm text-gray-500 mb-4">让开发者无需前端知识，仅用Python代码即可快速构建交互式Web应用。</p>
+                    <div class="flex space-x-4">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Streamlit</span>
+                        <span class="bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Gradio</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-6 bg-[#004AAD] text-white mt-12">
+        <p>本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区，保留所有权利。</p>
+    </footer>
+
+    <script>
+        const palette = {
+            red: '#FB7185',
+            yellow: '#FACC15',
+            green: '#34D399',
+            blue: '#38BDF8',
+            dark: '#0F172A',
+            light: '#F8FAFC'
+        };
+
+        function wrapLabel(label) {
+            const maxLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).length > maxLength && currentLine.length > 0) {
+                    lines.push(currentLine);
+                    currentLine = word;
+                } else {
+                    currentLine = currentLine ? currentLine + ' ' + word : word;
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const defaultChartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: palette.dark,
+                        font: {
+                            family: "'Noto Sans SC', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    bodyFont: {
+                        family: "'Noto Sans SC', sans-serif"
+                    },
+                    titleFont: {
+                        family: "'Noto Sans SC', sans-serif"
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    ticks: { color: '#475569' },
+                    grid: { color: 'rgba(203, 213, 225, 0.5)' }
+                },
+                y: {
+                    ticks: { color: '#475569' },
+                    grid: { color: 'rgba(203, 213, 225, 0.5)' }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('firstPrinciplesChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['第一性原理创新潜力', '类比思维创新潜力'],
+                datasets: [{
+                    label: '创新潜力对比',
+                    data: [90, 10],
+                    backgroundColor: [palette.green, palette.blue],
+                    borderColor: palette.light,
+                    borderWidth: 4
+                }]
+            },
+            options: { ...defaultChartOptions, cutout: '70%' }
+        });
+
+        new Chart(document.getElementById('ragSystemChart'), {
+            type: 'radar',
+            data: {
+                labels: ['检索质量', '生成质量', '知识库更新', '用户反馈', '提示词优化'],
+                datasets: [{
+                    label: 'RAG系统健康度',
+                    data: [8, 9, 6, 7, 8],
+                    backgroundColor: 'rgba(250, 204, 21, 0.2)',
+                    borderColor: palette.yellow,
+                    pointBackgroundColor: palette.yellow,
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(203, 213, 225, 0.8)' },
+                        grid: { color: 'rgba(203, 213, 225, 0.8)' },
+                        pointLabels: { color: palette.dark },
+                        ticks: { backdropColor: 'transparent', color: '#475569' }
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('jtbdChart'), {
+            type: 'bar',
+            data: {
+                labels: ['JTBD驱动的AI方案', '技术展示型应用'],
+                datasets: [{
+                    label: '应用成功率指数',
+                    data: [90, 25],
+                    backgroundColor: [palette.red, palette.blue],
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                ...defaultChartOptions,
+                plugins: { legend: { display: false }, tooltip: { callbacks: { title: tooltipTitleCallback } } }
+            }
+        });
+
+        new Chart(document.getElementById('spacingEffectChart'), {
+            type: 'line',
+            data: {
+                labels: ['第1天', '第7天', '第14天', '第30天', '第60天'],
+                datasets: [
+                    {
+                        label: '间隔学习',
+                        data: [100, 95, 90, 88, 85],
+                        borderColor: palette.blue,
+                        backgroundColor: 'rgba(56, 189, 248, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: '集中学习',
+                        data: [100, 50, 30, 15, 5],
+                        borderColor: palette.red,
+                        backgroundColor: 'rgba(251, 113, 133, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                ...defaultChartOptions,
+                plugins: { legend: { position: 'bottom' }, tooltip: { callbacks: { title: tooltipTitleCallback } } },
+                scales: { y: { min: 0, max: 100, ticks: { callback: value => value + '%' } } }
+            }
+        });
+
+    </script>
+</body>
+</html>
