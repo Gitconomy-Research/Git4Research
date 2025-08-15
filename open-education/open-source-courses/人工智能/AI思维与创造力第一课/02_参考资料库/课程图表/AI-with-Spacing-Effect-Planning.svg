@@ -1,0 +1,142 @@
+<svg width="1400" height="750" viewBox="0 0 1400 750"
+     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="ttl desc">
+
+  <title id="ttl">掌握提示工程：AI增强的间隔重复与交错学习计划</title>
+  <desc id="desc">此图展示为期一周的学习计划，结合间隔重复与交错学习原则，并由AI辅助执行，旨在高效掌握提示工程技能。</desc>
+
+  <defs>
+    <marker id="arrow-spacing" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96" />
+    </marker>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #212529; }
+      .day-box { fill: #f8f9fa; stroke: #dee2e6; stroke-width: 2; rx: 15; }
+      .day-title { font-size: 20px; font-weight: bold; text-anchor: middle; }
+      .section-title { font-size: 16px; font-weight: 600; fill: #495057;}
+      .task-text { font-size: 15px; fill: #212529;}
+      .ai-box { fill: #f3f0ff; rx: 8; }
+      .ai-text { font-size: 14px; font-style: italic; fill: #5f3dc4; }
+      .principle-box { fill: #fff9db; rx: 8; }
+      .principle-text { font-size: 14px; font-weight: 500; fill: #a66100; }
+      .legend-text { font-size: 14px; }
+      .spacing-arc-text { font-size: 14px; fill: #495057; font-weight: 500;}
+    </style>
+  </defs>
+
+  <rect width="1400" height="850" fill="#fff"/>
+
+  <text x="700" y="60" class="title">AI增强的间隔重复与交错学习计划</text>
+  <text x="700" y="95" font-size="18" text-anchor="middle" fill="#555">—— 以一周掌握三种核心提示技术为例 ——</text>
+
+
+  <!-- 学习日历 -->
+  <g id="calendar" transform="translate(0, 20)">
+    <g id="day1" transform="translate(50, 110)">
+      <rect class="day-box" width="250" height="400"/>
+      <text x="125" y="40" class="day-title">第一天 (Day 1)</text>
+      <line x1="20" y1="60" x2="230" y2="60" stroke="#ced4da"/>
+      <text x="30" y="90" class="section-title">🎯 核心任务:</text>
+      <text x="40" y="120" class="task-text"><tspan style="fill:#1971c2; font-weight:bold;">■</tspan> 学习 / 练习: 思维链 (CoT)</text>
+
+      <rect x="20" y="200" class="ai-box" width="210" height="80"/>
+      <text x="30" y="225" class="section-title">🤖 AI 扮演的角色:</text>
+      <text x="40" y="255" class="ai-text">"为我生成5个不同主题的、</text>
+      <text x="40" y="270" class="ai-text">适合用CoT解决的简单问题。"</text>
+
+      <rect x="20" y="320" class="principle-box" width="210" height="50"/>
+      <text x="30" y="345" class="section-title">🔬 认知科学原理:</text>
+      <text x="40" y="365" class="principle-text">初始学习 (Initial Learning)</text>
+    </g>
+
+    <g id="day2" transform="translate(320, 110)">
+      <rect class="day-box" width="250" height="400"/>
+      <text x="125" y="40" class="day-title">第二天 (Day 2)</text>
+      <line x1="20" y1="60" x2="230" y2="60" stroke="#ced4da"/>
+      <text x="30" y="90" class="section-title">🎯 核心任务:</text>
+      <text x="40" y="120" class="task-text"><tspan style="fill:#087f5b; font-weight:bold;">■</tspan> 学习 / 练习: 角色扮演</text>
+
+      <rect x="20" y="200" class="ai-box" width="210" height="80"/>
+      <text x="30" y="225" class="section-title">🤖 AI 扮演的角色:</text>
+      <text x="40" y="255" class="ai-text">"为我设计5个场景，让我为</text>
+      <text x="40" y="270" class="ai-text">AI创建一个合适的专家角色。"</text>
+
+      <rect x="20" y="320" class="principle-box" width="210" height="50"/>
+      <text x="30" y="345" class="section-title">🔬 认知科学原理:</text>
+      <text x="40" y="365" class="principle-text">新知识引入 (New Topic)</text>
+    </g>
+
+    <g id="day3" transform="translate(590, 110)">
+      <rect class="day-box" width="250" height="400"/>
+      <text x="125" y="40" class="day-title">第三天 (Day 3)</text>
+      <line x1="20" y1="60" x2="230" y2="60" stroke="#ced4da"/>
+      <text x="30" y="90" class="section-title">🎯 核心任务:</text>
+      <text x="40" y="120" class="task-text"><tspan style="fill:#1971c2; font-weight:bold;">■</tspan> [间隔复习] 思维链 (CoT)</text>
+      <text x="40" y="150" class="task-text"><tspan style="fill:#087f5b; font-weight:bold;">■</tspan> [交错练习] 角色 + CoT</text>
+
+      <rect x="20" y="200" class="ai-box" width="210" height="80"/>
+      <text x="30" y="225" class="section-title">🤖 AI 扮演的角色:</text>
+      <text x="40" y="255" class="ai-text">"设计一个问题，要求我先设定</text>
+      <text x="40" y="270" class="ai-text">角色，再用CoT解决。"</text>
+
+      <rect x="20" y="320" class="principle-box" width="210" height="50"/>
+      <text x="30" y="345" class="section-title">🔬 认知科学原理:</text>
+      <text x="40" y="365" class="principle-text">间隔重复 / 交错学习</text>
+    </g>
+
+    <g id="day4" transform="translate(860, 110)">
+      <rect class="day-box" width="250" height="400"/>
+      <text x="125" y="40" class="day-title">第四天 (Day 4)</text>
+      <line x1="20" y1="60" x2="230" y2="60" stroke="#ced4da"/>
+      <text x="30" y="90" class="section-title">🎯 核心任务:</text>
+      <text x="40" y="120" class="task-text"><tspan style="fill:#e67700; font-weight:bold;">■</tspan> 学习 / 练习: 提示链</text>
+
+      <rect x="20" y="200" class="ai-box" width="210" height="80"/>
+      <text x="30" y="225" class="section-title">🤖 AI 扮演的角色:</text>
+      <text x="40" y="255" class="ai-text">"创建一个需要至少3个提示</text>
+      <text x="40" y="270" class="ai-text">步骤才能完成的任务。"</text>
+
+      <rect x="20" y="320" class="principle-box" width="210" height="50"/>
+      <text x="30" y="345" class="section-title">🔬 认知科学原理:</text>
+      <text x="40" y="365" class="principle-text">新知识引入 (New Topic)</text>
+    </g>
+
+    <g id="day5" transform="translate(1130, 110)">
+      <rect class="day-box" width="250" height="400"/>
+      <text x="125" y="40" class="day-title">第五天 (Day 5)</text>
+      <line x1="20" y1="60" x2="230" y2="60" stroke="#ced4da"/>
+      <text x="30" y="90" class="section-title">🎯 核心任务:</text>
+      <text x="40" y="120" class="task-text"><tspan style="fill:#087f5b; font-weight:bold;">■</tspan> [间隔复习] 角色扮演</text>
+      <text x="40" y="150" class="task-text"><tspan style="fill:#e67700; font-weight:bold;">■</tspan> [交错练习] 全部三种技术</text>
+
+      <rect x="20" y="200" class="ai-box" width="210" height="80"/>
+      <text x="30" y="225" class="section-title">🤖 AI 扮演的角色:</text>
+      <text x="40" y="255" class="ai-text">"设计一个复杂的挑战，必须</text>
+      <text x="40" y="270" class="ai-text">结合使用三种技术才能解决。"</text>
+
+      <rect x="20" y="320" class="principle-box" width="210" height="50"/>
+      <text x="30" y="345" class="section-title">🔬 认知科学原理:</text>
+      <text x="40" y="365" class="principle-text">间隔重复 / 多样化练习</text>
+    </g>
+  </g>
+
+  <!-- 两条间隔曲线 -->
+  <g id="spacing-arcs" transform="translate(0,520)">
+    <path id="arc1" d="M 175,50 A 280 110 0 0 0 715,50" fill="none" stroke="#ced4da" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrow-spacing)"/>
+
+    <path id="arc2" d="M 445,50 A 450 130 0 0 0 1255,50" fill="none" stroke="#ced4da" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrow-spacing)"/>
+  </g>
+
+  <text x="375" y="630" class="spacing-arc-text">间隔复习 (Spacing)</text>
+  <text x="845" y="630" class="spacing-arc-text">长间隔复习 (Longer Spacing)</text>
+
+  <g id="legend" transform="translate(450, 675)">
+    <rect x="0" y="0" width="500" height="60" rx="10" fill="#f1f3f5"/>
+    <text x="250" y="22" font-size="18" font-weight="600" text-anchor="middle">图例 (Legend)</text>
+    <text x="40" y="40" class="legend-text"><tspan style="fill:#1971c2; font-weight:bold;">■</tspan> 思维链 (CoT)</text>
+    <text x="180" y="40" class="legend-text"><tspan style="fill:#087f5b; font-weight:bold;">■</tspan> 角色扮演 (Persona)</text>
+    <text x="350" y="40" class="legend-text"><tspan style="fill:#e67700; font-weight:bold;">■</tspan> 提示链 (Chaining)</text>
+  </g>
+
+</svg>

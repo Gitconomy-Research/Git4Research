@@ -1,0 +1,94 @@
+<svg width="800" height="1150" viewBox="0 0 800 1150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <title>生成式AI “输入-模型-输出” 堆栈框架图</title>
+  <desc>此图解构了生成式AI的核心流程，展示了三大第一性原理在输入、模型和输出阶段的应用。</desc>
+
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#343a40" />
+    </marker>
+
+    <g id="icon-pattern" fill="none" stroke="#228be6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 55 C30 25, 40 25, 50 55" />
+      <path d="M50 55 C60 85, 70 85, 80 55" />
+    </g>
+    <g id="icon-probability" fill="none" stroke="#845ef7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M50 20 L50 50" />
+      <path d="M50 50 L25 80" />
+      <path d="M50 50 L75 80" />
+    </g>
+    <g id="icon-example" fill="none" stroke="#12b886" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+       <path d="M20 30 L 80 30" />
+       <path d="M20 50 L 80 50" />
+       <path d="M20 70 L 60 70" />
+    </g>
+  </defs>
+
+  <rect width="800" height="1150" fill="#f8f9fa"/>
+
+  <text x="400" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#212529">“输入-模型-输出” 堆栈的第一性原理</text>
+
+  <g id="input-block">
+    <rect x="50" y="100" width="700" height="280" rx="15" fill="#e7f5ff" stroke="#74c0fc" stroke-width="2"/>
+    <text x="400" y="140" text-anchor="middle" font-size="24" font-weight="600" fill="#1864ab">输入 (INPUT)</text>
+    <text x="400" y="170" text-anchor="middle" font-size="16" fill="#1c7ed6">我们的角色：交互架构师 (Interaction Architect)</text>
+
+    <g transform="translate(80, 200)">
+      <use href="#icon-pattern" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="20" font-size="16" font-weight="600" fill="#1971c2">原理一：智能即模式识别</text>
+      <text x="60" y="45" font-size="15" fill="#212529">行动：提供清晰模式 (角色/格式)</text>
+    </g>
+    <g transform="translate(80, 260)">
+      <use href="#icon-probability" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="20" font-size="16" font-weight="600" fill="#7048e8">原理二：输出是概率性的</text>
+      <text x="60" y="45" font-size="15" fill="#212529">行动：引导概率走向 (约束/目标)</text>
+    </g>
+    <g transform="translate(80, 320)">
+      <use href="#icon-example" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="20" font-size="16" font-weight="600" fill="#099268">原理三：从范例中学习</text>
+      <text x="60" y="45" font-size="15" fill="#212529">行动：构建微缩范例 (Few-shot)</text>
+    </g>
+  </g>
+
+  <line x1="400" y1="385" x2="400" y2="435" stroke="#343a40" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <g id="model-block">
+    <rect x="50" y="440" width="700" height="280" rx="15" fill="#f3f0ff" stroke="#b197fc" stroke-width="2"/>
+    <text x="400" y="480" text-anchor="middle" font-size="24" font-weight="600" fill="#5f3dc4">模型 (MODEL)</text>
+    <text x="400" y="510" text-anchor="middle" font-size="16" fill="#7048e8">内部“黑箱”的运作逻辑 (Internal Logic)</text>
+
+    <g transform="translate(80, 540)">
+      <use href="#icon-pattern" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="28" font-size="16" font-weight="500" fill="#212529">高维向量匹配 (Vector Matching)</text>
+    </g>
+    <g transform="translate(80, 600)">
+      <use href="#icon-probability" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="28" font-size="16" font-weight="500" fill="#212529">下一个词元预测 (Next-Token Prediction)</text>
+    </g>
+    <g transform="translate(80, 660)">
+      <use href="#icon-example" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="28" font-size="16" font-weight="500" fill="#212529">即时情境学习 (In-Context Learning)</text>
+    </g>
+  </g>
+
+  <line x1="400" y1="725" x2="400" y2="775" stroke="#343a40" stroke-width="3" marker-end="url(#arrowhead)"/>
+
+  <g id="output-block">
+    <rect x="50" y="780" width="700" height="280" rx="15" fill="#e6fcf5" stroke="#63e6be" stroke-width="2"/>
+    <text x="400" y="820" text-anchor="middle" font-size="24" font-weight="600" fill="#087f5b">输出 (OUTPUT)</text>
+    <text x="400" y="850" text-anchor="middle" font-size="16" fill="#099268">结果的本质 (Nature of the Result)</text>
+
+    <g transform="translate(80, 880)">
+      <use href="#icon-pattern" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="28" font-size="16" font-weight="500" fill="#212529">模式的延续 (Continuation of Pattern)</text>
+    </g>
+    <g transform="translate(80, 940)">
+      <use href="#icon-probability" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="28" font-size="16" font-weight="500" fill="#212529">统计上的合理“幻觉” (Plausible Hallucination)</text>
+    </g>
+    <g transform="translate(80, 1000)">
+      <use href="#icon-example" transform="scale(0.4) translate(-10, -10)"/>
+      <text x="60" y="28" font-size="16" font-weight="500" fill="#212529">范例的归纳与泛化 (Generalization of Examples)</text>
+    </g>
+  </g>
+</svg>

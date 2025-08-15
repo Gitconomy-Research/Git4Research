@@ -1,0 +1,97 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <title>MECE原则：AI交互的“逻辑龙骨”</title>
+  <desc>此图展示了MECE原则如何将混沌的输入重构为结构化指令，从而引导AI产生高质量输出。</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#343a40" />
+    </marker>
+
+    <g id="ai-brain-icon" stroke="#495057" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 45,30 A 20 20 0 1 1 45 70 Q 50 50 55 70 A 20 20 0 1 1 55 30 Q 50 50 45 30 Z" />
+      <path d="M 50,20 V 80" />
+      <path d="M 35,40 H 65" />
+      <path d="M 35,60 H 65" />
+    </g>
+  </defs>
+
+  <rect width="1200" height="700" fill="#f8f9fa"/>
+
+  <g id="chaotic-input">
+    <path d="M 50,250 C -20,150 150,50 250,150 C 350,50 450,150 350,250 C 450,350 350,450 250,350 C 150,450 -20,350 50,250 Z" fill="#ffe3e3" stroke="#ff8787" stroke-width="2"/>
+    <text x="190" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#c92a2a">模糊、重叠、遗漏的请求</text>
+
+    <text x="180" y="180" fill="#495057" font-size="16" transform="rotate(-15 180 180)">风格要酷...</text>
+    <text x="220" y="240" fill="#495057" font-size="15" opacity="0.8">别太长</text>
+    <text x="110" y="220" fill="#495057" font-size="17" transform="rotate(10 110 220)">...写个文案</text>
+    <text x="150" y="300" fill="#495057" font-size="16" transform="rotate(-5 150 300)">突出特点！</text>
+    <text x="260" y="320" fill="#495057" font-size="14" opacity="0.9">要新潮</text>
+    <text x="120" y="360" fill="#495057" font-size="15">面向年轻人</text>
+  </g>
+
+  <g>
+    <line x1="380" y1="250" x2="480" y2="250" stroke="#343a40" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="430" y="235" text-anchor="middle" font-size="14" font-weight="500" fill="#495057">应用MECE原则重构</text>
+  </g>
+
+  <g id="logical-backbone">
+    <text x="540" y="100" text-anchor="middle" font-size="22" font-weight="bold" fill="#1864ab">MECE原则: 交互的“逻辑龙骨”</text>
+    <rect x="535" y="140" width="10" height="320" rx="5" fill="#a5d8ff"/>
+
+    <rect x="500" y="160" width="40" height="8" rx="4" fill="#74c0fc"/>
+    <rect x="500" y="210" width="40" height="8" rx="4" fill="#74c0fc"/>
+    <rect x="500" y="260" width="40" height="8" rx="4" fill="#74c0fc"/>
+    <rect x="500" y="310" width="40" height="8" rx="4" fill="#74c0fc"/>
+    <rect x="500" y="360" width="40" height="8" rx="4" fill="#74c0fc"/>
+
+    <path d="M 500 164 C 550 164, 600 180, 650 180" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="4" fill="none"/>
+    <path d="M 500 214 C 550 214, 600 230, 650 230" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="4" fill="none"/>
+    <path d="M 500 264 C 550 264, 600 280, 650 280" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="4" fill="none"/>
+    <path d="M 500 314 C 550 314, 600 330, 650 330" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="4" fill="none"/>
+    <path d="M 500 364 C 550 364, 600 380, 650 380" stroke="#adb5bd" stroke-width="1.5" stroke-dasharray="4" fill="none"/>
+  </g>
+
+  <g id="structured-prompt">
+    <rect x="650" y="130" width="250" height="300" rx="10" fill="#f1f3f5" stroke="#ced4da" stroke-width="2"/>
+    <text x="775" y="100" text-anchor="middle" font-size="20" font-weight="bold" fill="#343a40">结构化的指令</text>
+
+    <g transform="translate(660, 155)">
+        <rect width="230" height="30" rx="5" fill="#e7f5ff"/>
+        <text x="115" y="20" text-anchor="middle" font-size="16" fill="#1864ab" font-weight="500">1. 角色 (Role)</text>
+    </g>
+    <g transform="translate(660, 205)">
+        <rect width="230" height="30" rx="5" fill="#e7f5ff"/>
+        <text x="115" y="20" text-anchor="middle" font-size="16" fill="#1864ab" font-weight="500">2. 任务 (Task)</text>
+    </g>
+    <g transform="translate(660, 255)">
+        <rect width="230" height="30" rx="5" fill="#e7f5ff"/>
+        <text x="115" y="20" text-anchor="middle" font-size="16" fill="#1864ab" font-weight="500">3. 约束 (Constraints)</text>
+    </g>
+    <g transform="translate(660, 305)">
+        <rect width="230" height="30" rx="5" fill="#e7f5ff"/>
+        <text x="115" y="20" text-anchor="middle" font-size="16" fill="#1864ab" font-weight="500">4. 格式 (Output Format)</text>
+    </g>
+     <g transform="translate(660, 355)">
+        <rect width="230" height="30" rx="5" fill="#e7f5ff"/>
+        <text x="115" y="20" text-anchor="middle" font-size="16" fill="#1864ab" font-weight="500">5. 范例 (Exemplars)</text>
+    </g>
+  </g>
+
+  <g>
+    <line x1="910" y1="280" x2="980" y2="280" stroke="#343a40" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="945" y="250" text-anchor="middle" font-size="14" fill="#495057">清晰传递</text>
+  </g>
+
+  <g id="ai-output">
+      <use href="#ai-brain-icon" transform="translate(950, 230) scale(1)"/>
+      <text x="1000" y="220" text-anchor="middle" font-size="18" font-weight="600" fill="#343a40">生成式AI</text>
+
+      <line x1="1000" y1="330" x2="1000" y2="380" stroke="#343a40" stroke-width="2.5" stroke-dasharray="5" marker-end="url(#arrow)"/>
+
+      <rect x="880" y="390" width="240" height="80" rx="10" fill="#e6fcf5" stroke="#20c997" stroke-width="2.5"/>
+      <text x="1000" y="425" text-anchor="middle" font-size="18" font-weight="bold" fill="#087f5b">高质量/可预测的</text>
+      <text x="1000" y="450" text-anchor="middle" font-size="18" font-weight="bold" fill="#087f5b">输出结果</text>
+  </g>
+
+</svg>

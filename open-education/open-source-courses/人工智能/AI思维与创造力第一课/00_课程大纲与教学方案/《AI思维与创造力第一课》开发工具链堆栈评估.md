@@ -116,3 +116,6 @@ DeepSeek以强大的代码和逻辑能力在全球开源社区中独树一帜，
 4. 规模化 / 持久化 → Qdrant / Milvus，适用于≥ 百万向量、并发读写、要备份/多副本与观测。
 
 5. 需要演示工程化 → vLLM + FastAPI + Phoenix + Docker，适用于路演/答辩/毕业设计，需要高吞吐、服务化与可观测。
+
+---
+本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区，保留所有权利。

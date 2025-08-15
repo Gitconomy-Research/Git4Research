@@ -1,0 +1,93 @@
+<svg width="1000" height="700" viewBox="0 0 1000 700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <title>元认知作为提示工程的核心技能</title>
+  <desc>此图展示了在提示工程中应用的“计划-监控-评估”元认知循环，连接线采用肘形样式。</desc>
+
+  <defs>
+    <marker id="arrow-cycle" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#845ef7" />
+    </marker>
+    <marker id="arrow-io" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
+    </marker>
+    <style>
+      .title { font-size: 28px; font-weight: bold; text-anchor: middle; fill: #212529; }
+      .node-box { fill: #f3f0ff; stroke: #b197fc; stroke-width: 2.5; rx: 15; }
+      .node-title { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #5f3dc4; }
+      .node-text { font-size: 14px; text-anchor: start; fill: #343a40; }
+      .io-box { fill: #fff; stroke: #adb5bd; stroke-width: 2; rx: 10; }
+      .io-text { font-size: 18px; font-weight: 500; text-anchor: middle; }
+      .cycle-text { font-size: 16px; font-weight: 500; fill: #845ef7; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="800" fill="#f8f9fa"/>
+
+  <text x="500" y="60" class="title">元认知循环在提示工程中的应用</text>
+  <text x="500" y="90" font-size="16" text-anchor="middle" fill="#555">“对构建提示的思维过程”进行思考、反思与优化</text>
+
+  <g id="input-task">
+    <rect x="375" y="120" width="250" height="60" class="io-box"/>
+    <text x="500" y="155" class="io-text">🎯 初始任务 / 复杂问题</text>
+  </g>
+  <line x1="500" y1="180" x2="500" y2="230" stroke="#495057" stroke-width="2" marker-end="url(#arrow-io)"/>
+
+
+  <g id="metacognition-cycle">
+
+    <g id="planning-node">
+      <rect x="350" y="240" width="300" height="150" class="node-box"/>
+      <text x="500" y="275" class="node-title">1. 计划 (Planning)</text>
+      <text x="370" y="310" class="node-text">
+        <tspan dy="0em">• 面对任务，我该选择什么策略？</tspan>
+        <tspan x="390" dy="1.4em">- 零样本 (Zero-shot)？</tspan>
+        <tspan x="390" dy="1.4em">- 思维链 (Chain-of-Thought)？</tspan>
+        <tspan x="390" dy="1.4em">- 思维树 (Tree-of-Thoughts)？</tspan>
+      </text>
+    </g>
+
+    <g id="monitoring-node">
+      <rect x="650" y="420" width="300" height="150" class="node-box"/>
+      <text x="800" y="455" class="node-title">2. 监控 (Monitoring)</text>
+      <text x="670" y="490" class="node-text">
+        <tspan dy="0em">• 交互中，模型的输出质量如何？</tspan>
+        <tspan x="690" dy="1.4em">- 回答是否开始泛化、重复？</tspan>
+        <tspan x="690" dy="1.4em">- 是否需要引入更具体的约束？</tspan>
+        <tspan x="690" dy="1.4em">- 是否需要调整视角或追问？</tspan>
+      </text>
+    </g>
+
+    <g id="evaluating-node">
+      <rect x="50" y="420" width="300" height="150" class="node-box"/>
+      <text x="200" y="455" class="node-title">3. 评估 (Evaluating)</text>
+      <text x="70" y="490" class="node-text">
+        <tspan dy="0em">• 交互后，这次提示为什么成功/失败？</tspan>
+        <tspan x="90" dy="1.4em">- 是指令不够清晰？</tspan>
+        <tspan x="90" dy="1.4em">- 是上下文/范例不足？</tspan>
+        <tspan x="90" dy="1.4em">- 任务是否超出了模型能力范围？</tspan>
+      </text>
+    </g>
+
+    <path d="M 650 315 H 800 V 420" fill="none" stroke="#845ef7" stroke-width="2" marker-end="url(#arrow-cycle)"/>
+    <path d="M 800 578 V 650 H 200 V 578" fill="none" stroke="#845ef7" stroke-width="2" marker-end="url(#arrow-cycle)"/>
+    <path d="M 200 420 H 200 V 315 H 350" fill="none" stroke="#845ef7" stroke-width="2" marker-end="url(#arrow-cycle)"/>
+    <text x="500" y="630" class="cycle-text">螺旋式优化与迭代</text>
+  </g>
+
+  <g id="ai-interaction">
+     <rect x="375" y="445" width="250" height="100" class="io-box" fill="#e7f5ff"/>
+     <text x="500" y="480" class="io-text">🤖 与AI模型交互</text>
+     <text x="500" y="515" class="io-text" font-size="14" fill="#495057">(Prompt ↔ Response)</text>
+  </g>
+
+  <path d="M 200 420 V 200 H 425 V 240" stroke="#845ef7" stroke-width="2" stroke-dasharray="8 4" fill="none" marker-end="url(#arrow-cycle)"/>
+  <text x="312" y="195" class="cycle-text" font-size="14">复盘洞察指导下次计划</text>
+
+
+  <line x1="500" y1="545" x2="500" y2="610" stroke="#495057" stroke-width="2" marker-end="url(#arrow-io)"/>
+  <g id="output-result">
+    <rect x="375" y="620" width="250" height="60" class="io-box" fill="#e6fcf5"/>
+    <text x="500" y="655" class="io-text">✅ 高质量、精准的输出</text>
+  </g>
+
+</svg>

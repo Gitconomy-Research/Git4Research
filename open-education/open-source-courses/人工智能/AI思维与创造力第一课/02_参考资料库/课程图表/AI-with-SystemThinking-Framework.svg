@@ -1,0 +1,127 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650">
+  <!-- 背景 -->
+  <rect width="1000" height="650" fill="#f8f9fa" />
+
+  <!-- 标题 -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">RAG作为复杂系统的系统思维分析</text>
+
+  <!-- 1. RAG系统组成 -->
+  <rect x="50" y="70" width="900" height="160" fill="#fff4e6" stroke="#fbbc05" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="95" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">1. RAG系统组成</text>
+
+  <!-- 视角转变 -->
+  <rect x="70" y="110" width="860" height="35" fill="#e6f7e6" stroke="#34a853" stroke-width="1" rx="5" ry="5" />
+  <text x="130" y="132" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">机械师视角</text>
+  <text x="500" y="128" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">从孤立组件到</text>
+  <text x="870" y="132" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">生态园丁视角</text>
+
+  <path d="M 230 132 L 770 132" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+
+  <!-- RAG系统组件 -->
+  <rect x="90" y="160" width="180" height="50" fill="#f8d9d9" stroke="#ea4335" stroke-width="1" rx="5" ry="5" />
+  <text x="180" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">检索器</text>
+
+  <rect x="320" y="160" width="180" height="50" fill="#d9e7f8" stroke="#4285f4" stroke-width="1" rx="5" ry="5" />
+  <text x="410" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">知识库</text>
+
+  <rect x="550" y="160" width="180" height="50" fill="#d9f8e0" stroke="#34a853" stroke-width="1" rx="5" ry="5" />
+  <text x="640" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">生成器(LLM)</text>
+
+  <rect x="780" y="160" width="150" height="50" fill="#f8ecd9" stroke="#fbbc05" stroke-width="1" rx="5" ry="5" />
+  <text x="855" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">用户</text>
+
+  <!-- 连接箭头  -->
+  <path d="M 270 185 L 320 185" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <path d="M 500 185 L 550 185" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <path d="M 730 185 L 780 185" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+
+  <!-- 2. 系统动态分析 -->
+  <rect x="50" y="250" width="900" height="180" fill="#fff4e6" stroke="#fbbc05" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="275" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">2. 系统动态分析：反馈回路与时滞效应</text>
+
+  <!-- 平衡回路 -->
+  <ellipse cx="300" cy="355" rx="150" ry="65" fill="#ffffff" stroke="#34a853" stroke-width="2" stroke-dasharray="5,2" />
+  <text x="300" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#34a853">B</text>
+  <text x="300" y="325" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">平衡回路：质量校正回路</text>
+
+  <!-- 平衡回路元素 -->
+  <text x="240" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">检索质量差</text>
+  <text x="360" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">答案不准确</text>
+  <text x="360" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">用户反馈</text>
+  <text x="240" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">系统优化</text>
+
+  <!--  连接箭头 -->
+  <path d="M 285 340 L 320 340" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <path d="M 360 355 L 360 375" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <text x="370" y="365" font-family="Arial, sans-serif" font-size="10" fill="#ea4335">时滞1</text>
+
+  <path d="M 320 385 L 285 385" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <text x="320" y="400" font-family="Arial, sans-serif" font-size="10" fill="#ea4335">时滞2</text>
+
+  <path d="M 240 375 L 240 355" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+
+  <!-- 增强回路 -->
+  <ellipse cx="700" cy="355" rx="150" ry="65" fill="#ffffff" stroke="#ea4335" stroke-width="2" />
+  <text x="700" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ea4335">R</text>
+  <text x="700" y="325" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">增强回路：知识库僵化循环</text>
+
+  <!-- 增强回路元素 -->
+  <text x="640" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">知识库陈旧</text>
+  <text x="760" y="345" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">过时信息答案</text>
+  <text x="760" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">用户信任降低</text>
+  <text x="640" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">维护优先级降低</text>
+
+  <!--  连接箭头-->
+  <path d="M 675 340 L 720 340" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <path d="M 760 355 L 760 375" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <path d="M 720 385 L 685 385" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+  <path d="M 640 375 L 640 355" stroke="#333" stroke-width="1" marker-end="url(#smallArrow)" />
+
+  <!-- 3. 杠杆点实践 -->
+  <rect x="50" y="450" width="900" height="180" fill="#fff4e6" stroke="#fbbc05" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="475" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">3. 杠杆点实践：干预矩阵</text>
+
+  <!-- 杠杆点层级 -->
+  <rect x="70" y="490" width="860" height="130" fill="#f8f9fa" stroke="#dddddd" stroke-width="1" />
+
+  <!-- 杠杆点表格线 -->
+  <line x1="70" y1="520" x2="930" y2="520" stroke="#dddddd" stroke-width="1" />
+  <line x1="70" y1="550" x2="930" y2="550" stroke="#dddddd" stroke-width="1" />
+  <line x1="70" y1="580" x2="930" y2="580" stroke="#dddddd" stroke-width="1" />
+
+  <line x1="170" y1="490" x2="170" y2="620" stroke="#dddddd" stroke-width="1" />
+  <line x1="400" y1="490" x2="400" y2="620" stroke="#dddddd" stroke-width="1" />
+  <line x1="650" y1="490" x2="650" y2="620" stroke="#dddddd" stroke-width="1" />
+
+  <!-- 表头 -->
+  <text x="120" y="510" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">杠杆点层级</text>
+  <text x="285" y="510" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">干预措施</text>
+  <text x="525" y="510" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">RAG系统示例</text>
+  <text x="790" y="510" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">系统性影响</text>
+
+  <!-- 低杠杆 -->
+  <text x="120" y="540" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#ea4335" font-weight="bold">低杠杆</text>
+  <text x="285" y="540" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">参数调整</text>
+  <text x="525" y="540" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">调整检索top_k、temperature</text>
+  <text x="790" y="540" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">效果有限：只能带来边际改善</text>
+
+  <!-- 中杠杆 -->
+  <text x="120" y="570" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#fbbc05" font-weight="bold">中杠杆</text>
+  <text x="285" y="570" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">信息流结构</text>
+  <text x="525" y="570" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">优化分块策略、引入重排序</text>
+  <text x="790" y="570" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">显著提升质量：改变信息质量</text>
+
+  <!-- 高杠杆 -->
+  <text x="120" y="600" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#34a853" font-weight="bold">高杠杆</text>
+  <text x="285" y="600" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">系统目标/自组织</text>
+  <text x="525" y="600" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">知识库监控智能体、范式转换</text>
+  <text x="790" y="600" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#333">创造全新价值：系统性变革</text>
+
+  <!-- 定义箭头标记 -->
+  <defs>
+    <marker id="smallArrow" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto">
+      <polygon points="0 0, 8 2.5, 0 5" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
