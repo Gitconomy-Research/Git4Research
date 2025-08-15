@@ -22,15 +22,13 @@
 
 其哲学根源可追溯至古希腊。亚里士多德将第一性原理定义为“认知一件事物的最初基石” [1]。在他的《形而上学》中，他寻求万物的“本原”（arche），即那些无法从其他命题中推导出的基本前提。这种方法标志着从神话宇宙观向基于基本真理的非超自然解释的重大转变。进入现代哲学，勒内·笛卡尔通过其“系统性怀疑”方法论进一步发展了这一思想。笛卡尔质疑一切可以被质疑的信念，直至达到无可置疑的真理——“我思故我在”（Cogito, ergo sum），并以此作为其哲学体系的基石。
 
-在现代，这一思维方式被埃隆·马斯克等创新者成功应用于商业和工程领域。马斯克通过将火箭或电池的成本分解至其最基础的原材料成本，从而颠覆了航空航天和汽车行业，证明了从根本上重新思考问题可以打破行业既有假设，![AI学习道场层次框架示意图](./../02_参考资料库/课程图表/AI-Dojo-Framework.svg)
-
-*图：AI学习道场层次框架示意图*实现数量级的成本降低。这种方法与“类比推理”形成鲜明对比，后者仅仅是在现有模型上进行微小改良，从而限制了颠覆性创新的可能性。物理学家理查德·费曼所倡导的“费曼学习法”——将复杂概念分解为最简单的部分并用通俗语言解释——也是第一性原理在学习领域的实践应用。
+在现代，这一思维方式被埃隆·马斯克等创新者成功应用于商业和工程领域。马斯克通过将火箭或电池的成本分解至其最基础的原材料成本，从而颠覆了航空航天和汽车行业，证明了从根本上重新思考问题可以打破行业既有假设，实现数量级的成本降低。这种方法与“类比推理”形成鲜明对比，后者仅仅是在现有模型上进行微小改良，从而限制了颠覆性创新的可能性。物理学家理查德·费曼所倡导的“费曼学习法”——将复杂概念分解为最简单的部分并用通俗语言解释——也是第一性原理在学习领域的实践应用。
 
 #### 2.1.2 在生成式AI中的应用：解构“输入-模型-输出”堆栈
 
 在生成式AI领域，尤其是在提示工程中，第一性原理思维意味着从模仿和套用模板转向基于模型本质的指令构建。与其复制他人成功的提示，学员应回归到构成人机交互的基本真理 [2]。理解这些原理，使得学员能够构建出更根本、更有效的指令。
 
-![输入-模型-输出堆栈的第一性原则](./../02_参考资料库/课程图表/AI-with-First-Principle-Framework)
+![输入-模型-输出堆栈的第一性原则](./../02_参考资料库/课程图表/AI-with-First-Principle-Framework.svg)
 
 *图：A输入-模型-输出堆栈的第一性原则*
 
@@ -99,7 +97,7 @@ MECE原则包含两大支柱[5]：
 
 ![MECE原则：AI交互的“逻辑龙骨”](./../02_参考资料库/课程图表/AI-with-MECE-Framework.svg)
 
-*图：MECE原则：AI交互的“逻辑龙骨”
+*图：MECE原则：AI交互的“逻辑龙骨”*
 
 1. **构建结构化的复杂提示**
 
@@ -691,10 +689,7 @@ AI的进阶行动 (基于“元认知之镜”的洞察):
 
 精通任何复杂技能，尤其是日新月异的AI领域，依赖的不是短期的“冲刺”，而是科学的、可持续的“认知马拉松”。间隔效应就是这场马拉松的“配速策略”，而AI则是我们不知疲倦的“私人教练”。
 
-![AI增强的间隔学习计划框架(./../02_参考资料库/课程图表/AI-with-Spacing-Effect-Planning.svg)
-![AI学习道场层次框架示意图](./../02_参考资料库/课程图表/AI-Dojo-Framework.svg)
-
-*图：AI学习道场层次框架示意图*
+![AI增强的间隔学习计划框架](./../02_参考资料库/课程图表/AI-with-Spacing-Effect-Planning.svg)
 *图：AI增强的间隔学习计划框架*
 
 学习高级提示工程不应采用“一次性”的填鸭式方法，如观看一个长达数小时的教程。相反，一个基于间隔重复的结构化练习计划会更有效。
@@ -1067,19 +1062,16 @@ AI学习道场的独特价值主张在于其整合性和对元学习的聚焦。
 
 ## 参考文献
 
-[1] First principle - Wikipedia，https://en.wikipedia.org/wiki/First_principle
-[2] Understanding AI from First Principles - Syntaxia,  https://www.syntaxia.com/post/understanding-ai-from-first-principles
-[3] MECE principle - Wikipedia, https://en.wikipedia.org/wiki/MECE_principle
-[4] Barbara Minto: “MECE: I invented it, so I get to say how to pronounce it” - McKinsey & Company， https://www.mckinsey.com/alumni/news-and-events/global-news/alumni-news/barbara-minto-mece-i-invented-it-so-i-get-to-say-how-to-pronounce-it
-[5] MECE Framework / Principle – What does it mean? Why do consultants find it useful?  - Case Interview, https://caseinterview.com/mece
-[6] Systems thinking - Wikipedia， https://en.wikipedia.org/wiki/Systems_thinking
-[7] A Brief History of Systems Thinking – Systems Thinking for Leaders， https://qut.pressbooks.pub/systemcraft-systems-thinking/chapter/a-brief-history-of-systems-thinking/
-[8] Systems Thinking: What, Why, When, Where, and How? - The Systems Thinker， https://thesystemsthinker.com/systems-thinking-what-why-when-where-and-how/
-[9] Jobs to Be Done Theory - Christensen Institute, https://www.christenseninstitute.org/theory/jobs-to-be-done/
-[10] What is How Might We (HMW)? | IxDF - The Interaction Design Foundation， https://www.interaction-design.org/literature/topics/how-might-we
-[11] Spacing Repetitions Over Long Timescales: A Review and a Reconsolidation Explanation - Frontiers Media S.A.， https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.00962/full
-[12] Gibbs Reflective Cycle - Simply Psychology, https://www.simplypsychology.org/gibbs-reflective-cycle.html
-[13] Generative AI as a Tool for Enhancing Reflective Learning in Students - arXiv, 2025， https://arxiv.org/pdf/2412.02603
-
----
-本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区，保留所有权利。
+[1] First principle - Wikipedia，https://en.wikipedia.org/wiki/First_principle  <br>
+[2] Understanding AI from First Principles - Syntaxia,  https://www.syntaxia.com/post/understanding-ai-from-first-principles <br>
+[3] MECE principle - Wikipedia, https://en.wikipedia.org/wiki/MECE_principle <br>
+[4] Barbara Minto: “MECE: I invented it, so I get to say how to pronounce it” - McKinsey & Company， https://www.mckinsey.com/alumni/news-and-events/global-news/alumni-news/barbara-minto-mece-i-invented-it-so-i-get-to-say-how-to-pronounce-it <br>
+[5] MECE Framework / Principle – What does it mean? Why do consultants find it useful?  - Case Interview, https://caseinterview.com/mece <br>
+[6] Systems thinking - Wikipedia， https://en.wikipedia.org/wiki/Systems_thinking <br>
+[7] A Brief History of Systems Thinking – Systems Thinking for Leaders， https://qut.pressbooks.pub/systemcraft-systems-thinking/chapter/a-brief-history-of-systems-thinking/ <br>
+[8] Systems Thinking: What, Why, When, Where, and How? - The Systems Thinker， https://thesystemsthinker.com/systems-thinking-what-why-when-where-and-how/ <br>
+[9] Jobs to Be Done Theory - Christensen Institute, https://www.christenseninstitute.org/theory/jobs-to-be-done/ <br>
+[10] What is How Might We (HMW)? | IxDF - The Interaction Design Foundation， https://www.interaction-design.org/literature/topics/how-might-we <br>
+[11] Spacing Repetitions Over Long Timescales: A Review and a Reconsolidation Explanation - Frontiers Media S.A.， https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.00962/full <br>
+[12] Gibbs Reflective Cycle - Simply Psychology, https://www.simplypsychology.org/gibbs-reflective-cycle.html <br>
+[13] Generative AI as a Tool for Enhancing Reflective Learning in Students - arXiv, 2025， https://arxiv.org/pdf/2412.02603 <br>
