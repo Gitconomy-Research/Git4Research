@@ -1075,3 +1075,6 @@ AI学习道场的独特价值主张在于其整合性和对元学习的聚焦。
 [11] Spacing Repetitions Over Long Timescales: A Review and a Reconsolidation Explanation - Frontiers Media S.A.， https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.00962/full <br>
 [12] Gibbs Reflective Cycle - Simply Psychology, https://www.simplypsychology.org/gibbs-reflective-cycle.html <br>
 [13] Generative AI as a Tool for Enhancing Reflective Learning in Students - arXiv, 2025， https://arxiv.org/pdf/2412.02603 <br>
+
+---
+本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区，保留所有权利。
