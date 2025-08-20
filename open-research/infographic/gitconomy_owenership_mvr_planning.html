@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gitconomy 社区所有制研究计划 · 信息图（Infographic）</title>
+  <meta name="description" content="基于‘贡献即要素’与MVR方法论的Gitconomy社区所有制研究计划信息图" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8fafc;
+      --ink:#0f172a;
+      --muted:#64748b;
+      --card:#ffffff;
+      --line:#e5e7eb;
+      /* Brand palette */
+      --brand:#004AAD;     /* dark */
+      --brand2:#0062D5;    /* medium */
+      --brand3:#419BFF;    /* light */
+      --brand4:#91C8FF;    /* lighter */
+      --brand5:#CDE6FF;    /* lightest */
+      /* accents */
+      --accent:var(--brand);
+      --accent2:var(--brand2);
+      --accent3:#10b981; /* green */
+      --accent4:#f59e0b; /* amber */
+      --shadow:0 6px 20px rgba(15,23,42,.06);
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6 'Noto Sans SC', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+
+    /* Header */
+    .hero{background:var(--brand);color:#fff;text-align:center;padding:56px 16px 64px}
+    .hero h1{margin:0 0 8px;font-size:32px;line-height:1.2;font-weight:900}
+    @media (min-width:768px){.hero h1{font-size:40px}}
+    .hero .lead{color:var(--brand5);font-size:18px;max-width:900px;margin:0 auto}
+
+    /* Layout */
+    .wrap{max-width:1160px;margin:0 auto;padding:0 20px 12px}
+    section{margin:24px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .kicker{font-size:12px;color:var(--muted);margin:-2px 0 12px}
+
+    /* Two-up grid */
+    .grid12{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+    @media (max-width:960px){.grid12{grid-template-columns:1fr}}
+
+    /* MVR ring */
+    .mvr{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+    @media (max-width:960px){.mvr{grid-template-columns:1fr}}
+    svg.mvr-ring{width:100%;max-width:520px;height:auto}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:22px;margin:8px 0 0}
+    .timeline::before{content:"";position:absolute;left:7px;top:4px;bottom:4px;width:2px;background:var(--line)}
+    .tl-item{position:relative;margin:12px 0;padding-left:16px}
+    .tl-item::before{content:"";position:absolute;left:-3px;top:6px;width:14px;height:14px;border-radius:999px;background:#fff;border:2px solid var(--brand2);box-shadow:0 2px 0 rgba(2,6,23,.04)}
+
+    /* Sprint bar */
+    .sprint{display:grid;grid-template-columns:1fr 3fr;gap:16px}
+    @media (max-width:960px){.sprint{grid-template-columns:1fr}}
+    .bar{position:relative;height:12px;background:var(--brand5);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+    .bar span{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--brand2),var(--brand3))}
+    .legend{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}
+    .legend .chip{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--brand2);outline:1px solid var(--brand4)}
+
+    /* Closing */
+    .closing-line{margin:4px 0;text-align:center;font-size:clamp(16px,2vw,20px);font-weight:800;color:var(--brand)}
+    .closing-box{background:var(--brand5);border:1px solid var(--brand4);border-radius:12px;padding:16px;box-shadow:0 6px 16px rgba(2,6,23,.06);margin-bottom:0}
+
+    /* Footer */
+    .site-footer{background:var(--brand);color:#fff;text-align:center;padding:18px 16px;margin-top:12px;font-size:14px}
+
+    /* Small helpers */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:10px;padding:2px 8px;font-size:12px;font-weight:700;letter-spacing:.2px}
+    .legend2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .legend2 .chip{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:6px 10px;border-radius:10px}
+    .icon{width:18px;height:18px}
+  </style>
+</head>
+<body>
+  <!-- 顶部：采用品牌深色 Hero 区 -->
+  <header class="hero">
+    <h1>Gitconomy 社区所有制研究计划 · 信息图</h1>
+    <p class="lead">基于“贡献即要素”的治理与激励研究 · 采用最小可行性研究（MVR）迭代方法</p>
+  </header>
+
+  <div class="wrap">
+    <main class="grid12" style="margin-top:22px;">
+      <!-- 研究问题 -->
+      <section class="card" style="grid-column: span 6;">
+        <h3 style="color:var(--brand)">核心研究问题</h3>
+        <p class="muted">我们如何基于“贡献即要素”，构建一个<span class="pill">公平</span>、<span class="pill">高效</span>、<span class="pill">可持续</span>的社区所有制与治理模式？</p>
+        <ul style="margin:0;padding-left:18px">
+          <li>识别与量化：将多元贡献（代码/文档/社区/创意）转化为可度量要素</li>
+          <li>映射与分配：把贡献动态映射为所有权与激励</li>
+          <li>验证与演化：通过真实案例与试点持续校验并优化模型</li>
+        </ul>
+      </section>
+
+      <!-- 研究目标 -->
+      <section class="card" style="grid-column: span 6;">
+        <h3 style="color:var(--brand)">四大研究目标 🎯</h3>
+        <div class="legend2">
+          <div class="chip">🏛️ <b>理论建构</b><span class="muted"> · 基础范式与概念体系</span></div>
+          <div class="chip">🧩 <b>模式设计</b><span class="muted"> · 度量、映射与治理</span></div>
+          <div class="chip">🔬 <b>实证验证</b><span class="muted"> · 案例与试点</span></div>
+          <div class="chip">📜 <b>标准制定</b><span class="muted"> · 最佳实践与白皮书</span></div>
+        </div>
+      </section>
+
+      <!-- MVR 方法论环图 -->
+      <section class="card" style="grid-column: span 7;">
+        <h3 style="color:var(--brand)">MVR 方法论 · 最小可行性研究循环</h3>
+        <div class="mvr">
+          <svg class="mvr-ring" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg" aria-labelledby="mvrTitle">
+            <title id="mvrTitle">MVR 迭代循环</title>
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="#0062D5"/>
+                <stop offset="100%" stop-color="#419BFF"/>
+              </linearGradient>
+            </defs>
+            <circle cx="180" cy="180" r="120" fill="none" stroke="#e5e7eb" stroke-width="28" />
+            <path d="M180 60 A120 120 0 0 1 300 180" fill="none" stroke="url(#g1)" stroke-width="28" stroke-linecap="round"/>
+            <path d="M300 180 A120 120 0 0 1 180 300" fill="none" stroke="url(#g1)" stroke-width="28" stroke-linecap="round"/>
+            <path d="M180 300 A120 120 0 0 1 60 180" fill="none" stroke="url(#g1)" stroke-width="28" stroke-linecap="round"/>
+            <path d="M60 180 A120 120 0 0 1 180 60" fill="none" stroke="url(#g1)" stroke-width="28" stroke-linecap="round"/>
+
+            <circle cx="180" cy="180" r="78" fill="#fff" stroke="#e5e7eb"/>
+            <text x="180" y="168" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">MVR</text>
+            <text x="180" y="190" text-anchor="middle" font-size="12" fill="#475569">最小可行性研究</text>
+
+            <text x="230" y="86" font-size="12" text-anchor="middle" fill="#0f172a">假设</text>
+            <text x="280" y="230" font-size="12" text-anchor="middle" fill="#0f172a">构建</text>
+            <text x="130" y="300" font-size="12" text-anchor="middle" fill="#0f172a">衡量</text>
+            <text x="80"  y="140" font-size="12" text-anchor="middle" fill="#0f172a">认知</text>
+
+            <g stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-linecap="round">
+              <path d="M255 105 q 20 20 35 55" marker-end="url(#arrow)" />
+              <path d="M275 230 q -20 20 -55 35" marker-end="url(#arrow)" />
+              <path d="M105 275 q 20 -20 55 -35" marker-end="url(#arrow)" />
+              <path d="M85 150 q 20 -20 55 -35" marker-end="url(#arrow)" />
+            </g>
+            <defs>
+              <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse">
+                <path d="M0,0 L8,4 L0,8 L3,4 z" fill="#94a3b8" />
+              </marker>
+            </defs>
+          </svg>
+          <div>
+            <ol style="margin:0;padding-left:18px">
+              <li><b>提出核心假设</b>：围绕贡献—所有权—激励提出可检验假设</li>
+              <li><b>构建最小可行模型</b>：MVP（如度量表/规则集）快速成型</li>
+              <li><b>进行实践衡量</b>：应用于案例或小型试点，收集数据与反馈</li>
+              <li><b>形成有效认知</b>：证实/证伪并沉淀结论，指导下一轮</li>
+            </ol>
+            <p class="muted" style="margin-top:8px">通过短周期迭代，持续收敛到可复用的治理工具与标准。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 路线图 -->
+      <section class="card" style="grid-column: span 5;">
+        <h3 style="color:var(--brand)">研究路线图 · 四个阶段</h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <div style="display:flex;align-items:center;gap:10px"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><b>理论建构</b></div>
+            <p class="muted">界定“贡献即要素”与Gitconomy内涵，形成初步理论框架。</p>
+          </div>
+          <div class="tl-item">
+            <div style="display:flex;align-items:center;gap:10px"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M8 8h8M8 12h5"/></svg><b>模式设计</b></div>
+            <p class="muted">多维贡献度量、所有权映射算法与治理激励机制。</p>
+          </div>
+          <div class="tl-item">
+            <div style="display:flex;align-items:center;gap:10px"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 5 17 10"/></svg><b>实证验证</b></div>
+            <p class="muted">典型社区案例研究与试点，数据驱动迭代优化。</p>
+          </div>
+          <div class="tl-item">
+            <div style="display:flex;align-items:center;gap:10px"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 18v-6a2 2 0 0 1 2-2h12"/><path d="M6 14h12"/><path d="M6 10h12"/></svg><b>标准制定</b></div>
+            <p class="muted">输出最佳实践与《Gitconomy治理白皮书》。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sprint 时间表 -->
+      <section class="card" style="grid-column: span 12;">
+        <h3 style="color:var(--brand)">第一轮冲刺（2025年8–12月）· 最小可行白皮书</h3>
+        <div class="sprint">
+          <div>
+            <p><b>关键里程碑</b></p>
+            <ul style="margin:0;padding-left:18px">
+              <li><b>8月</b>：完成初步综述，提出核心研究假设 ✅</li>
+              <li><b>9–10月</b>：V1 度量框架与映射/激励机制草案</li>
+              <li><b>11月</b>：选取 1–2 个社区开展回顾性验证</li>
+              <li><b>12月</b>：沉淀关键认知，发布白皮书 V1.0</li>
+            </ul>
+          </div>
+          <div>
+            <div class="bar" aria-label="进度">
+              <span style="width:20%"></span>
+            </div>
+            <div class="legend">
+              <div class="chip"><span class="dot" style="background:var(--brand2)"></span>8月 · 假设确立</div>
+              <div class="chip"><span class="dot" style="background:var(--brand3)"></span>9–10月 · 模型构建</div>
+              <div class="chip"><span class="dot" style="background:var(--accent3)"></span>11月 · 验证衡量</div>
+              <div class="chip"><span class="dot" style="background:var(--accent4)"></span>12月 · 认知发布</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 参与方式 & 价值 -->
+      <section class="card" style="grid-column: span 7;">
+        <h3 style="color:var(--brand)">如何参与？</h3>
+        <ul style="margin:0;padding-left:18px">
+          <li><b>Discussions</b>：分享想法、批评与相关工作</li>
+          <li><b>Issues</b>：提交建议与改进点</li>
+          <li><b>案例提供</b>：推荐具代表性的社区案例</li>
+          <li><b>试点合作</b>：共同开展小范围试点验证</li>
+        </ul>
+        <p class="muted" style="margin-top:8px">我们记录并认可每一份贡献，贡献本身也将进入研究数据闭环。</p>
+      </section>
+
+      <section class="card" style="grid-column: span 5;">
+        <h3 style="color:var(--brand)">许可与发布</h3>
+        <ul style="margin:0;padding-left:18px">
+          <li><b>代码</b>：MIT License</li>
+          <li><b>研究成果</b>：CC BY-NC-SA 4.0</li>
+          <li><b>产出</b>：模型、方法、案例、白皮书</li>
+        </ul>
+        <p class="muted">目标是形成可复用的社区治理工具箱与参考标准。</p>
+      </section>
+
+      <!-- 结尾标语：非黑色，强调；并缩小与Footer间距 -->
+      <section class="closing-box" aria-label="closing-note" style="grid-column:1/-1;margin-top:12px">
+        <p class="closing-line">为未来的知识经济和去中心化自治组织（DAO），</p>
+        <p class="closing-line">探索出一种全新的、真正由价值创造者集体拥有的组织形态。</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- 底部：品牌色 Footer，减少与内容间距 -->
+  <footer class="site-footer">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research 社区</footer>
+</body>
+</html>
