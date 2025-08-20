@@ -34,10 +34,10 @@
 
   <!-- 标题 -->
   <text x="600" y="34" class="title">Gitconomy社区所有制研究计划路线图</text>
-  <text x="600" y="58" class="subtitle">采用最小可行性研究（MVR）方法（第一轮冲刺：2025年8月—12月）</text>
+  <text x="600" y="68" class="subtitle">采用最小可行性研究（MVR）方法（第一轮冲刺：2025年8月—12月）</text>
 
   <!-- MVR循环 -->
-  <g transform="translate(600, 140)">
+  <g transform="translate(600, 160)">
     <path d="M 0 -40 A 40 40 0 1 1 -28.28 -28.28" fill="none" stroke="#63b3ed" stroke-width="2.5"/>
     <path d="M -40 0 A 40 40 0 1 1 -28.28 28.28" fill="none" stroke="#4fd1c5" stroke-width="2.5"/>
     <path d="M 0 40 A 40 40 0 1 1 28.28 28.28" fill="none" stroke="#f6ad55" stroke-width="2.5"/>
