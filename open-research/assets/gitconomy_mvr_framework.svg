@@ -1,123 +1,123 @@
-<svg width="100%" height="100%" viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'">
+<svg width="100%" height="100%" viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'">
+  <title id="title">Gitconomy社区所有制研究计划路线图</title>
+  <desc id="desc">采用最小可行性研究（MVR）方法的第一轮冲刺时间轴（2025年8月—12月），含四个阶段里程碑与当前日期标记。</desc>
+
   <defs>
     <style>
       .title { font-size: 24px; font-weight: 600; text-anchor: middle; fill: #1a202c; }
-      .subtitle { font-size: 16px; font-weight: 400; text-anchor: middle; fill: #4a5568; }
+      .subtitle { font-size: 16px; font-weight: 500; text-anchor: middle; fill: #4a5568; }
       .month-label { font-size: 14px; font-weight: 500; text-anchor: middle; fill: #718096; }
-      .milestone-title { font-size: 16px; font-weight: 600; text-anchor: middle; }
+      .milestone-title { font-size: 16px; font-weight: 700; text-anchor: middle; }
       .milestone-desc { font-size: 13px; font-weight: 400; text-anchor: middle; fill: #4a5568; }
-      .mvr-label { font-size: 14px; font-weight: 500; text-anchor: middle; }
+      .en { font-size: 12px; font-weight: 500; fill: #718096; text-anchor: middle; }
 
       .bg { fill: #f7fafc; }
       .timeline-stroke { stroke: #cbd5e0; stroke-width: 2; }
+      .today-stroke { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 4 6; }
       .progress-stroke { stroke: #4299e1; stroke-width: 5; }
 
       .m-hypothesis { fill: #63b3ed; } /* Blue */
       .m-build { fill: #4fd1c5; }     /* Teal */
       .m-measure { fill: #f6ad55; }   /* Orange */
-      .m-learn { fill: #b794f4; }      /* Purple */
+      .m-learn { fill: #b794f4; }     /* Purple */
 
-      @keyframes dash-animation {
-        to {
-          stroke-dashoffset: 0;
-        }
-      }
-      .progress-line {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: dash-animation 2s ease-out forwards;
-      }
+      @keyframes dash-animation { to { stroke-dashoffset: 0; } }
+      .progress-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: dash-animation 2s ease-out forwards; }
     </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#4299e1" />
     </marker>
   </defs>
 
+  <!-- 背景统一为整幅 -->
   <rect x="0" y="0" width="1200" height="450" class="bg"/>
 
-  <text x="600" y="0" class="title">Gitconomy社区所有制研究计划路线图</text>
-  <text x="600" y="30" class="subtitle">采用最小可行性研究 (MVR) 方法 (第一轮冲刺025年8月 - 12月)</text>
+  <!-- 标题 -->
+  <text x="600" y="34" class="title">Gitconomy社区所有制研究计划路线图</text>
+  <text x="600" y="58" class="subtitle">采用最小可行性研究（MVR）方法（第一轮冲刺：2025年8月—12月）</text>
 
-  <g transform="translate(600, 130)">
+  <!-- MVR循环 -->
+  <g transform="translate(600, 140)">
     <path d="M 0 -40 A 40 40 0 1 1 -28.28 -28.28" fill="none" stroke="#63b3ed" stroke-width="2.5"/>
     <path d="M -40 0 A 40 40 0 1 1 -28.28 28.28" fill="none" stroke="#4fd1c5" stroke-width="2.5"/>
     <path d="M 0 40 A 40 40 0 1 1 28.28 28.28" fill="none" stroke="#f6ad55" stroke-width="2.5"/>
     <path d="M 40 0 A 40 40 0 1 1 28.28 -28.28" fill="none" stroke="#b794f4" stroke-width="2.5"/>
 
-    <g transform="translate(3, -40)">
-      <polygon points="-5 -7, 5 -7, 0 0" fill="#63b3ed"/>
-    </g>
-    <g transform="translate(-40, -3) rotate(-90)">
-      <polygon points="-5 -7, 5 -7, 0 0" fill="#4fd1c5"/>
-    </g>
-     <g transform="translate(-3, 40) rotate(-180)">
-      <polygon points="-5 -7, 5 -7, 0 0" fill="#f6ad55"/>
-    </g>
-     <g transform="translate(40, 3) rotate(90)">
-      <polygon points="-5 -7, 5 -7, 0 0" fill="#b794f4"/>
-    </g>
+    <g transform="translate(3, -40)"><polygon points="-5 -7, 5 -7, 0 0" fill="#63b3ed"/></g>
+    <g transform="translate(-40, -3) rotate(-90)"><polygon points="-5 -7, 5 -7, 0 0" fill="#4fd1c5"/></g>
+    <g transform="translate(-3, 40) rotate(-180)"><polygon points="-5 -7, 5 -7, 0 0" fill="#f6ad55"/></g>
+    <g transform="translate(40, 3) rotate(90)"><polygon points="-5 -7, 5 -7, 0 0" fill="#b794f4"/></g>
 
-    <text x="0" y="-55" class="mvr-label" style="fill:#63b3ed;">1. 提出假设</text>
-    <text x="-65" y="0" class="mvr-label" style="fill:#4fd1c5; text-anchor:end;">2. 构建模型</text>
-    <text x="0" y="65" class="mvr-label" style="fill:#f6ad55;">3. 实践衡量</text>
-    <text x="65" y="0" class="mvr-label" style="fill:#b794f4; text-anchor:start;">4. 形成认知</text>
+    <text x="0" y="-55" class="milestone-desc" style="fill:#63b3ed;font-weight:600;">1. 提出假设</text>
+    <text x="-65" y="0" class="milestone-desc" style="fill:#4fd1c5;font-weight:600; text-anchor:end;">2. 构建模型</text>
+    <text x="0" y="65" class="milestone-desc" style="fill:#f6ad55;font-weight:600;">3. 实践衡量</text>
+    <text x="65" y="0" class="milestone-desc" style="fill:#b794f4;font-weight:600; text-anchor:start;">4. 形成认知</text>
   </g>
 
-  <line x1="100" y1="250" x2="1100" y2="250" class="timeline-stroke" />
+  <!-- 时间轴 -->
+  <line x1="100" y1="260" x2="1100" y2="260" class="timeline-stroke" />
+  <line x1="100" y1="260" x2="1100" y2="260" class="progress-stroke progress-line" marker-end="url(#arrowhead)"/>
 
-  <line x1="100" y1="250" x2="1100" y2="250" class="progress-stroke progress-line" marker-end="url(#arrowhead)"/>
+  <!-- 今天标记（示例：8/20） -->
+  <g>
+    <line x1="295" y1="220" x2="295" y2="300" class="today-stroke"/>
+    <rect x="272" y="202" width="46" height="18" rx="4" fill="#fff"/>
+    <text x="295" y="215" class="month-label" style="font-size:12px;fill:#475569;">今天 8/20</text>
+  </g>
 
+  <!-- 月份刻度 -->
   <g class="month-label">
-    <text x="150" y="275">8月</text>
-    <line x1="150" y1="245" x2="150" y2="255" class="timeline-stroke" />
-
-    <text x="375" y="275">9月</text>
-    <line x1="375" y1="245" x2="375" y2="255" class="timeline-stroke" />
-
-    <text x="600" y="275">10月</text>
-    <line x1="600" y1="245" x2="600" y2="255" class="timeline-stroke" />
-
-    <text x="825" y="275">11月</text>
-    <line x1="825" y1="245" x2="825" y2="255" class="timeline-stroke" />
-
-    <text x="1050" y="275">12月</text>
-    <line x1="1050" y1="245" x2="1050" y2="255" class="timeline-stroke" />
+    <text x="150" y="285">8月</text>
+    <line x1="150" y1="255" x2="150" y2="265" class="timeline-stroke" />
+    <text x="375" y="285">9月</text>
+    <line x1="375" y1="255" x2="375" y2="265" class="timeline-stroke" />
+    <text x="600" y="285">10月</text>
+    <line x1="600" y1="255" x2="600" y2="265" class="timeline-stroke" />
+    <text x="825" y="285">11月</text>
+    <line x1="825" y1="255" x2="825" y2="265" class="timeline-stroke" />
+    <text x="1050" y="285">12月</text>
+    <line x1="1050" y1="255" x2="1050" y2="265" class="timeline-stroke" />
   </g>
 
-  <g transform="translate(150, 250)">
+  <!-- 里程碑 -->
+  <g transform="translate(150, 260)">
     <line x1="0" y1="0" x2="0" y2="50" stroke="#63b3ed" stroke-width="2"/>
     <circle cx="0" cy="50" r="8" class="m-hypothesis"/>
     <circle cx="0" cy="50" r="4" fill="white"/>
     <text x="0" y="90" class="milestone-title" style="fill:#63b3ed;">确立核心假设</text>
-    <text x="0" y="110" class="milestone-desc">理论框架与研究方向</text>
+    <text x="0" y="108" class="en">Core Hypotheses</text>
+    <text x="0" y="126" class="milestone-desc">理论框架与研究方向</text>
   </g>
 
-  <g transform="translate(600, 250)">
+  <g transform="translate(600, 260)">
     <line x1="0" y1="0" x2="0" y2="50" stroke="#4fd1c5" stroke-width="2"/>
     <circle cx="0" cy="50" r="8" class="m-build"/>
     <circle cx="0" cy="50" r="4" fill="white"/>
     <text x="0" y="90" class="milestone-title" style="fill:#4fd1c5;">最小可行模型 V1</text>
-    <text x="0" y="110" class="milestone-desc">贡献度量与激励草案</text>
+    <text x="0" y="108" class="en">Minimal Viable Model V1</text>
+    <text x="0" y="126" class="milestone-desc">贡献度量与激励草案</text>
   </g>
 
-  <g transform="translate(825, 250)">
+  <g transform="translate(825, 260)">
     <line x1="0" y1="0" x2="0" y2="50" stroke="#f6ad55" stroke-width="2"/>
     <circle cx="0" cy="50" r="8" class="m-measure"/>
     <circle cx="0" cy="50" r="4" fill="white"/>
     <text x="0" y="90" class="milestone-title" style="fill:#f6ad55;">案例验证</text>
-    <text x="0" y="110" class="milestone-desc">数据收集与定性反馈</text>
+    <text x="0" y="108" class="en">Case Validation</text>
+    <text x="0" y="126" class="milestone-desc">数据收集与定性反馈</text>
   </g>
 
-  <g transform="translate(1050, 250)">
+  <g transform="translate(1050, 260)">
     <line x1="0" y1="0" x2="0" y2="50" stroke="#b794f4" stroke-width="2"/>
     <circle cx="0" cy="50" r="8" class="m-learn"/>
     <circle cx="0" cy="50" r="4" fill="white"/>
     <text x="0" y="90" class="milestone-title" style="fill:#b794f4;">最小可行白皮书</text>
-    <text x="0" y="110" class="milestone-desc">发布V1.0结论与认知</text>
+    <text x="0" y="108" class="en">Minimal Viable Whitepaper</text>
+    <text x="0" y="126" class="milestone-desc">发布 V1.0 结论与认知</text>
   </g>
 
-  <!-- 许可与署名 -->
-  <text x="50%" y="400" text-anchor="middle" font-size="14" fill="#9ca3af">
+  <!-- 许可 -->
+  <text x="50%" y="430" text-anchor="middle" font-size="14" fill="#9ca3af">
     本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
   </text>
 </svg>
