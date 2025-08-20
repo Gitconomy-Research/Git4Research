@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940">
+  <title>社区贡献者价值象限</title>
+  <desc>分析透镜：四种同等重要的核心价值，共同构成从“发现 → 创造 → 引导 → 整合”的价值循环。</desc>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#334155"/>
+    </marker>
+
+    <!-- 图标 -->
+    <g id="icon-discover">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#0ea5e9" stroke-width="2"/>
+      <rect x="19" y="19" width="10" height="4" rx="2" ry="2" transform="rotate(45 24 21)" fill="#0ea5e9"/>
+    </g>
+    <g id="icon-build">
+      <path d="M6 6 L2 10 L6 14" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18 6 L22 10 L18 14" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10 4 L14 16" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <g id="icon-guide">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+      <polygon points="12,5 16,12 12,19 8,12" fill="#8b5cf6"/>
+      <circle cx="12" cy="12" r="2" fill="#fff" stroke="#8b5cf6" stroke-width="1.5"/>
+    </g>
+    <g id="icon-integrate">
+      <circle cx="6" cy="12" r="3" fill="#10b981"/>
+      <circle cx="18" cy="6" r="3" fill="#10b981"/>
+      <circle cx="18" cy="18" r="3" fill="#10b981"/>
+      <path d="M8.5,11 L15.5,7" stroke="#10b981" stroke-width="2"/>
+      <path d="M8.5,13 L15.5,17" stroke="#10b981" stroke-width="2"/>
+    </g>
+
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px/1.2 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; fill: #0f172a; text-anchor: middle; }
+      .subtitle { font: 14px/1.5 ui-sans-serif, system-ui; fill: #475569; text-anchor: middle; }
+      .axis { stroke: #334155; stroke-width: 2.5; }
+      .axis-label { font: 600 14px/1 ui-sans-serif, system-ui; fill: #334155; }
+      .quad { rx: 18; ry: 18; filter: url(#shadow); }
+      .q1 { fill: #e0f2fe; }    /* 发现 */
+      .q2 { fill: #fef3c7; }    /* 创造 */
+      .q3 { fill: #ede9fe; }    /* 引导 */
+      .q4 { fill: #dcfce7; }    /* 整合 */
+      .q-title { font: 700 20px/1.3 ui-sans-serif, system-ui; fill: #0f172a; }
+      .q-sub { font: 600 13px/1 ui-sans-serif, system-ui; fill: #64748b; }
+      .q-text { font: 14px/1.6 ui-sans-serif, system-ui; fill: #1f2937; }
+      .step { font: 700 12px/1 ui-sans-serif, system-ui; fill: #475569; }
+      .note, .license { font: 12px/1.4 ui-sans-serif, system-ui; fill: #6b7280; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect class="bg" x="0" y="0" width="1200" height="940"/>
+
+  <!-- 标题 -->
+  <text class="title" x="600" y="56">社区贡献者象限</text>
+  <text class="subtitle" x="600" y="84">分析透镜：四种同等重要的核心价值，共同构成从“发现 → 创造 → 引导 → 整合”的价值循环</text>
+
+  <!-- 象限背景 -->
+  <rect class="quad q1" x="80"  y="150" width="520" height="330"/>
+  <rect class="quad q3" x="600" y="150" width="520" height="330"/>
+  <rect class="quad q4" x="80"  y="480" width="520" height="330"/>
+  <rect class="quad q2" x="600" y="480" width="520" height="330"/>
+
+  <!-- 坐标轴 -->
+  <line class="axis" x1="600" y1="130" x2="600" y2="830" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line class="axis" x1="60"  y1="480" x2="1140" y2="480" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+
+  <!-- 轴标签 -->
+  <text class="axis-label" x="570" y="120">战略 · 方向</text>
+  <text class="axis-label" x="570" y="850">生态 · 运营</text>
+  <text class="axis-label" x="50"  y="480" transform="rotate(-90 50 480)">输入 · 感知</text>
+  <text class="axis-label" x="1150" y="480" transform="rotate(90 1150 480)">产出 · 建设</text>
+
+  <!-- 象限内容（整体下移 50） -->
+  <!-- 价值发现（左上） -->
+  <g transform="translate(110,180)">
+    <use href="#icon-discover" x="0" y="0" transform="scale(2)"/>
+    <text class="q-title" x="60" y="10">价值发现</text>
+    <text class="q-sub"   x="60" y="32">输入 · 感知</text>
+    <text class="q-text" x="0" y="70">
+      <tspan x="0" dy="0">核心定义：为社区发现机会与问题，回答“做什么/为什么”。</tspan>
+      <tspan x="0" dy="22">贡献者画像：资深用户、行业分析师、社区运营者。</tspan>
+      <tspan x="0" dy="22">价值体现：调研报告、Problem Statement、洞察文章。</tspan>
+    </text>
+  </g>
+
+  <!-- 价值引导（右上） -->
+  <g transform="translate(630,180)">
+    <use href="#icon-guide" x="0" y="0" transform="scale(2)"/>
+    <text class="q-title" x="60" y="10">价值引导</text>
+    <text class="q-sub"   x="60" y="32">方向 · 罗盘</text>
+    <text class="q-text" x="0" y="70">
+      <tspan x="0" dy="0">核心定义：制定愿景、规范与路线图，确保“做对的事情”。</tspan>
+      <tspan x="0" dy="22">贡献者画像：Leads、架构师、PMC成员。</tspan>
+      <tspan x="0" dy="22">价值体现：年度路线图、代码审查规范、架构决策文档。</tspan>
+    </text>
+  </g>
+
+  <!-- 价值整合（左下） -->
+  <g transform="translate(110,510)">
+    <use href="#icon-integrate" x="0" y="0" transform="scale(2)"/>
+    <text class="q-title" x="60" y="10">价值整合</text>
+    <text class="q-sub"   x="60" y="32">生态 · 稳定器</text>
+    <text class="q-text" x="0" y="70">
+      <tspan x="0" dy="0">核心定义：整合资源、维护基础设施、优化流程，保障长期健康。</tspan>
+      <tspan x="0" dy="22">贡献者画像：DevOps、社区经理、Release Manager、生态拓展者。</tspan>
+      <tspan x="0" dy="22">价值体现：高效CI/CD、公平治理流程、顺利发布、对外合作。</tspan>
+    </text>
+  </g>
+
+  <!-- 价值创造（右下） -->
+  <g transform="translate(630,510)">
+    <use href="#icon-build" x="0" y="0" transform="scale(2)"/>
+    <text class="q-title" x="60" y="10">价值创造</text>
+    <text class="q-sub"   x="60" y="32">产出 · 建设</text>
+    <text class="q-text" x="0" y="70">
+      <tspan x="0" dy="0">核心定义：将需求转为可用产出，把蓝图变为现实。</tspan>
+      <tspan x="0" dy="22">贡献者画像：开发者、数据科学家、技术作者、设计师。</tspan>
+      <tspan x="0" dy="22">价值体现：功能PR、高质量数据集、入门教程、UI设计稿。</tspan>
+    </text>
+  </g>
+
+  <!-- 四步提示（对称分布） -->
+  <g>
+    <text class="step" x="320" y="298">① 发现</text>
+    <text class="step" x="880" y="298">③ 引导</text>
+    <text class="step" x="880" y="662">② 创造</text>
+    <text class="step" x="320" y="662">④ 整合</text>
+  </g>
+
+  <!-- 说明 -->
+  <g transform="translate(600,880)">
+    <text class="note" x="0" y="0">注：本图用于识别“主要贡献类型与价值”，帮助资源配置与协作编排；并非成员贴标签工具。</text>
+  </g>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="920" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research 社区</text>
+</svg>

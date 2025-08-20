@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830">
+  <title>2.2.1 “要素”的六类谱系</title>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.18"/>
+    </filter>
+    <linearGradient id="gData" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="gMethod" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#14b8a6"/><stop offset="100%" stop-color="#34d399"/></linearGradient>
+    <linearGradient id="gCode" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="gIdea" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient>
+    <linearGradient id="gCollab" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#86efac"/></linearGradient>
+    <linearGradient id="gComms" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ec4899"/><stop offset="100%" stop-color="#f472b6"/></linearGradient>
+    <style>
+      .title{font:700 24px/1.2 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;fill:#0f172a}
+      .small{font:11px/1.45 ui-sans-serif,system-ui;fill:#334155}
+      .meta{font:600 12px/1.3 ui-sans-serif,system-ui;fill:#0f172a}
+      .center{text-anchor:middle}
+      .badge{font:700 12px/1 ui-sans-serif;fill:#fff}
+      .card{rx:16;ry:16;fill:#fff;filter:url(#shadow)}
+      .line{stroke:#cbd5e1;stroke-width:2;stroke-dasharray:6 6}
+    </style>
+  </defs>
+
+  <!-- 背景与标题 -->
+  <rect width="1200" height="830" fill="#f8fafc"/>
+  <text x="600" y="52" class="title center">贡献即要素的六大谱系</text>
+
+  <!-- 主体内容 -->
+  <g id="content" transform="translate(0,50)">
+
+    <!-- 中心 -->
+    <g transform="translate(600,400)">
+      <circle r="78" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2" opacity="1"/>
+      <text class="meta center" y="-6">Gitconomy Research</text>
+      <text class="small center" y="14">知识生态的价值网络</text>
+    </g>
+
+    <!-- 连线：中心到六个卡片中心（R=300） -->
+    <line x1="600" y1="322" x2="600" y2="100" class="line"/>
+    <line x1="667.548" y1="361" x2="859.8" y2="250" class="line"/>
+    <line x1="667.548" y1="439" x2="859.8" y2="550" class="line"/>
+    <line x1="600" y1="478" x2="600" y2="700" class="line"/>
+    <line x1="532.452" y1="439" x2="340.2" y2="550" class="line"/>
+    <line x1="532.452" y1="361" x2="340.2" y2="250" class="line"/>
+
+    <!-- 顶部：数据要素（中心 600,100） -->
+    <g transform="translate(600,100)">
+      <g transform="translate(-150,-70)">
+        <rect width="300" height="140" class="card"/>
+        <rect x="16" y="14" width="44" height="44" rx="10" fill="url(#gData)"/>
+        <g transform="translate(28,22)">
+          <ellipse cx="10" cy="6" rx="10" ry="6" fill="#fff" opacity=".9"/>
+          <rect x="0" y="6" width="20" height="14" fill="#fff" opacity=".9"/>
+          <ellipse cx="10" cy="20" rx="10" ry="6" fill="#fff" opacity=".9"/>
+        </g>
+        <text x="72" y="30" class="meta">数据要素</text>
+        <text x="72" y="50" class="small">Data Card / 许可 / 版本 / 基线评测</text>
+        <text x="24" y="78" class="small">证据：数据集·标注体系·流程记录·提交哈希</text>
+        <text x="24" y="98" class="small">度量：覆盖度·一致性·复用/下载·复现实验率</text>
+        <circle cx="276" cy="20" r="10" fill="#3b82f6"/><text x="276" y="24" class="badge center">D</text>
+      </g>
+    </g>
+
+    <!-- 右上：方法要素（中心 859.8,250） -->
+    <g transform="translate(859.8,250)">
+      <g transform="translate(-150,-70)">
+        <rect width="300" height="140" class="card"/>
+        <rect x="16" y="14" width="44" height="44" rx="10" fill="url(#gMethod)"/>
+        <path d="M24,22 h28 v4 l-10,12 h-18 z" fill="#fff" opacity=".9"/>
+        <text x="72" y="30" class="meta">方法要素</text>
+        <text x="72" y="50" class="small">评估协议 / 统计功效 / 消融实验</text>
+        <text x="24" y="78" class="small">证据：白皮书·协议·置信区间/显著性检验</text>
+        <text x="24" y="98" class="small">度量：复现成功率·方差下降·采纳/引用</text>
+        <circle cx="276" cy="20" r="10" fill="#14b8a6"/><text x="276" y="24" class="badge center">M</text>
+      </g>
+    </g>
+
+    <!-- 右下：代码要素（中心 859.8,550） -->
+    <g transform="translate(859.8,550)">
+      <g transform="translate(-150,-70)">
+        <rect width="300" height="140" class="card"/>
+        <rect x="16" y="14" width="44" height="44" rx="10" fill="url(#gCode)"/>
+        <path d="M28,28 l-10,10 l10,10 M48,28 l10,10 l-10,10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="72" y="30" class="meta">代码要素</text>
+        <text x="72" y="50" class="small">核心算法 / 工具包 / 架构与 CI</text>
+        <text x="24" y="78" class="small">证据：库/包·CI覆盖·SemVer·安全响应</text>
+        <text x="24" y="98" class="small">度量：下载·依赖仓·性能改进·修复时长</text>
+        <circle cx="276" cy="20" r="10" fill="#8b5cf6"/><text x="276" y="24" class="badge center">C</text>
+      </g>
+    </g>
+
+    <!-- 底部：思想要素（中心 600,700） -->
+    <g transform="translate(600,700)">
+      <g transform="translate(-150,-70)">
+        <rect width="300" height="140" class="card"/>
+        <rect x="16" y="14" width="44" height="44" rx="10" fill="url(#gIdea)"/>
+        <path d="M38,22 a12,12 0 1,1 -0.01,0" fill="#fff" opacity=".95"/>
+        <rect x="32" y="42" width="12" height="10" rx="2" fill="#fff" opacity=".95"/>
+        <text x="72" y="30" class="meta">思想要素</text>
+        <text x="72" y="50" class="small">问题定义 / 概念模型 / 路线图</text>
+        <text x="24" y="78" class="small">证据：Problem Statement·RFC·采纳与派生</text>
+        <text x="24" y="98" class="small">度量：采纳层级·新里程碑/项目数·评审通过率</text>
+        <circle cx="276" cy="20" r="10" fill="#f59e0b"/><text x="276" y="24" class="badge center">I</text>
+      </g>
+    </g>
+
+    <!-- 左下：协作要素（中心 340.2,550） -->
+    <g transform="translate(340.2,550)">
+      <g transform="translate(-150,-70)">
+        <rect width="300" height="140" class="card"/>
+        <rect x="16" y="14" width="44" height="44" rx="10" fill="url(#gCollab)"/>
+        <g stroke="#fff" stroke-width="3" fill="none" opacity=".95">
+          <circle cx="30" cy="28" r="4"/><circle cx="46" cy="22" r="4"/><circle cx="50" cy="40" r="4"/>
+          <path d="M30,28 L46,22 L50,40 L30,28"/>
+        </g>
+        <text x="72" y="30" class="meta">协作要素</text>
+        <text x="72" y="50" class="small">跨域整合 / 组织协调 / 共识形成</text>
+        <text x="24" y="78" class="small">证据：协作计划·纪要决议·依赖与风险表</text>
+        <text x="24" y="98" class="small">度量：里程碑达成·关键路径缩短·冲突解决率</text>
+        <circle cx="276" cy="20" r="10" fill="#22c55e"/><text x="276" y="24" class="badge center">Co</text>
+      </g>
+    </g>
+
+    <!-- 左上：传播要素（中心 340.2,250） -->
+    <g transform="translate(340.2,250)">
+      <g transform="translate(-150,-70)">
+        <rect width="300" height="140" class="card"/>
+        <rect x="16" y="14" width="44" height="44" rx="10" fill="url(#gComms)"/>
+        <path d="M24,40 h16 l14,8 v-24 l-14,8 h-16 z" fill="#fff" opacity=".95"/>
+        <rect x="20" y="36" width="4" height="8" rx="1" fill="#fff" opacity=".95"/>
+        <text x="72" y="30" class="meta">传播要素</text>
+        <text x="72" y="50" class="small">教程/讲义 / 文档IA / 演讲与科普</text>
+        <text x="24" y="78" class="small">证据：教程·博客·视频·案例·IA 迭代</text>
+        <text x="24" y="98" class="small">度量：完读/完播·TTFS·引流转化·可发现性</text>
+        <circle cx="276" cy="20" r="10" fill="#ec4899"/><text x="276" y="24" class="badge center">P</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="810" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research 社区</text>
+</svg>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gitconomy 社区成长路线图 · 信息图（Infographic）</title>
+    <meta name="description" content="以信息图方式呈现 Gitconomy 的愿景、成长阶段路线图、技术演进与成员成长旅程。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root{
+        --bg:#f8fafc;
+        --ink:#0f172a;
+        --muted:#64748b;
+        --card:#ffffff;
+        --line:#e5e7eb;
+        /* Brand palette */
+        --brand:#004AAD;     /* dark */
+        --brand2:#0062D5;    /* medium */
+        --brand3:#419BFF;    /* light */
+        --brand4:#91C8FF;    /* lighter */
+        --brand5:#CDE6FF;    /* lightest */
+        /* accents */
+        --accent:var(--brand);
+        --accent2:var(--brand2);
+        --accent3:#10b981; /* green */
+        --accent4:#f59e0b; /* amber */
+      }
+      *{box-sizing:border-box}
+      body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'Noto Sans SC', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+      .wrap{max-width:1160px;margin:0 auto;padding:0 20px 12px} /* 缩小底部内边距，减小与footer间距 */
+
+      /* Header */
+      .hero{background:var(--brand);color:#fff;text-align:center;padding:56px 16px 64px}
+      .hero h1{margin:0 0 8px;font-size:32px;line-height:1.2; font-weight: 900;}
+      @media (min-width:768px){.hero h1{font-size:40px}}
+      .hero .lead{color:var(--brand5);font-size:18px;max-width:900px;margin:0 auto}
+
+      section{margin:24px 0}
+      .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 6px 20px rgba(15,23,42,.06)}
+      .kicker{font-size:12px;color:var(--muted);margin:-2px 0 12px}
+
+      /* Trio Overview Cards */
+      .tri-cards{display:grid;gap:16px; margin-top: 28px; position: relative; z-index: 10;} /* 下移，避免任何与顶部重叠的视觉感 */
+      @media (min-width:900px){.tri-cards{grid-template-columns:repeat(3,1fr)}}
+      .mini-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+      .mini-head{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+      .mini-head h3{margin:0;font-weight:800;color:#111827;font-size:18px}
+      .mini-head svg{width:22px;height:22px;color:var(--brand)}
+      .mini-card p {font-size: 14px; color: var(--muted); margin: 0;}
+
+      /* Roadmap */
+      .roadmap{position:relative; padding:20px}
+      .roadmap h2{ text-align:center; color:var(--brand); }
+      .roadmap .kicker{text-align:center}
+      .phases-line{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:14px;align-items:stretch}
+      .arrow-conn{display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:900;color:var(--brand2)}
+      .phase{display:flex;gap:12px;align-items:center}
+      .phase h3{display:flex;flex-direction:column;gap:2px;align-items:flex-start;margin:0;font-size:16px}
+      .phase h3 .en{font-size:15px;color:#111827;font-weight:600}
+      .phases-line .phase svg{width:24px;height:24px}
+      .phase-card {padding: 12px;}
+      .phase-card small {font-size: 13px; color: var(--muted)}
+
+      /* Tech */
+      .section-title{font-size:24px;font-weight:800;margin:8px 0 10px;color:var(--brand); text-align: center;}
+      .grid-3{display:grid;gap:16px; grid-template-columns:repeat(3,minmax(0,1fr))}
+      .tech-card h3{font-size:16px;margin:0 0 4px}
+      .tech-card .kicker{margin:2px 0 12px}
+      .bullets{display:grid;gap:10px}
+      .bullet{display:flex;gap:10px;align-items:flex-start}
+      .bullet svg{flex:0 0 20px; margin-top: 2px;}
+      .bullet div {font-size: 14px;}
+
+      /* Member Journey */
+      .member-roles{display:grid;grid-template-columns:1fr;gap:12px;margin:10px 0}
+      .role-item{display:flex;align-items:flex-start;gap:12px;background:#f1f5f9;border:1px solid var(--line);border-radius:12px;padding:12px}
+      .role-icon{width:40px;height:40px;border-radius:9999px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+      .role-title{margin:0 0 2px;font-weight:800;color:#111827}
+      .role-desc{margin:0;color:#475569;font-size:13px}
+
+      .loop{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:center}
+      .loop .note{font-size:14px;color:var(--muted)}
+      .loop svg{width:100%;height:auto;display:block}
+      .tag{display:inline-block; padding:.25rem .5rem; border-radius:999px; background:var(--brand5); color:var(--brand); font-weight:700; font-size:12px; border:1px solid var(--brand4)}
+
+      /* Closing Line */
+      .closing-line{margin:4px 0; text-align:center; font-size:clamp(16px,2vw,20px); font-weight:800; color:var(--brand)} /* 非黑色，强调 */
+
+      /* Closing Box */
+      .closing-box{background:var(--brand5); border:1px solid var(--brand4); border-radius:12px; padding:16px; box-shadow:0 6px 16px rgba(2,6,23,.06); margin-bottom:0}
+
+      /* Footer */
+      .site-footer{background:var(--brand);color:#fff;text-align:center;padding:18px 16px;margin-top:12px; font-size: 14px;} /* 缩小与结尾的间距 */
+
+      @media (max-width:900px){
+        .grid-3,.tri-cards{grid-template-columns:1fr}
+        .phases-line{grid-template-columns:1fr}
+        .arrow-conn{transform:rotate(90deg); margin: 8px 0;}
+        .loop{grid-template-columns:1fr}
+        .member-roles{grid-template-columns:1fr}
+      }
+       @media (min-width:900px){.member-roles{grid-template-columns:1fr 1fr}}
+    </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Gitconomy开放研究社区成长路线图</h1> <!-- 修正重复“社区” -->
+    <p class="lead">基于“贡献即要素”的开放组织 × 工具/数据 × 成员 的三位一体协同演进</p>
+  </header>
+  <div class="wrap">
+
+    <!-- 愿景 & 核心：下移以避免与顶部重叠的观感 -->
+    <section id="overview">
+      <div class="tri-cards">
+        <div class="mini-card">
+          <div class="mini-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            <h3>社区愿景</h3>
+          </div>
+          <p>构建一个由所有活跃贡献者集体拥有的、具有全球影响力的开放科学力量。</p>
+        </div>
+        <div class="mini-card">
+          <div class="mini-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l8 4-8 4-8-4 8-4z"/><path d="M20 6v6l-8 4-8-4V6"/><path d="M12 10v10"/></svg>
+            <h3>核心理念：贡献即要素</h3>
+          </div>
+          <p>将所有智力贡献视为“生产要素”，每一份贡献都是对社区共同资产的“投资”。</p>
+        </div>
+        <div class="mini-card">
+          <div class="mini-head">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <h3>治理模型：双轨协同</h3>
+          </div>
+          <p>“贡献份额”（所有权）与“声誉”（影响力）并行，确保决策的公平与专业。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 四阶段路线图 -->
+    <section class="card roadmap" aria-labelledby="roadmap-title">
+      <h2 id="roadmap-title">社区成长路线图</h2>
+      <p class="kicker">PoC → 分布式开放协作 → 智能体开放协作 → 生态价值网络</p>
+      <div class="phases-line" role="list" aria-label="社区成长阶段">
+        <div class="card phase-card" role="listitem">
+          <div class="phase">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="color:var(--accent2)" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3" opacity=".8"/><path d="M3 19c0-3 3-5 5-5s5 2 5 5"/><path d="M11 19c0-2.5 2.5-4 5-4s5 1.5 5 4" opacity=".8"/></svg>
+            <h3><span class="cn">概念验证</span><span class="en">Research Group</span></h3>
+          </div>
+          <small class="muted">思想共识・研究问题陈述・早期白皮书</small>
+        </div>
+        <div class="arrow-conn" aria-hidden="true">→</div>
+        <div class="card phase-card" role="listitem">
+          <div class="phase">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent3)" aria-hidden="true"><path d="M9 2h6M10 2v5l-5 8a4 4 0 0 0 3.4 6h7.2A4 4 0 0 0 19 15l-5-8V2"/></svg>
+            <h3><span class="cn">分布式协作</span><span class="en">Research Lab</span></h3>
+          </div>
+          <small class="muted">流程标准・协同项目・工具集（Studio）</small>
+        </div>
+        <div class="arrow-conn" aria-hidden="true">→</div>
+        <div class="card phase-card" role="listitem">
+          <div class="phase">
+            <svg viewBox="0 0 24 24" style="color:var(--accent4)" aria-hidden="true"><rect x="5" y="7" width="14" height="10" rx="3" fill="currentColor"/><circle cx="9" cy="12" r="1.5" fill="#fff"/><circle cx="15" cy="12" r="1.5" fill="#fff"/></svg>
+            <h3><span class="cn">智能体协作</span><span class="en">Research Fab</span></h3>
+          </div>
+          <small class="muted">Agent 工具链・产能提升・可复用知识生产</small>
+        </div>
+        <div class="arrow-conn" aria-hidden="true">→</div>
+        <div class="card phase-card" role="listitem">
+          <div class="phase">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent)" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+            <h3><span class="cn">生态价值网络</span><span class="en">Initiative</span></h3>
+          </div>
+          <small class="muted">开放平台・声誉/价值账本・标准推广</small>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="section-title">社区工具演进路线图</h2>
+    <section class="grid-3" aria-label="tool-roadmap">
+      <div class="card tech-card">
+        <h3>Gitconomy Research Studio</h3>
+        <p class="kicker">数字工具集 (Toolset)</p>
+        <div class="bullets">
+          <div class="bullet"><svg viewBox="0 0 24 24" fill="#3b82f6" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"/></svg><div>版本化数据、协作写作、实验追踪、开放评审</div></div>
+          <div class="bullet"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"><path d="M4 12h16M4 16h10"/></svg><div>为 Lab 阶段提供协作基础设施</div></div>
+        </div>
+      </div>
+      <div class="card tech-card">
+        <h3>Gitconomy Research Agent</h3>
+        <p class="kicker">研究智能体 (Agents)</p>
+        <div class="bullets">
+          <div class="bullet"><svg viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><rect x="5" y="7" width="14" height="10" rx="3"/></svg><div>自动化数据清洗、文献分析、代码生成</div></div>
+          <div class="bullet"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"><path d="M8 12h8M6 16h12"/></svg><div>驱动 Fab 阶段的产能提升</div></div>
+        </div>
+      </div>
+      <div class="card tech-card">
+        <h3>Gitconomy Research Platform</h3>
+        <p class="kicker">开放研究平台 (Platform)</p>
+        <div class="bullets">
+          <div class="bullet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg><div>成果发布、开放评审、声誉管理、价值激励</div></div>
+          <div class="bullet"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"><path d="M12 2v20M2 12h20"/></svg><div>支撑 Initiative 阶段的生态化运行</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 成员成长旅程 -->
+    <section class="card" aria-labelledby="journey-title">
+      <h2 class="section-title" id="journey-title">贡献者旅程</h2>
+      <div class="member-roles">
+        <div class="role-item">
+          <div class="role-icon" style="background:#e0f2fe;color:#0369a1">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <h4 class="role-title">探索者 Explorer</h4>
+            <p class="role-desc">社区的“侦察兵”，发现新问题，引入新视角。</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div class="role-icon" style="background:#e0e7ff;color:#4338ca">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l3-3 4 4 8-8-4-4 3-3"/></svg>
+          </div>
+          <div>
+            <h4 class="role-title">建造者 Builder</h4>
+            <p class="role-desc">把思想与方法落地为可用的工具与成果。</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div class="role-icon" style="background:#ede9fe;color:#6d28d9">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"/><path d="M10 14a5 5 0 118 0l-.6.6A3.2 3.2 0 0016 18.4V19a2 2 0 11-4 0v-.6c0-.85-.34-1.67-.94-2.26L10 14z"/></svg>
+          </div>
+          <div>
+            <h4 class="role-title">思想家 Thinker</h4>
+            <p class="role-desc">构建解释框架与方法论，提供方向与范式。</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div class="role-icon" style="background:#f3f4f6;color:#374151">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19l8-4 8 4-8 4-8-4z"/><path d="M12 3l8 4-8 4-8-4 8-4z"/><path d="M20 7v6"/></svg>
+          </div>
+          <div>
+            <h4 class="role-title">学者 Scholar</h4>
+            <p class="role-desc">阐释与传播可信知识，沉淀文档与教程。</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div class="role-icon" style="background:#ecfeff;color:#0e7490">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4 class="role-title">学术领袖 Fellow</h4>
+            <p class="role-desc">开创范式、产出里程碑式研究，培养新贡献者。</p>
+          </div>
+        </div>
+        <div class="role-item">
+          <div class="role-icon" style="background:#fff7ed;color:#c2410c">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4 class="role-title">领导者 Steward</h4>
+            <p class="role-desc">守护愿景与健康，承担关键治理与取舍。</p>
+          </div>
+        </div>
+      </div>
+      <div class="loop">
+        <svg viewBox="0 0 520 360" aria-label="Contributor Journey Loop">
+          <defs>
+            <marker id="arrowRound" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0 0 L10 5 L0 10Z" fill="#94a3b8"/>
+            </marker>
+          </defs>
+          <circle cx="260" cy="170" r="120" fill="none" stroke="#cbd5e1" stroke-width="10" />
+          <g text-anchor="middle" font-size="13">
+            <g transform="translate(260,40)">
+              <rect x="-70" y="-20" width="140" height="34" rx="10" fill="#eef2ff" stroke="#c7d2fe"/>
+              <text y="2">贡献 (Contribution)</text>
+            </g>
+            <g transform="translate(420,170)">
+              <rect x="-70" y="-20" width="140" height="34" rx="10" fill="#ecfeff" stroke="#a5f3fc"/>
+              <text y="2">份额 (Ownership)</text>
+            </g>
+            <g transform="translate(260,300)">
+              <rect x="-70" y="-20" width="140" height="34" rx="10" fill="#f0fdf4" stroke="#bbf7d0"/>
+              <text y="2">声誉 (Reputation)</text>
+            </g>
+            <g transform="translate(100,170)">
+              <rect x="-80" y="-20" width="160" height="34" rx="10" fill="#fff7ed" stroke="#fed7aa"/>
+              <text y="2">更高价值任务 (Routing)</text>
+            </g>
+          </g>
+          <path d="M260,66 A104 104 0 0 1 377 148" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrowRound)"/>
+          <path d="M377,192 A104 104 0 0 1 260 274" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrowRound)"/>
+          <path d="M260,274 A104 104 0 0 1 143 192" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrowRound)"/>
+          <path d="M143,192 A104 104 0 0 1 260 106" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#arrowRound)"/>
+        </svg>
+        <div>
+          <p class="note"><span class="tag">双轨协同</span> 贡献 → <b>份额</b> (价值账本) → <b>声誉</b> (影响力账本) → <b>更高价值任务</b> → 更多贡献。</p>
+          <p class="note"><b>健康性</b>：引入 “贡献半衰期 / 角色休眠” 机制，治理权动态聚焦于当前最相关、最活跃的成员。</p>
+        </div>
+      </div>
+    </section>
+    <section class="closing-box" aria-label="closing-note" style="margin-top:12px;">
+      <p class="closing-line">为未来的知识经济和去中心化自治组织（DAO），</p>
+      <p class="closing-line">探索出一种全新的、真正由价值创造者集体拥有的组织形态。</p>
+    </section>
+  </div>
+  <footer class="site-footer">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research 社区</footer>
+</body>
+</html>
