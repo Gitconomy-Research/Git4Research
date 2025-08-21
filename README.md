@@ -1,6 +1,6 @@
 # Git4Research：人人都是研究员
 
-![Gitconomy Reserch社区Logo](./branding/gitconomy-logo-horizontal.png)
+![Gitconomy Reserch社区Logo](./branding/gitconomy_logo_horizontal.png)
 
 Git4Research不仅仅是一个开放研究的项目，它是一个旨在**彻底改变传统学术研究模式**的创新框架。我们通过集成**开放科学**的核心原则与**前沿AI技术**，构建一个去中心化、协作化、智能化的未来研究生态。
 
@@ -70,7 +70,7 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 3）[构建面向公共服务的AI数字基础设施](./open-perspectives/构建面向公共服务的AI数字基础设施.md)<br>
 4）[关于政府开源政策规划与实施的一些思考](./open-perspectives/关于政府开源政策规划与实施的一些思考.md)<br>
 5）[关开源教育工程学——高等教育创新的理论与实践探索](./open-perspectives/关开源教育工程学——高等教育创新的理论与实践探索.md)<br>
-6）[Gitconomy社区所有制的基础——基于“贡献即要素”的社区角色重构思考](./open-governance/gitconomy_community_ownership_thinking.md)<br>
+6）[Gitconomy社区所有制的基础——基于“贡献即要素”的社区角色重构思考](./open-governance/基于“贡献即要素”的社区角色重构思考.md)<br>
 
 **2. [开发者思维专栏](./developer-thinking/README.md)**
 
@@ -85,7 +85,7 @@ Git4Research立足于数字经济“游戏规则”的前瞻性研究和论证�
 本栏目提供一系列可直接用于教学和自学的开源课程与实践项目。我们致力于将前沿的技术，转化为结构清晰、易于上手的教学内容，并提供完整的配套资源。
 
 * **人工智能课程:**
-  * [**《生成式思维与创造力第一课》课程指南**](./open-education/open-source-courses/人工智能/AI思维与创造力第一课/README.md) - 本系列课程的完整入口，带你从零开始，通过动手实践掌握AIGC大模型的核心应用。
+  * [**《生成式思维与创造力第一课》课程指南**](./open-education/open-source-courses/人工智能/生成式思维与创造力第一课/README.md) - 本系列课程的完整入口，带你从零开始，通过动手实践掌握AIGC大模型的核心应用。
 
 ---
 

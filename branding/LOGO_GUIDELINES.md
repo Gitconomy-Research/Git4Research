@@ -1,5 +1,7 @@
 # Gitconomy Research视觉识别系统的符号学与战略解析
-![Gitconomy Reserch社区Logo](./gitconomy-logo-horizontal.png)
+
+![Gitconomy Reserch社区Logo](./gitconomy_logo_horizontal.png)
+
 ## 一、视觉宣言：融合开放协作与科学探究
 
 ## 1.1 核心命题
@@ -142,7 +144,7 @@ Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社�
 | Gitconomy 数字蓝 | 🟦 | `#0099FF` | 0, 153, 255 | 100, 40, 0, 0 | PMS 2925 C |
 | Gitconomy 生态绿 | 🟩 | `#009900` | 0, 153, 0 | 85, 20, 100, 5 | PMS 355 C |
 
-![Gitconomy社区LOGO标准色板](./gitconomy-color-palette.svg)
+![Gitconomy社区LOGO标准色板](./gitconomy_color_palette.svg)
 
 **2. 社区LOGO主字体规范**
 
@@ -153,13 +155,13 @@ Gitconomy Research的LOGO并非仅仅只是一个平面设计作品，它是社�
 | **字体权重使用建议** | **Regular (常规):** 用于正文、段落和一般性文本。\<br\>**Medium (中等):** 用于副标题或需要略微强调的文本。\<br\>**Bold (粗体):** 用于主标题、关键术语和需要强烈强调的部分。 |
 | **使用说明** | Noto Sans字体以其卓越的屏幕可读性和中性、清晰的字形，完美契合项目的科技感与学术严谨性。应在所有官方文档、网站、演示文稿和宣传材料中统一使用。 |
 
-![Gitconomy社区LOGO主字体规范](./gitconomy-typography-primary)
+![Gitconomy社区LOGO主字体规范](./gitconomy_typography_primary)
 
 **3. 安全空间 (Clear Space)规范**
 
 为了保护LOGO的视觉完整性和辨识度，其周围必须保留一个不可侵犯的安全空间。该空间内不得出现任何其他文字、图形或元素。安全空间的最小距离定义为LOGO中字母“ɔ”的高度。即以“ɔ”的高度为单位“x”，在LOGO的上下左右各留出至少“x”的间距。
 
-![Gitconomy社区LOGO字体安全空间规范](./gitconomy-logo-clear-space.svg)
+![Gitconomy社区LOGO字体安全空间规范](./gitconomy_logo_clear_space.svg)
 
 **4. 最小使用尺寸 (Minimum Size)规范**
 

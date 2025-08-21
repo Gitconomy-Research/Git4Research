@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息图：生成式思维与创造力第一课——分布式学习旅程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-item {
+            position: relative;
+            padding-left: 2.5rem;
+            padding-bottom: 2rem;
+        }
+        .flowchart-item:not(:last-child) {
+            border-left: 2px solid #91C8FF;
+        }
+        .flowchart-dot {
+            position: absolute;
+            left: -0.7rem;
+            top: 0;
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-[#004AAD] text-white text-center py-12 px-4">
+        <h1 class="text-4xl md:text-6xl font-black mb-4">生成式思维与创造力第一课——分布式学习之旅</h1>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-[#CDE6FF]">我们不交付“技能清单”，我们构建持久、可进化的“认知骨骼”。</p>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="philosophy" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">为何选择构建“认知骨骼”？</h2>
+                <p class="max-w-4xl mx-auto text-lg mb-8">在技术知识半衰期急剧缩短的AI时代，任何具体的技能都注定会迅速过时。真正的教育投资，应当投向那些在所有工具都被遗忘后，依然能支撑我们独立思考和创造的底层思维模式。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="assessmentChart"></canvas>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#0062D5] mb-2">以成长为核心的评估</h3>
+                        <p class="text-base">我们的评估体系彻底颠覆了传统考试。60%的权重被分配给形成性评估，这意味着你的持续努力、深度反思和协作精神，都将被视为成长本身。我们关注的是“成为”更好的思考者，而非仅仅“完成”一个项目。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="science" class="mb-12">
+             <h2 class="text-3xl font-bold text-[#004AAD] mb-8 text-center">学习之旅背后的科学</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-[#0062D5] mb-4">间隔效应：为深度内化设计</h3>
+                    <p class="mb-6">研究证实，分散学习比集中“填鸭”能带来更持久的记忆效果。我们的“周末工作坊 + 周间任务”节奏，正是为知识的消化、反思和巩固创造了理想条件。</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                            <span class="text-3xl mr-4">🗓️</span>
+                            <div>
+                                <h4 class="font-bold">周末沉浸式工作坊</h4>
+                                <p class="text-sm">高强度概念输入与实践</p>
+                            </div>
+                        </div>
+                         <div class="flex justify-center">
+                            <span class="text-2xl text-[#419BFF]">⬇️</span>
+                        </div>
+                        <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                            <span class="text-3xl mr-4">💡</span>
+                            <div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <!-- 背景和标题 -->
+  <rect width="1000" height="700" fill="#f8f9fa" />
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">AI开发工具系统架构图</text>
+
+  <!-- 图例 -->
+  <rect x="800" y="80" width="20" height="20" fill="#4285f4" rx="4" ry="4" />
+  <text x="830" y="95" font-family="Arial, sans-serif" font-size="14" fill="#333">核心组件</text>
+
+  <rect x="800" y="110" width="20" height="20" fill="#34a853" rx="4" ry="4" />
+  <text x="830" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333">替代选项</text>
+
+  <rect x="800" y="140" width="20" height="20" fill="#fbbc05" rx="4" ry="4" />
+  <text x="830" y="155" font-family="Arial, sans-serif" font-size="14" fill="#333">数据流</text>
+
+  <rect x="800" y="170" width="20" height="20" stroke="#ea4335" stroke-width="2" fill="none" rx="4" ry="4" />
+  <text x="830" y="185" font-family="Arial, sans-serif" font-size="14" fill="#333">系统层级</text>
+
+  <!-- 系统层级框架 -->
+  <!-- 用户交互层 -->
+  <rect x="100" y="100" width="800" height="100" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="125" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">用户交互层</text>
+
+  <!-- 应用编排层 -->
+  <rect x="100" y="220" width="800" height="100" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">应用编排层</text>
+
+  <!-- LLM与向量层 -->
+  <rect x="100" y="340" width="800" height="160" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="365" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">LLM与向量层</text>
+
+  <!-- 数据处理层 -->
+  <rect x="100" y="520" width="800" height="100" stroke="#ea4335" stroke-width="2" fill="none" rx="10" ry="10" />
+  <text x="110" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">数据处理层</text>
+
+  <!-- 用户交互层组件 -->
+  <rect x="200" y="130" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="260" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Streamlit</text>
+
+  <rect x="450" y="130" width="120" height="60" fill="#34a853" rx="8" ry="8" />
+  <text x="510" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Gradio</text>
+
+  <rect x="700" y="130" width="120" height="60" fill="#34a853" rx="8" ry="8" opacity="0.6" />
+  <text x="760" y="165" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">其他UI框架</text>
+
+  <!-- 应用编排层组件 -->
+  <rect x="200" y="250" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="260" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">LangChain</text>
+
+  <rect x="450" y="250" width="120" height="60" fill="#34a853" rx="8" ry="8" />
+  <text x="510" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">LlamaIndex</text>
+
+  <rect x="700" y="250" width="120" height="60" fill="#34a853" rx="8" ry="8" opacity="0.6" />
+  <text x="760" y="285" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">其他框架</text>
+
+  <!-- LLM与向量层组件 -->
+  <!-- LLM部分 -->
+  <rect x="150" y="380" width="300" height="100" fill="#4285f4" rx="8" ry="8" opacity="0.9" />
+  <text x="300" y="410" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">大语言模型 (LLM)</text>
+  <text x="300" y="440" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">本地模型 / API调用</text>
+  <text x="300" y="460" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">OpenAI, Llama, 等</text>
+
+  <!-- 向量存储部分 -->
+  <rect x="550" y="380" width="140" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="620" y="415" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">ChromaDB</text>
+
+  <rect x="710" y="380" width="140" height="60" fill="#34a853" rx="8" ry="8" />
+  <text x="780" y="415" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">FAISS</text>
+
+  <rect x="630" y="450" width="140" height="40" fill="#34a853" rx="8" ry="8" opacity="0.6" />
+  <text x="700" y="475" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">其他向量库</text>
+
+  <!-- 数据处理层组件 -->
+  <rect x="200" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="260" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">文档加载器</text>
+
+  <rect x="350" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="410" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">文本分割器</text>
+
+  <rect x="500" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="560" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">嵌入模型</text>
+
+  <rect x="650" y="550" width="120" height="60" fill="#4285f4" rx="8" ry="8" />
+  <text x="710" y="585" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">数据转换器</text>
+
+  <!-- 连接线 - 数据流 -->
+  <!-- 用户交互层到应用编排层 -->
+  <path d="M 260 190 L 260 250" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 510 190 L 510 250" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 应用编排层到LLM与向量层 -->
+  <path d="M 260 310 L 260 380" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 510 310 L 620 380" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 320 310 L 780 380" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- LLM与向量层之间 -->
+  <path d="M 450 430 L 550 410" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 450 430 L 710 410" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- LLM与向量层到数据处理层 -->
+  <path d="M 300 480 L 300 550" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 620 440 L 560 550" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 780 440 L 710 550" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 数据处理层内部 -->
+  <path d="M 320 580 L 350 580" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 470 580 L 500 580" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 620 580 L 650 580" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 自下而上的数据流 -->
+  <path d="M 410 550 L 410 480 L 300 480" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+  <path d="M 560 550 L 560 480 L 620 440" stroke="#fbbc05" stroke-width="3" fill="none" stroke-dasharray="5,5" />
+
+  <!-- 工作流标记 -->
+  <text x="50" y="650" font-family="Arial, sans-serif" font-size="14" fill="#333" font-style="italic">数据流向: 从数据处理 → 向量存储 → LLM生成 → 应用编排 → 用户界面</text>
+</svg>
+              <h4 class="font-bold">周间自驱式任务</h4>
+                                <p class="text-sm">消化、反思、应用与巩固</p>
+                            </div>
+                        </div>
+                         <div class="flex justify-center">
+                            <span class="text-2xl text-[#419BFF]">🔄</span>
+                        </div>
+                         <div class="flex items-center p-4 bg-blue-50 rounded-lg">
+                            <span class="text-3xl mr-4">🧠</span>
+                            <div>
+                                <h4 class="font-bold">知识深度内化</h4>
+                                <p class="text-sm">构建稳固的认知结构</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-[#0062D5] mb-4">认知负荷管理</h3>
+                    <p class="mb-6">人的工作记忆有限。我们通过精心的教学设计，最小化与学习无关的心理消耗，最大化用于构建知识体系的有效努力，确保你始终处于最佳学习区。</p>
+                    <div class="chart-container h-80">
+                        <canvas id="cognitiveLoadChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="mb-12">
+            <h2 class="text-3xl font-bold text-[#004AAD] mb-8 text-center">为期五周的认知升级之旅</h2>
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <div class="flowchart-container">
+                    <div class="flowchart-item">
+                        <div class="flowchart-dot bg-[#0062D5] rounded-full ring-8 ring-white"></div>
+                        <h4 class="text-xl font-bold text-[#0062D5] mb-2">第一周：解构与奠基</h4>
+                        <p class="text-base">破旧立新。解构一个成功的AI产品，也解构我们固有的学习模式，为构建全新的认知操作系统奠定坚实基础。学习系统思维、MECE原则与元学习。</p>
+                    </div>
+                    <div class="flowchart-item">
+                        <div class="flowchart-dot bg-[#0062D5] rounded-full ring-8 ring-white"></div>
+                        <h4 class="text-xl font-bold text-[#0062D5] mb-2">第二周：洞察与重构</h4>
+                        <p class="text-base">从问题到机遇。学习如何将发现的痛点重构为富有潜力的创新机会。掌握JTBD框架与HMW方法，精准定义问题。</p>
+                    </div>
+                    <div class="flowchart-item">
+                        <div class="flowchart-dot bg-[#0062D5] rounded-full ring-8 ring-white"></div>
+                        <h4 class="text-xl font-bold text-[#0062D5] mb-2">第三周：人机共创与直觉AI</h4>
+                        <p class="text-base">深入AI的技术核心，不仅学习如何“使用”AI，更要建立起对AI工作原理的直觉性理解。掌握高级提示工程、注意力机制与LoRA微调。</p>
+                    </div>
+                    <div class="flowchart-item">
+                        <div class="flowchart-dot bg-[#0062D5] rounded-full ring-8 ring-white"></div>
+                        <h4 class="text-xl font-bold text-[#0062D5] mb-2">第四周：原型与评估</h4>
+                        <p class="text-base">让抽象变得可触。将前几周积累的思考与洞察，转化为一个用户可以交互、可以感知的AI应用原型。实践敏捷学习与快速原型开发。</p>
+                    </div>
+                    <div class="flowchart-item">
+                        <div class="flowchart-dot bg-[#0062D5] rounded-full ring-8 ring-white"></div>
+                        <h4 class="text-xl font-bold text-[#0062D5] mb-2">第五周：综合与新起点</h4>
+                        <p class="text-base">策展你的成长。你将不再仅仅是展示一个项目，而是要讲述一个关于你如何定义问题、探索方案、克服挑战并最终实现成长的完整故事。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="curriculum" class="mb-12">
+            <h2 class="text-3xl font-bold text-[#004AAD] mb-8 text-center">核心课程：道与术的融合</h2>
+            <p class="max-w-4xl mx-auto text-lg mb-8 text-center">本课程的设计哲学在于将抽象的思维模型（道）与具体的技术实践（术）紧密地交织在一起。它们并非两个独立的轨道，而是相互赋能、彼此成就的共同体。</p>
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="text-center p-6 bg-blue-50 rounded-lg">
+                        <h3 class="text-2xl font-bold text-[#004AAD] mb-4">道 (The Why): 思维模型</h3>
+                        <ul class="space-y-2 text-left list-disc list-inside">
+                            <li>第一性原理</li>
+                            <li>系统思维</li>
+                            <li>MECE 原则</li>
+                            <li>JTBD 框架</li>
+                            <li>HMW 方法</li>
+                            <li>元认知</li>
+                        </ul>
+                    </div>
+                    <div class="text-center p-6 bg-sky-50 rounded-lg">
+                        <h3 class="text-2xl font-bold text-[#0062D5] mb-4">术 (The How): 技术栈</h3>
+                        <div class="chart-container h-64">
+                            <canvas id="techStackChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                 <div class="flex items-center justify-center mt-8">
+                    <div class="w-16 h-16 rounded-full bg-[#419BFF] flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                        →
+                    </div>
+                </div>
+                <div class="mt-8 text-center bg-green-50 p-6 rounded-lg">
+                     <h3 class="text-2xl font-bold text-green-700 mb-2">最终产出：可进化的认知操作系统</h3>
+                     <p>确保你不仅是一个“会用工具的工匠”，更是一个“知道为何而做、如何做得更好的创造者”。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="outcomes" class="text-center">
+            <h2 class="text-3xl font-bold text-[#004AAD] mb-8">你将收获什么？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">个人AI项目</h3>
+                    <p>一个可在线演示、解决真实问题的AI应用，综合体现你的全部能力。</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl mb-4">📜</div>
+                    <h3 class="text-xl font-bold mb-2">证据组合包</h3>
+                    <p>一份有说服力的成长叙事，通过日志、代码和反思，论证你的能力进化轨迹。</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl mb-4">🗺️</div>
+                    <h3 class="text-xl font-bold mb-2">认知操作系统1.0</h3>
+                    <p>一份个人化的思维框架与迭代计划，开启你持续自我完善的飞轮。</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-6 bg-[#004AAD] text-white mt-12">
+        <p>本作品采用CC-BY-NC-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区，保留所有权利。</p>
+    </footer>
+
+    <script>
+        const brilliantBlues = {
+            dark: '#004AAD',
+            medium: '#0062D5',
+            light: '#419BFF',
+            lighter: '#91C8FF',
+            lightest: '#CDE6FF'
+        };
+
+        const wrapLabel = (label) => {
+            const maxLen = 16;
+            if (label.length <= maxLen) {
+                return label;
+            }
+            const words = label.split(' ');
+            let lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxLen) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            } else {
+              return label;
+            }
+        };
+
+        const defaultPlugins = {
+            legend: {
+                position: 'top',
+                labels: {
+                    color: '#334155',
+                    font: {
+                        size: 14,
+                        family: "'Noto Sans SC', sans-serif"
+                    }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback
+                },
+                bodyFont: {
+                    family: "'Noto Sans SC', sans-serif"
+                },
+                titleFont: {
+                    family: "'Noto Sans SC', sans-serif"
+                }
+            }
+        };
+
+        const assessmentCtx = document.getElementById('assessmentChart').getContext('2d');
+        new Chart(assessmentCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['形成性评估 (过程)', '总结性评估 (结果)'],
+                datasets: [{
+                    label: '评估权重',
+                    data: [60, 40],
+                    backgroundColor: [brilliantBlues.light, brilliantBlues.dark],
+                    borderColor: '#ffffff',
+                    borderWidth: 4,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: defaultPlugins,
+                cutout: '60%'
+            }
+        });
+
+        const cognitiveLoadCtx = document.getElementById('cognitiveLoadChart').getContext('2d');
+        new Chart(cognitiveLoadCtx, {
+            type: 'bar',
+            data: {
+                labels: ['传统教学', '本课程设计'],
+                datasets: [
+                    {
+                        label: '外在负荷 (无效消耗)',
+                        data: [45, 15],
+                        backgroundColor: brilliantBlues.lighter,
+                    },
+                    {
+                        label: '内在负荷 (内容难度)',
+                        data: [35, 35],
+                        backgroundColor: brilliantBlues.light,
+                    },
+                    {
+                        label: '相关负荷 (有效学习)',
+                        data: [20, 50],
+                        backgroundColor: brilliantBlues.dark,
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: defaultPlugins,
+                scales: {
+                    x: {
+                        stacked: true,
+                        ticks: { color: '#334155' }
+                    },
+                    y: {
+                        stacked: true,
+                        ticks: { color: '#334155' },
+                        title: {
+                            display: true,
+                            text: '认知资源分配 (%)',
+                            color: '#334155'
+                        }
+                    }
+                },
+            }
+        });
+
+        const techStackCtx = document.getElementById('techStackChart').getContext('2d');
+        const techLabels = ['Python & Venv', 'Git & GitCode', 'Jupyter Lab', 'NumPy & Pandas', 'Streamlit / Gradio', 'LLM APIs'];
+        new Chart(techStackCtx, {
+            type: 'bar',
+            data: {
+                labels: techLabels.map(wrapLabel),
+                datasets: [{
+                    label: '核心技术栈',
+                    data: [95, 85, 90, 92, 88, 98],
+                    backgroundColor: [
+                        brilliantBlues.dark,
+                        brilliantBlues.medium,
+                        brilliantBlues.light,
+                        brilliantBlues.dark,
+                        brilliantBlues.medium,
+                        brilliantBlues.light
+                    ],
+                    borderColor: brilliantBlues.dark,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    ...defaultPlugins,
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: '重要性与应用度',
+                            color: '#334155'
+                        },
+                        ticks: { color: '#334155' }
+                    },
+                    y: {
+                       ticks: { color: '#334155' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

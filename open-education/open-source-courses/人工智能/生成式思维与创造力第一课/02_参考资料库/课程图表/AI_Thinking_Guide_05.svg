@@ -1,0 +1,71 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+  <!-- 背景和标题 -->
+  <rect width="800" height="700" fill="#f8f9fa" />
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333333">连接思考与行动的"器"：三种核心画布</text>
+
+  <!-- 思考与行动的两端 -->
+  <ellipse cx="150" cy="170" rx="120" ry="80" fill="#e6f7ff" stroke="#1890ff" stroke-width="2" />
+  <text x="150" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1890ff">思维模型</text>
+  <text x="150" y="185" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333333">（法）</text>
+
+  <ellipse cx="650" cy="170" rx="120" ry="80" fill="#f6ffed" stroke="#52c41a" stroke-width="2" />
+  <text x="650" y="160" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#52c41a">体验活动</text>
+  <text x="650" y="185" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333333">（术）</text>
+
+  <!-- 中心画布容器 -->
+  <rect x="250" y="130" width="300" height="100" rx="15" ry="15" fill="#fff" stroke="#722ed1" stroke-width="3" />
+  <text x="400" y="160" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#722ed1">画布</text>
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333333">（器）</text>
+
+  <!-- 连接线 -->
+  <path d="M250 170 L170 170" stroke="#1890ff" stroke-width="2.5" stroke-dasharray="5,5" />
+  <path d="M550 170 L630 170" stroke="#52c41a" stroke-width="2.5" stroke-dasharray="5,5" />
+
+  <!-- 三种画布 -->
+  <rect x="150" y="300" width="150" height="200" rx="10" ry="10" fill="#fff" stroke="#fa8c16" stroke-width="2" />
+  <text x="225" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#fa8c16">AI项目画布</text>
+  <text x="225" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">问题定义</text>
+  <text x="225" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">目标用户</text>
+  <text x="225" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">价值主张</text>
+  <text x="225" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">人机协同流程</text>
+  <text x="225" y="435" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">核心AI能力</text>
+  <text x="225" y="455" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">...</text>
+
+  <rect x="325" y="300" width="150" height="200" rx="10" ry="10" fill="#fff" stroke="#722ed1" stroke-width="2" />
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#722ed1">个人学习画布</text>
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">学习目标</text>
+  <text x="400" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">关键问题</text>
+  <text x="400" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">假设与实验</text>
+  <text x="400" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">所需资源</text>
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">行动计划</text>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">...</text>
+
+  <rect x="500" y="300" width="150" height="200" rx="10" ry="10" fill="#fff" stroke="#f5222d" stroke-width="2" />
+  <text x="575" y="330" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f5222d">AI伦理画布</text>
+  <text x="575" y="355" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">利益相关者分析</text>
+  <text x="575" y="375" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">数据偏见风险</text>
+  <text x="575" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">算法透明度</text>
+  <text x="575" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">问责机制</text>
+  <text x="575" y="435" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">公平性评估</text>
+  <text x="575" y="455" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">...</text>
+
+  <!-- 从中心画布到三个具体画布的连接线 -->
+  <path d="M400 230 L225 300" stroke="#722ed1" stroke-width="2" />
+  <path d="M400 230 L400 300" stroke="#722ed1" stroke-width="2" />
+  <path d="M400 230 L575 300" stroke="#722ed1" stroke-width="2" />
+
+  <!-- 最终产出 -->
+  <ellipse cx="400" cy="580" rx="200" ry="50" fill="#fff1f0" stroke="#f5222d" stroke-width="2" />
+  <text x="400" y="575" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333333">最终产出与行动</text>
+  <text x="400" y="600" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">AI应用原型 · 学习成长 · 负责任创新</text>
+
+  <!-- 从三个画布到最终产出的连接线 -->
+  <path d="M225 500 L350 550" stroke="#fa8c16" stroke-width="2" />
+  <path d="M400 500 L400 550" stroke="#722ed1" stroke-width="2" />
+  <path d="M575 500 L450 550" stroke="#f5222d" stroke-width="2" />
+
+  <text x="50%" y="680" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>
