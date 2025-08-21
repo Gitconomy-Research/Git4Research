@@ -12,17 +12,14 @@
       .en { font-size: 12px; font-weight: 500; fill: #718096; text-anchor: middle; }
 
       .bg { fill: #f7fafc; }
-      .timeline-stroke { stroke: #cbd5e0; stroke-width: 2; }
-      .today-stroke { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 4 6; }
-      .progress-stroke { stroke: #4299e1; stroke-width: 5; }
+      .timeline-stroke { stroke: #cbd5e0; stroke-width: 2; vector-effect: non-scaling-stroke; }
+      .today-stroke { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 4 6; vector-effect: non-scaling-stroke; }
+      .progress-stroke { stroke: #4299e1; stroke-width: 5; vector-effect: non-scaling-stroke; }
 
       .m-hypothesis { fill: #63b3ed; } /* Blue */
       .m-build { fill: #4fd1c5; }     /* Teal */
       .m-measure { fill: #f6ad55; }   /* Orange */
       .m-learn { fill: #b794f4; }     /* Purple */
-
-      @keyframes dash-animation { to { stroke-dashoffset: 0; } }
-      .progress-line { stroke-dasharray: 1000; stroke-dashoffset: 1000; animation: dash-animation 2s ease-out forwards; }
     </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#4299e1" />
@@ -56,13 +53,15 @@
 
   <!-- 时间轴 -->
   <line x1="100" y1="260" x2="1100" y2="260" class="timeline-stroke" />
-  <line x1="100" y1="260" x2="1100" y2="260" class="progress-stroke progress-line" marker-end="url(#arrowhead)"/>
+  <!-- 静态进度线（无动画） -->
+  <line x1="100" y1="260" x2="1100" y2="260" class="progress-stroke" marker-end="url(#arrowhead)"/>
 
-  <!-- 今天标记（示例：8/20） -->
+  <!-- 今天标记（维持 8/21） -->
+  <!-- 8月刻度(150)到9月刻度(375)跨度=225；8月共有31天；x=150 + 225*(21/31) ≈ 302 -->
   <g>
-    <line x1="295" y1="220" x2="295" y2="300" class="today-stroke"/>
-    <rect x="272" y="202" width="46" height="18" rx="4" fill="#fff"/>
-    <text x="295" y="215" class="month-label" style="font-size:12px;fill:#475569;">今天 8/20</text>
+    <line x1="302" y1="220" x2="302" y2="300" class="today-stroke"/>
+    <rect x="279" y="202" width="46" height="18" rx="4" fill="#fff"/>
+    <text x="302" y="215" class="month-label" style="font-size:12px;fill:#475569;">今天 8/21</text>
   </g>
 
   <!-- 月份刻度 -->

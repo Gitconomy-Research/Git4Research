@@ -6,9 +6,9 @@
 
 我们的目标是超越象征性的奖励，创建一个将每一种有价值的贡献——无论是代码、文档、社区管理还是创意——进行量化，并直接转化为实体所有权的系统。本研究旨在为下一代数字社区构建一个公平、高效且可持续的发展框架。
 
-![GItconomy社区所有制研究计划概览](./assets/gitconomy_mvr_framework.svg)
+![Gitconomy社区所有制研究计划概览](./assets/gitconomy_mvr_framework.svg)
 
-*图：GItconomy社区所有制研究计划概览*
+*图：Gitconomy社区所有制研究计划概览*
 
 ## 2. 核心研究问题
 
