@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 860">
+  <title>Gitconomy Research社区价值网络效应</title>
+  <desc>社区块三要素白底彩色图标；折线连接左圆底点到右圆底点，箭头在右端；两条直线从社区框左上角连向上方两块。</desc>
+
+  <defs>
+    <style>
+      .bg { fill:#f8f9fa; }
+      .title { font:700 22px/1.2 Arial, ui-sans-serif, system-ui; fill:#333; text-anchor:middle; }
+      .h2 { font:700 20px/1.2 Arial, ui-sans-serif, system-ui; fill:#333; text-anchor:middle; }
+      .text { font:14px/1.4 Arial, ui-sans-serif, system-ui; fill:#333; text-anchor:middle; }
+      .small { font:12px/1.3 Arial, ui-sans-serif, system-ui; fill:#333; text-anchor:middle; }
+      .cap { font:16px/1.3 Arial, ui-sans-serif, system-ui; fill:#333; text-anchor:middle; font-weight:bold; }
+      .license { font:12px/1.4 Arial, ui-sans-serif, system-ui; fill:#6b7280; text-anchor:middle; }
+      .elbow { stroke:#666; stroke-width:2; fill:none; }
+      .arrow { marker-end:url(#arrowhead); }
+      .icon-stroke { stroke:#fff; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+      .icon-green { stroke:#009973; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+
+    <!-- 象限小图标（白描边） -->
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <circle cx="11" cy="11" r="7" class="icon-stroke"/><line x1="16" y1="16" x2="22" y2="22" class="icon-stroke" stroke-width="3"/>
+    </symbol>
+    <symbol id="icon-wrench" viewBox="0 0 24 24">
+      <path d="M21 7a6 6 0 0 1-8.9 5.3L6 18.4l-2.4-2.4 6.1-6.1A6 6 0 0 1 21 7z" class="icon-stroke"/>
+      <circle cx="6" cy="18.4" r="1.5" class="icon-stroke" fill="#fff"/>
+    </symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" class="icon-stroke"/><polygon points="12,7 16,12 12,17 8,12" class="icon-stroke" fill="#fff"/><circle cx="12" cy="12" r="1.8" class="icon-stroke" fill="#fff"/>
+    </symbol>
+    <symbol id="icon-loop" viewBox="0 0 24 24">
+      <path d="M4 12a6 6 0 0 1 6-6h4" class="icon-stroke"/><polyline points="12,2 14,6 10,6" class="icon-stroke"/><path d="M20 12a6 6 0 0 1-6 6h-4" class="icon-stroke"/><polyline points="12,22 10,18 14,18" class="icon-stroke"/>
+    </symbol>
+
+    <!-- 社区彩色图标 -->
+    <symbol id="icon-asset-c" viewBox="0 0 24 24">
+      <rect x="5" y="5" width="14" height="6" rx="1.5" class="icon-green"/>
+      <rect x="5" y="11" width="14" height="6" rx="1.5" class="icon-green"/>
+      <rect x="5" y="17" width="14" height="2" rx="1" class="icon-green"/>
+    </symbol>
+    <symbol id="icon-dao-c" viewBox="0 0 24 24">
+      <polygon points="12,4 19,8 19,16 12,20 5,16 5,8" class="icon-green"/>
+      <circle cx="12" cy="4" r="1.4" fill="#009973"/><circle cx="19" cy="8" r="1.4" fill="#009973"/><circle cx="19" cy="16" r="1.4" fill="#009973"/>
+      <circle cx="12" cy="20" r="1.4" fill="#009973"/><circle cx="5" cy="16" r="1.4" fill="#009973"/><circle cx="5" cy="8" r="1.4" fill="#009973"/>
+    </symbol>
+    <symbol id="icon-wrench-c" viewBox="0 0 24 24">
+      <path d="M21 7a6 6 0 0 1-8.9 5.3L6 18.4l-2.4-2.4 6.1-6.1A6 6 0 0 1 21 7z" class="icon-green"/>
+      <circle cx="6" cy="18.4" r="1.5" class="icon-green" fill="#009973"/>
+    </symbol>
+  </defs>
+
+  <!-- 画布与标题（无标题背景框） -->
+  <rect width="900" height="860" class="bg"/>
+  <text x="450" y="42" class="title">Gitconomy Research社区价值网络</text>
+
+  <!-- 左侧标签 -->
+  <text x="200" y="95" class="h2">社区贡献者象限</text>
+
+  <!-- 象限 -->
+  <g id="quadrants" transform="translate(50, 100) scale(0.5)">
+    <line x1="400" y1="50"  x2="400" y2="750" stroke="#333" stroke-width="3"/>
+    <line x1="50"  y1="400" x2="750" y2="400" stroke="#333" stroke-width="3"/>
+    <rect x="50"  y="50"  width="350" height="350" fill="#e6f7ff" rx="10" ry="10"/>
+    <rect x="400" y="50"  width="350" height="350" fill="#e6ffe6" rx="10" ry="10"/>
+    <rect x="50"  y="400" width="350" height="350" fill="#fff2e6" rx="10" ry="10"/>
+    <rect x="400" y="400" width="350" height="350" fill="#f7e6ff" rx="10" ry="10"/>
+    <text x="225" y="100" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#0066cc">价值发现</text>
+    <text x="575" y="100" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#009933">价值创造</text>
+    <text x="225" y="450" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#cc6600">价值引导</text>
+    <text x="575" y="450" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#9900cc">价值整合</text>
+    <g transform="translate(225,250)"><circle r="30" fill="#0066cc"/><use href="#icon-search" x="-12" y="-12" width="24" height="24"/></g>
+    <g transform="translate(575,250)"><circle r="30" fill="#009933"/><use href="#icon-wrench" x="-12" y="-12" width="24" height="24"/></g>
+    <g transform="translate(225,600)"><circle r="30" fill="#cc6600"/><use href="#icon-compass" x="-12" y="-12" width="24" height="24"/></g>
+    <g transform="translate(575,600)"><circle r="30" fill="#9900cc"/><use href="#icon-loop" x="-12" y="-12" width="24" height="24"/></g>
+  </g>
+
+  <!-- 角色阶梯 -->
+  <g id="roles" transform="translate(500, 100)">
+    <rect x="0" y="0" width="350" height="380" rx="15" ry="15" fill="#f0f0f0" fill-opacity="0.7" stroke="#666" stroke-width="2"/>
+    <text x="175" y="30" class="h2">贡献者角色阶梯</text>
+    <rect x="30" y="60"  width="290" height="60" rx="10" ry="10" fill="#e6f7ff" stroke="#0066cc" stroke-width="2"/>
+    <g transform="translate(55, 90)"><circle r="16" fill="#0066cc"/><use href="#icon-search" x="-8" y="-8" width="16" height="16"/></g>
+    <text x="175" y="97" class="cap">价值发现者</text>
+    <rect x="30" y="140" width="290" height="60" rx="10" ry="10" fill="#e6ffe6" stroke="#009933" stroke-width="2"/>
+    <g transform="translate(55, 170)"><circle r="16" fill="#009933"/><use href="#icon-wrench" x="-8" y="-8" width="16" height="16"/></g>
+    <text x="175" y="177" class="cap">价值创造者</text>
+    <rect x="30" y="220" width="290" height="60" rx="10" ry="10" fill="#fff2e6" stroke="#cc6600" stroke-width="2"/>
+    <g transform="translate(55, 250)"><circle r="16" fill="#cc6600"/><use href="#icon-compass" x="-8" y="-8" width="16" height="16"/></g>
+    <text x="175" y="257" class="cap">价值引导者</text>
+    <rect x="30" y="300" width="290" height="60" rx="10" ry="10" fill="#f7e6ff" stroke="#9900cc" stroke-width="2"/>
+    <g transform="translate(55, 330)"><circle r="16" fill="#9900cc"/><use href="#icon-loop" x="-8" y="-8" width="16" height="16"/></g>
+    <text x="175" y="337" class="cap">价值整合者</text>
+  </g>
+
+  <!-- 社区块（居中；白底圆；彩色图标；底点到底点的折线，箭头在右端） -->
+  <g id="community" transform="translate(140, 600)">
+    <rect x="0" y="0" width="620" height="210" rx="15" ry="15" fill="#e6fff5" fill-opacity="0.8" stroke="#009973" stroke-width="3"/>
+    <text x="310" y="35" class="h2" fill="#009973">Gitconomy Research 社区</text>
+
+    <!-- 三圆（r=56；中心 150 / 350 / 550；白底） -->
+    <g transform="translate(150,100)">
+      <circle r="56" fill="#fff" stroke="#009973" stroke-width="2"/>
+      <use href="#icon-wrench-c" x="-18" y="-22" width="36" height="36"/>
+      <text x="0" y="30" class="text" font-weight="bold">价值创造者</text>
+    </g>
+    <g transform="translate(350,100)">
+      <circle r="56" fill="#fff" stroke="#009973" stroke-width="2"/>
+      <use href="#icon-asset-c" x="-18" y="-22" width="36" height="36"/>
+      <text x="0" y="30" class="text" font-weight="bold">共同资产</text>
+    </g>
+    <g transform="translate(550,100)">
+      <circle r="56" fill="#fff" stroke="#009973" stroke-width="2"/>
+      <use href="#icon-dao-c" x="-18" y="-22" width="36" height="36"/>
+      <text x="0" y="30" class="text" font-weight="bold">数字机构</text>
+    </g>
+
+    <!-- 水平箭头（投资 / 治理） -->
+    <path d="M206,100 L294,100" class="elbow arrow" stroke="#009973"/><text x="250" y="86" class="small">投资</text>
+    <path d="M406,100 L494,100" class="elbow arrow" stroke="#009973"/><text x="450" y="86" class="small">治理</text>
+
+    <!-- 关键修改：Elbow 从左圆“最低点”(150,156) 到 右圆“最低点”(550,156)，箭头在右端 -->
+    <path d="M550,156 L550,195 L150,195 L150,156" class="elbow arrow" stroke="#009973"/>
+    <text x="350" y="185" class="small">价值回馈</text>
+  </g>
+
+  <!-- 两条直线：从社区框左上角出发 -->
+  <line x1="140" y1="600" x2="75" y2="480" stroke="#666" stroke-width="2"/>   <!-- → 象限左小角 -->
+  <line x1="750" y1="600" x2="850" y2="480" stroke="#666" stroke-width="2"/>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="840" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

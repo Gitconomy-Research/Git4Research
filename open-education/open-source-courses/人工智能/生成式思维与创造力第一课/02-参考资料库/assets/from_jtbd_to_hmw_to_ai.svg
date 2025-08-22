@@ -1,0 +1,49 @@
+<svg width="980" height="500" viewBox="0 0 980 500" xmlns="http://www.w3.org/2000/svg">
+  <title>从JTBD到HMW再到AI的创新流水线</title>
+  <rect x="0" y="0" width="980" height="500" rx="16" fill="#f7f9fc" stroke="#c8d1e1"/>
+  <!-- JTBD -->
+  <rect x="40" y="70" width="260" height="120" rx="12" fill="#e8f5e9" stroke="#7cc39b"/>
+  <text x="170" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold">JTBD 发现</text>
+  <text x="170" y="122" text-anchor="middle" font-family="sans-serif" font-size="12">情境·挣扎·成功定义</text>
+  <text x="170" y="142" text-anchor="middle" font-family="sans-serif" font-size="12">访谈 / 语料速析 / 证据</text>
+  <!-- HMW -->
+  <rect x="360" y="70" width="260" height="120" rx="12" fill="#e3f2fd" stroke="#7aa7d9"/>
+  <text x="490" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold">HMW 生成与收敛</text>
+  <text x="490" y="122" text-anchor="middle" font-family="sans-serif" font-size="12">多样化提问 + 约束</text>
+  <text x="490" y="142" text-anchor="middle" font-family="sans-serif" font-size="12">聚类 / 评分 / 排序</text>
+  <!-- AI -->
+  <rect x="680" y="70" width="260" height="120" rx="12" fill="#fff3e0" stroke="#f2b36b"/>
+  <text x="810" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold">AI 方案与原型</text>
+  <text x="810" y="122" text-anchor="middle" font-family="sans-serif" font-size="12">RAG / Agent / 自动化</text>
+  <text x="810" y="142" text-anchor="middle" font-family="sans-serif" font-size="12">度量 / 上线 / 反馈</text>
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="6" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <line x1="300" y1="130" x2="360" y2="130" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="620" y1="130" x2="680" y2="130" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Feedback loop -->
+  <path d="M810,200 C810,270 490,270 490,200" fill="none" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="650" y="258" text-anchor="middle" font-family="sans-serif" font-size="12">数据与学习反馈</text>
+  <!-- Quality Gates -->
+  <rect x="60" y="310" width="220" height="120" rx="10" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="170" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold">Gate A：JTBD 质量</text>
+  <text x="170" y="356" text-anchor="middle" font-family="sans-serif" font-size="12">≥10条三元组；证据可追溯</text>
+  <text x="170" y="376" text-anchor="middle" font-family="sans-serif" font-size="12">非画像化；包含成功定义</text>
+
+  <rect x="380" y="310" width="220" height="120" rx="10" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="490" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold">Gate B：HMW 质量</text>
+  <text x="490" y="356" text-anchor="middle" font-family="sans-serif" font-size="12">多样性指数↑、约束合规率↑</text>
+  <text x="490" y="376" text-anchor="middle" font-family="sans-serif" font-size="12">ICE/RICE 评分≥阈值</text>
+
+  <rect x="700" y="310" width="220" height="120" rx="10" fill="#ffffff" stroke="#d1d5db"/>
+  <text x="810" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold">Gate C：AI 原型</text>
+  <text x="810" y="356" text-anchor="middle" font-family="sans-serif" font-size="12">TTV≤1周；关键KPI达标</text>
+  <text x="810" y="376" text-anchor="middle" font-family="sans-serif" font-size="12">成本/效果比、可迁移性</text>
+
+  <text x="50%" y="480" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,162 @@
+<svg width="800" height="760" viewBox="0 0 800 760" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    此SVG图旨在可视化Gitconomy社区的声誉角色系统。
+    它基于“价值象限”框架，展示了六个核心声誉角色及其在社区中的定位。
+    底部新增了“正反馈循环”部分，说明贡献、所有权和声誉如何共同驱动社区发展。
+  -->
+
+  <defs>
+    <style>
+      .bg { fill: #f8f9fa; }
+      .quadrant-bg { fill: #fff; stroke: #e9ecef; stroke-width: 1.5; rx: 10; }
+      .quadrant-title { font-size: 18px; font-weight: bold; text-anchor: middle; fill: #495057; }
+
+      .role-circle { stroke-width: 2.5; }
+      .role-title { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .role-subtitle { font-size: 11px; text-anchor: middle; fill: #6c757d; }
+      .role-keyword { font-size: 12px; text-anchor: middle; fill: #343a40; }
+      .icon { font-size: 24px; text-anchor: middle; dominant-baseline: central; }
+
+      /* Role Specific Colors */
+      .explorer { fill: #e7f5ff; stroke: #4dabf7; }
+      .explorer-text { fill: #1c7ed6; }
+      .builder { fill: #fff4e6; stroke: #ff922b; }
+      .builder-text { fill: #d9480f; }
+      .thinker { fill: #f3e8ff; stroke: #9775fa; }
+      .thinker-text { fill: #7048e8; }
+      .fellow { fill: #e6fcf5; stroke: #20c997; }
+      .fellow-text { fill: #087f5b; }
+      .scholar { fill: #f1f3f5; stroke: #868e96; }
+      .scholar-text { fill: #495057; }
+      .steward { fill: #fff9db; stroke: #fcc419; }
+      .steward-text { fill: #e67700; }
+    </style>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg" />
+  <text x="400" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#343a40">Gitconomy社区声誉系统角色框架</text>
+
+  <!-- Quadrant Layout -->
+  <g id="quadrants">
+    <!-- 价值发现 -->
+    <rect x="50" y="70" width="340" height="220" class="quadrant-bg"/>
+    <text x="220" y="100" class="quadrant-title">价值发现 (Value Discovery)</text>
+    <!-- 价值引导 -->
+    <rect x="410" y="70" width="340" height="220" class="quadrant-bg"/>
+    <text x="580" y="100" class="quadrant-title">价值引导 (Value Guidance)</text>
+    <!-- 价值创造 -->
+    <rect x="50" y="310" width="340" height="220" class="quadrant-bg"/>
+    <text x="220" y="340" class="quadrant-title">价值创造 (Value Creation)</text>
+    <!-- 价值整合 -->
+    <rect x="410" y="310" width="340" height="220" class="quadrant-bg"/>
+    <text x="580" y="340" class="quadrant-title">价值整合 (Value Integration)</text>
+  </g>
+
+  <!-- Roles -->
+  <g id="roles" filter="url(#shadow)">
+    <!-- Explorer -->
+    <g transform="translate(220, 185)">
+      <circle r="60" class="role-circle explorer"/>
+      <text y="-15" class="role-title explorer-text">Explorer</text>
+      <text y="2" class="role-subtitle explorer-text">探索者</text>
+      <text class="icon" y="30" fill="#4dabf7">🧭</text>
+    </g>
+
+    <!-- Thinker -->
+    <g transform="translate(580, 185)">
+      <circle r="60" class="role-circle thinker"/>
+      <text y="-15" class="role-title thinker-text">Thinker</text>
+      <text y="2" class="role-subtitle thinker-text">思想家</text>
+      <text class="icon" y="30" fill="#9775fa">💡</text>
+    </g>
+
+    <!-- Builder -->
+    <g transform="translate(220, 425)">
+      <circle r="60" class="role-circle builder"/>
+      <text y="-15" class="role-title builder-text">Builder</text>
+      <text y="2" class="role-subtitle builder-text">建造者</text>
+      <text class="icon" y="30" fill="#ff922b">🛠️</text>
+    </g>
+
+    <!-- Fellow -->
+    <g transform="translate(580, 425)">
+      <circle r="60" class="role-circle fellow"/>
+      <text y="-15" class="role-title fellow-text">Fellow</text>
+      <text y="2" class="role-subtitle fellow-text">学术领袖</text>
+      <text class="icon" y="30" fill="#20c997">🤝</text>
+    </g>
+
+    <!-- Scholar (Spans Creation and Integration) -->
+    <g transform="translate(400, 425)">
+      <circle r="60" class="role-circle scholar"/>
+      <text y="-15" class="role-title scholar-text">Scholar</text>
+      <text y="2" class="role-subtitle scholar-text">学者</text>
+      <text class="icon" y="30" fill="#868e96">📚</text>
+    </g>
+
+    <!-- Steward (Central, highest reputation) -->
+    <g transform="translate(400, 240)">
+      <circle r="75" class="role-circle steward"/>
+      <text y="-20" class="role-title steward-text" font-size="20">Steward</text>
+      <text y="2" class="role-subtitle steward-text" font-size="14">领导者</text>
+      <text class="icon" y="35" fill="#fcc419" font-size="32">🛡️</text>
+    </g>
+  </g>
+
+  <!-- Positive Feedback Loop -->
+  <g id="feedback-loop" transform="translate(0, 560)">
+    <text x="400" y="0" font-size="16" font-weight="bold" text-anchor="middle" fill="#343a40">社区正反馈循环</text>
+    <text x="400" y="20" font-size="12" text-anchor="middle" fill="#6c757d">(Positive Feedback Loop)</text>
+
+    <defs>
+      <marker id="flow-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#868e96"/>
+      </marker>
+      <style>
+        .flow-box { fill: #fff; stroke: #ced4da; rx: 5; }
+        .flow-text { font-size: 13px; text-anchor: middle; fill: #343a40; }
+        .flow-line { stroke: #868e96; stroke-width: 1.5; marker-end: url(#flow-arrow); }
+      </style>
+    </defs>
+
+    <!-- Nodes -->
+    <g class="flow-text">
+      <rect x="90" y="50" width="120" height="40" class="flow-box"/>
+      <text x="140" y="75">贡献</text>
+
+      <rect x="250" y="50" width="120" height="40" class="flow-box"/>
+      <text x="310" y="68">份额</text>
+      <text x="310" y="82" font-size="10">(所有权)</text>
+
+      <rect x="410" y="50" width="120" height="40" class="flow-box"/>
+      <text x="470" y="68">声誉</text>
+      <text x="470" y="82" font-size="10">(影响力)</text>
+
+      <rect x="570" y="50" width="120" height="40" class="flow-box"/>
+      <text x="630" y="75">更高价值任务</text>
+    </g>
+
+    <!-- Arrows -->
+    <line x1="210" y1="70" x2="250" y2="70" class="flow-line"/>
+    <line x1="370" y1="70" x2="410" y2="70" class="flow-line"/>
+    <line x1="530" y1="70" x2="570" y2="70" class="flow-line"/>
+
+    <!-- Loop back arrow -->
+    <path d="M 690 70 L 730 70 L 730 120 L 40 120 L 40 70 L 90 70" fill="none" class="flow-line"/>
+    <text x="375" y="135" class="flow-text" font-weight="bold" fill="#087f5b">→ 更多贡献</text>
+  </g>
+  <!-- 许可与署名 -->
+  <text x="50%" y="740" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

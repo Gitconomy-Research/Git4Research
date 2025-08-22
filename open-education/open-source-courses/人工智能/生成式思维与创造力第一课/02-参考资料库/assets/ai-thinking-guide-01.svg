@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <rect width="900" height="700" fill="#f9fafb" />
+
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#111827">《生成式思维和创造力第一课》认知框架</text>
+
+  <circle cx="230" cy="375" r="180" fill="#fef3c7" stroke="#d1d5db" stroke-width="2" />
+
+  <circle cx="230" cy="375" r="135" fill="#ecfdf5" stroke="#d1d5db" stroke-width="2" />
+
+  <circle cx="230" cy="375" r="90" fill="#eff6ff" stroke="#d1d5db" stroke-width="2" />
+
+  <circle cx="230" cy="375" r="45" fill="#fff7ed" stroke="#d1d5db" stroke-width="2" />
+
+  <text x="230" y="380" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#b45309">道</text>
+
+  <text x="230" y="315" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1d4ed8">法</text>
+
+  <text x="230" y="273" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#166534">术</text>
+
+  <text x="230" y="228" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#b45309">器</text>
+
+  <line x1="410" y1="375" x2="550" y2="375" stroke="#d1d5db" stroke-width="2" />
+
+  <g font-family="Arial, sans-serif">
+    <text x="560" y="130" font-size="20" font-weight="bold" fill="#b45309">道 (Dào) - The Way</text>
+    <text x="560" y="155" font-size="16" font-weight="bold" fill="#4b5563">为何如此 (Why)</text>
+    <text x="560" y="180" font-size="14" fill="#6b7280">核心哲学：构建一个能在不确定性世界中持续</text>
+    <text x="560" y="200" font-size="14" fill="#6b7280">进化的"认知操作系统"，实现学习者主权。</text>
+    <text x="560" y="220" font-size="14" fill="#6b7280">事物的本质规律、底层哲学、世界观。</text>
+
+    <text x="560" y="250" font-size="20" font-weight="bold" fill="#1d4ed8">法 (Fǎ) - The Methodology</text>
+    <text x="560" y="275" font-size="16" font-weight="bold" fill="#4b5563">如何思考 (How to Think)</text>
+    <text x="560" y="300" font-size="14" fill="#6b7280">基于"道"建立的系统性方法论、思维框架：</text>
+    <text x="560" y="320" font-size="14" fill="#6b7280">• 系统思维 (System Thinking)</text>
+    <text x="560" y="340" font-size="14" fill="#6b7280">• 创造力方法 (Creativity Methods)</text>
+    <text x="560" y="360" font-size="14" fill="#6b7280">• 元学习能力 (Meta-learning)</text>
+
+    <text x="560" y="390" font-size="20" font-weight="bold" fill="#166534">术 (Shù) - The Skill</text>
+    <text x="560" y="415" font-size="16" font-weight="bold" fill="#4b5563">如何行动 (How to Act)</text>
+    <text x="560" y="440" font-size="14" fill="#6b7280">在"法"的指导下，可执行、可操作的具体技巧：</text>
+    <text x="560" y="460" font-size="14" fill="#6b7280">• 认知冲突驱动</text>
+    <text x="560" y="480" font-size="14" fill="#6b7280">• 具身认知实践</text>
+    <text x="560" y="500" font-size="14" fill="#6b7280">• 微习惯固化</text>
+
+    <text x="560" y="530" font-size="20" font-weight="bold" fill="#b45309">器 (Qì) - The Tool</text>
+    <text x="560" y="555" font-size="16" font-weight="bold" fill="#4b5563">用何实现 (With What)</text>
+    <text x="560" y="580" font-size="14" fill="#6b7280">实现"术"所依赖的具体工具与平台：</text>
+    <text x="560" y="600" font-size="14" fill="#6b7280">• AI应用（ChatGPT等）、GitCode</text>
+    <text x="560" y="620" font-size="14" fill="#6b7280">• 思维日志模板、证据组合包</text>
+  </g>
+
+  <text x="50%" y="680" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

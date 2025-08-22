@@ -18,7 +18,7 @@
 
 社区的成长将经历四个紧密相连的阶段。每个阶段，我们的组织身份都将迎来一次关键进化，并牵引着工具的演进和成员的成长。
 
-![Gitconomy开放研究社区成长路线图](./assets/gitconomy_community_roadmap.svg)
+![Gitconomy开放研究社区成长路线图](./assets/gitconomy-community-roadmap.svg)
 
 *图：Gitconomy开放研究社区成长路线图*
 
@@ -78,7 +78,7 @@
 - **Fellow （学术领袖）**：社区中学术声望最高的研究者，能够开创全新研究范式、发表奠基性工作，并深刻影响整个社区乃至外部学术领域 。其研究工作具有里程碑式的意义，是社区公认的学术领袖 。
 - **Steward （领导者）**：社区的最高声誉角色，是社区领导者 。他们对社区的整体健康、长期愿景和核心价值观负有责任，是社区集体信任的最终体现和治理的核心 。
 
-![Gitconomy开放研究社区贡献者旅程示意图*](./../open-perspectives/assets/contributor_journey.svg)
+![Gitconomy开放研究社区贡献者旅程示意图*](./../open-perspectives/assets/contributor-journey.svg)
 
 *图：Gitconomy开放研究社区贡献者旅程示意图*
 

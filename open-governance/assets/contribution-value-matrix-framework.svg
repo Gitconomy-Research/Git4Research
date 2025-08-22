@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <title>贡献即要素：整体价值框架 · Gitconomy Research</title>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.18"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title{font:700 26px/1.2 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;fill:#0f172a}
+      .sub{font:14px/1.45 ui-sans-serif,system-ui;fill:#475569}
+      .card{rx:16;ry:16;fill:#fff;filter:url(#shadow)}
+      .label{font:600 14px/1.2 ui-sans-serif,system-ui;fill:#0f172a}
+      .small{font:12px/1.5 ui-sans-serif,system-ui;fill:#334155}
+      .mono{font:600 12px/1.4 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono"; fill:#0f172a}
+      .chip{font:700 11px/1 ui-sans-serif; fill:#fff}
+      .line{stroke:#64748b; stroke-width:2; marker-start:url(#arrow); marker-end:url(#arrow)}
+      .dash{stroke:#94a3b8; stroke-width:2; stroke-dasharray:6 6; marker-start:url(#arrow); marker-end:url(#arrow)}
+      .badge{rx:10; ry:10; fill:#0ea5e9}
+      .pill{rx:10; ry:10; fill:#e2e8f0}
+    </style>
+    <clipPath id="clip-372x88"><rect width="372" height="88" rx="10" ry="10"/></clipPath>
+    <clipPath id="clip-372x108"><rect width="372" height="108" rx="10" ry="10"/></clipPath>
+    <clipPath id="clip-372x180"><rect width="372" height="180" rx="10" ry="10"/></clipPath>
+    <clipPath id="clip-372x84"><rect width="372" height="84" rx="10" ry="10"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  <text x="600" y="56" text-anchor="middle" class="title">贡献即要素：整体价值框架</text>
+  <text x="600" y="100" text-anchor="middle" class="sub">将 CHAOSS / all-contributors / CRediT 融合为：贡献 → 事件 → 角色 → 计分 → 声誉与分配</text>
+  <text x="190" y="156" text-anchor="middle" class="label">贡献类型</text>
+
+  <g id="left" transform="translate(0,40)">
+    <g transform="translate(40,140)">
+      <rect width="300" height="90" class="card"/>
+      <rect x="16" y="18" width="44" height="44" rx="10" fill="#8b5cf6"/>
+      <path d="M34,32 l-10,10 l10,10 M44,32 l10,10 l-10,10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="72" y="36" class="label">技术贡献 (Technical)</text>
+      <text x="72" y="58" class="small">代码·代码审查·架构·安全</text>
+    </g>
+
+    <g transform="translate(40,246)">
+      <rect width="300" height="90" class="card"/>
+      <rect x="16" y="18" width="44" height="44" rx="10" fill="#0ea5e9"/>
+      <path d="M24,26 h28 v28 h-28 z M28,30 h20 v4 h-20 z M28,38 h20 v4 h-20 z" fill="#fff"/>
+      <text x="72" y="36" class="label">内容与文档 (Docs)</text>
+      <text x="72" y="58" class="small">文档·教程·示例·翻译·博客</text>
+    </g>
+
+    <g transform="translate(40,352)">
+      <rect width="300" height="90" class="card"/>
+      <rect x="16" y="18" width="44" height="44" rx="10" fill="#22c55e"/>
+      <g stroke="#fff" stroke-width="3" fill="none" opacity=".95" transform="translate(16,10)">
+        <circle cx="20" cy="22" r="5"/><circle cx="38" cy="18" r="5"/><circle cx="44" cy="36" r="5"/>
+        <path d="M20,22 L38,18 L44,36 L20,22"/>
+      </g>
+      <text x="72" y="36" class="label">社区与支持 (Community)</text>
+      <text x="72" y="58" class="small">答疑·分类·导师·活动组织</text>
+    </g>
+
+    <g transform="translate(40,458)">
+      <rect width="300" height="90" class="card"/>
+      <rect x="16" y="18" width="44" height="44" rx="10" fill="#f59e0b"/>
+      <path d="M24,54 h28 v-8 l12,-6 l-12,-6 v-8 h-28 z" fill="#fff" opacity=".95"/>
+      <text x="72" y="36" class="label">治理与领导 (Governance)</text>
+      <text x="72" y="58" class="small">决策·项目管理·公共代表</text>
+    </g>
+
+    <g transform="translate(40,564)">
+      <rect width="300" height="90" class="card"/>
+      <rect x="16" y="18" width="44" height="44" rx="10" fill="#ec4899"/>
+      <path d="M24,44 h16 l14,8 v-24 l-14,8 h-16 z" fill="#fff" opacity=".95"/>
+      <rect x="20" y="40" width="4" height="8" rx="1" fill="#fff" opacity=".95"/>
+      <text x="72" y="36" class="label">宣传与推广 (Advocacy)</text>
+      <text x="72" y="58" class="small">社媒·案例·会议演讲</text>
+    </g>
+  </g>
+
+  <g id="engine" transform="translate(380,120)">
+    <rect width="420" height="560" class="card"/>
+    <text x="24" y="36" class="label">混合式声誉引擎（事件 → 角色 → 计分）</text>
+
+    <g transform="translate(24,64)">
+      <rect width="380" height="88" class="pill"/>
+      <g clip-path="url(#clip-372x88)">
+        <text x="12" y="24" class="small" style="font-size:11px">事件样例：PR 合并 / 教程发布 / 评审通过 / 答疑小时 …</text>
+        <text x="12" y="46" class="small" style="font-size:11px">CRediT 标签（1–3 个）：</text>
+        <rect x="140" y="30" width="110" height="22" class="badge"/>
+        <text x="195" y="46" text-anchor="middle" class="chip">Software</text>
+        <rect x="260" y="30" width="110" height="22" class="badge" fill="#14b8a6"/>
+        <text x="315" y="46" text-anchor="middle" class="chip">Validation</text>
+        <rect x="24"  y="60" width="180" height="20" rx="8" ry="8" fill="#e2e8f0"/>
+        <text x="114" y="74" text-anchor="middle" class="mono" style="font-size:11px">最多 3 个，按强度排序</text>
+      </g>
+    </g>
+
+    <g transform="translate(24,176)">
+      <rect width="380" height="108" class="pill"/>
+      <g clip-path="url(#clip-372x108)">
+        <text class="mono" style="font-size:11px">
+          <tspan x="12" y="28">Score(event) = Base(Activity) × ȲW(CRediT)</tspan>
+          <tspan x="12" y="46">× Q × I × D × R</tspan>
+        </text>
+        <text x="12" y="66" class="small" style="font-size:11px">Base：活动基线；ȲW：CRediT 权重均值（最多 3 个）</text>
+        <text x="12" y="84" class="small" style="font-size:11px">Q：质量（Rubric/测试/试讲） I：影响（复用/引用/成效）</text>
+        <text x="12" y="102" class="small" style="font-size:11px">D：难度（P0/P1/P2） R：时效（滚动 90 天）</text>
+      </g>
+    </g>
+
+    <g transform="translate(24,306)">
+      <text x="0" y="0" class="label">CRediT 权重（示意）</text>
+      <g transform="translate(0,12)">
+        <rect width="380" height="180" class="pill"/>
+        <g clip-path="url(#clip-372x180)">
+          <text x="12" y="28" class="small" style="font-size:11px">Conceptualization 1.4 ｜ Methodology 1.4</text>
+          <text x="12" y="50" class="small" style="font-size:11px">Formal analysis 1.5 ｜ Software 1.4</text>
+          <text x="12" y="72" class="small" style="font-size:11px">Validation 1.2 ｜ Investigation 1.3</text>
+          <text x="12" y="94" class="small" style="font-size:11px">Writing (orig) 1.1 ｜ Writing (rev) 1.0</text>
+          <text x="12" y="116" class="small" style="font-size:11px">Visualization 1.0 ｜ Supervision 1.2</text>
+          <text x="12" y="138" class="small" style="font-size:11px">Project admin 1.0 ｜ Data curation 1.1</text>
+          <text x="12" y="160" class="small" style="font-size:11px">Funding 1.2 ｜ Resources 0.9</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(24,520)">
+      <text x="0" y="0" class="label">管线输出</text>
+      <g transform="translate(0,12)">
+        <rect width="380" height="84" class="pill"/>
+        <g clip-path="url(#clip-372x84)">
+          <text x="12" y="24" class="small" style="font-size:11px">事件分 → 要素份额（CU）</text>
+          <text x="12" y="46" class="small" style="font-size:11px">→ 路由到项目/课程节点</text>
+          <text x="12" y="68" class="small" style="font-size:11px">用于 声誉账本（治理） 与 价值账本（分配）</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <g id="right">
+    <g transform="translate(830,200)">
+      <rect width="330" height="160" class="card"/>
+      <text x="16" y="32" class="label">声誉账本（Reputation Ledger）</text>
+      <text x="16" y="56" class="small">滚动 90 天 · 用于治理权重/资格/路由</text>
+      <text x="16" y="80" class="small">显示：赛道分（Research/Teaching/Coaching）</text>
+      <text x="16" y="104" class="small">历史累计用于荣誉展示；不转让</text>
+    </g>
+
+    <g transform="translate(830,390)">
+      <rect width="330" height="160" class="card"/>
+      <text x="16" y="32" class="label">价值账本（Value Ledger）</text>
+      <text x="16" y="56" class="small">项目/课程节点的可分配金额与 CU 权重表</text>
+      <text x="16" y="80" class="small">三池：开发 60% / 讲授 25% / 教练 15%</text>
+      <text x="16" y="104" class="small">支持 Retro/QF/Hypercert 回流与清分</text>
+    </g>
+
+    <!-- 并排六角色，无箭头 -->
+    <g transform="translate(880,580)">
+      <rect width="280" height="196" class="card"/>
+      <text x="16" y="32" class="label">声誉角色（6 项并列）</text>
+
+      <!-- 左列 -->
+      <g transform="translate(16,50)">
+        <rect width="110" height="22" class="badge" fill="#0ea5e9"/>
+        <text x="55" y="16" class="chip" text-anchor="middle">Explorer</text>
+      </g>
+      <g transform="translate(16,84)">
+        <rect width="110" height="22" class="badge" fill="#8b5cf6"/>
+        <text x="55" y="16" class="chip" text-anchor="middle">Builder</text>
+      </g>
+      <g transform="translate(16,118)">
+        <rect width="110" height="22" class="badge" fill="#f59e0b"/>
+        <text x="55" y="16" class="chip" text-anchor="middle">Thinker</text>
+      </g>
+
+      <!-- 右列 -->
+      <g transform="translate(150,50)">
+        <rect width="110" height="22" class="badge" fill="#64748b"/>
+        <text x="55" y="16" class="chip" text-anchor="middle">Scholar</text>
+      </g>
+      <g transform="translate(150,84)">
+        <rect width="110" height="22" class="badge" fill="#22c55e"/>
+        <text x="55" y="16" class="chip" text-anchor="middle">Fellow</text>
+      </g>
+      <g transform="translate(150,118)">
+        <rect width="110" height="22" class="badge" fill="#eab308"/>
+        <text x="55" y="16" class="chip" text-anchor="middle">Steward</text>
+      </g>
+
+      <text x="16" y="170" class="small" fill="#64748b">注：成长路径多样，非线性。</text>
+    </g>
+  </g>
+
+  <g transform="translate(40,770)">
+    <rect width="1120" height="90" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="16" y="32" class="sub">备注：贡献类型参考 CHAOSS 与 all-contributors；角色采用 CRediT（NISO 标准）。</text>
+    <text x="16" y="56" class="sub">流程：贡献 → 事件标注（CRediT 1–3） → 计分（Base×ȲW×Q×I×D×R） → 要素份额（CU） → 声誉/价值双账本。</text>
+    <text x="16" y="80" class="sub">用途：声誉账本用于治理与晋升；价值账本用于清分与资金回流（Retro/QF/Hypercert）。</text>
+  </g>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="885" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

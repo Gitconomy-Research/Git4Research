@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1200 860" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc" style="height:auto">
+  <title id="title">从线性晋升到矩阵式成长网络：社区贡献者模型对比</title>
+  <desc id="desc">左侧展示传统开源社区的线性晋升阶梯；右侧为Gitconomy社区的要素-角色矩阵式成长网络。中部以小型矩阵示意说明“线性→矩阵”转化。</desc>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .bg { fill: #f1f5f9; }
+      .title { font: 700 28px/1.2 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; fill: #0f172a; text-anchor: middle; }
+      .card-title { font: 600 20px/1.2 ui-sans-serif, system-ui; fill: #0f172a; text-anchor: middle; }
+      .card-subtitle { font: 14px/1.5 ui-sans-serif, system-ui; fill: #475569; text-anchor: middle; }
+      .stage-box { rx: 12; ry: 12; filter: url(#shadow); }
+      .stage-text { font: 600 15px/1.2 ui-sans-serif, system-ui; fill: #ffffff; text-anchor: middle; }
+      .arrow { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowhead); }
+      .comparison-card { rx: 16; ry: 16; fill: #fff; filter: url(#shadow); }
+      .comp-title { font: 600 15px/1.2 ui-sans-serif, system-ui; fill: #0f172a; }
+      .comp-text { font: 14px/1.6 ui-sans-serif, system-ui; fill: #334155; }
+      .comp-col-title { font: 600 14px/1.2 ui-sans-serif, system-ui; fill: #64748b; text-anchor: middle; }
+      .content-frame { rx: 20; ry: 20; fill: #ffffff; stroke: #e2e8f0; stroke-width: 1; filter: url(#shadow); }
+      .mini-cap { font: 12px/1.2 ui-sans-serif, system-ui; fill: #64748b; text-anchor: middle; }
+      .axis-label { font: 12px/1.2 ui-sans-serif, system-ui; fill: #64748b; }
+      .badge { font: 12px/1.2 ui-sans-serif, system-ui; fill: #64748b; }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9ca3af"/>
+    </marker>
+    <linearGradient id="grad-trad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="grad-gitco" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+
+    <!-- Icons -->
+    <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle>
+    </symbol>
+    <symbol id="icon-user-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="17" y1="11" x2="23" y2="11"></line>
+    </symbol>
+    <symbol id="icon-git-commit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"></circle><line x1="12" y1="3" x2="12" y2="9"></line><line x1="12" y1="15" x2="12" y2="21"></line>
+    </symbol>
+    <symbol id="icon-crown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"></path><path d="M5 20h14"></path>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    </symbol>
+    <symbol id="icon-puzzle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19.4 7.6a2.4 2.4 0 0 0-2.8-2.8l-1.6.8a2.4 2.4 0 0 0-3.2 0l-1.6-.8a2.4 2.4 0 0 0-2.8 2.8l.8 1.6a2.4 2.4 0 0 0 0 3.2l-.8 1.6a2.4 2.4 0 0 0 2.8 2.8l1.6-.8a2.4 2.4 0 0 0 3.2 0l1.6.8a2.4 2.4 0 0 0 2.8-2.8l-.8-1.6a2.4 2.4 0 0 0 0-3.2Z"></path>
+    </symbol>
+    <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>
+    </symbol>
+    <symbol id="icon-shield-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m12 10 1.34 2.72 3 .44-2.17 2.1.51 2.98L12 16.6l-2.68 1.64.51-2.98-2.17-2.1 3-.44Z"></path>
+    </symbol>
+  </defs>
+
+  <rect width="1200" height="860" class="bg"/>
+  <text x="600" y="60" class="title">社区贡献者模型对比：从“线性晋升”到“矩阵式成长网络”</text>
+
+  <!-- Content background frame -->
+  <rect x="50" y="100" width="1100" height="420" class="content-frame"/>
+
+  <!-- Left: Traditional Open Source Community -->
+  <g transform="translate(120, 120)">
+    <text x="220" y="20" class="card-title">传统开源社区</text>
+    <text x="220" y="45" class="card-subtitle">线性晋升阶梯</text>
+
+    <g transform="translate(100, 80)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-trad)"/>
+      <use href="#icon-user" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">用户 / 使用者</text>
+    </g>
+    <g transform="translate(100, 160)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-trad)"/>
+      <use href="#icon-user-plus" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">贡献者</text>
+    </g>
+    <g transform="translate(100, 240)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-trad)"/>
+      <use href="#icon-git-commit" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">提交者 (Committer)</text>
+    </g>
+    <g transform="translate(100, 320)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-trad)"/>
+      <use href="#icon-crown" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">维护者 / PMC</text>
+    </g>
+
+    <!-- Ladder arrows -->
+    <path d="M 220 135 V 155" class="arrow" stroke="#9ca3af"/>
+    <path d="M 220 215 V 235" class="arrow" stroke="#9ca3af"/>
+    <path d="M 220 295 V 315" class="arrow" stroke="#9ca3af"/>
+
+    <!-- Linear badge -->
+    <text x="220" y="390" class="badge">线性：单一维度的纵向晋升</text>
+  </g>
+
+  <!-- Center: Mini matrix demo (no curved arrow) -->
+  <g>
+    <!-- Title/caption only -->
+    <text x="630" y="145" class="mini-cap">从“线性晋升” → “矩阵式成长网络”</text>
+
+    <!-- mini matrix demo in center -->
+    <g transform="translate(520, 200)">
+      <!-- frame -->
+      <rect x="0" y="0" width="240" height="220" rx="12" ry="12" fill="none" stroke="#e2e8f0"/>
+      <!-- grid: 5 cols x 4 rows -->
+      <path d="M 48 0 V 220 M 96 0 V 220 M 144 0 V 220 M 192 0 V 220" stroke="#e5e7eb" />
+      <path d="M 0 55 H 240 M 0 110 H 240 M 0 165 H 240" stroke="#e5e7eb" />
+
+      <!-- column labels -->
+      <text x="24" y="-8" class="axis-label" text-anchor="middle">技术</text>
+      <text x="72" y="-8" class="axis-label" text-anchor="middle">研究</text>
+      <text x="120" y="-8" class="axis-label" text-anchor="middle">产品</text>
+      <text x="168" y="-8" class="axis-label" text-anchor="middle">社区</text>
+      <text x="216" y="-8" class="axis-label" text-anchor="middle">治理</text>
+
+      <!-- row labels -->
+      <text x="-8" y="28" class="axis-label" text-anchor="end">参与者</text>
+      <text x="-8" y="83" class="axis-label" text-anchor="end">要素贡</text>
+      <text x="-8" y="138" class="axis-label" text-anchor="end">领域贡</text>
+      <text x="-8" y="193" class="axis-label" text-anchor="end">要素主</text>
+
+      <!-- sample nodes (matrix network) -->
+      <g fill="#a78bfa" fill-opacity="0.8" stroke="#7c3aed" stroke-opacity="0.6">
+        <circle cx="24" cy="28" r="5"/>
+        <circle cx="72" cy="83" r="6"/>
+        <circle cx="120" cy="83" r="4"/>
+        <circle cx="168" cy="138" r="7"/>
+        <circle cx="216" cy="193" r="8"/>
+        <circle cx="120" cy="193" r="5"/>
+      </g>
+      <!-- connecting lines -->
+      <path d="M24 28 L72 83 L168 138 L216 193" stroke="#c4b5fd" stroke-width="2" fill="none"/>
+      <path d="M72 83 L120 83 L120 193" stroke="#c4b5fd" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+
+      <!-- caption -->
+      <text x="120" y="240" class="mini-cap">矩阵示意：横为角色要素，纵为成长级别；节点=贡献，连线=协同</text>
+    </g>
+  </g>
+
+  <!-- Right: Gitconomy Community -->
+  <g transform="translate(680, 120)">
+    <text x="220" y="20" class="card-title">Gitconomy 社区</text>
+    <text x="220" y="45" class="card-subtitle">要素-角色矩阵（成长网络）</text>
+
+    <g transform="translate(100, 80)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-gitco)"/>
+      <use href="#icon-users" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">社区参与者</text>
+    </g>
+    <g transform="translate(100, 160)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-gitco)"/>
+      <use href="#icon-puzzle" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">要素贡献者</text>
+    </g>
+    <g transform="translate(100, 240)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-gitco)"/>
+      <use href="#icon-target" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">领域贡献者</text>
+    </g>
+    <g transform="translate(100, 320)">
+      <rect class="stage-box" width="240" height="50" fill="url(#grad-gitco)"/>
+      <use href="#icon-shield-star" x="16" y="13" width="24" height="24" stroke="#fff" stroke-width="1.5"/>
+      <text x="135" y="32" class="stage-text">要素所有者</text>
+    </g>
+
+    <!-- matrix badge -->
+    <text x="220" y="390" class="badge" text-anchor="middle">矩阵：多维要素 × 成长级别（网络协同）</text>
+  </g>
+
+  <!-- Bottom comparison area -->
+  <g transform="translate(50, 540)">
+    <rect class="comparison-card" width="1100" height="220"/>
+    <line x1="550" y1="20" x2="550" y2="200" stroke="#e2e8f0" stroke-width="2"/>
+
+    <!-- Column titles -->
+    <text x="295" y="45" class="comp-col-title">传统开源社区</text>
+    <text x="825" y="45" class="comp-col-title">Gitconomy 社区</text>
+
+    <!-- Row titles -->
+    <text x="40" y="80" class="comp-title">核心理念</text>
+    <text x="40" y="130" class="comp-title">价值评估</text>
+    <text x="40" y="180" class="comp-title">最终目标</text>
+
+    <!-- Traditional Side Content -->
+    <text x="120" y="78" class="comp-text">
+      <tspan x="120" dy="0">从“授予特权”出发，奖励贡献者以操作权限。</tspan>
+    </text>
+    <text x="120" y="128" class="comp-text">
+      <tspan x="120" dy="0">以“代码为中心”，对非代码贡献评估不足。</tspan>
+    </text>
+    <text x="120" y="178" class="comp-text">
+      <tspan x="120" dy="0">实现有效的“项目治理”。</tspan>
+    </text>
+
+    <!-- Gitconomy Side Content -->
+    <text x="570" y="78" class="comp-text">
+      <tspan x="570" dy="0">从“确认所有权”出发，将贡献转化为可累积的持久股份。</tspan>
+    </text>
+    <text x="570" y="128" class="comp-text">
+      <tspan x="570" dy="0">“多维要素整体评估”，公平认可所有价值输入。</tspan>
+    </text>
+    <text x="570" y="178" class="comp-text">
+      <tspan x="570" dy="0">构建“由贡献者集体拥有的数字机构”。</tspan>
+    </text>
+  </g>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="820" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research 社区</text>
+</svg>

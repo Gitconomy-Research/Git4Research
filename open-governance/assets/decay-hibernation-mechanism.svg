@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="720" viewBox="0 0 1200 720">
+  <title>贡献衰减与角色休眠机制示意图</title>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px/1.2 ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; fill: #0f172a; text-anchor: middle; }
+      .subtitle { font: 14px/1.5 ui-sans-serif, system-ui; fill: #475569; text-anchor: middle; }
+      .axis-label { font: 600 14px/1.2 ui-sans-serif, system-ui; fill: #64748b; text-anchor: middle; }
+      .axis-line { stroke: #cbd5e1; stroke-width: 2; }
+      .threshold-line { stroke: #fb923c; stroke-width: 2.5; stroke-dasharray: 8, 8; }
+      .threshold-text { font: 700 14px/1.2 ui-sans-serif, system-ui; fill: #fb923c; }
+      .reputation-path-active { stroke: #8b5cf6; stroke-width: 4; fill: none; }
+      .reputation-path-inactive { stroke: #9ca3af; stroke-width: 4; fill: none; stroke-dasharray: 2, 4; }
+      .event-dot { filter: url(#shadow); }
+      .event-label { font: 600 14px/1.2 ui-sans-serif, system-ui; text-anchor: middle; }
+      .status-box { rx: 12; ry: 12; filter: url(#shadow); }
+      .status-title { font: 700 16px/1.2 ui-sans-serif, system-ui; fill: #fff; }
+      .status-text { font: 14px/1.5 ui-sans-serif, system-ui; fill: #fff; opacity: 0.9; }
+    </style>
+    <!-- Icons -->
+    <symbol id="icon-active" viewBox="0 0 24 24">
+      <path d="M12 2l1.09 3.41L16.5 6l-2.8 2.55L15 12l-3-1.8L9 12l1.3-3.45L7.5 6l3.41-.59z" fill="#fff"/>
+      <circle cx="12" cy="17" r="4" fill="#fff"/>
+      <path d="M6 21h12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-inactive" viewBox="0 0 24 24">
+      <path d="M12 2l1.09 3.41L16.5 6l-2.8 2.55L15 12l-3-1.8L9 12l1.3-3.45L7.5 6l3.41-.59z" fill="#d1d5db"/>
+      <circle cx="12" cy="17" r="4" fill="#d1d5db"/>
+      <path d="M6 21h12" stroke="#d1d5db" stroke-width="2" stroke-linecap="round"/>
+      <path d="M2.5 2.5 l19 19" stroke="#9ca3af" stroke-width="2.5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect width="1200" height="720" class="bg"/>
+  <text x="600" y="60" class="title">贡献衰减与角色休眠机制</text>
+  <text x="600" y="95" class="subtitle">确保社区的治理权始终由当前最活跃、贡献最相关的成员引领</text>
+
+  <!-- Chart Area -->
+  <g transform="translate(100, 150)">
+    <!-- Y Axis -->
+    <line x1="0" y1="0" x2="0" y2="450" class="axis-line"/>
+    <text x="-50" y="225" transform="rotate(-90, -50, 225)" class="axis-label">声誉值 / 影响力</text>
+
+    <!-- X Axis -->
+    <line x1="0" y1="450" x2="1000" y2="450" class="axis-line"/>
+    <text x="500" y="500" class="axis-label">时间</text>
+    <g class="axis-label" font-size="12" text-anchor="middle">
+      <text x="200" y="475">第一年</text>
+      <text x="450" y="475">第二年</text>
+      <text x="700" y="475">第三年</text>
+      <text x="950" y="475">第四年</text>
+    </g>
+
+    <!-- Role Threshold -->
+    <line x1="0" y1="200" x2="1000" y2="200" class="threshold-line"/>
+    <text x="1010" y="205" class="threshold-text">角色阈值</text>
+    <text x="980" y="225" class="threshold-text" font-size="12" fill="#d97706">(如：领域贡献者)</text>
+
+    <!-- Reputation Path -->
+    <!-- Initial state -->
+    <path d="M 0 450 C 50 450, 80 400, 100 350" class="reputation-path-inactive"/>
+    <!-- Contribution 1 -->
+    <path d="M 100 350 L 100 50" class="reputation-path-active" stroke-dasharray="4, 4"/>
+    <!-- Active Period & Decay -->
+    <path d="M 100 50 C 200 80, 300 150, 400 200" class="reputation-path-active"/>
+    <!-- Hibernation Period -->
+    <path d="M 400 200 C 500 250, 600 280, 750 320" class="reputation-path-inactive"/>
+    <!-- Contribution 2 (Reactivation) -->
+    <path d="M 750 320 L 750 100" class="reputation-path-active" stroke-dasharray="4, 4"/>
+    <!-- Active Period 2 & Decay -->
+    <path d="M 750 100 C 850 130, 950 180, 1000 210" class="reputation-path-active"/>
+
+    <!-- Events and Annotations -->
+    <!-- Event 1 -->
+    <g transform="translate(100, 50)">
+      <circle class="event-dot" r="10" fill="#8b5cf6"/>
+      <circle r="6" fill="#fff"/>
+      <line x1="0" y1="10" x2="0" y2="50" stroke="#8b5cf6" stroke-width="2"/>
+      <text class="event-label" y="75" fill="#8b5cf6">贡献事件 #1</text>
+      <text class="event-label" y="95" font-size="12" fill="#6d28d9">发布核心数据集</text>
+    </g>
+    <!-- Event 2 -->
+    <g transform="translate(750, 100)">
+      <circle class="event-dot" r="10" fill="#8b5cf6"/>
+      <circle r="6" fill="#fff"/>
+      <line x1="0" y1="-10" x2="0" y2="-50" stroke="#8b5cf6" stroke-width="2"/>
+      <text class="event-label" y="-75" fill="#8b5cf6">贡献事件 #2</text>
+      <text class="event-label" y="-55" font-size="12" fill="#6d28d9">重构关键模块</text>
+    </g>
+
+    <!-- Status Indicator -->
+    <!-- Active Status -->
+    <g transform="translate(150, 220)">
+      <rect class="status-box" width="200" height="90" fill="#a78bfa"/>
+      <use xlink:href="#icon-active" x="15" y="25" width="40" height="40"/>
+      <text x="70" y="35" class="status-title">活跃状态</text>
+      <text x="70" y="65" class="status-text" font-size="12">拥有完整治理权</text>
+    </g>
+
+    <!-- Inactive Status -->
+    <g transform="translate(450, 250)">
+      <rect class="status-box" width="200" height="90" fill="#b0b8c4"/>
+      <use xlink:href="#icon-inactive" x="15" y="25" width="40" height="40"/>
+      <text x="70" y="35" class="status-title">角色休眠</text>
+      <text x="70" y="65" class="status-text" font-size="12">治理权暂停，荣誉保留</text>
+    </g>
+
+    <!-- Decay Annotation -->
+    <g transform="translate(280, 110)">
+       <path d="M 0 0 Q 30 30 60 0" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+       <text class="event-label" x="30" y="-10" font-size="12" fill="#8b5cf6">贡献“半衰期”自然衰减</text>
+    </g>
+  </g>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="700" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

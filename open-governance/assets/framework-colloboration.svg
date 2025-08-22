@@ -1,0 +1,147 @@
+<svg width="900" height="650" viewBox="0 0 900 650" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial" xmlns="http://www.w3.org/2000/svg">
+  <title>贡献者阶梯与声誉系统的协同关系 · Gitconomy Research</title>
+  <defs>
+    <style>
+      .bg { fill: #f8f9fa; }
+      .title { font-size: 24px; font-weight: 700; text-anchor: middle; fill: #212529; }
+
+      /* 左：阶梯系统 */
+      .ladder-box { fill: #f1f3f5; stroke: #ced4da; stroke-width: 1.5; rx: 8; }
+      .ladder-main { fill: #495057; }
+      .ladder-stroke { stroke: #495057; stroke-width: 2.5; }
+
+      /* 右：声誉系统 */
+      .repu-box { fill: #e6fcf5; stroke: #63e6be; stroke-width: 1.5; rx: 8; }
+      .repu-main { fill: #087f5b; }
+      .repu-stroke { stroke: #087f5b; stroke-width: 2.5; }
+
+      /* 文本与节点 */
+      .system-title { font-size: 16px; font-weight: 700; text-anchor: middle; }
+      .system-subtitle { font-size: 12px; fill: #6c757d; text-anchor: middle; }
+      .system-text { font-size: 14px; text-anchor: middle; fill: #343a40; }
+      .flow-node { fill: #fff; stroke: #adb5bd; stroke-width: 1.5; rx: 6; }
+      .flow-text { font-size: 15px; text-anchor: middle; fill: #343a40; font-weight: 600; }
+
+      /* 连线（正交/直线） */
+      .bus { stroke: #868e96; stroke-width: 2; fill: none; }
+      .flow-arrow { stroke: #868e96; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+
+      /* 协同桥 */
+      .bridge { fill: #fff; stroke: #dee2e6; stroke-width: 1.5; rx: 10; }
+
+      /* 健康机制 */
+      .health-box { fill: #fff9db; stroke: #fcc419; stroke-width: 1.5; rx: 8; }
+      .health-text { font-size: 13px; text-anchor: middle; fill: #e67700; }
+
+      .hint { font-size: 12px; fill: #6c757d; text-anchor: middle; }
+    </style>
+
+    <!-- 阴影（可选） -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.18"/>
+    </filter>
+
+    <!-- 箭头标记 -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#868e96"/>
+    </marker>
+    <marker id="arrow-ladder" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="9" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#495057"/>
+    </marker>
+    <marker id="arrow-repu" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="9" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#087f5b"/>
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg"/>
+  <text x="450" y="42" class="title">贡献者阶梯与声誉系统协同关系</text>
+
+  <!-- 顶部：贡献 -->
+  <g id="input">
+    <rect x="375" y="68" width="150" height="48" class="flow-node" filter="url(#shadow)"/>
+    <text x="450" y="98" class="flow-text">贡献 (Contribution)</text>
+  </g>
+
+  <!-- 水平总线 + 垂直分支 -->
+  <path d="M 450 116 L 450 132" class="bus"/>
+  <path d="M 240 132 L 660 132" class="bus"/>
+  <path d="M 240 132 L 240 156" class="flow-arrow"/>
+  <path d="M 660 132 L 660 156" class="flow-arrow"/>
+
+  <!-- 两套并行系统 -->
+  <g id="systems">
+    <!-- 左：贡献者阶梯 -->
+    <g id="ladder" transform="translate(0,156)">
+      <rect x="50" y="0" width="380" height="160" class="ladder-box"/>
+      <text x="240" y="26" class="system-title ladder-main">贡献者阶梯 (Contributor Ladder)</text>
+      <text x="240" y="46" class="system-subtitle">贡献 → 资本（所有权）</text>
+
+      <rect x="150" y="62" width="180" height="40" class="flow-node"/>
+      <text x="240" y="86" class="system-text">量化与确权</text>
+
+      <path d="M 240 102 L 240 120" class="ladder-stroke" marker-end="url(#arrow-ladder)"/>
+      <text x="240" y="144" class="system-title ladder-main" font-size="18px">份额 / 所有权</text>
+    </g>
+
+    <!-- 右：声誉系统 -->
+    <g id="reputation" transform="translate(0,156)">
+      <rect x="470" y="0" width="380" height="160" class="repu-box"/>
+      <text x="660" y="26" class="system-title repu-main">声誉系统 (Reputation System)</text>
+      <text x="660" y="46" class="system-subtitle">人才 → 能力与信任（影响力）</text>
+
+      <rect x="570" y="62" width="180" height="40" class="flow-node"/>
+      <text x="660" y="86" class="system-text">识别与赋义</text>
+
+      <path d="M 660 102 L 660 120" class="repu-stroke" marker-end="url(#arrow-repu)"/>
+      <text x="660" y="144" class="system-title repu-main" font-size="18px">声誉 / 影响力</text>
+    </g>
+  </g>
+
+  <!-- 协同桥（整体下移 +50，使系统与桥的间距从 14 增至 64） -->
+  <g id="bridge" transform="translate(0, 380)">
+    <rect x="190" y="0" width="520" height="52" class="bridge" filter="url(#shadow)"/>
+    <text x="450" y="22" class="system-title" style="fill:#343a40">协同桥（数据 → 意义｜意义 → 分配）</text>
+    <text x="450" y="40" class="hint">阶梯提供数据/声誉赋予意义；声誉指导决策/阶梯执行分配</text>
+  </g>
+
+  <!-- ★ 系统 → 协同桥：直线连接（垂直直线） -->
+  <!-- 左系统底中心 (240, 316) 直达桥顶 (240, 380) -->
+  <path d="M 240 316 L 240 380" class="flow-arrow"/>
+  <!-- 右系统底中心 (660, 316) 直达桥顶 (660, 380) -->
+  <path d="M 660 316 L 660 380" class="flow-arrow"/>
+
+  <!-- 协同桥 → 反馈环路入口：保持 50 的垂直间距（桥底 432 → 环路顶 482） -->
+  <path d="M 450 432 L 450 482" class="flow-arrow"/>
+
+  <!-- 反馈环路 -->
+  <g id="loop" transform="translate(0, 482)">
+    <rect x="100" y="0" width="150" height="50" class="flow-node"/>
+    <text x="175" y="30" class="flow-text" style="font-weight:600">治理与决策</text>
+
+    <rect x="375" y="0" width="150" height="50" class="flow-node"/>
+    <text x="450" y="30" class="flow-text" style="font-weight:600">更高价值任务</text>
+
+    <rect x="650" y="0" width="150" height="50" class="flow-node"/>
+    <text x="725" y="30" class="flow-text" fill="#087f5b">→ 更多贡献</text>
+
+    <!-- 横向箭头：治理 → 任务 → 更多贡献 -->
+    <path d="M 250 25 L 375 25" class="flow-arrow"/>
+    <path d="M 525 25 L 650 25" class="flow-arrow"/>
+
+    <!-- Elbow Connector：更多贡献(下边框中心) → 治理与决策(下边框中心) -->
+    <!-- 更多贡献底中心：x=725, y=50；治理与决策底中心：x=175, y=50 -->
+    <path d="M 725 50 L 725 80 L 175 80 L 175 50" class="flow-arrow"/>
+  </g>
+
+  <!-- 健康机制 -->
+  <g id="health" transform="translate(265, 540)">
+    <rect x="0" y="0" width="370" height="60" class="health-box"/>
+    <text x="185" y="25" class="health-text" font-weight="700">社区健康性保障 (Health Mechanism)</text>
+    <text x="185" y="48" class="health-text">贡献半衰期 / 角色休眠 → 动态治理与持续活力</text>
+  </g>
+  
+  <!-- 许可与署名 -->
+  <text x="50%" y="630" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

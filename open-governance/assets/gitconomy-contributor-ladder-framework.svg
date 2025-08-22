@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <title>Gitconomy Research 社区贡献者阶梯（矩阵式：晋升级别 × 贡献要素角色光谱）</title>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .title{font:700 28px/1.2 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;fill:#0f172a}
+      .sub{font:14px/1.5 ui-sans-serif,system-ui;fill:#475569}
+      .card{rx:16;ry:16;fill:#fff;filter:url(#shadow)}
+      .label{font:600 15px/1.2 ui-sans-serif,system-ui;fill:#0f172a}
+      .small{font:12px/1.54 ui-sans-serif,system-ui;fill:#334155}
+      .chip{font:700 12px/1 ui-sans-serif;fill:#fff}
+      .chipbg{rx:12;ry:12}
+      .gridcell{rx:10;ry:10;fill:#ffffff;stroke:#e2e8f0}
+      .gridtxt{font:11px/1.4 ui-sans-serif,system-ui;fill:#334155}
+      .rowtitle{font:700 14px/1.2 ui-sans-serif,system-ui;fill:#0f172a}
+    </style>
+    <!-- 列头颜色 -->
+    <linearGradient id="cIdea" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#fbbf24"/></linearGradient>
+    <linearGradient id="cData" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+    <linearGradient id="cMethod" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#14b8a6"/><stop offset="100%" stop-color="#34d399"/></linearGradient>
+    <linearGradient id="cCode" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="cCollab" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#86efac"/></linearGradient>
+    <linearGradient id="cComm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ec4899"/><stop offset="100%" stop-color="#f472b6"/></linearGradient>
+    <!-- 单元裁剪避免越界 -->
+    <clipPath id="clipCell"><rect width="132" height="96" rx="10" ry="10"/></clipPath>
+  </defs>
+
+  <rect width="1200" height="820" fill="#f8fafc"/>
+  <text x="600" y="56" text-anchor="middle" class="title">Gitconomy Research 社区贡献者阶梯</text>
+  <text x="600" y="94" text-anchor="middle" class="sub">矩阵式阶梯：晋升级别 × 贡献要素角色光谱</text>
+
+  <!-- 列头：六类要素（角色光谱） -->
+  <g transform="translate(275,120)">
+    <g transform="translate(0,0)"><rect class="chipbg" width="128" height="28" fill="url(#cIdea)"/><text x="64" y="19" text-anchor="middle" class="chip">思想</text></g>
+    <g transform="translate(140,0)"><rect class="chipbg" width="128" height="28" fill="url(#cData)"/><text x="64" y="19" text-anchor="middle" class="chip">数据</text></g>
+    <g transform="translate(280,0)"><rect class="chipbg" width="128" height="28" fill="url(#cMethod)"/><text x="64" y="19" text-anchor="middle" class="chip">方法</text></g>
+    <g transform="translate(420,0)"><rect class="chipbg" width="128" height="28" fill="url(#cCode)"/><text x="64" y="19" text-anchor="middle" class="chip">代码</text></g>
+    <g transform="translate(560,0)"><rect class="chipbg" width="128" height="28" fill="url(#cCollab)"/><text x="64" y="19" text-anchor="middle" class="chip">协作</text></g>
+    <g transform="translate(700,0)"><rect class="chipbg" width="128" height="28" fill="url(#cComm)"/><text x="64" y="19" text-anchor="middle" class="chip">传播</text></g>
+  </g>
+
+  <!-- 行 1：社区参与者 -->
+  <g transform="translate(40,160)">
+    <rect width="260" height="120" class="card"/>
+    <text x="16" y="76" class="rowtitle">第一阶段：社区参与者</text>
+  </g>
+  <g transform="translate(275,160)">
+    <!-- 6 个单元格（宽 132 高 96，列距 140）-->
+    <g transform="translate(4,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">提问/点赞支持</text><text x="10" y="44" class="gridtxt">阅读路线图/RFC</text><text x="10" y="64" class="gridtxt">参与想法讨论</text></g></g>
+    <g transform="translate(144,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">下载与使用数据集</text><text x="10" y="44" class="gridtxt">反馈明显错误</text><text x="10" y="64" class="gridtxt">询问采集/标注细节</text></g></g>
+    <g transform="translate(284,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">阅读方法/评估协议</text><text x="10" y="44" class="gridtxt">运行基线复现</text><text x="10" y="64" class="gridtxt">就方法求助</text></g></g>
+    <g transform="translate(424,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">克隆并运行示例</text><text x="10" y="44" class="gridtxt">报告 Bug</text><text x="10" y="64" class="gridtxt">补充 Issue 描述</text></g></g>
+    <g transform="translate(564,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">旁听公开会议</text><text x="10" y="44" class="gridtxt">遵守 CoC</text><text x="10" y="64" class="gridtxt">友好互动</text></g></g>
+    <g transform="translate(704,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">阅读博客/教程/报告</text><text x="10" y="44" class="gridtxt">社媒转发更新</text><text x="10" y="64" class="gridtxt">记录并分享实践</text></g></g>
+  </g>
+
+  <!-- 行 2：要素贡献者 -->
+  <g transform="translate(40,300)">
+    <rect width="260" height="120" class="card"/>
+    <text x="16" y="76" class="rowtitle">第二阶段：要素贡献者</text>
+  </g>
+  <g transform="translate(275,300)">
+    <g transform="translate(4,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">对路线图提意见</text><text x="10" y="44" class="gridtxt">参与新想法/RFC反馈</text><text x="10" y="64" class="gridtxt">整理观点</text></g></g>
+    <g transform="translate(144,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">提交高质量标注</text><text x="10" y="44" class="gridtxt">报告深层瑕疵</text><text x="10" y="64" class="gridtxt">修订数据卡</text></g></g>
+    <g transform="translate(284,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">评估协议改进建议</text><text x="10" y="44" class="gridtxt">验证方法并反馈</text><text x="10" y="64" class="gridtxt">撰写方法分析/综述</text></g></g>
+    <g transform="translate(424,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">修复拼写/小 Bug PR</text><text x="10" y="44" class="gridtxt">完善注释/文档</text><text x="10" y="64" class="gridtxt">分类标记 Issue</text></g></g>
+    <g transform="translate(564,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">会议纪要并分享</text><text x="10" y="44" class="gridtxt">认领小任务并跟进</text><text x="10" y="64" class="gridtxt">协助新人环境/使用</text></g></g>
+    <g transform="translate(704,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">写使用心得</text><text x="10" y="44" class="gridtxt">创建案例研究</text><text x="10" y="64" class="gridtxt">翻译文档</text></g></g>
+  </g>
+
+  <!-- 行 3：领域贡献者 -->
+  <g transform="translate(40,440)">
+    <rect width="260" height="120" class="card"/>
+    <text x="16" y="76" class="rowtitle">第三阶段：领域贡献者</text>
+  </g>
+  <g transform="translate(275,440)">
+    <g transform="translate(4,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">起草 Problem Statement/RFC</text><text x="10" y="44" class="gridtxt">主导方向讨论共识</text><text x="10" y="64" class="gridtxt">评审他人提案</text></g></g>
+    <g transform="translate(144,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">设计发布高质量数据集</text><text x="10" y="44" class="gridtxt">数据卡/标注指南</text><text x="10" y="64" class="gridtxt">维护版本处理反馈</text></g></g>
+    <g transform="translate(284,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">完整实验方案</text><text x="10" y="44" class="gridtxt">严谨复现实验</text><text x="10" y="64" class="gridtxt">新指标/工具引入</text></g></g>
+    <g transform="translate(424,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">功能开发/核心重构</text><text x="10" y="44" class="gridtxt">维护 CI 与基准</text><text x="10" y="64" class="gridtxt">深入 Code Review</text></g></g>
+    <g transform="translate(564,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">协调跨域小项目</text><text x="10" y="44" class="gridtxt">依赖/风险识别缓解</text><text x="10" y="64" class="gridtxt">指导 1–2 名贡献者</text></g></g>
+    <g transform="translate(704,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">官方教程/技术博客</text><text x="10" y="44" class="gridtxt">优化文档降 TTFS</text><text x="10" y="64" class="gridtxt">Meetup 分享</text></g></g>
+  </g>
+
+  <!-- 行 4：要素所有者 -->
+  <g transform="translate(40,580)">
+    <rect width="260" height="120" class="card"/>
+    <text x="16" y="76" class="rowtitle">第四阶段：要素所有者</text>
+  </g>
+  <g transform="translate(275,580)">
+    <g transform="translate(4,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">定义中长期路线图</text><text x="10" y="44" class="gridtxt">发起/裁决战略投票</text><text x="10" y="64" class="gridtxt">引导学术品味/价值</text></g></g>
+    <g transform="translate(144,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">数据标准/许可/隐私</text><text x="10" y="44" class="gridtxt">评估外部大数据集</text><text x="10" y="64" class="gridtxt">合规与伦理把控</text></g></g>
+    <g transform="translate(284,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">Benchmark 与复现标准</text><text x="10" y="44" class="gridtxt">关键性实验设计</text><text x="10" y="64" class="gridtxt">仲裁方法/结果争议</text></g></g>
+    <g transform="translate(424,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">核心架构设计与演进</text><text x="10" y="44" class="gridtxt">健康/安全/稳定保障</text><text x="10" y="64" class="gridtxt">API 与版本策略</text></g></g>
+    <g transform="translate(564,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">协作流程与治理优化</text><text x="10" y="44" class="gridtxt">处理冲突/CoC 事件</text><text x="10" y="64" class="gridtxt">培养与提名骨干</text></g></g>
+    <g transform="translate(704,12)"><rect width="132" height="96" class="gridcell"/><g clip-path="url(#clipCell)"><text x="10" y="24" class="gridtxt">顶会/峰会代表演讲</text><text x="10" y="44" class="gridtxt">拓展高校/企业合作</text><text x="10" y="64" class="gridtxt">品牌与影响力规划</text></g></g>
+  </g>
+
+  <!-- 说明条 -->
+  <g transform="translate(40,740)">
+    <rect width="1120" height="90" rx="12" ry="12" fill="#ffffff" filter="url(#shadow)"/>
+    <text x="16" y="28" class="sub">说明：矩阵将“晋升级别”（行）与“贡献要素角色光谱”（列）组合；成员可在不同要素上形成差异化画像，并通过混合式声誉引擎累计声誉→治理/分配。</text>
+  </g>
+
+  <!-- 许可与署名 -->
+  <text x="50%" y="800" text-anchor="middle" font-size="14" fill="#9ca3af">本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>
