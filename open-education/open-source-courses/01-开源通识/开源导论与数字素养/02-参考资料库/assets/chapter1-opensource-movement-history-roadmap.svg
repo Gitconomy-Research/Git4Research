@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 3400 1400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <style>
+    .spine { stroke: #333; stroke-width: 3; }
+    .main-bone { stroke: #333; stroke-width: 2; }
+    .main-title { font-size: 40px; font-weight: bold; fill: #111; text-anchor: middle; }
+    .stage-title { font-size: 22px; font-weight: bold; fill: #005A9C; text-anchor: middle; }
+    .category-title { font-size: 18px; font-weight: bold; fill: #333; }
+    .item-text { font-size: 15px; fill: #444; }
+    .info-block { stroke: #ccc; stroke-width: 1; border-radius: 8px; }
+    .license-text { font-size: 16px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <text x="1700" y="90" class="main-title">开源运动演变路线图</text>
+
+  <line x1="50" y1="700" x2="3350" y2="700" class="spine" marker-end="url(#arrowhead)" />
+
+  <g id="stage1">
+    <rect x="100" y="140" width="420" height="490" rx="8" ry="8" fill="#E8F8F5" class="info-block" />
+    <line x1="310" y1="630" x2="310" y2="700" class="main-bone" />
+    <text x="310" y="180" class="stage-title">
+      <tspan x="310">萌芽期: 黑客文化</tspan>
+      <tspan x="310" dy="1.4em">(1960s-1970s)</tspan>
+    </text>
+    <text x="130" y="260" class="category-title">主要特征:</text>
+    <text x="140" y="290" class="item-text">
+        <tspan x="140" dy="0em">• 坚信“所有信息都应免费”</tspan>
+        <tspan x="140" dy="1.5em">• 崇尚“亲手实践的准则”</tspan>
+        <tspan x="140" dy="1.5em">• 为满足现实需求而非商业利益而共享代码</tspan>
+    </text>
+    <text x="130" y="375" class="category-title">关键人物:</text>
+    <text x="140" y="405" class="item-text">• 理查德·格林布拉特, 比尔·高斯珀等</text>
+    <text x="130" y="435" class="category-title">社区/组织:</text>
+    <text x="140" y="465" class="item-text">• MIT人工智能实验室 (AI Lab)</text>
+  </g>
+
+  <g id="stage2">
+    <rect x="560" y="770" width="420" height="490" rx="8" ry="8" fill="#EBF5FB" class="info-block" />
+    <line x1="770" y1="770" x2="770" y2="700" class="main-bone" />
+    <text x="770" y="810" class="stage-title">
+      <tspan x="770">奠基期: 自由软件运动</tspan>
+      <tspan x="770" dy="1.4em">(1980s)</tspan>
+    </text>
+    <text x="590" y="890" class="category-title">主要特征:</text>
+    <text x="600" y="920" class="item-text">
+        <tspan x="600" dy="0em">• 提出“四大基本自由”，强调用户权利</tspan>
+        <tspan x="600" dy="1.5em">• 开创“Copyleft” (著佐权)法律概念</tspan>
+        <tspan x="600" dy="1.5em">• 基于道德与伦理的社会运动</tspan>
+    </text>
+    <text x="590" y="1010" class="category-title">关键人物:</text>
+    <text x="600" y="1040" class="item-text">• 理查德·斯托曼 (Richard Stallman)</text>
+    <text x="590" y="1070" class="category-title">项目/组织:</text>
+    <text x="600" y="1100" class="item-text">
+        <tspan x="600" dy="0em">• GNU项目 (1983)</tspan>
+        <tspan x="600" dy="1.5em">• 自由软件基金会 (FSF) (1985)</tspan>
+    </text>
+  </g>
+
+  <g id="stage3">
+    <rect x="1020" y="140" width="420" height="490" rx="8" ry="8" fill="#FEF9E7" class="info-block" />
+    <line x1="1230" y1="630" x2="1230" y2="700" class="main-bone" />
+    <text x="1230" y="180" class="stage-title">
+      <tspan x="1230">发展期: Linux诞生与结合</tspan>
+      <tspan x="1230" dy="1.4em">(1990s)</tspan>
+    </text>
+    <text x="1050" y="260" class="category-title">主要特征:</text>
+    <text x="1060" y="290" class="item-text">
+        <tspan x="1060" dy="0em">• GNU系统与Linux内核结合</tspan>
+        <tspan x="1060" dy="1.5em">• 诞生了第一个完整的自由操作系统</tspan>
+    </text>
+    <text x="1050" y="350" class="category-title">关键人物:</text>
+    <text x="1060" y="380" class="item-text">• 林纳斯·托瓦兹 (Linus Torvalds)</text>
+    <text x="1050" y="420" class="category-title">代表项目:</text>
+    <text x="1060" y="450" class="item-text">
+      <tspan x="1060">• Debian, Apache, MySQL, PostgreSQL</tspan>
+    </text>
+  </g>
+
+  <g id="stage4">
+    <rect x="1480" y="770" width="420" height="490" rx="8" ry="8" fill="#F4ECF7" class="info-block" />
+    <line x1="1690" y1="770" x2="1690" y2="700" class="main-bone" />
+    <text x="1690" y="810" class="stage-title">
+      <tspan x="1690">变革期: “开源”概念提出</tspan>
+      <tspan x="1690" dy="1.4em">(1998)</tspan>
+    </text>
+    <text x="1510" y="890" class="category-title">主要特征:</text>
+    <text x="1520" y="920" class="item-text">
+        <tspan x="1520" dy="0em">• 为商业世界量身定制的“营销活动”</tspan>
+        <tspan x="1520" dy="1.5em">• 强调实用和技术优势，而非道德责任</tspan>
+        <tspan x="1520" dy="1.5em">• 发布《开源定义》(OSD)作为标准</tspan>
+    </text>
+    <text x="1510" y="1010" class="category-title">关键人物:</text>
+    <text x="1520" y="1040" class="item-text">
+      <tspan x="1520" dy="0em">• 埃里克·雷蒙 (Eric S. Raymond)</tspan>
+      <tspan x="1520" dy="1.5em">• 布鲁斯·佩伦斯 (Bruce Perens)</tspan>
+    </text>
+    <text x="1510" y="1100" class="category-title">组织:</text>
+    <text x="1520" y="1130" class="item-text">• 开放源代码促进会 (OSI)</text>
+  </g>
+
+  <g id="stage5">
+      <rect x="1940" y="140" width="420" height="490" rx="8" ry="8" fill="#FFF5E1" class="info-block" />
+      <line x1="2150" y1="630" x2="2150" y2="700" class="main-bone" />
+      <text x="2150" y="180" class="stage-title">
+        <tspan x="2150">成熟期: 商业开源的演进</tspan>
+        <tspan x="2150" dy="1.4em">(2000s-现在)</tspan>
+      </text>
+      <text x="1970" y="250" class="category-title">主要特征:</text>
+      <text x="1980" y="275" class="item-text">
+          <tspan x="1980" dy="0em">• 解决“如何从免费产品中盈利”的商业悖论</tspan>
+          <tspan x="1980" dy="1.5em">• 风险投资驱动，开源初创公司兴起</tspan>
+          <tspan x="1980" dy="1.5em">• 大型云服务商成为主要参与者和竞争者</tspan>
+      </text>
+      <text x="1970" y="350" class="category-title">关键组织:</text>
+      <text x="1980" y="375" class="item-text">• Apache基金会, Linux基金会, Eclipse基金会</text>
+      <text x="1970" y="405" class="category-title">商业模式演进:</text>
+      <text x="1980" y="430" class="item-text">
+          <tspan x="1980" dy="0em">1. 订阅与保障模型 (代表: Red Hat)</tspan>
+          <tspan x="1980" dy="1.5em">2. 开源核心模型 (代表: GitLab, MongoDB)</tspan>
+          <tspan x="1980" dy="1.5em">3. 防御浪潮/新许可证 (代表: SSPL, BSL)</tspan>
+      </text>
+      <text x="1970" y="510" class="category-title">代表项目:</text>
+      <text x="1980" y="535" class="item-text">
+          <tspan x="1980" dy="0em">• Hadoop, Kubernetes, MongoDB</tspan>
+          <tspan x="1980" dy="1.5em">• Elasticsearch, GitLab</tspan>
+      </text>
+  </g>
+
+  <g id="stage6">
+    <rect x="2400" y="770" width="420" height="490" rx="8" ry="8" fill="#E8F8F5" class="info-block" />
+    <line x1="2610" y1="770" x2="2610" y2="700" class="main-bone" />
+    <text x="2610" y="810" class="stage-title">
+      <tspan x="2610">开放生态: 开源精神的延伸</tspan>
+      <tspan x="2610" dy="1.4em">(2010-现在)</tspan>
+    </text>
+    <text x="2430" y="890" class="category-title">理念延伸领域:</text>
+    <text x="2440" y="920" class="item-text">
+      <tspan x="2440" dy="0em">• 开源硬件 (OSH): 设计文件开源</tspan>
+      <tspan x="2440" dy="1.5em">   (代表: Arduino)</tspan>
+      <tspan x="2440" dy="2.5em">• 开放教育资源 (OER): 教学材料开源</tspan>
+      <tspan x="2440" dy="1.5em">   (代表: MIT OpenCourseWare)</tspan>
+      <tspan x="2440" dy="2.5em">• 开放科学: 科研流程与数据开放</tspan>
+      <tspan x="2440" dy="1.5em">   (代表: Plan S)</tspan>
+      <tspan x="2440" dy="2.5em">• 数字公共产品 (DPG): 发展领域的开源基建</tspan>
+      <tspan x="2440" dy="1.5em">   (代表: DHIS2)</tspan>
+    </text>
+  </g>
+
+  <g id="stage7">
+    <rect x="2860" y="140" width="420" height="490" rx="8" ry="8" fill="#FDEDEC" class="info-block" />
+    <line x1="3070" y1="630" x2="3070" y2="700" class="main-bone" />
+    <text x="3070" y="180" class="stage-title">
+      <tspan x="3070">新挑战: AI时代的“开放”定义</tspan>
+      <tspan x="3070" dy="1.4em">(当代)</tspan>
+    </text>
+    <text x="2890" y="260" class="category-title">主要特征:</text>
+    <text x="2900" y="290" class="item-text">
+        <tspan x="2900" dy="0em">• “源”的概念扩展至代码、权重和训练数据</tspan>
+        <tspan x="2900" dy="1.5em">• “开放权重”模式引发与真正开源的争论</tspan>
+        <tspan x="2900" dy="1.5em">• 出现“开放洗白” (openwashing) 现象</tspan>
+    </text>
+    <text x="2890" y="375" class="category-title">关键组织:</text>
+    <text x="2900" y="405" class="item-text">• OSI (正在制定开源AI定义)</text>
+    <text x="2890" y="435" class="category-title">项目/案例:</text>
+    <text x="2900" y="465" class="item-text">• Meta Llama模型及其争议许可证</text>
+  </g>
+
+  <text x="1700" y="1350" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

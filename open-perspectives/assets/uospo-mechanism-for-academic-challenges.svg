@@ -1,0 +1,175 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .main-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #111827;
+      }
+      .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        fill: #1E40AF;
+        text-anchor: middle;
+      }
+      .challenge-number {
+        font-size: 16px;
+        font-weight: bold;
+        fill: #7F1D1D;
+        text-anchor: middle;
+      }
+      .challenge-title {
+        font-size: 16px;
+        font-weight: bold;
+        fill: #7F1D1D;
+        text-anchor: middle;
+      }
+      .box-text {
+        font-size: 14px;
+        fill: #1F2937;
+        text-anchor: middle;
+      }
+      .challenge-box {
+        fill: #FEF2F2;
+        stroke: #EF4444;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .solution-box {
+        fill: #F0FDF4;
+        stroke: #16A34A;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .strategy-box {
+        fill: #F9FAFB;
+        stroke: #3B82F6;
+        stroke-width: 1.5;
+        rx: 6;
+        ry: 6;
+      }
+      .arrow {
+        stroke: #4B5563;
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrow-marker);
+      }
+      .dashed-arrow {
+        stroke: #60A5FA;
+        stroke-width: 1.5;
+        stroke-dasharray: 4,3;
+        fill: none;
+        marker-end: url(#arrow-marker);
+      }
+      .credit-text {
+        font-size: 11px;
+        fill: #6B7280;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrow-marker" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <text class="main-title" x="400" y="40">高校OSPO应对学术挑战的机制</text>
+
+  <!-- 中央框 -->
+  <rect x="300" y="70" width="200" height="60" fill="#DBEAFE" stroke="#1E40AF" stroke-width="2.5" rx="10" ry="10"/>
+  <text class="section-title" x="400" y="108">U-OSPO核心使命</text>
+
+  <!-- 三大挑战区块 -->
+  <!-- 挑战1 -->
+  <rect x="50" y="180" width="220" height="80" class="challenge-box"/>
+  <text class="challenge-number" x="160" y="205">挑战1</text>
+  <text class="challenge-title" x="160" y="230">学术声望的价值化</text>
+
+  <!-- 挑战2 -->
+  <rect x="290" y="180" width="220" height="80" class="challenge-box"/>
+  <text class="challenge-number" x="400" y="205">挑战2</text>
+  <text class="challenge-title" x="400" y="230">跨学科与跨机构治理协调</text>
+
+  <!-- 挑战3 -->
+  <rect x="530" y="180" width="220" height="80" class="challenge-box"/>
+  <text class="challenge-number" x="640" y="205">挑战3</text>
+  <text class="challenge-title" x="640" y="230">数据伦理与学习隐私</text>
+
+  <!-- 连接箭头 -->
+  <path d="M 400 130 L 400 150 L 160 150 L 160 180" class="arrow"/>
+  <path d="M 400 130 L 400 180" class="arrow"/>
+  <path d="M 400 130 L 400 150 L 640 150 L 640 180" class="arrow"/>
+
+  <!-- 解决方案区块 -->
+  <!-- 解决方案1 -->
+  <rect x="50" y="300" width="220" height="80" class="solution-box"/>
+  <text class="section-title" x="160" y="340">价值转换机制</text>
+  <path d="M 160 260 L 160 300" class="arrow"/>
+
+  <!-- 解决方案2 -->
+  <rect x="290" y="300" width="220" height="80" class="solution-box"/>
+  <text class="section-title" x="400" y="340">包容性治理结构</text>
+  <path d="M 400 260 L 400 300" class="arrow"/>
+
+  <!-- 解决方案3 -->
+  <rect x="530" y="300" width="220" height="80" class="solution-box"/>
+  <text class="section-title" x="640" y="340">数据伦理审查机制</text>
+  <path d="M 640 260 L 640 300" class="arrow"/>
+
+  <!-- 具体策略 - 价值转换 -->
+  <rect x="50" y="420" width="220" height="200" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="8" ry="8"/>
+
+  <rect x="70" y="450" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="160" y="475">开发开源贡献追踪工具</text>
+
+  <rect x="70" y="515" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="160" y="540">统计OER教材采用数据</text>
+
+  <rect x="70" y="580" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="160" y="605">邀请同行评议开源贡献</text>
+
+  <path d="M 160 380 L 160 420" class="dashed-arrow"/>
+
+  <!-- 具体策略 - 包容性治理 -->
+  <rect x="290" y="420" width="220" height="200" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="8" ry="8"/>
+
+  <rect x="310" y="450" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="400" y="475">多学科代表参与治理</text>
+
+  <rect x="310" y="515" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="400" y="540">关键行政部门联动</text>
+
+  <rect x="310" y="580" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="400" y="605">建立全校公共服务平台</text>
+
+  <path d="M 400 380 L 400 420" class="dashed-arrow"/>
+
+  <!-- 具体策略 - 数据伦理 -->
+  <rect x="530" y="420" width="220" height="200" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1" rx="8" ry="8"/>
+
+  <rect x="550" y="450" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="640" y="475">建立数据脱敏标准流程</text>
+
+  <rect x="550" y="515" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="640" y="540">明确数据使用告知机制</text>
+
+  <rect x="550" y="580" width="180" height="40" class="strategy-box"/>
+  <text class="box-text" x="640" y="605">确保学习数据隐私保护</text>
+
+  <path d="M 640 380 L 640 420" class="dashed-arrow"/>
+
+  <!-- 期望成果 -->
+  <rect x="150" y="640" width="500" height="30" fill="#F0FDF4" stroke="#059669" stroke-width="2" rx="15" ry="15"/>
+  <text class="section-title" x="400" y="662" fill="#059669">成果：平衡学术创新与开放文化的可持续发展模式</text>
+
+  <path d="M 160 620 L 160 640" class="dashed-arrow"/>
+  <path d="M 400 620 L 400 640" class="dashed-arrow"/>
+  <path d="M 640 620 L 640 640" class="dashed-arrow"/>
+
+  <!-- 许可声明 -->
+  <text class="credit-text" x="50%" y="700">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

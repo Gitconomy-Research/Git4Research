@@ -1,0 +1,92 @@
+<svg width="1000" height="1250" viewBox="0 0 1000 1300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <style>
+      .title { font-size: 28px; font-weight: bold; text-anchor: middle; fill: #333; }
+      .label { font-size: 18px; font-weight: bold; fill: #111; }
+      .sub-label { font-size: 14px; fill: #444; }
+      .annotation { font-size: 13px; fill: #555; }
+      .info-strand { stroke: #0077b6; stroke-width: 3; fill: none; }
+      .energy-strand { stroke: #d9534f; stroke-width: 3; fill: none; }
+      .info-node { fill: #0077b6; }
+      .energy-node { fill: #d9534f; }
+      .connector-line { stroke: #aaa; stroke-width: 1; stroke-dasharray: 4 2; }
+      .phase-box { fill: #fffbe6; stroke: #f0ad4e; stroke-width: 2; }
+      .phase-title { font-size: 22px; font-weight: bold; fill: #c9302c; text-anchor: middle; }
+      .phase-text { font-size: 16px; text-anchor: middle; fill: #333; }
+      .arrow-head { fill: #555; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <text x="500" y="50" class="title">能量与信息密度双螺旋：文明跃迁关系图</text>
+
+  <path id="info-path" class="info-strand" d="M 300 1100 C 50 1000, 950 900, 700 800 C 450 700, 50 600, 300 500 C 550 400, 950 300, 700 200" />
+  <path id="energy-path" class="energy-strand" d="M 700 1100 C 950 1000, 50 900, 300 800 C 550 700, 950 600, 700 500 C 450 400, 50 300, 300 200" />
+
+  <g marker-end="url(#arrow)">
+      <path d="M 650 1065 L 350 1015" class="connector-line" />
+      <text x="470" y="1020" class="annotation">能量驱动信息</text>
+      <path d="M 350 845 L 650 795" class="connector-line" />
+      <text x="470" y="800" class="annotation">信息引导能量</text>
+       <path d="M 650 625 L 350 575" class="connector-line" />
+      <text x="470" y="580" class="annotation">能量驱动信息</text>
+      <path d="M 340 340 L 650 280" class="connector-line" />
+      <text x="470" y="290" class="annotation">信息引导能量</text>
+  </g>
+
+  <g>
+    <circle cx="700" cy="1100" r="10" class="energy-node" />
+    <circle cx="300" cy="1100" r="10" class="info-node" />
+    <text x="500" y="1110" class="label" text-anchor="middle">农业帝国</text>
+    <text x="720" y="1105" class="sub-label">能量: 生物质/人力 (低)</text>
+    <text x="80" y="1105" class="sub-label">信息: 书写/文书 (低)</text>
+  </g>
+
+  <g>
+    <circle cx="300" cy="800" r="10" class="energy-node" />
+    <circle cx="700" cy="800" r="10" class="info-node" />
+    <text x="500" y="850" class="label" text-anchor="middle">早期工业时代</text>
+    <text x="80" y="805" class="sub-label">能量: 煤炭/蒸汽机 (中)</text>
+    <text x="720" y="805" class="sub-label">信息: 印刷/机械复制 (中)</text>
+  </g>
+
+  <g>
+    <circle cx="700" cy="500" r="10" class="energy-node" />
+    <circle cx="300" cy="500" r="10" class="info-node" />
+    <text x="500" y="550" class="label" text-anchor="middle">高峰工业/液态烃时代</text>
+    <text x="720" y="505" class="sub-label">能量: 石油/内燃机 (高)</text>
+    <text x="80" y="505" class="sub-label">信息: 广播/模拟信号 (高)</text>
+  </g>
+
+  <g>
+    <circle cx="300" cy="200" r="10" class="energy-node" />
+    <circle cx="700" cy="200" r="10" class="info-node" />
+    <text x="500" y="230" class="label" text-anchor="middle">全球信息时代</text>
+    <text x="80" y="205" class="sub-label">能量: 电力/数字网络 (极高)</text>
+    <text x="720" y="205" class="sub-label">信息: 互联网/数字信息 (极高)</text>
+  </g>
+
+  <g>
+    <rect x="150" y="1150" width="700" height="90" rx="15" class="phase-box" />
+    <text x="500" y="1180" class="phase-title">AI大模型: 信息创造密度的“相变”</text>
+    <text x="500" y="1215" class="phase-text">
+        <tspan font-weight="bold">驱动力变革:</tspan>
+        “人脑 + 工具”模式  &#x279C;  “算法 + 算力”模式
+    </text>
+  </g>
+  <path d="M 500 200 L 500 170 L 500 140" stroke="#c9302c" stroke-width="4" marker-end="url(#arrow)" stroke-dasharray="8 4" />
+   <path d="M 500 1150 L 500 1120" stroke="#f0ad4e" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="500" y="120" text-anchor="middle" font-size="14" fill="#c9302c">当前跃迁点</text>
+
+  <g transform="translate(50, 75)">
+    <rect x="0" y="0" width="200" height="60" fill="#f8f9fa" stroke="#dee2e6" rx="5" />
+    <circle cx="20" cy="20" r="8" class="energy-node" />
+    <text x="35" y="25" class="sub-label">能量密度</text>
+    <circle cx="20" cy="45" r="8" class="info-node" />
+    <text x="35" y="50" class="sub-label">信息密度</text>
+  </g>
+
+  <text x="50%" y="1275" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

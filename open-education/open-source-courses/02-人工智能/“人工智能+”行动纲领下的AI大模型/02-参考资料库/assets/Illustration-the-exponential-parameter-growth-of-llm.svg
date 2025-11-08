@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="520" viewBox="0 0 1000 520">
+  <title>大模型参数增长曲线（对数坐标，单位：B=10^9 参数）</title>
+  <style>
+    .axis { stroke:#334155; stroke-width:1.5; fill:none; }
+    .grid { stroke:#cbd5e1; stroke-width:1; stroke-dasharray:4 4; }
+    .tick { stroke:#94a3b8; stroke-width:1; }
+    .label { font: 12px/1.2 sans-serif; fill:#334155; }
+    .title { font: 16px/1.2 sans-serif; font-weight:700; fill:#0f172a; }
+    .subtitle { font: 12px/1.2 sans-serif; fill:#475569; }
+    .series { fill:none; stroke:#2563eb; stroke-width:2.5; }
+    .dot { fill:#1d4ed8; stroke:#ffffff; stroke-width:1.5; }
+    .note { font: 11px/1.2 sans-serif; fill:#64748b; }
+    .legend { font:12px/1.2 sans-serif; fill:#334155; }
+  </style>
+
+  <!-- Titles -->
+  <text x="500" y="28" class="title" text-anchor="middle">大模型参数增长曲线（2017–2025）</text>
+  <text x="500" y="48" class="subtitle" text-anchor="middle">Y 轴为对数刻度（0.1B → 1T）；仅绘制“参数已公开”的模型</text>
+
+  <!-- Plot area -->
+  <!-- margins: left=100, top=70, right=80, bottom=70; plot width=820, height=360 -->
+  <rect x="100" y="70" width="820" height="360" fill="none" class="axis"/>
+
+  <!-- Y gridlines (log ticks at 0.1B, 1B, 10B, 100B, 1T) -->
+  <!-- y positions computed for log10 scale min=-1 (0.1B), max=3 (1T) over height 360 -->
+  <!-- 1T (10^3 B) -->
+  <line x1="100" y1="70" x2="920" y2="70" class="grid"/>
+  <!-- 100B (10^2 B) -->
+  <line x1="100" y1="160" x2="920" y2="160" class="grid"/>
+  <!-- 10B (10^1 B) -->
+  <line x1="100" y1="250" x2="920" y2="250" class="grid"/>
+  <!-- 1B (10^0 B) -->
+  <line x1="100" y1="340" x2="920" y2="340" class="grid"/>
+  <!-- 0.1B (10^-1 B) -->
+  <line x1="100" y1="430" x2="920" y2="430" class="grid"/>
+
+  <!-- Y-axis labels -->
+  <text x="92" y="74" class="label" text-anchor="end">1T</text>
+  <text x="92" y="164" class="label" text-anchor="end">100B</text>
+  <text x="92" y="254" class="label" text-anchor="end">10B</text>
+  <text x="92" y="344" class="label" text-anchor="end">1B</text>
+  <text x="92" y="434" class="label" text-anchor="end">0.1B</text>
+  <text x="28" y="260" class="label" transform="rotate(-90 28,260)">参数规模（对数）</text>
+
+  <!-- X-axis year ticks (every year) -->
+  <!-- x = 100 + 90*(year-2017) -->
+  <!-- 2017 -->
+  <line x1="100" y1="430" x2="100" y2="436" class="tick"/>
+  <text x="100" y="452" class="label" text-anchor="middle">2017</text>
+  <!-- 2018 -->
+  <line x1="190" y1="430" x2="190" y2="436" class="tick"/>
+  <text x="190" y="452" class="label" text-anchor="middle">2018</text>
+  <!-- 2019 -->
+  <line x1="280" y1="430" x2="280" y2="436" class="tick"/>
+  <text x="280" y="452" class="label" text-anchor="middle">2019</text>
+  <!-- 2020 -->
+  <line x1="370" y1="430" x2="370" y2="436" class="tick"/>
+  <text x="370" y="452" class="label" text-anchor="middle">2020</text>
+  <!-- 2021 -->
+  <line x1="460" y1="430" x2="460" y2="436" class="tick"/>
+  <text x="460" y="452" class="label" text-anchor="middle">2021</text>
+  <!-- 2022 -->
+  <line x1="550" y1="430" x2="550" y2="436" class="tick"/>
+  <text x="550" y="452" class="label" text-anchor="middle">2022</text>
+  <!-- 2023 -->
+  <line x1="640" y1="430" x2="640" y2="436" class="tick"/>
+  <text x="640" y="452" class="label" text-anchor="middle">2023</text>
+  <!-- 2024 -->
+  <line x1="730" y1="430" x2="730" y2="436" class="tick"/>
+  <text x="730" y="452" class="label" text-anchor="middle">2024</text>
+  <!-- 2025 -->
+  <line x1="820" y1="430" x2="820" y2="436" class="tick"/>
+  <text x="820" y="452" class="label" text-anchor="middle">2025</text>
+
+  <!-- Series path (only models with public parameter counts) -->
+  <!-- Points (x,y):
+       Transformer 2017-06 -> (137.5,401.0)
+       BERT-Large 2018-10 -> (257.5,382.2)
+       GPT-2 2019-02 -> (287.5,324.2)
+       GPT-3 2020-06 -> (407.5,138.1)
+       PaLM 2022-04 -> (572.5,94.1)
+       Llama 3.1-405B 2024-07 -> (775.0,105.3)
+       DeepSeek V3 2024-12 -> (812.5,85.7)
+       Kimi K2 2025-07 -> (865.0,70.0)
+  -->
+  <path class="series"
+        d="M137.5,401.0
+           L257.5,382.2
+           L287.5,324.2
+           L407.5,138.1
+           L572.5,94.1
+           L775.0,105.3
+           L812.5,85.7
+           L865.0,70.0"/>
+
+  <!-- Data points -->
+  <!-- Transformer -->
+  <circle cx="137.5" cy="401.0" r="5" class="dot">
+    <title>Transformer (2017-06) ~0.21B</title>
+  </circle>
+  <text x="137.5" y="395" class="label" text-anchor="middle">Transformer ~0.21B</text>
+
+  <!-- BERT-Large -->
+  <circle cx="257.5" cy="382.2" r="5" class="dot">
+    <title>BERT-Large (2018-10) 0.34B</title>
+  </circle>
+  <text x="257.5" y="376" class="label" text-anchor="middle">BERT-Large 0.34B</text>
+
+  <!-- GPT-2 -->
+  <circle cx="287.5" cy="324.2" r="5" class="dot">
+    <title>GPT-2 (2019-02) 1.5B</title>
+  </circle>
+  <text x="287.5" y="318" class="label" text-anchor="middle">GPT-2 1.5B</text>
+
+  <!-- GPT-3 -->
+  <circle cx="407.5" cy="138.1" r="5" class="dot">
+    <title>GPT-3 (2020-06) 175B</title>
+  </circle>
+  <text x="407.5" y="132" class="label" text-anchor="middle">GPT-3 175B</text>
+
+  <!-- PaLM -->
+  <circle cx="572.5" cy="94.1" r="5" class="dot">
+    <title>PaLM (2022-04) 540B</title>
+  </circle>
+  <text x="572.5" y="88" class="label" text-anchor="middle">PaLM 540B</text>
+
+  <!-- Llama 3.1-405B -->
+  <circle cx="775.0" cy="105.3" r="5" class="dot">
+    <title>Llama 3.1-405B (2024-07) 405B</title>
+  </circle>
+  <text x="775.0" y="99" class="label" text-anchor="middle">Llama 3.1-405B 405B</text>
+
+  <!-- DeepSeek V3 -->
+  <circle cx="812.5" cy="85.7" r="5" class="dot">
+    <title>DeepSeek-V3 (2024-12) 671B (MoE)</title>
+  </circle>
+  <text x="812.5" y="79" class="label" text-anchor="middle">DeepSeek-V3 671B (MoE)</text>
+
+  <!-- Kimi K2 -->
+  <circle cx="865.0" cy="70.0" r="5" class="dot">
+    <title>Kimi K2 (2025-07) 1T (MoE, 激活≈32B)</title>
+  </circle>
+  <text x="865.0" y="64" class="label" text-anchor="middle">Kimi K2 1T (MoE)</text>
+
+  <!-- Legend & notes -->
+  <rect x="640" y="475" width="340" height="28" fill="none"/>
+  <text x="100" y="490" class="note">
+    注：GPT-4、Grok 4、GPT-5 等模型的参数规模官方未公开，故未纳入曲线；Y 轴为对数刻度。
+  </text>
+</svg>

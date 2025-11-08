@@ -1,0 +1,169 @@
+<svg width="1200" height="1820" viewBox="0 0 1200 1820" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans SC', sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 32px; font-weight: 900; text-anchor: middle; fill: #1e293b; }
+            .layer-title { font-size: 22px; font-weight: bold; fill: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
+            .topic-title { font-size: 16px; font-weight: bold; fill: #ffffff; }
+            .point-text { font-size: 14px; fill: #ffffff; opacity: 0.9; }
+            .connector { stroke: #94a3b8; stroke-width: 2.5; marker-end: url(#arrowhead); }
+        </style>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8" />
+        </marker>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="4" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.15"/>
+        </filter>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#f1f5f9"/>
+
+    <text x="600" y="60" class="title">开源导论与数字素养知识图谱</text>
+
+    <!-- Layer 1: 核心理念层 -->
+    <g id="layer1" transform="translate(100, 120)" style="filter: url(#shadow);">
+        <rect x="0" y="0" width="1000" height="150" rx="15" fill="#c0392b"/>
+        <text x="40" y="45" class="layer-title">一、核心理念层 (Foundation)</text>
+        <g transform="translate(40, 80)">
+            <text class="topic-title">1.1 开源基础概念:</text>
+            <text x="180" y="0" class="point-text">开源定义, 透明开发, 模式对比</text>
+        </g>
+        <g transform="translate(40, 115)">
+            <text class="topic-title">1.2 开源核心价值观:</text>
+            <text x="180" y="0" class="point-text">自由, 共享, 合作, 透明</text>
+        </g>
+    </g>
+    <path class="connector" d="M 600 270 V 310"/>
+
+    <!-- Layer 2: 法律框架层 -->
+    <g id="layer2" transform="translate(100, 320)" style="filter: url(#shadow);">
+        <rect x="0" y="0" width="1000" height="150" rx="15" fill="#2980b9"/>
+        <text x="40" y="45" class="layer-title">二、法律框架层 (Legal)</text>
+        <g transform="translate(40, 80)">
+            <text class="topic-title">2.1 开源许可证体系:</text>
+            <text x="190" y="0" class="point-text">宽松许可证 (MIT, Apache), Copyleft许可证 (GPL)</text>
+        </g>
+        <g transform="translate(40, 115)">
+            <text class="topic-title">2.2 知识产权与合规:</text>
+            <text x="190" y="0" class="point-text">版权, 专利, 商标, 合规检查</text>
+        </g>
+    </g>
+    <path class="connector" d="M 600 470 V 510"/>
+
+    <!-- Layer 3: 技术工具层 -->
+    <g id="layer3" transform="translate(100, 520)" style="filter: url(#shadow);">
+        <rect x="0" y="0" width="1000" height="180" rx="15" fill="#27ae60"/>
+        <text x="40" y="45" class="layer-title">三、技术工具层 (Technical)</text>
+        <g transform="translate(40, 80)">
+            <text class="topic-title">3.1 版本控制系统 (Git):</text>
+            <text x="210" y="0" class="point-text">核心概念, 分支管理, 基础操作</text>
+        </g>
+        <g transform="translate(40, 115)">
+            <text class="topic-title">3.2 代码托管平台:</text>
+            <text x="210" y="0" class="point-text">GitHub, Gitee, GitLab</text>
+        </g>
+        <g transform="translate(40, 150)">
+            <text class="topic-title">3.3 新兴协作平台:</text>
+            <text x="210" y="0" class="point-text">AI模型托管, 容器化部署</text>
+        </g>
+    </g>
+    <path class="connector" d="M 600 700 V 740"/>
+
+    <!-- Layer 4: 生态系统层 -->
+    <g id="layer4" transform="translate(100, 750)" style="filter: url(#shadow);">
+        <rect x="0" y="0" width="1000" height="180" rx="15" fill="#f39c12"/>
+        <text x="40" y="45" class="layer-title">四、生态系统层 (Ecosystem)</text>
+        <g transform="translate(40, 80)">
+            <text class="topic-title">4.1 全球开源生态:</text>
+            <text x="180" y="0" class="point-text">基金会, 重要项目 (Linux, Python)</text>
+        </g>
+        <g transform="translate(40, 115)">
+            <text class="topic-title">4.2 中国开源生态:</text>
+            <text x="180" y="0" class="point-text">本土基金会, 国产项目 (OpenHarmony), 政策支持</text>
+        </g>
+        <g transform="translate(40, 150)">
+            <text class="topic-title">4.3 AI 开源生态:</text>
+            <text x="180" y="0" class="point-text">机器学习框架, 大模型生态, AIGC工具</text>
+        </g>
+    </g>
+    <path class="connector" d="M 600 930 V 970"/>
+
+    <!-- Layer 5: 参与实践层 -->
+    <g id="layer5" transform="translate(100, 980)" style="filter: url(#shadow);">
+        <rect x="0" y="0" width="1000" height="180" rx="15" fill="#e67e22"/>
+        <text x="40" y="45" class="layer-title">五、参与实践层 (Participation)</text>
+        <g transform="translate(40, 80)">
+            <text class="topic-title">5.1 贡献者成长路径:</text>
+            <text x="190" y="0" class="point-text">新手入门, 进阶贡献, 核心贡献者</text>
+        </g>
+        <g transform="translate(40, 115)">
+            <text class="topic-title">5.2 贡献类型:</text>
+            <text x="190" y="0" class="point-text">代码贡献, 非代码贡献 (文档, 翻译, 测试)</text>
+        </g>
+        <g transform="translate(40, 150)">
+            <text class="topic-title">5.3 实践技能:</text>
+            <text x="190" y="0" class="point-text">技术, 协作, 项目管理</text>
+        </g>
+    </g>
+    <path class="connector" d="M 600 1160 V 1200"/>
+
+    <!-- Layer 6, 7, 8, 9 -->
+    <g transform="translate(0, 1210)">
+        <g id="layer6" transform="translate(100, 0)" style="filter: url(#shadow);">
+            <rect x="0" y="0" width="480" height="250" rx="15" fill="#8e44ad"/>
+            <text x="30" y="40" class="layer-title">六、社会价值层</text>
+            <g transform="translate(30, 75)">
+                <text class="topic-title">技术创新推动</text>
+                <text x="0" y="25" class="point-text">• 创新加速, 标准制定</text>
+                <text x="0" y="65" class="topic-title">教育与人才培养</text>
+                <text x="0" y="90" class="point-text">• 技能提升, 教育资源</text>
+                <text x="0" y="130" class="topic-title">商业价值创造</text>
+                <text x="0" y="155" class="point-text">• 商业模式, 生态发展</text>
+            </g>
+        </g>
+        <g id="layer7" transform="translate(620, 0)" style="filter: url(#shadow);">
+            <rect x="0" y="0" width="480" height="250" rx="15" fill="#16a085"/>
+            <text x="30" y="40" class="layer-title">七、未来趋势层</text>
+             <g transform="translate(30, 75)">
+                <text class="topic-title">技术发展趋势</text>
+                <text x="0" y="25" class="point-text">• 云原生, AI融合</text>
+                <text x="0" y="65" class="topic-title">社区发展趋势</text>
+                <text x="0" y="90" class="point-text">• 全球化协作, 多元化参与</text>
+                <text x="0" y="130" class="topic-title">政策与治理</text>
+                <text x="0" y="155" class="point-text">• 开源治理, 法律完善</text>
+            </g>
+        </g>
+
+        <path class="connector" d="M 340 250 V 290"/>
+        <path class="connector" d="M 860 250 V 290"/>
+
+        <g id="layer8" transform="translate(100, 300)" style="filter: url(#shadow);">
+            <rect x="0" y="0" width="480" height="250" rx="15" fill="#34495e"/>
+            <text x="30" y="40" class="layer-title">八、应用领域层</text>
+             <g transform="translate(30, 75)">
+                <text class="topic-title">传统 IT 领域</text>
+                <text x="0" y="25" class="point-text">• 操作系统, 数据库, Web</text>
+                <text x="0" y="65" class="topic-title">新兴技术领域</text>
+                <text x="0" y="9"   class="point-text">• AI, 区块链, 物联网</text>
+                <text x="0" y="130" class="topic-title">跨行业应用</text>
+                <text x="0" y="155" class="point-text">• 医疗, 金融, 教育</text>
+            </g>
+        </g>
+        <g id="layer9" transform="translate(620, 300)" style="filter: url(#shadow);">
+            <rect x="0" y="0" width="480" height="250" rx="15" fill="#7f8c8d"/>
+            <text x="30" y="40" class="layer-title">九、能力素养层</text>
+             <g transform="translate(30, 75)">
+                <text class="topic-title">数字素养</text>
+                <text x="0" y="25" class="point-text">• 信息检索, 工具使用</text>
+                <text x="0" y="65" class="topic-title">创新思维</text>
+                <text x="0" y="90" class="point-text">• 批判性思考, 问题解决</text>
+                <text x="0" y="130" class="topic-title">全球视野</text>
+                <text x="0" y="155" class="point-text">• 文化敏感性, 国际合作</text>
+            </g>
+        </g>
+    </g>
+
+    <!-- 许可 -->
+    <text x="50%" y="1800" text-anchor="middle" font-size="14" fill="#9ca3af">
+      本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+    </text>
+</svg>

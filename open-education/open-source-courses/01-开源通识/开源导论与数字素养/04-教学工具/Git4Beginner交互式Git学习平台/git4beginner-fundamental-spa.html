@@ -1,0 +1,781 @@
+<!--
+MIT License
+
+Copyright (c) 2025 Gitconomy Research社区
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<!--
+Git4Beginner - 交互式Git学习平台
+版本: 1.0.0
+作者: 野性僧郭晧@Gitconomy
+创建日期: 2025年-11-6
+描述: 专为大一新生打造的零基础Git交互式学习平台（单网页版本），包含教程、实验和测验功能
+许可证: MIT License
+-->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git4Beginner - 交互式Git学习平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; color: #0f172a; }
+        .font-code { font-family: 'JetBrains Mono', monospace; }
+        .bg-main { background-color: #1e3a8a; } .text-main { color: #1e3a8a; }
+        .bg-aux { background-color: #059669; } .text-aux { color: #059669; }
+        .bg-accent { background-color: #ea580c; } .text-accent { color: #ea580c; }
+        .bg-code { background-color: #0f172a; } .text-code { color: #f1f5f9; }
+        .terminal-output { flex: 1; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #475569 #0f172a; }
+        .terminal-output::-webkit-scrollbar { width: 8px; }
+        .terminal-output::-webkit-scrollbar-track { background: #0f172a; }
+        .terminal-output::-webkit-scrollbar-thumb { background-color: #475569; border-radius: 4px; }
+        .terminal-input:focus { outline: none; border: none; }
+        .step-active { border-left-color: #1e3a8a; background-color: #f1f5f9; }
+        .step-completed { border-left-color: #059669; }
+        .step-completed .step-icon { background-color: #059669; color: white; }
+        .tutorial-content h2 { font-size: 1.875rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .tutorial-content h3 { font-size: 1.5rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .tutorial-content p { font-size: 1rem; line-height: 1.75; margin-bottom: 1rem; color: #334155; }
+        .tutorial-content code { font-family: 'JetBrains Mono', monospace; background-color: #e2e8f0; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.9rem; }
+        .tutorial-content pre { background-color: #0f172a; color: #f1f5f9; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem; }
+        .tutorial-content ul, .tutorial-content ol { margin-left: 1.5rem; margin-bottom: 1rem; }
+        .tutorial-content ul { list-style-type: disc; } .tutorial-content ol { list-style-type: decimal; }
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; }
+        .modal-overlay.visible { opacity: 1; visibility: visible; }
+        .modal-content { background-color: white; padding: 2rem; border-radius: 0.75rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); width: 90%; max-width: 48rem; max-height: 90vh; overflow-y: auto; transform: scale(0.95); transition: transform 0.3s; }
+        .modal-overlay.visible .modal-content { transform: scale(1); }
+        .quiz-option { display: block; width: 100%; text-align: left; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 0.5rem; cursor: pointer; transition: all 0.2s; }
+        .quiz-option:hover { background-color: #f1f5f9; }
+        .quiz-option.selected { background-color: #dbeafe; border-color: #1e3a8a; }
+        .quiz-option.correct { background-color: #d1fae5; border-color: #059669; }
+        .quiz-option.incorrect { background-color: #fee2e2; border-color: #dc2626; }
+        .quiz-option.disabled { cursor: not-allowed; opacity: 0.8; }
+        /* (修改) 教程页的表格行hover效果 */
+        .command-lookup { cursor: pointer; transition: background-color 0.2s; }
+        .command-lookup:hover { background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-slate-100">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center"><h1 class="text-2xl font-bold text-main">Git4Beginner</h1></div>
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#" id="nav-home" class="text-gray-700 hover:text-main px-3 py-2 rounded-md text-sm font-medium">首页</a>
+                    <a href="#" id="nav-tutorial" class="text-gray-700 hover:text-main px-3 py-2 rounded-md text-sm font-medium">Git教程</a>
+                    <a href="#" id="nav-lab" class="text-gray-700 hover:text-main px-3 py-2 rounded-md text-sm font-medium">开始实验</a>
+                    <a href="#" id="nav-quiz" class="text-gray-700 hover:text-main px-3 py-2 rounded-md text-sm font-medium">在线测验</a>
+                </div>
+                <div></div> <!-- 占位符，用于右对齐 -->
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ====================================================== -->
+        <!-- 页面 1: 首页 -->
+        <!-- ====================================================== -->
+        <div id="page-home">
+            <section class="bg-main text-white text-center py-20">
+                <div class="max-w-4xl mx-auto px-4">
+                    <h2 id="hero-title" class="text-5xl font-bold mb-4 opacity-0">欢迎来到 Git4Beginner</h2>
+                    <p class="text-xl mb-8 opacity-0" id="hero-subtitle">零基础Git交互式学习平台。</p>
+                    <button id="start-learning-btn" class="bg-aux text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-green-800 transition duration-300 transform hover:scale-105">立即开始第一个实验</button>
+                </div>
+            </section>
+            <section class="py-16 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h3 class="text-3xl font-bold text-center mb-12">平台核心功能</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"><h4 class="text-2xl font-bold mb-3 text-main">交互式实验</h4><p class="text-gray-600">浏览器内安全练习 `git init` 等核心命令。</p></div>
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"><h4 class="text-2xl font-bold mb-3 text-aux">可视化进度</h4><p class="text-gray-600">实时反馈你的Git技能掌握程度。</p></div>
+                        <div class="bg-slate-50 p-8 rounded-xl shadow-lg transform hover:scale-105 transition duration-300"><h4 class="text-2xl font-bold mb-3 text-accent">游戏化成就</h4><p class="text-gray-600">完成挑战，解锁成就徽章。</p></div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-16 bg-slate-100">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid md:grid-cols-2 gap-12 items-start">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-6">你的渐进式学习路径</h3>
+                            <ol id="learning-path-list" class="space-y-3">
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">1</span><span><b>实验 1:</b> 创世纪 (init & config)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">2</span><span><b>实验 2:</b> 第一次提交 (add & commit)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">3</span><span><b>实验 3:</b> 检查状态 (status & log)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">4</span><span><b>实验 4:</b> 时间旅行 (checkout & reset)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">5</span><span><b>实验 5:</b> 平行宇宙 (branch & merge)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">6</span><span><b>实验 6:</b> 连接远程 (remote, push, pull)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">7</span><span><b>实验 7:</b> 团队协作 (fetch & rebase)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">8</span><span><b>实验 8:</b> 解决冲突 (Conflict Resolution)</span></li>
+                                <li class="flex items-center p-4 bg-white rounded-lg shadow opacity-70"><span class="path-icon flex items-center justify-center w-8 h-8 rounded-full bg-slate-400 text-white font-bold mr-4">9</span><span><b>实验 9:</b> 开源协作 (Fork & PR)</span></li>
+                            </ol>
+                        </div>
+                        <div class="sticky top-24"><h3 class="text-3xl font-bold mb-6 text-center">你的技能雷达图</h3><div id="skills-radar-chart" class="w-full h-96 bg-white rounded-xl shadow-lg p-4"></div></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 底部许可信息 -->
+        <footer class="bg-slate-800 text-white py-4 text-center">
+          <div class="max-w-7xl mx-auto px-4">
+            <p class="text-sm">本网站采用MIT协议，© 2025 Gitconomy Research社区。</p>
+          </div>
+        </footer>
+
+        <!-- ====================================================== -->
+        <!-- 页面 2: 教程页面 -->
+        <!-- ====================================================== -->
+        <div id="page-tutorial" class="hidden">
+            <div class="max-w-4xl mx-auto p-8 my-12 bg-white rounded-xl shadow-lg">
+                <div class="tutorial-content">
+                    <h1 class="text-4xl font-bold text-main mb-6">Git与代码托管平台入门教程</h1>
+
+                    <p>欢迎来到Git教程！本教程旨在帮助零基础的同学快速理解什么是Git，为什么我们使用它，以及它如何与代码托管平台（如 GitHub）协同工作。</p>
+
+                    <h2>1. 什么是版本控制？</h2>
+                    <p>想象一下你正在写一篇论文。你写了第一版，保存为 <code>paper_v1.doc</code>。然后你修改了它，保存为 <code>paper_v2.doc</code>。过了几天，你又改了，保存为 <code>paper_final.doc</code>... 然后是 <code>paper_final_REALLY_final.doc</code>。</p>
+                    <p>这个过程非常混乱且容易出错。版本控制系统（Version Control System, VCS）就是用来解决这个问题的。它会帮你记录你对文件所做的每一次修改，这样你就可以：</p>
+                    <ul>
+                        <li>查看历史记录</li>
+                        <li>回溯到任何一个旧版本</li>
+                        <li>比较不同版本之间的差异</li>
+                        <li>与他人协同工作而不会互相覆盖</li>
+                    </ul>
+
+                    <h2>2. 什么是Git？</h2>
+                    <p>Git是目前世界上最先进、最流行的<strong>分布式版本控制系统</strong>。简单来说，它是一个能帮你管理代码（或任何文件）历史版本的强大工具。</p>
+                    <p>与旧的集中式系统不同，Git是“分布式”的。这意味着每个开发者（包括你！）的电脑上都有一个完整的代码仓库，包含所有的历史记录。这使得离线工作和分支管理变得极其高效。</p>
+
+                    <h2>3. Git 的核心概念与工作流程</h2>
+                    <p>理解Git，你首先需要知道三个“区域”：</p>
+                    <ol class="list-decimal ml-6 mb-4">
+                        <li><strong>工作区 (Working Directory):</strong> 你在电脑上实际看到和编辑的文件。</li>
+                        <li><strong>暂存区 (Staging Area):</strong> 一个“准备提交”的区域。你把确认无误的修改“添加”到这里。</li>
+                        <li><strong>本地仓库 (Local Repository):</strong> 你的个人数据库，存储了所有的提交历史（快照）。</li>
+                    </ol>
+
+                    <h3>基本工作流程:</h3>
+                    <p>你日常使用Git的流程通常是这样的：</p>
+                    <ol class="list-decimal ml-6 mb-4">
+                        <li>在<strong>工作区</strong>修改文件。</li>
+                        <li>使用 <code>git add</code> 命令，将修改添加到<strong>暂存区</strong>。</li>
+                        <li>使用 <code>git commit</code> 命令，将暂存区的内容“提交”到<strong>本地仓库</strong>，形成一个永久的快照。</li>
+                    </ol>
+                    <p>这就是“实验 2: 第一次提交”中练习的核心流程！</p>
+
+                    <h2>4. Git 核心命令速查表</h2>
+                    <p>我们将核心命令整理为速查表，方便你随时查阅。这些命令你都将在实验中亲手练习。<b>(点击任意行查看详情)</b></p>
+                    <div class="overflow-x-auto bg-white rounded-lg shadow-md my-6">
+                        <table class="w-full min-w-max text-left border-collapse">
+                            <thead class="bg-slate-100 border-b border-slate-300">
+                                <tr>
+                                    <th class="py-3 px-4 font-bold text-slate-700">命令 (Command)</th>
+                                    <th class="py-3 px-4 font-bold text-slate-700">功能 (Function)</th>
+                                    <th class="py-3 px-4 font-bold text-slate-700">相关实验</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200" id="command-table-body">
+                                <!-- (修改) 添加 data-command 和 command-lookup 类 -->
+                                <tr class="command-lookup" data-command="git init">
+                                    <td class="py-3 px-4 font-code">git init</td>
+                                    <td class="py-3 px-4">初始化一个新的本地 Git 仓库</td>
+                                    <td class="py-3 px-4">实验 1</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git config">
+                                    <td class="py-3 px-4 font-code">git config --global ...</td>
+                                    <td class="py-3 px-4">配置全局用户名和邮箱</td>
+                                    <td class="py-3 px-4">实验 1</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git status">
+                                    <td class="py-3 px-4 font-code">git status</td>
+                                    <td class="py-3 px-4">检查工作区和暂存区的状态</td>
+                                    <td class="py-3 px-4">实验 2, 3</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git add">
+                                    <td class="py-3 px-4 font-code">git add &lt;file&gt;</td>
+                                    <td class="py-3 px-4">将文件更改添加到暂存区</td>
+                                    <td class="py-3 px-4">实验 2</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git commit">
+                                    <td class="py-3 px-4 font-code">git commit -m "..."</td>
+                                    <td class="py-3 px-4">将暂存区的更改提交到本地仓库</td>
+                                    <td class="py-3 px-4">实验 2</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git log">
+                                    <td class="py-3 px-4 font-code">git log</td>
+                                    <td class="py-3 px-4">查看提交历史记录</td>
+                                    <td class="py-3 px-4">实验 3</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git branch">
+                                    <td class="py-3 px-4 font-code">git branch &lt;name&gt;</td>
+                                    <td class="py-3 px-4">创建新分支</td>
+                                    <td class="py-3 px-4">实验 5</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git checkout">
+                                    <td class="py-3 px-4 font-code">git checkout &lt;name&gt;</td>
+                                    <td class="py-3 px-4">切换到指定分支或提交</td>
+                                    <td class="py-3 px-4">实验 4, 5</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git merge">
+                                    <td class="py-3 px-4 font-code">git merge &lt;name&gt;</td>
+                                    <td class="py-3 px-4">将指定分支合并到当前分支</td>
+                                    <td class="py-3 px-4">实验 5</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git remote">
+                                    <td class="py-3 px-4 font-code">git remote add ...</td>
+                                    <td class="py-3 px-4">添加一个远程仓库</td>
+                                    <td class="py-3 px-4">实验 6</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git push">
+                                    <td class="py-3 px-4 font-code">git push</td>
+                                    <td class="py-3 px-4">将本地提交推送到远程仓库</td>
+                                    <td class="py-3 px-4">实验 6</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git pull">
+                                    <td class="py-3 px-4 font-code">git pull</td>
+                                    <td class="py-3 px-4">从远程仓库拉取最新更改</td>
+                                    <td class="py-3 px-4">实验 6</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git fetch">
+                                    <td class="py-3 px-4 font-code">git fetch</td>
+                                    <td class="py-3 px-4">从远程下载更改，但不合并</td>
+                                    <td class="py-3 px-4">实验 7</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="git rebase">
+                                    <td class="py-3 px-4 font-code">git rebase</td>
+                                    <td class="py-3 px-4">将提交“变基”到另一分支顶部</td>
+                                    <td class="py-3 px-4">实验 7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mt-6 mb-2">协作工作流 (Collaboration Workflows)</h3>
+                    <p>以下操作通常在 GitHub 或 GitLab 等代码托管平台上进行，但它们是协作的核心。</p>
+                    <div class="overflow-x-auto bg-white rounded-lg shadow-md my-6">
+                        <table class="w-full min-w-max text-left border-collapse">
+                            <thead class="bg-slate-100 border-b border-slate-300">
+                                <tr>
+                                    <th class="py-3 px-4 font-bold text-slate-700">工作流 (Workflow)</th>
+                                    <th class="py-3 px-4 font-bold text-slate-700">功能 (Function)</th>
+                                    <th class="py-3 px-4 font-bold text-slate-700">相关实验</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr class="command-lookup" data-command="fork">
+                                    <td class="py-3 px-4 font-code">Fork (分叉)</td>
+                                    <td class="py-3 px-4">在自己账户下复制一份项目</td>
+                                    <td class="py-3 px-4">实验 9</td>
+                                </tr>
+                                <tr class="command-lookup" data-command="pull request">
+                                    <td class="py-3 px-4 font-code">Pull Request (PR)</td>
+                                    <td class="py-3 px-4">请求原项目合并你的更改</td>
+                                    <td class="py-3 px-4">实验 9</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <h2>5. 核心知识点（对应9大实验）</h2>
+                    <p>本教程的知识点与实验紧密相连。你可以在这里预习，或在实验后复习。</p>
+
+                    <h3>实验 1: 创世纪 (init & config)</h3>
+                    <p>这是你 Git 旅程的起点。<code>git init</code> 会在你的项目文件夹中创建一个隐藏的 <code>.git</code> 目录。这个目录就是你的“本地仓库”，它包含了 Git 用来跟踪版本所需的所有信息。</p>
+                    <p><code>git config</code> 则是设置你的身份。每次你提交代码时，Git 都会记录下是谁（<code>user.name</code>）和联系方式（<code>user.email</code>）做的这次提交。设置成 <code>--global</code> 意味着它会应用到你电脑上的所有项目中。</p>
+
+                    <h3>实验 2 & 3: 提交与检查 (add, commit, status, log)</h3>
+                    <p>这是 Git 最核心的工作流。<code>git status</code> 是你的仪表盘，它告诉你当前哪些文件被修改了（工作区），哪些文件准备好了被提交（暂存区）。</p>
+                    <p><code>git add .</code> 将你所有的修改从工作区“快照”到暂存区。<code>git commit -m "message"</code> 则将暂存区里的所有内容打包，创建一个永久的“提交记录”到本地仓库。这个 "message" 至关重要，它简明扼要地描述了你这次提交做了什么。</p>
+                    <p><code>git log</code> 允许你查看所有的提交历史，就像查看你项目的历史账本一样。</p>
+
+                    <h3>实验 4: 时间旅行 (checkout & reset)</h3>
+                    <p>Git 最强大的功能之一就是“后悔药”。</p>
+                    <ul>
+                        <li><strong><code>git checkout &lt;commit-hash&gt;</code></strong>: 让你能“穿越”回任意一次提交，查看当时项目的状态（只读）。</li>
+                        <li><strong><code>git reset &lt;commit-hash&gt;</code></strong>: (需谨慎！) 彻底地回溯到某个版本，抛弃这之后的所有修改。这是真正的“重置”。</li>
+                    </ul>
+
+                    <h3>实验 5: 平行宇宙 (branch & merge)</h3>
+                    <p>分支（Branch）是 Git 的“杀手级”功能。想象一下，你要开发一个新功能，但又不想影响主线代码（通常是 <code>master</code> 或 <code>main</code> 分支）。</p>
+                    <p>你可以使用 <code>git branch feature-x</code> 创建一个名为 "feature-x" 的新分支。这个分支是当前代码的一个完整副本。你可以在这个“平行宇宙”里随心所欲地修改、提交，而主分支不受任何影响。</p>
+                    <p>当你完成了新功能，就可以使用 <code>git merge feature-x</code> 将这个分支的修改“合并”回主分支。</p>
+
+                    <h3>实验 6: 连接远程 (remote, push, pull)</h3>
+                    <p>这就是代码托管平台（如 GitHub）发挥作用的地方。你的本地仓库只存在于你的电脑上。远程仓库（Remote）是托管在云端的“中央服务器”。</p>
+                    <ul>
+                        <li><strong><code>git remote add origin &lt;url&gt;</code></strong>: 告诉你的本地仓库，远程仓库的地址在哪里（通常命名为 <code>origin</code>）。</li>
+                        <li><strong><code>git push</code></strong>: 将你本地的提交“推送”到远程仓库，与他人分享。</li>
+                        <li><strong><code>git pull</code></strong>: 从远程仓库“拉取”别人推送的最新更改，与你本地代码合并。</li>
+                    </ul>
+
+                    <h3>实验 7: 团队协作 (fetch & rebase)</h3>
+                    <p><code>git pull</code> 实际上是两个命令的组合：<code>git fetch</code> 和 <code>git merge</code>。</p>
+                    <ul>
+                        <li><strong><code>git fetch</code></strong>: 只是“下载”远程的最新更改，但*不*合并。它让你先看看别人做了什么。</li>
+                        <li><strong><code>git rebase</code></strong>: 这是 <code>merge</code> 的一种替代方案。它会把你本地的提交“拎起来”，放到远程最新提交的“顶部”，使提交历史看起来像一条直线，非常整洁。</li>
+                    </ul>
+
+                    <h3>实验 8: 解决冲突 (Conflict Resolution)</h3>
+                    <p>当两个（或更多）人同时修改了*同一个文件*的*同一行*代码时，Git 无法自动合并。这时就会发生“合并冲突”(Merge Conflict)。</p>
+                    <p>Git 会停止合并，并在冲突文件中标记出问题区域。你需要手动打开这个文件，决定保留哪部分代码（或者都保留，或者都删除），然后再次 <code>git add</code> 和 <code>git commit</code> 来告诉 Git：“我已经解决了这个冲突”。</p>
+
+                    <!-- Fork 和 PR 的内容 -->
+                    <h3>实验 9: 开源协作 (Fork & Pull Request)</h3>
+                    <p>当你想要为一个你“不拥有”的开源项目（例如 GitHub 上的项目）做贡献时，你就需要用到 Fork 和 Pull Request (PR) 工作流。</p>
+
+                    <h4>什么是 Fork？</h4>
+                    <p><strong>Fork（分叉）</strong> 是一个 GitHub（或类似平台）上的操作。它会在你自己的账户下完整地“复制”一份别人的项目。这份副本完全归你所有，你可以随意修改它，而不会影响原项目。</p>
+
+                    <h4>什么是 Pull Request (PR)？</h4>
+                    <p><strong>Pull Request (PR)</strong>，即“拉取请求”，是协作的核心。当你 Fork 了项目并做出了有价值的修改后，你可以向“原项目”发起一个 PR。</p>
+                    <p>这个 PR 就像在说：“你好，原项目作者！我在我的副本里做了一些改进（比如修复了一个 Bug），你是否愿意‘拉取’(pull) 我的这些更改，并把它们合并到你的主项目中？”</p>
+                    <p>原项目的维护者会收到通知，他们可以审查你的代码（Code Review），提出修改意见，如果一切OK，他们就会点击“合并”，你的贡献就正式成为原项目的一部分了！</p>
+                    <p><b>标准流程:</b></p>
+                    <ol>
+                        <li>在 GitHub 上 <b>Fork</b> 目标项目。</li>
+                        <li><b>Clone</b> 你自己 Fork 后的项目到本地：<code>git clone &lt;your-fork-url&gt;</code></li>
+                        <li>创建新分支：<code>git checkout -b my-fix</code></li>
+                        <li>修改代码、<code>git add</code>、<code>git commit</code>。</li>
+                        <li>推送到你的 Fork 仓库：<code>git push origin my-fix</code></li>
+                        <li>最后，访问 GitHub，平台会自动检测到你的新分支，并提示你 <b>"Create a Pull Request"</b>。</li>
+                    </ol>
+
+                    <!-- ====================================================== -->
+                    <!-- 最佳实践 -->
+                    <!-- ====================================================== -->
+                    <h2>6. Git 最佳实践指南</h2>
+
+                    <p>掌握了命令之后，如何“优雅”地使用 Git 同样重要。良好的 Git 习惯是高效团队协作的基石。</p>
+
+                    <h3>Commit Small, Commit Often (少量多次提交)</h3>
+                    <p>不要等到开发完一个巨大功能再提交。应该将功能拆分为小的、逻辑相关的步骤，每完成一步就进行一次提交。这样做的好处是：</p>
+                    <ul>
+                        <li>更容易写出清晰的提交信息。</li>
+                        <li>如果出现 Bug，能更快地定位到问题所在（<code>git bisect</code>）。</li>
+                        <li>更容易进行代码审查（Code Review）。</li>
+                    </ul>
+
+                    <h3>Write Good Commit Messages (编写规范的提交信息)</h3>
+                    <p>一个糟糕的提交信息（如 <code>"fix bug"</code> 或 <code>"update"</code>）是无用的。一个好的提交信息应该遵循一定格式，例如：</p>
+                    <pre>feat: Add user login functionality
+
+- Implement email/password validation on the server.
+- Create login form component on the client.
+- Add JWT authentication middleware.</pre>
+                    <ul>
+                        <li><strong>标题 (Subject):</strong> 简明扼要，使用祈使句（如 "Add" 而不是 "Added"）。通常以类型开头（如 <code>feat:</code>, <code>fix:</code>, <code>docs:</code>）。</li>
+                        <li><strong>正文 (Body):</strong> (可选) 详细解释“为什么”要这样改，而不是“怎么”改。</li>
+                    </ul>
+
+                    <h3>Pull Often, Especially Before Pushing (经常拉取，推送前必拉取)</h3>
+                    <p>在开始新工作或推送你的更改之前，养成 <code>git pull</code>（或 <code>git fetch</code> + <code>git rebase</code>）的习惯。这能确保你的本地分支基于最新的远程代码，最大限度地减少合并冲突。</p>
+
+                    <h3>Never Push Broken Code (绝不推送未完成或损坏的代码)</h3>
+                    <p>推送到共享分支（如 <code>master</code> 或 <code>development</code>）的代码应该是可以运行的。在推送前，至少要在本地完整测试你的更改。破坏主分支会阻碍团队所有人的工作。</p>
+
+                    <h3>Use Branches for Everything (为所有功能使用分支)</h3>
+                    <p>永远不要直接在 <code>master</code> 分支上开发！<code>master</code> 分支应该始终保持稳定且可部署。任何新功能、Bug 修复，哪怕只是一行代码的修改，都应该在一个新的特性分支（Feature Branch）上进行，完成后再通过 Pull Request 合并。</p>
+
+                    <!-- ====================================================== -->
+                    <!-- (新增) FAQ -->
+                    <!-- ====================================================== -->
+                    <h2>7. 常见问题 (FAQ)</h2>
+
+                    <h3>Q1: `git add .` 和 `git add -A` 有什么区别?</h3>
+                    <p>在现代 Git 版本中，它们基本相同，都会暂存所有“新文件”、“修改的文件”和“删除的文件”。在旧版本中，<code>git add .</code> 可能不包括被删除的文件。</p>
+
+                    <h3>Q2: 我刚刚的 commit 提交错了，如何撤销？</h3>
+                    <p>如果你只是想修改最后一次提交的信息（还没 <code>push</code>），使用：</p>
+                    <pre>$ git commit --amend -m "New, correct commit message"</pre>
+                    <p>如果你想彻底撤销最后一次提交（还没 <code>push</code>），让更改退回暂存区：</p>
+                    <pre>$ git reset --soft HEAD~1</pre>
+                    <p>如果你想彻底撤销最后一次提交，并且丢弃所有更改（危险操作！）：</p>
+                    <pre>$ git reset --hard HEAD~1</pre>
+
+                    <h3>Q3: 什么是 `.gitignore` 文件？</h3>
+                    <p><code>.gitignore</code> 是一个纯文本文件，你可以在里面列出不希望 Git 跟踪的文件或目录。Git 会自动忽略这些文件，它们不会出现在 <code>git status</code> 中，也不会被 <code>git add .</code> 添加。</p>
+                    <p><strong>常见忽略内容：</strong></p>
+                    <ul>
+                        <li>依赖包（如 <code>node_modules/</code>）</li>
+                        <li>编译产生的文件（如 <code>.class</code>, <code>.exe</code>）</li>
+                        <li>操作系统文件（如 <code>.DS_Store</code>, <code>Thumbs.db</code>）</li>
+                        <li>敏感信息（如 <code>.env</code>, <code>config.log</code>）</li>
+                    </ul>
+
+                    <h3>Q4: 我应该用 `merge` 还是 `rebase`?</h3>
+                    <p>这是一个“圣战”话题，但通常的建议是：</p>
+                    <ul>
+                        <li><strong>Merge:</strong> 默认选项。它会保留分支的完整历史，产生一个“合并提交” (Merge Commit)。历史更“真实”，但可能更杂乱。</li>
+                        <li><strong>Rebase:</strong> 高级选项。它会重写你的提交历史，使其呈一条直线。历史非常“干净”，易于阅读。</li>
+                    </ul>
+                    <p><strong>黄金法则：</strong> 永远不要对一个已经推送到远程、并且团队其他人可能正在使用的公共分支（如 <code>master</code>）进行 <code>rebase</code>。</p>
+
+
+                    <p class="mt-8 text-center font-bold text-main text-lg">
+                        理论知识已经足够了！马上去“开始实验”板块巩固它们吧！
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- 页面 3: 实验页面 -->
+        <!-- ====================================================== -->
+        <div id="page-lab" class="hidden">
+            <div class="flex flex-col md:flex-row" style="height: calc(100vh - 64px);">
+                <!-- 侧边栏: 任务步骤 -->
+                <aside class="w-full md:w-1/4 bg-white p-6 flex flex-col shadow-lg z-10">
+                    <div class="grid grid-cols-2 gap-3 mb-6 flex-shrink-0">
+                        <button id="btn-prev-lab" class="bg-slate-200 text-slate-700 px-4 py-2 rounded hover:bg-slate-300 transition font-medium disabled:opacity-50">← 上一个</button>
+                        <button id="btn-next-lab" class="bg-main text-white px-4 py-2 rounded hover:bg-blue-800 transition font-medium disabled:opacity-50">下一个 →</button>
+                        <button id="btn-reset-lab" class="col-span-2 bg-red-50 text-red-600 border border-red-200 px-4 py-2 rounded hover:bg-red-100 transition font-medium text-sm">↻ 重置当前实验</button>
+                    </div>
+                    <h2 id="lab-title" class="text-2xl font-bold mb-2 flex-shrink-0">...</h2>
+                    <div class="w-full bg-slate-200 rounded-full h-2.5 mb-4 flex-shrink-0"><div id="lab-progress-bar" class="bg-aux h-2.5 rounded-full" style="width: 0%"></div></div>
+                    <div id="lab-steps-container" class="space-y-4 overflow-y-auto flex-1 pr-2">
+                        <!-- 步骤将由JS动态加载 -->
+                    </div>
+                </aside>
+                <!-- 主区域: 终端 -->
+                <main class="flex-1 flex flex-col bg-code text-code font-code min-h-[50vh] md:min-h-0">
+                    <div class="flex-1 p-4 terminal-output" id="terminal-output">
+                        <p>欢迎来到 Git4Beginner 模拟终端。</p>
+                    </div>
+                    <div class="flex items-center p-3 bg-slate-800 flex-shrink-0">
+                        <span class="text-aux mr-2">git@lab:~$</span>
+                        <input type="text" id="terminal-input" class="flex-1 bg-transparent border-none text-code font-code terminal-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </main>
+                <!-- 侧边栏: 提示 -->
+                <aside class="w-full md:w-1/4 bg-slate-50 p-6 overflow-y-auto shadow-inner hidden md:block">
+                    <h3 class="text-xl font-bold mb-4">概念与提示</h3>
+                    <div id="lab-hint-container" class="space-y-4 text-gray-700"><p>...</p></div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- 页面 4: 测验页面 -->
+        <!-- ====================================================== -->
+        <div id="page-quiz" class="hidden">
+            <div class="max-w-3xl mx-auto p-8 my-12 bg-white rounded-xl shadow-lg">
+                <div id="quiz-container">
+                    <div id="quiz-header" class="mb-6 flex justify-between items-start">
+                        <div>
+                            <p class="text-lg text-slate-700">第 <span id="question-number">1</span> / 20 题</p>
+                            <h2 id="question-text" class="text-2xl font-bold mt-2">...</h2>
+                        </div>
+                        <button id="quiz-reset-active-btn" class="text-slate-500 hover:text-main px-3 py-1 text-sm border border-slate-300 rounded transition ml-4 flex-shrink-0">
+                            ↻ 重新开始
+                        </button>
+                    </div>
+                    <div id="quiz-options" class="space-y-4"></div>
+                    <div id="quiz-feedback" class="mt-6 hidden p-4 rounded-md"></div>
+                    <div class="mt-8 flex justify-between">
+                        <button id="quiz-submit-btn" class="bg-main text-white px-6 py-2 rounded-lg disabled:opacity-50" disabled>提交</button>
+                        <button id="quiz-next-btn" class="bg-aux text-white px-6 py-2 rounded-lg hidden">下一题</button>
+                    </div>
+                </div>
+                <div id="quiz-results" class="hidden text-center">
+                    <h2 class="text-3xl font-bold text-main mb-4">测验完成！</h2>
+                    <p class="text-xl text-slate-700">得分：<span id="quiz-score" class="font-bold">0</span> / 20</p>
+                    <button id="quiz-restart-btn" class="mt-8 bg-main text-white px-8 py-3 rounded-lg">重新测验</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- 全局组件: 成就 & 弹窗 -->
+        <!-- ====================================================== -->
+        <div id="achievement-toast" class="hidden fixed bottom-10 right-10 bg-aux text-white p-6 rounded-xl shadow-2xl z-50 flex items-center transform translate-x-full transition-transform duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            <div><h4 class="text-xl font-bold">成就解锁！</h4><p id="achievement-text">完成任务！</p></div>
+        </div>
+
+        <div id="command-modal-overlay" class="modal-overlay">
+            <div class="modal-content tutorial-content">
+                <div class="flex justify-between items-center mb-4"><h2 id="modal-title" class="text-main m-0 p-0 border-none">...</h2><button id="modal-close-btn" classs="text-4xl font-light leading-none p-2 -mr-2 -mt-4 hover:text-red-500 transition-colors">&times;</button></div>
+                <p id="modal-description" class="text-lg text-slate-600 mb-4">...</p>
+                <h3 class="mt-6">语法</h3><pre id="modal-syntax" class="font-code"></pre>
+                <h3 class="mt-6">详情</h3><div id="modal-details" class="space-y-4"></div>
+                <h3 class="mt-6">示例</h3><pre id="modal-example" class="font-code"></pre>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- 页面和元素引用 ---
+            const pages = { home: document.getElementById('page-home'), tutorial: document.getElementById('page-tutorial'), lab: document.getElementById('page-lab'), quiz: document.getElementById('page-quiz') };
+            const navBtns = { home: document.getElementById('nav-home'), tutorial: document.getElementById('nav-tutorial'), lab: document.getElementById('nav-lab'), quiz: document.getElementById('nav-quiz') };
+            const labElements = { title: document.getElementById('lab-title'), progressBar: document.getElementById('lab-progress-bar'), stepsContainer: document.getElementById('lab-steps-container'), hintContainer: document.getElementById('lab-hint-container'), terminalOutput: document.getElementById('terminal-output'), terminalInput: document.getElementById('terminal-input'), btnPrev: document.getElementById('btn-prev-lab'), btnNext: document.getElementById('btn-next-lab'), btnReset: document.getElementById('btn-reset-lab') };
+            const quizElements = { container: document.getElementById('quiz-container'), questionNum: document.getElementById('question-number'), questionText: document.getElementById('question-text'), options: document.getElementById('quiz-options'), feedback: document.getElementById('quiz-feedback'), submitBtn: document.getElementById('quiz-submit-btn'), nextBtn: document.getElementById('quiz-next-btn'), results: document.getElementById('quiz-results'), score: document.getElementById('quiz-score'), restartBtn: document.getElementById('quiz-restart-btn'), resetActiveBtn: document.getElementById('quiz-reset-active-btn') };
+            const modalElements = { overlay: document.getElementById('command-modal-overlay'), closeBtn: document.getElementById('modal-close-btn'), title: document.getElementById('modal-title'), description: document.getElementById('modal-description'), syntax: document.getElementById('modal-syntax'), details: document.getElementById('modal-details'), example: document.getElementById('modal-example') };
+            const achievementToast = { el: document.getElementById('achievement-toast'), text: document.getElementById('achievement-text') };
+
+            // --- 状态变量 ---
+            let currentLabIndex = 0, currentStepIndex = 0, skillData = [5, 2, 1, 1, 1], simulatedGit = {}, echartsInstance = null;
+            let currentQuizQuestionIndex = 0, quizUserScore = 0, selectedOption = null;
+
+            // --- 完整实验数据 (修改: 使用 'match' 替代 'command' 进行正则校验) ---
+            const labs = [
+                { title: "实验 1: 创世纪", steps: [ { instruction: "输入 `git init` 初始化仓库", match: "^git init$", hint: "`git init` 创建 `.git` 目录。", output: "Initialized empty Git repository in /git@lab/" }, { instruction: "配置用户名: `git config --global user.name \"Me\"`", match: "^git config\\s+(--global\\s+)?user\\.name\\s+\".+\"$", hint: "告诉Git你是谁。", output: "Username set." }, { instruction: "配置邮箱: `git config --global user.email \"me@test.com\"`", match: "^git config\\s+(--global\\s+)?user\\.email\\s+\".+\"$", hint: "设置联系方式。", output: "Email set." } ] },
+                { title: "实验 2: 第一次提交", steps: [ { instruction: "创建文件: `touch README.md`", match: "^touch README\\.md$", hint: "创建新文件。", output: "File created: README.md" }, { instruction: "查看状态: `git status`", match: "^git status$", hint: "查看文件状态。", output: "On branch master\nNo commits yet\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\t<span class='text-red-400'>README.md</span>" }, { instruction: "添加到暂存区: `git add README.md` (或 `git add .`)", match: "^git add(\\s+\\.)?(\\s+README\\.md)?$", hint: "放入暂存区。", output: "File added to staging area." }, { instruction: "提交: `git commit -m \"Init\"`", match: "^git commit\\s+-m\\s+\".+\"$", hint: "保存快照。", output: "[master (root-commit) 1a2b3c] Init\n 1 file changed, 0 insertions(+), 0 deletions(-)\n create mode 100644 README.md" } ] },
+                { title: "实验 3: 检查状态", steps: [ { instruction: "查看历史: `git log`", match: "^git log.*$", hint: "查看之前的提交。", output: "commit 1a2b3c... (HEAD -> master)\nAuthor: Me <me@test.com>\nDate: ...\n\n    Init" }, { instruction: "新建文件: `touch new.txt`", match: "^touch new\\.txt$", hint: "再来一个文件。", output: "File created: new.txt" }, { instruction: "全部添加: `git add .`", match: "^git add\\s+\\.$", hint: "添加所有。", output: "Files added." }, { instruction: "提交: `git commit -m \"Add new\"`", match: "^git commit\\s+-m\\s+\".+\"$", hint: "再次提交。", output: "[master 5d6e7f] Add new\n 1 file changed, 0 insertions(+), 0 deletions(-)\n create mode 100644 new.txt" } ] },
+                { title: "实验 4: 时间旅行", steps: [ { instruction: "查看精简日志: `git log --oneline`", match: "^git log\\s+--oneline$", hint: "记住旧版本的哈希值 (模拟为 1a2b3c)。", output: "<span class='text-yellow-400'>5d6e7f</span> (HEAD -> master) Add new\n<span class='text-yellow-400'>1a2b3c</span> Init" }, { instruction: "回到过去: `git checkout 1a2b3c`", match: "^git checkout 1a2b3c$", hint: "进入'分离头指针'状态。", output: "Note: switching to '1a2b3c'.\nYou are in 'detached HEAD' state...\nHEAD is now at 1a2b3c Init" }, { instruction: "回到现在: `git checkout master`", match: "^git checkout master$", hint: "回到最新状态。", output: "Previous HEAD position was 1a2b3c Init\nSwitched to branch 'master'" }, { instruction: "快速模拟新提交: `run temp-commit`", match: "^run temp-commit$", hint: "为 reset 做准备。", output: "[master 9d8e7f] Temp commit" }, { instruction: "强制回退: `git reset --hard HEAD~1`", match: "^git reset\\s+--hard\\s+HEAD~1$", hint: "彻底丢弃最近一次提交。", output: "HEAD is now at 5d6e7f Add new" } ] },
+                { title: "实验 5: 平行宇宙", steps: [ { instruction: "查看分支: `git branch`", match: "^git branch$", hint: "列出所有分支。", output: "* <span class='text-green-400'>master</span>" }, { instruction: "创建分支: `git branch feature`", match: "^git branch feature$", hint: "创建新分支。", output: "Branch 'feature' created." }, { instruction: "切换分支: `git checkout feature`", match: "^git checkout feature$", hint: "切换到新分支。", output: "Switched to branch 'feature'" }, { instruction: "在新分支提交: `run feature-commit`", match: "^run feature-commit$", hint: "模拟开发工作。", output: "[feature 3c4b5a] New feature" }, { instruction: "切回主分支: `git checkout master`", match: "^git checkout master$", hint: "准备合并。", output: "Switched to branch 'master'" }, { instruction: "合并分支: `git merge feature`", match: "^git merge feature$", hint: "合并成果。", output: "Updating 5d6e7f..3c4b5a\nFast-forward\n ... | 0\n 1 file changed, 0 insertions(+), 0 deletions(-)" } ] },
+                { title: "实验 6: 连接远程", steps: [ { instruction: "添加远程: `git remote add origin https://git.test/repo.git`", match: "^git remote add origin .+$", hint: "连接到远程服务器。", output: "Remote 'origin' added." }, { instruction: "推送代码: `git push -u origin master`", match: "^git push\\s+(-u|--set-upstream)\\s+origin\\s+master$", hint: "上传本地代码。", output: "Total 0 (delta 0), reused 0 (delta 0)\nTo https://git.test/repo.git\n * [new branch]      master -> master\nBranch 'master' set up to track remote branch 'master' from 'origin'." }, { instruction: "拉取代码: `git pull origin master`", match: "^git pull( origin master)?$", hint: "获取远程更新。", output: "From https://git.test/repo.git\n * branch            master     -> FETCH_HEAD\nAlready up to date." } ] },
+                { title: "实验 7: 团队协作", steps: [ { instruction: "获取更新: `git fetch origin`", match: "^git fetch( origin)?$", hint: "下载但不合并。", output: "From https://git.test/repo.git\n * [new branch]      master     -> origin/master" }, { instruction: "本地开发: `run local-commit`", match: "^run local-commit$", hint: "制造分叉。", output: "[master 2f3a4b] Local work" }, { instruction: "变基合并: `git rebase origin/master`", match: "^git rebase( origin/master)?$", hint: "保持历史整洁。", output: "First, rewinding head to replay your work on top of it...\nApplying: Local work\nSuccessfully rebased and updated refs/heads/master." } ] },
+                { title: "实验 8: 解决冲突", steps: [ { instruction: "创建分支: `git checkout -b dev`", match: "^git checkout -b dev$", hint: "创建并切换。", output: "Switched to a new branch 'dev'" }, { instruction: "修改文件: `run dev-change`", match: "^run dev-change$", hint: "模拟dev修改。", output: "Modified README on dev." }, { instruction: "切回主分支: `git checkout master`", match: "^git checkout master$", hint: "回到主分支。", output: "Switched to branch 'master'" }, { instruction: "修改同一文件: `run master-change`", match: "^run master-change$", hint: "制造冲突。", output: "Modified README on master." }, { instruction: "尝试合并: `git merge dev`", match: "^git merge dev$", hint: "冲突爆发！", output: "<span class='text-red-400'>CONFLICT (content): Merge conflict in README.md\nAutomatic merge failed; fix conflicts and then commit the result.</span>" }, { instruction: "标记解决: `git add README.md`", match: "^git add(\\s+\\.)?(\\s+README\\.md)?$", hint: "告诉Git冲突已解决。", output: "Conflict resolved." }, { instruction: "完成提交: `git commit -m \"Fix\"`", match: "^git commit(\\s+-m\\s+\".+\")?$", hint: "提交合并结果。", output: "[master 6f7e8d] Fix conflict" } ] },
+                { title: "实验 9: 开源协作", steps: [ { instruction: "复刻项目: `github fork`", match: "^github fork$", hint: "模拟Fork操作。", output: "Forked 'original/repo' to 'Me/repo'." }, { instruction: "新分支修复: `git checkout -b fix`", match: "^git checkout -b fix$", hint: "创建修复分支。", output: "Switched to a new branch 'fix'" }, { instruction: "提交修复: `run fix-commit`", match: "^run fix-commit$", hint: "提交代码。", output: "[fix 9f8e7d] Fix bug" }, { instruction: "推送到你的仓库: `git push origin fix`", match: "^git push(\\s+origin)?(\\s+fix)?$", hint: "上传到你的Fork。", output: "Total 0 (delta 0), reused 0 (delta 0)\nTo https://git.test/Me/repo.git\n * [new branch]      fix -> fix" }, { instruction: "发起请求: `github create pr`", match: "^github create pr$", hint: "请求合并。", output: "Pull Request created! (Me/fix -> original/master)" } ] }
+            ];
+
+            // --- 完整的 20 道测验数据 ---
+            const quizQuestions = [
+                { question: "`git init` 的主要作用是什么？", options: ["初始化远程仓库", "初始化本地仓库", "连接远程仓库", "提交更改"], answer: "初始化本地仓库" },
+                { question: "哪个命令将文件从工作区添加到暂存区？", options: ["git commit", "git push", "git add", "git status"], answer: "git add" },
+                { question: "`git commit -m \"msg\"` 的作用是什么？", options: ["创建分支", "合并分支", "查看信息", "提交到本地仓库"], answer: "提交到本地仓库" },
+                { question: "用于查看当前仓库状态的命令是？", options: ["git log", "git status", "git check", "git config"], answer: "git status" },
+                { question: "如何查看提交历史记录？", options: ["git history", "git log", "git timeline", "git list"], answer: "git log" },
+                { question: "创建名为 \"feature\" 的新分支的命令？", options: ["git new feature", "git checkout feature", "git branch feature", "git create feature"], answer: "git branch feature" },
+                { question: "用于切换分支的命令是？", options: ["git checkout", "switch-branch", "git merge", "git go"], answer: "git checkout" },
+                { question: "用于合并分支的命令是？", options: ["git combine", "git add", "git merge", "git push"], answer: "git merge" },
+                { question: "将本地提交上传到远程仓库的命令？", options: ["git pull", "git upload", "git remote add", "git push"], answer: "git push" },
+                { question: "`git pull` 等同于哪两个命令？", options: ["fetch + merge", "push + merge", "fetch + rebase", "clone + commit"], answer: "fetch + merge" },
+                { question: "为无权限的开源项目贡献代码的第一步？", options: ["clone", "fork", "email author", "rebase"], answer: "fork" },
+                { question: "`.gitignore` 文件的作用？", options: ["忽略错误", "忽略特定文件不跟踪", "隐藏文件", "配置文件"], answer: "忽略特定文件不跟踪" },
+                { question: "`git rebase` 的主要特点？", options: ["创建合并提交", "更安全", "重写历史呈线性", "仅用于远程"], answer: "重写历史呈线性" },
+                { question: "`git fetch` 和 `git pull` 的区别？", options: ["fetch不合并, pull自动合并", "pull不合并, fetch自动合并", "没区别", "fetch只下载master"], answer: "fetch不合并, pull自动合并" },
+                { question: "撤销最近一次提交但保留更改在暂存区？", options: ["git reset --hard HEAD~1", "git revert HEAD", "git reset --soft HEAD~1", "git checkout HEAD~1"], answer: "git reset --soft HEAD~1" },
+                { question: "在执行 `git add` 之前，如何查看文件具体的修改内容？", options: ["git log", "git show", "git diff", "git status"], answer: "git diff" },
+                { question: "想要暂时保存当前工作进度以便稍后恢复，应该用什么命令？", options: ["git save", "git stash", "git hide", "git commit --temp"], answer: "git stash" },
+                { question: "Git 的所有版本控制数据存储在哪里？", options: ["在远程服务器上", "在 .git 目录中", "在每个文件的头部", "在系统注册表中"], answer: "在 .git 目录中" },
+                { question: "哪个命令用于删除一个本地分支？", options: ["git branch -d [name]", "git delete [name]", "git remove [name]", "git checkout -d [name]"], answer: "git branch -d [name]" },
+                { question: "在 Git 中，HEAD 通常指向什么？", options: ["远程仓库主分支", "当前分支的最新提交", "项目的第一次提交", "暂存区"], answer: "当前分支的最新提交" }
+            ];
+
+            // --- 命令详情数据 ---
+            const commandDetails = {
+                'git init': { title: 'git init', description: '初始化一个新的本地 Git 仓库', syntax: 'git init [directory]', details: '<p>在当前目录或指定目录中创建一个空的 Git 仓库（即 <code>.git</code> 目录）。这是你开始一个新项目的第一个命令。</p>', example: '# 在当前目录初始化\n$ git init\n\n# 在名为 "my-project" 的新目录中初始化\n$ git init my-project' },
+                'git config': { title: 'git config', description: '配置 Git', syntax: 'git config [--global] <key> <value>', details: '<p>用于查看和设置 Git 的配置变量。最常见的用途是设置你的用户名和邮箱，这对每次提交都至关重要。</p><p><code>--global</code> 标志意味着这个配置适用于你电脑上的所有 Git 仓库。</p>', example: '# 设置全局用户名\n$ git config --global user.name "Your Name"\n\n# 设置全局邮箱\n$ git config --global user.email "you@example.com"\n\n# 查看所有配置\n$ git config --list' },
+                'git status': { title: 'git status', description: '检查仓库状态', syntax: 'git status', details: '<p>显示工作区和暂存区的状态。它会告诉你：</p><ul><li>哪些文件被修改了但未暂存？ (Changes not staged for commit)</li><li>哪些文件已被暂存准备提交？ (Changes to be committed)</li><li>哪些是新创建的未跟踪文件？ (Untracked files)</li></ul><p>这是你最常用的命令之一。</p>', example: '$ git status' },
+                'git add': { title: 'git add', description: '将更改添加到暂存区', syntax: 'git add <file> | git add .', details: '<p>此命令将工作区的更改“快照”并添加到暂存区，为下一次提交做准备。</p><ul><li><code>git add &lt;file&gt;</code>: 只添加指定文件。</li><li><code>git add .</code>: 添加当前目录下的所有更改（新文件、修改、删除）。</li></ul>', example: '# 暂存一个文件\n$ git add README.md\n\n# 暂存所有更改\n$ git add .' },
+                'git commit': { title: 'git commit', description: '将暂存区提交到本地仓库', syntax: 'git commit -m "Your message"', details: '<p>将暂存区的所有内容创建一个新的“提交”或“快照”，并永久保存在本地仓库的历史记录中。</p><p><code>-m</code> 标志允许你直接在命令行提供提交信息，这对于简短的提交非常方便。</p>', example: '$ git commit -m "feat: Add user login page"' },
+                'git log': { title: 'git log', description: '查看提交历史', syntax: 'git log', details: '<p>显示从最近到最远的提交历史。它会列出每次提交的哈希值、作者、日期和提交信息。</p><p>一些有用的参数：</p><ul><li><code>--oneline</code>: 将每次提交压缩到一行显示。</li><li><code>--graph</code>: 以 ASCII 图形显示分支和合并历史。</li><li><code>-n &lt;limit&gt;</code>: 仅显示最近的 &lt;limit&gt; 次提交。</li></ul>', example: '# 查看完整日志\n$ git log\n\n# 查看简洁的单行日志\n$ git log --oneline\n\n# 查看带分支图的单行日志\n$ git log --oneline --graph' },
+                'git branch': { title: 'git branch', description: '管理分支', syntax: 'git branch [branch-name]', details: '<p>用于列出、创建或删除分支。</p><ul><li><code>git branch</code>: 列出所有本地分支。</li><li><code>git branch &lt;name&gt;</code>: 创建一个名为 &lt;name&gt; 的新分支。</li><li><code>git branch -d &lt;name&gt;</code>: 删除一个已合并的分支。</li></ul>', example: '# 列出所有分支\n$ git branch\n\n# 创建新分支\n$ git branch new-feature\n\n# 删除分支\n$ git branch -d old-feature' },
+                'git checkout': { title: 'git checkout', description: '切换分支或恢复文件', syntax: 'git checkout <branch-name> | git checkout -b <new-branch>', details: '<p>这是 Git 中一个多功能的命令。</p><ul><li><code>git checkout &lt;name&gt;</code>: 切换到指定的分支或提交。你的工作区将更新以匹配该分支/提交。</li><li><code>git checkout -b &lt;name&gt;</code>: 创建一个新分支并立即切换过去（等同于 <code>git branch &lt;name&gt;</code> + <code>git checkout &lt;name&gt;</code>）。</li><li><code>git checkout &lt;hash&gt;</code>: 切换到某次具体的提交（进入 "detached HEAD" 状态）。</li></ul>', example: '# 切换到 feature 分支\n$ git checkout feature\n\n# 创建并切换到 new-fix 分支\n$ git checkout -b new-fix' },
+                'git merge': { title: 'git merge', description: '合并分支', syntax: 'git merge <branch-name>', details: '<p>将指定分支的更改合并到你“当前所在”的分支。例如，如果你在 <code>master</code> 分支上，运行 <code>git merge feature</code> 会将 <code>feature</code> 分支的更改合并到 <code>master</code>。</p>', example: '# 1. 确保在主分支上\n$ git checkout master\n\n# 2. 合并 feature 分支\n$ git merge feature' },
+                'git remote': { title: 'git remote', description: '管理远程仓库', syntax: 'git remote add <name> <url> | git remote -v', details: '<p>用于管理你本地仓库所跟踪的远程仓库连接。</p><ul><li><code>git remote -v</code>: 查看所有远程仓库的 URL。</li><li><code>git remote add &lt;name&gt; &lt;url&gt;</code>: 添加一个新的远程仓库，通常命名为 <code>origin</code>。</li></ul>', example: '# 查看远程仓库\n$ git remote -v\n\n# 添加名为 origin 的远程仓库\n$ git remote add origin https://github.com/user/repo.git' },
+                'git push': { title: 'git push', description: '推送到远程仓库', syntax: 'git push <remote-name> <branch-name>', details: '<p>将你本地的提交上传到远程仓库。这是你与团队分享代码的方式。</p><p><code>-u</code> (或 <code>--set-upstream</code>) 标志用于第一次推送，它会建立本地分支与远程分支的联系，之后你只需输入 <code>git push</code> 即可。</p>', example: '# 推送 master 分支到 origin，并建立跟踪\n$ git push -u origin master\n\n# 后续推送 (已建立跟踪)\n$ git push' },
+                'git pull': { title: 'git pull', description: '拉取远程更改', syntax: 'git pull <remote-name> <branch-name>', details: '<p>从远程仓库获取最新更改并自动合并到你当前分支。这等同于 <code>git fetch</code> + <code>git merge</code>。</p><p>在推送前 <code>pull</code> 是一个好习惯，可以减少冲突。</p>', example: '# 从 origin 拉取 master 分支的更新\n$ git pull origin master\n\n# 简写 (如果跟踪已建立)\n$ git pull' },
+                'git fetch': { title: 'git fetch', description: '下载远程更改但不合并', syntax: 'git fetch [remote-name]', details: '<p><code>git fetch</code> 只从远程仓库下载最新的提交历史，但*不会*自动修改你的本地工作区或分支。它让你先查看远程有哪些新内容（例如 <code>origin/master</code>），然后再决定如何合并（例如 <code>merge</code> 或 <code>rebase</code>）。</p><p>这被认为比 <code>git pull</code> 更安全。</p>', example: '# 获取所有远程的更新\n$ git fetch\n\n# 查看远程 master 和本地 master 的差异\n$ git log master..origin/master' },
+                'git rebase': { title: 'git rebase', description: '变基', syntax: 'git rebase <base-branch>', details: '<p><code>rebase</code> (变基) 是 <code>merge</code> 的一种替代方案。它会将你当前分支的提交“拎起来”，放到目标分支 (<code>base-branch</code>) 的最新提交之上，使提交历史呈一条直线。</p><p>这会“重写”提交历史，使其非常整洁，但也更复杂。黄金法则是：不要对已推送到公共仓库的分支进行 rebase。</p>', example: '# 1. 获取最新主分支\n$ git fetch origin\n\n# 2. 将我当前分支的更改变基到最新的主分支上\n$ git rebase origin/master' },
+                'fork': { title: 'Fork (分叉)', description: '复制一个项目到你的账户', syntax: '在 GitHub/GitLab 网站上点击 "Fork" 按钮', details: '<p>Fork 是代码托管平台（如 GitHub）的功能，而不是 Git 命令。它会在你自己的账户下创建一个完整的项目副本。这个副本归你所有，你可以自由地修改、推送，而无需原项目的权限。</p><p>这是参与开源贡献的第一步。</p>', example: '1. 访问 https://github.com/original-owner/repo\n2. 点击页面右上角的 "Fork" 按钮。' },
+                'pull request': { title: 'Pull Request (PR)', description: '请求合并你的贡献', syntax: '在 GitHub/GitLab 网站上创建', details: '<p>当你 Fork 了一个项目并完成了你的修改（通常在一个新分支上）后，你可以创建一个 "Pull Request" (PR)。</p><p>这会通知原项目维护者，你希望他们“拉取”你的更改并将其合并到原项目中。PR 是代码审查、讨论和合并贡献的核心机制。</p>', example: '1. 推送你的分支到你的 Fork 仓库。\n2. 访问你的 Fork 仓库页面。\n3. GitHub 会显示一个 "Compare & pull request" 按钮，点击它并填写 PR 描述。' }
+            };
+
+
+            // --- 实验逻辑 ---
+            function resetSimulatedGit() { simulatedGit = { initialized: false, commits: [], branches: {'master': null}, currentBranch: 'master' }; }
+            function quickCommit(msg) { const h = Math.random().toString(16).substring(2,8); simulatedGit.commits.push({h, msg}); simulatedGit.branches[simulatedGit.currentBranch]=h; }
+            function loadLab(index) {
+                if (index < 0 || index >= labs.length) return;
+                currentLabIndex = index; currentStepIndex = 0; resetSimulatedGit();
+                // 模拟之前实验的状态
+                if (index>0) simulatedGit.initialized = true; if (index>1) quickCommit("Init"); if (index>2) quickCommit("Add new");
+                labElements.title.textContent = labs[index].title;
+                labElements.btnPrev.disabled = (index === 0); labElements.btnNext.disabled = (index === labs.length - 1);
+                updateLearningPathVisuals();
+                labElements.terminalOutput.innerHTML = ''; printToTerminal(`--- 已加载: ${labs[index].title} ---`, 'success');
+                renderSteps(); loadStep(0);
+            }
+            function updateLearningPathVisuals() {
+                document.querySelectorAll('#learning-path-list li').forEach((item, i) => {
+                    const icon = item.querySelector('.path-icon');
+                    item.className = 'flex items-center p-4 bg-white rounded-lg shadow transition-all duration-300 ' + (i === currentLabIndex ? 'ring-2 ring-main transform scale-105' : (i < currentLabIndex ? '' : 'opacity-60'));
+                    icon.className = 'path-icon flex items-center justify-center w-8 h-8 rounded-full font-bold mr-4 transition-colors duration-300 ' + (i <= currentLabIndex ? (i<currentLabIndex ? 'bg-aux text-white' : 'bg-main text-white') : 'bg-slate-300 text-slate-700');
+                    icon.innerHTML = i < currentLabIndex ? '✓' : (i + 1);
+                });
+            }
+            function renderSteps() {
+                labElements.stepsContainer.innerHTML = '';
+                labs[currentLabIndex].steps.forEach((step, i) => {
+                    labElements.stepsContainer.innerHTML += `<div id="step-${i}" class="p-3 border-l-4 border-slate-300 transition-all duration-300 text-sm"><div class="flex items-center"><span class="step-icon flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-slate-300 text-slate-700 font-bold mr-3 text-xs">${i+1}</span><span class="font-medium">${step.instruction.split("。")[0]}</span></div></div>`;
+                });
+            }
+            function loadStep(index) {
+                if (index >= labs[currentLabIndex].steps.length) { completeLab(); return; }
+                currentStepIndex = index;
+                labElements.hintContainer.innerHTML = `<p>${labs[currentLabIndex].steps[index].hint}</p>`;
+                printToTerminal(`[步骤 ${index+1}] ${labs[currentLabIndex].steps[index].instruction}`, 'system');
+                document.querySelectorAll('#lab-steps-container > div').forEach((el, i) => {
+                    el.classList.toggle('step-active', i === index); if (i === index) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                });
+                labElements.progressBar.style.width = `${((index)/labs[currentLabIndex].steps.length)*100}%`;
+            }
+            function completeStep() {
+                document.getElementById(`step-${currentStepIndex}`)?.classList.replace('step-active', 'step-completed');
+                anime({ targets: labElements.progressBar, width: `${((currentStepIndex+1)/labs[currentLabIndex].steps.length)*100}%`, duration: 300, easing: 'easeOutQuad' });
+                loadStep(currentStepIndex + 1);
+            }
+            function completeLab() {
+                printToTerminal(`🎉 ${labs[currentLabIndex].title} 完成！`, 'success');
+                showAchievement(`完成: ${labs[currentLabIndex].title}`);
+                skillData = skillData.map(d => Math.min(10, d + 1)); initRadarChart();
+                if (currentLabIndex < labs.length - 1) setTimeout(() => loadLab(currentLabIndex + 1), 1500);
+                else printToTerminal('恭喜！所有课程已完成！', 'success');
+            }
+            labElements.terminalInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    const cmd = e.target.value.trim(); e.target.value = ''; if (!cmd) return;
+                    printToTerminal(`$ ${cmd}`, 'user');
+                    if (!simulatedGit.initialized && !cmd.startsWith('git init') && !cmd.startsWith('git config')) { printToTerminal('fatal: not a git repository (or wrong command). Try `git init`', 'error'); return; }
+
+                    const step = labs[currentLabIndex].steps[currentStepIndex];
+                    // (修改) 使用正则表达式进行校验
+                    if (step && new RegExp(step.match).test(cmd)) {
+                        if (cmd.startsWith('git init')) simulatedGit.initialized = true;
+                        printToTerminal(step.output, 'system-output'); // 使用新 class 避免与 system 提示混淆
+                        setTimeout(completeStep, 300);
+                    }
+                    else if (step) {
+                        printToTerminal(`命令不正确。提示: 尝试输入 <code>${step.instruction.match(/`([^`]+)`/)[1]}</code>`, 'error');
+                    }
+                    else {
+                        printToTerminal('未知命令或实验已结束。', 'error');
+                    }
+                }
+            });
+            function printToTerminal(text, type) {
+                const p = document.createElement('div');
+                switch(type) {
+                    case 'user': p.className = 'text-slate-400 mt-2'; break;
+                    case 'error': p.className = 'text-red-400'; break;
+                    case 'success': p.className = 'text-green-400 font-bold'; break;
+                    case 'system': p.className = 'text-blue-300 font-medium mt-2'; break;
+                    case 'system-output': p.className = 'text-slate-100 whitespace-pre-wrap'; break;
+                    default: p.className = 'text-slate-100 whitespace-pre-wrap';
+                }
+                p.innerHTML = text; labElements.terminalOutput.appendChild(p); labElements.terminalOutput.scrollTop = labElements.terminalOutput.scrollHeight;
+            }
+
+            // --- (新增) 成就提示 ---
+            function showAchievement(text) {
+                achievementToast.text.textContent = text;
+                achievementToast.el.classList.remove('hidden');
+                anime({
+                    targets: achievementToast.el,
+                    translateX: ['110%', '0%'],
+                    duration: 500,
+                    easing: 'easeOutExpo',
+                    complete: () => {
+                        anime({
+                            targets: achievementToast.el,
+                            translateX: ['0%', '110%'],
+                            duration: 500,
+                            delay: 3000,
+                            easing: 'easeInExpo',
+                            complete: () => {
+                                achievementToast.el.classList.add('hidden');
+                            }
+                        });
+                    }
+                });
+            }
+
+            // --- (新增) 命令详情弹窗逻辑 ---
+            function showCommandModal(commandKey) {
+                const details = commandDetails[commandKey];
+                if (!details) { console.error('No details for command:', commandKey); return; }
+                modalElements.title.textContent = details.title;
+                modalElements.description.textContent = details.description;
+                modalElements.syntax.textContent = details.syntax;
+                modalElements.details.innerHTML = details.details;
+                modalElements.example.textContent = details.example;
+                modalElements.overlay.classList.add('visible');
+            }
+            function hideCommandModal() { modalElements.overlay.classList.remove('visible'); }
+            document.querySelectorAll('.command-lookup').forEach(row => {
+                row.addEventListener('click', () => { showCommandModal(row.dataset.command); });
+            });
+            modalElements.closeBtn.addEventListener('click', hideCommandModal);
+            modalElements.overlay.addEventListener('click', (e) => { if (e.target === modalElements.overlay) hideCommandModal(); });
+
+
+            // --- 测验逻辑 ---
+            function startQuiz() { currentQuizQuestionIndex = 0; quizUserScore = 0; quizElements.results.classList.add('hidden'); quizElements.container.classList.remove('hidden'); loadQuizQuestion(); }
+            function loadQuizQuestion() {
+                selectedOption = null; quizElements.feedback.classList.add('hidden'); quizElements.submitBtn.disabled = true; quizElements.submitBtn.classList.remove('hidden'); quizElements.nextBtn.classList.add('hidden');
+                const q = quizQuestions[currentQuizQuestionIndex];
+                quizElements.questionNum.textContent = currentQuizQuestionIndex + 1; quizElements.questionText.textContent = q.question;
+                quizElements.options.innerHTML = '';
+                q.options.forEach(opt => {
+                    const btn = document.createElement('button'); btn.className = 'quiz-option'; btn.textContent = opt;
+                    btn.addEventListener('click', () => { document.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected')); btn.classList.add('selected'); selectedOption = opt; quizElements.submitBtn.disabled = false; });
+                    quizElements.options.appendChild(btn);
+                });
+            }
+            quizElements.submitBtn.addEventListener('click', () => {
+                quizElements.submitBtn.classList.add('hidden'); quizElements.nextBtn.classList.remove('hidden');
+                const correct = quizQuestions[currentQuizQuestionIndex].answer;
+                const isCorrect = (selectedOption === correct);
+                if (isCorrect) quizUserScore++;
+                quizElements.feedback.className = `mt-6 p-4 rounded-md ${isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'} block`;
+                quizElements.feedback.textContent = isCorrect ? "回答正确！" : `回答错误。正确答案: ${correct}`;
+                document.querySelectorAll('.quiz-option').forEach(btn => { btn.classList.add('disabled'); if (btn.textContent === correct) btn.classList.add('correct'); else if (btn.textContent === selectedOption) btn.classList.add('incorrect'); });
+            });
+            quizElements.nextBtn.addEventListener('click', () => { if (++currentQuizQuestionIndex < quizQuestions.length) loadQuizQuestion(); else { quizElements.container.classList.add('hidden'); quizElements.results.classList.remove('hidden'); quizElements.score.textContent = quizUserScore; } });
+            quizElements.restartBtn.addEventListener('click', startQuiz);
+            quizElements.resetActiveBtn.addEventListener('click', startQuiz);
+
+            // --- 通用逻辑 & 页面导航 ---
+            function showPage(id) { Object.values(pages).forEach(p => p.classList.add('hidden')); pages[id].classList.remove('hidden'); if(id==='lab') labElements.terminalInput.focus(); if(id==='home'&&echartsInstance) echartsInstance.resize(); }
+            navBtns.home.addEventListener('click', (e) => { e.preventDefault(); showPage('home'); });
+            navBtns.tutorial.addEventListener('click', (e) => { e.preventDefault(); showPage('tutorial'); });
+            navBtns.lab.addEventListener('click', (e) => { e.preventDefault(); showPage('lab'); });
+            navBtns.quiz.addEventListener('click', (e) => { e.preventDefault(); showPage('quiz'); startQuiz(); });
+            document.getElementById('start-learning-btn').addEventListener('click', () => showPage('lab'));
+            labElements.btnPrev.addEventListener('click', () => loadLab(currentLabIndex - 1));
+            labElements.btnNext.addEventListener('click', () => loadLab(currentLabIndex + 1));
+            labElements.btnReset.addEventListener('click', () => loadLab(currentLabIndex));
+
+            // --- 初始化 ---
+            function initRadarChart() { if (echartsInstance) echartsInstance.dispose(); echartsInstance = echarts.init(document.getElementById('skills-radar-chart')); echartsInstance.setOption({ radar: { indicator: [{name:'基础',max:10}, {name:'分支',max:10}, {name:'远程',max:10}, {name:'协作',max:10}, {name:'历史',max:10}], shape: 'circle' }, series: [{ type: 'radar', data: [{ value: skillData, name: '技能', areaStyle: { color: 'rgba(30, 58, 138, 0.4)' }, lineStyle: { color: 'rgba(30, 58, 138, 1)' }, itemStyle: { color: 'rgba(30, 58, 138, 1)' } }] }] }); }
+            anime({ targets: '#hero-title', opacity: [0, 1], translateY: [-20, 0], duration: 1000, easing: 'easeOutExpo' });
+            anime({ targets: '#hero-subtitle', opacity: [0, 1], translateY: [-20, 0], duration: 1000, delay: 200, easing: 'easeOutExpo' });
+
+            initRadarChart();
+            loadLab(0);
+            showPage('home');
+        });
+    </script>
+</body>
+</html>

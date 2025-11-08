@@ -1,0 +1,88 @@
+<svg width="800" height="570" viewBox="0 0 800 570" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+
+  <defs>
+    <marker id="arrowhead-maker" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34D399" />
+    </marker>
+    <marker id="arrowhead-generator" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#FACC15" />
+    </marker>
+
+    <g id="icon-bit" fill="#374151"><path d="M9 4V2.6C9 2.27 8.73 2 8.4 2H4.6C4.27 2 4 2.27 4 2.6V4H3V2.6C3 1.72 3.72 1 4.6 1h3.8C9.28 1 10 1.72 10 2.6V4h-1zM4.6 15h3.8c.88 0 1.6-.72 1.6-1.6V12h-1v2.4c0 .33-.27.6-.6.6H4.6c-.33 0-.6-.27-.6-.6V12H3v2.4C3 14.28 3.72 15 4.6 15zM12 5.4v5.2c0 .88-.72 1.6-1.6 1.6H5.6c-.88 0-1.6-.72-1.6-1.6V5.4C4 4.52 4.72 3.8 5.6 3.8h4.8c.88 0 1.6.72 1.6 1.6zm-1 0c0-.33-.27-.6-.6-.6H5.6c-.33 0-.6.27-.6.6v5.2c0 .33.27.6.6.6h4.8c.33 0 .6-.27.6-.6V5.4z"/><path d="M6.25 8.16l-1.5-1.5l.7-.7l.8.8l1.85-1.85l.7.7z"/></g>
+    <g id="icon-physical" fill="#374151"><path d="M12.38 8.53L11.8 7.3a.5.5 0 00-.47-.3H4.67a.5.5 0 00-.47.3l-.58 1.23a.5.5 0 00.47.67h8.28a.5.5 0 00.47-.67zM8 1c3.86 0 7 3.14 7 7s-3.14 7-7 7s-7-3.14-7-7s3.14-7 7-7zm0 1.25a5.75 5.75 0 100 11.5a5.75 5.75 0 000-11.5z"/><path d="M8 4.75a.5.5 0 00-.5.5v1.5a.5.5 0 00.5.5h1.5a.5.5 0 000-1H8.5V5.25a.5.5 0 00-.5-.5z"/></g>
+    <g id="icon-atom" fill="#374151"><path d="M14.5 3.5v9l-6 3.5l-6-3.5v-9l6-3.5l6 3.5zm-1 8.32V4.18l-5-2.92l-5 2.92v8.32l5 2.92l5-2.92z"/><path d="M2.5 3.5l6 3.5v10l-6-3.5v-10zM8 7.42L3 4.5V11l5 2.92V7.42z"/><path d="M8.5 7l6-3.5v9l-6 3.5V7zM14 4.5L9 7.42V14l5-2.92V4.5z"/></g>
+    <g id="icon-prompt" fill="#374151"><path d="M8 1a4.5 4.5 0 00-4.5 4.5c0 1.77.94 3.42 2.5 4.19V11h-1a.5.5 0 000 1h5a.5.5 0 000-1h-1V9.69c1.56-.77 2.5-2.42 2.5-4.19A4.5 4.5 0 008 1zm3.5 4.5a3.5 3.5 0 01-7 0a3.5 3.5 0 017 0zM5 14.5a.5.5 0 000 1h6a.5.5 0 000-1H5z"/></g>
+    <g id="icon-emergence" fill="#374151"><path d="M8 1C4.14 1 1 4.14 1 8s3.14 7 7 7s7-3.14 7-7c0-2.39-1.22-4.48-3.05-5.73A.5.5 0 0011.5 2H10a.5.5 0 00-.5.5v2c0 .28.22.5.5.5h2a.5.5 0 00.5-.5V3.34c.9.83 1.5 1.99 1.5 3.16c0 2.76-2.24 5-5 5s-5-2.24-5-5s2.24-5 5-5c1.17 0 2.23.4 3.05.95a.5.5 0 00.67-.17l.7-.7a.5.5 0 00-.17-.67A6.95 6.95 0 008 1z"/></g>
+    <g id="icon-presence" fill="#374151"><path d="M8 1.75l1.25 3.51h3.63l-3 2.29l1.12 3.54L8 8.94l-3 2.15l1.12-3.54l-3-2.29h3.63L8 1.75z"/></g>
+
+    <style>
+      /* 字体与通用样式 */
+      .diagram-text { font-family: "Noto Sans", sans-serif; text-anchor: middle; }
+
+      /* 差异化配色方案 */
+      .box-maker { fill: #F0FDF4; stroke: #34D399; stroke-width: 2px; rx: 4; ry: 4; }
+      .box-generator { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2px; rx: 4; ry: 4; }
+      .connector-maker { fill: none; stroke: #34D399; stroke-width: 2px; }
+      .connector-generator { fill: none; stroke: #FACC15; stroke-width: 2px; }
+      .title-maker, .title-generator { font-size: 16px; font-weight: bold; fill: #111827; }
+
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; }
+      .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+      .small-text { font-size: 11px; font-weight: normal; fill: #6B7280; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; }
+    </style>
+  </defs>
+
+  <text x="400" y="45" class="diagram-text main-title-text">生成式物理学：两种创造范式</text>
+
+  <g id="maker-paradigm" transform="translate(0, 80)">
+    <text class="diagram-text title-maker" x="200" y="40">Maker : 物理化过程</text>
+    <g class="flow-element" transform="translate(120, 80)">
+      <rect class="box-maker" x="0" y="0" width="160" height="80" />
+      <use href="#icon-bit" x="68" y="12" width="24" height="24"/>
+      <text class="diagram-text body-text" x="80" y="50">bit</text>
+      <text class="diagram-text small-text" x="80" y="65">（蓝图）</text>
+    </g>
+    <g class="flow-element" transform="translate(120, 210)">
+      <rect class="box-maker" x="0" y="0" width="160" height="80" />
+      <use href="#icon-physical" x="68" y="12" width="24" height="24"/>
+      <text class="diagram-text body-text" x="80" y="55">物理化</text>
+    </g>
+    <g class="flow-element" transform="translate(120, 340)">
+      <rect class="box-maker" x="0" y="0" width="160" height="80" />
+      <use href="#icon-atom" x="68" y="12" width="24" height="24"/>
+      <text class="diagram-text body-text" x="80" y="50">atom</text>
+      <text class="diagram-text small-text" x="80" y="65">（实体）</text>
+    </g>
+    <path class="connector-maker" d="M 200 160 L 200 205" marker-end="url(#arrowhead-maker)" />
+    <path class="connector-maker" d="M 200 290 L 200 335" marker-end="url(#arrowhead-maker)" />
+  </g>
+
+  <g id="generator-paradigm" transform="translate(400, 80)">
+    <text class="diagram-text title-generator" x="200" y="40">Generator : 涌现过程</text>
+    <g class="flow-element" transform="translate(120, 80)">
+      <rect class="box-generator" x="0" y="0" width="160" height="80" />
+      <use href="#icon-prompt" x="68" y="12" width="24" height="24"/>
+      <text class="diagram-text body-text" x="80" y="50">prompt</text>
+      <text class="diagram-text small-text" x="80" y="65">（意图）</text>
+    </g>
+    <g class="flow-element" transform="translate(120, 210)">
+      <rect class="box-generator" x="0" y="0" width="160" height="80" />
+      <use href="#icon-emergence" x="68" y="12" width="24" height="24"/>
+      <text class="diagram-text body-text" x="80" y="55">涌现</text>
+    </g>
+    <g class="flow-element" transform="translate(120, 340)">
+      <rect class="box-generator" x="0" y="0" width="160" height="80" />
+      <use href="#icon-presence" x="68" y="12" width="24" height="24"/>
+      <text class="diagram-text body-text" x="80" y="50">presence</text>
+      <text class="diagram-text small-text" x="80" y="65">（显现）</text>
+    </g>
+    <path class="connector-generator" d="M 200 160 L 200 205" marker-end="url(#arrowhead-generator)" />
+    <path class="connector-generator" d="M 200 290 L 200 335" marker-end="url(#arrowhead-generator)" />
+  </g>
+
+  <text x="400" y="540" class="diagram-text license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

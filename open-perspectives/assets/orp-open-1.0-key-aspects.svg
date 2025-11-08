@@ -1,0 +1,82 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650">
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8f9fa" rx="10" ry="10" />
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">第一波浪潮："开放1.0"即源代码</text>
+
+  <!-- 中央元素：代码为核心 -->
+  <circle cx="400" cy="330" r="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="3" />
+  <text x="400" y="325" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#1565c0">源代码</text>
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1565c0">价值单元</text>
+
+  <!-- 左侧：代表平台 -->
+  <g transform="translate(200, 330)">
+    <rect x="-60" y="-60" width="120" height="120" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">开源平台</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2e7d32">GitHub/</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2e7d32">HuggingFace</text>
+
+    <!-- 连接线 -->
+    <path d="M 60,0 L 120,0" stroke="#2e7d32" stroke-width="2" stroke-dasharray="5,5" />
+  </g>
+
+  <!-- 右侧：价值创造 -->
+  <g transform="translate(600, 330)">
+    <rect x="-60" y="-60" width="120" height="120" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e65100">价值创造</text>
+    <text x="0" y="10" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#e65100">降低成本</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#e65100">加速创新</text>
+
+    <!-- 连接线 -->
+    <path d="M -60,0 L -120,0" stroke="#e65100" stroke-width="2" stroke-dasharray="5,5" />
+  </g>
+
+  <!-- 顶部：协作网络 -->
+  <g transform="translate(400, 130)">
+    <rect x="-80" y="-40" width="160" height="80" rx="10" ry="10" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" />
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3f51b5">去中心化</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#3f51b5">全球协作网络</text>
+
+    <!-- 连接线 -->
+    <path d="M 0,40 L 0,120" stroke="#3f51b5" stroke-width="2" stroke-dasharray="5,5" />
+  </g>
+
+  <!-- 底部：开发者活动 -->
+  <g transform="translate(400, 530)">
+    <rect x="-150" y="-40" width="300" height="80" rx="10" ry="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" />
+
+    <g transform="translate(-90, -5)">
+
+        <path fill="none" stroke-width="2" stroke="#9c27b0" d="M -10,-5 L 0,-15 L 10,-5 M 0,-15 L 0,5"></path>
+        <circle fill="none" stroke-width="1" stroke="#9c27b0" r="5" cy="-5" cx="0"></circle>
+        <path fill="none" stroke-width="1" stroke="#9c27b0" d="M -5,5 C -5,12 5,12 5,5"></path>
+      </g>
+      <text fill="#9c27b0" text-anchor="middle" font-size="14" font-family="Arial, sans-serif" y="25" x="-90">共享</text>
+
+
+      <g transform="translate(0, -5)">
+
+        <circle fill="none" stroke-width="2" stroke="#9c27b0" r="7" cy="-3" cx="-3"></circle>
+        <path fill="none" stroke-width="2" stroke="#9c27b0" d="M 2,2 L 10,10"></path>
+      </g>
+      <text fill="#9c27b0" text-anchor="middle" font-size="14" font-family="Arial, sans-serif" y="25" x="0">审查</text>
+
+
+      <g transform="translate(90, -5)">
+
+        <path fill="none" stroke-width="2" stroke="#9c27b0" d="M -8,0 A 8,8 0 1 1 0,8 M 0,8 L 5,3 M 0,8 L -5,3"></path>
+      </g>
+      <text fill="#9c27b0" text-anchor="middle" font-size="14" font-family="Arial, sans-serif" y="25" x="90">复用</text>
+
+
+      <path stroke-dasharray="5,5" stroke-width="2" stroke="#9c27b0" d="M 0,-40 L 0,-120"></path>
+    </g>
+
+  <!-- 互联网时代基石文本 -->
+  <text x="400" y="600" font-family="Arial, sans-serif" font-size="18" font-style="italic" text-anchor="middle" fill="#333">互联网时代的基石</text>
+
+  <!-- 版权声明 -->
+  <text x="50%" y="630" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区</text>
+</svg>

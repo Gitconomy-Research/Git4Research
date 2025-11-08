@@ -1,0 +1,105 @@
+<svg width="800" height="525" viewBox="0 0 800 525" xmlns="http://www.w3.org/2000/svg" style="background-color: white;" font-family="Noto Sans, sans-serif">
+
+  <defs>
+    <style>
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+      .stage-title-text { font-size: 16px; font-weight: bold; fill: #111827; text-anchor: middle; }
+      .keyword-text { font-size: 12px; font-weight: normal; fill: #374151; text-anchor: middle; }
+      .body-text { font-size: 12px; font-weight: normal; fill: #374151; text-anchor: middle; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+
+      /* 配色方案与布局 */
+      .input-box { fill: #EFF6FF; }
+      .process-box-bg { fill: #DBEAFE; }
+      .process-box-fg { stroke: #3B82F6; }
+      .output-box { fill: #F0FDF4; }
+      .benefit-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 1.5px;}
+      .benefit-icon { fill: #2563EB; }
+
+      .connector-line { stroke: #60A5FA; stroke-width: 3px; fill: none; }
+    </style>
+     <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#60A5FA" />
+    </marker>
+  </defs>
+
+  <g id="main-title">
+    <text x="400" y="50" class="main-title-text">Git4Ledger让声誉经济变得可计算</text>
+  </g>
+
+  <g id="process-flow" transform="translate(0, 80)">
+
+    <g id="stage-1-input" transform="translate(40, 0)">
+      <rect x="0" y="0" width="220" height="250" rx="15" ry="15" class="input-box"/>
+      <text x="110" y="40" class="stage-title-text">隐性的声誉经济</text>
+      <g class="icon" transform="translate(45, 80)">
+         <path d="M57.5,25.5 C45,5,15,15,25,40 C10,65,30,80,55,70 C80,85,110,65,95,40 C105,15,80,15,57.5,25.5 Z" fill="#DBEAFE" opacity="0.8"/>
+         <circle cx="40" cy="55" r="10" fill="#BFDBFE"/>
+         <circle cx="75" cy="60" r="15" fill="#BFDBFE"/>
+         <circle cx="60" cy="30" r="20" fill="#BFDBFE"/>
+      </g>
+      <text x="110" y="200" class="keyword-text">非结构化</text>
+      <text x="110" y="220" class="keyword-text">难以量化</text>
+    </g>
+
+    <g id="stage-2-process" transform="translate(400, 125)">
+       <text y="-85" class="stage-title-text">Git4Ledger框架</text>
+       <g class="icon" transform="scale(1.5) translate(-25, -25)">
+           <path d="M 0,10 L 10,0 L 40,0 L 50,10 L 50,40 L 40,50 L 10,50 L 0,40 Z" class="process-box-bg"/>
+           <path d="M25,15 v20 M15,25 h20" class="process-box-fg" stroke-width="3" stroke-linecap="round"/>
+       </g>
+       <text y="75" class="keyword-text">解析Git历史</text>
+    </g>
+
+    <g id="stage-3-output" transform="translate(540, 0)">
+      <rect x="0" y="0" width="220" height="250" rx="15" ry="15" class="output-box"/>
+      <text x="110" y="40" class="stage-title-text">可计算的声誉账本</text>
+      <g class="icon" transform="translate(55, 85)">
+        <rect x="0" y="60" width="20" height="20" fill="#A7F3D0"/>
+        <rect x="25" y="40" width="20" height="40" fill="#6EE7B7"/>
+        <rect x="50" y="20" width="20" height="60" fill="#34D399"/>
+        <rect x="75" y="50" width="20" height="30" fill="#A7F3D0"/>
+        <line x1="0" y1="80" x2="110" y2="80" stroke="#10B981" stroke-width="2"/>
+      </g>
+      <text x="110" y="200" class="keyword-text">显性化 &amp; 机器可读</text>
+      <text x="110" y="220" class="keyword-text">结构化 &amp; 可计算</text>
+    </g>
+
+    <g class="connector-line" marker-end="url(#arrowhead)">
+        <path d="M 260 125 H 325"/>
+        <path d="M 475 125 H 540"/>
+    </g>
+  </g>
+
+  <g id="benefits" transform="translate(40, 370)">
+     <text x="360" y="0" class="stage-title-text">奠定数据基础，实现</text>
+     <g class="benefits-list" transform="translate(130, 30)">
+        <rect x="0" y="0" width="150" height="50" rx="10" class="benefit-box"/>
+        <g class="benefit-icon" transform="translate(20, 15)">
+          <text font-size="20" text-anchor="middle" x="10" y="15">$</text>
+        </g>
+        <text x="85" y="30" class="body-text">资金分配</text>
+     </g>
+     <g class="benefits-list" transform="translate(325, 30)">
+        <rect x="0" y="0" width="150" height="50" rx="10" class="benefit-box"/>
+        <g class="benefit-icon" transform="translate(20, 15)">
+          <path d="M5,20 h15 M5,12 h15 M5,4 h15"/>
+          <path d="M0,0 v24 l10,-6 l10,6 v-24 z"/>
+        </g>
+        <text x="85" y="30" class="body-text">贡献排名</text>
+     </g>
+      <g class="benefits-list" transform="translate(520, 30)">
+        <rect x="0" y="0" width="150" height="50" rx="10" class="benefit-box"/>
+        <g class="benefit-icon" transform="translate(20, 15)">
+           <path d="M2,2 h16 a2,2 0 0 1 2,2 v16 a2,2 0 0 1 -2,2 h-16 a2,2 0 0 1 -2,-2 v-16 a2,2 0 0 1 2,-2 z"/>
+           <path d="M6,12 l4,4 l8,-8" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </g>
+        <text x="85" y="30" class="body-text">技能认证</text>
+     </g>
+   </g>
+
+  <text x="50%" y="500" class="license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可, 2025 Gitconomy Research社区
+  </text>
+</svg>

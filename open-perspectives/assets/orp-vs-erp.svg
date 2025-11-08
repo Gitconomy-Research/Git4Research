@@ -1,0 +1,102 @@
+<svg width="1200" height="850" viewBox="0 0 1200 850" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <defs>
+        <!-- Gradients -->
+        <linearGradient id="grad-erp" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#42A5F5; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1E88E5; stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad-orp" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#AB47BC; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#7B1FA2; stop-opacity:1" />
+        </linearGradient>
+
+        <!-- Icons -->
+        <symbol id="icon-factory" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2L2 8v12h20V8L12 2zm7 16h-2v-4h-2v4h-2v-4h-2v4H9v-4H7v4H5V9.3l7-4.67 7 4.67V18z"/>
+        </symbol>
+        <symbol id="icon-brain-circuit" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2a10 10 0 0 0-9.2 6.2c-.3.8-.1 1.7.5 2.2l.2.2c.4.3.9.3 1.3 0l2-1.3c.3-.2.6-.5.7-.9.2-.5.1-1-.1-1.4C7.7 7.5 9.7 6 12 6s4.3 1.5 4.6 3.8c.2.4.3.9.1 1.4-.1.4-.4.7-.7.9l-2 1.3c-.4.3-.9.3-1.3 0l-.2-.2a1.5 1.5 0 0 1-.5-2.2c-.1-.2-.3-.3-.5-.3s-.4.1-.5.3c-.6.9-.4 2.2.5 2.8l.2.2c1.4.9 3.2.5 4.1-.9l.2-.3c.6-.9.4-2.1-.5-2.8l-1.3-1c.5-1.2.4-2.7-.4-3.7C15.8 3.1 14 2.2 12 2zm0 18a8 8 0 0 1-8-8c0-.6.1-1.1.2-1.7l1.1.7c.9.6 1.3 1.7.9 2.7l-1 3.2c-.3.8.1 1.7.9 2 .3.1.6.1.9 0l3.2-1.1c1-.4 1.7-1.3 1.8-2.3.1-.6-.1-1.2-.5-1.6-.2-.2-.5-.3-.8-.3s-.6.1-.8.3c-.6.9-.4 2.1.5 2.7l.2.2c1.4.9 3.2.5 4.1-.9l.2-.3c.6-.9.4-2.1-.5-2.8l-1.3-.9a2.5 2.5 0 0 0-3.3 1.2c-.1.3-.4.6-.8.6s-.6-.2-.8-.5c-.6-.9-.4-2.1.5-2.7l1.3-.9c.4-.3.9-.3 1.3 0l1.3.9c.9.6 1.1 1.8.5 2.8l-.2.3c-.9 1.4-2.7 1.8-4.1.9l-.2-.2c-.9-.6-1.1-1.8-.5-2.7.1-.2.1-.5 0-.7s-.2-.4-.4-.5c-1.3-.7-2.8-.2-3.5 1l-1 3.2c-.1.5.1 1 .5 1.3h.2l3.2-1.1c.5-.2.8-.6.9-1.1.1-.6-.1-1.2-.5-1.6l-1.1-.7A8 8 0 0 1 12 20z"/>
+        </symbol>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1200" height="850" fill="#F8F9FA"/>
+
+    <!-- Main Title -->
+    <text x="600" y="50" font-size="32px" font-weight="bold" text-anchor="middle" fill="#212529">ERP vs. ORP: 范式对比</text>
+    <text x="600" y="80" font-size="18px" text-anchor="middle" fill="#6C757D">从企业流程固化到智能生产力编排的演进</text>
+
+    <!-- Evolution Arrow -->
+    <g transform="translate(550, 450)">
+        <path d="M0 0 L60 0 L60 -20 L100 30 L60 80 L60 60 L0 60 Z" fill="#6C757D" opacity="0.3"/>
+        <text x="50" y="-30" font-size="18px" font-weight="bold" fill="#343A40" text-anchor="middle">范式演进</text>
+    </g>
+
+    <!-- ERP Column -->
+    <g id="erp-column">
+        <rect x="50" y="120" width="500" height="680" rx="20" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+        <path d="M50 140 Q 50 120 70 120 H 530 Q 550 120 550 140 V 180 H 50 Z" fill="url(#grad-erp)"/>
+        <use href="#icon-factory" x="70" y="135" width="30" height="30" color="white"/>
+        <text x="115" y="158" font-size="24px" font-weight="bold" fill="white">ERP (企业资源计划)</text>
+
+        <g transform="translate(80, 210)">
+            <text y="20" font-size="18px" font-weight="bold" fill="#1E88E5">核心理念</text>
+            <text y="50" font-size="16px" fill="#495057">对企业内部核心业务流程进行集成和固化管理。</text>
+
+            <text y="100" font-size="18px" font-weight="bold" fill="#1E88E5">管理焦点</text>
+            <text y="130" font-size="16px" fill="#495057">流程优化、成本控制、效率提升。</text>
+
+            <text y="180" font-size="18px" font-weight="bold" fill="#1E88E5">核心资源</text>
+            <text y="210" font-size="16px" fill="#495057">• 人力 (Human Resources)</text>
+            <text y="235" font-size="16px" fill="#495057">• 财力 (Finance)</text>
+            <text y="260" font-size="16px" fill="#495057">• 物料 (Material)</text>
+            <text y="285" font-size="16px" fill="#495057">• 信息 (Information)</text>
+
+            <text y="335" font-size="18px" font-weight="bold" fill="#1E88E5">主要特点</text>
+            <text y="365" font-size="16px" fill="#495057">• 内部导向、结构化、中心化、流程驱动。</text>
+            <text y="390" font-size="16px" fill="#495057">• 优点: 提高标准化程度，打破部门墙，数据统一。</text>
+            <text y="415" font-size="16px" fill="#495057">• 缺点: 僵化，实施成本高，难以适应快速变化。</text>
+
+            <text y="465" font-size="18px" font-weight="bold" fill="#1E88E5">适用场景</text>
+            <text y="495" font-size="16px" fill="#495057">成熟的、大规模的、流程相对稳定的制造业、零售业等。</text>
+        </g>
+        <text x="300" y="765" font-size="18px" font-weight="bold" text-anchor="middle" fill="#0D47A1">时代背景：信息化时代</text>
+    </g>
+
+    <!-- ORP Column -->
+    <g id="orp-column">
+        <rect x="650" y="120" width="500" height="680" rx="20" fill="#FFFFFF" stroke="#DEE2E6" stroke-width="1.5"/>
+        <path d="M650 140 Q 650 120 670 120 H 1130 Q 1150 120 1150 140 V 180 H 650 Z" fill="url(#grad-orp)"/>
+        <use href="#icon-brain-circuit" x="670" y="135" width="30" height="30" color="white"/>
+        <text x="715" y="158" font-size="24px" font-weight="bold" fill="white">ORP (开放资源规划)</text>
+
+        <g transform="translate(680, 210)">
+            <text y="20" font-size="18px" font-weight="bold" fill="#7B1FA2">核心理念</text>
+            <text y="50" font-size="16px" fill="#495057">对内外部AI生产力要素进行开放式整合与编排。</text>
+
+            <text y="100" font-size="18px" font-weight="bold" fill="#7B1FA2">管理焦点</text>
+            <text y="130" font-size="16px" fill="#495057">能力涌现、价值创造、敏捷创新。</text>
+
+            <text y="180" font-size="18px" font-weight="bold" fill="#7B1FA2">核心资源</text>
+            <text y="210" font-size="16px" fill="#495057">• 算力 (Computing Power)</text>
+            <text y="235" font-size="16px" fill="#495057">• 数据 (Data)</text>
+            <text y="260" font-size="16px" fill="#495057">• 算法与模型 (Algorithm and Model)</text>
+            <text y="285" font-size="16px" fill="#495057">• 代码与工具 (Code and Tools)</text>
+            <text y="310" font-size="16px" fill="#495057">• 人才与知识 (Talent and Knowledge)</text>
+
+            <text y="345" font-size="18px" font-weight="bold" fill="#7B1FA2">主要特点</text>
+            <text y="375" font-size="16px" fill="#495057">• 生态导向、动态、分布式、能力驱动。</text>
+            <text y="400" font-size="16px" fill="#495057">• 优点: 敏捷灵活，最大化利用全球资源，加速创新。</text>
+            <text y="425" font-size="16px" fill="#495057">• 缺点: 管理复杂性高，对治理和安全提出新挑战。</text>
+
+            <text y="475" font-size="18px" font-weight="bold" fill="#7B1FA2">适用场景</text>
+            <text y="505" font-size="16px" fill="#495057">所有进行AI转型、构建智能应用和Agent的企业。</text>
+        </g>
+        <text x="900" y="765" font-size="18px" font-weight="bold" text-anchor="middle" fill="#4A148C">时代背景：数智化时代</text>
+    </g>
+
+    <!-- License Declaration -->
+    <text x="600" y="830" font-size="12px" text-anchor="middle" fill="#6C757D">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区
+    </text>
+</svg>

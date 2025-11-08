@@ -1,0 +1,106 @@
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>Google Summer of Code (GSoC) 运营流程逻辑示意图</title>
+  <desc>一个从“选拔”到“融入”的身份转化流程：准备与申请 → 主题发布/学生申请 → 匹配与协作开发 → 成果与转化。</desc>
+
+  <style>
+    .process-box { fill: #fff; stroke: #ccc; stroke-width: 2; }
+    .actor-google { fill: #e8f0fe; stroke: #4285F4; }
+    .actor-org { fill: #e6f4ea; stroke: #34A853; }
+    .actor-student { fill: #fff7e0; stroke: #FBBC05; }
+    .outcome-box { fill: #fce8e6; stroke: #EA4335; stroke-width: 2.5; }
+
+    .title-text { font-size: 20px; font-weight: 800; text-anchor: middle; fill: #111827; }
+    .subtitle-text { font-size: 14px; text-anchor: middle; fill: #6b7280; }
+    .step-text { font-size: 15px; text-anchor: middle; font-weight: 600; fill: #111827; }
+    .highlight-text { font-size: 14px; font-weight: 700; fill: #d93025; text-anchor: middle; }
+    .flow-arrow { fill: none; stroke: #5f6368; stroke-width: 2; marker-end: url(#arrow); stroke-linecap: round; }
+    .loop-arrow { fill: none; stroke: #34A853; stroke-width: 1.6; marker-end: url(#looparrow); stroke-dasharray: 4 2; }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5f6368" />
+    </marker>
+    <marker id="looparrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34A853" />
+    </marker>
+  </defs>
+
+  <!-- 顶部标题 -->
+  <text x="400" y="40" class="title-text">Google Summer of Code (GSoC) 运营逻辑示意图</text>
+  <text x="400" y="65" class="subtitle-text">一个从“选拔”到“融入”的身份转化流程</text>
+
+  <!-- 阶段一：准备与申请 -->
+  <g id="phase1">
+    <rect x="50" y="100" width="700" height="150" class="process-box actor-google" rx="8" ry="8" />
+    <text x="400" y="125" class="step-text">阶段一：准备与申请</text>
+    <circle cx="150" cy="180" r="40" class="actor-google" />
+    <text x="150" y="180" dy="0.35em" class="step-text">Google</text>
+    <text x="400" y="180" class="step-text">邀请全球开源社区作为“导师组织”加入</text>
+    <circle cx="650" cy="180" r="40" class="actor-org" />
+    <text x="650" y="180" dy="0.35em" class="step-text">开源社区</text>
+  </g>
+
+  <!-- 连接箭头 -->
+  <path class="flow-arrow" d="M 215 250 L 215 290" />
+  <path class="flow-arrow" d="M 585 250 L 585 290" />
+
+  <!-- 阶段二：主题发布 & 学生申请 -->
+  <g id="phase2">
+    <rect x="50" y="290" width="330" height="120" class="process-box actor-org" rx="8" ry="8" />
+    <text x="215" y="320" class="step-text">导师组织发布项目主题</text>
+    <text x="215" y="350" class="subtitle-text">（定义真实、有价值的需求）</text>
+
+    <rect x="420" y="290" width="330" height="120" class="process-box actor-student" rx="8" ry="8" />
+    <text x="585" y="320" class="step-text">学生选择项目并提交申请</text>
+    <text x="585" y="350" class="subtitle-text">（编写具体的技术实现方案）</text>
+  </g>
+
+  <!-- 连接箭头 -->
+  <path class="flow-arrow" d="M 215 410 L 215 450" />
+  <path class="flow-arrow" d="M 585 410 L 585 450" />
+
+  <!-- 阶段三：匹配与协作开发（3个月） -->
+  <g id="phase3">
+    <rect x="50" y="450" width="700" height="300" class="process-box actor-org" rx="8" ry="8" />
+    <text x="400" y="475" class="step-text">阶段二：匹配与 3 个月协作开发</text>
+
+    <rect x="80" y="500" width="640" height="60" class="actor-org" rx="30" ry="30" style="stroke-width:1.5px;" />
+    <text x="400" y="530" class="step-text">导师组织评审方案，为被选中的学生指派专属“导师”</text>
+    <text x="150" y="585" class="highlight-text">核心：从“评委”到“导师”</text>
+
+    <!-- 开发循环块 -->
+    <g id="development-loop" transform="translate(400, 650)">
+      <rect x="-320" y="-50" width="640" height="140" class="actor-student" rx="8" ry="8" style="stroke-width:1.5px;" />
+      <text x="0" y="-25" class="step-text">学生在导师指导下进行开发</text>
+
+      <text x="-220" y="25" class="step-text">编码与实践</text>
+      <text x="0" y="25" class="step-text">提交 PR / 补丁</text>
+      <text x="220" y="25" class="step-text">导师反馈与指导</text>
+
+      <path class="loop-arrow" d="M -150,40 C -120,70 120,70 150,40" />
+      <path class="loop-arrow" d="M 150,10 C 120,-20 -120,-20 -150,10" />
+      <text x="0" y="75" class="subtitle-text">学习社区规范 · 迭代实践 · 提升工程素养</text>
+    </g>
+  </g>
+
+  <!-- 连接箭头 -->
+  <path class="flow-arrow" d="M 400 750 L 400 790" />
+
+  <!-- 阶段四：成果与转化 -->
+  <g id="phase4">
+    <rect x="50" y="790" width="700" height="140" class="process-box" rx="8" ry="8" />
+    <text x="400" y="815" class="step-text">阶段三：成果与转化</text>
+
+    <rect x="80" y="840" width="300" height="70" class="outcome-box" rx="10" ry="10" />
+    <text x="230" y="865" class="step-text">产出：贡献物</text>
+    <text x="230" y="885" class="subtitle-text">代码合入主干 · 文档/测试完善</text>
+
+    <rect x="420" y="840" width="300" height="70" class="outcome-box" rx="10" ry="10" />
+    <text x="570" y="865" class="step-text">身份：成为贡献者</text>
+    <text x="570" y="885" class="subtitle-text">获得社区身份与持续参与</text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="400" y="975" class="subtitle-text">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

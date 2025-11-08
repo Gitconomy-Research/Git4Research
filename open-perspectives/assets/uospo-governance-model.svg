@@ -1,0 +1,56 @@
+<svg width="600" height="450" viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial, sans-serif;">
+    <style>
+        .axis-line { stroke: #333; stroke-width: 2; }
+        .grid-line { stroke: #ddd; stroke-width: 0.5; }
+        .label { font-size: 14px; fill: #333; }
+        .title { font-size: 18px; font-weight: bold; fill: #1c4587; }
+        .quadrant-title { font-size: 16px; font-weight: bold; fill: #666; }
+        .point { fill: #c70039; stroke: #800020; stroke-width: 2; cursor: pointer; }
+        .point-cn { fill: #007bff; stroke: #0056b3; } /* 中国高校 */
+        .annotation { font-size: 14px; fill: #1c4587; font-weight: bold; }
+        .description { font-size: 11px; fill: #333; }
+        .license { font-size: 10px; fill: #666; } /* Style for the license text */
+    </style>
+
+    <text class="title" x="300" y="30" text-anchor="middle">高校OSPO治理实践模式对比分析</text>
+    <text class="description" x="300" y="55" text-anchor="middle">(基于治理模式与核心驱动力的四象限定位)</text>
+
+    <rect x="50" y="90" width="500" height="300" fill="#f9f9f9" stroke="#333" stroke-width="1"/>
+
+    <line class="axis-line" x1="50" y1="240" x2="550" y2="240"/>
+    <text class="label" x="60" y="235" text-anchor="start">集中式/校级主导</text>
+    <text class="label" x="540" y="235" text-anchor="end">分布式/文化驱动</text>
+
+    <line class="axis-line" x1="300" y1="90" x2="300" y2="390"/>
+
+    <text class="label" x="300" y="80" text-anchor="middle">人才培养/教育</text>
+    <text class="label" x="300" y="405" text-anchor="middle">科研/产业转化</text>
+
+    <text class="quadrant-title" x="175" y="115" text-anchor="middle">I. 教育-集中治理型</text>
+    <text class="quadrant-title" x="425" y="115" text-anchor="middle">II. 教育-文化驱动型</text>
+    <text class="quadrant-title" x="175" y="385" text-anchor="middle">III. 科研-集中转化型</text>
+    <text class="quadrant-title" x="425" y="385" text-anchor="middle">IV. 科研-分布式驱动</text>
+
+    <circle cx="170" cy="160" r="8" class="point" id="rit-ospo"/>
+    <text class="annotation" x="170" y="143" text-anchor="middle">RIT-OSPO</text>
+    <text class="description" x="170" y="184" text-anchor="middle">集中式、教育驱动</text>
+
+    <circle cx="430" cy="160" r="8" class="point" id="mit"/>
+    <text class="annotation" x="430" y="143" text-anchor="middle">MIT</text>
+    <text class="description" x="430" y="184" text-anchor="middle">分布式、文化驱动</text>
+
+    <circle cx="170" cy="320" r="8" class="point" id="cross"/>
+    <text class="annotation" x="170" y="303" text-anchor="middle">UCSC-CROSS</text>
+    <text class="description" x="170" y="344" text-anchor="middle">产学研孵化与项目转化</text>
+
+    <circle cx="380" cy="280" r="8" class="point point-cn" id="tsinghua"/>
+    <text class="annotation" x="380" y="263" text-anchor="middle">清华大学</text>
+    <text class="description" x="380" y="304" text-anchor="middle">基础设施与顶尖项目双轮驱动</text>
+
+    <circle cx="450" cy="340" r="8" class="point point-cn" id="zju"/>
+    <text class="annotation" x="450" y="323" text-anchor="middle">浙江大学</text>
+    <text class="description" x="450" y="364" text-anchor="middle">学术评价与产业融合</text>
+
+    <text class="license" x="300" y="430" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

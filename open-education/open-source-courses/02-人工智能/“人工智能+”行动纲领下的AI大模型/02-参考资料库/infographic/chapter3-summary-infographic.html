@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三章：算力的基石——超越规模的极限</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --line: #e5e7eb;
+            --brand: #004AAD;
+            --brand2: #0062D5;
+            --brand5: #CDE6FF;
+            --accent-red: #E74C3C;
+            --accent-green: #10b981;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) { .hero h1 { font-size: 40px } }
+        .hero .lead {
+            color: var(--brand5);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .site-footer {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 18px 16px;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+        .card {
+            background-color: var(--card);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(15,23,42,.06);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brand);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .diagram {
+            background-color: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .stack-layer {
+            border-bottom: 2px dashed #cbd5e1;
+        }
+        .stack-layer:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="hero">
+        <h1>第三章 算力的基石：超越规模的极限</h1>
+        <p class="lead">论证AI发展正从“规模驱动”转向“效率驱动”，并阐明自主全栈AI生态的战略必然性。</p>
+    </header>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <!-- 1. 规模法则的终结 -->
+        <section class="card">
+            <h2 class="section-title">密集Transformer的三大计算瓶颈</h2>
+            <p class="text-center text-[var(--muted)] mb-8">以“越大越好”为核心的规模法则正因其不可持续的成本而走向尽头，其根源在于传统密集Transformer架构固有的三大计算瓶颈。</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+                    <div class="text-4xl mb-3">🤯</div>
+                    <h3 class="font-bold text-red-800">计算复杂度瓶颈</h3>
+                    <p class="text-sm text-red-700 mt-2">自注意力机制的计算量随序列长度二次方增长(<span class="font-mono">O(N²)</span>)，处理长文本成本极高。</p>
+                </div>
+                <div class="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+                    <div class="text-4xl mb-3">🏋️</div>
+                    <h3 class="font-bold text-red-800">密集激活瓶颈</h3>
+                    <p class="text-sm text-red-700 mt-2">每个输入都需激活模型全部参数，导致推理成本与参数量直接挂钩，模型越大越慢。</p>
+                </div>
+                <div class="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+                    <div class="text-4xl mb-3">📚</div>
+                    <h3 class="font-bold text-red-800">知识存储瓶颈</h3>
+                    <p class="text-sm text-red-700 mt-2">所有知识都存储于模型参数中，导致知识静态、可能过时，且容易产生“幻觉”。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. AI的新轨迹：效率的架构 -->
+        <section class="card">
+            <h2 class="section-title">AI的新轨迹：效率型架构的崛起</h2>
+            <p class="text-center text-[var(--muted)] mb-8">面对上述瓶颈，业界正转向以Mamba、MoE、RAG为代表的效率型架构，它们分别从不同维度对Transformer进行了战略性的“解绑”。</p>
+            <div class="space-y-12">
+                <!-- Mamba -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-bold text-2xl text-green-700 mb-3">Mamba (SSM)</h3>
+                        <p class="text-[var(--muted)]">通过引入“选择机制”的状态空间模型，将计算复杂度从 <span class="font-mono">O(N²)</span> 降至 <span class="font-mono">O(N)</span>，在高效处理超长序列的同时，保持了强大的性能，解决了“计算复杂度”瓶颈。</p>
+                    </div>
+                    <div class="diagram">
+                        <h4 class="font-semibold mb-2">Mamba 线性处理流程</h4>
+                        <div class="text-sm text-center">Input (t) &rarr; <strong class="text-green-600">选择性更新</strong> &rarr; State (t) &rarr; Output (t)</div>
+                        <div class="text-4xl my-4">… → 🔵 → [ S ] → 🟢 → …</div>
+                        <p class="text-xs text-gray-500">将历史信息压缩到一个循环更新的“状态”中，实现线性计算。</p>
+                    </div>
+                </div>
+                <!-- MoE -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div class="lg:order-2">
+                        <h3 class="font-bold text-2xl text-green-700 mb-3">专家混合 (MoE)</h3>
+                        <p class="text-[var(--muted)]">通过“稀疏激活”策略，每个输入仅由一小部分“专家”网络处理，成功解耦了模型的总参数量与单次推理的计算量，解决了“密集激活”瓶颈。</p>
+                    </div>
+                    <div class="diagram">
+                        <h4 class="font-semibold mb-4">MoE 稀疏激活示意图</h4>
+                        <div class="flex items-center space-x-4">
+                            <span>Input</span>
+                            <span class="text-2xl">&rarr;</span>
+                            <div class="p-2 border-2 border-dashed border-gray-400 rounded">Router</div>
+                            <span class="text-2xl">&rarr;</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <div class="p-2 bg-green-200 text-green-800 rounded">Expert 1</div>
+                                <div class="p-2 bg-gray-200 text-gray-400 rounded">Expert 2</div>
+                                <div class="p-2 bg-gray-200 text-gray-400 rounded">Expert 3</div>
+                                <div class="p-2 bg-green-200 text-green-800 rounded">Expert 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RAG -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="font-bold text-2xl text-green-700 mb-3">检索增强生成 (RAG)</h3>
+                        <p class="text-[var(--muted)]">将知识外置于可动态更新的数据库中，模型在生成时先“检索”相关信息再作答。这让模型更轻量、内容更可信且可实时更新，解决了“知识存储”瓶颈。</p>
+                    </div>
+                    <div class="diagram">
+                         <h4 class="font-semibold mb-4">RAG 工作流程</h4>
+                         <div class="text-center text-sm space-y-2">
+                             <span>Query</span>
+                             <div class="text-2xl">&darr;</div>
+                             <div class="flex space-x-2">
+                                <div class="p-2 bg-white shadow rounded">[Retriever]</div>
+                                <div class="p-2 bg-white shadow rounded">📚 [Knowledge Base]</div>
+                             </div>
+                             <div class="text-2xl">&darr;</div>
+                             <span>Context + Query</span>
+                             <div class="text-2xl">&darr;</div>
+                             <div class="p-2 bg-green-100 border border-green-300 rounded">🤖 [LLM Generator]</div>
+                             <div class="text-2xl">&darr;</div>
+                             <span>Answer</span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 战略的必然：自主全栈生态 -->
+        <section class="card">
+            <h2 class="section-title">战略的必然：自主全栈生态对比</h2>
+            <p class="text-center text-[var(--muted)] mb-8">要将效率型架构的理论优势转化为实际性能，必须拥有软硬件协同设计的全栈技术生态。这已成为地缘政治背景下的关键博弈点。</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- NVIDIA -->
+                <div class="p-6 border rounded-lg">
+                    <h3 class="text-xl font-bold text-center text-slate-800 mb-4">NVIDIA/CUDA 生态系统</h3>
+                    <div class="space-y-2 text-center">
+                        <div class="stack-layer p-2"><span class="font-bold">应用框架:</span> PyTorch, TensorFlow...</div>
+                        <div class="stack-layer p-2"><span class="font-bold">使能库:</span> TensorRT, cuDNN, cuBLAS...</div>
+                        <div class="stack-layer p-2"><span class="font-bold">核心API:</span> CUDA</div>
+                        <div class="p-2"><span class="font-bold">硬件:</span> GPU (内置 Tensor Core)</div>
+                    </div>
+                </div>
+                <!-- Ascend -->
+                <div class="p-6 border-2 border-solid border-[var(--brand2)] rounded-lg bg-blue-50">
+                    <h3 class="text-xl font-bold text-center text-[var(--brand)] mb-4">华为昇腾 (Ascend) 生态系统</h3>
+                     <div class="space-y-2 text-center">
+                        <div class="stack-layer p-2"><span class="font-bold">应用使能:</span> MindX SDK, ModelArts</div>
+                        <div class="stack-layer p-2"><span class="font-bold">AI框架:</span> MindSpore</div>
+                        <div class="stack-layer p-2"><span class="font-bold">计算架构:</span> CANN (类似CUDA+cuDNN)</div>
+                        <div class="p-2"><span class="font-bold">硬件:</span> NPU (达芬奇架构, 内置 AI Core)</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Comparison Table -->
+            <div class="mt-8 overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="p-3">对比维度</th>
+                            <th class="p-3">NVIDIA 生态</th>
+                            <th class="p-3">华为昇腾 生态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-3 font-semibold">核心战略</td>
+                            <td class="p-3">横向开放，构建行业事实标准。</td>
+                            <td class="p-3">垂直整合，自主可控。</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-3 font-semibold">核心优势</td>
+                            <td class="p-3">硬件性能领先，拥有全球最庞大的开发者生态。</td>
+                            <td class="p-3">软硬件深度协同优化潜力巨大，符合国家战略安全。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区
+    </footer>
+
+</body>
+</html>

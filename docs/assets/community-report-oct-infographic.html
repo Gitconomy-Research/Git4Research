@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitconomy 社区运营报告 (2025年10月)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Noto Sans SC', 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: #111827;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .infographic-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-main-box-fill: #EFF6FF;
+            --color-box-fill: #F0FDF4;
+            --color-card-background-fill: #DBEAFE;
+            --color-highlight-box-fill: #FEF9C3;
+            --color-background: white;
+            --color-main-box-stroke: #60A5FA;
+            --color-box-stroke: #34D399;
+            --color-card-background-stroke: #3B82F6;
+            --color-highlight-box-stroke: #FACC15;
+            --color-connector-standard: #2563EB;
+            --color-connector-highlight: #FACC15;
+            --color-text-main-title: #111827;
+            --color-text-section-title: #374151;
+            --color-text-card-title: #1E40AF;
+            --color-text-body: #374151;
+            --color-text-small: #6B7280;
+            --color-text-license: #64748B;
+            --color-icon: #3B82F6;
+
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --brand: #004AAD;
+            --brand-light: #CDE6FF;
+
+            --font-family-sans: 'Noto Sans SC', 'Inter', sans-serif;
+
+            --font-size-main-title: 24px;
+            --font-size-section-title: 22px;
+            --font-size-card-title: 14px;
+            --font-size-body: 16px;
+            --font-size-small: 14px;
+            --font-size-license: 12px;
+
+            --font-weight-main-title: 800;
+            --font-weight-bold: 700;
+            --font-weight-medium: 500;
+            --font-weight-normal: 400;
+        }
+
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) {
+            .hero h1 {
+                font-size: 40px
+            }
+        }
+        .hero .lead {
+            color: var(--brand-light);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: var(--brand);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        footer p {
+            font-size: 0.75rem;
+            color: var(--brand-light);
+            opacity: 0.8;
+            margin-bottom: 0.25rem;
+            margin-top: 0;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .section-title-text {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-section-title);
+            font-weight: var(--font-weight-bold);
+            fill: var(--color-text-section-title);
+            text-anchor: middle;
+        }
+
+        .data-card-box {
+            fill: var(--color-main-box-fill);
+            stroke: var(--color-main-box-stroke);
+            stroke-width: 1.5px;
+        }
+        .data-card-number {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-main-title);
+            font-weight: var(--font-weight-bold);
+            fill: var(--color-text-card-title);
+            text-anchor: middle;
+        }
+        .data-card-label {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-body);
+            font-weight: var(--font-weight-medium);
+            fill: var(--color-text-body);
+            text-anchor: middle;
+        }
+
+        .data-card-icon {
+            fill: var(--color-icon);
+            opacity: 0.7;
+        }
+
+        .timeline-line {
+            stroke: var(--color-connector-standard);
+            stroke-width: 2px;
+        }
+        .timeline-dot {
+            fill: var(--color-connector-standard);
+        }
+
+        .card-background {
+            fill: var(--color-card-background-fill);
+            stroke: var(--color-card-background-stroke);
+            stroke-width: 1.5px;
+        }
+        .card-title-text {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-card-title);
+            font-weight: var(--font-weight-bold);
+            fill: var(--color-text-card-title);
+        }
+        .body-text {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-body);
+            font-weight: var(--font-weight-normal);
+            fill: var(--color-text-body);
+        }
+        .small-body-text {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-small);
+            font-weight: var(--font-weight-normal);
+            fill: var(--color-text-small);
+        }
+
+        .list-icon {
+            fill: var(--color-icon);
+        }
+
+        .conclusion-box {
+            fill: var(--color-box-fill);
+            stroke: var(--color-box-stroke);
+            stroke-width: 1.5px;
+        }
+        .conclusion-text {
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-body);
+            font-weight: var(--font-weight-normal);
+            fill: var(--color-text-body);
+            text-anchor: middle;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Gitconomy 社区运营报告 (2025年10月)</h1>
+        <p class="lead">很高兴与大家分享我们社区正式运营的第一份月度报告。</p>
+    </header>
+
+    <div class="infographic-container">
+
+        <main>
+            <svg viewBox="0 0 800 1420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagramTitle diagramDesc">
+
+                <title id="diagramTitle">Gitconomy 社区2025年10月运营报告信息图</title>
+                <desc id="diagramDesc">此信息图表分为四个部分：社区数据概览，本月重要事件，下月计划，以及结语。</desc>
+
+                <!--
+                  =================================
+                  第 1 部分: 社区数据概览
+                  =================================
+                -->
+                <g id="data-overview-section" transform="translate(40, 0)">
+                    <text x="360" y="30" class="section-title-text">社区数据概览</text>
+
+                    <!-- 数据卡片网格 (3列 x 2行) -->
+                    <g id="data-grid" transform="translate(0, 70)">
+                        <!-- Row 1 -->
+                        <g id="data-card-1" transform="translate(0, 0)">
+                            <rect width="220" height="100" rx="8" class="data-card-box"/>
+                            <!-- 图标: 代码 -->
+                            <g class="data-card-icon" transform="translate(35, 35) scale(1.8)">
+                                <path fill-rule="evenodd" d="M3.75 2.5a.75.75 0 00-1.5 0v11a.75.75 0 001.5 0v-11zM12.25 2.5a.75.75 0 00-1.5 0v11a.75.75 0 001.5 0v-11zM5.75 6.25a.75.75 0 01.75-.75h3.5a.75.75 0 010 1.5h-3.5a.75.75 0 01-.75-.75zm.75 3.25a.75.75 0 000 1.5h3.5a.75.75 0 000-1.5h-3.5z" clip-rule="evenodd" />
+                            </g>
+                            <text x="135" y="55" class="data-card-number">561</text>
+                            <text x="135" y="80" class="data-card-label">代码贡献 (次)</text>
+                        </g>
+                        <g id="data-card-2" transform="translate(250, 0)">
+                            <rect width="220" height="100" rx="8" class="data-card-box"/>
+                            <!-- 图标: 贡献者 -->
+                            <g class="data-card-icon" transform="translate(35, 35) scale(1.8)">
+                                <path fill-rule="evenodd" d="M8 8a3 3 0 100-6 3 3 0 000 6zM6 9.75A5.25 5.25 0 00.75 15v.75a.75.75 0 00.75.75h13.5a.75.75 0 00.75-.75V15A5.25 5.25 0 0010 9.75H6z" clip-rule="evenodd" />
+                            </g>
+                            <text x="135" y="55" class="data-card-number">10+</text>
+                            <text x="135" y="80" class="data-card-label">活跃贡献者</text>
+                        </g>
+                        <g id="data-card-3" transform="translate(500, 0)">
+                            <rect width="220" height="100" rx="8" class="data-card-box"/>
+                            <!-- 图标: Issues -->
+                            <g class="data-card-icon" transform="translate(35, 35) scale(1.8)">
+                                <path fill-rule="evenodd" d="M3 2.75A.75.75 0 013.75 2H13a1 1 0 011 1v11a1 1 0 01-1 1H3.75a.75.75 0 01-.75-.75V2.75zm1.5 1.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm0 3a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5zm0 3a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5z" clip-rule="evenodd" />
+                            </g>
+                            <text x="135" y="55" class="data-card-number">16</text>
+                            <text x="135" y="80" class="data-card-label">Issues 总数</text>
+                        </g>
+
+                        <!-- Row 2 -->
+                        <g id="data-card-4" transform="translate(0, 130)">
+                            <rect width="220" height="100" rx="8" class="data-card-box"/>
+                            <!-- 图标: 讨论 -->
+                            <g class="data-card-icon" transform="translate(35, 35) scale(1.8)">
+                                <path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 00-1.5 0v1.442c-1.04.22-1.99.64-2.836 1.205-.28.188-.53.393-.746.611l-.21.21-.197.195a.75.75 0 001.06 1.06l.197-.195.21-.21c.216-.218.466-.423.746-.61 1.638-1.093 3.606-1.4 5.423-.84l.904.271a.75.75 0 00.707-1.353l-.904-.271a5.002 5.002 0 00-2.912-1.01V2.5zM4 5.992a.75.75 0 00-1.06 1.06l.197.195.21.21c.216.218.466.423.746.61 1.638 1.093 3.606 1.4 5.423.84l.904-.271a.75.75 0 00-.707-1.353l-.904.271a5.002 5.002 0 00-2.912 1.01V6.942c-1.04-.22-1.99-.64-2.836-1.205-.28-.188-.53-.393-.746-.611l-.21-.21-.197-.195zM2.75 12a.75.75 0 01.75-.75h9.5a.75.75 0 010 1.5h-9.5a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                            </g>
+                            <text x="135" y="55" class="data-card-number">25+</text>
+                            <text x="135" y="80" class="data-card-label">讨论参与 (人)</text>
+                        </g>
+                        <g id="data-card-5" transform="translate(250, 130)">
+                            <rect width="220" height="100" rx="8" class="data-card-box"/>
+                            <!-- 图标: Star -->
+                            <g class="data-card-icon" transform="translate(35, 35) scale(1.8)">
+                                <path fill-rule="evenodd" d="M8 1.75l1.63 3.3a.75.75 0 00.56.41l3.65.53a.75.75 0 01.42 1.28l-2.64 2.58a.75.75 0 00-.22.66l.62 3.64a.75.75 0 01-1.09.79L8 12.72a.75.75 0 00-.7 0l-3.27 1.72a.75.75 0 01-1.09-.79l.62-3.64a.75.75 0 00-.22-.66L.93 7.27a.75.75 0 01.42-1.28l3.65-.53a.75.75 0 00.56-.41L7.19 1.75a.75.75 0 011.62 0z" clip-rule="evenodd" />
+                            </g>
+                            <text x="135" y="55" class="data-card-number">42 / 9</text>
+                            <text x="135" y="80" class="data-card-label">Star / Fork</text>
+                        </g>
+                        <g id="data-card-6" transform="translate(500, 130)">
+                            <rect width="220" height="100" rx="8" class="data-card-box"/>
+                            <!-- 图标: 访问量 -->
+                            <g class="data-card-icon" transform="translate(35, 35) scale(1.8)">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM1.5 8c0-3.59 2.91-6.5 6.5-6.5s6.5 2.91 6.5 6.5c0 1.9-.84 3.6-2.19 4.81a.75.75 0 11-1.02-1.1a4.996 4.996 0 001.46-3.71c0-2.76-2.24-5-5-5S3 5.24 3 8c0 1.36.54 2.59 1.41 3.5H3.25a.75.75 0 010-1.5h.34a.75.75 0 110 1.5H3.25A.75.75 0 012.5 11c-.34 0-.67-.04-.99-.12a.75.75 0 01-.52-1.38C1.22 9.21 1.5 8.62 1.5 8z" clip-rule="evenodd" />
+                            </g>
+                            <text x="135" y="55" class="data-card-number">2,392</text>
+                            <text x="135" y="80" class="data-card-label">项目访问量</text>
+                        </g>
+                    </g>
+                </g>
+
+                <!--
+                  =================================
+                  第 2 部分: 本月重要事件
+                  =================================
+                -->
+                <g id="key-events-section" transform="translate(40, 350)">
+                    <text x="360" y="30" class="section-title-text">本月重要事件</text>
+
+                    <!-- 垂直时间线 -->
+                    <g id="timeline" transform="translate(0, 70)">
+                        <!-- 时间线 竖线 -->
+                        <line x1="80" y1="50" x2="80" y2="480" class="timeline-line" />
+
+                        <!-- 事件 1: 线上会议 -->
+                        <g transform="translate(0, 0)">
+                            <circle cx="80" cy="50" r="8" class="timeline-dot" />
+                            <g transform="translate(120, 0)">
+                                <rect width="580" height="80" rx="8" class="card-background"/>
+                                <!-- 文本内容 -->
+                                <text x="25" y="30" class="card-title-text">3次线上社区会议</text>
+                                <text x="25" y="55" class="body-text">确立社区使命、愿景与核心支柱，以及“从讨论到议题”的工作模式。</text>
+                            </g>
+                        </g>
+
+                        <!-- 事件 2: 行业会议 -->
+                        <g transform="translate(0, 110)">
+                            <circle cx="80" cy="50" r="8" class="timeline-dot" />
+                            <g transform="translate(120, 0)">
+                                <rect width="580" height="80" rx="8" class="card-background"/>
+                                <text x="25" y="30" class="card-title-text">参与行业会议 (10/21)</text>
+                                <text x="25" y="55" class="body-text">参加“开放原子紫金开源专区开源大会”，分享人机协作与多元贡献观点。</text>
+                            </g>
+                        </g>
+
+                        <!-- 事件 3: 教育项目 -->
+                        <g transform="translate(0, 220)">
+                            <circle cx="80" cy="50" r="8" class="timeline-dot" />
+                            <g transform="translate(120, 0)">
+                                <rect width="580" height="80" rx="8" class="card-background"/>
+                                <text x="25" y="30" class="card-title-text">启动开放教育项目</text>
+                                <text x="25" y="55" class="body-text">正式启动《开源导论与数字素养》（32学时）课程的交付工作。</text>
+                            </g>
+                        </g>
+
+                        <!-- 事件 4: 正式亮相 -->
+                        <g transform="translate(0, 330)">
+                            <!-- 高亮显示 -->
+                            <circle cx="80" cy="50" r="8" fill="var(--color-highlight-box-stroke)" />
+                            <g transform="translate(120, 0)">
+                                <!-- 使用高亮样式 -->
+                                <rect width="580" height="80" rx="8" fill="var(--color-highlight-box-fill)" stroke="var(--color-highlight-box-stroke)" stroke-width="1.5px"/>
+                                <text x="25" y="30" class="card-title-text" fill="#A16207">社区正式对外亮相 (10/31)</text>
+                                <text x="25" y="55" class="body-text" fill="#374151">在深圳市科技传播促进会的支持下，社区正式进入试运营阶段。</text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+
+                <!--
+                  =================================
+                  第 3 部分: 下月计划
+                  =================================
+                -->
+                <g id="next-month-plan-section" transform="translate(40, 880)">
+                    <text x="360" y="30" class="section-title-text">下月计划与展望</text>
+
+                    <!-- 计划列表 -->
+                    <g transform="translate(120, 80)">
+                        <!-- 计划 1 -->
+                        <circle cx="15" cy="15" r="4" class="list-icon"/>
+                        <text x="35" y="20" class="card-title-text">社区治理：</text>
+                        <text x="115" y="20" class="body-text">发布社区章程讨论稿。</text>
+
+                        <!-- 计划 2 -->
+                        <circle cx="15" cy="55" r="4" class="list-icon"/>
+                        <text x="35" y="60" class="card-title-text">教育项目：</text>
+                        <text x="115" y="60" class="body-text">继续推进《开源导论与数字素养》课程的内容共建和交付。</text>
+
+                        <!-- 计划 3 -->
+                        <circle cx="15" cy="95" r="4" class="list-icon"/>
+                        <text x="35" y="100" class="card-title-text">社区活动：</text>
+                        <text x="115" y="100" class="body-text">组织第一次社区的读书会。</text>
+
+                        <!-- 计划 4 -->
+                        <circle cx="15" cy="135" r="4" class="list-icon"/>
+                        <text x="35" y="140" class="card-title-text">企业走访：</text>
+                        <text x="115" y="140" class="body-text">配合深圳市科技传播促进会企业走访计划，提供AI和开源内容支持。</text>
+                    </g>
+                </g>
+
+                <!--
+                  =================================
+                  第 4 部分: 结语
+                  =================================
+                -->
+                <g id="conclusion-section" transform="translate(40, 1180)">
+                    <text x="360" y="30" class="section-title-text">结语</text>
+
+                    <!-- 新增: 结语背景框 -->
+                    <rect x="100" y="60" width="520" height="140" rx="8" class="conclusion-box"/>
+
+                    <text x="360" y="100" class="conclusion-text">
+                        Gitconomy Research 社区处于起步阶段,
+                        <tspan x="360" dy="1.8em">感谢每一位早期支持者的参与、贡献以及所有合作伙伴的支持。</tspan>
+                        <tspan x="360" dy="1.8em">你们是社区成长最宝贵的力量。</tspan>
+                        <tspan x="360" dy="1.8em">让我们共同努力,探索生成式时代的无限可能!</tspan>
+                    </text>
+                </g>
+
+            </svg>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            本作品采用CC-BY-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区
+        </p>
+    </footer>
+
+</body>
+</html>

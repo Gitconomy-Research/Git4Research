@@ -1,0 +1,72 @@
+<svg width="800" height="280" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <!-- SVG Organization Chart for HarmonyOS White Paper Project -->
+    <!-- Author: Gemini -->
+
+    <style>
+        .box {
+            stroke: #B0B0B0;
+            stroke-width: 1.5;
+            rx: 8; /* Rounded corners */
+            ry: 8;
+            filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1));
+        }
+        .main-box { fill: #4472C4; }
+        .group1-box { fill: #5B9BD5; }
+        .group2-box { fill: #ED7D31; }
+        .group3-box { fill: #70AD47; }
+
+        .title-text {
+            font-size: 16px;
+            font-weight: bold;
+            fill: white;
+            text-anchor: middle;
+        }
+        .role-text {
+            font-size: 14px;
+            fill: #333;
+            text-anchor: middle;
+        }
+        .connector-line {
+            stroke: #A0A0A0;
+            stroke-width: 2;
+            fill: none;
+        }
+    </style>
+
+    <!-- Top Level: Project Committee -->
+    <g id="project-committee">
+        <rect x="275" y="30" width="250" height="60" class="box main-box" />
+        <text x="400" y="55" class="title-text">鸿蒙人才白皮书</text>
+        <text x="400" y="75" class="title-text">项目委员会</text>
+    </g>
+
+    <!-- Connecting Lines -->
+    <path class="connector-line" d="M 400 90 V 140 H 150" />
+    <path class="connector-line" d="M 400 140 H 650" />
+    <line class="connector-line" x1="400" y1="140" x2="400" y2="180" />
+
+
+    <!-- Group 1: Data Collection & Analysis -->
+    <g id="data-group">
+        <line class="connector-line" x1="150" y1="140" x2="150" y2="180" />
+        <rect x="50" y="180" width="200" height="50" class="box group1-box" />
+        <text x="150" y="210" class="title-text">数据采集与分析组</text>
+
+    </g>
+
+    <!-- Group 2: Content Editing & Design -->
+    <g id="content-group">
+        <rect x="300" y="180" width="200" height="50" class="box group2-box" />
+        <text x="400" y="210" class="title-text">内容编辑与设计组</text>
+
+    </g>
+
+    <!-- Group 3: Content Review Expert Group -->
+    <g id="review-group">
+        <line class="connector-line" x1="650" y1="140" x2="650" y2="180" />
+        <rect x="550" y="180" width="200" height="50" class="box group3-box" />
+        <text x="650" y="210" class="title-text">内容审核专家组</text>
+
+    </g>
+
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620">
+  <!-- Background -->
+  <rect width="1000" height="620" fill="#f8f9fa" rx="10" ry="10"/>
+
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">体验引擎: 将"术"应用于课程之"法"</text>
+
+  <!-- Main Framework Box -->
+  <rect x="50" y="70" width="900" height="480" fill="#fff" stroke="#ddd" stroke-width="2" rx="8" ry="8"/>
+
+  <!-- Left Side - The "法" (Models) -->
+  <rect x="80" y="100" width="340" height="435" fill="#f5f5f5" stroke="#ddd" stroke-width="2" rx="6" ry="6"/>
+  <text x="250" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">课程架构之"法"</text>
+
+  <!-- Right Side - The "术" (Techniques) -->
+  <rect x="580" y="100" width="340" height="435" fill="#f5f5f5" stroke="#ddd" stroke-width="2" rx="6" ry="6"/>
+  <text x="750" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">实践方法之"术"</text>
+
+  <!-- Level 1: 宏观脊梁 -->
+  <rect x="100" y="160" width="300" height="110" fill="#e1f5fe" stroke="#81d4fa" stroke-width="2" rx="6" ry="6"/>
+  <text x="250" y="185" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#01579b">宏观脊梁 (情感与认知节奏)</text>
+  <text x="250" y="210" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0277bd">U型理论 + 设计思维</text>
+  <text x="250" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0288d1">课程的"慢循环"和情感主线</text>
+  <text x="250" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0288d1">从"唤醒"到"创造"的深度认知之旅</text>
+
+  <!-- Level 2: 微观节拍 -->
+  <rect x="100" y="285" width="300" height="110" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="2" rx="6" ry="6"/>
+  <text x="250" y="310" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">微观节拍 (行为与习惯养成)</text>
+  <text x="250" y="335" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2e7d32">敏捷/精益思维</text>
+  <text x="250" y="360" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">课程的"快循环"和"肌肉记忆"</text>
+  <text x="250" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">高频反馈闭环中的行动实践</text>
+
+  <!-- Level 3: 底层支撑 -->
+  <rect x="100" y="410" width="300" height="110" fill="#fff3e0" stroke="#ffcc80" stroke-width="2" rx="6" ry="6"/>
+  <text x="250" y="435" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">底层支撑 (个性化与自主性)</text>
+  <text x="250" y="460" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ef6c00">建构主义</text>
+  <text x="250" y="485" font-family="Ari81d4faal, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">"可拆卸的脚手架"支持个性化学习</text>
+  <text x="250" y="505" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">学员提交"个人化改装记录"作为检验</text>
+
+  <!-- Technique 1: 认知冲突驱动之术 -->
+  <rect x="600" y="160" width="300" height="110" fill="#e1f5fe" stroke="#81d4fa" stroke-width="2" rx="6" ry="6"/>
+  <text x="750" y="185" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#01579b">认知冲突驱动之术</text>
+  <text x="750" y="215" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0288d1">通过主动制造"矛盾"和"张力"</text>
+  <text x="750" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0288d1">迫使学员进行二阶思考</text>
+  <text x="750" y="255" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0288d1">例如：U型理论的"慢思考"与敏捷的"快迭代"碰撞</text>
+
+  <!-- Technique 2: 具身认知实践之术 -->
+  <rect x="600" y="285" width="300" height="110" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="2" rx="6" ry="6"/>
+  <text x="750" y="310" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">具身认知实践之术</text>
+  <text x="750" y="340" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">将抽象的概念转化为可触摸、可感受的身体经验</text>
+  <text x="750" y="360" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">例如：用乐高积木拼搭神经网络</text>
+  <text x="750" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#388e3c">多感官通道提升认知深度</text>
+
+  <!-- Technique 3: 微习惯固化之术 -->
+  <rect x="600" y="410" width="300" height="110" fill="#fff3e0" stroke="#ffcc80" stroke-width="2" rx="6" ry="6"/>
+  <text x="750" y="435" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">微习惯固化之术</text>
+  <text x="750" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">设计低成本的日常练习，让学习内化为本能</text>
+  <text x="750" y="485" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">例如：记录"思维日志"(Learn-Log)</text>
+  <text x="750" y="505" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#f57c00">每日10分钟"影子实验"应用新思维模型</text>
+
+  <!-- Connection lines between left and right with arrows -->
+  <!-- Connection 1 -->
+  <line x1="420" y1="215" x2="574" y2="215" stroke="#81d4fa" stroke-width="2" />
+  <polygon points="574,215 564,210 564,220" fill="#81d4fa" />
+
+  <!-- Connection 2 -->
+  <line x1="420" y1="340" x2="574" y2="340" stroke="#a5d6a7" stroke-width="2" />
+  <polygon points="574,340 564,335 564,345" fill="#a5d6a7" />
+
+  <!-- Connection 3 -->
+  <line x1="420" y1="465" x2="574" y2="465" stroke="#ffcc80" stroke-width="2" />
+  <polygon points="574,465 564,460 564,470" fill="#ffcc80" />
+
+  <!-- Central Axis Label -->
+  <text x="500" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">法术结合</text>
+
+  <!-- Cognitive Gym Label -->
+  <rect x="430" y="530" width="140" height="40" fill="#ffecb3" stroke="#ffd54f" stroke-width="2" rx="20" ry="20"/>
+  <text x="500" y="555" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff6f00">认知健身房</text>
+
+  <text x="50%" y="600" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

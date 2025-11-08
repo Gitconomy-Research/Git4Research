@@ -1,0 +1,59 @@
+<svg width="600" height="350" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial, sans-serif;">
+    <style>
+        .title { font-size: 18px; font-weight: bold; fill: #1c4587; }
+        .panel-title { font-size: 14px; font-weight: bold; fill: #666; }
+        .boundary { fill: none; stroke: #ccc; stroke-dasharray: 4 2; stroke-width: 1; }
+        .point { fill: #007bff; stroke: #0056b3; stroke-width: 1; }
+        .line-scattered { stroke: #007bff; stroke-width: 1; opacity: 0.5; }
+        .system-line { stroke: #28a745; stroke-width: 2; opacity: 0.7; }
+        .ospo-core { fill: #28a745; stroke: #1e7e34; stroke-width: 2; }
+        .ospo-label { font-size: 11px; font-weight: bold; fill: #fff; }
+        .caption { font-size: 12px; fill: #333; }
+        .license { font-size: 10px; fill: #666; } /* Style for the license text */
+    </style>
+
+    <text class="title" x="300" y="25" text-anchor="middle">国内外高校OSPO实践侧重点对比</text>
+    <line x1="300" y1="35" x2="300" y2="300" stroke="#333" stroke-width="1" stroke-dasharray="2 2" />
+
+    <text class="panel-title" x="150" y="60" text-anchor="middle">国内现状：'点状实力' (分散、自发)</text>
+    <rect class="boundary" x="50" y="80" width="230" height="200" rx="10"/>
+    <text class="caption" x="165" y="295" text-anchor="middle">【零散的、自发的开源活动】</text>
+
+    <circle class="point" cx="120" cy="120" r="6"/>
+    <circle class="point" cx="190" cy="150" r="6"/>
+    <circle class="point" cx="100" cy="190" r="6"/>
+    <circle class="point" cx="230" cy="220" r="6"/>
+    <circle class="point" cx="150" cy="250" r="6"/>
+    <circle class="point" cx="210" cy="100" r="6"/>
+
+    <line class="line-scattered" x1="120" y1="120" x2="190" y2="150"/>
+    <line class="line-scattered" x1="100" y1="190" x2="150" y2="250"/>
+    <line class="line-scattered" x1="190" y1="150" x2="230" y2="220"/>
+
+
+    <text class="panel-title" x="450" y="60" text-anchor="middle">战略目标：'连接成面' (系统性、战略性)</text>
+    <rect class="boundary" x="320" y="80" width="230" height="200" rx="10"/>
+    <text class="caption" x="435" y="295" text-anchor="middle">【全校性的、有组织的战略行为】</text>
+
+    <circle class="point" cx="390" cy="120" r="6"/>
+    <circle class="point" cx="490" cy="120" r="6"/>
+    <circle class="point" cx="370" cy="220" r="6"/>
+    <circle class="point" cx="490" cy="220" r="6"/>
+    <circle class="point" cx="430" cy="170" r="6"/>
+
+
+    <circle class="ospo-core" cx="430" cy="170" r="10"/>
+    <text class="ospo-label" x="430" y="174" text-anchor="middle">OSPO</text>
+
+    <line class="system-line" x1="390" y1="120" x2="430" y2="170"/>
+    <line class="system-line" x1="490" y1="120" x2="430" y2="170"/>
+    <line class="system-line" x1="370" y1="220" x2="430" y2="170"/>
+    <line class="system-line" x1="490" y1="220" x2="430" y2="170"/>
+    <line class="system-line" x1="390" y1="120" x2="490" y2="120"/>
+    <line class="system-line" x1="370" y1="220" x2="490" y2="220"/>
+    <line class="system-line" x1="390" y1="120" x2="370" y2="220"/>
+    <line class="system-line" x1="490" y1="120" x2="490" y2="220" />
+
+    <text class="license" x="50%" y="325" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

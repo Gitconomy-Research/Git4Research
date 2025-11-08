@@ -1,0 +1,75 @@
+<svg width="800" height="750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .title { font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif; font-size: 24px; font-weight: bold; text-anchor: middle; fill: #212529; }
+      .subtitle { font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif; font-size: 16px; text-anchor: middle; fill: #495057; }
+      .foundation-box { fill: #f8f9fa; stroke: #adb5bd; stroke-width: 1.5; }
+      .foundation-text { font-size: 16px; font-weight: bold; fill: #495057; text-anchor: middle; }
+      .oer-center { fill: #e7f5ff; stroke: #1c7ed6; stroke-width: 2; }
+      .oer-text { font-size: 20px; font-weight: bold; fill: #1864ab; text-anchor: middle; }
+      .r5-node { fill: #fff; stroke: #5f3dc4; stroke-width: 2; }
+      .r5-text { font-size: 16px; font-weight: bold; fill: #5f3dc4; text-anchor: middle; }
+      .r5-subtext { font-size: 12px; fill: #495057; text-anchor: middle; }
+      .actor-text { font-size: 18px; font-weight: bold; fill: #087f5b; text-anchor: middle; }
+      .arrow-path { fill: none; stroke: #ced4da; stroke-width: 2.5; marker-end: url(#arrowhead); }
+      .license-text { font-size: 14px; fill: #666; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ced4da" />
+    </marker>
+  </defs>
+
+  <text x="400" y="45" class="title">开放教育模式 (OER 5R原则)</text>
+  <text x="400" y="95" class="subtitle">构建全球知识共享地</text>
+
+  <rect x="220" y="600" width="350" height="50" rx="10" class="foundation-box" />
+  <text x="400" y="630" class="foundation-text">法律基石: 开放许可 (CreativeCommons)</text>
+
+  <circle cx="400" cy="380" r="80" class="oer-center" />
+  <text x="400" y="375" class="oer-text">开放教育资源</text>
+  <text x="400" y="400" class="oer-text">(OER)</text>
+
+  <text x="100" y="380" class="actor-text">教育者</text>
+  <text x="700" y="380" class="actor-text">学习者</text>
+  <path d="M 150,380 C 200,280 250,230 350,230" stroke="#a6a6a6" stroke-width="1.5" fill="none" stroke-dasharray="5,5" />
+  <path d="M 650,380 C 600,280 550,230 450,230" stroke="#a6a6a6" stroke-width="1.5" fill="none" stroke-dasharray="5,5" />
+  <path d="M 150,380 C 200,480 250,530 350,530" stroke="#a6a6a6" stroke-width="1.5" fill="none" stroke-dasharray="5,5" />
+  <path d="M 650,380 C 600,480 550,530 450,530" stroke="#a6a6a6" stroke-width="1.5" fill="none" stroke-dasharray="5,5" />
+
+
+  <path d="M 400 200 A 180 180 0 1 1 247.8 263.6" class="arrow-path" />
+  <path d="M 247.8 263.6 A 180 180 0 1 1 247.8 496.4" class="arrow-path" />
+  <path d="M 247.8 496.4 A 180 180 0 1 1 400 560" class="arrow-path" />
+  <path d="M 400 560 A 180 180 0 1 1 552.2 496.4" class="arrow-path" />
+  <path d="M 552.2 496.4 A 180 180 0 1 1 400 200" class="arrow-path" />
+
+  <g transform="translate(400, 200)">
+    <circle cx="0" cy="0" r="45" class="r5-node"/>
+    <text x="0" y="-5" class="r5-text">保留</text>
+    <text x="0" y="15" class="r5-subtext">(Retain)</text>
+  </g>
+  <g transform="translate(247.8, 263.6)">
+    <circle cx="0" cy="0" r="45" class="r5-node"/>
+    <text x="0" y="-5" class="r5-text">重用</text>
+    <text x="0" y="15" class="r5-subtext">(Reuse)</text>
+  </g>
+  <g transform="translate(247.8, 496.4)">
+    <circle cx="0" cy="0" r="45" class="r5-node"/>
+    <text x="0" y="-5" class="r5-text">修改</text>
+    <text x="0" y="15" class="r5-subtext">(Revise)</text>
+  </g>
+  <g transform="translate(552.2, 496.4)">
+    <circle cx="0" cy="0" r="45" class="r5-node"/>
+    <text x="0" y="-5" class="r5-text">混合</text>
+    <text x="0" y="15" class="r5-subtext">(Remix)</text>
+  </g>
+  <g transform="translate(552.2, 263.6)">
+    <circle cx="0" cy="0" r="45" class="r5-node"/>
+    <text x="0" y="-5" class="r5-text">再分发</text>
+    <text x="0" y="15" class="r5-subtext">(Redistribute)</text>
+  </g>
+
+  <text x="50%" y="700" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

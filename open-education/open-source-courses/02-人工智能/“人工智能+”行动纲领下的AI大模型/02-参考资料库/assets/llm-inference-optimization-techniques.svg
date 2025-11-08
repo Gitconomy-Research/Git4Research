@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850">
+  <!-- 定义箭头标记 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1000" height="850" fill="#f8f9fa" />
+
+  <!-- 标题 -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">大模型推理优化技术的组合</text>
+
+  <!-- 主要阶段分组 -->
+  <g id="training-stage">
+    <rect x="50" y="80" width="900" height="90" rx="10" ry="10" fill="#e6f2ff" stroke="#3399ff" stroke-width="2" />
+
+    <!-- 实际指标标题 -->
+    <text x="500" y="105" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">大模型特征</text>
+
+    <!-- 实际指标 -->
+    <rect x="130" y="120" width="200" height="30" rx="5" ry="5" fill="#d4e5ff" stroke="#3399ff" stroke-width="1.5" />
+    <text x="230" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">100B+ 参数</text>
+
+    <rect x="400" y="120" width="200" height="30" rx="5" ry="5" fill="#d4e5ff" stroke="#3399ff" stroke-width="1.5" />
+    <text x="500" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">FP32/FP16 精度</text>
+
+    <rect x="670" y="120" width="200" height="30" rx="5" ry="5" fill="#d4e5ff" stroke="#3399ff" stroke-width="1.5" />
+    <text x="770" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">TB级存储</text>
+  </g>
+
+  <!-- 模型压缩阶段 - 增加了20单位高度 -->
+  <g id="compression-stage">
+    <rect x="50" y="200" width="900" height="230" rx="10" ry="10" fill="#e6ffe6" stroke="#33cc33" stroke-width="2" />
+    <text x="500" y="230" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">模型压缩与知识转移</text>
+
+    <!-- 知识蒸馏部分 -->
+    <g id="knowledge-distillation">
+      <rect x="80" y="250" width="400" height="160" rx="8" ry="8" fill="#d1e7dd" stroke="#198754" stroke-width="2" />
+      <text x="280" y="275" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">知识蒸馏</text>
+
+      <!-- 知识蒸馏图示 - 水平对齐教师和学生模型 -->
+      <rect x="120" y="290" width="100" height="60" rx="8" ry="8" fill="#b6d7a8" stroke="#6aa84f" stroke-width="1.5" />
+      <text x="170" y="325" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">教师模型</text>
+
+      <rect x="320" y="300" width="80" height="40" rx="8" ry="8" fill="#b6d7a8" stroke="#6aa84f" stroke-width="1.5" />
+      <text x="360" y="325" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">学生模型</text>
+
+      <path d="M220 320 L320 320" stroke="#000000" stroke-width="1.5" marker-end="url(#arrowhead)" />
+      <text x="250" y="310" font-family="Arial, sans-serif" font-size="12">软标签</text>
+
+      <rect x="100" y="380" width="360" height="20" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <text x="280" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">从大模型中提取"暗知识"到小模型</text>
+    </g>
+
+    <!-- 剪枝部分 -->
+    <g id="pruning">
+      <rect x="520" y="250" width="400" height="160" rx="8" ry="8" fill="#d1e7dd" stroke="#198754" stroke-width="2" />
+      <text x="720" y="275" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">剪枝</text>
+
+      <!-- 剪枝图示 -->
+      <rect x="540" y="290" width="170" height="80" rx="8" ry="8" fill="#b6d7a8" stroke="#6aa84f" stroke-width="1.5" />
+      <text x="625" y="310" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">非结构化剪枝</text>
+      <text x="625" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">移除单个权重连接</text>
+      <text x="625" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">需要专门的稀疏计算支持</text>
+
+      <rect x="730" y="290" width="170" height="80" rx="8" ry="8" fill="#b6d7a8" stroke="#6aa84f" stroke-width="1.5" />
+      <text x="815" y="310" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">结构化剪枝</text>
+      <text x="815" y="330" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">移除整行、整列或结构单元</text>
+      <text x="815" y="350" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">保持规整矩阵结构，直接加速</text>
+
+      <!-- 剪枝底部说明文字 - 与上方保持10个单位间距 -->
+      <rect x="540" y="380" width="360" height="20" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <text x="720" y="395" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">通过移除冗余参数降低模型大小，提高推理速度</text>
+    </g>
+  </g>
+
+  <!-- 量化阶段 - y坐标调整为430以匹配上方增加的高度 -->
+  <g id="quantization-stage">
+    <rect x="50" y="460" width="900" height="210" rx="10" ry="10" fill="#fff2e6" stroke="#ff9933" stroke-width="2" />
+    <text x="500" y="485" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">比特层面的计算效率：量化</text>
+
+    <!-- 量化部分 - GPTQ -->
+    <g id="gptq">
+      <rect x="80" y="500" width="400" height="160" rx="8" ry="8" fill="#ffebcc" stroke="#ff9933" stroke-width="2" />
+      <text x="280" y="525" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">GPTQ量化</text>
+
+      <!-- GPTQ图示 -->
+      <rect x="100" y="540" width="360" height="30" rx="5" ry="5" fill="#ffe6b3" stroke="#ffcc66" stroke-width="1.5" />
+      <text x="280" y="560" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">逐层量化模型权重</text>
+
+      <rect x="100" y="580" width="170" height="40" rx="5" ry="5" fill="#ffe6b3" stroke="#ffcc66" stroke-width="1.5" />
+      <text x="185" y="605" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">FP32/FP16 → INT8/INT4</text>
+
+      <rect x="290" y="580" width="170" height="40" rx="5" ry="5" fill="#ffe6b3" stroke="#ffcc66" stroke-width="1.5" />
+      <text x="375" y="605" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">最小化量化误差</text>
+
+      <rect x="100" y="630" width="360" height="20" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <text x="280" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">后训练量化（PTQ）- 无需重训练</text>
+    </g>
+
+    <!-- 量化部分 - AWQ -->
+    <g id="awq">
+      <text x="500" y="740" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">部署与推理</text>  <rect x="520" y="500" width="400" height="160" rx="8" ry="8" fill="#ffebcc" stroke="#ff9933" stroke-width="2" />
+      <text x="720" y="525" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">AWQ量化</text>
+
+      <!-- AWQ图示 -->
+      <rect x="540" y="540" width="360" height="30" rx="5" ry="5" fill="#ffe6b3" stroke="#ffcc66" stroke-width="1.5" />
+      <text x="720" y="560" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">激活感知权重量化</text>
+
+      <rect x="540" y="580" width="170" height="40" rx="5" ry="5" fill="#ffe6b3" stroke="#ffcc66" stroke-width="1.5" />
+      <text x="625" y="600" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">识别关键"突显"权重</text>
+      <text x="625" y="615" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">保持高精度（FP16）</text>
+
+      <rect x="730" y="580" width="170" height="40" rx="5" ry="5" fill="#ffe6b3" stroke="#ffcc66" stroke-width="1.5" />
+      <text x="815" y="600" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">非关键权重低精度量化</text>
+      <text x="815" y="615" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">（INT4/INT2）</text>
+
+      <rect x="540" y="630" width="360" height="20" rx="5" ry="5" fill="#ffffff" stroke="#000000" stroke-width="1" />
+      <text x="720" y="645" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">性能与精度平衡最优</text>
+    </g>
+  </g>
+
+  <!-- 部署阶段  -->
+  <g id="deployment-stage">
+    <rect x="50" y="700" width="900" height="90" rx="10" ry="10" fill="#f2e6ff" stroke="#9933ff" stroke-width="2" />
+
+    <!-- 部署指标标题 -->
+    <text x="500" y="725" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">优化后的性能提升</text>
+
+    <!-- 部署指标 -->
+    <rect x="130" y="740" width="200" height="30" rx="5" ry="5" fill="#ead1dc" stroke="#9933ff" stroke-width="1.5" />
+    <text x="230" y="760" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">尺寸缩小8-32倍</text>
+
+    <rect x="400" y="740" width="200" height="30" rx="5" ry="5" fill="#ead1dc" stroke="#9933ff" stroke-width="1.5" />
+    <text x="500" y="760" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">速度提升2-10倍</text>
+
+    <rect x="670" y="740" width="200" height="30" rx="5" ry="5" fill="#ead1dc" stroke="#9933ff" stroke-width="1.5" />
+    <text x="770" y="760" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">消费级设备可部署</text>
+  </g>
+
+  <!-- 阶段之间的流程箭头 - 调整了y坐标以匹配新的布局 -->
+  <g id="flow-arrows">
+    <path d="M500 170 L500 200" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M500 430 L500 460" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+    <path d="M500 670 L500 700" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" />
+  </g>
+
+  <!-- 版权信息 -->
+  <text x="50%" y="830" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

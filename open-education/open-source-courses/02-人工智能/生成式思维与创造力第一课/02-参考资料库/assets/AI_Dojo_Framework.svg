@@ -1,0 +1,81 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" font-family="sans-serif" xmlns="http://www.w3.org/2000/svg">
+
+  <title>AI学习道场框架图</title>
+  <desc>一个展示AI学习道场八大核心理论与四大思维层次的SVG框架图。</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555" />
+    </marker>
+    <radialGradient id="centerGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(220,225,230);stop-opacity:1" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#f8f9fa"/>
+
+  <path d="M 250 500 A 250 250 0 0 1 750 500" fill="#e9f5ff" stroke="#a5d8ff" stroke-width="2"/>
+  <text x="500" y="230" text-anchor="middle" font-size="22" font-weight="bold" fill="#1c7ed6">认知基础层 (Foundation)</text>
+
+  <path d="M 750 500 A 250 250 0 0 1 500 750" fill="#e6fcf5" stroke="#96f2d7" stroke-width="2"/>
+  <text transform="translate(770, 500) rotate(90)" text-anchor="middle" font-size="22" font-weight="bold" fill="#0ca678">系统视角层 (Perspective)</text>
+
+  <path d="M 500 750 A 250 250 0 0 1 250 500" fill="#fff4e6" stroke="#ffd8a8" stroke-width="2"/>
+  <text x="500" y="790" text-anchor="middle" font-size="22" font-weight="bold" fill="#f76707">创新方法层 (Innovation)</text>
+
+  <path d="M 500 250 A 250 250 0 0 1 250 500" fill="#f8f0fc" stroke="#eebefa" stroke-width="2" transform="rotate(180, 500, 500)" />
+  <text transform="translate(230, 500) rotate(-90)" text-anchor="middle" font-size="22" font-weight="bold" fill="#9c36b5">学习优化层 (Optimization)</text>
+
+  <path d="M 300 300 A 200 200 0 1 1 700 300" stroke="#555" stroke-width="2.5" stroke-dasharray="10 5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 700 700 A 200 200 0 1 1 300 700" stroke="#555" stroke-width="2.5" stroke-dasharray="10 5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 300 700 L 300 300" stroke="#555" stroke-width="2.5" stroke-dasharray="10 5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 700 300 L 700 700" stroke="#555" stroke-width="2.5" stroke-dasharray="10 5" fill="none" marker-end="url(#arrow)"/>
+
+
+  <circle cx="500" cy="500" r="150" fill="url(#centerGradient)" stroke="#495057" stroke-width="4"/>
+  <text x="500" y="480" text-anchor="middle" font-size="36" font-weight="bold" fill="#343a40">AI学习道场</text>
+  <text x="500" y="520" text-anchor="middle" font-size="20" fill="#495057">AI Learning Dojo</text>
+  <text x="500" y="555" text-anchor="middle" font-size="18" font-style="italic" fill="#868e96">认知操作系统</text>
+
+
+  <g transform="translate(350, 150)">
+    <rect x="-70" y="-30" width="140" height="60" rx="10" fill="white" stroke="#1c7ed6" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-size="18" fill="#333">第一性原理</text>
+  </g>
+  <g transform="translate(650, 150)">
+    <rect x="-70" y="-30" width="140" height="60" rx="10" fill="white" stroke="#1c7ed6" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-size="18" fill="#333">MECE原则</text>
+  </g>
+
+  <g transform="translate(850, 500)">
+    <rect x="-50" y="-30" width="140" height="60" rx="10" fill="white" stroke="#0ca678" stroke-width="2"/>
+    <text x="20" y="5" text-anchor="middle" font-size="18" fill="#333">系统思维</text>
+  </g>
+
+  <g transform="translate(350, 850)">
+    <rect x="-70" y="-30" width="140" height="60" rx="10" fill="white" stroke="#f76707" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-size="18" fill="#333">JTBD框架</text>
+  </g>
+  <g transform="translate(650, 850)">
+    <rect x="-70" y="-30" width="140" height="60" rx="10" fill="white" stroke="#f76707" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-size="18" fill="#333">HMW方法</text>
+  </g>
+
+  <g transform="translate(150, 350)">
+    <rect x="-100" y="-30" width="140" height="60" rx="10" fill="white" stroke="#9c36b5" stroke-width="2"/>
+    <text x="-30" y="5" text-anchor="middle" font-size="18" fill="#333">元认知</text>
+  </g>
+  <g transform="translate(150, 500)">
+    <rect x="-100" y="-30" width="140" height="60" rx="10" fill="white" stroke="#9c36b5" stroke-width="2"/>
+    <text x="-30" y="5" text-anchor="middle" font-size="18" fill="#333">间隔效应</text>
+  </g>
+  <g transform="translate(150, 650)">
+    <rect x="-100" y="-30" width="140" height="60" rx="10" fill="white" stroke="#9c36b5" stroke-width="2"/>
+    <text x="-30" y="5" text-anchor="middle" font-size="18" fill="#333">吉布斯循环</text>
+  </g>
+
+  <text x="50%" y="980" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,87 @@
+<svg width="800" height="780" viewBox="0 0 800 780" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>Apache 软件基金会治理哲学</title>
+  <desc>精英治理（Meritocracy）下的贡献者成长阶梯：用户 → 贡献者 → 提交者（Committer） → PMC 成员；以“社区大于代码”为根基，强调公开透明与持续贡献。</desc>
+
+  <style>
+    .title-text { font-size: 22px; font-weight: 800; text-anchor: middle; fill: #111827; }
+    .subtitle-text { font-size: 15px; text-anchor: middle; fill: #6b7280; }
+
+    .pyramid-layer { stroke: #424242; stroke-width: 2; fill-opacity: 0.95; }
+    .layer-l1 { fill: #EFF6FF; stroke: #60A5FA; } /* User */
+    .layer-l2 { fill: #F0FDF4; stroke: #34D399; } /* Contributor */
+    .layer-l3 { fill: #FEF9C3; stroke: #FACC15; } /* Committer */
+    .layer-l4 { fill: #FFEDD5; stroke: #FB923C; } /* PMC Member */
+
+    .layer-title { font-size: 18px; font-weight: 700; text-anchor: middle; fill: #1f2937; }
+    .layer-desc { font-size: 13px; text-anchor: middle; fill: #374151; }
+
+    .foundation-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; rx: 5; ry: 5; }
+    .foundation-title { font-size: 20px; font-weight: 800; text-anchor: middle; fill: #1f2937; }
+    .foundation-subtitle { font-size: 14px; text-anchor: middle; fill: #1e3a8a; }
+
+    .arrow-path { fill: none; stroke: #2563EB; stroke-width: 2.5; marker-end: url(#arrow); }
+    .arrow-text { font-size: 13px; font-weight: 700; fill: #2563EB; }
+
+    .license { font-size: 12px; fill: #64748b; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB" />
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="400" y="40" class="title-text">Apache 软件基金会治理哲学</text>
+  <text x="400" y="65" class="subtitle-text">精英治理的贡献者成长阶梯</text>
+
+  <!-- 金字塔层级 -->
+  <g id="pyramid">
+    <!-- 顶层：PMC 成员 -->
+    <polygon points="400,100 480,220 320,220" class="pyramid-layer layer-l4" />
+    <text x="400" y="145" class="layer-title">PMC 成员</text>
+    <text x="400" y="170" class="layer-desc">负责项目治理与方向决策</text>
+    <text x="400" y="185" class="layer-desc">由受信赖的 Committer 提名/表决产生</text>
+
+    <!-- 第三层：提交者 -->
+    <polygon points="320,220 480,220 560,340 240,340" class="pyramid-layer layer-l3" />
+    <text x="400" y="265" class="layer-title">提交者（Committer）</text>
+    <text x="400" y="290" class="layer-desc">拥有代码库的直接提交权限</text>
+    <text x="400" y="305" class="layer-desc">是社区信任与责任的关键跃迁</text>
+
+    <!-- 第二层：贡献者 -->
+    <polygon points="240,340 560,340 640,460 160,460" class="pyramid-layer layer-l2" />
+    <text x="400" y="385" class="layer-title">贡献者（Contributor）</text>
+    <text x="400" y="410" class="layer-desc">通过代码、文档、设计、运营等创造价值</text>
+
+    <!-- 底层：用户 -->
+    <polygon points="160,460 640,460 720,580 80,580" class="pyramid-layer layer-l1" />
+    <text x="400" y="510" class="layer-title">用户（User）</text>
+    <text x="400" y="535" class="layer-desc">旅程的起点：使用、反馈、传播</text>
+  </g>
+
+  <!-- 持续贡献上升箭头（右侧） -->
+  <g id="arrows">
+    <path class="arrow-path" d="M 680 520 L 680 160" />
+    <text x="700" y="290" class="arrow-text">通</text>
+    <text x="700" y="310" class="arrow-text">过</text>
+    <text x="700" y="330" class="arrow-text">持</text>
+    <text x="700" y="350" class="arrow-text">续</text>
+    <text x="700" y="370" class="arrow-text">公</text>
+    <text x="700" y="390" class="arrow-text">开</text>
+    <text x="700" y="410" class="arrow-text">贡</text>
+    <text x="700" y="430" class="arrow-text">献</text>
+  </g>
+
+  <!-- 基座：社区大于代码 -->
+  <g id="foundation">
+    <rect x="50" y="600" width="700" height="120" class="foundation-box" />
+    <text x="400" y="635" class="foundation-title">核心信条：“社区大于代码”（Community over Code）</text>
+    <line x1="100" y1="655" x2="700" y2="655" stroke="#3B82F6" stroke-width="1" />
+    <text x="400" y="680" class="foundation-subtitle">支撑原则</text>
+    <text x="400" y="705" class="foundation-subtitle">异步与透明：公开邮件列表决策 · 共识优先 · 贡献导向的授权</text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="400" y="760" class="license">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

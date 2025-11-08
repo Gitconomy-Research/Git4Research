@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开放资源规划 (ORP) 理论框架信息图</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --line: #e5e7eb;
+            --brand: #004AAD;
+            --brand-light: #CDE6FF;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) {
+            .hero h1 {
+                font-size: 40px
+            }
+        }
+        .hero .lead {
+            color: var(--brand-light);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 700;
+            text-align: center;
+            color: #1E293B; /* slate-800 */
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            font-size: 1.25rem; /* 20px */
+            text-align: center;
+            color: #64748b; /* slate-500 */
+            margin-bottom: 3rem;
+        }
+        .card {
+            background-color: var(--card);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: all 0.3s ease-in-out;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            margin: 0 auto 1rem;
+        }
+        .writing-vertical-rl {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Section 1: Header -->
+    <header class="hero">
+        <h1>开放资源规划 (ORP) 理论框架</h1>
+        <p class="lead">AI时代的智能生产操作系统</p>
+    </header>
+
+    <main class="py-16 px-4 container mx-auto">
+        <!-- Section 2: The Challenge & Paradigm Shift -->
+        <section class="max-w-6xl mx-auto mb-24">
+            <h3 class="section-title">时代背景：从“源代码开放”到“生产要素开放”</h3>
+            <p class="section-subtitle">Agentic AI时代深刻地重定义了“开放”的内涵，暴露出传统管理模式的不足。</p>
+            <div class="grid md:grid-cols-2 gap-8 items-center relative">
+                <div class="card p-8 border-t-4 border-red-400">
+                    <h4 class="text-2xl font-bold text-red-800 text-center mb-4">传统困境：核心资源“大分散”</h4>
+                    <p class="text-slate-600 text-center">算力、数据、模型、代码、知识等AI生产要素管理脱节，各自为政，形成数据孤岛与能力孤岛，极大地阻碍了创新效率和价值转化。</p>
+                </div>
+                <div class="card p-8 border-t-4 border-green-400">
+                    <h4 class="text-2xl font-bold text-green-800 text-center mb-4">范式演进：开放 2.0</h4>
+                    <p class="text-slate-600 text-center">开放的对象不再仅仅是源代码，而是AI生产的全要素。这种新的生产关系，亟需一个全新的生产力平台来承载。</p>
+                </div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block bg-slate-200 p-4 rounded-full shadow-lg">
+                    <svg class="w-10 h-10 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: ORP Definition and Principles -->
+        <section class="max-w-6xl mx-auto mb-24">
+            <h3 class="section-title">ORP是什么：定义与设计原则</h3>
+            <p class="section-subtitle">ORP是为“开放2.0”生产关系量身打造的生产力平台。</p>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                <div class="text-center mb-8">
+                    <h4 class="text-2xl font-bold text-[var(--brand)] mb-2">核心定义</h4>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                        ORP借鉴企业资源计划(ERP)的核心思想，旨在成为AI时代智能生产的 <strong class="text-[var(--brand)]">“操作系统”</strong>。它通过对AI核心生产要素进行系统性的规划、编排与治理，将分散的资源转化为可规模化、可复用、可涌现的智能能力。
+                    </p>
+                </div>
+                <hr class="my-8 border-gray-200">
+                <h4 class="text-2xl font-bold text-[var(--brand)] text-center mb-6">五大设计原则</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-slate-700">
+                    <div class="p-4 bg-slate-50 rounded-lg flex items-center space-x-3"><div class="flex-shrink-0 w-8 h-8 text-[var(--brand)]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" /></svg></div><span><strong>整合与统一:</strong> 打破资源孤岛，建立全局统一视图。</span></div>
+                    <div class="p-4 bg-slate-50 rounded-lg flex items-center space-x-3"><div class="flex-shrink-0 w-8 h-8 text-[var(--brand)]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.871A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" /></svg></div><span><strong>抽象与解耦:</strong> 屏蔽底层复杂性，实现上层敏捷创新。</span></div>
+                    <div class="p-4 bg-slate-50 rounded-lg flex items-center space-x-3"><div class="flex-shrink-0 w-8 h-8 text-[var(--brand)]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-1.007 1.11-1.227a48.967 48.967 0 011.07 3.589c.01.044.018.088.026.132a48.04 48.04 0 014.288 8.44c.26.52.26 1.131 0 1.65a48.04 48.04 0 01-4.288 8.44c-.008.044-.016.088-.026.132a48.967 48.967 0 01-1.07 3.589c-.55.22-1.02.685-1.11 1.227a49.049 49.049 0 01-4.276-8.44c-.26-.52-.26-1.131 0-1.65a49.049 49.049 0 014.276-8.44z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div><span><strong>编排与自动化:</strong> 智能化调度资源，实现最优成本效益。</span></div>
+                    <div class="p-4 bg-slate-50 rounded-lg flex items-center space-x-3 md:col-start-1 lg:col-start-auto"><div class="flex-shrink-0 w-8 h-8 text-[var(--brand)]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg></div><span><strong>治理与安全:</strong> 确保AI生产过程的可控、合规与安全。</span></div>
+                    <div class="p-4 bg-slate-50 rounded-lg flex items-center space-x-3"><div class="flex-shrink-0 w-8 h-8 text-[var(--brand)]"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5A2.25 2.25 0 0011.25 11.25H4.5A2.25 2.25 0 002.25 13.5V21M6 4.5h12M6 4.5v12m12-12v12" /></svg></div><span><strong>开放与扩展:</strong> 拥抱全球生态，支持能力的持续生长。</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: The Five Pillars of ORP -->
+        <section class="max-w-7xl mx-auto mb-24">
+            <h3 class="section-title">ORP核心框架：五大资源支柱</h3>
+            <p class="section-subtitle">ORP对AI时代的核心生产要素进行系统性整合、规划与优化。</p>
+            <div class="flex flex-wrap items-stretch justify-center gap-6">
+                <div class="card flex flex-col p-6 text-center basis-52 flex-grow border-t-4 border-blue-400">
+                    <div class="icon text-blue-600"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-5h16V6H4v2z"></path></svg></div>
+                    <h4 class="text-xl font-bold text-blue-800 mb-2">算力资源</h4>
+                    <div class="mt-auto text-sm text-slate-600 space-y-1">
+                        <p class="font-semibold text-slate-800">关键特征:</p>
+                        <p>统一调度, 弹性伸缩, 成本优化</p>
+                    </div>
+                </div>
+                <div class="card flex flex-col p-6 text-center basis-52 flex-grow border-t-4 border-green-400">
+                    <div class="icon text-green-600"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4zm0 6c-4.42 0-8 1.79-8 4v4c0 2.21 3.58 4 8 4s8-1.79 8-4v-4c0-2.21-3.58-4-8-4z"></path></svg></div>
+                    <h4 class="text-xl font-bold text-green-800 mb-2">数据资源</h4>
+                    <div class="mt-auto text-sm text-slate-600 space-y-1">
+                        <p class="font-semibold text-slate-800">关键特征:</p>
+                        <p>数据流水线, 质量供给, 合规安全</p>
+                    </div>
+                </div>
+                <div class="card flex flex-col p-6 text-center basis-52 flex-grow border-t-4 border-amber-400">
+                    <div class="icon text-amber-600"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path></svg></div>
+                    <h4 class="text-xl font-bold text-amber-800 mb-2">算法与模型</h4>
+                    <div class="mt-auto text-sm text-slate-600 space-y-1">
+                        <p class="font-semibold text-slate-800">关键特征:</p>
+                        <p>标准化ModelOps, 生命周期管理</p>
+                    </div>
+                </div>
+                <div class="card flex flex-col p-6 text-center basis-52 flex-grow border-t-4 border-slate-400">
+                    <div class="icon text-slate-600"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6l6 6l1.4-1.4zm5.2 0l4.6-4.6l-4.6-4.6L16 6l6 6l-6 6l-1.4-1.4z"></path></svg></div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-2">代码与工具</h4>
+                    <div class="mt-auto text-sm text-slate-600 space-y-1">
+                        <p class="font-semibold text-slate-800">关键特征:</p>
+                        <p>可复用能力库, LLMOps, 技能插件</p>
+                    </div>
+                </div>
+                <div class="card flex flex-col p-6 text-center basis-52 flex-grow border-t-4 border-red-400">
+                    <div class="icon text-red-600"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg></div>
+                    <h4 class="text-xl font-bold text-red-800 mb-2">人才与知识</h4>
+                    <div class="mt-auto text-sm text-slate-600 space-y-1">
+                        <p class="font-semibold text-slate-800">关键特征:</p>
+                        <p>技能图谱, 最佳实践沉淀, 团队赋能</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Layered Architecture -->
+        <section class="max-w-6xl mx-auto mb-24">
+            <h3 class="section-title">ORP架构：分层与协同</h3>
+            <p class="section-subtitle">ORP通过分层架构，将底层异构资源转化为上层智能应用，并以协同机制保障全局高效运作。</p>
+            <div class="w-full bg-white p-4 rounded-xl shadow-lg">
+                <svg viewBox="0 0 1000 950" xmlns="http://www.w3.org/2000/svg" font-family="inherit"><defs><linearGradient id="grad-layer1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#E3F2FD"/><stop offset="100%" stop-color="#BBDEFB"/></linearGradient><linearGradient id="grad-layer2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F3E5F5"/><stop offset="100%" stop-color="#E1BEE7"/></linearGradient><linearGradient id="grad-layer3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFF3E0"/><stop offset="100%" stop-color="#FFE0B2"/></linearGradient><linearGradient id="grad-layer4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#E8F5E9"/><stop offset="100%" stop-color="#C8E6C9"/></linearGradient><symbol id="icon-compute-stack" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-5h16V6H4v2z"/></symbol><symbol id="icon-data-db" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4zm0 2c3.31 0 6 1.34 6 3s-2.69 3-6 3-6-1.34-6-3 2.69-3 6-3zm0 6c-4.42 0-8 1.79-8 4v4c0 2.21 3.58 4 8 4s8-1.79 8-4v-4c0-2.21-3.58-4-8-4zm0 2c3.31 0 6 1.34 6 3v1c0 1.66-2.69 3-6 3s-6-1.34-6-3v-1c0-1.66 2.69-3 6-3z"/></symbol><symbol id="icon-model-brain" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></symbol><symbol id="icon-code-tag" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6l6 6l1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6l-6 6l-1.4-1.4z"/></symbol><symbol id="icon-talent-group" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05c1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></symbol><symbol id="icon-copilot" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v-.07zM13 4.07c.78.12 1.5.33 2.15.63L13 7V4.07zM4.26 10.21c-.13-.58-.21-1.17-.21-1.79 0-3.53 2.51-6.43 5.86-7.14l-1.9 1.9c-.31.31-.31.82 0 1.13L10 6.54l-1.9 1.9c-.31.31-.31.82 0 1.13L10 11.41l-4.59-4.59c-.31-.31-.82-.31-1.14 0l-1.01 1.01c-.32.31-.42.78-.28 1.18zM13 15v-1l4-4h-3V8.89l-2-2V8h-2v1.11l-4-4l1.13-1.13L10.54 6l1.9-1.9L14.29 2.2c.3-.1.61-.15.93-.18C19.49 2.51 22 5.6 22 9.42c0 1.3-.33 2.5-.89 3.58l-6.11 6.11V15z"/></symbol></defs><g id="layer-4"><rect x="50" y="100" width="900" height="150" fill="url(#grad-layer4)" rx="10" stroke="#A5D6A7"/><text x="70" y="130" font-size="18px" font-weight="bold" fill="#1B5E20">第四层: 应用与智能体层 (Value Realization)</text><g transform="translate(250, 180)"><use href="#icon-copilot" width="40" height="40" x="-20" y="-20" color="#388E3C"/><text text-anchor="middle" y="40" font-size="16px" fill="#1B5E20">领域 Copilot</text></g><g transform="translate(500, 180)"><text font-size="40px" text-anchor="middle" y="5">🤖</text><text text-anchor="middle" y="40" font-size="16px" fill="#1B5E20">数据分析 Agent</text></g><g transform="translate(750, 180)"><text font-size="40px" text-anchor="middle" y="5">📈</text><text text-anchor="middle" y="40" font-size="16px" fill="#1B5E20">业务价值应用</text></g></g><g id="layer-3"><rect x="50" y="280" width="900" height="150" fill="url(#grad-layer3)" rx="10" stroke="#FFCC80"/><text x="70" y="310" font-size="18px" font-weight="bold" fill="#E65100">第三层: 能力与运营层 (Capability &amp; Operations)</text><rect x="110" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="185" y="380" text-anchor="middle" font-size="16px" fill="#E65100">LLMOps</text><rect x="320" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="395" y="380" text-anchor="middle" font-size="16px" fill="#E65100">AgenticOps</text><rect x="530" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="605" y="380" text-anchor="middle" font-size="16px" fill="#E65100">MLOps</text><rect x="740" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="815" y="380" text-anchor="middle" font-size="16px" fill="#E65100">DataOps</text></g><g id="layer-2"><rect x="50" y="460" width="900" height="150" fill="url(#grad-layer2)" rx="10" stroke="#CE93D8"/><text x="70" y="490" font-size="18px" font-weight="bold" fill="#4A148C">第二层: 统一控制平面 (Unified Control Plane)</text><g transform="translate(110, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">资源抽象</text></g><g transform="translate(320, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">统一调度</text></g><g transform="translate(530, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">访问控制</text></g><g transform="translate(740, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">成本计量</text></g></g><g id="layer-1"><rect x="50" y="640" width="900" height="230" fill="url(#grad-layer1)" rx="10" stroke="#90CAF9"/><text x="70" y="670" font-size="18px" font-weight="bold" fill="#0D47A1">第一层: 资源基础设施层 (Heterogeneous Infrastructure)</text><g transform="translate(140, 750)"><use href="#icon-compute-stack" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">算力资源</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">混合云, 本地, 边缘</text></g><g transform="translate(320, 750)"><use href="#icon-data-db" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">数据资源</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">数据湖, 向量库</text></g><g transform="translate(500, 750)"><use href="#icon-model-brain" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">算法与模型</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">开源, 自研, API</text></g><g transform="translate(680, 750)"><use href="#icon-code-tag" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">代码与工具</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">框架, SDK, 插件</text></g><g transform="translate(860, 750)"><use href="#icon-talent-group" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">人才与知识</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">社区, 内部专家</text></g></g><g id="center-arrows"><line x1="500" y1="250" x2="500" y2="280" stroke="#BDBDBD" stroke-width="2"/><path d="M495 270 L 500 280 L 505 270 Z" fill="#455A64"/><line x1="500" y1="430" x2="500" y2="460" stroke="#BDBDBD" stroke-width="2"/><path d="M495 450 L 500 460 L 505 450 Z" fill="#455A64"/><line x1="500" y1="610" x2="500" y2="640" stroke="#BDBDBD" stroke-width="2"/><path d="M495 630 L 500 640 L 505 630 Z" fill="#455A64"/></g><g id="collaboration" stroke="#37474F" stroke-width="1" fill="#37474F"><line x1="20" y1="175" x2="20" y2="790"/><path d="M20 175 L 15 185 L 25 185 Z"/><path d="M20 790 L 15 780 L 25 780 Z"/><text transform="rotate(-90 45 482.5)" x="45" y="482.5" font-family="SimSun, serif" font-size="20px" font-weight="500" text-anchor="middle" fill="#37474F">数据 &amp; 价值流</text><line x1="980" y1="175" x2="980" y2="790"/><path d="M980 175 L 975 185 L 985 185 Z"/><path d="M980 790 L 975 780 L 985 780 Z"/><text transform="rotate(90 955 482.5)" x="955" y="482.5" font-family="SimSun, serif" font-size="20px" font-weight="500" text-anchor="middle" fill="#37474F">治理 &amp; 安全</text></g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Section 6: Key Engines -->
+        <section class="max-w-7xl mx-auto mb-24">
+            <h3 class="section-title">ORP核心引擎：智能编排与AgenticOps</h3>
+            <p class="section-subtitle">两大关键机制，构成了ORP作为“操作系统”的核心能力。</p>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="card p-6">
+                    <h4 class="text-2xl font-bold text-center text-teal-800 mb-4">智能资源编排</h4>
+                    <p class="text-center text-slate-600 mb-6">ORP的大脑，负责制定“最优计划”，动态地将用户意图与全局资源进行匹配。</p>
+                    <div class="bg-white rounded-xl overflow-hidden">
+                        <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+                            <rect width="800" height="520" fill="#f8f9fa" rx="10" ry="10"/>
+                            <text x="400" y="30" font-size="20" text-anchor="middle" font-weight="bold" fill="#333">ORP智能资源编排器</text>
+                            <text x="400" y="55" font-size="14" text-anchor="middle" fill="#666">从命令式转向意图驱动的资源调度</text>
+                            <rect x="50" y="80" width="700" height="60" rx="5" ry="5" fill="#e1f5fe" stroke="#4fc3f7" stroke-width="2"/>
+                            <text x="400" y="105" font-size="14" text-anchor="middle" font-weight="bold" fill="#0288d1">用户意图 (User Intent)</text>
+                            <text x="400" y="125" font-size="12" text-anchor="middle" font-style="italic" fill="#333">"用100GB数据集微调Llama-3-70B模型，预算不超过500美元，12小时内完成..."</text>
+                            <rect x="50" y="160" width="700" height="260" rx="10" ry="10" fill="#ffffff" stroke="#9e9e9e" stroke-width="2" stroke-dasharray="5,5"/>
+                            <text x="400" y="180" font-size="16" text-anchor="middle" font-weight="bold" fill="#333">智能资源编排器工作流程</text>
+                            <rect x="80" y="200" width="150" height="80" rx="5" ry="5" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2"/>
+                            <text x="155" y="225" font-size="14" text-anchor="middle" font-weight="bold" fill="#2e7d32">1. 意图解析</text>
+                            <text x="155" y="245" font-size="10" text-anchor="middle" fill="#333">理解目标和约束</text>
+                            <rect x="250" y="200" width="150" height="80" rx="5" ry="5" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2"/>
+                            <text x="325" y="225" font-size="14" text-anchor="middle" font-weight="bold" fill="#2e7d32">2. 全局资源感知</text>
+                            <text x="325" y="245" font-size="10" text-anchor="middle" fill="#333">连接五大资源支柱</text>
+                            <rect x="420" y="200" width="150" height="80" rx="5" ry="5" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2"/>
+                            <text x="495" y="225" font-size="14" text-anchor="middle" font-weight="bold" fill="#2e7d32">3. 生成执行计划</text>
+                            <text x="495" y="245" font-size="10" text-anchor="middle" fill="#333">评估多种可能方案</text>
+                            <rect x="590" y="200" width="150" height="80" rx="5" ry="5" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2"/>
+                            <text x="665" y="225" font-size="14" text-anchor="middle" font-weight="bold" fill="#2e7d32">4. 自主决策</text>
+                            <text x="665" y="245" font-size="10" text-anchor="middle" fill="#333">选择最优并执行</text>
+                            <defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2e7d32"/></marker></defs>
+                            <path d="M230 240 L 250 240" fill="none" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <path d="M400 240 L 420 240" fill="none" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <path d="M570 240 L 590 240" fill="none" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <rect x="80" y="340" width="660" height="60" rx="5" ry="5" fill="#fff3e0" stroke="#ffb74d" stroke-width="2"/>
+                            <text x="410" y="375" font-size="14" text-anchor="middle" font-weight="bold" fill="#e65100">底层资源层 (Resource Layer)</text>
+                            <rect x="50" y="420" width="700" height="60" rx="5" ry="5" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+                            <text x="400" y="445" font-size="14" text-anchor="middle" font-weight="bold" fill="#0d47a1">最优化执行计划 (Optimized Execution Plan)</text>
+                            <text x="400" y="465" font-size="12" text-anchor="middle" font-style="italic" fill="#333">基于竞价实例的分布式训练方案，预计10小时完成，成本350美元</text>
+                            <path d="M400 140 L400 160" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/><path d="M400 400 L400 420" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="5,3"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h4 class="text-2xl font-bold text-center text-purple-800 mb-4">AgenticOps: 运营范式演进</h4>
+                    <p class="text-center text-slate-600 mb-6">ORP的执行官，是MLOps的超集，负责对“模型+工具+提示”构成的智能体进行端到端生命周期管理。</p>
+                     <div class="bg-white rounded-xl overflow-hidden"><svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" font-family="inherit"><defs><linearGradient id="grad-mlops-inner" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#42A5F5"/><stop offset="100%" stop-color="#1565C0"/></linearGradient><symbol id="icon-tools-inner" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.4-2.4c.4-.4.4-1 0-1.4z"/></symbol><symbol id="icon-prompt-inner" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></symbol><symbol id="icon-evaluate-inner" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></symbol><symbol id="icon-trace-inner" viewBox="0 0 24 24"><path fill="currentColor" d="M17 10.5V7c0-2.21-1.79-4-4-4s-4 1.79-4 4v3.5c-1.93 1.16-3 3.34-3 5.5 0 3.53 2.61 6.43 6 6.92V24h2v-1.08c3.39-.49 6-3.39 6-6.92 0-2.16-1.07-4.34-3-5.5zM11 7c0-1.1.9-2 2-2s2 .9 2 2v3h-4V7zm5 6.5c-1.38 0-2.5-1.12-2.5-2.5V10h5v1c0 1.38-1.12 2.5-2.5 2.5z"/></symbol><symbol id="icon-govern-inner" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 13.5c-1.24 0-2.25 1.01-2.25 2.25s1.01 2.25 2.25 2.25 2.25-1.01 2.25-2.25-1.01-2.25-2.25-2.25zM12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm4.5-8.5c-1.24 0-2.25 1.01-2.25 2.25s1.01 2.25 2.25 2.25 2.25-1.01 2.25-2.25-1.01-2.25-2.25-2.25z"/></symbol></defs><g transform="translate(500, 400)"><circle cx="0" cy="0" r="140" fill="url(#grad-mlops-inner)" stroke="#1565C0" stroke-width="3"/><text x="0" y="-15" font-size="28px" font-weight="bold" fill="white" text-anchor="middle">MLOps</text><text x="0" y="20" font-size="16px" fill="#E3F2FD" text-anchor="middle">模型生命周期</text><circle cx="0" cy="0" r="350" fill="none" stroke="#D1C4E9" stroke-width="5" stroke-dasharray="15 10"/><g id="components"><g transform="translate(0, -280)"><rect x="-110" y="-35" width="220" height="70" rx="10" fill="#F3E5F5" stroke="#9C27B0"/><use href="#icon-tools-inner" x="-100" y="-20" width="40" height="40" color="#7B1FA2"/><text x="30" y="-5" font-size="16px" font-weight="600" fill="#4A148C" text-anchor="middle">工具 (Tools) 生命周期</text></g><g transform="translate(260, -120)"><rect x="-110" y="-35" width="220" height="70" rx="10" fill="#F3E5F5" stroke="#9C27B0"/><use href="#icon-prompt-inner" x="-100" y="-20" width="40" height="40" color="#7B1FA2"/><text x="30" y="-5" font-size="16px" font-weight="600" fill="#4A148C" text-anchor="middle">提示 (Prompts) 生命周期</text></g><g transform="translate(210, 220)"><rect x="-110" y="-35" width="220" height="70" rx="10" fill="#F3E5F5" stroke="#9C27B0"/><use href="#icon-evaluate-inner" x="-100" y="-20" width="40" height="40" color="#7B1FA2"/><text x="30" y="-5" font-size="18px" font-weight="600" fill="#4A148C" text-anchor="middle">评估与护栏</text></g><g transform="translate(-210, 220)"><rect x="-110" y="-35" width="220" height="70" rx="10" fill="#F3E5F5" stroke="#9C27B0"/><use href="#icon-trace-inner" x="-100" y="-20" width="40" height="40" color="#7B1FA2"/><text x="30" y="-5" font-size="16px" font-weight="600" fill="#4A148C" text-anchor="middle">可追溯的执行与调试</text></g><g transform="translate(-260, -120)"><rect x="-110" y="-35" width="220" height="70" rx="10" fill="#F3E5F5" stroke="#9C27B0"/><use href="#icon-govern-inner" x="-100" y="-20" width="40" height="40" color="#7B1FA2"/><text x="30" y="-5" font-size="18px" font-weight="600" fill="#4A148C" text-anchor="middle">治理与安全执行</text></g></g><g stroke="#9575CD" stroke-width="2"><line x1="0" y1="-140" x2="0" y2="-245"/><line x1="121" y1="-70" x2="200" y2="-120"/><line x1="99" y1="100" x2="155" y2="185"/><line x1="-99" y1="100" x2="-155" y2="185"/><line x1="-121" y1="-70" x2="-200" y2="-120"/></g><text x="0" y="380" font-size="20px" font-weight="bold" fill="#4A148C" text-anchor="middle">AgenticOps: 智能体端到端生命周期管理 (超集)</text></g></svg></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 7: The Ultimate Goal -->
+        <section class="max-w-7xl mx-auto">
+             <h3 class="section-title">最终目标：驱动企业数智化转型</h3>
+             <p class="section-subtitle">ORP是企业完成从信息化、数字化到数智化深刻跃迁的、不可或缺的生产体系。</p>
+            <div class="w-full bg-white p-4 rounded-xl shadow-lg">
+                <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+                    <defs><linearGradient id="grad-info-final" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E3F2FD"/><stop offset="100%" stop-color="#B3E5FC"/></linearGradient><linearGradient id="grad-digital-final" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E8EAF6"/><stop offset="100%" stop-color="#C5CAE9"/></linearGradient><linearGradient id="grad-intelligent-final" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F3E5F5"/><stop offset="100%" stop-color="#E1BEE7"/></linearGradient><linearGradient id="grad-orp-final" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFD180"/><stop offset="100%" stop-color="#FFAB40"/></linearGradient><marker id="arrow-head-journey-final" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#37474F"/></marker></defs><path d="M 100 200 H 1100" stroke="#90A4AE" stroke-width="8" marker-end="url(#arrow-head-journey-final)"/><text x="600" y="150" font-size="16px" font-weight="600" text-anchor="middle" fill="#37474F">转型路径</text><g id="stage-info"><circle cx="200" cy="200" r="40" fill="#4FC3F7"/><text x="200" y="205" font-size="18px" font-weight="bold" fill="white" text-anchor="middle">1.0</text><rect x="50" y="280" width="300" height="250" rx="15" fill="url(#grad-info-final)" stroke="#81D4FA"/><text x="200" y="320" font-size="22px" font-weight="bold" text-anchor="middle" fill="#01579B">信息化</text><text x="200" y="355" font-size="16px" text-anchor="middle" font-weight="600" fill="#0277BD">核心: 流程线上化</text><path d="M 100 375 H 300" stroke="#4FC3F7" stroke-width="1.5"/><text x="200" y="410" font-size="14px" text-anchor="middle" fill="#0288D1">OA / ERP / CRM</text><text x="200" y="440" font-size="14px" text-anchor="middle" fill="#0288D1">固化标准业务流程</text><text x="200" y="470" font-size="14px" text-anchor="middle" fill="#0288D1">提升基础运营效率</text></g><g id="stage-digital"><circle cx="600" cy="200" r="40" fill="#7986CB"/><text x="600" y="205" font-size="18px" font-weight="bold" fill="white" text-anchor="middle">2.0</text><rect x="450" y="280" width="300" height="250" rx="15" fill="url(#grad-digital-final)" stroke="#9FA8DA"/><text x="600" y="320" font-size="22px" font-weight="bold" text-anchor="middle" fill="#1A237E">数字化</text><text x="600" y="355" font-size="16px" text-anchor="middle" font-weight="600" fill="#283593">核心: 数据业务化</text><path d="M 500 375 H 700" stroke="#7986CB" stroke-width="1.5"/><text x="600" y="410" font-size="14px" text-anchor="middle" fill="#303F9F">数据分析 / BI</text><text x="600" y="440" font-size="14px" text-anchor="middle" fill="#303F9F">洞察业务规律</text><text x="600" y="470" font-size="14px" text-anchor="middle" fill="#303F9F">驱动业务决策</text></g><g id="stage-intelligent"><circle cx="1000" cy="200" r="40" fill="#BA68C8"/><text x="1000" y="205" font-size="18px" font-weight="bold" fill="white" text-anchor="middle">3.0</text><rect x="850" y="280" width="300" height="250" rx="15" fill="url(#grad-intelligent-final)" stroke="#CE93D8"/><text x="1000" y="320" font-size="22px" font-weight="bold" text-anchor="middle" fill="#4A148C">数智化</text><text x="1000" y="355" font-size="16px" text-anchor="middle" font-weight="600" fill="#6A1B9A">核心: 智能规模化</text><path d="M 900 375 H 1100" stroke="#BA68C8" stroke-width="1.5"/><text x="1000" y="410" font-size="14px" text-anchor="middle" fill="#7B1FA2">AI Agent / Copilot</text><text x="1000" y="440" font-size="14px" text-anchor="middle" fill="#7B1FA2">重塑业务模式</text><text x="1000" y="470" font-size="14px" text-anchor="middle" fill="#7B1FA2">创造全新价值</text></g><g id="orp-engine"><path d="M 850 580 L 900 650 L 850 720 L 750 720 L 700 650 L 750 580 Z" fill="url(#grad-orp-final)" stroke="#FFA000"/><text x="800" y="630" font-size="24px" font-weight="bold" text-anchor="middle" fill="#BF360C">ORP</text><text x="800" y="660" font-size="16px" text-anchor="middle" fill="#E65100">智能生产引擎</text><text x="800" y="685" font-size="12px" text-anchor="middle" fill="#E65100">规划·编排·治理</text><path d="M 800 570 L 800 220" stroke="#FFB74D" stroke-width="4" fill="none" stroke-dasharray="8 4"/><path d="M 795 230 L 800 220 L 805 230 Z" fill="#FFB74D"/></g><text x="400" y="150" font-size="16px" text-anchor="middle" fill="#3F51B5">第一次跃迁 (由ERP驱动)</text><text x="800" y="150" font-size="16px" text-anchor="middle" font-weight="bold" fill="#6A1B9A">第二次跃迁 (由ORP驱动)</text>
+                </svg>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--brand)] text-center py-6 mt-16">
+        <p class="text-xs text-[var(--brand-light)] opacity-80">
+            本作品采用CC-BY-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区
+        </p>
+    </footer>
+
+</body>
+</html>

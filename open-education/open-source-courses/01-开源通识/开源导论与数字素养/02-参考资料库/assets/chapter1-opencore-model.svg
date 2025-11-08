@@ -1,0 +1,62 @@
+<svg width="100%" height="100%" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <style>
+    .main-title { font-size: 24px; font-weight: bold; text-anchor: middle; }
+    .layer-text { font-size: 18px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .box-title { font-size: 16px; font-weight: bold; fill: #005A9C; }
+    .category-title { font-size: 14px; font-weight: bold; fill: #333; }
+    .item-text { font-size: 13px; fill: #444; }
+    .info-box { stroke-width: 1; }
+    .connector { stroke: #555; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    .license-text { font-size: 12px; fill: #888; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <text x="600" y="60" class="main-title">开源核心 (Open Core) 商业模式示意图</text>
+
+  <g id="onion-diagram">
+    <circle cx="300" cy="400" r="250" fill="#E8F8F5" stroke="#16A085" stroke-width="1.5" />
+    <text x="300" y="200" class="layer-text">商业服务</text>
+
+    <circle cx="300" cy="400" r="170" fill="#FEF9E7" stroke="#D4AC0D" stroke-width="1.5" />
+    <text x="300" y="290" class="layer-text">专有附加组件/企业版</text>
+
+    <circle cx="300" cy="400" r="90" fill="#EBF5FB" stroke="#005A9C" stroke-width="1.5" />
+    <text x="300" y="410" class="layer-text">开源核心</text>
+  </g>
+
+  <g id="info-boxes">
+    <rect x="750" y="140" width="370" height="150" rx="8" ry="8" fill="#E8F8F5" stroke="#16A085" class="info-box" />
+    <text x="770" y="170" class="box-title">外层: 商业服务</text>
+    <text x="770" y="200" class="category-title">描述:</text>
+    <text x="780" y="220" class="item-text">• 围绕产品的增值服务。</text>
+    <text x="770" y="245" class="category-title">例子:</text>
+    <text x="780" y="265" class="item-text">• 企业级技术支持、专业培训、咨询服务。</text>
+
+    <rect x="750" y="325" width="370" height="150" rx="8" ry="8" fill="#FEF9E7" stroke="#D4AC0D" class="info-box" />
+    <text x="770" y="355" class="box-title">中间层: 专有附加组件/企业版</text>
+    <text x="770" y="385" class="category-title">描述:</text>
+    <text x="780" y="405" class="item-text">• 高级功能、付费获取、满足企业级需求。</text>
+    <text x="770" y="430" class="category-title">例子:</text>
+    <text x="780" y="450" class="item-text">• GitLab 的高级安全与合规功能, MongoDB 的高级加密与审计。</text>
+
+    <rect x="750" y="510" width="370" height="150" rx="8" ry="8" fill="#EBF5FB" stroke="#005A9C" class="info-box" />
+    <text x="770" y="540" class="box-title">核心 (最内层): 开源核心</text>
+    <text x="770" y="570" class="category-title">描述:</text>
+    <text x="780" y="590" class="item-text">• 基础功能、免费获取、社区驱动、吸引开发者。</text>
+    <text x="770" y="615" class="category-title">例子:</text>
+    <text x="780" y="635" class="item-text">• GitLab 社区版的基础功能, MongoDB 社区版。</text>
+  </g>
+
+  <line x1="465" y1="215" x2="750" y2="215" class="connector" />
+  <line x1="550" y1="400" x2="750" y2="400" class="connector" />
+  <line x1="465" y1="585" x2="750" y2="585" class="connector" />
+
+  <text x="600" y="750" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区。
+  </text>
+</svg>

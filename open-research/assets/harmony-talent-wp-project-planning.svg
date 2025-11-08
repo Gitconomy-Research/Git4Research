@@ -1,0 +1,99 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <!-- SVG Gantt Chart for HarmonyOS Talent White Paper -->
+    <!-- Author: Gemini -->
+
+    <style>
+        .chart-title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #333; }
+        .axis-label { font-size: 14px; text-anchor: middle; fill: #555; }
+        .task-label { font-size: 14px; fill: #333; }
+        .stage-label { font-size: 16px; font-weight: bold; fill: #111; }
+        .bar-text { font-size: 12px; fill: white; text-anchor: middle; }
+        .grid-line { stroke: #e0e0e0; stroke-width: 1; }
+    </style>
+
+    <!-- Chart Title -->
+    <text x="500" y="40" class="chart-title">《2025鸿蒙生态人才白皮书》项目甘特图</text>
+
+    <!-- Definitions for colors -->
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#5B9BD5;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4A7EAC;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ED7D31;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#C66528;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#70AD47;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#5A8A38;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Timeline Header and Grid -->
+    <g id="timeline">
+        <rect x="250" y="70" width="700" height="40" fill="#f8f8f8"/>
+        <line x1="250" y1="70" x2="250" y2="550" class="grid-line" />
+        <text x="308.33" y="95" class="axis-label">11月 W1 (3-9)</text>
+        <line x1="366.66" y1="70" x2="366.66" y2="550" class="grid-line" />
+        <text x="425" y="95" class="axis-label">11月 W2 (10-16)</text>
+        <line x1="483.33" y1="70" x2="483.33" y2="550" class="grid-line" />
+        <text x="541.66" y="95" class="axis-label">11月 W3 (17-23)</text>
+        <line x1="600" y1="70" x2="600" y2="550" class="grid-line" />
+        <text x="658.33" y="95" class="axis-label">11月 W4 (24-30)</text>
+        <line x1="716.66" y1="70" x2="716.66" y2="550" class="grid-line" />
+        <text x="775" y="95" class="axis-label">12月 W1 (1-7)</text>
+        <line x1="833.33" y1="70" x2="833.33" y2="550" class="grid-line" />
+        <text x="891.66" y="95" class="axis-label">12月 W2 (8-14)</text>
+        <line x1="950" y1="70" x2="950" y2="550" class="grid-line" />
+    </g>
+
+    <!-- Stage 1: Data Collection -->
+    <g id="stage1">
+        <text x="20" y="145" class="stage-label">阶段一: 数据采集</text>
+        <rect x="250" y="125" width="233.33" height="30" rx="5" fill="url(#grad1)" />
+        <text x="366.66" y="145" class="bar-text">3 周</text>
+
+        <!-- Tasks for Stage 1 -->
+        <text x="40" y="185" class="task-label">企业需求调研</text>
+        <rect x="250" y="165" width="116.66" height="30" rx="5" fill="#a0c3e2" />
+
+        <text x="40" y="225" class="task-label">市场动态采集</text>
+        <rect x="366.66" y="205" width="116.67" height="30" rx="5" fill="#a0c3e2" />
+
+        <text x="40" y="265" class="task-label">高校供给调研</text>
+        <rect x="366.66" y="245" width="116.67" height="30" rx="5" fill="#a0c3e2" />
+    </g>
+
+    <!-- Stage 2: Modeling & Analysis -->
+    <g id="stage2">
+        <text x="20" y="315" class="stage-label">阶段二: 数据建模与分析</text>
+        <rect x="600" y="295" width="116.66" height="30" rx="5" fill="url(#grad2)" />
+        <text x="658.33" y="315" class="bar-text">1 周</text>
+
+        <!-- Tasks for Stage 2 -->
+        <text x="40" y="355" class="task-label">供需缺口建模</text>
+        <rect x="600" y="335" width="116.66" height="30" rx="5" fill="#f4b58b" />
+
+        <text x="40" y="395" class="task-label">人才技能建模</text>
+        <rect x="600" y="375" width="116.66" height="30" rx="5" fill="#f4b58b" />
+
+        <text x="40" y="435" class="task-label">核心洞察提炼</text>
+        <rect x="600" y="415" width="116.66" height="30" rx="5" fill="#f4b58b" />
+    </g>
+
+    <!-- Stage 3: Content & Visualization -->
+    <g id="stage3">
+        <text x="20" y="485" class="stage-label">阶段三: 内容撰写与可视化</text>
+        <rect x="716.66" y="465" width="233.34" height="30" rx="5" fill="url(#grad3)" />
+        <text x="833.33" y="485" class="bar-text">2 周</text>
+
+        <!-- Tasks for Stage 3 -->
+        <text x="40" y="525" class="task-label">内容撰写与可视化</text>
+        <rect x="716.66" y="505" width="116.67" height="30" rx="5" fill="#b0d49a" />
+
+        <text x="40" y="565" class="task-label">设计与排版</text>
+        <rect x="833.33" y="545" width="116.67" height="30" rx="5" fill="#b0d49a" />
+    </g>
+
+</svg>

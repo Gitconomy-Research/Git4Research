@@ -1,0 +1,72 @@
+<svg width="800" height="650" viewBox="0 0 800 675" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <style>
+      .chart-background { fill: #ffffff; }
+      .title { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #333; }
+      .subtitle { font-size: 14px; text-anchor: middle; fill: #666; }
+      .axis-label { font-size: 14px; text-anchor: middle; fill: #555; }
+      .tick-label { font-size: 12px; text-anchor: middle; fill: #666; }
+      .point-label { font-size: 13px; fill: #333; }
+      .axis-line { stroke: #333; stroke-width: 2; }
+      .grid-line { stroke: #e9ecef; stroke-width: 1; }
+      .data-line { stroke: #0077b6; stroke-width: 2.5; fill: none; }
+      .data-point { fill: #0077b6; stroke: white; stroke-width: 2; }
+      .annotation { font-size: 12px; fill: #888; font-style: italic; }
+    </style>
+     <marker id="arrowhead-svg" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="650" class="chart-background"/>
+
+  <text x="400" y="40" class="title">能量密度与信息密度突破所驱动的“技术-经济范式</text>
+  <text x="400" y="65" class="subtitle">文明的进步∝log(能量密度)+log(信息密度)</text>
+
+
+  <g transform="translate(80, 80)">
+    <line x1="0" y1="0" x2="0" y2="500" class="axis-line" marker-end="url(#arrowhead-svg)" />
+    <text transform="rotate(-90)" x="-250" y="-50" class="axis-label">log(信息密度)</text>
+
+    <g class="y-ticks">
+      <text x="-15" y="505" class="tick-label" text-anchor="end">低</text>
+      <text x="-15" y="250" class="tick-label" text-anchor="end">中</text>
+      <text x="-15" y="83.3" class="tick-label" text-anchor="end">高</text>
+      <text x="-15" y="5" class="tick-label" text-anchor="end">极高</text>
+    </g>
+
+    <line x1="0" y1="500" x2="650" y2="500" class="axis-line" marker-end="url(#arrowhead-svg)" />
+    <text x="325" y="545" class="axis-label">log(能量密度)</text>
+
+    <g class="x-ticks">
+        <text x="0" y="520" class="tick-label">低</text>
+        <text x="325" y="520" class="tick-label">中</text>
+        <text x="520" y="520" class="tick-label">高</text>
+        <text x="650" y="520" class="tick-label">极高</text>
+    </g>
+
+    <polyline class="data-line" points="65,458.3 195,395.8 390,250 585,83.3" />
+    <line class="data-line" x1="585" y1="83.3" x2="617.5" y2="0" />
+
+    <g class="data-points">
+      <circle cx="65" cy="458.3" r="5" class="data-point" />
+      <text x="70" y="452" class="point-label">农业革命</text>
+
+      <circle cx="195" cy="395.8" r="5" class="data-point" />
+      <text x="200" y="389" class="point-label">第一次工业革命</text>
+
+      <circle cx="390" cy="250" r="5" class="data-point" />
+       <text x="395" y="244" class="point-label">第二次工业革命</text>
+
+      <circle cx="585" cy="83.3" r="5" class="data-point" />
+      <text x="510" y="75" class="point-label">第三次工业革命</text>
+
+      <g>
+        <circle cx="617.5" cy="0" r="7" class="data-point" />
+        <text x="470" y="15" class="point-label ai-label">第四次工业革命</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="50%" y="650" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

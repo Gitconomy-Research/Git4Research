@@ -1,0 +1,144 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <defs>
+    <linearGradient id="costGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="futureGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e5e7eb" stroke-width="0.5" />
+    </pattern>
+  </defs>
+
+  <!-- 背景网格 -->
+  <rect width="900" height="650" fill="white" />
+  <rect x="100" y="100" width="700" height="450" fill="url(#grid)" />
+
+  <!-- 坐标轴 -->
+  <line x1="100" y1="550" x2="800" y2="550" stroke="#000000" stroke-width="2" />
+  <line x1="100" y1="550" x2="100" y2="100" stroke="#000000" stroke-width="2" />
+
+  <!-- 坐标刻度 - X轴（模型参数量） -->
+  <line x1="100" y1="550" x2="100" y2="560" stroke="#000000" stroke-width="2" />
+  <text x="100" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle">0.1B</text>
+
+  <line x1="250" y1="550" x2="250" y2="560" stroke="#000000" stroke-width="2" />
+  <text x="250" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle">1B</text>
+
+  <line x1="400" y1="550" x2="400" y2="560" stroke="#000000" stroke-width="2" />
+  <text x="400" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle">10B</text>
+
+  <line x1="550" y1="550" x2="550" y2="560" stroke="#000000" stroke-width="2" />
+  <text x="550" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle">100B</text>
+
+  <line x1="700" y1="550" x2="700" y2="560" stroke="#000000" stroke-width="2" />
+  <text x="700" y="580" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle">1T</text>
+
+  <!-- 坐标刻度 - Y轴（训练成本） -->
+  <line x1="90" y1="550" x2="100" y2="550" stroke="#000000" stroke-width="2" />
+  <text x="85" y="555" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="end">$10K</text>
+
+  <line x1="90" y1="450" x2="100" y2="450" stroke="#000000" stroke-width="2" />
+  <text x="85" y="455" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="end">$100K</text>
+
+  <line x1="90" y1="350" x2="100" y2="350" stroke="#000000" stroke-width="2" />
+  <text x="85" y="355" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="end">$1M</text>
+
+  <line x1="90" y1="250" x2="100" y2="250" stroke="#000000" stroke-width="2" />
+  <text x="85" y="255" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="end">$10M</text>
+
+  <line x1="90" y1="150" x2="100" y2="150" stroke="#000000" stroke-width="2" />
+  <text x="85" y="155" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="end">$100M</text>
+
+  <!-- 坐标轴标签 -->
+  <text x="450" y="610" font-family="Arial, sans-serif" font-size="16" fill="#000000" text-anchor="middle" font-weight="bold">模型参数量（对数刻度）</text>
+  <text x="40" y="325" font-family="Arial, sans-serif" font-size="16" fill="#000000" text-anchor="middle" transform="rotate(-90, 40, 325)" font-weight="bold">训练成本（对数刻度）</text>
+
+  <!-- 成本曲线 -->
+  <path d="M150,520 Q200,500 250,480 T350,430 T450,350 T550,230 T650,100" stroke="url(#costGradient)" stroke-width="4" fill="none" />
+
+  <!-- 预测曲线（虚线） -->
+  <path d="M650,100 Q700,30 750,-40" stroke="url(#futureGradient)" stroke-width="4" fill="none" stroke-dasharray="10,5" />
+
+  <!-- 模型标记点 -->
+  <!-- GPT-2 -->
+  <circle cx="180" cy="500" r="8" fill="#3b82f6" />
+  <text x="180" y="475" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-weight="bold">GPT-2</text>
+  <text x="180" y="490" font-family="Arial, sans-serif" font-size="10" fill="#000000" text-anchor="middle">0.1B参数</text>
+
+  <!-- GPT-3 -->
+  <circle cx="450" cy="350" r="12" fill="#8b5cf6" />
+  <text x="450" y="315" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-weight="bold">GPT-3</text>
+  <text x="450" y="330" font-family="Arial, sans-serif" font-size="10" fill="#000000" text-anchor="middle">175B参数</text>
+
+  <!-- GPT-4 -->
+  <circle cx="600" cy="170" r="16" fill="#ec4899" filter="url(#glow)" />
+  <text x="600" y="135" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-weight="bold">GPT-4</text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="10" fill="#000000" text-anchor="middle">~1T参数</text>
+
+  <!-- 未来模型 -->
+  <circle cx="700" cy="50" r="18" fill="#ef4444" stroke="#000000" stroke-width="1" stroke-dasharray="5,2" />
+  <text x="760" y="25" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="middle" font-weight="bold">2027年预测</text>
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="10" fill="#000000" text-anchor="middle">10T+参数</text>
+
+  <!-- 训练因素图例 -->
+  <g transform="translate(700, 250)">
+    <rect x="-100" y="-20" width="200" height="240" rx="10" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">训练成本影响因素</text>
+
+    <!-- 参数量 -->
+    <circle cx="-80" cy="30" r="5" fill="#3b82f6" />
+    <text x="-65" y="35" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="start">模型参数量</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="10" fill="#666666" text-anchor="middle">更大模型需要更多内存和计算</text>
+
+    <!-- 训练数据 -->
+    <circle cx="-80" cy="80" r="5" fill="#8b5cf6" />
+    <text x="-65" y="85" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="start">训练数据量</text>
+    <text x="0" y="100" font-family="Arial, sans-serif" font-size="10" fill="#666666" text-anchor="middle">高质量数据获取与处理成本</text>
+
+    <!-- 计算资源 -->
+    <circle cx="-80" cy="130" r="5" fill="#ec4899" />
+    <text x="-65" y="135" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="start">计算资源消耗</text>
+    <text x="0" y="150" font-family="Arial, sans-serif" font-size="10" fill="#666666" text-anchor="middle">GPU/TPU集群与电力成本</text>
+
+    <!-- 硬件采购 -->
+    <circle cx="-80" y="180" r="5" fill="#ef4444" />
+    <text x="-65" y="185" font-family="Arial, sans-serif" font-size="12" fill="#000000" text-anchor="start">硬件采购成本</text>
+    <text x="0" y="200" font-family="Arial, sans-serif" font-size="10" fill="#666666" text-anchor="middle">占总成本的94-98%</text>
+  </g>
+
+  <!-- 关键阈值线 -->
+  <line x1="100" y1="170" x2="800" y2="170" stroke="#ef4444" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="120" y="160" font-family="Arial, sans-serif" font-size="12" fill="#ef4444" text-anchor="start">亿级投资阈值 ($50M+)</text>
+
+  <line x1="650" y1="100" x2="650" y2="550" stroke="#64748b" stroke-width="1" stroke-dasharray="5,5" />
+  <text x="655" y="540" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="start" transform="rotate(-90, 655, 540)">当前技术前沿</text>
+
+  <!-- 趋势注释 -->
+  <path d="M350,400 L450,300" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2" fill="none" />
+  <rect x="230" y="380" width="240" height="40" rx="5" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" />
+  <text x="350" y="400" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle">每增加10倍参数，成本增长约100倍</text>
+  <text x="350" y="415" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle">（超线性增长）</text>
+
+  <!-- 未来趋势注释 -->
+  <path d="M680,80 L750,20" stroke="#64748b" stroke-width="1" stroke-dasharray="2,2" fill="none" />
+  <rect x="600" y="60" width="160" height="40" rx="5" fill="#fff1f2" stroke="#ef4444" stroke-width="1" />
+  <text x="680" y="80" font-family="Arial, sans-serif" font-size="11" fill="#000000" text-anchor="middle">预计2027年</text>
+  <text x="680" y="95" font-family="Arial, sans-serif" font-size="11" fill="#ef4444" text-anchor="middle">训练成本将达10亿美元</text>
+本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  <!-- 标题 -->
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="24" fill="#000000" text-anchor="middle" font-weight="bold">大模型规模与训练成本关系</text>
+  <text x="450" y="80" font-family="Arial, sans-serif" font-size="16" fill="#64748b" text-anchor="middle">随参数量增长的指数级成本上升</text>
+
+  <!-- 许可声明 -->
+  <text x="450" y="630" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

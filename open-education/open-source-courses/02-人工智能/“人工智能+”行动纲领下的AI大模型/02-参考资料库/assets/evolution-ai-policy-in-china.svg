@@ -1,0 +1,101 @@
+<svg width="1100" height="600" viewBox="0 0 1100 620" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1100" height="620" fill="#f8f9fa"/>
+
+  <text x="550" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">中国AI政策演变路线图</text>
+
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">
+  <text x="150" y="120" fill="#4e79a7">连接</text>
+  <text x="250" y="120" fill="#6c757d" opacity="0.8">→</text>
+  <text x="350" y="120" fill="#f28e2c">规划</text>
+  <text x="455" y="120" fill="#6c757d" opacity="0.8">→</text>
+  <text x="550" y="120" fill="#e15759">赋能</text>
+  <text x="650" y="120" fill="#6c757d" opacity="0.8">→</text>
+  <text x="750" y="120" fill="#59a14f">治理</text>
+  <text x="850" y="120" fill="#6c757d" opacity="0.8">→</text>
+  <text x="950" y="120" fill="#76b7b2">落地</text>
+</g>
+
+  <line x1="100" y1="200" x2="1000" y2="200" stroke="#666" stroke-width="4"/>
+
+  <g>
+    <circle cx="150" cy="200" r="15" fill="#4e79a7"/>
+    <text x="150" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">2015</text>
+    <rect x="80" y="230" width="140" height="80" rx="10" fill="#4e79a7" opacity="0.9"/>
+    <text x="150" y="255" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">"互联网+"行动计划</text>
+    <text x="150" y="275" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">推动互联网与经济社会</text>
+    <text x="150" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">各领域的深度融合</text>
+  </g>
+
+  <g>
+    <circle cx="350" cy="200" r="15" fill="#f28e2c"/>
+    <text x="350" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">2017</text>
+    <rect x="280" y="230" width="140" height="100" rx="10" fill="#f28e2c" opacity="0.9"/>
+    <text x="350" y="255" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">《新一代人工智能</text>
+    <text x="350" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">发展规划》</text>
+    <text x="350" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">"三步走"战略目标</text>
+    <text x="350" y="315" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">AI成为国家战略核心</text>
+  </g>
+
+  <g>
+    <circle cx="550" cy="200" r="15" fill="#e15759"/>
+    <text x="550" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">2024</text>
+    <rect x="480" y="230" width="140" height="100" rx="10" fill="#e15759" opacity="0.9"/>
+    <text x="550" y="255" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">"人工智能+"行动</text>
+    <text x="550" y="275" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">赋能实体经济</text>
+    <text x="550" y="290" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">培育"新质生产力"</text>
+    <text x="550" y="305" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">战略重心转向应用</text>
+  </g>
+
+  <g>
+      <circle cx="750" cy="200" r="15" fill="#59a14f"/>
+      <text x="750" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">2025.7</text>
+      <rect x="680" y="230" width="140" height="100" rx="10" fill="#59a14f" opacity="0.9"/>
+      <text x="750" y="255" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">《人工智能全球</text>
+      <text x="750" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">治理行动计划》</text>
+      <text x="750" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">提出全球治理方案</text>
+      <text x="750" y="315" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">展现国际责任</text>
+  </g>
+
+  <g>
+    <circle cx="950" cy="200" r="15" fill="#76b7b2"/>
+    <text x="950" y="170" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">2025.8</text>
+    <rect x="880" y="230" width="140" height="100" rx="10" fill="#76b7b2" opacity="0.9"/>
+    <text x="950" y="255" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">《深入实施"人工智</text>
+    <text x="950" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">能+"行动的意见》</text>
+    <text x="950" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">系统性解决产业</text>
+    <text x="950" y="315" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">应用中的实际问题</text>
+  </g>
+
+  <rect x="100" y="380" width="900" height="180" rx="10" fill="#edf2f7"/>
+  <text x="550" y="410" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">战略重心转变</text>
+
+  <g>
+    <rect x="120" y="430" width="400" height="110" rx="5" fill="#e2e8f0"/>
+    <text x="320" y="450" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">早期特征 (2015-2020)</text>
+    <text x="130" y="475" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 政策话语: "加快"、"加强"</text>
+    <text x="130" y="495" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 重点: 技术研发和产业规模扩张</text>
+    <text x="130" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 定位: AI作为独立的尖端技术产业</text>
+    <text x="130" y="535" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 特征: 技术导向</text>
+  </g>
+
+  <g>
+    <rect x="580" y="430" width="400" height="110" rx="5" fill="#e2e8f0"/>
+    <text x="780" y="450" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">当前特征 (2021-2025)</text>
+    <text x="590" y="475" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 政策话语: "深化"、"赋能"</text>
+    <text x="590" y="495" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 重点: AI与实体经济的深度融合</text>
+    <text x="590" y="515" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 定位: 底层赋能技术，如"信息电网"</text>
+    <text x="590" y="535" font-family="Arial, sans-serif" font-size="12" text-anchor="start" fill="#333">• 特征: 应用驱动</text>
+  </g>
+
+  <g>
+    <defs>
+      <marker id="arrow-shift" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+      </marker>
+    </defs>
+    <line x1="525" y1="485" x2="575" y2="485" stroke="#666" stroke-width="2" marker-end="url(#arrow-shift)"/>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="50%" y="600" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

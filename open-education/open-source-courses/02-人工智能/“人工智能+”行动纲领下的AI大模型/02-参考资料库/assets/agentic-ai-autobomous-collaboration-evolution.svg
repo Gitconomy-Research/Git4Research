@@ -1,0 +1,285 @@
+<svg width="1600" height="1150" viewBox="0 0 1600 1150" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, 'Noto Sans SC', sans-serif">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="g-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="g-purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="g-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="g-amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="g-cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <!-- Arrow markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a"/>
+    </marker>
+
+    <!-- Simple icons -->
+    <g id="icon-tool">
+      <path d="M4 12 L12 4 L16 8 L8 16 Z" fill="#374151" opacity="0.85"/>
+      <circle cx="18" cy="6" r="3" fill="#9ca3af"/>
+    </g>
+    <g id="icon-assistant">
+      <circle cx="12" cy="8" r="6" fill="#6366f1"/>
+      <rect x="6" y="15" width="12" height="6" rx="3" fill="#818cf8"/>
+    </g>
+    <g id="icon-collab">
+      <circle cx="8" cy="10" r="5" fill="#10b981"/>
+      <circle cx="16" cy="10" r="5" fill="#34d399" opacity="0.8"/>
+      <path d="M6 16 C8 14, 14 14, 18 16" stroke="#059669" stroke-width="2" fill="none"/>
+    </g>
+    <g id="icon-brain">
+      <path d="M30 20c0-7-6-12-13-12-6 0-11 4-12 9-4 1-7 5-7 9 0 5 4 9 9 9h20c6 0 11-4 11-9 0-5-4-9-8-9z" fill="url(#g-purple)"/>
+    </g>
+    <g id="icon-sensor">
+      <circle cx="12" cy="12" r="4" fill="#0ea5e9"/>
+      <circle cx="12" cy="12" r="8" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.8"/>
+    </g>
+    <g id="icon-plan">
+      <rect x="2" y="2" width="20" height="16" rx="3" fill="#fde68a" stroke="#f59e0b"/>
+      <path d="M6 6 L16 6 M6 10 L14 10 M6 14 L12 14" stroke="#b45309" stroke-width="2"/>
+    </g>
+    <g id="icon-act">
+      <rect x="2" y="2" width="20" height="14" rx="2" fill="#86efac" stroke="#16a34a"/>
+      <path d="M6 16 L10 20 L18 8" stroke="#166534" stroke-width="3" fill="none"/>
+    </g>
+    <g id="icon-mem">
+      <rect x="4" y="4" width="20" height="14" rx="2" fill="#e5e7eb" stroke="#6b7280"/>
+      <rect x="7" y="7" width="14" height="3" fill="#9ca3af"/>
+      <rect x="7" y="12" width="10" height="3" fill="#cbd5e1"/>
+    </g>
+    <g id="icon-api">
+      <rect x="2" y="4" width="20" height="12" rx="2" fill="#dbeafe" stroke="#2563eb"/>
+      <text x="12" y="13" font-size="8" text-anchor="middle" fill="#1d4ed8">API</text>
+    </g>
+    <g id="icon-web">
+      <circle cx="12" cy="12" r="10" fill="#e9d5ff" stroke="#7c3aed"/>
+      <path d="M2 12 H22 M12 2 V22 M4 6 C8 10, 16 14, 20 18" stroke="#6d28d9" stroke-width="1.5" fill="none"/>
+    </g>
+    <g id="icon-code">
+      <path d="M6 6 L2 10 L6 14 M18 6 L22 10 L18 14 M11 5 L13 15" stroke="#111827" stroke-width="2" fill="none"/>
+      <rect x="1" y="2" width="22" height="16" rx="2" stroke="#9ca3af" fill="none"/>
+    </g>
+    <g id="icon-robot">
+      <rect x="4" y="6" width="16" height="10" rx="2" fill="#d1fae5" stroke="#10b981"/>
+      <circle cx="8" cy="11" r="1.5" fill="#059669"/>
+      <circle cx="16" cy="11" r="1.5" fill="#059669"/>
+      <rect x="9" y="16" width="6" height="3" rx="1.5" fill="#059669"/>
+      <line x1="12" y1="6" x2="12" y2="2" stroke="#10b981" stroke-width="2"/>
+      <circle cx="12" cy="2" r="1.5" fill="#10b981"/>
+    </g>
+    <g id="icon-shield">
+      <path d="M12 2 L20 6 V12 C20 16 16 19 12 22 C8 19 4 16 4 12 V6 Z" fill="#111827" opacity="0.9"/>
+      <path d="M12 5 L17 7.5 V12 C17 14.5 14.5 16.8 12 18.5 C9.5 16.8 7 14.5 7 12 V7.5 Z" fill="#e5e7eb"/>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="1100" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="800" y="60" text-anchor="middle" font-size="30" font-weight="700" fill="#111827">
+    Agentic AI：从“工具”到“自主协作者”的进化
+  </text>
+  <text x="800" y="92" text-anchor="middle" font-size="16" fill="#374151">
+    多模态解决“感知” · Agent 技术解决“行动” · 通往AGI的关键一步
+  </text>
+
+  <!-- Evolution strip -->
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" width="1360" height="120" rx="12" fill="white" stroke="#e5e7eb"/>
+    <!-- Stages -->
+    <g transform="translate(60,20)">
+      <use href="#icon-tool" transform="scale(2)"/>
+      <text x="60" y="28" font-size="18" font-weight="700" fill="#111827">工具（Tool）</text>
+      <text x="60" y="50" font-size="13" fill="#4b5563">被动执行 · 无目标 · 不会自我纠错</text>
+    </g>
+    <path d="M 420 60 H 520" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow)"/>
+    <g transform="translate(560,20)">
+      <use href="#icon-assistant" transform="scale(2)"/>
+      <text x="60" y="28" font-size="18" font-weight="700" fill="#111827">任务助手（Task Assistant）</text>
+      <text x="60" y="50" font-size="13" fill="#4b5563">基于提示 · 局部自动化 · 轻规划</text>
+    </g>
+    <path d="M 980 60 H 1080" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- RIGHTMOST: fit into box with two lines -->
+    <g transform="translate(1120,20)">
+      <use href="#icon-collab" transform="scale(2)"/>
+      <text x="60" y="28" font-size="18" font-weight="700" fill="#111827">自主协作者</text>
+      <text x="60" y="46" font-size="12" fill="#6b7280">(Autonomous Collaborator)</text>
+      <text x="60" y="68" font-size="13" fill="#4b5563">目标导向 · 主动规划 · 闭环学习</text>
+    </g>
+  </g>
+信息系统“熵减”模式的范式革命
+  <!-- Core loop container -->
+  <g transform="translate(80,280)">
+    <rect x="0" y="0" width="960" height="620" rx="16" fill="white" stroke="#e5e7eb"/>
+    <text x="24" y="36" font-size="18" font-weight="700" fill="#111827">核心闭环：感知 → 规划 → 行动 → 记忆</text>
+    <text x="24" y="60" font-size="13" fill="#374151">LLM作为大脑（Brain）驱动闭环；推理与工具协同支持复杂任务。</text>
+
+    <!-- Brain center -->
+    <g transform="translate(430,260)">
+      <use href="#icon-brain" transform="scale(1)"/>
+      <text x="30" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="#ffffff">LLM 大脑</text>
+      <text x="30" y="74" font-size="12" text-anchor="middle" fill="#f3e8ff">理解 · 推理 · 决策</text>
+    </g>
+
+    <!-- ===== Four nodes (CHINESE ONLY, NO OVERLAP WITH ICONS) ===== -->
+    <!-- Top row: 感知（left） & 规划（right） -->
+    <g id="block-perception" transform="translate(100,160)">
+      <rect x="0" y="0" width="220" height="120" rx="12" fill="url(#g-cyan)" opacity="0.15" stroke="#06b6d4"/>
+      <use href="#icon-sensor" x="16" y="12" transform="scale(1.6)"/>
+      <!-- Title moved right to avoid icon -->
+      <text x="88" y="40" font-size="16" font-weight="700" fill="#0c4a6e">感知</text>
+      <!-- Description moved below icon area to avoid overlap -->
+      <text x="20" y="86" font-size="12" fill="#075985">
+        <tspan x="20" dy="0">多模态输入：文本 / 图像 / 语音 / 网页 / 传感器</tspan>
+        <tspan x="20" dy="18">环境理解与状态提取</tspan>
+      </text>
+    </g>
+
+    <g id="block-planning" transform="translate(640,160)">
+      <rect x="0" y="0" width="220" height="120" rx="12" fill="url(#g-amber)" opacity="0.18" stroke="#f59e0b"/>
+      <use href="#icon-plan" x="16" y="16" transform="scale(1.6)"/>
+      <text x="88" y="40" font-size="16" font-weight="700" fill="#78350f">规划</text>
+      <text x="20" y="86" font-size="12" fill="#92400e">
+        <tspan x="20" dy="0">任务分解、策略树、约束满足</tspan>
+        <tspan x="20" dy="18">思维链、树状搜索、图式推理</tspan>
+      </text>
+    </g>
+
+    <!-- Bottom row: 记忆（left） & 行动（right） -->
+    <g id="block-memory" transform="translate(100,400)">
+      <rect x="0" y="0" width="220" height="120" rx="12" fill="#e5e7eb" stroke="#9ca3af"/>
+      <use href="#icon-mem" x="12" y="18" transform="scale(1.7)"/>
+      <text x="88" y="44" font-size="16" font-weight="700" fill="#374151">记忆</text>
+      <text x="20" y="90" font-size="12" fill="#374151">
+        <tspan x="20" dy="0">短期：上下文与对话状态</tspan>
+        <tspan x="20" dy="18">长期：向量检索 / 知识库</tspan>
+      </text>
+    </g>
+
+    <g id="block-action" transform="translate(640,400)">
+      <rect x="0" y="0" width="220" height="120" rx="12" fill="url(#g-green)" opacity="0.18" stroke="#16a34a"/>
+      <use href="#icon-act" x="16" y="16" transform="scale(1.6)"/>
+      <text x="88" y="40" font-size="16" font-weight="700" fill="#065f46">行动（工具使用）</text>
+      <text x="20" y="86" font-size="12" fill="#065f46">
+        <tspan x="20" dy="0">推理与行动交替</tspan>
+        <tspan x="20" dy="18">接口调用、代码执行、机器人控制</tspan>
+      </text>
+    </g>
+
+    <!-- Straight connectors for the loop -->
+    <line x1="320" y1="220" x2="640" y2="220" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+    <text x="480" y="210" font-size="12" fill="#1d4ed8" text-anchor="middle">感知 → 规划</text>
+
+    <line x1="750" y1="280" x2="750" y2="400" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+    <text x="762" y="344" font-size="12" fill="#6d28d9">规划 ↓ 行动</text>
+
+    <line x1="640" y1="460" x2="320" y2="460" stroke="#16a34a" stroke-width="3" marker-end="url(#arrow-green)"/>
+    <text x="480" y="450" font-size="12" fill="#065f46" text-anchor="middle">行动 → 记忆</text>
+
+    <line x1="210" y1="400" x2="210" y2="280" stroke="#374151" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="222" y="344" font-size="12" fill="#374151">记忆 ↑ 感知</text>
+
+    <!-- Legend -->
+    <g transform="translate(24,84)">
+      <rect x="0" y="0" width="280" height="64" rx="8" fill="#f9fafb" stroke="#e5e7eb"/>
+      <line x1="16" y1="20" x2="76" y2="20" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow-blue)"/>
+      <text x="90" y="24" font-size="12" fill="#111827">数据流 / 观察</text>
+      <line x1="16" y1="44" x2="76" y2="44" stroke="#7c3aed" stroke-width="3" marker-end="url(#arrow-purple)"/>
+      <text x="90" y="48" font-size="12" fill="#111827">控制流 / 决策</text>
+    </g>
+  </g>
+
+  <!-- External tools & environment -->
+  <g transform="translate(80,920)">
+    <rect x="0" y="0" width="960" height="140" rx="16" fill="white" stroke="#e5e7eb"/>
+    <text x="24" y="36" font-size="16" font-weight="700" fill="#111827">外部工具与环境（Action 接口）</text>
+    <g transform="translate(24,58)">
+      <g transform="translate(0,0)">
+        <use href="#icon-api" transform="scale(2)"/>
+        <text x="52" y="16" font-size="12" fill="#1f2937">REST / GraphQL / SDK</text>
+      </g>
+      <g transform="translate(220,0)">
+        <use href="#icon-web" transform="scale(2)"/>
+        <text x="52" y="16" font-size="12" fill="#1f2937">Web搜索 / 抓取</text>
+      </g>
+      <g transform="translate(440,0)">
+        <use href="#icon-code" transform="scale(2)"/>
+        <text x="52" y="16" font-size="12" fill="#1f2937">代码执行 / 工具链</text>
+      </g>
+      <g transform="translate(660,0)">
+        <use href="#icon-robot" transform="scale(2)"/>
+        <text x="52" y="16" font-size="12" fill="#1f2937">机器人 / IoT / 具身</text>
+      </g>
+    </g>
+    <path d="M 860 0 v -20" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrow-green)"/>
+  </g>
+
+  <!-- RIGHT SIDE: vertical stack -->
+  <g transform="translate(1080,280)">
+    <rect x="0" y="0" width="440" height="360" rx="16" fill="white" stroke="#e5e7eb"/>
+    <text x="24" y="36" font-size="18" font-weight="700" fill="#111827">Agentic AI 核心特征</text>
+    <g transform="translate(24,60)" font-size="13" fill="#374151">
+      <text x="0" y="0">• 主动性（Proactivity）：基于目标自行探测信息与提出下一步。</text>
+      <text x="0" y="26">• 目标导向（Goal-driven）：以任务与约束为优化对象，而非单轮应答。</text>
+      <text x="0" y="52">• 规划与分解（Planning）：可解释的任务分解与路径搜索。</text>
+      <text x="0" y="78">• 工具调度（Tool Use）：跨接口/代码/机器人协同。</text>
+      <text x="0" y="104">• 记忆增强（Memory）：短期上下文 + 长期检索。</text>
+      <text x="0" y="130">• 闭环学习：从反馈中自我修正与持续改进。</text>
+      <text x="0" y="156">• 协作性：多智能体角色分工与协同。</text>
+      <text x="0" y="182">• 稳健与安全：约束、监控、评估与追踪。</text>
+    </g>
+  </g>
+
+  <g transform="translate(1080,670)">
+    <rect x="0" y="0" width="440" height="230" rx="16" fill="white" stroke="#e5e7eb"/>
+    <text x="24" y="36" font-size="18" font-weight="700" fill="#111827">前沿形态（Frontier Forms）</text>
+    <g transform="translate(24,60)">
+      <rect x="0" y="0" width="392" height="64" rx="10" fill="#f0f9ff" stroke="#bae6fd"/>
+      <text x="16" y="24" font-size="14" font-weight="700" fill="#0c4a6e">多智能体协作</text>
+      <text x="16" y="44" font-size="12" fill="#075985">角色分工 · 协作规划 · 争议仲裁 · 组织级目标对齐</text>
+    </g>
+    <g transform="translate(24,136)">
+      <rect x="0" y="0" width="392" height="64" rx="10" fill="#ecfdf5" stroke="#bbf7d0"/>
+      <text x="16" y="24" font-size="14" font-weight="700" fill="#065f46">具身智能</text>
+      <text x="16" y="44" font-size="12" fill="#065f46">将感知-行动闭环延伸至物理世界：机器人、IoT、仿真</text>
+    </g>
+  </g>
+
+  <g transform="translate(1080,920)">
+    <rect x="0" y="0" width="440" height="140" rx="16" fill="#111827"/>
+    <text x="24" y="36" font-size="16" font-weight="700" fill="#f9fafb">治理与安全（Guardrails, Eval, Monitoring）</text>
+    <text x="24" y="66" font-size="12" fill="#e5e7eb">
+      <tspan x="24" dy="0">• 目标函数与约束 · 风险边界与合规（安全/隐私/公平）</tspan>
+      <tspan x="24" dy="20">• 观测与可追踪性（Logs/Traces） · 评测基准（任务成功率/稳健性）</tspan>
+    </text>
+  </g>
+
+  <!-- Footnotes -->
+  <text x="800" y="1130" text-anchor="middle" font-size="12" fill="#6b7280">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,198 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1020" width="1200" height="1020" style="font-family: Arial, sans-serif;">
+  <!-- 背景 -->
+  <rect width="1200" height="1020" fill="#f8f9fa" rx="8" ry="8" />
+
+  <!-- 标题 -->
+  <text x="600" y="40" text-anchor="middle" font-size="28" font-weight="bold" fill="#333">生成式思维与创造力课程场景C——混合冲刺教学框架</text>
+
+  <!-- 图例 -->
+  <rect x="50" y="70" width="15" height="15" fill="#1890ff" rx="2" ry="2" />
+  <text x="75" y="83" font-size="14" fill="#333">线下活动</text>
+
+  <rect x="180" y="70" width="15" height="15" fill="#91caff" rx="2" ry="2" opacity="0.6" />
+  <text x="205" y="83" font-size="14" fill="#333">线上活动</text>
+
+  <line x1="310" y1="77" x2="370" y2="77" stroke="#ff4d4f" stroke-width="3" />
+  <text x="380" y="83" font-size="14" fill="#333">团队能量曲线</text>
+
+  <circle cx="490" cy="77" r="8" fill="#52c41a" />
+  <text x="510" y="83" font-size="14" fill="#333">关键里程碑</text>
+
+  <!-- 时间线背景 -->
+  <rect x="100" y="110" width="1000" height="60" fill="#f0f0f0" rx="5" ry="5" />
+
+  <!-- 时间段标记 -->
+  <line x1="100" y1="140" x2="1100" y2="140" stroke="#d9d9d9" stroke-width="2" />
+
+  <line x1="300" y1="120" x2="300" y2="160" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="500" y1="120" x2="500" y2="160" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="700" y1="120" x2="700" y2="160" stroke="#d9d9d9" stroke-width="2" />
+  <line x1="900" y1="120" x2="900" y2="160" stroke="#d9d9d9" stroke-width="2" />
+
+  <text x="200" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">线下开营(3天)</text>
+  <text x="400" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">线上冲刺周1</text>
+  <text x="600" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">线上冲刺周2</text>
+  <text x="800" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">线上冲刺周3</text>
+  <text x="1000" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">线下闭营(2天)</text>
+
+  <!-- 学习阶段 -->
+  <rect x="100" y="180" width="200" height="40" fill="#e6f7ff" rx="5" ry="5" stroke="#1890ff" stroke-width="2" />
+  <text x="200" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#1890ff">动能激发与团队熔炼</text>
+
+  <rect x="300" y="180" width="600" height="40" fill="#fff7e6" rx="5" ry="5" stroke="#fa8c16" stroke-width="2" />
+  <text x="600" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#fa8c16">异步协作与敏捷开发</text>
+
+  <rect x="900" y="180" width="200" height="40" fill="#fff2e8" rx="5" ry="5" stroke="#fa541c" stroke-width="2" />
+  <text x="1000" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#fa541c">成果整合与复盘</text>
+
+  <!-- 线下活动区域 -->
+  <text x="20" y="270" font-size="16" font-weight="bold" fill="#333">线下活动</text>
+
+  <!-- 线下开营 -->
+  <rect x="120" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="200" y="280" text-anchor="middle" font-size="14" fill="white" font-weight="bold">线下开营 (Day 1-3)</text>
+  <text x="200" y="305" text-anchor="middle" font-size="12" fill="white">思维模型与技术工具密集训练</text>
+  <text x="200" y="325" text-anchor="middle" font-size="12" fill="white">团队组建与项目立项</text>
+  <text x="200" y="345" text-anchor="middle" font-size="12" fill="white">初步方案设计与路径规划</text>
+
+  <!-- 线下闭营 -->
+  <rect x="920" y="240" width="160" height="120" rx="5" ry="5" fill="#1890ff" opacity="0.8" />
+  <text x="1000" y="280" text-anchor="middle" font-size="14" fill="white" font-weight="bold">线下闭营 (Day 4-5)</text>
+  <text x="1000" y="305" text-anchor="middle" font-size="12" fill="white">成果整合与展示</text>
+  <text x="1000" y="325" text-anchor="middle" font-size="12" fill="white">交叉质询与反馈</text>
+  <text x="1000" y="345" text-anchor="middle" font-size="12" fill="white">学习旅程深度复盘</text>
+
+  <!-- 学习理论路径  -->
+  <text x="200" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="middle">问题定义</text>
+  <text x="400" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="middle">原型探索</text>
+  <text x="600" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="middle">功能实现</text>
+  <text x="800" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="middle">用户测试</text>
+  <text x="1020" y="400" font-size="13" fill="#722ed1" font-weight="bold" text-anchor="end">成果整合</text>
+
+  <!-- 从问题定义到原型探索的箭头 -->
+  <line x1="250" y1="395" x2="350" y2="395" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="340,390 350,395 340,400" fill="#722ed1" />
+
+  <!-- 从原型探索到功能实现的箭头 -->
+  <line x1="450" y1="395" x2="545" y2="395" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="540,390 550,395 540,400" fill="#722ed1" />
+
+  <!-- 从功能实现到用户测试的箭头 -->
+  <line x1="650" y1="395" x2="745" y2="395" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="740,390 750,395 740,400" fill="#722ed1" />
+
+  <!-- 从用户测试到成果整合的箭头 -->
+  <line x1="850" y1="395" x2="945" y2="395" stroke="#722ed1" stroke-width="2" stroke-dasharray="5,3" />
+  <polygon points="940,390 950,395 940,400" fill="#722ed1" />
+
+  <!-- 线上活动区域 -->
+  <text x="20" y="440" font-size="16" font-weight="bold" fill="#333">线上活动</text>
+
+  <!-- 第一周线上冲刺 -->
+  <rect x="320" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="400" y="450" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">线上冲刺周1：原型构建</text>
+  <text x="400" y="475" text-anchor="middle" font-size="11" fill="#333">• 团队异步协作：原型设计</text>
+  <text x="400" y="495" text-anchor="middle" font-size="11" fill="#333">• 在线教练辅导 (2次)</text>
+  <text x="400" y="515" text-anchor="middle" font-size="11" fill="#333">• 周五进度复盘与调整</text>
+
+  <!-- 第二周线上冲刺 -->
+  <rect x="520" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="600" y="450" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">线上冲刺周2：核心功能开发</text>
+  <text x="600" y="475" text-anchor="middle" font-size="11" fill="#333">• 团队异步协作：功能实现</text>
+  <text x="600" y="495" text-anchor="middle" font-size="11" fill="#333">• 在线教练辅导 (2次)</text>
+  <text x="600" y="515" text-anchor="middle" font-size="11" fill="#333">• 周五进度复盘与调整</text>
+
+  <!-- 第三周线上冲刺 -->
+  <rect x="720" y="420" width="160" height="120" rx="5" ry="5" fill="#91caff" opacity="0.6" />
+  <text x="800" y="450" text-anchor="middle" font-size="12" fill="#333" font-weight="bold">线上冲刺周3：用户测试与优化</text>
+  <text x="800" y="475" text-anchor="middle" font-size="11" fill="#333">• 团队异步协作：测试与优化</text>
+  <text x="800" y="495" text-anchor="middle" font-size="11" fill="#333">• 在线教练辅导 (2次)</text>
+  <text x="800" y="515" text-anchor="middle" font-size="11" fill="#333">• 准备最终展示与闭营</text>
+
+  <!-- 团队能量曲线 -->
+  <text x="20" y="580" font-size="16" font-weight="bold" fill="#333">团队能量曲线</text>
+
+  <!-- 能量曲线背景和网格 -->
+  <rect x="100" y="570" width="1000" height="200" fill="white" rx="5" ry="5" stroke="#d9d9d9" stroke-width="1" />
+
+  <!-- 水平参考线 -->
+  <line x1="100" y1="640" x2="1100" y2="640" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="80" y="645" text-anchor="end" font-size="12" fill="#666">中性</text>
+
+  <line x1="100" y1="600" x2="1100" y2="600" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="80" y="605" text-anchor="end" font-size="12" fill="#666">高能量</text>
+
+  <line x1="100" y1="680" x2="1100" y2="680" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="80" y="685" text-anchor="end" font-size="12" fill="#666">低能量</text>
+
+  <!-- 垂直参考线 -->
+  <line x1="300" y1="570" x2="300" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <line x1="500" y1="570" x2="500" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <line x1="700" y1="570" x2="700" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+  <line x1="900" y1="570" x2="900" y2="770" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="5,3" />
+
+  <!-- 能量曲线路径 -->
+  <path d="M 120,620
+           C 150,605 180,600 200,595
+           S 280,610 300,630
+           S 350,685 400,695
+           S 450,680 500,670
+           S 550,650 600,660
+           S 650,675 700,655
+           S 750,630 800,620
+           S 850,600 900,590
+           S 950,585 1000,580
+           S 1050,580 1080,580"
+        fill="none" stroke="#ff4d4f" stroke-width="3" />
+
+  <!-- 能量阶段标注 -->
+  <text x="200" y="585" text-anchor="middle" font-size="11" fill="#ff4d4f">高昂能量与期待</text>
+  <text x="400" y="720" text-anchor="middle" font-size="11" fill="#ff4d4f">挑战期</text>
+  <text x="575" y="640" text-anchor="middle" font-size="11" fill="#ff4d4f">适应与稳定</text>
+  <text x="800" y="605" text-anchor="middle" font-size="11" fill="#ff4d4f">再次动能提升</text>
+  <text x="1000" y="565" text-anchor="middle" font-size="11" fill="#ff4d4f">成就感</text>
+
+  <!-- 关键里程碑 -->
+  <text x="20" y="800" font-size="16" font-weight="bold" fill="#333">关键里程碑</text>
+
+  <!-- 里程碑点 -->
+  <circle cx="200" cy="800" r="10" fill="#52c41a" />
+  <text x="200" y="830" text-anchor="middle" font-size="12" fill="#333">项目立项与团队组建</text>
+
+  <circle cx="400" cy="800" r="10" fill="#52c41a" />
+  <text x="400" y="830" text-anchor="middle" font-size="12" fill="#333">可行性原型完成</text>
+
+  <circle cx="600" cy="800" r="10" fill="#52c41a" />
+  <text x="600" y="830" text-anchor="middle" font-size="12" fill="#333">核心功能实现</text>
+
+  <circle cx="800" cy="800" r="10" fill="#52c41a" />
+  <text x="800" y="830" text-anchor="middle" font-size="12" fill="#333">用户测试与优化</text>
+
+  <circle cx="1000" cy="800" r="10" fill="#52c41a" />
+  <text x="1000" y="830" text-anchor="middle" font-size="12" fill="#333">项目成果展示与复盘</text>
+
+  <text x="20" y="870" font-size="16" font-weight="bold" fill="#333">最终产出</text>
+
+  <!-- 最终产出内容框 -->
+  <rect x="100" y="850" width="1000" height="100" fill="#f0f0ff" rx="5" ry="5" stroke="#9254de" stroke-width="2" />
+
+  <!-- 最终产出三大项 -->
+  <rect x="120" y="860" width="300" height="80" rx="5" ry="5" fill="#9254de" opacity="0.2" stroke="#9254de" stroke-width="1" />
+  <text x="270" y="890" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">团队AI创新项目</text>
+  <text x="270" y="910" text-anchor="middle" font-size="11" fill="#333">解决真实场景问题的AI应用或产品</text>
+
+  <rect x="450" y="860" width="300" height="80" rx="5" ry="5" fill="#9254de" opacity="0.2" stroke="#9254de" stroke-width="1" />
+  <text x="600" y="890" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">团队开发文档与技术报告</text>
+  <text x="600" y="910" text-anchor="middle" font-size="11" fill="#333">完整记录开发过程、技术选型与决策理由</text>
+
+  <rect x="780" y="860" width="300" height="80" rx="5" ry="5" fill="#9254de" opacity="0.2" stroke="#9254de" stroke-width="1" />
+  <text x="930" y="890" text-anchor="middle" font-size="13" fill="#333" font-weight="bold">个人反思与成长证据</text>
+  <text x="930" y="910" text-anchor="middle" font-size="11" fill="#333">记录个人在项目中的贡献、挑战与成长</text>
+
+  <!-- 许可 -->
+  <text x="50%" y="1000" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+
+</svg>

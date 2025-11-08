@@ -1,0 +1,80 @@
+<svg width="1200" height="890" viewBox="0 0 1200 890" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <title>AI为元认知发展提供的三大机遇</title>
+  <desc>此图展示了AI如何扮演教练、镜子和推荐引擎三个角色来增强人类的元认知能力。</desc>
+
+  <defs>
+    <marker id="arrow-enhance" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
+    </marker>
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e9ecef" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="890" fill="url(#bg-glow)" />
+
+  <text x="600" y="60" font-size="32" font-weight="bold" text-anchor="middle" fill="#212529">AI为元认知发展提供的三大机遇</text>
+  <text x="600" y="95" font-size="18" text-anchor="middle" fill="#555">人机共生，螺旋上升：升级你自己的“学习操作系统”</text>
+
+  <g id="learner">
+    <circle cx="600" cy="420" r="100" fill="#fff" stroke="#adb5bd" stroke-width="3"/>
+    <text x="600" y="410" font-size="70" text-anchor="middle">👤</text>
+    <text x="600" y="470" font-size="22" font-weight="600" text-anchor="middle">学习者</text>
+    <text x="600" y="495" font-size="16" text-anchor="middle" fill="#495057">(Learner)</text>
+  </g>
+
+  <g id="opportunities">
+
+    <g id="coach">
+      <rect x="50" y="150" width="350" height="400" rx="20" fill="#e7f5ff" stroke="#a5d8ff" stroke-width="2.5"/>
+      <circle cx="225" cy="220" r="40" fill="#fff" stroke="#74c0fc" stroke-width="3"/>
+      <text x="203" y="235" font-size="40">💬</text>
+      <text x="225" y="290" font-size="22" font-weight="bold" text-anchor="middle" fill="#1864ab">1. AI作为元认知教练</text>
+      <text x="225" y="320" font-size="16" text-anchor="middle" fill="#1c7ed6">从“索要答案”到“学会提问”</text>
+      <g transform="translate(75, 360)">
+        <rect width="300" height="150" rx="10" fill="#fff" />
+        <text x="20" y="30" font-size="14" fill="#5f3dc4">AI教练:</text>
+        <text x="35" y="55" font-size="14" font-style="italic" fill="#343a40">"在开始前，你的计划是什么？"</text>
+        <text x="280" y="95" font-size="14" fill="#087f5b" text-anchor="end">学习者:</text>
+        <text x="265" y="120" font-size="14" font-style="italic" fill="#343a40" text-anchor="end">"我打算如何监控我的理解程度？"</text>
+      </g>
+    </g>
+
+    <g id="mirror">
+       <rect x="425" y="580" width="350" height="220" rx="20" fill="#e6fcf5" stroke="#63e6be" stroke-width="2.5"/>
+      <circle cx="600" cy="640" r="40" fill="#fff" stroke="#38d9a9" stroke-width="3"/>
+      <text x="575" y="655" font-size="40">🔍</text>
+      <text x="600" y="700" font-size="22" font-weight="bold" text-anchor="middle" fill="#087f5b">2. AI作为“元认知之镜”</text>
+      <text x="600" y="730" font-size="16" text-anchor="middle" fill="#099268">让“无意识”行为变得“有意识”</text>
+        <text x="600" y="765" font-size="14" text-anchor="middle" font-style="italic" fill="#343a40">"数据显示，你80%的错误与'X'有关。"</text>
+    </g>
+
+    <g id="recommender">
+      <rect x="800" y="150" width="350" height="400" rx="20" fill="#fff9db" stroke="#fcc419" stroke-width="2.5"/>
+      <circle cx="975" cy="220" r="40" fill="#fff" stroke="#ffd43b" stroke-width="3"/>
+      <text x="950" y="235" font-size="40">⚙️</text>
+      <text x="975" y="290" font-size="22" font-weight="bold" text-anchor="middle" fill="#a66100">3. AI作为策略推荐引擎</text>
+      <text x="975" y="320" font-size="16" text-anchor="middle" fill="#c47d00">从“诊断问题”到“开出药方”</text>
+       <g transform="translate(825, 360)">
+         <rect width="300" height="150" rx="10" fill="#fff" />
+         <text x="150" y="40" font-size="16" font-weight="500" text-anchor="middle">检测到困难模式...</text>
+         <text x="150" y="80" text-anchor="middle" font-size="15" fill="#5f3dc4">推荐策略：</text>
+         <text x="150" y="105" text-anchor="middle" font-size="16" font-weight="bold" font-style="italic" fill="#5f3dc4">"费曼学习法"</text>
+      </g>
+    </g>
+
+  </g>
+
+  <g fill="none" stroke="#495057" stroke-width="2.5" marker-end="url(#arrow-enhance)">
+    <path d="M 400 350 C 450 350, 500 380, 500 420" />
+    <path d="M 800 350 C 750 350, 700 380, 700 420" />
+     <path d="M 600 580 V 520" />
+  </g>
+
+  <text x="50%" y="870" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+
+</svg>

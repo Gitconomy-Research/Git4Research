@@ -1,0 +1,82 @@
+<svg width="800" height="650" viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg" font-family="Microsoft YaHei, sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .center-bg { fill: #3498db; }
+            .center-text-main { font-size: 22px; font-weight: bold; fill: white; text-anchor: middle; }
+            .center-text-sub { font-size: 18px; fill: white; text-anchor: middle; }
+            .theory-bg { fill: #ecf0f1; stroke: #bdc3c7; stroke-width: 2; }
+            .theory-text-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .theory-text-desc { font-size: 13px; text-anchor: middle; fill: #34495e; }
+            .orbit-circle { fill: none; stroke: #bdc3c7; stroke-width: 2; stroke-dasharray: 8, 8; }
+            .footer-text { font-size: 12px; fill: #7f8c8d; text-anchor: middle; }
+        </style>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.2"/>
+        </filter>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#ffffff"/>
+
+    <text x="400" y="50" class="title">《开源导论》课程设计核心理念及其实践路径</text>
+
+    <g transform="translate(400, 350)">
+        <circle cx="0" cy="0" r="210" class="orbit-circle"/>
+
+        <g style="filter: url(#shadow);">
+            <circle cx="0" cy="0" r="100" class="center-bg"/>
+            <text y="-20" class="center-text-main">课程哲学</text>
+            <text y="15" class="center-text-sub">启蒙 · 引导 · 赋能</text>
+        </g>
+
+        <g id="theories">
+            <g transform="translate(0, -210)" class="theory-node">
+                <rect x="-110" y="-45" width="220" height="90" rx="10" class="theory-bg" style="filter: url(#shadow);"/>
+                <text y="-15" class="theory-text-title">建构主义</text>
+                <text y="12" class="theory-text-desc">
+                    <tspan x="0" dy="0">通过提交PR与完成项目，</tspan>
+                    <tspan x="0" dy="1.4em">在“做”中主动构建知识</tspan>
+                </text>
+            </g>
+
+            <g transform="translate(199, -65)" class="theory-node">
+                <rect x="-110" y="-45" width="220" height="90" rx="10" class="theory-bg" style="filter: url(#shadow);"/>
+                <text y="-15" class="theory-text-title">社会建构主义</text>
+                <text y="12" class="theory-text-desc">
+                    <tspan x="0" dy="0">在团队协作与同伴互评中，</tspan>
+                    <tspan x="0" dy="1.4em">共同生成对协作的理解</tspan>
+                </text>
+            </g>
+
+            <g transform="translate(123, 170)" class="theory-node">
+                <rect x="-110" y="-45" width="220" height="90" rx="10" class="theory-bg" style="filter: url(#shadow);"/>
+                <text y="-15" class="theory-text-title">情境学习理论</text>
+                <text y="12" class="theory-text-desc">
+                    <tspan x="0" dy="0">向真实开源项目贡献，</tspan>
+                    <tspan x="0" dy="1.4em">完成“合法的边缘性参与”</tspan>
+                </text>
+            </g>
+
+            <g transform="translate(-123, 170)" class="theory-node">
+                <rect x="-110" y="-45" width="220" height="90" rx="10" class="theory-bg" style="filter: url(#shadow);"/>
+                <text y="-15" class="theory-text-title">经验学习理论</text>
+                <text y="12" class="theory-text-desc">
+                    <tspan x="0" dy="0">“微贡献”后的反思报告，</tspan>
+                    <tspan x="0" dy="1.4em">形成“经验-反思”闭环</tspan>
+                </text>
+            </g>
+
+            <g transform="translate(-199, -65)" class="theory-node">
+                <rect x="-110" y="-45" width="220" height="90" rx="10" class="theory-bg" style="filter: url(#shadow);"/>
+                <text y="-15" class="theory-text-title">联通主义</text>
+                <text y="12" class="theory-text-desc">
+                    <tspan x="0" dy="0">自主寻找Issue并共建资源，</tspan>
+                    <tspan x="0" dy="1.4em">强调网络节点的连接能力</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <text x="400" y="635" class="footer-text">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

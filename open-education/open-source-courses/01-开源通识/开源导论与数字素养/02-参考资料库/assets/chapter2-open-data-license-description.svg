@@ -1,0 +1,104 @@
+<svg width="900" height="1120" viewBox="0 0 900 1120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Arial, sans-serif; font-size: 28px; text-anchor: middle; font-weight: bold; fill: #333; }
+      .subtitle { font-family: Arial, sans-serif; font-size: 18px; text-anchor: middle; font-weight: bold; fill: #333; }
+      .main-box { rx: 10; ry: 10; stroke-width: 2; fill-opacity: 0.1; }
+      .flow-box { rx: 10; ry: 10; }
+      .text { font-family: Arial, sans-serif; font-size: 15px; fill: #333; }
+      .subtext { font-family: Arial, sans-serif; font-size: 13px; fill: #555; }
+      .highlight { font-family: Arial, sans-serif; font-weight: bold; fill: #c0392b; }
+      .connector { stroke: #666; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <rect width="900" height="1200" fill="#f8f9fa" />
+
+  <text x="450" y="50" class="title">开放数据许可：解锁信息价值的完整框架</text>
+
+  <g id="legal-status-foundation">
+    <rect x="50" y="90" width="800" height="130" class="main-box" fill="#fef9e7" stroke="#f1c40f"/>
+    <text x="450" y="120" class="subtitle">逻辑起点: 为何需要专门的数据许可？</text>
+    <rect x="150" y="145" width="280" height="60" rx="5" fill="white" stroke="#ccc"/>
+    <text x="290" y="170" text-anchor="middle" class="text">版权法保护: 数据库结构</text>
+    <text x="290" y="190" text-anchor="middle" class="subtext">(作为“汇编作品”)</text>
+    <rect x="470" y="145" width="280" height="60" rx="5" fill="white" stroke="#ccc"/>
+    <text x="610" y="170" text-anchor="middle" class="text">数据库特殊权利: 保护实质性投资</text>
+    <text x="610" y="190" text-anchor="middle" class="subtext">(在获取/验证数据上的投入)</text>
+  </g>
+
+  <path d="M 450 220 V 270" class="connector"/>
+
+  <g id="macro-flow">
+    <rect x="100" y="270" width="150" height="70" class="flow-box" fill="#4285f4" />
+    <text x="175" y="310" font-size="18" text-anchor="middle" fill="white">数据源</text>
+    <path d="M250 305 L325 305" class="connector"/>
+    <rect x="325" y="270" width="250" height="70" class="flow-box" fill="#34a853" />
+    <text x="450" y="310" font-size="18" text-anchor="middle" fill="white">许可选择 (决策点)</text>
+    <path d="M575 305 L650 305" class="connector"/>
+    <rect x="650" y="270" width="150" height="70" class="flow-box" fill="#ea4335" />
+    <text x="725" y="310" font-size="18" text-anchor="middle" fill="white">数据发布</text>
+  </g>
+
+  <path d="M 450 340 V 380" class="connector" stroke="#34a853"/>
+
+  <g id="license-details">
+    <rect x="50" y="380" width="800" height="300" class="main-box" fill="#e8f6f3" stroke="#1abc9c" />
+    <text x="450" y="410" class="subtitle">核心许可选项: 开放数据共享 (ODC) 套件</text>
+
+    <rect x="80" y="440" width="240" height="220" rx="5" fill="white" stroke="#ccc"/>
+    <text x="200" y="465" text-anchor="middle" class="text" style="font-weight:bold;">ODbL</text>
+    <text x="200" y="485" text-anchor="middle" class="subtext highlight">相同方式共享</text>
+    <line x1="100" y1="500" x2="300" y2="500" stroke="#1abc9c"/>
+    <text x="100" y="525" class="subtext" xml:space="preserve">• 署名 (Attribute)</text>
+    <text x="100" y="555" class="subtext" xml:space="preserve">• 相同方式共享 (Share-Alike)</text>
+    <text x="100" y="585" class="subtext" xml:space="preserve">• 保持开放 (Keep Open)</text>
+    <text x="200" y="625" text-anchor="middle" class="subtext" style="font-style:italic;">案例: OpenStreetMap</text>
+
+    <rect x="330" y="440" width="240" height="220" rx="5" fill="white" stroke="#ccc"/>
+    <text x="450" y="465" text-anchor="middle" class="text" style="font-weight:bold;">ODC-By</text>
+    <text x="450" y="485" text-anchor="middle" class="subtext highlight">宽松型许可</text>
+    <line x1="350" y1="500" x2="550" y2="500" stroke="#1abc9c"/>
+    <text x="350" y="525" class="subtext" xml:space="preserve">• 署名 (Attribute)</text>
+    <text x="450" y="585" text-anchor="middle" class="subtext" style="font-style:italic;">类比: MIT, CC-BY</text>
+
+    <rect x="580" y="440" width="240" height="220" rx="5" fill="white" stroke="#ccc"/>
+    <text x="700" y="465" text-anchor="middle" class="text" style="font-weight:bold;">PDDL</text>
+    <text x="700" y="485" text-anchor="middle" class="subtext highlight">贡献至公共领域</text>
+    <line x1="600" y1="500" x2="800" y2="500" stroke="#1abc9c"/>
+    <text x="600" y="525" class="subtext" xml:space="preserve">• 放弃所有版权和特殊权利</text>
+    <text x="700" y="585" text-anchor="middle" class="subtext" style="font-style:italic;">最大程度的开放</text>
+  </g>
+
+  <path d="M 450 680 V 720" class="connector"/>
+
+  <g id="distinction-note">
+    <rect x="50" y="720" width="800" height="150" class="main-box" fill="#fdf2e9" stroke="#e67e22" />
+    <text x="450" y="750" class="subtitle" fill="#d35400">重要提醒: “容器”与“内容”的双重许可</text>
+    <text x="450" y="785" text-anchor="middle" class="text">ODC许可应用于 <tspan font-weight="bold">数据库本身 (容器)</tspan>，但不自动适用于 <tspan font-weight="bold">其中的单个内容 (内容物)</tspan>。</text>
+    <text x="450" y="810" text-anchor="middle" class="subtext">示例：数据库结构可以用 ODbL 许可，但其中的每张图片可以保留各自的版权或许可 (如 CC-BY-NC)。</text>
+    <text x="450" y="840" text-anchor="middle" class="highlight">使用者必须同时核实并遵守数据库和其内容的双重许可！</text>
+  </g>
+
+  <path d="M 450 870 V 910" class="connector" stroke="#ea4335"/>
+
+  <g id="use-cases">
+    <rect x="50" y="910" width="800" height="130" class="main-box" fill="#eaf2f8" stroke="#4285f4" />
+    <text x="450" y="940" class="subtitle">价值实现: 开放数据的使用场景</text>
+    <rect x="130" y="970" width="180" height="50" rx="5" fill="#4285f4" fill-opacity="0.3" />
+    <text x="220" y="1000" font-size="16" text-anchor="middle" fill="#333">学术研究</text>
+    <rect x="360" y="970" width="180" height="50" rx="5" fill="#4285f4" fill-opacity="0.3" />
+    <text x="450" y="1000" font-size="16" text-anchor="middle" fill="#333">商业应用</text>
+    <rect x="590" y="970" width="180" height="50" rx="5" fill="#4285f4" fill-opacity="0.3" />
+    <text x="680" y="1000" font-size="16" text-anchor="middle" fill="#333">政府透明</text>
+  </g>
+
+  <path d="M725 340 C 850 450, 850 800, 725 910" stroke="#ea4335" stroke-width="2.5" fill="none" stroke-dasharray="8,8" marker-end="url(#arrowhead)"/>
+  <text x="800" y="625" font-family="Arial, sans-serif" font-size="14" fill="#ea4335" font-style="italic" transform="rotate(90 800,625)">数据价值流动</text>
+
+  <!-- 许可声明 -->
+  <text x="50%" y="1100" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

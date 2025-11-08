@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 1000 750" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <style>
+    .main-title { font-size: 28px; font-weight: bold; fill: #111; text-anchor: middle; }
+    .header-title { font-size: 22px; font-weight: bold; fill: #fff; text-anchor: middle; }
+    .category-title { font-size: 16px; font-weight: bold; fill: #333; text-anchor: middle; }
+    .item-text { font-size: 14px; fill: #444; }
+    .divider { stroke: #ccc; stroke-width: 1.5; }
+    .license-text { font-size: 14px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <text x="500" y="50" class="main-title">OSD vs. OSAID</text>
+
+  <rect x="50" y="100" width="440" height="50" rx="5" ry="5" fill="#005A9C" />
+  <text x="270" y="132" class="header-title">开源定义 (OSD)</text>
+
+  <rect x="510" y="100" width="440" height="50" rx="5" ry="5" fill="#0c7b64" />
+  <text x="730" y="132" class="header-title">开源AI定义 (OSAID)</text>
+
+  <line x1="50" y1="250" x2="950" y2="250" class="divider"/>
+  <rect x="50" y="160" width="900" height="80" fill="none"/>
+  <text y="205" x="500" class="category-title">核心对象</text>
+  <text x="80" y="205" class="item-text">
+    <tspan x="270" text-anchor="middle">传统软件</tspan>
+  </text>
+  <text x="540" y="205" class="item-text">
+    <tspan x="730" text-anchor="middle">人工智能 (AI) / 机器学习 (ML) 系统</tspan>
+  </text>
+
+  <line x1="50" y1="380" x2="950" y2="380" class="divider"/>
+  <rect x="50" y="260" width="900" height="110" fill="none"/>
+  <text y="320" x="500" class="category-title">“源”的定义</text>
+  <text x="80" y="290" class="item-text" text-anchor="middle">
+    <tspan x="270" font-weight="bold">源代码</tspan>
+    <tspan x="270" dy="1.4em">即程序员编写的、人类可读的指令。</tspan>
+  </text>
+  <text x="540" y="280" class="item-text" text-anchor="middle">
+    <tspan x="730" font-weight="bold">重建系统所需的所有组件:</tspan>
+    <tspan x="730" dy="1.5em">• 模型架构 (代码)</tspan>
+    <tspan x="730" dy="1.5em">• 训练后的模型权重 (参数)</tspan>
+    <tspan x="730" dy="1.5em">• 训练数据信息 (透明度要求)</tspan>
+  </text>
+
+  <line x1="50" y1="520" x2="950" y2="520" class="divider"/>
+  <rect x="50" y="390" width="900" height="120" fill="none"/>
+  <text y="455" x="500" class="category-title">核心原则</text>
+  <text x="80" y="430" class="item-text">
+    <tspan x="270" text-anchor="middle">授予用户自由查看、使用、修改和</tspan>
+    <tspan x="270" text-anchor="middle" dy="1.4em">重新分发软件的权利。</tspan>
+    <tspan x="270" text-anchor="middle" dy="1.8em">(聚焦于用户的“四大自由”)</tspan>
+  </text>
+  <text x="540" y="430" class="item-text">
+    <tspan x="730" text-anchor="middle">提供所有必要的组件，以便一个有技能的人</tspan>
+    <tspan x="730" text-anchor="middle" dy="1.4em">能够“重建一个基本等效的系统”。</tspan>
+    <tspan x="730" text-anchor="middle" dy="1.8em">(聚焦于系统的“可复现性”)</tspan>
+  </text>
+
+  <rect x="50" y="530" width="900" height="120" fill="none"/>
+  <text y="595" x="500" class="category-title">解决的问题</text>
+  <text x="80" y="580" class="item-text">
+    <tspan x="270" text-anchor="middle">旨在应对“闭源/专有软件”对用户</tspan>
+    <tspan x="270" text-anchor="middle" dy="1.4em">自由的限制。</tspan>
+  </text>
+  <text x="540" y="580" class="item-text">
+    <tspan x="730" text-anchor="middle">旨在应对AI系统的“黑箱”特性、</tspan>
+    <tspan x="730" text-anchor="middle" dy="1.4em">组件复杂性以及数据不透明的问题。</tspan>
+  </text>
+
+  <text x="50%" y="700" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+
+</svg>

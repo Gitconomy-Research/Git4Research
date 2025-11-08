@@ -1,0 +1,85 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="background-color: white;" font-family="Noto Sans, sans-serif">
+
+  <defs>
+    <style>
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800;fill: #111827; text-anchor: middle; }
+      .main-subtitle-text { font-size: 16px; font-weight: normal; fill: #374151; text-anchor: middle; }
+      .card-title-text { font-size: 20px; font-weight: bold; text-anchor: middle; }
+      .card-subtitle-text { font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .category-text { font-size: 16px; font-weight: normal; fill: #374151; text-anchor: middle; }
+      .value-text { font-size: 18px; font-weight: bold; text-anchor: middle; }
+      .conclusion-text { font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+
+      /* 配色与布局 */
+      .meritocracy-card { fill: #F0FDF4; stroke: #34D399; }
+      .meritocracy-title { fill: #14532d; }
+      .meritocracy-value { fill: #064e3b; }
+      .meritocracy-conclusion { fill: #34D399; }
+      .meritocracy-icon { fill: #34D399; }
+
+      .plutocracy-card { fill: #FEF9C3; stroke: #FACC15; }
+      .plutocracy-title { fill: #92400e; }
+      .plutocracy-value { fill: #713f12; }
+      .plutocracy-conclusion { fill: #FACC15; }
+      .plutocracy-icon { fill: #FACC15; }
+
+      .divider-line { stroke: #DBEAFE; stroke-width: 2px; }
+    </style>
+  </defs>
+
+  <g id="header">
+    <text x="400" y="50" class="main-title-text">共识机制对比：贤能治理 vs. 资本治理</text>
+    <text x="400" y="75" class="main-subtitle-text">Proof of Authority vs. Proof of Work/Stake</text>
+  </g>
+
+  <line x1="400" y1="100" x2="400" y2="550" class="divider-line"/>
+
+  <g id="proof-of-authority">
+    <rect x="50" y="110" width="300" height="420" rx="15" class="meritocracy-card"/>
+    <text x="200" y="150" class="card-title-text meritocracy-title">权威证明 (PoA)</text>
+    <text x="200" y="175" class="card-subtitle-text meritocracy-title">贤能治理 (Meritocracy)</text>
+
+    <g class="icon meritocracy-icon" transform="translate(175, 200)">
+      <path d="M25 0 L31.7 15.3 L48.3 18.3 L37.5 30.7 L39.2 47 L25 40 L10.8 47 L12.5 30.7 L1.7 18.3 L18.3 15.3 Z"/>
+    </g>
+
+    <text x="200" y="280" class="category-text">共识的燃料</text>
+    <text x="200" y="305" class="value-text meritocracy-value">贡献和专业能力</text>
+
+    <text x="200" y="355" class="category-text">权力的来源</text>
+    <text x="200" y="380" class="value-text meritocracy-value">社区赢得的声誉与信任</text>
+
+    <text x="200" y="430" class="category-text">核心价值观</text>
+    <text x="200" y="455" class="value-text meritocracy-value">"代码胜于雄辩"</text>
+
+    <text x="200" y="500" class="conclusion-text meritocracy-conclusion">✓ 契合开源社区文化</text>
+  </g>
+
+  <g id="proof-of-work-stake">
+    <rect x="450" y="110" width="300" height="420" rx="15" class="plutocracy-card"/>
+    <text x="600" y="150" class="card-title-text plutocracy-title">工作量/权益证明 (PoW/PoS)</text>
+    <text x="600" y="175" class="card-subtitle-text plutocracy-title">资本治理 (Plutocracy)</text>
+
+    <g class="icon plutocracy-icon" transform="translate(575, 205)">
+      <path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M25 10 a5 5 0 1 1 0 10 a5 5 0 0 1 0-10 M25 30 a5 5 0 1 1 0 10 a5 5 0 0 1 0-10 "/>
+      <text x="25" y="32" font-size="20" fill="white" text-anchor="middle" font-weight="bold">$</text>
+    </g>
+
+    <text x="600" y="280" class="category-text">共识的燃料</text>
+    <text x="600" y="305" class="value-text plutocracy-value">算力或质押的资本</text>
+
+    <text x="600" y="355" class="category-text">权力的来源</text>
+    <text x="600" y="380" class="value-text plutocracy-value">持有的代币数量</text>
+
+    <text x="600" y="430" class="category-text">潜在问题</text>
+    <text x="600" y="455" class="value-text plutocracy-value">影响力可用金钱购买</text>
+
+    <text x="600" y="500" class="conclusion-text plutocracy-conclusion">✗ 可能导致富豪统治</text>
+  </g>
+
+  <text x="50%" y="580" class="license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可, 2025 Gitconomy Research社区
+  </text>
+</svg>

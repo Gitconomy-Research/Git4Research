@@ -1,0 +1,144 @@
+<svg width="1450" height="870" viewBox="0 0 1450 870" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <title>通过JTBD识别AI机遇的系统流程图</title>
+  <desc>此流程图展示了如何通过四个阶段，将用户数据转化为JTBD洞察，并最终指导AI战略与产品设计。</desc>
+
+  <defs>
+    <marker id="arrow-flow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
+    </marker>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f8f9fa" />
+      <stop offset="100%" style="stop-color:#e9ecef" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1450" height="870" fill="url(#bg-gradient)" />
+
+  <text x="700" y="60" font-size="32" font-weight="bold" text-anchor="middle" fill="#212529">通过JTBD识别AI机遇的系统流程</text>
+
+  <g id="stages">
+    <g id="stage1">
+      <rect x="50" y="120" width="300" height="675" rx="15" fill="#e7f5ff" stroke="#a5d8ff" stroke-width="2"/>
+      <text x="200" y="170" font-size="22" font-weight="bold" text-anchor="middle" fill="#1864ab">阶段一: 数据聚合</text>
+      <text x="200" y="200" font-size="16" text-anchor="middle" fill="#1c7ed6">汇集海量非结构化用户之声</text>
+
+      <g transform="translate(100, 250)">
+        <rect width="200" height="60" rx="10" fill="#fff" stroke="#ced4da" stroke-width="1.5"/>
+        <text x="100" y="38" font-size="17" text-anchor="middle">🎙️ 用户访谈录音</text>
+      </g>
+      <g transform="translate(100, 350)">
+        <rect width="200" height="60" rx="10" fill="#fff" stroke="#ced4da" stroke-width="1.5"/>
+        <text x="100" y="38" font-size="17" text-anchor="middle">⭐ 应用商店评论</text>
+      </g>
+      <g transform="translate(100, 450)">
+        <rect width="200" height="60" rx="10" fill="#fff" stroke="#ced4da" stroke-width="1.5"/>
+        <text x="100" y="38" font-size="17" text-anchor="middle">📨 客户支持工单</text>
+      </g>
+      <g transform="translate(100, 550)">
+        <rect width="200" height="60" rx="10" fill="#fff" stroke="#ced4da" stroke-width="1.5"/>
+        <text x="100" y="38" font-size="17" text-anchor="middle">💬 社交媒体讨论</text>
+      </g>
+    </g>
+
+    <g id="stage2">
+      <rect x="400" y="120" width="300" height="675" rx="15" fill="#f3f0ff" stroke="#b197fc" stroke-width="2"/>
+      <text x="550" y="170" font-size="22" font-weight="bold" text-anchor="middle" fill="#5f3dc4">阶段二: AI洞察合成</text>
+      <text x="550" y="200" font-size="16" text-anchor="middle" fill="#7048e8">将“噪音”提炼为“信号”</text>
+
+      <g transform="translate(450, 250)">
+        <rect width="200" height="150" rx="10" fill="#fff" stroke="#d0bfff" stroke-width="2"/>
+        <text x="100" y="40" font-size="20" text-anchor="middle" font-weight="600">🧠 生成式AI (LLM)</text>
+        <text x="100" y="75" font-size="15" text-anchor="middle" fill="#555">› 语音转录</text>
+        <text x="100" y="95" font-size="15" text-anchor="middle" fill="#555">› 主题聚类</text>
+        <text x="100" y="115" font-size="15" text-anchor="middle" fill="#555">› 模式识别</text>
+      </g>
+
+      <line x1="550" y1="400" x2="550" y2="440" stroke="#845ef7" stroke-width="1.5" marker-end="url(#arrow-flow)"/>
+      <text x="550" y="425" font-size="14" fill="#845ef7" text-anchor="middle">生成结构化洞察</text>
+
+      <g transform="translate(425, 450)">
+        <rect width="250" height="300" rx="10" fill="#f8f0fc"/>
+        <text x="125" y="40" font-size="18" text-anchor="middle" font-weight="600">结构化JTBD洞察</text>
+        <text x="30" y="80" text-anchor="start" font-size="16">✅ 待办工作陈述 (Job)</text>
+        <text x="40" y="105" text-anchor="start" font-style="italic" fill="#555">“当我...我想要...以便我能...”</text>
+        <text x="30" y="150" text-anchor="start" font-size="16">😣 挣扎时刻 (Struggle)</text>
+        <text x="40" y="175" text-anchor="start" font-style="italic" fill="#555">现有方案的不足之处...</text>
+        <text x="30" y="220" text-anchor="start" font-size="16">🎯 期望成果 (Outcome)</text>
+        <text x="40" y="245" text-anchor="start" font-style="italic" fill="#555">用户渴望的进步...</text>
+      </g>
+    </g>
+
+    <g id="stage3">
+      <rect x="750" y="120" width="300" height="675" rx="15" fill="#fff9db" stroke="#fcc419" stroke-width="2"/>
+      <text x="900" y="170" font-size="22" font-weight="bold" text-anchor="middle" fill="#a66100">阶段三: JTBD战略制定</text>
+      <text x="900" y="200" font-size="16" text-anchor="middle" fill="#c47d00">从“能做什么”到“该做什么”</text>
+
+      <g transform="translate(775, 250)">
+        <rect width="250" height="120" rx="10" fill="#fff" stroke="#ffe8a3" stroke-width="2"/>
+        <text x="125" y="30" font-size="18" text-anchor="middle" font-weight="600">提出核心战略问题</text>
+        <text x="125" y="65" text-anchor="middle" font-style="italic" fill="#555">“我们如何‘雇用’AI，</text>
+        <text x="125" y="85" text-anchor="middle" font-style="italic" fill="#555">来帮助客户更好地取得进步？”</text>
+      </g>
+
+      <line x1="775" y1="420" x2="1025" y2="420" stroke="#ffd469"/>
+      <text x="900" y="460" font-size="18" text-anchor="middle" font-weight="bold">思维模式转变</text>
+      <g transform="translate(775, 500)">
+        <rect width="250" height="100" rx="10" fill="#fff4e6"/>
+        <text x="125" y="30" font-size="16" text-anchor="middle" fill="#d9480f" text-decoration="line-through">❌ 技术驱动</text>
+        <text x="125" y="65" text-anchor="middle" font-style="italic" fill="#555">"我们能用AI做什么酷功能?"</text>
+      </g>
+       <g transform="translate(775, 650)">
+        <rect width="250" height="100" rx="10" fill="#e6fcf5"/>
+        <text x="125" y="30" font-size="16" text-anchor="middle" fill="#087f5b">✅ 需求驱动</text>
+        <text x="125" y="65" text-anchor="middle" font-style="italic" fill="#555">"AI能帮用户解决哪个挣扎?"</text>
+      </g>
+    </g>
+
+    <g id="stage4">
+      <rect x="1100" y="120" width="300" height="675" rx="15" fill="#e6fcf5" stroke="#63e6be" stroke-width="2"/>
+      <text x="1250" y="170" font-size="22" font-weight="bold" text-anchor="middle" fill="#087f5b">阶段四: AI解决方案设计</text>
+      <text x="1250" y="200" font-size="16" text-anchor="middle" fill="#099268">为“特定工作”打造“专家”</text>
+
+      <g transform="translate(1150, 250)">
+        <rect width="200" height="120" rx="10" fill="#d3f9d8"/>
+        <text x="100" y="40" font-size="18" text-anchor="middle" font-weight="600">专职AI解决方案</text>
+        <text x="100" y="70" text-anchor="middle" font-style="italic" fill="#555">(e.g., "谈判官AI",</text>
+        <text x="100" y="90" text-anchor="middle" font-style="italic" fill="#555">"财务规划伙伴")</text>
+      </g>
+
+      <line x1="1250" y1="370" x2="1250" y2="410" stroke="#20c997" stroke-width="1.5" marker-end="url(#arrow-flow)"/>
+      <text x="1250" y="395" font-size="14" fill="#0ca678" text-anchor="middle">功能设计</text>
+
+      <g transform="translate(1150, 420)">
+        <rect width="200" height="350" rx="10" fill="#fff"/>
+        <text x="100" y="40" font-size="18" text-anchor="middle" font-weight="600">功能精准映射</text>
+
+        <text x="100" y="80" text-anchor="middle" fill="#555">😣 挣扎时刻 A</text>
+        <path d="M 100 90 v 15" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow-flow)"/>
+        <rect x="25" y="110" width="150" height="30" rx="5" fill="#c3fae8"/>
+        <text x="100" y="130" text-anchor="middle">✅ AI功能 1</text>
+
+        <text x="100" y="180" text-anchor="middle" fill="#555">😣 挣扎时刻 B</text>
+        <path d="M 100 190 v 15" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow-flow)"/>
+        <rect x="25" y="210" width="150" height="30" rx="5" fill="#c3fae8"/>
+        <text x="100" y="230" text-anchor="middle">✅ AI功能 2</text>
+
+        <text x="100" y="280" text-anchor="middle" fill="#555">🎯 期望成果 C</text>
+        <path d="M 100 290 v 15" stroke="#868e96" stroke-width="1.5" marker-end="url(#arrow-flow)"/>
+        <rect x="25" y="310" width="150" height="30" rx="5" fill="#c3fae8"/>
+        <text x="100" y="330" text-anchor="middle">✅ AI功能 3</text>
+      </g>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#495057" stroke-width="1.5" marker-end="url(#arrow-flow)">
+    <path d="M 350 450 H 400" />
+    <path d="M 700 450 H 750" />
+    <path d="M 1050 450 H 1100" />
+  </g>
+
+  <text x="50%" y="850" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

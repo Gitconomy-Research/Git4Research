@@ -1,0 +1,85 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <title>AI驱动的间隔重复工具：从“日程官”到“课程设计师”</title>
+  <desc>此图对比了AI在间隔重复工具中扮演的两个核心角色：被动的日程官与主动的课程设计师。</desc>
+
+  <defs>
+    <marker id="arrow-flow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#495057" />
+    </marker>
+    <style>
+      .title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #212529; }
+      .panel-title { font-size: 24px; font-weight: bold; text-anchor: middle; }
+      .panel-subtitle { font-size: 17px; text-anchor: middle; }
+      .feature-box { fill: #fff; stroke-width: 1.5; rx: 10; }
+      .feature-title { font-size: 16px; font-weight: 600; }
+      .feature-text { font-size: 14px; fill: #343a40; }
+      .code-box { fill: #212529; rx: 8; }
+      .code-text { font-family: 'Courier New', Courier, monospace; font-size: 13px; fill: #e9ecef; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="900" fill="#f8f9fa"/>
+
+  <text x="700" y="60" class="title">AI驱动的间隔重复工具：一场范式革命</text>
+
+  <g id="scheduler-panel">
+    <rect x="50" y="120" width="600" height="700" rx="20" fill="#f1f3f5" stroke="#ced4da" stroke-width="2"/>
+    <text x="350" y="180" class="panel-title" fill="#495057">过去: AI作为“超个性化”的日程官</text>
+    <text x="350" y="210" class="panel-subtitle" fill="#868e96">核心任务：优化 “何时” 复习 (WHEN)</text>
+
+    <circle cx="350" cy="320" r="80" fill="#e9ecef" stroke="#adb5bd" stroke-width="2"/>
+    <text x="350" y="335" font-size="80" text-anchor="middle">🗓️</text>
+    <text x="350" y="430" font-size="20" font-weight="500" text-anchor="middle">对抗遗忘曲线</text>
+
+    <g transform="translate(100, 500)">
+      <rect x="0" y="0" width="500" height="250" class="feature-box" stroke="#adb5bd"/>
+      <text x="250" y="40" font-size="18" text-anchor="middle" font-weight="bold">核心能力：被动优化</text>
+
+      <text x="30" y="80" class="feature-title">› 预测遗忘曲线</text>
+      <text x="50" y="105" class="feature-text">为每个知识点建立独特的记忆预测模型。</text>
+
+      <text x="30" y="145" class="feature-title">› 感知认知负荷</text>
+      <text x="50" y="170" class="feature-text">根据答题速度、犹豫时长等动态调整难度。</text>
+
+      <text x="30" y="210" class="feature-title">› 整合生理数据</text>
+      <text x="50" y="235" class="feature-text">连接健康设备，根据睡眠质量优化学习计划。</text>
+    </g>
+  </g>
+
+  <g id="designer-panel">
+    <rect x="750" y="120" width="600" height="700" rx="20" fill="#fff9db" stroke="#fcc419" stroke-width="2.5"/>
+    <text x="1050" y="180" class="panel-title" fill="#a66100">现在: AI作为“即时响应”的课程设计师</text>
+    <text x="1050" y="210" class="panel-subtitle" fill="#c47d00">核心任务：创造 “学什么” / “怎么学” (WHAT / HOW)</text>
+
+    <circle cx="1050" cy="320" r="80" fill="#fff4e6" stroke="#ffd43b" stroke-width="2"/>
+    <text x="1050" y="335" font-size="80" text-anchor="middle">🚀</text>
+    <text x="1050" y="430" font-size="20" font-weight="500" text-anchor="middle">生成学习体验</text>
+
+    <g transform="translate(800, 500)">
+        <rect x="0" y="0" width="500" height="250" class="feature-box" stroke="#ffe8a3"/>
+        <text x="250" y="40" font-size="18" text-anchor="middle" font-weight="bold">核心能力：主动创造</text>
+        <text x="25" y="70" class="feature-text">将非结构化内容 (如论文、文档) 作为输入...</text>
+
+        <rect x="25" y="90" width="450" height="140" class="code-box"/>
+        <text x="40" y="110" class="code-text">
+          <tspan dy="0">PROMPT: "你是一个认知科学专家..."</tspan>
+          <tspan x="40" dy="1.4em">1. **提取**核心知识点</tspan>
+          <tspan x="40" dy="1.4em">2. **生成**练习卡片 (问答/填空)</tspan>
+          <tspan x="40" dy="1.4em">3. **设计**间隔重复/交错学习计划</tspan>
+          <tspan x="40" dy="1.4em">4. **创造**多样化、迁移性的练习题</tspan>
+        </text>
+    </g>
+  </g>
+
+  <g id="evolution-arrow">
+    <path d="M 650 450 H 750" fill="none" stroke="#495057" stroke-width="4" marker-end="url(#arrow-flow-dark)"/>
+    <rect x="625" y="480" width="150" height="50" rx="10" fill="#212529"/>
+    <text x="700" y="512" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle">范式飞跃</text>
+  </g>
+
+  <text x="50%" y="880" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+
+</svg>

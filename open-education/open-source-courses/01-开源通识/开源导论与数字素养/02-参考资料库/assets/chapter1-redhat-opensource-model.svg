@@ -1,0 +1,95 @@
+<svg width="100%" height="100%" viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <style>
+    .main-title { font-size: 24px; font-weight: bold; text-anchor: middle; }
+    .node-rect { fill: #EBF5FB; stroke: #005A9C; stroke-width: 1.5; }
+    .node-stadium { fill: #FEF9E7; stroke: #D4AC0D; stroke-width: 1.5; }
+    .node-diamond { fill: #E8F8F5; stroke: #16A085; stroke-width: 1.5; }
+    .node-value-main { fill: #FDEDEC; stroke: #C0392B; stroke-width: 1.5; }
+    .node-value-item { fill: #f5f5f5; stroke: #555; stroke-width: 1; }
+    .node-text { font-size: 14px; text-anchor: middle; }
+    .node-text-italic { font-size: 12px; font-style: italic; text-anchor: middle; }
+    .edge-text { font-size: 12px; fill: #444; text-anchor: middle; }
+    .connector { stroke: #333; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    .license-text { font-size: 14px; fill: #666; text-anchor: middle; }
+    .value-wrapper { fill: #fafafa; stroke: #a0a0a0; stroke-width: 1; stroke-dasharray: 5,5; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <text x="400" y="60" class="main-title">RedHat开源商业价值实现示意图</text>
+
+  <g id="node-A">
+    <rect x="250" y="120" width="300" height="80" rx="5" ry="5" class="node-rect" />
+    <text x="400" y="150" class="node-text">
+      <tspan x="400">上游社区项目</tspan>
+      <tspan x="400" dy="1.4em">(如 Fedora)</tspan>
+    </text>
+    <text x="400" y="185" class="node-text-italic">快速创新、前沿技术</text>
+  </g>
+
+  <g id="node-B">
+    <rect x="275" y="250" width="250" height="70" rx="35" ry="35" class="node-stadium" />
+    <text x="400" y="280" class="node-text">红帽公司</text>
+    <text x="400" y="305" class="node-text-italic">筛选、加固、测试、集成</text>
+  </g>
+
+  <g id="node-C">
+    <rect x="300" y="360" width="200" height="50" rx="5" ry="5" class="node-rect" />
+    <text x="400" y="390" class="node-text">企业级产品 (RHEL)</text>
+  </g>
+
+  <g id="node-D">
+    <path d="M 400 450 L 460 490 L 400 530 L 340 490 Z" class="node-diamond" />
+    <text x="400" y="495" class="node-text">企业客户</text>
+  </g>
+
+  <g id="node-E">
+    <rect x="300" y="570" width="200" height="50" rx="5" ry="5" class="node-value-main" />
+    <text x="400" y="600" class="node-text">获得的价值</text>
+  </g>
+
+  <g id="value-group">
+    <rect x="45" y="670" width="710" height="90" rx="10" ry="10" class="value-wrapper" />
+
+    <g id="node-F">
+      <rect x="65" y="690" width="140" height="50" rx="5" ry="5" class="node-value-item" />
+      <text x="135" y="720" class="node-text">专家技术支持</text>
+    </g>
+
+    <g id="node-G">
+      <rect x="215" y="690" width="160" height="50" rx="5" ry="5" class="node-value-item" />
+      <text x="295" y="720" class="node-text">安全保障与合规认证</text>
+    </g>
+
+    <g id="node-H">
+      <rect x="385" y="690" width="180" height="50" rx="5" ry="5" class="node-value-item" />
+      <text x="475" y="720" class="node-text">庞大的软硬件认证生态</text>
+    </g>
+
+    <g id="node-I">
+      <rect x="575" y="690" width="160" height="50" rx="5" ry="5" class="node-value-item" />
+      <text x="655" y="720" class="node-text">法律保障与管理工具</text>
+    </g>
+  </g>
+
+  <line x1="400" y1="200" x2="400" y2="250" class="connector" />
+  <text x="400" y="228" class="edge-text">红帽公司贡献与筛选</text>
+
+  <line x1="400" y1="320" x2="400" y2="360" class="connector" />
+
+  <line x1="400" y1="410" x2="400" y2="450" class="connector" />
+
+  <line x1="400" y1="530" x2="400" y2="570" class="connector" />
+  <text x="400" y="553" class="edge-text">购买订阅</text>
+
+  <line x1="400" y1="620" x2="400" y2="670" class="connector" />
+
+  <text x="400" y="850" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+
+</svg>

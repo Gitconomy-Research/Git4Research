@@ -1,0 +1,82 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 630">
+  <!-- 背景 -->
+  <rect width="800" height="630" fill="#f8f9fa" rx="10" ry="10" />
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">CLA 与 DCO 详细比较</text>
+
+  <!-- CLA 部分 -->
+  <rect x="50" y="80" width="320" height="460" fill="#e3f2fd" stroke="#1e88e5" stroke-width="2" rx="8" ry="8" />
+  <text x="210" y="110" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1565c0">CLA</text>
+  <text x="210" y="135" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#333">贡献者许可协议</text>
+
+  <!-- DCO 部分 -->
+  <rect x="430" y="80" width="320" height="460" fill="#e8f5e9" stroke="#43a047" stroke-width="2" rx="8" ry="8" />
+  <text x="590" y="110" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#2e7d32">DCO</text>
+  <text x="590" y="135" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" fill="#333">开发者原创声明</text>
+
+  <!-- CLA 内容 -->
+  <g font-family="Arial" font-size="14" fill="#333">
+    <!-- 法律性质 -->
+    <text x="70" y="170" font-weight="bold">法律性质:</text>
+    <text x="70" y="190">正式法律合同，具有约束力</text>
+
+    <!-- 实施方式 -->
+    <text x="70" y="230" font-weight="bold">实施方式:</text>
+    <text x="70" y="250">贡献前一次性签署独立文件</text>
+    <text x="70" y="270">需项目方存储和管理签署记录</text>
+
+    <!-- 授权范围 -->
+    <text x="70" y="310" font-weight="bold">授权范围:</text>
+    <text x="70" y="330">明确的版权和专利授权</text>
+    <text x="70" y="350">可能包含再许可权</text>
+
+    <!-- 优点 -->
+    <text x="70" y="390" font-weight="bold">主要优点:</text>
+    <text x="70" y="410">最高的法律确定性</text>
+    <text x="70" y="430">允许项目未来更改许可证</text>
+
+    <!-- 适用场景 -->
+    <text x="70" y="470" font-weight="bold">适用场景:</text>
+    <text x="70" y="490">企业主导的商业项目</text>
+    <text x="70" y="510">基金会托管的大型项目</text>
+  </g>
+
+  <!-- DCO 内容 -->
+  <g font-family="Arial" font-size="14" fill="#333">
+    <!-- 法律性质 -->
+    <text x="450" y="170" font-weight="bold">法律性质:</text>
+    <text x="450" y="190">个人声明/认证，非合同性质</text>
+
+    <!-- 实施方式 -->
+    <text x="450" y="230" font-weight="bold">实施方式:</text>
+    <text x="450" y="250">每次Git提交时添加签名行</text>
+    <text x="450" y="270">集成于现有开发工作流</text>
+
+    <!-- 授权范围 -->
+    <text x="450" y="310" font-weight="bold">授权范围:</text>
+    <text x="450" y="330">确认有权以项目许可提交代码</text>
+    <text x="450" y="350">无明确专利条款</text>
+
+    <!-- 优点 -->
+    <text x="450" y="390" font-weight="bold">主要优点:</text>
+    <text x="450" y="410">极低的贡献门槛</text>
+    <text x="450" y="430">社区友好，基于信任</text>
+
+    <!-- 适用场景 -->
+    <text x="450" y="470" font-weight="bold">适用场景:</text>
+    <text x="450" y="490">社区驱动的开源项目</text>
+    <text x="450" y="510">个人开发者的小型项目</text>
+  </g>
+
+  <!-- 典型案例 -->
+  <rect x="90" y="530" width="240" height="25" fill="#bbdefb" rx="5" ry="5" />
+  <text x="210" y="547" font-family="Arial" font-size="12" text-anchor="middle">典型案例: Apache项目, Google开源项目</text>
+
+  <rect x="470" y="530" width="240" height="25" fill="#c8e6c9" rx="5" ry="5" />
+  <text x="590" y="547" font-family="Arial" font-size="12" text-anchor="middle">典型案例: Linux内核, Git</text>
+
+  <!-- 许可声明 -->
+  <text x="400" y="600" font-family="Arial" font-size="12" text-anchor="middle" fill="#555">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

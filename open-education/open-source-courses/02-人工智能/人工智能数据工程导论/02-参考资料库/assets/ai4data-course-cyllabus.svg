@@ -1,0 +1,99 @@
+<svg width="1000" height="500" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+    <style>
+        .main-box { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2; }
+        .box { fill: #F0FDF4; stroke: #34D399; stroke-width: 1.5; }
+
+        .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; }
+        .title-text { font-size: 16px; font-weight: bold; fill: #111827; }
+        .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+        .license-text { font-size: 12px; font-weight: normal; fill: #64748B; }
+        .weeks { font-size: 14px; font-weight: bold; fill: #3B82F6; }
+        .key-concept { font-size: 11px; font-weight: normal; fill: #111827; }
+        .teaching-goal-label { font-size: 12px; font-weight: bold; fill: #E36414; } /* 教学目标 - 橙色突出 */
+        .learning-goal-label { font-size: 12px; font-weight: bold; fill: #1A73E8; } /* 学习目标 - 蓝色突出 */
+
+        /* STEM 价值线样式 */
+        .stem-line { stroke: #2563EB; stroke-width: 3; marker-end: url(#stem-arrowhead); }
+        .stem-label { font-size: 14px; font-weight: bold; fill: #2563EB; }
+    </style>
+
+    <defs>
+        <marker id="stem-arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" markerUnits="userSpaceOnUse">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2563EB" />
+        </marker>
+    </defs>
+
+    <text x="500" y="40" text-anchor="middle" class="main-title-text">
+        《人工智能数据工程导论》课程模块关键知识点与目标
+    </text>
+
+    <rect x="70" y="90" width="200" height="330" rx="10" ry="10" class="main-box" />
+    <text x="170" y="120" text-anchor="middle" class="title-text">模块一：数据工程基础</text>
+    <text x="170" y="145" text-anchor="middle" class="weeks">周 1-4</text>
+    <line x1="100" y1="165" x2="240" y2="165" stroke="#60A5FA" stroke-width="1" />
+    <text x="85" y="185" class="key-concept">• 数据工程角色与价值</text>
+    <text x="85" y="205" class="key-concept">• 数据管道(批处理/流处理)</text>
+    <text x="85" y="225" class="key-concept">• ETL(提取、转换、加载)</text>
+    <text x="85" y="245" class="key-concept">• 数据仓库 vs. 数据湖</text>
+    <text x="85" y="265" class="key-concept">• 命令行基础与配置</text>
+    <line x1="100" y1="285" x2="240" y2="285" stroke="#60A5FA" stroke-width="1" />
+    <text x="170" y="305" text-anchor="middle" class="teaching-goal-label">教学目标: 建立直觉和理解“为什么”</text>
+    <text x="170" y="335" text-anchor="middle" class="learning-goal-label">学习目标: 阐述数据工程角色</text>
+    <text x="170" y="355" text-anchor="middle" class="learning-goal-label">并掌握 foundational 概念</text>
+
+
+    <rect x="290" y="90" width="200" height="330" rx="10" ry="10" class="box" />
+    <text x="390" y="120" text-anchor="middle" class="title-text">模块二：无代码工具之旅</text>
+    <text x="390" y="145" text-anchor="middle" class="weeks">周 5-8</text>
+    <line x1="320" y1="165" x2="460" y2="165" stroke="#34D399" stroke-width="1" />
+    <text x="305" y="185" class="key-concept">• KNIME可视化工作流</text>
+    <text x="305" y="205" class="key-concept">• 数据连接 (Join/Concatenate)</text>
+    <text x="305" y="225" class="key-concept">• 可视化数据清洗与转换</text>
+    <text x="305" y="245" class="key-concept">• 完整ETL管道构建</text>
+    <text x="305" y="265" class="key-concept">• 期中项目(无代码实践)</text>
+    <line x1="320" y1="285" x2="460" y2="285" stroke="#34D399" stroke-width="1" />
+    <text x="390" y="305" text-anchor="middle" class="teaching-goal-label">教学目标:概念复现和固化</text>
+    <text x="390" y="335" text-anchor="middle" class="learning-goal-label">学习目标:熟练使用 KNIME</text>
+    <text x="390" y="355" text-anchor="middle" class="learning-goal-label">独立完成端到端 ETL 任务</text>
+
+
+    <rect x="510" y="90" width="200" height="330" rx="10" ry="10" class="main-box" />
+    <text x="610" y="120" text-anchor="middle" class="title-text">模块三：数据编程入门</text>
+    <text x="610" y="145" text-anchor="middle" class="weeks">周 9-12</text>
+    <line x1="540" y1="165" x2="680" y2="165" stroke="#60A5FA" stroke-width="1" />
+    <text x="525" y="185" class="key-concept">• SQL 查询 (SELECT, JOIN, GROUP BY)</text>
+    <text x="525" y="205" class="key-concept">• Python/Pandas 基础</text>
+    <text x="525" y="225" class="key-concept">• Pandas 数据整理与清洗</text>
+    <text x="525" y="245" class="key-concept">• Jupyter Notebook环境</text>
+    <text x="525" y="265" class="key-concept">• 代码与可视化对比</text>
+    <line x1="540" y1="285" x2="680" y2="285" stroke="#60A5FA" stroke-width="1" />
+    <text x="610" y="305" text-anchor="middle" class="teaching-goal-label">教学目标:实现对比中顿悟</text>
+    <text x="610" y="335" text-anchor="middle" class="learning-goal-label">学习目标:掌握SQL/Pandas基础</text>
+    <text x="610" y="355" text-anchor="middle" class="learning-goal-label">用代码复现ETL任务</text>
+
+
+    <rect x="730" y="90" width="200" height="330" rx="10" ry="10" class="box" />
+    <text x="830" y="120" text-anchor="middle" class="title-text">模块四：面向AI与项目</text>
+    <text x="830" y="145" text-anchor="middle" class="weeks">周 13-16</text>
+    <line x1="760" y1="165" x2="900" y2="165" stroke="#34D399" stroke-width="1" />
+    <text x="745" y="185" class="key-concept">• 数据伦理与偏见</text>
+    <text x="745" y="205" class="key-concept">• 传统ML/GenAI数据准备差异</text>
+    <text x="745" y="225" class="key-concept">• 云端AI服务体验 (AutoML)</text>
+    <text x="745" y="245" class="key-concept">• 团队项目策划与路演</text>
+    <text x="745" y="265" class="key-concept">• 职业图景与技术权衡</text>
+    <line x1="760" y1="285" x2="900" y2="285" stroke="#34D399" stroke-width="1" />
+    <text x="830" y="305" text-anchor="middle" class="teaching-goal-label">教学目标:知识整合与顶点体验</text>
+    <text x="830" y="335" text-anchor="middle" class="learning-goal-label">学习目标:综合运用所学技能</text>
+    <text x="830" y="355" text-anchor="middle" class="learning-goal-label">完成产品原型策划案</text>
+
+
+    <line x1="70" y1="470" x2="930" y2="470" class="stem-line" />
+
+    <text x="80" y="460" text-anchor="start" class="stem-label">零基础启蒙</text>
+    <text x="920" y="460" text-anchor="end" class="stem-label">数据工程思维与素养</text>
+
+    <text x="500" y="500" text-anchor="middle" class="license-text">
+        本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+    </text>
+
+</svg>

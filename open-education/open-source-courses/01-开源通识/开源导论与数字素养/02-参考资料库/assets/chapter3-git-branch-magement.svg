@@ -1,0 +1,131 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <rect width="1200" height="800" fill="#ffffff" />
+
+  <text x="600" y="30" text-anchor="middle" font-size="22" font-weight="800" fill="#111827">Git分支管理逻辑示意图图</text>
+
+  <rect x="40" y="50" width="1160" height="700" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563EB"/>
+    </marker>
+    <marker id="arrowhead-highlight" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#FACC15"/>
+    </marker>
+  </defs>
+
+  <g id="legend">
+    <text x="100" y="80" font-size="16" font-weight="bold" fill="#111827">图例说明：</text>
+
+    <line x1="100" y1="100" x2="200" y2="100" stroke="#60A5FA" stroke-width="3"/>
+    <text x="220" y="105" font-size="12" font-weight="normal" fill="#374151">主分支 (master)</text>
+
+    <line x1="350" y1="100" x2="450" y2="100" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="470" y="105" font-size="12" font-weight="normal" fill="#374151">合并操作</text>
+
+    <rect x="600" y="95" width="50" height="20" rx="3" fill="#FACC15" />
+    <text x="610" y="110" font-size="12" font-weight="bold" fill="#374151">HEAD</text>
+    <text x="660" y="105" font-size="12" font-weight="normal" fill="#374151">当前所在位置</text>
+
+    <line x1="100" y1="130" x2="200" y2="130" stroke="#FACC15" stroke-width="2"/>
+    <text x="220" y="135" font-size="12" font-weight="normal" fill="#374151">高亮分支 (release/hotfix)</text>
+
+    <circle cx="350" cy="130" r="5" fill="#60A5FA"/>
+    <text x="370" y="135" font-size="12" font-weight="normal" fill="#374151">提交点</text>
+  </g>
+
+  <line x1="100" y1="180" x2="1000" y2="180" stroke="#6B7280" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="50" y="175" font-size="11" fill="#6B7280">时间轴 →</text>
+
+  <g id="commits">
+    <circle cx="150" cy="180" r="5" fill="#60A5FA"/>
+    <text x="145" y="170" font-size="11" fill="#6B7280">A</text>
+    <circle cx="250" cy="180" r="5" fill="#60A5FA"/>
+    <text x="245" y="170" font-size="11" fill="#6B7280">B</text>
+    <circle cx="350" cy="180" r="5" fill="#60A5FA"/>
+    <text x="345" y="170" font-size="11" fill="#6B7280">C</text>
+    <circle cx="450" cy="180" r="5" fill="#60A5FA"/>
+    <text x="445" y="170" font-size="11" fill="#6B7280">D</text>
+    <circle cx="550" cy="180" r="5" fill="#60A5FA"/>
+    <text x="545" y="170" font-size="11" fill="#6B7280">E</text>
+    <circle cx="650" cy="180" r="5" fill="#60A5FA"/>
+    <text x="645" y="170" font-size="11" fill="#6B7280">F</text>
+    <circle cx="750" cy="180" r="5" fill="#60A5FA"/>
+    <text x="745" y="170" font-size="11" fill="#6B7280">G</text>
+    <circle cx="850" cy="180" r="5" fill="#60A5FA"/>
+    <text x="845" y="170" font-size="11" fill="#6B7280">H</text>
+    <circle cx="950" cy="180" r="5" fill="#60A5FA"/>
+    <text x="945" y="170" font-size="11" fill="#6B7280">I</text>
+  </g>
+
+  <g id="master-branch">
+    <path d="M 150 180 L 950 180" stroke="#60A5FA" stroke-width="3" fill="none"/>
+    <rect x="940" y="160" width="60" height="20" rx="3" fill="#60A5FA" />
+    <text x="950" y="175" font-size="12" fill="white">master</text>
+    <text x="1010" y="185" font-size="11" fill="#6B7280">主分支：稳定版本，用于生产环境</text>
+  </g>
+
+  <g id="develop-branch">
+    <path d="M 250 180 L 250 230 L 950 230" stroke="#3B82F6" stroke-width="3" fill="none"/>
+    <rect x="940" y="210" width="60" height="20" rx="3" fill="#3B82F6" />
+    <text x="950" y="225" font-size="12" fill="white">develop</text>
+    <text x="1010" y="235" font-size="11" fill="#6B7280">开发分支：集成新功能，日常开发</text>
+    <path d="M 950 230 L 950 180" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <g id="feature-branch">
+    <path d="M 350 230 L 350 280 L 550 280" stroke="#34D399" stroke-width="2" fill="none"/>
+    <rect x="540" y="260" width="60" height="20" rx="3" fill="#34D399" />
+    <text x="550" y="275" font-size="12" fill="white">feature-x</text>
+    <text x="1010" y="285" font-size="11" fill="#6B7280">特性分支：开发单个功能</text>
+    <path d="M 550 280 L 550 230" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+
+    <g id="head-pointer">
+      <rect x="540" y="220" width="60" height="20" rx="3" fill="#FACC15" />
+      <text x="550" y="235" font-size="12" font-weight="bold" fill="#374151">HEAD</text>
+      <path d="M 570 240 L 570 260" stroke="#FACC15" stroke-width="2" marker-end="url(#arrowhead-highlight)"/>
+    </g>
+  </g>
+
+  <g id="bugfix-branch">
+    <path d="M 450 230 L 450 330 L 550 330" stroke="#34D399" stroke-width="2" fill="none"/>
+    <rect x="540" y="310" width="60" height="20" rx="3" fill="#34D399" />
+    <text x="550" y="325" font-size="12" fill="white">bugfix-1</text>
+    <text x="1010" y="335" font-size="11" fill="#6B7280">Bug修复分支：修复测试中的Bug</text>
+    <path d="M 550 330 L 550 230" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <g id="release-branch">
+    <path d="M 650 230 L 650 380 L 850 380" stroke="#FACC15" stroke-width="2" fill="none"/>
+    <rect x="840" y="360" width="70" height="20" rx="3" fill="#FACC15" />
+    <text x="850" y="375" font-size="12" fill="#374151">release-1.0</text>
+    <text x="1010" y="385" font-size="11" fill="#6B7280">发布分支：准备发布，测试</text>
+    <path d="M 850 380 L 850 180" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+    <path d="M 850 380 L 850 230" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <g id="hotfix-branch">
+    <path d="M 750 180 L 750 430 L 850 430" stroke="#FACC15" stroke-width="2" fill="none"/>
+    <rect x="840" y="410" width="60" height="20" rx="3" fill="#FACC15" />
+    <text x="850" y="425" font-size="12" fill="#374151">hotfix-1</text>
+    <text x="1010" y="435" font-size="11" fill="#6B7280">热修复分支：紧急修复生产Bug</text>
+    <path d="M 850 430 L 850 180" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+    <path d="M 850 430 L 850 230" stroke="#2563EB" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  </g>
+
+  <g id="annotations">
+    <rect x="70" y="500" width="1100" height="230" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+    <text x="100" y="530" font-size="16" font-weight="bold" fill="#111827">Git分支管理流程说明：</text>
+    <text x="100" y="560" font-size="12" font-weight="normal" fill="#374151">1. <tspan font-weight="bold">主分支 (master)</tspan>: 代表生产环境稳定代码，仅通过发布或热修复更新。</text>
+    <text x="100" y="590" font-size="12" font-weight="normal" fill="#374151">2. <tspan font-weight="bold">开发分支 (develop)</tspan>: 集成所有新功能，是日常开发的主线。</text>
+    <text x="100" y="620" font-size="12" font-weight="normal" fill="#374151">3. <tspan font-weight="bold">特性分支 (feature)</tspan>: 从develop创建，完成功能后合并回develop（通过Pull Request）。</text>
+    <text x="100" y="650" font-size="12" font-weight="normal" fill="#374151">4. <tspan font-weight="bold">发布分支 (release)</tspan>: 从develop创建，用于测试和版本准备，完成后合并到master和develop。</text>
+    <text x="100" y="680" font-size="12" font-weight="normal" fill="#374151">5. <tspan font-weight="bold">热修复分支 (hotfix)</tspan>: 从master创建，紧急修复后同步到master和develop。</text>
+    <text x="100" y="710" font-size="12" font-weight="normal" fill="#374151">6. <tspan font-weight="bold">HEAD</tspan> 是一个特殊指针，指向您当前所在的本地分支（如本图所示的 'feature-x'）。</text>
+  </g>
+
+  <text x="600" y="780" font-size="12" font-weight="normal" text-anchor="middle" fill="#64748B">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,85 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 675">
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, SimHei" font-size="24" text-anchor="middle" font-weight="bold" fill="#2c3e50">高校OSPO组织架构和团队角色示意图</text>
+
+  <!-- Steering Committee Box -->
+  <rect x="150" y="80" width="500" height="160" rx="10" fill="#d1e7ff" stroke="#4a86e8" stroke-width="2" />
+  <text x="400" y="110" font-family="Arial, SimHei" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">跨部门指导委员会</text>
+
+  <!-- Steering Committee Members -->
+  <!-- 修改: 将主管副校长文字框居中 -->
+  <rect x="330" y="130" width="140" height="30" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="400" y="150" font-family="Arial, SimHei" font-size="12" text-anchor="middle" text-align="center" fill="#2c3e50">主管副校长/教务长(主席)</text>
+
+  <rect x="180" y="170" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="230" y="187" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">科研处代表</text>
+
+  <rect x="290" y="170" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="340" y="187" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">教务处代表</text>
+
+  <rect x="400" y="170" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="450" y="187" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">图书馆代表</text>
+
+  <rect x="510" y="170" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="560" y="187" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">信息中心代表</text>
+
+  <rect x="180" y="205" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="230" y="222" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">技术转移办公室</text>
+
+  <rect x="290" y="205" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="340" y="222" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">法务部代表</text>
+
+  <rect x="400" y="205" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="450" y="222" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">教授代表</text>
+
+  <rect x="510" y="205" width="100" height="25" rx="5" fill="#a4c2f4" stroke="#4a86e8" stroke-width="1" />
+  <text x="560" y="222" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">学生代表</text>
+
+  <!-- Connection Line -->
+  <line x1="400" y1="240" x2="400" y2="270" stroke="#4a86e8" stroke-width="3" />
+
+  <!-- Core Team Box - 再次增加高度至140 -->
+  <rect x="250" y="270" width="300" height="140" rx="10" fill="#c9daf8" stroke="#4a86e8" stroke-width="2" />
+  <text x="400" y="300" font-family="Arial, SimHei" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">OSPO 核心团队</text>
+
+  <!-- Core Team Members -->
+  <rect x="280" y="330" width="240" height="30" rx="5" fill="#8eaadb" stroke="#4a86e8" stroke-width="1" />
+  <text x="400" y="350" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">OSPO 主任</text>
+
+  <rect x="280" y="370" width="110" height="25" rx="5" fill="#8eaadb" stroke="#4a86e8" stroke-width="1" />
+  <text x="335" y="387" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="#2c3e50">社区经理</text>
+
+  <rect x="410" y="370" width="110" height="25" rx="5" fill="#8eaadb" stroke="#4a86e8" stroke-width="1" />
+  <text x="465" y="387" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="#2c3e50">开源合规/IP专员</text>
+
+  <!-- Connection Lines to Key Mechanisms - 调整位置 -->
+  <line x1="400" y1="410" x2="400" y2="440" stroke="#4a86e8" stroke-width="3" />
+
+  <!-- Key Mechanisms Box -->
+  <rect x="100" y="440" width="600" height="140" rx="10" fill="#d5e8d4" stroke="#82b366" stroke-width="2" />
+  <text x="400" y="465" font-family="Arial, SimHei" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">核心机制</text>
+
+  <!-- Key Mechanisms - 调整位置 -->
+  <rect x="120" y="480" width="170" height="80" rx="5" fill="#b9dcb6" stroke="#82b366" stroke-width="1" />
+  <text x="205" y="500" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">资源共享协议</text>
+  <text x="205" y="520" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">促进跨课题组协作</text>
+  <text x="205" y="540" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">标准化共享模板</text>
+
+  <rect x="315" y="480" width="170" height="80" rx="5" fill="#b9dcb6" stroke="#82b366" stroke-width="1" />
+  <text x="400" y="500" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">知识产权分配模型</text>
+  <text x="400" y="520" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">简化审批流程</text>
+  <text x="400" y="540" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">分层分类IP政策</text>
+
+  <rect x="510" y="480" width="170" height="80" rx="5" fill="#b9dcb6" stroke="#82b366" stroke-width="1" />
+  <text x="595" y="500" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">贡献者荣誉体系</text>
+  <text x="595" y="520" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">开源贡献奖</text>
+  <text x="595" y="540" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#2c3e50">贡献评价指南</text>
+
+  <!-- Responsibility Note - 调整位置 -->
+  <rect x="100" y="590" width="600" height="30" rx="5" fill="#ffe6cc" stroke="#d79b00" stroke-width="1" />
+  <text x="400" y="610" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="#2c3e50">U-OSPO 是赋能和服务部门，为师生开源活动提供指导、资源和支持</text>
+
+  <!-- License Statement - 调整位置 -->
+  <text x="50%" y="650" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#666666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

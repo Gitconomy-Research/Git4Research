@@ -1,0 +1,104 @@
+<svg width="800" height="525" viewBox="0 0 800 525" xmlns="http://www.w3.org/2000/svg" style="background-color: white;" font-family="Noto Sans, sans-serif">
+
+  <defs>
+    <style>
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+      .role-title-text { font-size: 16px; font-weight: bold; fill: #111827; text-anchor: middle; }
+      .primitive-title-text { font-size: 16px; font-weight: bold; fill: #111827; }
+      .primitive-subtitle-text { font-size: 12px; font-weight: normal; fill: #374151; }
+      .connector-text { font-size: 12px; font-weight: 600; fill: #2563EB; text-anchor: middle; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+
+      /* 配色方案 */
+      .layer-3-contributor { fill: #EFF6FF; stroke: #60A5FA; }
+      .layer-2-reviewer { fill: #DBEAFE; stroke: #3B82F6; }
+      .layer-1-maintainer { fill: #BFDBFE; stroke: #2563EB; }
+
+      /* 连接线样式 */
+      .connector-line { stroke: #2563EB; stroke-width: 2px; fill: none; stroke-dasharray: 5, 5; }
+    </style>
+  </defs>
+
+  <g id="main-title">
+    <text x="400" y="50" class="main-title-text">Git4Ledger原语与社区角色映射关系</text>
+  </g>
+
+  <g id="mapping-container" transform="translate(0, 50)">
+
+    <g id="primitives-list" transform="translate(50, 50)">
+      <g transform="translate(0, 0)">
+        <g class="icon" transform="scale(0.8)">
+            <rect x="0" y="0" width="50" height="50" rx="5" fill="#FFF" stroke="#60A5FA" stroke-width="2"/>
+            <text x="25" y="32" font-size="20" text-anchor="middle" fill="#60A5FA">#</text>
+        </g>
+        <text x="60" y="20" class="primitive-title-text">ICO</text>
+        <text x="60" y="40" class="primitive-subtitle-text">不可变贡献对象</text>
+      </g>
+      <g transform="translate(0, 90)">
+        <g class="icon" transform="scale(0.8)">
+            <path d="M10,25 l10,10 l20,-20" fill="none" stroke="#34D399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="0" y="0" width="50" height="50" rx="5" fill="none" stroke="#34D399" stroke-width="2"/>
+        </g>
+        <text x="60" y="20" class="primitive-title-text">VVA</text>
+        <text x="60" y="40" class="primitive-subtitle-text">可验证价值认证</text>
+      </g>
+      <g transform="translate(0, 180)">
+        <g class="icon" transform="scale(0.8)">
+            <path d="M10,15 h20 l10,10 l-10,10 h-20 v-20 z" fill="#FFF" stroke="#FACC15" stroke-width="2"/>
+            <path d="M10,15 v20" fill="none" stroke="#FACC15" stroke-width="2"/>
+            <path d="M40,25 l-10,0" fill="none" stroke="#FACC15" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <text x="60" y="20" class="primitive-title-text">AST</text>
+        <text x="60" y="40" class="primitive-subtitle-text">权威状态转移</text>
+      </g>
+       <g transform="translate(0, 270)">
+        <g class="icon" transform="scale(0.8)">
+            <rect x="5" y="5" width="40" height="40" rx="5" fill="#FFF" stroke="#3B82F6" stroke-width="2"/>
+            <rect x="0" y="0" width="40" height="40" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+        </g>
+        <text x="60" y="20" class="primitive-title-text">DLR</text>
+        <text x="60" y="40" class="primitive-subtitle-text">去中心化账本复制</text>
+      </g>
+    </g>
+
+    <g id="onion-model" transform="translate(550, 220)">
+      <g id="layer-3-contributors">
+        <circle cx="0" cy="0" r="180" class="layer-3-contributor" stroke-width="2"/>
+        <text y="-135" class="role-title-text">贡献者 (Contributors)</text>
+      </g>
+      <g id="layer-2-reviewers">
+        <circle cx="0" cy="0" r="120" class="layer-2-reviewer" stroke-width="2"/>
+        <text y="-75" class="role-title-text">审查者 (Reviewers)</text>
+      </g>
+      <g id="layer-1-maintainers">
+         <circle cx="0" cy="0" r="60" class="layer-1-maintainer" stroke-width="2"/>
+         <text y="-10" class="role-title-text">维护者</text>
+         <text y="10" class="role-title-text">(Maintainers)</text>
+      </g>
+    </g>
+
+    <g id="connectors">
+        <path d="M 250 75 H 370" class="connector-line"/>
+        <rect x="290" y="45" width="20" height="20" fill="white"/>
+        <text x="310" y="60" class="connector-text">生产</text>
+
+        <path d="M 250 165 H 370" class="connector-line"/>
+        <rect x="320" y="135" width="20" height="20" fill="white"/>
+        <text x="310" y="150" class="connector-text">验证</text>
+
+        <path d="M 250 255 H 370" class="connector-line"/>
+        <rect x="350" y="225" width="20" height="20" fill="white"/>
+        <text x="310" y="240" class="connector-text">授权</text>
+
+        <path d="M 250 345 H 370" class="connector-line"/>
+        <rect x="350" y="315" width="20" height="20" fill="white"/>
+        <text x="310" y="330" class="connector-text">复制</text>
+    </g>
+
+  </g>
+
+  <text x="50%" y="500" class="license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可, 2025 Gitconomy Research社区
+  </text>
+</svg>

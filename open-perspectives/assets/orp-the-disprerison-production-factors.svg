@@ -1,0 +1,215 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 850">
+  <!-- 背景 -->
+  <rect width="900" height="850" fill="#f8f9fa" rx="10" ry="10" />
+
+  <!-- 标题 -->
+  <text x="450" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">AI生产要素的"大分散"困境</text>
+
+  <!-- 中央AI应用节点 -->
+  <g transform="translate(450, 350)">
+    <circle cx="0" cy="0" r="80" fill="#f5f5f5" stroke="#424242" stroke-width="3" stroke-dasharray="5,5" />
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#616161">AI应用</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#616161">难以整合</text>
+  </g>
+
+  <!-- 1. 算力孤岛化 - 调整元素位置和大小以确保不超出背景框 -->
+  <g transform="translate(200, 150)">
+    <!-- 背景和标题 -->
+    <rect x="-100" y="-60" width="200" height="120" rx="10" ry="10" fill="#e8eaf6" stroke="#3f51b5" stroke-width="2" />
+    <text x="0" y="-35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#303f9f">算力孤岛化</text>
+
+    <!-- 云计算图标 - 向右移动20个单位 -->
+    <g transform="translate(-45, 0) scale(0.8)">
+      <path d="M 0,0 Q -15,-15 -30,-10 Q -40,-20 -50,-15 Q -60,0 -50,15 Q -40,20 -25,15 Q -15,25 0,20 Q 15,30 25,20 Q 40,25 45,15 Q 55,-5 40,-15 Q 35,-30 20,-20 Q 10,-30 0,-20 Q -5,-15 0,0"
+            fill="#c5cae9" stroke="#3f51b5" stroke-width="1.5" />
+      <text x="-15" y="10" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#283593">公有云</text>
+    </g>
+
+    <!-- 私有云图标 - 保持位置不变 -->
+    <g transform="translate(0, 0) scale(0.8)">
+      <path d="M 0,0 Q -15,-15 -30,-10 Q -40,-20 -50,-15 Q -60,0 -50,15 Q -40,20 -25,15 Q -15,25 0,20 Q 15,30 25,20 Q 40,25 45,15 Q 55,-5 40,-15 Q 35,-30 20,-20 Q 10,-30 0,-20 Q -5,-15 0,0"
+            fill="#c5cae9" stroke="#3f51b5" stroke-width="1.5" />
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#283593">私有云</text>
+    </g>
+
+    <!-- 边缘节点图标 - 保持位置不变 -->
+    <g transform="translate(65, 0) scale(0.8)">
+      <rect x="-25" y="-15" width="50" height="30" rx="5" ry="5" fill="#c5cae9" stroke="#3f51b5" stroke-width="1.5" />
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#283593">边缘节点</text>
+    </g>
+
+    <!-- 分割线 - 调整位置 -->
+    <line x1="-25" y1="20" x2="-25" y2="-20" stroke="#3f51b5" stroke-width="1.5" stroke-dasharray="3,3" />
+    <line x1="35" y1="20" x2="35" y2="-20" stroke="#3f51b5" stroke-width="1.5" stroke-dasharray="3,3" />
+
+    <!-- 摩擦力指示文字 - 保持位置不变 -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#303f9f">调度难、利用率低、成本失控</text>
+  </g>
+
+  <!-- 2. 数据沼泽化 -->
+  <g transform="translate(700, 150)">
+    <!-- 背景和标题 -->
+    <rect x="-100" y="-60" width="200" height="120" rx="10" ry="10" fill="#e8f5e9" stroke="#4caf50" stroke-width="2" />
+    <text x="0" y="-35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">数据沼泽化</text>
+
+    <!-- 数据库图标 -->
+    <g transform="translate(-70, 0)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" ry="2" fill="#c8e6c9" stroke="#4caf50" stroke-width="1.5" />
+      <path d="M -20,-5 L 20,-5 M -20,5 L 20,5" stroke="#4caf50" stroke-width="1.5" />
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2e7d32">业务系统A</text>
+    </g>
+
+    <!-- 另一个数据库图标 -->
+    <g transform="translate(0, 0)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" ry="2" fill="#c8e6c9" stroke="#4caf50" stroke-width="1.5" />
+      <path d="M -20,-5 L 20,-5 M -20,5 L 20,5" stroke="#4caf50" stroke-width="1.5" />
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2e7d32">业务系统B</text>
+    </g>
+
+    <!-- 第三个数据库图标 -->
+    <g transform="translate(70, 0)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" ry="2" fill="#c8e6c9" stroke="#4caf50" stroke-width="1.5" />
+      <path d="M -20,-5 L 20,-5 M -20,5 L 20,5" stroke="#4caf50" stroke-width="1.5" />
+      <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2e7d32">业务系统C</text>
+    </g>
+
+    <!-- 摩擦力指示文字 -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#2e7d32">格式不一、质量参差不齐</text>
+  </g>
+
+  <!-- 3. 模型作坊化 -->
+  <g transform="translate(200, 550)">
+    <!-- 背景和标题 -->
+    <rect x="-100" y="-60" width="200" height="120" rx="10" ry="10" fill="#fff3e0" stroke="#ff9800" stroke-width="2" />
+    <text x="0" y="-35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ef6c00">模型作坊化</text>
+
+    <!-- 模型团队图标 -->
+    <g transform="translate(-70, 0)">
+      <circle cx="-10" cy="-5" r="10" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <circle cx="10" cy="-5" r="10" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <rect x="-25" y="5" width="50" height="20" rx="5" ry="5" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#ef6c00">团队A</text>
+    </g>
+
+    <!-- 另一个模型团队图标 -->
+    <g transform="translate(0, 0)">
+      <circle cx="-10" cy="-5" r="10" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <circle cx="10" cy="-5" r="10" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <rect x="-25" y="5" width="50" height="20" rx="5" ry="5" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#ef6c00">团队B</text>
+    </g>
+
+    <!-- 第三个模型团队图标 -->
+    <g transform="translate(70, 0)">
+      <circle cx="-10" cy="-5" r="10" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <circle cx="10" cy="-5" r="10" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <rect x="-25" y="5" width="50" height="20" rx="5" ry="5" fill="#ffe0b2" stroke="#ff9800" stroke-width="1.5" />
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#ef6c00">团队C</text>
+    </g>
+
+    <!-- 摩擦力指示文字 -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ef6c00">重复劳动、质量不一</text>
+  </g>
+
+  <!-- 4. 代码碎片化 -->
+  <g transform="translate(700, 550)">
+    <!-- 背景和标题 -->
+    <rect x="-100" y="-60" width="200" height="120" rx="10" ry="10" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2" />
+    <text x="0" y="-35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0277bd">代码碎片化</text>
+
+    <!-- 代码片段图标 -->
+    <g transform="translate(-70, 0)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" ry="2" fill="#b3e5fc" stroke="#03a9f4" stroke-width="1.5" />
+      <text x="0" y="0" font-family="Courier, monospace" font-size="10" text-anchor="middle" fill="#0277bd">{ }</text>
+      <text x="0" y="12" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0277bd">框架A</text>
+    </g>
+
+    <!-- 另一个代码片段图标 -->
+    <g transform="translate(0, 0)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" ry="2" fill="#b3e5fc" stroke="#03a9f4" stroke-width="1.5" />
+      <text x="0" y="0" font-family="Courier, monospace" font-size="10" text-anchor="middle" fill="#0277bd">( )</text>
+      <text x="0" y="12" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0277bd">工具链</text>
+    </g>
+
+    <!-- 第三个代码片段图标 -->
+    <g transform="translate(70, 0)">
+      <rect x="-20" y="-15" width="40" height="30" rx="2" ry="2" fill="#b3e5fc" stroke="#03a9f4" stroke-width="1.5" />
+      <text x="0" y="0" font-family="Courier, monospace" font-size="10" text-anchor="middle" fill="#0277bd">[ ]</text>
+      <text x="0" y="12" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0277bd">插件</text>
+    </g>
+
+    <!-- 摩擦力指示文字 -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0277bd">无法形成可复用组件</text>
+  </g>
+
+  <!-- 5. 知识隐性化 -->
+  <g transform="translate(450, 650)">
+    <!-- 背景和标题 -->
+    <rect x="-100" y="-60" width="200" height="120" rx="10" ry="10" fill="#f3e5f5" stroke="#9c27b0" stroke-width="2" />
+    <text x="0" y="-35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6a1b9a">知识隐性化</text>
+
+    <!-- 大脑图标 -->
+    <g transform="translate(0, 0)">
+      <path d="M -40,0 Q -40,-30 0,-30 Q 40,-30 40,0 Q 40,20 25,25 L 25,40 L -25,40 L -25,25 Q -40,20 -40,0"
+            fill="#e1bee7" stroke="#9c27b0" stroke-width="1.5" />
+      <path d="M -15,0 Q -15,-10 0,-10 Q 15,-10 15,0" fill="none" stroke="#9c27b0" stroke-width="1" />
+      <circle cx="-20" cy="-10" r="5" fill="#e1bee7" stroke="#9c27b0" stroke-width="1" />
+      <circle cx="20" cy="-10" r="5" fill="#e1bee7" stroke="#9c27b0" stroke-width="1" />
+    </g>
+
+    <!-- 摩擦力指示文字 -->
+    <text x="0" y="55" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6a1b9a">知识留存在专家大脑中</text>
+  </g>
+
+  <!-- 连接线和摩擦表示 -->
+  <!-- 算力到中心 -->
+  <g>
+    <path d="M 250,210 Q 300,250 375,310" stroke="#3f51b5" stroke-width="2" stroke-dasharray="6,3" fill="none" />
+    <circle cx="325" cy="270" r="15" fill="#ffebee" stroke="#f44336" stroke-width="1.5" />
+    <text x="325" y="274" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d32f2f">摩</text>
+  </g>
+
+  <!-- 数据到中心 -->
+  <g>
+    <path d="M 650,210 Q 600,250 525,310" stroke="#4caf50" stroke-width="2" stroke-dasharray="6,3" fill="none" />
+    <circle cx="575" cy="270" r="15" fill="#ffebee" stroke="#f44336" stroke-width="1.5" />
+    <text x="575" y="274" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d32f2f">擦</text>
+  </g>
+
+  <!-- 模型到中心 -->
+  <g>
+    <path d="M 250,490 Q 300,450 375,390" stroke="#ff9800" stroke-width="2" stroke-dasharray="6,3" fill="none" />
+    <circle cx="325" cy="430" r="15" fill="#ffebee" stroke="#f44336" stroke-width="1.5" />
+    <text x="325" y="434" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d32f2f">力</text>
+  </g>
+
+  <!-- 代码到中心 -->
+  <g>
+    <path d="M 650,490 Q 600,450 525,390" stroke="#03a9f4" stroke-width="2" stroke-dasharray="6,3" fill="none" />
+    <circle cx="575" cy="430" r="15" fill="#ffebee" stroke="#f44336" stroke-width="1.5" />
+    <text x="575" y="434" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d32f2f">大</text>
+  </g>
+
+  <!-- 知识到中心 -->
+  <g>
+    <path d="M 450,590 L 450,440" stroke="#9c27b0" stroke-width="2" stroke-dasharray="6,3" fill="none" />
+    <circle cx="450" cy="515" r="15" fill="#ffebee" stroke="#f44336" stroke-width="1.5" />
+    <text x="450" y="519" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d32f2f">阻</text>
+  </g>
+
+  <!-- "大分散"标志 -->
+  <g transform="translate(450, 250)">
+    <path d="M -70,-40 A 80,80 0 1,0 70,-40" stroke="#f44336" stroke-width="3" fill="none" stroke-dasharray="5,3" />
+    <text x="0" y="-65" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#d32f2f">大分散</text>
+  </g>
+
+  <!-- 底部总结 -->
+  <rect x="200" y="750" width="500" height="30" rx="15" ry="15" fill="#ffebee" stroke="#f44336" stroke-width="2" />
+  <text x="450" y="770" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c62828">
+    AI开发周期漫长、成本高企、风险不可控
+  </text>
+
+  <!-- 版权声明 -->
+  <text x="450" y="820" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区</text>
+</svg>

@@ -1,0 +1,85 @@
+<svg width="800" height="430" viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+
+  <defs>
+    <marker id="arrowhead-main" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB" />
+    </marker>
+     <marker id="arrowhead-standard" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#34D399" />
+    </marker>
+
+    <style>
+      /* 字体与通用样式 */
+      .diagram-text { font-family: "Noto Sans", sans-serif; text-anchor: middle; }
+
+      /* 差异化配色方案 */
+      .container-compression { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2px; }
+      .container-collapse { fill: #F0FDF4; stroke: #34D399; stroke-width: 2px; }
+      .container-crystallization, .crystal { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2px; }
+
+      .knowledge-dot { fill: #6B7280; }
+      .highlight-element { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2px; }
+
+      .connector-main { fill: none; stroke: #2563EB; stroke-width: 2px; }
+      .connector-standard { fill: none; stroke: #34D399; stroke-width: 2px; }
+
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; }
+      .title-text { font-size: 16px; font-weight: bold; fill: #111827; }
+      .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+      .small-text { font-size: 11px; font-weight: normal; fill: #6B7280; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; }
+    </style>
+  </defs>
+
+  <text x="400" y="45" class="diagram-text main-title-text">从“建造”到“生成”转变的内核</text>
+
+  <g id="stage-compression" transform="translate(50, 80)">
+    <text class="diagram-text title-text" x="100" y="25">1. 压缩 (Compression)</text>
+    <g id="knowledge-dots" transform="translate(100, 70)">
+      <circle cx="-40" cy="-5" r="1.5" class="knowledge-dot"/>
+      <circle cx="-20" cy="5" r="1.5" class="knowledge-dot"/>
+      <circle cx="0" cy="-10" r="1.5" class="knowledge-dot"/>
+      <circle cx="20" cy="0" r="1.5" class="knowledge-dot"/>
+      <circle cx="40" cy="-15" r="1.5" class="knowledge-dot"/>
+      <circle cx="-30" cy="10" r="1.5" class="knowledge-dot"/>
+      <circle cx="10" cy="15" r="1.5" class="knowledge-dot"/>
+      <circle cx="50" cy="5" r="1.5" class="knowledge-dot"/>
+    </g>
+    <path d="M 60 80 L 140 80 L 110 130 L 90 130 Z" class="container-compression" stroke-linejoin="round"/>
+    <path d="M 70 140 C 70 160, 130 160, 130 140 L 130 200 C 130 220, 70 220, 70 200 Z" class="container-compression"/>
+    <text class="diagram-text small-text" x="100" y="250">海量知识被压缩为“潜力溶液”</text>
+  </g>
+
+  <g id="stage-collapse" transform="translate(300, 80)">
+    <text class="diagram-text title-text" x="100" y="25">2. 坍缩 (Collapse)</text>
+    <g transform="translate(20, 135)">
+       <path d="M 25 0 L 50 25 L 25 50 L 0 25 Z" class="highlight-element" />
+       <text class="diagram-text body-text" x="25" y="29">晶核</text>
+    </g>
+    <text class="diagram-text small-text" x="45" y="200">（意图 Prompt）</text>
+    <path d="M 120 140 C 120 160, 180 160, 180 140 L 180 200 C 180 220, 120 220, 120 200 Z" class="container-collapse"/>
+    <path class="connector-standard" d="M 75 160 L 115 160" marker-end="url(#arrowhead-standard)"/>
+    <text class="diagram-text small-text" x="150" y="250">“晶核”的注入引发“坍缩”</text>
+  </g>
+
+  <g id="stage-crystallization" transform="translate(550, 80)">
+    <text class="diagram-text title-text" x="100" y="25">3. 结晶 (Crystallization)</text>
+    <path d="M 70 140 C 70 160, 130 160, 130 140 L 130 200 C 130 220, 70 220, 70 200 Z" class="container-crystallization"/>
+    <g transform="translate(100, 160)">
+      <path class="crystal" d="M 0 -30 L 15 -15 L 0 0 L -15 -15 Z"/>
+      <path class="crystal" d="M 0 30 L 15 15 L 0 0 L -15 15 Z"/>
+      <path class="crystal" d="M -26 -15 L -15 -15 L -26 15 L -40 0 Z"/>
+      <path class="crystal" d="M 26 -15 L 15 -15 L 26 15 L 40 0 Z"/>
+      <path class="crystal" d="M -15 15 L 0 30 L 15 15 L 0 0 Z"/>
+    </g>
+    <text class="diagram-text small-text" x="100" y="250">凝结成“思维晶体”（显现）</text>
+  </g>
+
+  <path class="connector-main" d="M 250 180 L 295 180" marker-end="url(#arrowhead-main)" />
+  <path class="connector-standard" d="M 500 180 L 545 180" marker-end="url(#arrowhead-standard)" />
+
+  <text x="400" y="400" class="diagram-text license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1150" viewBox="0 0 1200 1150" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>开源大赛参与者成长路线图</title>
+  <desc>标题下到首个元素顶边距为50；“报名→完成→是否获奖”的间距与“进入成长社群→参与每月技术活动”的间距一致（均为130）。“参与每月技术活动→二次参赛/贡献开源”间距同样为130。二次参赛与优秀选手池均以肘型连线连接到“成为项目维护者”，其中优秀选手池连到维护者右边框中央，二次参赛连到维护者左边框中央；右侧纵向等距。</desc>
+
+  <defs>
+    <style>
+      .main-title { font-size: 26px; font-weight: 800; fill:#0f172a; text-anchor: middle; }
+      .license { font-size: 12px; fill:#64748b; text-anchor: middle; }
+
+      .node { rx: 12; ry: 12; stroke-width: 1.6; }
+      .start { fill:#E0F2FE; stroke:#60A5FA; }
+      .decision { fill:#EDE9FE; stroke:#A78BFA; }
+      .leftPath { fill:#DCFCE7; stroke:#4ADE80; }
+      .rightPath { fill:#FFE4E6; stroke:#FB7185; }
+      .final { fill:#FEF3C7; stroke:#F59E0B; }
+
+      .label { font-size: 15px; fill:#0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .edge { stroke:#2563eb; stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .edge-label { font-size: 12px; fill:#334155; text-anchor: middle; dominant-baseline: middle; }
+
+      .shadow { filter:url(#shadow); }
+    </style>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 顶部可视标题（与第一个元素顶边间距=50） -->
+  <text class="main-title" x="600" y="40">开源大赛参与者成长路线图</text>
+
+  <!-- 坐标（确保A→B→C与E→G与G→I均相隔130）
+       A(600,120)  B(600,250)  C(600,380)
+       D(930,380)  E(270,380)  G(270,510)
+       I(270,640)  F(600,660)  H(600,790)
+       J(600,920)  K(600,1050)
+       注：F 宽220 → 左边框x=490，右边框x=710
+  -->
+
+  <!-- 连接线 -->
+  <!-- A -> B（A底 150 到 B顶 205） -->
+  <path class="edge" d="M600,150 L600,205" marker-end="url(#arrow)"/>
+  <!-- B -> C（B底 295 到 C顶 335） -->
+  <path class="edge" d="M600,295 L600,335" marker-end="url(#arrow)"/>
+
+  <!-- C -> D / E 水平分流 -->
+  <path class="edge" d="M700,380 L820,380" marker-end="url(#arrow)"/>
+  <text class="edge-label" x="760" y="368">是</text>
+  <path class="edge" d="M500,380 L380,380" marker-end="url(#arrow)"/>
+  <text class="edge-label" x="440" y="368">否</text>
+
+  <!-- D -> F 肘型：D底(930,410) 垂直到 y=660，再水平到 F 右边框中央(710,660) -->
+  <path class="edge" d="M930,410 V660 H710" marker-end="url(#arrow)"/>
+
+  <!-- E -> G 左列竖向（E底 410 → G顶 480） -->
+  <path class="edge" d="M270,410 L270,480" marker-end="url(#arrow)"/>
+  <!-- G -> I 左列竖向（G底 540 → I顶 610），间距=130 -->
+  <path class="edge" d="M270,540 L270,610" marker-end="url(#arrow)"/>
+
+  <!-- I -> F 肘型：I底(270,670) 垂直到 y=660，再水平到 F 左边框中央(490,660) -->
+  <path class="edge" d="M270,670 V660 H490" marker-end="url(#arrow)"/>
+
+  <!-- F -> H -> J -> K 纵向等距（130） -->
+  <path class="edge" d="M600,690 V760" marker-end="url(#arrow)"/>  <!-- F->H -->
+  <path class="edge" d="M600,820 V890" marker-end="url(#arrow)"/>  <!-- H->J -->
+  <path class="edge" d="M600,950 V1020" marker-end="url(#arrow)"/> <!-- J->K -->
+
+  <!-- 节点 -->
+  <g transform="translate(600,120)">
+    <rect class="node start shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">报名参赛</text>
+  </g>
+
+  <g transform="translate(600,250)">
+    <polygon class="decision shadow" points="0,-45 100,0 0,45 -100,0"/>
+    <text class="label" x="0" y="0">完成项目</text>
+  </g>
+
+  <g transform="translate(600,380)">
+    <polygon class="decision shadow" points="0,-45 100,0 0,45 -100,0"/>
+    <text class="label" x="0" y="0">是否获奖？</text>
+  </g>
+
+  <g transform="translate(930,380)">
+    <rect class="node rightPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">进入优秀选手池</text>
+  </g>
+
+  <g transform="translate(270,380)">
+    <rect class="node leftPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">进入成长社群</text>
+  </g>
+
+  <g transform="translate(270,510)">
+    <rect class="node leftPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">参与每月技术活动</text>
+  </g>
+
+  <g transform="translate(270,640)">
+    <rect class="node leftPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">二次参赛 / 贡献开源</text>
+  </g>
+
+  <g transform="translate(600,660)">
+    <rect class="node rightPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">成为项目维护者</text>
+  </g>
+
+  <g transform="translate(600,790)">
+    <rect class="node rightPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">成为技术导师</text>
+  </g>
+
+  <g transform="translate(600,920)">
+    <rect class="node rightPath shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">推荐企业实习</text>
+  </g>
+
+  <g transform="translate(600,1050)">
+    <rect class="node final shadow" x="-110" y="-30" width="220" height="60"/>
+    <text class="label" x="0" y="0">成为社区 KOL / 组织者</text>
+  </g>
+
+  <!-- 底部许可声明 -->
+  <text class="license" x="600" y="1130">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

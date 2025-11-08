@@ -1,0 +1,90 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580">
+  <!-- 背景 -->
+  <rect width="800" height="580" fill="#f8f9fa" rx="10" ry="10"/>
+
+  <!-- 标题 -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#333" text-anchor="middle" font-weight="bold">数字公共产品关键特征</text>
+
+  <!-- 中心背景 - 更大的六边形背景 -->
+  <polygon points="400,210 470,245 470,315 400,350 330,315 330,245" fill="#E8EFF9" stroke="#B0C4DE" stroke-width="1" />
+
+  <!-- 中心形状 - 六边形数字公共产品 -->
+  <polygon points="400,230 450,260 450,310 400,340 350,310 350,260" fill="#0056D6" />
+  <text x="400" y="275" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">数字</text>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">公共产品</text>
+
+  <!-- 特征节点和连接线 - 等距分布 -->
+  <!-- 开源许可 - 上方 -->
+  <line x1="400" y1="230" x2="400" y2="180" stroke="#90a4ae" stroke-width="2" />
+  <circle cx="400" cy="130" r="50" fill="#E1701A" />
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">开源许可</text>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Open Source</text>
+  <text x="400" y="75" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">使用开源、开放内容或公共领域许可</text>
+
+  <!-- 无害原则 - 右上 -->
+  <line x1="450" y1="260" x2="500" y2="220" stroke="#90a4ae" stroke-width="2" />
+  <circle cx="550" cy="170" r="50" fill="#7E2E84" />
+  <text x="550" y="165" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">无害原则</text>
+  <text x="550" y="185" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Do No Harm</text>
+  <text x="550" y="100" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    <tspan x="550" dy="0">设计和使用不应造成伤害</tspan>
+    <tspan x="550" dy="15">符合道德标准</tspan>
+  </text>
+
+  <!-- 开放标准 - 右下 -->
+  <line x1="450" y1="310" x2="500" y2="350" stroke="#90a4ae" stroke-width="2" />
+  <circle cx="550" cy="400" r="50" fill="#0E9AA7" />
+  <text x="550" y="395" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">开放标准</text>
+  <text x="550" y="415" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Open Standards</text>
+  <text x="550" y="470" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    <tspan x="550" dy="0">采用开放标准保证</tspan>
+    <tspan x="550" dy="15">互操作性和兼容性</tspan>
+  </text>
+
+  <!-- 可持续发展 - 下方 -->
+  <line x1="400" y1="340" x2="400" y2="390" stroke="#90a4ae" stroke-width="2" />
+  <circle cx="400" cy="440" r="50" fill="#3DA35D" />
+  <text x="400" y="435" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">可持续发展</text>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">SDGs</text>
+  <text x="400" y="510" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    <tspan x="400" dy="0">支持联合国可持续发展目标(SDGs)</tspan>
+    <tspan x="400" dy="15">解决全球性挑战</tspan>
+  </text>
+
+  <!-- 数据主权 - 左下 -->
+  <line x1="350" y1="310" x2="300" y2="350" stroke="#90a4ae" stroke-width="2" />
+  <circle cx="250" cy="400" r="50" fill="#F39237" />
+  <text x="250" y="395" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">数据主权</text>
+  <text x="250" y="415" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Data Sovereignty</text>
+  <text x="250" y="470" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    <tspan x="250" dy="0">用户拥有对其数据的</tspan>
+    <tspan x="250" dy="15">控制权和选择权</tspan>
+  </text>
+
+  <!-- 隐私保护 - 左上 -->
+  <line x1="350" y1="260" x2="300" y2="220" stroke="#90a4ae" stroke-width="2" />
+  <circle cx="250" cy="170" r="50" fill="#D72638" />
+  <text x="250" y="165" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">隐私保护</text>
+  <text x="250" y="185" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Privacy</text>
+  <text x="250" y="100" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    <tspan x="250" dy="0">保护用户数据和隐私</tspan>
+    <tspan x="250" dy="15">符合相关法规</tspan>
+  </text>
+
+  <!-- DPGA框 - 与中间元素居中对齐 -->
+  <g>
+    <rect x="135" y="245" width="140" height="70" rx="5" ry="5" fill="#f0f0f0" stroke="#ddd" />
+    <text x="205" y="265" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">数字公共产品联盟</text>
+    <text x="205" y="285" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">(DPGA)</text>
+    <text x="205" y="305" font-family="Arial, sans-serif" font-size="9" fill="#666" text-anchor="middle">
+      <tspan x="205" dy="0">成立于2019年</tspan>
+      <tspan x="205" dy="12">建立DPG标准和登记处</tspan>
+    </text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

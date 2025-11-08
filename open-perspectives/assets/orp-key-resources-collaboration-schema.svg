@@ -1,0 +1,93 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+    <defs>
+        <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#E3F2FD;" />
+            <stop offset="100%" style="stop-color:#90CAF9;" />
+        </linearGradient>
+        <linearGradient id="grad-green" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#E8F5E9;" />
+            <stop offset="100%" style="stop-color:#A5D6A7;" />
+        </linearGradient>
+        <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFF3E0;" />
+            <stop offset="100%" style="stop-color:#FFCC80;" />
+        </linearGradient>
+        <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#F3E5F5;" />
+            <stop offset="100%" style="stop-color:#CE93D8;" />
+        </linearGradient>
+        <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFEBEE;" />
+            <stop offset="100%" style="stop-color:#EF9A9A;" />
+        </linearGradient>
+        <marker id="arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#555" />
+        </marker>
+    </defs>
+
+    <!-- Title -->
+    <text x="400" y="50" font-size="28px" font-weight="bold" text-anchor="middle" fill="#212121">ORP 核心五要素</text>
+    <text x="400" y="80" font-size="16px" text-anchor="middle" fill="#616161">相互依存、协同驱动的生产力闭环</text>
+
+    <!-- Center Hub -->
+    <circle cx="400" cy="310" r="60" fill="#f0f0f0" />
+    <text x="400" y="305" font-size="18px" text-anchor="middle" font-weight="bold" fill="#333">协同与</text>
+    <text x="400" y="330" font-size="18px" text-anchor="middle" font-weight="bold" fill="#333">整合</text>
+
+    <!-- Five Elements in a Circle -->
+    <g id="elements">
+        <!-- 1. Data (Top-Left) -->
+        <g transform="translate(180, 180)">
+            <rect x="-75" y="-45" width="150" height="90" rx="15" fill="url(#grad-green)" stroke="#43A047" stroke-width="1.5"/>
+            <text x="0" y="-10" font-size="16px" font-weight="bold" text-anchor="middle">数据资源</text>
+            <text x="0" y="15" font-size="14px" text-anchor="middle" fill="#333">(Data)</text>
+        </g>
+
+        <!-- 2. Algorithm and Model (Top-Right) -->
+        <g transform="translate(620, 180)">
+            <rect x="-75" y="-45" width="150" height="90" rx="15" fill="url(#grad-orange)" stroke="#FB8C00" stroke-width="1.5"/>
+            <text x="0" y="-10" font-size="16px" font-weight="bold" text-anchor="middle">算法与模型</text>
+            <text x="0" y="15" font-size="14px" text-anchor="middle" fill="#333">(Algorithm and Model)</text>
+        </g>
+
+        <!-- 3. Computing Power (Bottom-Right) -->
+        <g transform="translate(620, 440)">
+            <rect x="-75" y="-45" width="150" height="90" rx="15" fill="url(#grad-blue)" stroke="#1E88E5" stroke-width="1.5"/>
+            <text x="0" y="-10" font-size="16px" font-weight="bold" text-anchor="middle">算力资源</text>
+            <text x="0" y="15" font-size="14px" text-anchor="middle" fill="#333">(Computing Power)</text>
+        </g>
+
+        <!-- 4. Talent and Knowledge (Bottom-Left) -->
+        <g transform="translate(180, 440)">
+            <rect x="-75" y="-45" width="150" height="90" rx="15" fill="url(#grad-red)" stroke="#D32F2F" stroke-width="1.5"/>
+            <text x="0" y="-10" font-size="16px" font-weight="bold" text-anchor="middle">人才与知识</text>
+            <text x="0" y="15" font-size="14px" text-anchor="middle" fill="#333">(Talent and Knowledge)</text>
+        </g>
+
+        <!-- 5. Code and Tools (Middle-Bottom) -->
+        <g transform="translate(400, 520)">
+             <rect x="-75" y="-45" width="150" height="90" rx="15" fill="url(#grad-purple)" stroke="#8E24AA" stroke-width="1.5"/>
+             <text x="0" y="-10" font-size="16px" font-weight="bold" text-anchor="middle">代码与工具</text>
+             <text x="0" y="15" font-size="14px" text-anchor="middle" fill="#333">(Code and Tools)</text>
+        </g>
+    </g>
+
+    <!-- Connecting Arrows -->
+    <g id="arrows" stroke="#555" stroke-width="2.5" fill="none" marker-end="url(#arrow-head)">
+        <!-- Data -> Model -->
+        <path d="M 285 180 Q 400 130, 515 180" />
+        <!-- Model -> Compute -->
+        <path d="M 620 250 V 370" />
+        <!-- Compute -> Code (Symmetrical Arc) -->
+        <path d="M 545 440 Q 510 480 475 475" />
+        <!-- Code -> Talent (Symmetrical Arc) -->
+        <path d="M 325 475 Q 290 480 255 440" />
+        <!-- Talent -> Data -->
+        <path d="M 180 370 V 250" />
+    </g>
+
+    <!-- License Declaration -->
+    <text x="50%" y="590" font-size="12px" text-anchor="middle" fill="#616161">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区
+    </text>
+</svg>

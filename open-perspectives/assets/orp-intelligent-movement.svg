@@ -1,0 +1,81 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <defs>
+        <!-- Gradients for stages -->
+        <linearGradient id="grad-info" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E3F2FD"/><stop offset="100%" stop-color="#B3E5FC"/></linearGradient>
+        <linearGradient id="grad-digital" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#E8EAF6"/><stop offset="100%" stop-color="#C5CAE9"/></linearGradient>
+        <linearGradient id="grad-intelligent" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#F3E5F5"/><stop offset="100%" stop-color="#E1BEE7"/></linearGradient>
+        <linearGradient id="grad-orp" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFD180"/><stop offset="100%" stop-color="#FFAB40"/></linearGradient>
+
+        <!-- Arrow Marker -->
+        <marker id="arrow-head-journey" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#90A4AE" /></marker>
+    </defs>
+
+    <rect width="1200" height="800" fill="#F8FAFC"/>
+
+    <text x="600" y="60" font-size="32px" font-weight="bold" text-anchor="middle" fill="#1E293B">企业转型的深刻跃迁</text>
+    <text x="600" y="95" font-size="18px" text-anchor="middle" fill="#475569">ORP: 从数字化到数智化的核心驱动引擎</text>
+
+    <!-- Main Progression Arrow -->
+    <path d="M 100 200 H 1100" stroke="#90A4AE" stroke-width="8" marker-end="url(#arrow-head-journey)" />
+    <text x="600" y="150" font-size="16px" font-weight="600" text-anchor="middle" fill="#37474F">转型路径</text>
+
+    <!-- Stage 1: Informationalization -->
+    <g id="stage-info">
+        <circle cx="200" cy="200" r="40" fill="#4FC3F7" />
+        <text x="200" y="205" font-size="18px" font-weight="bold" fill="white" text-anchor="middle">1.0</text>
+        <rect x="50" y="280" width="300" height="250" rx="15" fill="url(#grad-info)" stroke="#81D4FA"/>
+        <text x="200" y="320" font-size="22px" font-weight="bold" text-anchor="middle" fill="#01579B">信息化</text>
+        <text x="200" y="355" font-size="16px" text-anchor="middle" font-weight="600" fill="#0277BD">核心: 流程线上化</text>
+        <path d="M 100 375 H 300" stroke="#4FC3F7" stroke-width="1.5"/>
+        <text x="200" y="410" font-size="14px" text-anchor="middle" fill="#0288D1">OA / ERP / CRM</text>
+        <text x="200" y="440" font-size="14px" text-anchor="middle" fill="#0288D1">固化标准业务流程</text>
+        <text x="200" y="470" font-size="14px" text-anchor="middle" fill="#0288D1">提升基础运营效率</text>
+    </g>
+
+    <!-- Stage 2: Digitalization -->
+    <g id="stage-digital">
+        <circle cx="600" cy="200" r="40" fill="#7986CB" />
+        <text x="600" y="205" font-size="18px" font-weight="bold" fill="white" text-anchor="middle">2.0</text>
+        <rect x="450" y="280" width="300" height="250" rx="15" fill="url(#grad-digital)" stroke="#9FA8DA"/>
+        <text x="600" y="320" font-size="22px" font-weight="bold" text-anchor="middle" fill="#1A237E">数字化</text>
+        <text x="600" y="355" font-size="16px" text-anchor="middle" font-weight="600" fill="#283593">核心: 数据业务化</text>
+        <path d="M 500 375 H 700" stroke="#7986CB" stroke-width="1.5"/>
+        <text x="600" y="410" font-size="14px" text-anchor="middle" fill="#303F9F">数据分析 / BI</text>
+        <text x="600" y="440" font-size="14px" text-anchor="middle" fill="#303F9F">洞察业务规律</text>
+        <text x="600" y="470" font-size="14px" text-anchor="middle" fill="#303F9F">驱动业务决策</text>
+    </g>
+
+    <!-- Stage 3: Intelligentization -->
+    <g id="stage-intelligent">
+        <circle cx="1000" cy="200" r="40" fill="#BA68C8" />
+        <text x="1000" y="205" font-size="18px" font-weight="bold" fill="white" text-anchor="middle">3.0</text>
+        <rect x="850" y="280" width="300" height="250" rx="15" fill="url(#grad-intelligent)" stroke="#CE93D8"/>
+        <text x="1000" y="320" font-size="22px" font-weight="bold" text-anchor="middle" fill="#4A148C">数智化</text>
+        <text x="1000" y="355" font-size="16px" text-anchor="middle" font-weight="600" fill="#6A1B9A">核心: 智能规模化</text>
+        <path d="M 900 375 H 1100" stroke="#BA68C8" stroke-width="1.5"/>
+        <text x="1000" y="410" font-size="14px" text-anchor="middle" fill="#7B1FA2">AI Agent / Copilot</text>
+        <text x="1000" y="440" font-size="14px" text-anchor="middle" fill="#7B1FA2">重塑业务模式</text>
+        <text x="1000" y="470" font-size="14px" text-anchor="middle" fill="#7B1FA2">创造全新价值</text>
+    </g>
+
+    <!-- ORP Engine -->
+    <g id="orp-engine">
+        <path d="M 850 580 L 900 650 L 850 720 L 750 720 L 700 650 L 750 580 Z" fill="url(#grad-orp)" stroke="#FFA000"/>
+        <text x="800" y="630" font-size="24px" font-weight="bold" text-anchor="middle" fill="#BF360C">ORP</text>
+        <text x="800" y="660" font-size="16px" text-anchor="middle" fill="#E65100">智能生产引擎</text>
+        <text x="800" y="685" font-size="12px" text-anchor="middle" fill="#E65100">规划·编排·治理</text>
+
+        <!-- Arrow from ORP to transition -->
+        <path d="M 800 570 L 800 220" stroke="#FFB74D" stroke-width="4" fill="none" stroke-dasharray="8 4"/>
+        <path d="M 795 230 L 800 210 L 805 230 Z" fill="#FFB74D"/>
+    </g>
+
+    <!-- Transition Labels -->
+    <text x="400" y="150" font-size="16px" text-anchor="middle" font-weight="bold" fill="#3F51B5">第一次跃迁（由ERP驱动）</text>
+    <text x="800" y="150" font-size="16px" text-anchor="middle" font-weight="bold" fill="#6A1B9A">第二次跃迁 (由ORP驱动)</text>
+
+    <!-- License Declaration -->
+    <text x="600" y="770" font-size="12px" text-anchor="middle" fill="#6C757D">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区
+    </text>
+</svg>

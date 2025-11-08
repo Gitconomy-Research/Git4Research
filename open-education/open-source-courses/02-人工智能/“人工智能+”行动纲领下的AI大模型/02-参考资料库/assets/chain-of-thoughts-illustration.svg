@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1350" height="900" viewBox="0 0 1350 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', Arial, sans-serif">
+
+  <!-- ====== Defs: filters, markers, styles ====== -->
+  <defs>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Arrow markers (size ~ halved) -->
+    <marker id="arrowRight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/>
+    </marker>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="8" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L5,10 L10,0 z" fill="none" stroke="#0f172a" stroke-width="1"/>
+    </marker>
+    <marker id="arrowUp" viewBox="0 0 10 10" refX="5" refY="2" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,10 L5,0 L10,10 z" fill="none" stroke="#0f172a" stroke-width="1"/>
+    </marker>
+
+    <style><![CDATA[
+      .title { font-size: 30px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-size: 16px; fill: #475569; }
+      .kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; fill: #334155; }
+      .panel-title { font-size: 18px; font-weight: 700; fill: #0b1220; }
+      .item { font-size: 14px; fill: #0b1220; }
+      .chip { font-size: 12px; fill: #0b1220; }
+      .legend { font-size: 12px; fill: #334155; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 12px; fill: #0b1220; }
+      .license { font-size: 12px; fill: #334155; }
+    ]]></style>
+  </defs>
+
+  <!-- ====== Background & Header ====== -->
+  <rect x="0" y="0" width="1350" height="900" fill="#f8fafc"/>
+  <g transform="translate(0,56)">
+    <text class="title" x="600" text-anchor="middle">思维链（Chain-of-Thought）示意图</text>
+    <text class="subtitle" x="600" y="32" text-anchor="middle">输入 → 任务分解 → 逐步推理 → 工具调用 → 反思/验证 → 最终答案</text>
+  </g>
+
+  <!-- ====== Top: 主流程（Pipeline） ====== -->
+  <g transform="translate(80,120)">
+    <!-- 容器 -->
+    <rect x="0" y="0" rx="16" ry="16" width="1125" height="190" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="kicker" x="16" y="22">PIPELINE · 从输入到结论</text>
+
+    <!-- 步骤框 -->
+    <g filter="url(#soft)">
+      <rect x="56"   y="46" rx="12" ry="12" width="150" height="120" fill="#E8F5E9"/>
+      <rect x="236"  y="46" rx="12" ry="12" width="170" height="120" fill="#E0F2FE"/>
+      <rect x="436"  y="46" rx="12" ry="12" width="190" height="120" fill="#FEF3C7"/>
+      <rect x="656"  y="46" rx="12" ry="12" width="170" height="120" fill="#FCE7F3"/>
+      <rect x="856"  y="46" rx="12" ry="12" width="210" height="120" fill="#F3E8FF"/>
+    </g>
+
+    <!-- 文字 -->
+    <g>
+      <text class="panel-title" x="131"  y="74" text-anchor="middle">用户输入</text>
+      <text class="item" x="131" y="96" text-anchor="middle">问题/目标/约束</text>
+
+      <text class="panel-title" x="311" y="74" text-anchor="middle">任务理解</text>
+      <text class="item" x="311" y="96" text-anchor="middle">变量设定·假设前置</text>
+      <text class="item" x="311" y="116" text-anchor="middle">歧义澄清·边界条件</text>
+
+      <text class="panel-title" x="511" y="74" text-anchor="middle">子问题分解</text>
+      <text class="item" x="521" y="96" text-anchor="middle">S1 → S2 → S3</text>
+      <text class="item" x="521" y="116" text-anchor="middle">粒度自适应（难题更细）</text>
+
+      <text class="panel-title" x="741" y="74" text-anchor="middle">逐步推理</text>
+      <text class="item" x="741" y="96" text-anchor="middle">CoT/ToT/树搜索</text>
+      <text class="item" x="741" y="116" text-anchor="middle">中间结论与证据</text>
+
+      <text class="panel-title" x="961" y="74" text-anchor="middle">反思 · 验证 · 答案</text>
+      <text class="item" x="961" y="96" text-anchor="middle">Self-Consistency/反思</text>
+      <text class="item" x="961" y="116" text-anchor="middle">工具校验/单元检查</text>
+      <text class="item" x="961" y="136" text-anchor="middle">给出最终答案</text>
+    </g>
+
+    <!-- Scratchpad（位于“逐步推理”框内的记事本） -->
+    <g transform="translate(666,126)">
+      <rect x="0" y="0" rx="8" ry="8" width="150" height="34" fill="#ffffff" stroke="#e5e7eb"/>
+      <text class="mono" x="8" y="22">S1: … → S2: … → S3: …</text>
+    </g>      <!-- 说明文字分两行，确保不超框 -->
+
+    <!-- 工具标签（保留，无连线） -->
+    <g>
+      <rect x="870" y="10" rx="10" ry="10" width="160" height="32" fill="#ffffff" stroke="#e5e7eb"/>
+      <text class="chip" x="878" y="30">工具：Calc/Search/Code</text>
+    </g>
+
+    <!-- 流程箭头（线宽减半） -->
+    <line x1="206" y1="106" x2="236" y2="106" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+    <line x1="406" y1="106" x2="436" y2="106" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+    <line x1="626" y1="106" x2="656" y2="106" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+    <line x1="826" y1="106" x2="856" y2="106" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+  </g>
+
+  <!-- ====== Middle Left: 线性思维链（CoT） ====== -->
+  <g transform="translate(80,340)">
+    <rect x="0" y="0" rx="16" ry="16" width="570" height="250" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="kicker" x="16" y="22">LINEAR · 线性思维链</text>
+
+    <g transform="translate(24,46)" filter="url(#soft)">
+      <rect x="0"   y="0"   rx="10" ry="10" width="90" height="44" fill="#E8F5E9"/><text class="item" x="45" y="28" text-anchor="middle">S1</text>
+      <rect x="110" y="0"   rx="10" ry="10" width="90" height="44" fill="#E0F2FE"/><text class="item" x="155" y="28" text-anchor="middle">S2</text>
+      <rect x="220" y="0"   rx="10" ry="10" width="90" height="44" fill="#FEF3C7"/><text class="item" x="265" y="28" text-anchor="middle">S3</text>
+      <rect x="330" y="0"   rx="10" ry="10" width="90" height="44" fill="#FCE7F3"/><text class="item" x="375" y="28" text-anchor="middle">S4</text>
+      <rect x="440" y="0"   rx="10" ry="10" width="90" height="44" fill="#F3E8FF"/><text class="item" x="485" y="28" text-anchor="middle">结论</text>
+
+      <line x1="90"  y1="22" x2="110" y2="22" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+      <line x1="200" y1="22" x2="220" y2="22" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+      <line x1="310" y1="22" x2="330" y2="22" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+      <line x1="420" y1="22" x2="440" y2="22" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+    </g>
+
+    <g transform="translate(24,116)">
+      <text class="legend">特点：路径单一、便于解释与复现；风险：早期错误可能级联放大；适用：结构清晰、约束明确的问题</text>
+    </g>
+
+    <g transform="translate(24,160)">
+      <rect x="0" y="0" rx="10" ry="10" width="530" height="60" fill="#ffffff" stroke="#e5e7eb"/>
+      <text class="kicker" x="10" y="20">CHECK · 单元检查</text>
+      <text class="item" x="10" y="40">维度/单位一致 · 边界/极端值 · 复杂度/可行性 · 与已知事实对照</text>
+    </g>
+  </g>
+
+  <!-- ====== Middle Right: 树状思维（ToT）与自一致 ====== -->
+  <g transform="translate(675,340)">
+    <rect x="0" y="0" rx="16" ry="16" width="530" height="250" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="kicker" x="16" y="22">TREE · 树状思维（ToT）与自一致</text>
+
+    <g transform="translate(36,50)">
+      <circle cx="40"  cy="70" r="12" fill="#E8F5E9"/><text class="mono" x="34" y="74">S1</text>
+
+      <circle cx="150" cy="30" r="12" fill="#E0F2FE"/><text class="mono" x="144" y="34">S2a</text>
+      <circle cx="150" cy="110" r="12" fill="#E0F2FE"/><text class="mono" x="144" y="114">S2b</text>
+
+      <circle cx="260" cy="10" r="12" fill="#FEF3C7"/><text class="mono" x="254" y="14">S3a</text>
+      <circle cx="260" cy="50" r="12" fill="#FEF3C7"/><text class="mono" x="254" y="54">S3b</text>
+      <circle cx="260" cy="90" r="12" fill="#FEF3C7"/><text class="mono" x="254" y="94">S3c</text>
+      <circle cx="260" cy="130" r="12" fill="#FEF3C7"/><text class="mono" x="248" y="134">S3d</text>
+
+      <line x1="52"  y1="70" x2="138" y2="30" stroke="#0f172a" stroke-width="1.6"/>
+      <line x1="52"  y1="70" x2="138" y2="110" stroke="#0f172a" stroke-width="1.6"/>
+      <line x1="162" y1="30" x2="248" y2="10"  stroke="#0f172a" stroke-width="1.4"/>
+      <line x1="162" y1="30" x2="248" y2="50"  stroke="#0f172a" stroke-width="1.4"/>
+      <line x1="162" y1="110" x2="248" y2="90" stroke="#0f172a" stroke-width="1.4"/>
+      <line x1="162" y1="110" x2="248" y2="130" stroke="#0f172a" stroke-width="1.4"/>
+
+      <rect x="340" y="56" rx="10" ry="10" width="120" height="32" fill="#F3E8FF" filter="url(#soft)"/>
+      <text class="item" x="350" y="77">采样×k → 投票</text>
+      <line x1="272" y1="50" x2="340" y2="72" stroke="#0f172a" stroke-width="1" marker-end="url(#arrowRight)"/>
+
+      <text class="legend" x="340" y="110">
+        <tspan x="340" dy="0">自一致：多路径推理</tspan>
+        <tspan x="340" dy="16">采样后多数表决</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(24,198)">
+      <rect x="0" y="0" rx="10" ry="10" width="495" height="44" fill="#ffffff" stroke="#e5e7eb"/>
+      <text class="kicker" x="10" y="18">REFLECTION · 反思</text>
+      <text class="item" x="10" y="36">对中间结论进行错误分析与重试（提示模板：请找出推理中可能的错误并修正）</text>
+    </g>
+  </g>
+
+  <!-- ====== Bottom: 最佳实践 / 风险与缓解 ====== -->
+  <g transform="translate(80,610)">
+    <rect x="0" y="0" rx="16" ry="16" width="1125" height="210" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="kicker" x="16" y="22">GUIDE · 最佳实践与风险缓解</text>
+
+    <g transform="translate(46,40)">
+      <rect x="0"   y="0" rx="12" ry="12" width="320" height="150" fill="#E8F5E9"/>
+      <rect x="360" y="0" rx="12" ry="12" width="320" height="150" fill="#FEF3C7"/>
+      <rect x="720" y="0" rx="12" ry="12" width="320" height="150" fill="#E0F2FE"/>
+    </g>
+
+    <g transform="translate(46,50)">
+      <text class="panel-title" x="16"  y="24">最佳实践</text>
+      <text class="item" x="16"  y="48">• 先设定变量与假设，再分解子问题（MECE）。</text>
+      <text class="item" x="16"  y="70">• 每步给出可验证的中间结果与依据。</text>
+      <text class="item" x="16"  y="92">• 明确单位/维度，标注不确定性与边界。</text>
+      <text class="item" x="16"  y="114">• 使用工具校验：计算/搜索/代码/数据。</text>
+
+      <text class="panel-title" x="376" y="24">常见风险</text>
+      <text class="item" x="376" y="48">• 幻觉：凭空构造事实或引用。</text>
+      <text class="item" x="376" y="70">• 级联错误：早期错误传导到结论。</text>
+      <text class="item" x="376" y="92">• 过度思考：令牌成本与时延上升。</text>
+      <text class="item" x="376" y="114">• 工具失配：错误API/无权限/数据过期。</text>
+
+      <text class="panel-title" x="736" y="24">缓解策略</text>
+      <text class="item" x="736" y="48">• 自一致采样(k≥3)与多数表决。</text>
+      <text class="item" x="736" y="70">• 反思提示(Reflection)与红队校验。</text>
+      <text class="item" x="736" y="92">• 关键事实需引用或工具验证。</text>
+      <text class="item" x="736" y="114">• 设定停止条件/时间与成本上限。</text>
+    </g>
+  </g>
+
+  <!-- ====== License footer ====== -->
+  <text class="license" x="600" y="886" text-anchor="middle">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f9f9f9" rx="10" ry="10" />
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, SimHei" font-size="24" text-anchor="middle" font-weight="bold">开放2.0生产要素与ORP生产力平台示意图</text>
+
+  <!-- Open 2.0 Production Relation -->
+  <g id="open-2.0">
+    <rect x="50" y="100" width="300" height="280" rx="20" ry="20" fill="#e1f5fe" stroke="#29b6f6" stroke-width="3" />
+    <text x="200" y="140" font-family="Arial, SimHei" font-size="22" text-anchor="middle" font-weight="bold">开放2.0</text>
+    <text x="200" y="170" font-family="Arial, SimHei" font-size="16" text-anchor="middle" fill="#0277bd">新型生产要素)</text>
+    <path d="M 80 185 L 320 185" stroke="#b3e5fc" stroke-width="1.5"/>
+    <text x="80" y="220" font-family="Arial, SimHei" font-size="14">• 数据资源</text>
+    <text x="80" y="250" font-family="Arial, SimHei" font-size="14">• 算法与模型</text>
+    <text x="80" y="280" font-family="Arial, SimHei" font-size="14">• 算力资源</text>
+    <text x="80" y="310" font-family="Arial, SimHei" font-size="14">• 代码与工具</text>
+    <text x="80" y="340" font-family="Arial, SimHei" font-size="14">• 人才与知识</text>
+  </g>
+
+  <!-- ORP Productivity Platform -->
+  <g id="orp">
+    <rect x="450" y="100" width="300" height="280" rx="20" ry="20" fill="#e8f5e9" stroke="#66bb6a" stroke-width="3" />
+    <text x="600" y="140" font-family="Arial, SimHei" font-size="22" text-anchor="middle" font-weight="bold">ORP</text>
+    <text x="600" y="170" font-family="Arial, SimHei" font-size="16" text-anchor="middle" fill="#2e7d32">生产力平台 (核心能力)</text>
+    <path d="M 480 185 L 720 185" stroke="#c8e6c9" stroke-width="1.5"/>
+    <text x="480" y="220" font-family="Arial, SimHei" font-size="14">• 资源整合 (Integration)</text>
+    <text x="480" y="250" font-family="Arial, SimHei" font-size="14">• 统一规划 (Planning)</text>
+    <text x="480" y="280" font-family="Arial, SimHei" font-size="14">• 智能编排 (Orchestration)</text>
+    <text x="480" y="310" font-family="Arial, SimHei" font-size="14">• 全面治理 (Governance)</text>
+    <text x="480" y="340" font-family="Arial, SimHei" font-size="14">• 持续优化 (Optimization)</text>
+  </g>
+
+  <!-- Connecting Arrow -->
+  <path d="M 355 240 L 445 240" stroke="#757575" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#757575" />
+    </marker>
+  </defs>
+  <text x="400" y="225" font-family="Arial, SimHei" font-size="14" text-anchor="middle" fill="#424242">量身打造</text>
+
+  <!-- AI Era Background -->
+  <rect x="150" y="420" width="500" height="100" rx="10" ry="10" fill="#ede7f6" stroke="#9575cd" stroke-width="2" />
+  <text x="400" y="460" font-family="Arial, SimHei" font-size="20" text-anchor="middle" font-weight="bold">AI时代的企业价值创造</text>
+  <text x="400" y="490" font-family="Arial, SimHei" font-size="16" text-anchor="middle">基础设施与方法论</text>
+
+  <!-- Connecting Lines to AI Era -->
+  <path d="M 200 385 L 200 420" stroke="#9575cd" stroke-width="2" stroke-dasharray="5,5" />
+  <path d="M 600 385 L 600 420" stroke="#9575cd" stroke-width="2" stroke-dasharray="5,5" />
+
+  <!-- License and Copyright -->
+  <text x="400" y="560" font-family="Arial, SimHei" font-size="12" text-anchor="middle">本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区</text>
+</svg>

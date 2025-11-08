@@ -1,0 +1,84 @@
+<svg width="800" height="550" viewBox="0 0 800 550" xmlns="http://www.w3.org/2000/svg" style="background-color: white;" font-family="Noto Sans, sans-serif">
+
+  <defs>
+    <style>
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+      .title-text { font-size: 16px; font-weight: bold; fill: #111827; text-anchor: middle; }
+      .body-text { font-size: 12px; font-weight: normal; fill: #374151; text-anchor: middle; }
+      .small-text { font-size: 11px; font-weight: normal; fill: #687280; text-anchor: middle; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+      .connector-text { font-size: 12px; font-weight: normal; fill: #111827; text-anchor: middle; }
+
+      /* 配色方案 */
+      .main-concept-box { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2px; }
+      .standard-info-box { fill: #F0FDF4; stroke: #34D399; stroke-width: 2px; }
+      .grouping-card-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2px; }
+      .highlight-box { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2px; }
+
+      /* 连接线样式 */
+      .elbow-connector { stroke: #2563EB; stroke-width: 2px; fill: none; }
+    </style>
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="4" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#2563EB" />
+    </marker>
+  </defs>
+
+  <g id="main-title">
+    <text x="400" y="50" class="main-title-text">Git4Ledger：重新诠释Git工作流</text>
+    <text x="400" y="75" class="body-text">价值创造与验证闭环</text>
+  </g>
+
+  <g id="central-workflow">
+    <circle cx="400" cy="300" r="110" class="main-concept-box"/>
+    <text class="title-text">
+      <tspan x="400" y="290">Git4Ledger是一个基于</tspan>
+      <tspan x="400" dy="1.2em">Git工作流的分布式账本</tspan>
+    </text>
+  </g>
+
+  <g id="outcomes">
+    <g transform="translate(100, 120)">
+      <rect x="0" y="0" width="140" height="90" rx="10" ry="10" class="main-concept-box"/>
+      <text x="70" y="30" class="title-text">贡献即资产</text>
+      <text x="70" y="58" class="small-text">提交、审查和讨论</text>
+      <text x="70" y="70" class="small-text">都被视为数字资产。</text>
+    </g>
+    <g transform="translate(560, 120)">
+      <rect x="0" y="0" width="140" height="90" rx="10" ry="10" class="standard-info-box"/>
+      <text x="70" y="30" class="title-text">流程即验证</text>
+      <text x="70" y="58" class="small-text">日常协作流程作为</text>
+      <text x="70" y="70" class="small-text">价值的验证机制。</text>
+    </g>
+    <g transform="translate(560, 390)">
+      <rect x="0" y="0" width="140" height="90" rx="10" ry="10" class="grouping-card-box"/>
+      <text x="70" y="30" class="title-text">记录即激励</text>
+      <text x="70" y="58" class="small-text">准确的价值记录成为</text>
+      <text x="70" y="70" class="small-text">激励和治理的基础。</text>
+    </g>
+    <g transform="translate(100, 390)">
+      <rect x="0" y="0" width="140" height="90" rx="10" ry="10" class="highlight-box"/>
+      <text x="70" y="30" class="title-text">透明即信任</text>
+      <text x="70" y="58" class="small-text">所有贡献及其评估</text>
+      <text x="70" y="70" class="small-text">过程完全透明。</text>
+    </g>
+  </g>
+
+  <g class="connector-text">
+    <path d="M 240 165 H 560" class="elbow-connector" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+    <text x="400" y="155">提交 Pull Request</text>
+
+    <path d="M 630 210 V 390" class="elbow-connector" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+    <text x="660" y="300" transform="rotate(-270, 660, 300)">合并确权 (Merge)</text>
+
+    <path d="M 560 435 H 240" class="elbow-connector" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+    <text x="400" y="455">克隆/同步账本 (clone/fetch)</text>
+
+    <path d="M 170 390 V 210" class="elbow-connector" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+    <text x="140" y="300" transform="rotate(-90, 140, 300)">建立声誉/激励</text>
+  </g>
+
+  <text x="50%" y="525" class="license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可, 2025 Gitconomy Research社区
+  </text>
+</svg>

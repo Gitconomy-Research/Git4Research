@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 野行僧郭晧
+Copyright (c) 2025 Gitconomy Research
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

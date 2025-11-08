@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 825" width="1000" height="825">
+  <!-- Styles -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" />
+      <stop offset="100%" stop-color="#e9ecef" />
+    </linearGradient>
+    <linearGradient id="center-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d0e8f2" />
+      <stop offset="100%" stop-color="#a9d6e5" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.2"/>
+    </filter>
+    <style type="text/css">
+      .title { font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; }
+      .subtitle { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; }
+      .element-title { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; }
+      .label { font-family: 'Arial', sans-serif; font-size: 14px; }
+      .small-text { font-family: 'Arial', sans-serif; font-size: 12px; }
+      .license { font-family: 'Arial', sans-serif; font-size: 12px; fill:#495057; }
+    </style>
+  </defs>
+
+  <!-- Background: removed to keep transparent -->
+
+  <!-- Title -->
+  <text x="500" y="50" class="title" text-anchor="middle" fill="#333">开源大赛生态运营的开放资源范式</text>
+
+  <!-- Center circle - Open Resource Paradigm (位于画布几何中心) -->
+  <circle cx="500" cy="370" r="120" fill="url(#center-gradient)" stroke="#2c7da0" stroke-width="3" filter="url(#shadow)" />
+  <text x="500" y="355" class="subtitle" text-anchor="middle" fill="#333">开放资源范式</text>
+  <text x="500" y="380" class="label" text-anchor="middle" fill="#333">可及性 · 可复用性 · 互操作性</text>
+  <text x="500" y="405" class="small-text" text-anchor="middle" fill="#333">从“办赛”到“营人”的生态系统运营模式</text>
+
+  <!-- Four elements - with safe paddings -->
+
+  <!-- Knowledge as OER -->
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="220" height="190" rx="10" ry="10" fill="#d1e7dd" stroke="#198754" stroke-width="2" filter="url(#shadow)" />
+    <text x="110" y="30" class="element-title" text-anchor="middle" fill="#333">知识作为开放教育资源</text>
+    <text x="110" y="52" class="label" text-anchor="middle" fill="#333">(Open Educational Resources)</text>
+
+    <!-- 内框：左右≥20、底部≥12；高度=100，4条要点 -->
+    <g transform="translate(20, 76)">
+      <rect x="0" y="0" width="180" height="100" rx="6" ry="6" fill="#ffffff" stroke="#198754" stroke-width="1" />
+      <text x="90" y="22" class="label" text-anchor="middle" fill="#333">知识策展生命周期</text>
+      <text x="90" y="44" class="small-text" text-anchor="middle" fill="#333">• 从原始对话到结构化资产</text>
+      <text x="90" y="64" class="small-text" text-anchor="middle" fill="#333">• 聚合、提炼、重组、增强</text>
+      <text x="90" y="84" class="small-text" text-anchor="middle" fill="#333">• Docs-as-Code 与 5R 实践</text>
+    </g>
+  </g>
+  <!-- Connect to center：端点在圆周上（角度≈150°） -->
+  <path d="M 320 210 L 396 315" stroke="#198754" stroke-width="2" fill="none" />
+
+  <!-- Projects as Open Data -->
+  <g transform="translate(680, 120)">
+    <rect x="0" y="0" width="220" height="190" rx="10" ry="10" fill="#cfe2ff" stroke="#0d6efd" stroke-width="2" filter="url(#shadow)" />
+    <text x="110" y="30" class="element-title" text-anchor="middle" fill="#333">项目作为开放数据</text>
+    <text x="110" y="52" class="label" text-anchor="middle" fill="#333">(Open Data | Benchmarks)</text>
+
+    <g transform="translate(20, 76)">
+      <rect x="0" y="0" width="180" height="100" rx="6" ry="6" fill="#ffffff" stroke="#0d6efd" stroke-width="1" />
+      <text x="90" y="22" class="label" text-anchor="middle" fill="#333">可复现的价值创造</text>
+      <text x="90" y="44" class="small-text" text-anchor="middle" fill="#333">• 标准化模板与元数据</text>
+      <text x="90" y="64" class="small-text" text-anchor="middle" fill="#333">• 公共基准与排行榜</text>
+      <text x="90" y="84" class="small-text" text-anchor="middle" fill="#333">• 开放许可 + 可复现实验</text>
+    </g>
+  </g>
+  <!-- Connect to center：端点在圆周上（角度≈30°） -->
+  <path d="M 680 210 L 604 315" stroke="#0d6efd" stroke-width="2" fill="none" />
+
+  <!-- Licenses as Strategic Tools -->
+  <g transform="translate(100, 430)">
+    <rect x="0" y="0" width="220" height="190" rx="10" ry="10" fill="#fff3cd" stroke="#ffc107" stroke-width="2" filter="url(#shadow)" />
+    <text x="110" y="30" class="element-title" text-anchor="middle" fill="#333">许可作为战略工具</text>
+    <text x="110" y="52" class="label" text-anchor="middle" fill="#333">(Strategic Licensing)</text>
+
+    <g transform="translate(20, 76)">
+      <rect x="0" y="0" width="180" height="100" rx="6" ry="6" fill="#ffffff" stroke="#ffc107" stroke-width="1" />
+      <text x="90" y="22" class="label" text-anchor="middle" fill="#333">协作规则的设定</text>
+      <text x="90" y="44" class="small-text" text-anchor="middle" fill="#333">• Apache/MIT：放大生态影响</text>
+      <text x="90" y="64" class="small-text" text-anchor="middle" fill="#333">• GPL：确保改进回馈社区</text>
+      <text x="90" y="84" class="small-text" text-anchor="middle" fill="#333">• CC BY-SA：知识共享与再用</text>
+    </g>
+  </g>
+  <!-- Connect to center：端点在圆周上（角度≈210°） -->
+  <path d="M 320 520 L 396 430" stroke="#ffc107" stroke-width="2" fill="none" />
+
+  <!-- Talent as Open Expertise Network -->
+  <g transform="translate(680, 430)">
+    <rect x="0" y="0" width="220" height="190" rx="10" ry="10" fill="#f8d7da" stroke="#9e2146" stroke-width="2" filter="url(#shadow)" />
+    <text x="110" y="30" class="element-title" text-anchor="middle" fill="#333">人才作为开放专业网络</text>
+    <text x="110" y="52" class="label" text-anchor="middle" fill="#333">(Open Expertise Network)</text>
+
+    <g transform="translate(20, 76)">
+      <rect x="0" y="0" width="180" height="100" rx="6" ry="6" fill="#ffffff" stroke="#9e2146" stroke-width="1" />
+      <text x="90" y="22" class="label" text-anchor="middle" fill="#333">社区声望与治理</text>
+      <text x="90" y="44" class="small-text" text-anchor="middle" fill="#333">• 声望作为核心通货</text>
+      <text x="90" y="64" class="small-text" text-anchor="middle" fill="#333">• 贡献者成长阶梯</text>
+      <text x="90" y="84" class="small-text" text-anchor="middle" fill="#333">• 跨项目协作撮合</text>
+    </g>
+  </g>
+  <!-- Connect to center：端点在圆周上（角度≈330°） -->
+  <path d="M 680 520 L 604 430" stroke="#9e2146" stroke-width="2" fill="none" />
+
+  <!-- Unified Ecosystem Portal -->
+  <g transform="translate(250, 675)">
+    <rect x="0" y="0" width="500" height="70" rx="10" ry="10" fill="#e2e3e5" stroke="#6c757d" stroke-width="2" filter="url(#shadow)" />
+    <text x="250" y="30" class="element-title" text-anchor="middle" fill="#333">统一生态门户</text>
+    <text x="250" y="52" class="label" text-anchor="middle" fill="#333">知识中心 · 项目资源库 · 基准测试平台 · 人才网络 · 社区治理</text>
+  </g>
+
+  <!-- Connect center to portal（从圆底部切点出发，避免重叠） -->
+  <path d="M 500 490 L 500 675" stroke="#6c757d" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+
+  <!-- License footer -->
+  <text x="50%" y="800" class="license" text-anchor="middle">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research 社区
+  </text>
+</svg>

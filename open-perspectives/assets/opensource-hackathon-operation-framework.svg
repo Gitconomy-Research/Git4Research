@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="900" viewBox="0 0 1100 900" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>开源大赛的“四位一体”的运营架构</title>
+  <desc>四层：运营机制层 → 社群网络层 → 内容赋能层 → 基础设施层。每层组件以等长卡片并排，左右同一Y轴；各层背景框高度较前版增加20；标题居中；底部含许可声明。</desc>
+
+  <defs>
+    <style>
+      /* 可视主标题 */
+      .main-title { font-size: 26px; font-weight: 800; fill:#0f172a; text-anchor: middle; }
+
+      /* 层背景 */
+      .layer { rx: 16; ry: 16; stroke-width: 2; }
+      .o { fill:#EDE9FE; stroke:#A78BFA; }   /* 运营机制层：淡紫 */
+      .c { fill:#E0F2FE; stroke:#60A5FA; }   /* 社群网络层：淡蓝 */
+      .t { fill:#DCFCE7; stroke:#4ADE80; }   /* 内容赋能层：淡绿 */
+      .i { fill:#FEF3C7; stroke:#F59E0B; }   /* 基础设施层：淡黄 */
+
+      /* 文本样式 */
+      .title { font-size: 18px; font-weight: 700; fill:#0f172a; text-anchor: middle; }
+      .chip-txt { font-size: 13.5px; fill:#0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .license { font-size: 12px; fill:#64748b; text-anchor: middle; }
+
+      /* 组件卡片（等长） */
+      .chip  { rx: 12; ry: 12; stroke-width: 1.5; }
+      .o-chip{ fill:#F5F3FF; stroke:#A78BFA; }
+      .c-chip{ fill:#F0F9FF; stroke:#60A5FA; }
+      .t-chip{ fill:#ECFDF5; stroke:#4ADE80; }
+      .i-chip{ fill:#FFFBEB; stroke:#F59E0B; }
+
+      /* 层间箭头 */
+      .arrow { stroke:#2563eb; stroke-width:2.2; fill:none; stroke-linecap:round; }
+    </style>
+
+    <!-- 小号箭头 -->
+    <marker id="arrowSmall" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+
+    <!-- 阴影 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 可视主标题 -->
+  <text class="main-title" x="550" y="36">开源大赛的“四位一体”的运营架构</text>
+
+  <!-- 布局参数
+       画布左右内边距：70；层容器宽：960；
+       各层高：170（较前版+20）；层间距：40；
+       组件卡片：同一Y轴 y=72；高=64；
+       3列卡片宽=288（x=24 / 336 / 648），4列卡片宽=210（x=24 / 258 / 492 / 726）
+       层顶Y：O=60，C=270，T=480，I=690
+       层中心X=550（用于箭头对齐）
+  -->
+
+  <!-- 第四层：运营机制层（3列并排） -->
+  <g transform="translate(70,60)">
+    <rect class="layer o" width="960" height="170" filter="url(#shadow)"/>
+    <text class="title" x="480" y="38">第四层：运营机制层</text>
+
+    <g transform="translate(24,72)">
+      <rect class="chip o-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">用户分层运营（新手 → 进阶 → 核心）</text>
+    </g>
+    <g transform="translate(336,72)">
+      <rect class="chip o-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">激励体系（积分、证书、推荐、实习）</text>
+    </g>
+    <g transform="translate(648,72)">
+      <rect class="chip o-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">内容日历（月度主题、技术直播、成果展）</text>
+    </g>
+  </g>
+
+  <!-- 第三层：社群网络层（3列并排） -->
+  <g transform="translate(70,270)">
+    <rect class="layer c" width="960" height="170" filter="url(#shadow)"/>
+    <text class="title" x="480" y="38">第三层：社群网络层</text>
+
+    <g transform="translate(24,72)">
+      <rect class="chip c-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">线上：GitCode组织+飞书社群</text>
+    </g>
+    <g transform="translate(336,72)">
+      <rect class="chip c-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">线下：城市站、高校俱乐部、黑客松</text>
+    </g>
+    <g transform="translate(648,72)">
+      <rect class="chip c-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">角色体系：参赛者→优秀选手→导师→组织者</text>
+    </g>
+  </g>
+
+  <!-- 第二层：内容赋能层（4列并排） -->
+  <g transform="translate(70,480)">
+    <rect class="layer t" width="960" height="170" filter="url(#shadow)"/>
+    <text class="title" x="480" y="38">第二层：内容赋能层</text>
+
+    <g transform="translate(24,72)">
+      <rect class="chip t-chip" width="210" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="105" y="32">技术课程（Git使用、项目实战）</text>
+    </g>
+    <g transform="translate(258,72)">
+      <rect class="chip t-chip" width="210" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="105" y="32">项目孵化（优秀项目持续维护）</text>
+    </g>
+    <g transform="translate(492,72)">
+      <rect class="chip t-chip" width="210" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="105" y="32">成果展示（年度峰会项目秀）</text>
+    </g>
+    <g transform="translate(726,72)">
+      <rect class="chip t-chip" width="210" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="105" y="32">导师辅导（小组制、技术问答）</text>
+    </g>
+  </g>
+
+  <!-- 第一层：基础设施层（3列并排） -->
+  <g transform="translate(70,690)">
+    <rect class="layer i" width="960" height="170" filter="url(#shadow)"/>
+    <text class="title" x="480" y="38">第一层：基础设施层</text>
+
+    <g transform="translate(24,72)">
+      <rect class="chip i-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">GitCode 官方组织（统一代码托管）</text>
+    </g>
+    <g transform="translate(336,72)">
+      <rect class="chip i-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">开发者账号体系（统一身份、成长档案）</text>
+    </g>
+    <g transform="translate(648,72)">
+      <rect class="chip i-chip" width="288" height="64" filter="url(#shadow)"/>
+      <text class="chip-txt" x="144" y="32">数据看板（用户行为、项目活跃度）</text>
+    </g>
+  </g>
+
+  <!-- 层间箭头（中心对齐，自上而下；从上一层底部到下一层顶部） -->
+  <path class="arrow" d="M550,230 L550,270" marker-end="url(#arrowSmall)"/>
+  <path class="arrow" d="M550,440 L550,480" marker-end="url(#arrowSmall)"/>
+  <path class="arrow" d="M550,650 L550,690" marker-end="url(#arrowSmall)"/>
+
+  <!-- 许可声明 -->
+  <text class="license" x="550" y="886">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

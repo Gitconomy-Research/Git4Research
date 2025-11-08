@@ -1,0 +1,171 @@
+<svg width="1200" height="960" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" viewBox="0 0 1200 960">
+
+  <rect width="1200" height="900" fill="#ffffff" />
+
+  <defs>
+    <marker id="arrow-main" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#2563EB">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+    <marker id="arrow-highlight" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#FACC15">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <style>
+    .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+    .title-text { font-size: 16px; font-weight: bold; fill: #111827; }
+    .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+    .small-text { font-size: 11px; font-weight: normal; fill: #6B7280; }
+    .license-text { font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+
+    /* 规范 Sec 3: 元素样式 */
+    .card-background { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; rx: 15; }
+
+    /* 分支与提交 */
+    .line-main { stroke: #60A5FA; stroke-width: 3; fill: none; }
+    .commit-main { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2; }
+    .label-main { fill: #60A5FA; }
+
+    .line-feature { stroke: #34D399; stroke-width: 2; fill: none; }
+    .commit-feature { fill: #F0FDF4; stroke: #34D399; stroke-width: 2; }
+    .label-feature { fill: #34D399; }
+
+    .commit-merge { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2; }
+
+    .label-head { fill: #FACC15; }
+
+    .connector { stroke: #2563EB; stroke-width: 2; fill: none; marker-end: url(#arrow-main); }
+    .connector-dashed { stroke: #2563EB; stroke-width: 2; fill: none; stroke-dasharray: 5, 5; marker-end: url(#arrow-main); }
+  </style>
+
+  <text x="600" y="40" class="main-title-text">Git Merge 合并策略 (Fast-Forward vs Three-Way)</text>
+
+  <g id="fast-forward-section" transform="translate(50, 80)">
+    <rect class="card-background" width="1100" height="350" />
+
+    <text x="30" y="40" class="title-text">1. Fast-Forward (快进合并)</text>
+    <text x="30" y="65" class="body-text">
+      当目标分支 (master) 在特性分支 (feature) 创建后没有产生任何新的提交时发生。
+    </text>
+    <text x="30" y="85" class="body-text">
+      结果：Git 不会创建新的合并提交，只是简单地将 master 分支的指针“快进”到 feature 分支的最新提交。历史保持线性。
+    </text>
+
+    <g id="ff-before" transform="translate(100, 120)">
+      <text x="130" y="30" class="title-text">合并前 (Before)</text>
+      <text x="110" y="50" class="small-text">(执行: git checkout master)</text>
+
+      <circle cx="100" cy="150" r="15" class="commit-main" />
+      <text x="93" y="155" class="small-text">C1</text>
+      <circle cx="250" cy="150" r="15" class="commit-feature" />
+      <text x="243" y="155" class="small-text">C2</text>
+
+      <path d="M 115 150 L 235 150" class="line-feature" />
+
+      <rect x="70" y="100" width="60" height="20" rx="3" class="label-main" />
+      <text x="78" y="115" font-size="12" fill="white">master</text>
+
+      <rect x="220" y="100" width="60" height="20" rx="3" class="label-feature" />
+      <text x="228" y="115" font-size="12" fill="white">feature</text>
+
+      <rect x="0" y="100" width="60" height="20" rx="3" class="label-head" />
+      <text x="10" y="115" font-size="12" fill="#374151" font-weight="bold">HEAD</text>
+      <path d="M 30 120 L 30 140 L 70 140" stroke="#FACC15" stroke-width="2" fill="none" marker-end="url(#arrow-highlight)" />
+    </g>
+
+    <path d="M 450 230 L 550 230" class="connector" />
+    <text x="460" y="220" class="body-text" fill="#2563EB" font-weight="bold">git merge feature</text>
+
+    <g id="ff-after" transform="translate(650, 120)">
+      <text x="130" y="30" class="title-text">合并后 (After)</text>
+      <text x="110" y="50" class="small-text">(master 指针被快进)</text>
+
+      <circle cx="100" cy="150" r="15" class="commit-main" />
+      <text x="93" y="155" class="small-text">C1</text>
+      <circle cx="250" cy="150" r="15" class="commit-main" /> <text x="243" y="155" class="small-text">C2</text>
+
+      <path d="M 115 150 L 235 150" class="line-main" /> <rect x="220" y="100" width="60" height="20" rx="3" class="label-main" />
+      <text x="228" y="115" font-size="12" fill="white">master</text>
+
+      <rect x="290" y="100" width="60" height="20" rx="3" class="label-feature" />
+      <text x="298" y="115" font-size="12" fill="white">feature</text>
+
+      <rect x="150" y="100" width="60" height="20" rx="3" class="label-head" />
+      <text x="160" y="115" font-size="12" fill="#374151" font-weight="bold">HEAD</text>
+      <path d="M 180 120 L 180 140 L 220 140" stroke="#FACC15" stroke-width="2" fill="none" marker-end="url(#arrow-highlight)" />
+    </g>
+  </g>
+
+  <g id="three-way-section" transform="translate(50, 480)">
+    <rect class="card-background" width="1100" height="420" />
+
+    <text x="30" y="40" class="title-text">2. Three-Way Merge (三方合并)</text>
+    <text x="30" y="65" class="body-text">
+      当目标分支 (master) 和特性分支 (feature) 在分叉后，各自都有了新的提交时发生。
+    </text>
+    <text x="30" y="85" class="body-text">
+      结果：Git 会找到三个点（共同祖先C1、master终点C2、feature终点C3），并创建一个全新的“合并提交”(M1)。历史变得非线性。
+    </text>
+
+    <g id="3way-before" transform="translate(100, 120)">
+      <text x="130" y="30" class="title-text">合并前 (Before)</text>
+      <text x="110" y="50" class="small-text">(分支已各自发展)</text>
+
+      <circle cx="100" cy="150" r="15" class="commit-main" />
+      <text x="93" y="155" class="small-text">C1</text>
+      <circle cx="250" cy="150" r="15" class="commit-main" />
+      <text x="243" y="155" class="small-text">C2</text>
+      <circle cx="250" cy="220" r="15" class="commit-feature" />
+      <text x="243" y="225" class="small-text">C3</text>
+
+      <path d="M 115 150 L 235 150" class="line-main" />
+      <path d="M 115 158 L 235 212" class="line-feature" />
+
+      <rect x="220" y="100" width="60" height="20" rx="3" class="label-main" />
+      <text x="228" y="115" font-size="12" fill="white">master</text>
+
+      <rect x="220" y="250" width="60" height="20" rx="3" class="label-feature" />
+      <text x="228" y="265" font-size="12" fill="white">feature</text>
+
+      <rect x="150" y="100" width="60" height="20" rx="3" class="label-head" />
+      <text x="160" y="115" font-size="12" fill="#374151" font-weight="bold">HEAD</text>
+      <path d="M 180 120 L 180 140 L 220 140" stroke="#FACC15" stroke-width="2" fill="none" marker-end="url(#arrow-highlight)" />
+    </g>
+
+    <path d="M 450 230 L 550 230" class="connector" />
+    <text x="460" y="220" class="body-text" fill="#2563EB" font-weight="bold">git merge feature</text>
+
+    <g id="3way-after" transform="translate(650, 120)">
+      <text x="130" y="30" class="title-text">合并后 (After)</text>
+      <text x="110" y="50" class="small-text">(创建了新的合并提交 M1)</text>
+
+      <circle cx="100" cy="150" r="15" class="commit-main" />
+      <text x="93" y="155" class="small-text">C1</text>
+      <circle cx="250" cy="150" r="15" class="commit-main" />
+      <text x="243" y="155" class="small-text">C2</text>
+      <circle cx="250" cy="220" r="15" class="commit-feature" />
+      <text x="243" y="225" class="small-text">C3</text>
+      <circle cx="350" cy="150" r="15" class="commit-merge" />
+      <text x="343" y="155" class="small-text">M1</text>
+
+      <path d="M 115 150 L 235 150" class="line-main" />
+      <path d="M 115 158 L 235 212" class="line-feature" />
+      <path d="M 265 150 L 335 150" class="line-main" />
+      <path d="M 265 212 L 335 158" class="connector-dashed" />
+
+      <rect x="320" y="100" width="60" height="20" rx="3" class="label-main" />
+      <text x="328" y="115" font-size="12" fill="white">master</text>
+
+      <rect x="220" y="250" width="60" height="20" rx="3" class="label-feature" />
+      <text x="228" y="265" font-size="12" fill="white">feature</text>
+
+      <rect x="250" y="100" width="60" height="20" rx="3" class="label-head" />
+      <text x="260" y="115" font-size="12" fill="#374151" font-weight="bold">HEAD</text>
+      <path d="M 280 120 L 280 140 L 320 140" stroke="#FACC15" stroke-width="2" fill="none" marker-end="url(#arrow-highlight)" />
+    </g>
+  </g>
+
+  <text x="600" y="940" class="license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

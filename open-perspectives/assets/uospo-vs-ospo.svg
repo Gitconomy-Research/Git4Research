@@ -1,0 +1,113 @@
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'">
+    <defs>
+        <style>
+            .title { font-size: 26px; font-weight: bold; text-anchor: middle; fill: #111827; }
+            .subtitle { font-size: 16px; font-weight: normal; text-anchor: middle; fill: #4b5563;}
+            .header { font-size: 20px; font-weight: 600; text-anchor: middle; fill: #ffffff; }
+            .dim-label { font-size: 14px; font-weight: 600; text-anchor: middle; fill: #4b5563; }
+            .item-text { font-size: 15px; font-weight: 500; }
+            .item-subtext { font-size: 13px; fill: #4b5563; }
+            .license-text { font-size: 11px; text-anchor: middle; fill: #6b7280; }
+
+            /* Corporate Theme */
+            .corp-bg { fill: #eff6ff; }
+            .corp-header-bg { fill: #2563eb; }
+            .corp-icon { fill: #2563eb; }
+            .corp-text { fill: #1e40af; }
+
+            /* University Theme */
+            .univ-bg { fill: #f0fdf4; }
+            .univ-header-bg { fill: #16a34a; }
+            .univ-icon { fill: #16a34a; }
+            .univ-text { fill: #166534; }
+        </style>
+    </defs>
+
+    <rect x="0" y="0" width="100%" height="100%" fill="#f9fafb" />
+
+    <rect x="0" y="130" width="400" height="520" class="corp-bg" rx="10"/>
+    <rect x="500" y="130" width="400" height="520" class="univ-bg" rx="10"/>
+
+    <text x="450" y="40" class="title">企业OSPO vs. 高校OSPO</text>
+    <text x="450" y="65" class="subtitle">（核心差异对比）</text>
+
+
+    <rect x="0" y="80" width="400" height="50" class="corp-header-bg" rx="10"/>
+    <text x="200" y="110" class="header">企业 OSPO</text>
+
+    <rect x="500" y="80" width="400" height="50" class="univ-header-bg" rx="10"/>
+    <text x="700" y="110" class="header">高校 OSPO</text>
+
+    <g transform="translate(0, 200)">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" transform="translate(438, -12) scale(1.2)" fill="#4b5563"/>
+        <text x="450" y="25" class="dim-label">核心目标</text>
+
+        <g transform="translate(50, 0)">
+            <path class="corp-icon" d="M20 12l-2.5-4h-3.34c-.4.73-1.02 1.35-1.78 1.78L15 15.34V20h5v-8z M5 20h5v-4.66l2.56-5.56C11.83 9.4 11.21 8.78 10.84 8H7.5L5 12v8z" />
+            <text x="35" y="8" class="item-text corp-text">商业竞争力</text>
+            <text x="35" y="30" class="item-subtext">利润、市场份额、工程效率</text>
+        </g>
+
+        <g transform="translate(550, 0)">
+            <path class="univ-icon" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            <text x="35" y="8" class="item-text univ-text">公共利益与学术使命</text>
+            <text x="35" y="30" class="item-subtext">知识传播、教育公平</text>
+        </g>
+    </g>
+
+    <g transform="translate(0, 310)">
+        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" transform="translate(438, -12) scale(1.2)" fill="#4b5563"/>
+        <text x="450" y="25" class="dim-label">IP 管理</text>
+
+        <g transform="translate(50, 0)">
+            <path class="corp-icon" d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/>
+            <text x="35" y="8" class="item-text corp-text">战略保护与风险控制</text>
+            <text x="35" y="30" class="item-subtext">服务于商业模式</text>
+        </g>
+
+        <g transform="translate(550, 0)">
+            <path class="univ-icon" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6z M13 9V3.5L18.5 9H13z"/>
+            <text x="35" y="8" class="item-text univ-text">最大化传播与影响</text>
+            <text x="35" y="30" class="item-subtext">推广开放许可 (CC, MIT)</text>
+        </g>
+    </g>
+
+    <g transform="translate(0, 420)">
+        <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z M20 6H4v2h16V6zm0 10H4v2h16v-2z" transform="translate(438, -12) scale(1.2)" fill="#4b5563"/>
+        <text x="450" y="25" class="dim-label">激励体系</text>
+
+        <g transform="translate(50, 0)">
+            <path class="corp-icon" d="M11.8 10.9C9.51 10.42 9 9.77 9 8.77c0-1.02.8-1.83 2.15-1.98L12 2h-1.42L9.12 6.3C8.06 6.55 7 7.42 7 8.77c0 1.47 1.25 2.62 3.1 3.08l2.9.7c2.29.54 3 1.34 3 2.39 0 1.23-.93 2.1-2.4 2.25L12 22h1.35l2.4-4.5c1.2-.28 2.25-1.15 2.25-2.5 0-1.6-1.55-2.8-3.7-3.32l-2.5-.58z"/>
+            <text x="35" y="8" class="item-text corp-text">经济激励与职业晋升</text>
+            <text x="35" y="30" class="item-subtext">薪酬、奖金、绩效挂钩</text>
+        </g>
+
+        <g transform="translate(550, 0)">
+            <path class="univ-icon" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"/>
+            <text x="35" y="8" class="item-text univ-text">学术声望与同行认可</text>
+            <text x="35" y="30" class="item-subtext">职称、荣誉、项目资助</text>
+        </g>
+    </g>
+
+    <g transform="translate(0, 530)">
+        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" transform="translate(438, -12) scale(1.2)" fill="#4b5563"/>
+        <text x="450" y="25" class="dim-label">核心受众</text>
+
+        <g transform="translate(50, 0)">
+            <path class="corp-icon" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+            <text x="35" y="8" class="item-text corp-text">内部员工与商业伙伴</text>
+            <text x="35" y="30" class="item-subtext">工程师、法务、生态伙伴</text>
+        </g>
+
+        <g transform="translate(550, 0)">
+            <path class="univ-icon" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            <text x="35" y="8" class="item-text univ-text">校内师生与学术社群</text>
+            <text x="35" y="30" class="item-subtext">研究人员、学生、图书馆员</text>
+        </g>
+    </g>
+
+    <text x="50%" y="680" class="license-text">
+        本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+    </text>
+
+</svg>

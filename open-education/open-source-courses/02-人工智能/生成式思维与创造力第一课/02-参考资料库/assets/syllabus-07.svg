@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="840" viewBox="0 0 800 840">
+  <defs>
+    <!-- 渐变和滤镜定义 -->
+    <radialGradient id="center-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#7b1fa2" stop-opacity="1" />
+      <stop offset="100%" stop-color="#4a148c" stop-opacity="1" />
+    </radialGradient>
+
+    <linearGradient id="dao-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a148c" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00796b" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="fa-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a148c" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1976d2" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="shu-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a148c" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f57c00" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="qi-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a148c" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c2185b" stop-opacity="0.6" />
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+
+    <linearGradient id="output-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f51b5" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#5c6bc0" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="400" y="30" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="20" fill="#4a148c" text-anchor="middle" font-weight="bold">生成式思维与创造力第一课高强度训练营——雷达知识图谱</text>
+
+  <g transform="translate(400, 400)">
+    <!-- 绘制雷达背景 -->
+    <circle cx="0" cy="0" r="300" fill="none" stroke="#e0e0e0" stroke-width="1" opacity="0.7"/>
+    <circle cx="0" cy="0" r="225" fill="none" stroke="#e0e0e0" stroke-width="1" opacity="0.7"/>
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#e0e0e0" stroke-width="1" opacity="0.8"/>
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#e0e0e0" stroke-width="1" opacity="0.9"/>
+
+    <!-- 绘制十字轴线 -->
+    <line x1="0" y1="-300" x2="0" y2="300" stroke="#e0e0e0" stroke-width="1.5" opacity="0.9"/>
+    <line x1="-300" y1="0" x2="300" y2="0" stroke="#e0e0e0" stroke-width="1.5" opacity="0.9"/>
+
+    <!-- 道轴 - 上方 -->
+    <line x1="0" y1="0" x2="0" y2="-300" stroke="#00796b" stroke-width="2" opacity="0.8"/>
+    <text x="0" y="-315" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#00796b" text-anchor="middle" font-weight="bold">道</text>
+    <text x="0" y="-335" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle">思维模型与方法论</text>
+
+    <!-- 道轴上的知识点 -->
+    <!-- 第一级知识点 -->
+    <text x="0" y="-150" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle" font-weight="bold">第一性原理</text>
+
+    <text x="-35" y="-120" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle" font-weight="bold">MECE原则</text>
+
+    <text x="45" y="-120" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle" font-weight="bold">系统思维</text>
+
+    <!-- 第二级知识点 -->
+    <text x="0" y="-225" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle" font-weight="bold">JTBD框架</text>
+
+    <text x="-50" y="-195" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle" font-weight="bold">HMW方法</text>
+
+    <text x="50" y="-195" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#00796b" text-anchor="middle" font-weight="bold">批判性思维</text>
+
+    <!-- 连接线 -->
+    <line x1="0" y1="-60" x2="0" y2="-141" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-165" x2="0" y2="-216" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-153" x2="-35" y2="-123" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-153" x2="45" y2="-123" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-228" x2="-50" y2="-198" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="-228" x2="50" y2="-198" stroke="#00796b" stroke-width="1" opacity="0.6"/>
+
+    <!-- 渐变填充 -->
+    <path d="M 0 0 L 0 -228 L -50 -198 L -35 -123 L 0 -153 L 45 -123 L 50 -198 L 0 -228 Z" fill="url(#dao-gradient)" fill-opacity="0.15"/>
+
+    <!-- 法轴 - 右方 -->
+    <line x1="0" y1="0" x2="300" y2="0" stroke="#1976d2" stroke-width="2" opacity="0.8"/>
+    <text x="355" y="0" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#1976d2" text-anchor="middle" font-weight="bold">法</text>
+    <text x="355" y="20" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle">学习科学与元认知</text>
+
+    <!-- 法轴上的知识点 -->
+    <!-- 第一级知识点 -->
+    <text x="150" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle" font-weight="bold">敏捷学习</text>
+
+    <text x="135" y="-37" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle" font-weight="bold">元认知实践</text>
+
+    <text x="135" y="43" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle" font-weight="bold">集中练习</text>
+
+    <!-- 第二级知识点 -->
+    <text x="230" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle" font-weight="bold">吉布斯循环</text>
+
+    <text x="205" y="-47" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle" font-weight="bold">快速复盘</text>
+
+    <text x="205" y="53" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#1976d2" text-anchor="middle" font-weight="bold">创造节奏</text>
+
+    <!-- 连接线 -->
+    <line x1="60" y1="0" x2="140" y2="0" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="160" y1="0" x2="220" y2="0" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="150" y1="0" x2="135" y2="-35" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="150" y1="0" x2="135" y2="40" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="230" y1="0" x2="205" y2="-45" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+    <line x1="230" y1="0" x2="205" y2="50" stroke="#1976d2" stroke-width="1" opacity="0.6"/>
+
+    <!-- 渐变填充 -->
+    <path d="M 0 0 L 150 0 L 230 0 L 205 -50 L 135 -40 L 135 40 L 205 50 Z" fill="url(#fa-gradient)" fill-opacity="0.15"/>
+
+    <!-- 术轴 - 下方 -->
+    <line x1="0" y1="0" x2="0" y2="300" stroke="#f57c00" stroke-width="2" opacity="0.8"/>
+    <text x="0" y="325" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#f57c00" text-anchor="middle" font-weight="bold">术</text>
+    <text x="0" y="345" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle">AI技术与开发</text>
+
+    <!-- 术轴上的知识点 -->    <!-- 渐变和滤镜定义 -->
+    <!-- 第一级知识点 -->
+    <text x="0" y="156" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle" font-weight="bold">Python基础</text>
+
+    <text x="-35" y="126" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle" font-weight="bold">API调用</text>
+
+    <text x="45" y="126" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle" font-weight="bold">提示工程</text>
+
+    <!-- 第二级知识点 -->
+    <text x="0" y="231" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle" font-weight="bold">自注意力机制</text>
+
+    <text x="-50" y="201" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle" font-weight="bold">LoRA微调</text>
+
+    <text x="50" y="201" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#f57c00" text-anchor="middle" font-weight="bold">数据可视化</text>
+
+    <!-- 连接线 -->
+    <line x1="0" y1="60" x2="0" y2="148" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="165" x2="0" y2="223" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="153" x2="-35" y2="128" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="153" x2="45" y2="128" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="228" x2="-50" y2="203" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+    <line x1="0" y1="228" x2="50" y2="203" stroke="#f57c00" stroke-width="1" opacity="0.6"/>
+
+    <!-- 渐变填充 -->
+    <path d="M 0 0 L 0 153 L -35 123 L -50 198 L 0 228 L 50 198 L 45 123 L 0 153 Z" fill="url(#shu-gradient)" fill-opacity="0.15"/>
+
+    <!-- 器轴 - 左方 -->
+    <line x1="0" y1="0" x2="-300" y2="0" stroke="#c2185b" stroke-width="2" opacity="0.8"/>
+    <text x="-350" y="0" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="18" fill="#c2185b" text-anchor="middle" font-weight="bold">器</text>
+    <text x="-350" y="20" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle">整合与产出</text>
+
+    <!-- 器轴上的知识点 -->
+    <!-- 第一级知识点 -->
+    <text x="-150" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold">敏捷开发</text>
+
+    <text x="-135" y="-37" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold">项目管理</text>
+
+    <text x="-135" y="43" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold">快速原型</text>
+
+    <!-- 第二级知识点 -->
+    <text x="-230" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold">Web应用</text>
+
+    <text x="-205" y="-47" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold">Streamlit</text>
+
+    <text x="-205" y="53" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" fill="#c2185b" text-anchor="middle" font-weight="bold">交互设计</text>
+
+    <!-- 连接线 -->
+    <line x1="-60" y1="0" x2="-140" y2="0" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-160" y1="0" x2="-220" y2="0" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-150" y1="0" x2="-135" y2="-35" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-150" y1="0" x2="-135" y2="40" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-230" y1="0" x2="-205" y2="-45" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+    <line x1="-230" y1="0" x2="-205" y2="50" stroke="#c2185b" stroke-width="1" opacity="0.6"/>
+
+    <!-- 渐变填充 -->
+    <path d="M 0 0 L -150 0 L -230 0 L -205 -50 L -135 -40 L -135 40 L -205 50 Z" fill="url(#qi-gradient)" fill-opacity="0.15"/>
+
+    <!-- 三大产出放在雷达内  -->
+    <!-- 个人AI项目 - 右下角 -->
+    <g transform="translate(170, 170)">
+      <circle cx="0" cy="0" r="40" fill="white" stroke="#3f51b5" stroke-width="2" filter="url(#shadow)"/>
+      <text x="0" y="-5" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" fill="#3f51b5" text-anchor="middle" font-weight="bold">个人AI</text>
+      <text x="0" y="12" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" fill="#3f51b5" text-anchor="middle" font-weight="bold">项目</text>
+    </g>
+
+    <!-- 证据组合包 - 左下角 -->
+    <g transform="translate(-170, 170)">
+      <circle cx="0" cy="0" r="40" fill="white" stroke="#3f51b5" stroke-width="2" filter="url(#shadow)"/>
+      <text x="0" y="-5" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" fill="#3f51b5" text-anchor="middle" font-weight="bold">证据</text>
+      <text x="0" y="12" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" fill="#3f51b5" text-anchor="middle" font-weight="bold">组合包</text>
+    </g>
+
+    <!-- 认知操作系统1.0 - 右上角 -->
+    <g transform="translate(170, -170)">
+      <circle cx="0" cy="0" r="40" fill="white" stroke="#3f51b5" stroke-width="2" filter="url(#sha#dow)"/>
+      <text x="0" y="-12" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#3f51b5" text-anchor="middle" font-weight="bold">认知</text>
+      <text x="0" y="3" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#3f51b5" text-anchor="middle" font-weight="bold">操作系统</text>
+      <text x="0" y="18" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10" fill="#3f51b5" text-anchor="middle" font-weight="bold">1.0</text>
+    </g>
+
+    <!-- 产出与各轴的连接线 -->
+    <!-- 个人AI项目连接线 -->
+    <line x1="150" y1="0" x2="170" y2="150" stroke="#3f51b5" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+    <line x1="0" y1="150" x2="150" y2="170" stroke="#3f51b5" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+
+    <!-- 证据组合包连接线 -->
+    <line x1="-150" y1="0" x2="-170" y2="150" stroke="#3f51b5" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+    <line x1="0" y1="150" x2="-150" y2="170" stroke="#3f51b5" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+
+    <!-- 认知操作系统1.0连接线 -->
+    <line x1="150" y1="0" x2="170" y2="-150" stroke="#3f51b5" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+    <line x1="0" y1="-150" x2="150" y2="-170" stroke="#3f51b5" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+
+    <!-- 绘制中心节点 -->
+    <circle cx="0" cy="0" r="60" fill="url(#center-glow)" stroke="#7b1fa2" stroke-width="2" filter="url(#shadow)"/>
+    <text x="0" y="-10" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">高强度训练营</text>
+    <text x="0" y="10" font-family="Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" fill="white" text-anchor="middle" font-weight="bold">5天全栈打造</text>
+  </g>
+
+  <!-- 许可 -->
+  <text x="50%" y="820" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

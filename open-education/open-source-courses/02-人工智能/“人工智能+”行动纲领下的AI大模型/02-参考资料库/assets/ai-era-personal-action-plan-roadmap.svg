@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" viewBox="0 0 1200 1020" xmlns="http://www.w3.org/2000/svg"
+     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', Arial, sans-serif">
+
+  <!-- ======= Defs: filters, markers, styles ======= -->
+  <defs>
+    <!-- Soft shadow -->
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Arrowheads -->
+    <marker id="arrowRight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/>
+    </marker>
+    <marker id="arrowUp" viewBox="0 0 10 10" refX="5" refY="2" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0,10 L5,0 L10,10 z" fill="#0f172a"/>
+    </marker>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="8" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M0,0 L5,10 L10,0 z" fill="#0f172a"/>
+    </marker>
+
+    <!-- Styles -->
+    <style><![CDATA[
+      .title { font-size: 28px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-size: 16px; fill: #475569; }
+      .kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; fill: #334155; }
+      .panel-title { font-size: 20px; font-weight: 700; fill: #0b1220; }
+      .item { font-size: 14px; fill: #0b1220; }
+      .chip { font-size: 12px; fill: #0b1220; }
+      .legend { font-size: 12px; fill: #334155; }
+      .license { font-size: 12px; fill: #334155; }
+    ]]></style>
+  </defs>
+
+  <!-- ======= Background ======= -->
+  <rect x="0" y="0" width="1200" height="900" fill="#f8fafc"/>
+
+  <!-- ======= Header ======= -->
+  <g transform="translate(0,56)">
+    <text class="title" x="600" text-anchor="middle">行动纲领：在“人工智能+”时代规划你的路线图</text>
+    <text class="subtitle" x="600" y="32" text-anchor="middle">北极星目标 → 五大支柱 → 路线与里程碑（含KPI与反馈闭环）</text>
+  </g>
+
+  <!-- ======= Top: 北极星目标 ======= -->
+  <g transform="translate(120,120)" filter="url(#soft)">
+    <rect x="0" y="0" rx="16" ry="16" width="960" height="120" fill="#E0F2FE"/>
+    <g transform="translate(18,30)">
+      <text class="kicker">POLARIS · 北极星目标</text>
+      <text class="panel-title" y="28">对齐国家/区域战略与组织使命，明确价值与边界</text>
+      <g transform="translate(0,56)">
+        <circle cx="6" cy="6" r="4" fill="#0b1220"/><text class="item" x="18" y="10">产业价值：效率提升、成本下降、质量稳定与安全可控</text>
+        <circle cx="380" cy="6" r="4" fill="#0b1220"/><text class="item" x="392" y="10">社会价值：普惠、绿色、可信与可持续</text>
+        <circle cx="640" cy="6" r="4" fill="#0b1220"/><text class="item" x="652" y="10">科研突破：模型、数据、算力与方法原创进展</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======= Middle: 五大支柱（纵向） ======= -->
+  <!-- 柱子容器背景 -->
+  <g transform="translate(120,270)">
+    <rect x="0" y="0" rx="16" ry="16" width="960" height="270" fill="#ffffff" stroke="#e5e7eb"/>
+  </g>
+
+  <!-- 5 个并列“柱子” -->
+  <!-- 1. 政策与合规 -->
+  <g transform="translate(140,290)" filter="url(#soft)">
+    <rect x="0" y="0" rx="14" ry="14" width="170" height="230" fill="#FEF3C7"/>
+    <g transform="translate(12,40)">
+      <text class="kicker">PILLAR 1</text>
+      <text class="panel-title" y="26">政策与合规</text>
+      <g transform="translate(0,56)">
+        <rect x="0" y="-14" rx="10" ry="10" width="150" height="24" fill="#fff"/><text class="chip" x="10" y="2">“人工智能+”行动</text>
+        <rect x="0" y="16" rx="10" ry="10" width="120" height="24" fill="#fff"/><text class="chip" x="10" y="32">数据主权/跨境</text>
+        <rect x="0" y="46" rx="10" ry="10" width="120" height="24" fill="#fff"/><text class="chip" x="10" y="62">责任与伦理</text>
+        <rect x="0" y="76" rx="10" ry="10" width="120" height="24" fill="#fff"/><text class="chip" x="10" y="92">安全与合规</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. 数据与算力 -->
+  <g transform="translate(340,290)" filter="url(#soft)">
+    <rect x="0" y="0" rx="14" ry="14" width="170" height="230" fill="#E8F5E9"/>
+    <g transform="translate(12,40)">
+      <text class="kicker">PILLAR 2</text>
+      <text class="panel-title" y="26">数据与算力</text>
+      <g transform="translate(0,56)">
+        <rect x="0" y="-14" rx="10" ry="10" width="150" height="24" fill="#fff"/><text class="chip" x="10" y="2">数据治理/标注/质量</text>
+        <rect x="0" y="16" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="32">向量库/检索/RAG</text>
+        <rect x="0" y="46" rx="10" ry="10" width="120" height="24" fill="#fff"/><text class="chip" x="10" y="62">云/边/端算力</text>
+        <rect x="0" y="76" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="92">成本/能效/碳核算</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 3. 模型与算法 -->
+  <g transform="translate(540,290)" filter="url(#soft)">
+    <rect x="0" y="0" rx="14" ry="14" width="170" height="230" fill="#E0F2FE"/>
+    <g transform="translate(12,40)">
+      <text class="kicker">PILLAR 3</text>
+      <text class="panel-title" y="26">模型与算法</text>
+      <g transform="translate(0,56)">
+        <rect x="0" y="-14" rx="10" ry="10" width="150" height="24" fill="#fff"/><text class="chip" x="10" y="2">Transformer/Mamba/MoE</text>
+        <rect x="0" y="16" rx="10" ry="10" width="130" height="24" fill="#fff"/><text class="chip" x="10" y="32">对齐：RLHF/DPO</text>
+        <rect x="0" y="46" rx="10" ry="10" width="120" height="24" fill="#fff"/><text class="chip" x="10" y="62">蒸馏/量化/剪枝</text>
+        <rect x="0" y="76" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="92">评测Bench/红队</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 4. 工程与MLOps -->
+  <g transform="translate(740,290)" filter="url(#soft)">
+    <rect x="0" y="0" rx="14" ry="14" width="170" height="230" fill="#FCE7F3"/>
+    <g transform="translate(12,40)">
+      <text class="kicker">PILLAR 4</text>
+      <text class="panel-title" y="26">工程与 MLOps</text>
+      <g transform="translate(0,56)">
+        <rect x="0" y="-14" rx="10" ry="10" width="130" height="24" fill="#fff"/><text class="chip" x="10" y="2">CI/CD/灰度发布</text>
+        <rect x="0" y="16" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="32">监控/观测/追踪</text>
+        <rect x="0" y="46" rx="10" ry="10" width="150" height="24" fill="#fff"/><text class="chip" x="10" y="62">可重复性与数据谱系</text>
+        <rect x="0" y="76" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="92">安全加固与合规</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 5. 应用与场景 -->
+  <g transform="translate(940,290)" filter="url(#soft)">
+    <rect x="0" y="0" rx="14" ry="14" width="170" height="230" fill="#F3E8FF"/>
+    <g transform="translate(12,40)">
+      <text class="kicker">PILLAR 5</text>
+      <text class="panel-title" y="26">应用与场景</text>
+      <g transform="translate(0,56)">
+        <rect x="0" y="-14" rx="10" ry="10" width="150" height="24" fill="#fff"/><text class="chip" x="10" y="2">行业Copilot/Agent</text>
+        <rect x="0" y="16" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="32">智能搜索与RAG</text>
+        <rect x="0" y="46" rx="10" ry="10" width="160" height="24" fill="#fff"/><text class="chip" x="10" y="62">多模态：语音/图像/视频</text>
+        <rect x="0" y="76" rx="10" ry="10" width="140" height="24" fill="#fff"/><text class="chip" x="10" y="92">人机协作与AIGC</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 支柱 → 路线图 的直线连接 -->
+  <line x1="225" y1="520" x2="225" y2="590" stroke="#0f172a" stroke-width="2"/>
+  <line x1="425" y1="520" x2="425" y2="590" stroke="#0f172a" stroke-width="2"/>
+  <line x1="625" y1="520" x2="625" y2="590" stroke="#0f172a" stroke-width="2"/>
+  <line x1="825" y1="520" x2="825" y2="590" stroke="#0f172a" stroke-width="2"/>
+  <line x1="1025" y1="520" x2="1025" y2="590" stroke="#0f172a" stroke-width="2"/>
+
+  <!-- ======= Bottom: 路线与里程碑时间线 ======= -->
+  <g transform="translate(120,600)">
+    <!-- Timeline rail -->
+    <rect x="0" y="0" rx="12" ry="12" width="960" height="220" fill="#ffffff" stroke="#e5e7eb"/>
+    <g transform="translate(24,18)">
+      <text class="kicker">ROADMAP · 路线与里程碑</text>
+
+      <!-- Horizontal axis -->
+      <line x1="0" y1="46" x2="900" y2="46" stroke="#0f172a" stroke-width="2" marker-end="url(#arrowRight)"/>
+
+      <!-- Milestone ticks & labels -->
+      <g>
+        <line x1="0" y1="40" x2="0" y2="52" stroke="#0f172a" stroke-width="2"/>
+        <text class="legend" x="0" y="70">0–3 个月</text>
+
+        <line x1="240" y1="40" x2="240" y2="52" stroke="#0f172a" stroke-width="2"/>
+        <text class="legend" x="240" y="70">3–6 个月</text>
+
+        <line x1="480" y1="40" x2="480" y2="52" stroke="#0f172a" stroke-width="2"/>
+        <text class="legend" x="480" y="70">6–12 个月</text>
+
+        <line x1="720" y1="40" x2="720" y2="52" stroke="#0f172a" stroke-width="2"/>
+        <text class="legend" x="720" y="70">12–24 个月</text>
+      </g>
+
+      <!-- Swimlanes: 组织/技术/场景 -->
+      <g transform="translate(0,92)">
+        <text class="kicker">组织</text>
+        <rect x="0" y="8" rx="10" ry="10" width="200" height="32" fill="#FEF3C7"/><text class="item" x="10" y="28">成立AI+工作组、OSPO、数据治理小组</text>
+        <rect x="240" y="8" rx="10" ry="10" width="200" height="32" fill="#FEF3C7"/><text class="item" x="250" y="28">制度与流程上云、合规与伦理框架</text>
+        <rect x="480" y="8" rx="10" ry="10" width="200" height="32" fill="#FEF3C7"/><text class="item" x="490" y="28">指标看板与风险预案（红队）</text>
+        <rect x="720" y="8" rx="10" ry="10" width="200" height="32" fill="#FEF3C7"/><text class="item" x="730" y="28">组织再设计：人机协作与激励</text>
+      </g>
+
+      <g transform="translate(0,144)">
+        <text class="kicker">技术</text>
+        <rect x="0" y="8" rx="10" ry="10" width="200" height="32" fill="#E0F2FE"/><text class="item" x="10" y="28">建成最小可用栈：RAG + 评测</text>
+        <rect x="240" y="8" rx="10" ry="10" width="200" height="32" fill="#E0F2FE"/><text class="item" x="250" y="28">上线对齐与监控，流水线MLOps</text>
+        <rect x="480" y="8" rx="10" ry="10" width="200" height="32" fill="#E0F2FE"/><text class="item" x="490" y="28">轻量化推理与多模态扩展</text>
+        <rect x="720" y="8" rx="10" ry="10" width="200" height="32" fill="#E0F2FE"/><text class="item" x="730" y="28">规模化与治理：SLA/成本/碳</text>
+      </g>
+
+      <g transform="translate(0,196)">
+        <text class="kicker">场景</text>
+        <rect x="0" y="8" rx="10" ry="10" width="200" height="32" fill="#F3E8FF"/><text class="item" x="10" y="28">选3个标杆场景：客服、质检、知识搜索</text>
+        <rect x="240" y="8" rx="10" ry="10" width="200" height="32" fill="#F3E8FF"/><text class="item" x="250" y="28">试点落地与AB测试，闭环指标</text>
+        <rect x="480" y="8" rx="10" ry="10" width="200" height="32" fill="#F3E8FF"/><text class="item" x="490" y="28">行业Copilot与Agent编排</text>
+        <rect x="720" y="8" rx="10" ry="10" width="200" height="32" fill="#F3E8FF"/><text class="item" x="730" y="28">规模复制到更多业务域</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ======= KPI 面板 ======= -->
+  <g transform="translate(120,940)">
+    <rect x="0" y="-54" rx="10" ry="10" width="720" height="44" fill="#ffffff" stroke="#e5e7eb"/>
+    <g transform="translate(12,-38)">
+      <text class="kicker">KPI · 关键评估指标</text>
+      <text class="item" y="22">准确率/召回率 · 幻觉率 · 平均响应时延 · 成本/1000调用 · 可解释性 · 满意度(NPS) · 合规通过率</text>
+    </g>
+  </g>
+
+  <!-- ======= 反馈闭环箭头（直线） ======= -->
+  <g transform="translate(860,940)">
+    <text class="kicker" x="0" y="-40">FEEDBACK · 反馈闭环</text>
+    <line x1="0" y1="-30" x2="220" y2="-30" stroke="#0f172a" stroke-width="2" marker-end="url(#arrowRight)"/>
+    <text class="legend" x="0" y="-5">从里程碑复盘→指标看板→</text>
+    <text class="legend" x="0" y="15">策略/模型/数据迭代→回到北极星</text>
+  </g>
+
+  <!-- ======= Legend ======= -->
+  <g transform="translate(120,90)">
+    <rect x="0" y="-18" rx="8" ry="8" width="960" height="28" fill="#ffffff" stroke="#e5e7eb"/>
+    <g transform="translate(12,2)">
+      <rect x="0"   y="0" width="16" height="16" fill="#FEF3C7"/><text class="legend" x="22"  y="12">政策与合规</text>
+      <rect x="120" y="0" width="16" height="16" fill="#E8F5E9"/><text class="legend" x="142" y="12">数据与算力</text>
+      <rect x="240" y="0" width="16" height="16" fill="#E0F2FE"/><text class="legend" x="262" y="12">模型与算法</text>
+      <rect x="360" y="0" width="16" height="16" fill="#FCE7F3"/><text class="legend" x="382" y="12">工程与MLOps</text>
+      <rect x="500" y="0" width="16" height="16" fill="#F3E8FF"/><text class="legend" x="522" y="12">应用与场景</text>
+    </g>
+  </g>
+
+  <!-- ======= License footer ======= -->
+  <text class="license" x="600" y="1000" text-anchor="middle">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

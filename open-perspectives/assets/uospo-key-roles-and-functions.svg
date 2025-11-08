@@ -1,0 +1,242 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 675" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .main-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #111827;
+      }
+      .center-title {
+        font-size: 22px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #1F2937;
+      }
+      .dimension-title {
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #1F2937;
+      }
+      .dimension-subtitle {
+        font-size: 13px;
+        font-style: italic;
+        text-anchor: middle;
+        fill: #4B5563;
+      }
+      .function-title {
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #1F2937;
+      }
+      .description-text {
+        font-size: 11px;
+        fill: #1F2937;
+        text-anchor: start;
+      }
+      .function-text {
+        font-size: 11px;
+        fill: #1F2937;
+        text-anchor: middle;
+      }
+      .credit-text {
+        font-size: 11px;
+        fill: #6B7280;
+        text-anchor: middle;
+      }
+      .center-rect {
+        fill: #E0E7FF;
+        stroke: #93C5FD;
+        stroke-width: 3;
+        rx: 8;
+        ry: 8;
+      }
+      .dimension-box {
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .function-box {
+        stroke-width: 2;
+        rx: 15;
+        ry: 15;
+      }
+      .academic-color {
+        fill: #EFF6FF;
+        stroke: #3B82F6;
+      }
+      .education-color {
+        fill: #F0FDF4;
+        stroke: #10B981;
+      }
+      .talent-color {
+        fill: #FEF3C7;
+        stroke: #F59E0B;
+      }
+      .industry-color {
+        fill: #FEF2F2;
+        stroke: #EF4444;
+      }
+      .service-color {
+        fill: #F0F4F8;
+        stroke: #64748B;
+      }
+      .rule-color {
+        fill: #F5F3FF;
+        stroke: #7E22CE;
+      }
+      .connector {
+        fill: none;
+        stroke: #9CA3AF;
+        stroke-width: 2;
+      }
+      .point-box-academic {
+        fill: white;
+        stroke: #3B82F6;
+        stroke-width: 1;
+        rx: 4;
+        ry: 4;
+      }
+      .point-box-education {
+        fill: white;
+        stroke: #10B981;
+        stroke-width: 1;
+        rx: 4;
+        ry: 4;
+      }
+      .point-box-talent {
+        fill: white;
+        stroke: #F59E0B;
+        stroke-width: 1;
+        rx: 4;
+        ry: 4;
+      }
+      .point-box-industry {
+        fill: white;
+        stroke: #EF4444;
+        stroke-width: 1;
+        rx: 4;
+        ry: 4;
+      }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <text class="main-title" x="400" y="40">高校OSPO的多维战略定位与职能融合</text>
+
+  <!-- 中心长方形替代圆形 - 使用低饱和度蓝色 -->
+  <rect x="330" y="90" width="140" height="60" class="center-rect"/>
+  <text class="center-title" x="400" y="125">高校OSPO</text>
+
+  <!-- 四个战略定位（并排布局） -->
+  <!-- 学术定位 -->
+  <rect x="50" y="220" width="165" height="200" class="dimension-box academic-color"/>
+  <text class="dimension-title" x="132.5" y="245">学术定位</text>
+  <text class="dimension-subtitle" x="132.5" y="265">开放科学的执行中心</text>
+
+  <!-- 学术定位要点背景框 - 高度增加5个单位 -->
+  <rect x="62.5" y="285" width="140" height="35" class="point-box-academic"/>
+  <text class="description-text" x="72.5" y="299">提供基础设施、合规指导</text>
+  <text class="description-text" x="72.5" y="313">与技术培训</text>
+
+  <rect x="62.5" y="330" width="140" height="35" class="point-box-academic"/>
+  <text class="description-text" x="72.5" y="344">支持研究代码与数据的</text>
+  <text class="description-text" x="72.5" y="358">规范共享</text>
+
+  <rect x="62.5" y="375" width="140" height="35" class="point-box-academic"/>
+  <text class="description-text" x="72.5" y="389">提升成果的可复现性与</text>
+  <text class="description-text" x="72.5" y="403">学术影响力</text>
+
+  <path class="connector" d="M 132.5 220 L 132.5 200 L 400 200 L 400 150"/>
+
+  <!-- 教育定位 -->
+  <rect x="228" y="220" width="165" height="200" class="dimension-box education-color"/>
+  <text class="dimension-title" x="310.5" y="245">教育定位</text>
+  <text class="dimension-subtitle" x="310.5" y="265">OER的转型引擎</text>
+
+  <!-- 教育定位要点背景框 - 高度增加5个单位 -->
+  <rect x="240.5" y="285" width="140" height="35" class="point-box-education"/>
+  <text class="description-text" x="250.5" y="299">管理开放教育资源的</text>
+  <text class="description-text" x="250.5" y="313">全生命周期</text>
+
+  <rect x="240.5" y="330" width="140" height="35" class="point-box-education"/>
+  <text class="description-text" x="250.5" y="344">引入开源社区的协作</text>
+  <text class="description-text" x="250.5" y="358">开发模式</text>
+
+  <rect x="240.5" y="375" width="140" height="35" class="point-box-education"/>
+  <text class="description-text" x="250.5" y="389">鼓励师生共同参与</text>
+  <text class="description-text" x="250.5" y="403">资源创作与迭代</text>
+
+  <path class="connector" d="M 310.5 220 L 310.5 200 L 400 200 L 400 150"/>
+
+  <!-- 人才定位 -->
+  <rect x="406" y="220" width="165" height="200" class="dimension-box talent-color"/>
+  <text class="dimension-title" x="488.5" y="245">人才定位</text>
+  <text class="dimension-subtitle" x="488.5" y="265">创新人才的孵化器</text>
+
+  <!-- 人才定位要点背景框 - 高度增加5个单位 -->
+  <rect x="418.5" y="285" width="140" height="35" class="point-box-talent"/>
+  <text class="description-text" x="428.5" y="299">提供全球性开源协作机会</text>
+  <text class="description-text" x="428.5" y="313">锻炼工程实践能力</text>
+
+  <rect x="418.5" y="330" width="140" height="35" class="point-box-talent"/>
+  <text class="description-text" x="428.5" y="344">培养沟通协作、社区治理</text>
+  <text class="description-text" x="428.5" y="358">等软技能</text>
+
+  <rect x="418.5" y="375" width="140" height="35" class="point-box-talent"/>
+  <text class="description-text" x="428.5" y="389">契合产业对复合型人才</text>
+  <text class="description-text" x="428.5" y="403">的需求</text>
+
+  <path class="connector" d="M 488.5 220 L 488.5 200 L 400 200 L 400 150"/>
+
+  <!-- 产业定位 -->
+  <rect x="584" y="220" width="165" height="200" class="dimension-box industry-color"/>
+  <text class="dimension-title" x="666.5" y="245">产业定位</text>
+  <text class="dimension-subtitle" x="666.5" y="265">产教融合的技术桥梁</text>
+
+  <!-- 产业定位要点背景框 - 高度增加5个单位 -->
+  <rect x="596.5" y="285" width="140" height="35" class="point-box-industry"/>
+  <text class="description-text" x="606.5" y="299">对接企业真实技术难题</text>
+  <text class="description-text" x="606.5" y="313">与研发需求</text>
+
+  <rect x="596.5" y="330" width="140" height="35" class="point-box-industry"/>
+  <text class="description-text" x="606.5" y="344">"真问题驱动"的教学与</text>
+  <text class="description-text" x="606.5" y="358">科研双向赋能</text>
+
+  <rect x="596.5" y="375" width="140" height="35" class="point-box-industry"/>
+  <text class="description-text" x="606.5" y="389">为智力成果向产业转化</text>
+  <text class="description-text" x="606.5" y="403">提供高效路径</text>
+
+  <path class="connector" d="M 666.5 220 L 666.5 200 L 400 200 L 400 150"/>
+
+  <!-- 连接四个定位到中间汇合点 -->
+  <path class="connector" d="M 132.5 420 L 132.5 445 L 400 445"/>
+  <path class="connector" d="M 310.5 420 L 310.5 445 L 400 445"/>
+  <path class="connector" d="M 488.5 420 L 488.5 445 L 400 445"/>
+  <path class="connector" d="M 666.5 420 L 666.5 445 L 400 445"/>
+
+  <!-- 两个核心角色（并排布局） -->
+  <!-- 基础设施服务者 -->
+  <rect x="125" y="480" width="250" height="130" class="function-box service-color"/>
+  <path class="connector" d="M 250 480 L 250 445"/>
+
+  <text class="function-title" x="250" y="510">基础设施服务者</text>
+  <text class="function-text" x="250" y="540">提供工具、平台、流程和专业知识</text>
+  <text class="function-text" x="250" y="560">赋能全校师生参与开放科学和</text>
+  <text class="function-text" x="250" y="580">开放教育实践</text>
+
+  <!-- 规则维护者 -->
+  <rect x="425" y="480" width="250" height="130" class="function-box rule-color"/>
+  <path class="connector" d="M 550 480 L 550 445"/>
+
+  <text class="function-title" x="550" y="510">规则维护者</text>
+  <text class="function-text" x="550" y="540">制定和维护开放相关政策、标准</text>
+  <text class="function-text" x="550" y="560">和最佳实践，确保开放活动在</text>
+  <text class="function-text" x="550" y="580">合法合规框架内有序进行</text>
+
+  <!-- 许可声明 -->
+  <text class="credit-text" x="400" y="650">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

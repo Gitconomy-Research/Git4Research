@@ -1,0 +1,179 @@
+<svg width="1240" height="950" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" viewBox="0 0 1240 950">
+
+  <rect width="1200" height="950" fill="#ffffff" />
+
+  <defs>
+    <marker id="arrow-main" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#2563EB">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+    <marker id="arrow-highlight" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" fill="#FACC15">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <style>
+    .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+    .title-text { font-size: 16px; font-weight: bold; fill: #111827; }
+    .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+    .small-text { font-size: 11px; font-weight: normal; fill: #6B7280; }
+    .license-text { font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+
+    /* 规范 Sec 3: 元素样式 */
+    .card-background { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; rx: 15; }
+    .card-note { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 1; rx: 10; }
+    .card-highlight { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2; rx: 10; }
+
+    /* 分支与提交 */
+    .line-main { stroke: #60A5FA; stroke-width: 3; fill: none; }
+    .commit-main { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2; }
+    .label-main { fill: #60A5FA; }
+
+    .line-feature { stroke: #34D399; stroke-width: 2; fill: none; }
+    .commit-feature { fill: #F0FDF4; stroke: #34D399; stroke-width: 2; }
+    .label-feature { fill: #34D399; }
+
+    /* 压合后的新提交 */
+    .commit-squash { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2; }
+
+    .label-head { fill: #FACC15; }
+
+    .connector { stroke: #2563EB; stroke-width: 2.5; fill: none; marker-end: url(#arrow-main); }
+  </style>
+
+  <text x="600" y="40" class="main-title-text">Git Merge --squash (压合合并) 策略</text>
+
+  <g id="main-card" transform="translate(50, 80)">
+    <rect class="card-background" width="1180" height="800" />
+
+    <g id="squash-before" transform="translate(50, 50)">
+      <text x="0" y="0" class="title-text">1. 压合合并前 (Before)</text>
+      <text x="0" y="25" class="body-text">
+        执行: <tspan font-family="monospace">git checkout master</tspan>
+      </text>
+      <text x="0" y="45" class="small-text">
+        ( `feature` 分支有 3 个提交 (F1-F3)，`master` 也有 1 个新提交 C3 )
+      </text>
+
+      <g transform="translate(100, 100)">
+        <circle cx="100" cy="50" r="15" class="commit-main" />
+        <text x="93" y="55" class="small-text">C1</text>
+        <circle cx="200" cy="50" r="15" class="commit-main" />
+        <text x="193" y="55" class="small-text">C2</text>
+        <circle cx="300" cy="50" r="15" class="commit-main" />
+        <text x="293" y="55" class="small-text">C3</text>
+        <path d="M 115 50 L 285 50" class="line-main" />
+
+        <circle cx="300" cy="120" r="15" class="commit-feature" />
+        <text x="293" y="125" class="small-text">F1</text>
+        <circle cx="400" cy="120" r="15" class="commit-feature" />
+        <text x="393" y="125" class="small-text">F2</text>
+        <circle cx="500" cy="120" r="15" class="commit-feature" />
+        <text x="493" y="125" class="small-text">F3</text>
+
+        <path d="M 215 58 L 285 112" class="line-feature" />
+        <path d="M 315 120 L 485 120" class="line-feature" />
+
+        <rect x="270" y="0" width="60" height="20" rx="3" class="label-main" />
+        <text x="278" y="15" font-size="12" fill="white">master</text>
+
+        <rect x="470" y="150" width="60" height="20" rx="3" class="label-feature" />
+        <text x="478" y="165" font-size="12" fill="white">feature</text>
+
+        <rect x="190" y="0" width="60" height="20" rx="3" class="label-head" />
+        <text x="200" y="15" font-size="12" fill="#374151" font-weight="bold">HEAD</text>
+        <path d="M 220 20 L 220 30 L 270 40" stroke="#FACC15" stroke-width="2" fill="none" marker-end="url(#arrow-highlight)" />
+      </g>
+    </g>
+
+    <g id="squash-after" transform="translate(50, 310)">
+      <text x="0" y="0" class="title-text">2. 压合合并后 (After)</text>
+      <text x="0" y="25" class="body-text">
+        F1, F2, F3 的所有更改被合并成一个*全新的*、*单一的*提交 (S1)。
+      </text>
+      <text x="0" y="45" class="small-text">
+        ( `feature` 分支本身被保留，但 S1 与它没有历史关联 )
+      </text>
+
+      <g transform="translate(100, 100)">
+        <circle cx="100" cy="50" r="15" class="commit-main" />
+        <text x="93" y="55" class="small-text">C1</text>
+        <circle cx="200" cy="50" r="15" class="commit-main" />
+        <text x="193" y="55" class="small-text">C2</text>
+        <circle cx="300" cy="50" r="15" class="commit-main" />
+        <text x="293" y="55" class="small-text">C3</text>
+
+        <circle cx="400" cy="50" r="15" class="commit-squash" />
+        <text x="393" y="55" class="small-text">S1</text>
+
+        <path d="M 115 50 L 385 50" class="line-main" />
+        <text x="450" y="55" class="body-text">(F1+F2+F3 的所有更改)</text>
+
+        <circle cx="300" cy="120" r="15" class="commit-feature" opacity="0.5" />
+        <text x="293" y="125" class="small-text" opacity="0.5">F1</text>
+        <circle cx="400" cy="120" r="15" class="commit-feature" opacity="0.5" />
+        <text x="393" y="125" class="small-text" opacity="0.5">F2</text>
+        <circle cx="500" cy="120" r="15" class="commit-feature" opacity="0.5" />
+        <text x="493" y="125" class="small-text" opacity="0.5">F3</text>
+
+        <path d="M 215 58 L 285 112" class="line-feature" opacity="0.5" />
+        <path d="M 315 120 L 485 120" class="line-feature" opacity="0.5" />
+
+        <rect x="370" y="0" width="60" height="20" rx="3" class="label-main" />
+        <text x="378" y="15" font-size="12" fill="white">master</text>
+
+        <rect x="470" y="150" width="60" height="20" rx="3" class="label-feature" opacity="0.5" />
+        <text x="478" y="165" font-size="12" fill="white" opacity="0.5">feature</text>
+
+        <rect x="290" y="0" width="60" height="20" rx="3" class="label-head" />
+        <text x="300" y="15" font-size="12" fill="#374151" font-weight="bold">HEAD</text>
+        <path d="M 320 20 L 320 30 L 370 40" stroke="#FACC15" stroke-width="2" fill="none" marker-end="url(#arrow-highlight)" />
+      </g>
+    </g>
+
+    <g id="notes" transform="translate(50, 560)">
+      <text x="0" y="0" class="title-text">3. 工作原理与注意事项</text>
+
+      <rect class="card-note" x="0" y="30" width="530" height="190" />
+      <text x="20" y="55" class="title-text" fill="#3B82F6">工作原理 (两步操作)</text>
+      <text x="20" y="80" class="body-text" font-weight="bold">
+        步骤 1: <tspan font-family="monospace">git merge --squash feature</tspan>
+      </text>
+      <text x="40" y="100" class="body-text">
+        • 将 F1, F2, F3 的*所有更改*提取出来。
+      </text>
+      <text x="40" y="120" class="body-text">
+        • 将这些更改应用到 `master` 的*暂存区* (Staging Area)。
+      </text>
+      <text x="40" y="140" class="body-text" fill="#D92D20">
+        • **重要：此命令本身并不会创建提交。**
+      </text>
+
+      <text x="20" y="165" class="body-text" font-weight="bold">
+        步骤 2: <tspan font-family="monospace">git commit -m "..."</tspan>
+      </text>
+      <text x="40" y="185" class="body-text">
+        • 手动执行 `commit`，将暂存区的所有更改
+      </text>
+      <text x="40" y="205" class="body-text">
+        创建为一个*全新的*、*单一的*提交 (S1)。
+      </text>
+
+      <rect class="card-highlight" x="570" y="30" width="530" height="180" />
+      <text x="590" y="55" class="title-text">区别与注意事项</text>
+      <text x="590" y="80" class="body-text">
+        • <tspan font-weight="bold">优点：</tspan> 保持 `master` 历史的绝对整洁，隐藏了凌乱的中间过程 (F1-F3)。
+      </text>
+      <text x="590" y="125" class="body-text">
+        • <tspan font-weight="bold" fill="#D92D20">缺点：</tspan> 丢失了 `feature` 分支的详细开发历史，因为 F2 已经不存在于 `master` 的历史中了。
+      </text>
+      <text x="590" y="170" class="body-text">
+        • <tspan font-weight="bold">无历史关联：</tspan> 新的 S1 提交与 `feature` 分支
+        (F1, F2, F3) 没有任何 Git 历史记录上的关联。
+      </text>
+    </g>
+  </g>
+
+  <text x="600" y="930" class="license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

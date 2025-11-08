@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" style="font-family: Arial, sans-serif;">
+  <rect width="1000" height="780" fill="#f8f9fa" />
+
+  <text x="500" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">开源协作的规则与法律框架总揽</text>
+
+  <rect x="50" y="80" width="400" height="520" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" />
+  <rect x="550" y="80" width="400" height="520" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" />
+
+    <text x="250" y="110" font-size="24" font-weight="bold" text-anchor="middle" fill="#1565c0">无形的文化与规范</text>
+  <text x="750" y="110" font-size="24" font-weight="bold" text-anchor="middle" fill="#2e7d32">有形的法律工具</text>
+
+          <rect x="80" y="130" width="340" height="240" rx="8" fill="#bbdefb" stroke="#1565c0" stroke-width="1" />
+  <text x="250" y="155" font-size="18" font-weight="bold" text-anchor="middle">开源文化的四大核心理念</text>
+
+    <circle cx="120" cy="190" r="25" fill="#1565c0" />
+  <text x="120" y="195" font-size="14" font-weight="bold" text-anchor="middle" fill="white">开放</text>
+  <text x="160" y="185" font-size="14" text-anchor="start">透明度，所有人都能看到源代码</text>
+  <text x="160" y="205" font-size="14" text-anchor="start">创造集体智慧的基础："Linus定律"</text>
+
+    <circle cx="120" cy="240" r="25" fill="#1565c0" />
+  <text x="120" y="245" font-size="14" font-weight="bold" text-anchor="middle" fill="white">协作</text>
+  <text x="160" y="235" font-size="14" text-anchor="start">跨越地理、组织的分布式合作</text>
+  <text x="160" y="255" font-size="14" text-anchor="start">"社区胜于代码" - 精英治理模式</text>
+
+    <circle cx="120" cy="290" r="25" fill="#1565c0" />
+  <text x="120" y="295" font-size="14" font-weight="bold" text-anchor="middle" fill="white">共享</text>
+  <text x="160" y="285" font-size="14" text-anchor="start">知识的无障碍流动，网络效应</text>
+  <text x="160" y="305" font-size="14" text-anchor="start">避免重复造轮子，放大价值</text>
+
+    <circle cx="120" cy="340" r="25" fill="#1565c0" />
+  <text x="120" y="345" font-size="14" font-weight="bold" text-anchor="middle" fill="white">贡献</text>
+  <text x="160" y="335" font-size="14" text-anchor="start">循环的燃料，形成良性生态</text>
+  <text x="160" y="355" font-size="14" text-anchor="start">多种形式：代码、文档、翻译、支持</text>
+
+    <rect x="80" y="380" width="340" height="80" rx="8" fill="#bbdefb" stroke="#1565c0" stroke-width="1" />
+  <text x="250" y="405" font-size="18" font-weight="bold" text-anchor="middle">社区礼仪与治理</text>
+  <rect x="100" y="420" width="300" height="30" rx="5" fill="#90caf9" />
+  <text x="250" y="440" font-size="14" font-weight="bold" text-anchor="middle">行为准则 (Code of Conduct)</text>
+
+    <rect x="80" y="470" width="340" height="80" rx="8" fill="#bbdefb" stroke="#1565c0" stroke-width="1" />
+  <text x="250" y="495" font-size="18" font-weight="bold" text-anchor="middle">协作模型</text>
+  <rect x="100" y="510" width="140" height="30" rx="5" fill="#90caf9" />
+  <text x="170" y="530" font-size="14" font-weight="bold" text-anchor="middle">大教堂模式</text>
+  <rect x="260" y="510" width="140" height="30" rx="5" fill="#90caf9" />
+  <text x="330" y="530" font-size="14" font-weight="bold" text-anchor="middle">市集模式</text>
+
+          <rect x="580" y="130" width="340" height="200" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1" />
+  <text x="750" y="155" font-size="18" font-weight="bold" text-anchor="middle">出站许可 (Outbound License)</text>
+  <rect x="600" y="175" width="300" height="140" rx="5" fill="#a5d6a7" />
+  <text x="750" y="195" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">许可证类型</text>
+    <rect x="615" y="210" width="130" height="90" rx="5" fill="#81c784" />
+  <text x="680" y="230" font-size="14" font-weight="bold" text-anchor="middle">互惠型(Copyleft)</text>
+  <text x="680" y="250" font-size="12" text-anchor="middle">GPL, AGPL, LGPL</text>
+  <text x="680" y="270" font-size="12" text-anchor="middle">保证衍生作品开源</text>
+  <text x="680" y="290" font-size="12" text-anchor="middle">构建共享公地</text>
+  <rect x="755" y="210" width="130" height="90" rx="5" fill="#81c784" />
+  <text x="820" y="230" font-size="14" font-weight="bold" text-anchor="middle">宽松型(Permissive)</text>
+  <text x="820" y="250" font-size="12" text-anchor="middle">MIT, Apache, BSD</text>
+  <text x="820" y="270" font-size="12" text-anchor="middle">允许闭源商业使用</text>
+  <text x="820" y="290" font-size="12" text-anchor="middle">最大化代码采用</text>
+
+    <rect x="580" y="340" width="340" height="200" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1" />
+  <text x="750" y="365" font-size="18" font-weight="bold" text-anchor="middle">入站贡献 (Inbound Contributions)</text>
+  <rect x="600" y="385" width="300" height="140" rx="5" fill="#a5d6a7" />
+  <text x="750" y="405" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">贡献机制</text>
+    <rect x="615" y="420" width="130" height="90" rx="5" fill="#81c784" />
+  <text x="680" y="440" font-size="14" font-weight="bold" text-anchor="middle">CLA</text>
+  <text x="680" y="460" font-size="12" text-anchor="middle">贡献者许可协议</text>
+  <text x="680" y="480" font-size="12" text-anchor="middle">高法律确定性</text>
+  <text x="680" y="500" font-size="12" text-anchor="middle">企业友好，门槛高</text>
+  <rect x="755" y="420" width="130" height="90" rx="5" fill="#81c784" />
+  <text x="820" y="440" font-size="14" font-weight="bold" text-anchor="middle">DCO</text>
+  <text x="820" y="460" font-size="12" text-anchor="middle">开发者原创声明</text>
+  <text x="820" y="480" font-size="12" text-anchor="middle">极低贡献门槛</text>
+  <text x="820" y="500" font-size="12" text-anchor="middle">社区友好，轻量化</text>
+
+    <rect x="580" y="550" width="340" height="30" rx="8" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1" />
+  <text x="750" y="570" font-size="14" font-weight="bold" text-anchor="middle">知识产权基础：版权、专利与商标</text>
+
+  <path d="M450 250 C500 250, 500 250, 535 250" stroke="#555" stroke-width="3" fill="none" />
+  <path d="M450 400 C500 400, 500 400, 535 400" stroke="#555" stroke-width="3" fill="none" />
+  <polygon points="535,245 550,250 535,255" fill="#555" />
+  <polygon points="535,395 550,400 535,405" fill="#555" />
+  <text x="500" y="235" font-size="14" font-weight="bold" text-anchor="middle">相互支持</text>
+  <text x="500" y="385" font-size="14S" font-weight="bold" text-anchor="middle">相互影响</text>
+
+  <rect x="150" y="630" width="700" height="90" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2" />
+  <text x="500" y="655" font-size="18" font-weight="bold" text-anchor="middle" fill="#e65100">开源协作的整体法律框架</text>
+  <text x="500" y="685" font-size="14" text-anchor="middle">入站策略(从贡献者获得的权利) 必须支撑 出站策略(向用户授予的权利)</text>
+  <text x="500" y="705" font-size="14" text-anchor="middle">许可证选择是项目战略决策，塑造社区文化、参与模式和商业潜力</text>
+
+  <text x="50%" y="760" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

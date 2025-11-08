@@ -1,0 +1,64 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+    <defs>
+        <style>
+            .main-title-text { font-family: sans-serif; font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+            .title-text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #111827; text-anchor: middle; }
+            .body-text { font-family: sans-serif; font-size: 12px; font-weight: normal; fill: #374151; text-anchor: middle; }
+            .small-text { font-family: sans-serif; font-size: 11px; font-weight: normal; fill: #687280; text-anchor: middle; }
+            .highlight-text { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #111827; text-anchor: middle; }
+            .license-text { font-family: sans-serif; font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+
+            /* DaC 卡片样式 - 主概念框 */
+            .dac-card { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 1.5; }
+            .dac-arrow { fill: #60A5FA; }
+
+            /* GUI 卡片样式 - 标准信息框 */
+            .gui-card { fill: #F0FDF4; stroke: #34D399; stroke-width: 1.5; }
+            .gui-arrow { fill: #34D399; }
+        </style>
+    </defs>
+
+    <text x="400" y="40" class="main-title-text">图形即代码 (DaC) vs. 传统图形工具 (GUI)</text>
+
+    <g id="dac-flow">
+        <text x="200" y="80" class="title-text">图形即代码 (DaC)</text>
+
+        <rect x="100" y="100" width="200" height="50" rx="5" class="dac-card"/>
+        <text x="200" y="130" class="body-text">数据/需求 (如 JSON/CSV)</text>
+
+        <path d="M 200 150 L 200 165 L 195 165 L 200 175 L 205 165 L 200 165 Z" class="dac-arrow"/>
+
+        <rect x="100" y="180" width="200" height="50" rx="5" class="dac-card"/>
+        <text x="200" y="205" class="body-text">编写代码 (DSL, Python/R 库)</text>
+        <text x="200" y="225" class="small-text">可版本控制、复用性高</text>
+
+        <path d="M 200 230 L 200 245 L 195 245 L 200 255 L 205 245 L 200 245 Z" class="dac-arrow"/>
+
+        <rect x="100" y="260" width="200" height="50" rx="5" class="dac-card"/>
+        <text x="200" y="290" class="body-text">生成图形 (SVG)</text>
+
+        <text x="200" y="340" class="highlight-text">优势: 自动化、精确控制、协作</text>
+    </g>
+
+    <g id="gui-flow">
+        <text x="600" y="80" class="title-text">传统图形工具 (GUI)</text>
+
+        <rect x="500" y="100" width="200" height="50" rx="5" class="gui-card"/>
+        <text x="600" y="130" class="body-text">数据/需求 (导入或手动输入)</text>
+
+        <path d="M 600 150 L 600 165 L 595 165 L 600 175 L 605 165 L 600 165 Z" class="gui-arrow"/>
+
+        <rect x="500" y="180" width="200" height="50" rx="5" class="gui-card"/>
+        <text x="600" y="205" class="body-text">拖拽、点击、属性面板设置</text>
+        <text x="600" y="225" class="small-text">所见即所得、操作直观</text>
+
+        <path d="M 600 230 L 600 245 L 595 245 L 600 255 L 605 245 L 600 245 Z" class="gui-arrow"/>
+
+        <rect x="500" y="260" width="200" height="50" rx="5" class="gui-card"/>
+        <text x="600" y="290" class="body-text">导出图形 (PNG/JPG/SVG)</text>
+
+        <text x="600" y="340" class="highlight-text">优势: 学习曲线低、快速原型</text>
+    </g>
+
+    <text x="400" y="390" class="license-text">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可, 2025 Gitconomy Research社区</text>
+</svg>

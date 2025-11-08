@@ -1,0 +1,97 @@
+
+<svg width="900" height="750" viewBox="0 0 900 780" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <!-- 背景 -->
+  <rect width="900" height="780" fill="#f8f9fa"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">中国AI开源生态发展现状与图谱</text>
+
+  <!-- 左侧生态层次图 -->
+  <g transform="translate(50, 100)">
+    <!-- 生态层级 -->
+    <rect x="0" y="0" width="350" height="100" rx="5" fill="#e6f7ff" stroke="#1890ff" stroke-width="2"/>
+    <text x="175" y="35" font-size="18" font-weight="bold" text-anchor="middle" fill="#1890ff">开源基金会与社区</text>
+    <text x="175" y="65" font-size="14" text-anchor="middle" fill="#333">开放原子开源基金会 | OpenI启智社区</text>
+    <text x="175" y="85" font-size="14" text-anchor="middle" fill="#333">托管项目与标准制定 | 顶层组织</text>
+
+    <rect x="0" y="120" width="350" height="100" rx="5" fill="#f6ffed" stroke="#52c41a" stroke-width="2"/>
+    <text x="175" y="155" font-size="18" font-weight="bold" text-anchor="middle" fill="#52c41a">AI框架层</text>
+    <text x="175" y="185" font-size="14" text-anchor="middle" fill="#333">华为MindSpore | 百度PaddlePaddle</text>
+    <text x="175" y="205" font-size="14" text-anchor="middle" fill="#333">国产AI框架 | 软硬件协同</text>
+
+    <rect x="0" y="240" width="350" height="120" rx="5" fill="#fff2e8" stroke="#fa8c16" stroke-width="2"/>
+    <text x="175" y="275" font-size="18" font-weight="bold" text-anchor="middle" fill="#fa8c16">大模型层</text>
+    <text x="175" y="305" font-size="14" text-anchor="middle" fill="#333">通义千问(Qwen) | ChatGLM | DeepSeek</text>
+    <text x="175" y="325" font-size="14" text-anchor="middle" fill="#333">书生 | Yi | 百川 | Linly</text>
+    <text x="175" y="345" font-size="14" text-anchor="middle" fill="#333">"百花齐放"的开源大模型生态</text>
+
+    <rect x="0" y="380" width="350" height="100" rx="5" fill="#f9f0ff" stroke="#722ed1" stroke-width="2"/>
+    <text x="175" y="415" font-size="18" font-weight="bold" text-anchor="middle" fill="#722ed1">代码托管与模型中心</text>
+    <text x="175" y="445" font-size="14" text-anchor="middle" fill="#333">Gitee | Gitcode | 魔搭ModelScope</text>
+    <text x="175" y="465" font-size="14" text-anchor="middle" fill="#333">Hugging Face中国社区 | OpenCompass</text>
+
+    <!-- 连接线 -->
+    <line x1="175" y1="100" x2="175" y2="120" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="175" y1="220" x2="175" y2="240" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="175" y1="360" x2="175" y2="380" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- 右侧魔搭社区案例研究 -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="400" height="290" rx="10" fill="#fff" stroke="#f5222d" stroke-width="2"/>
+    <text x="200" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#f5222d">案例：魔搭社区(ModelScope)成长曲线</text>
+
+    <!-- 成立时间线 -->
+    <line x1="50" y1="70" x2="350" y2="70" stroke="#999" stroke-width="1"/>
+    <circle cx="50" cy="70" r="5" fill="#f5222d"/>
+    <text x="50" y="60" font-size="12" text-anchor="middle" fill="#333">2022.11</text>
+    <text x="50" y="85" font-size="10" text-anchor="middle" fill="#666">成立</text>
+
+    <circle cx="200" cy="70" r="5" fill="#f5222d"/>
+    <text x="200" y="60" font-size="12" text-anchor="middle" fill="#333">2023.4</text>
+    <text x="200" y="85" font-size="10" text-anchor="middle" fill="#666">快速增长</text>
+
+    <circle cx="350" cy="70" r="5" fill="#f5222d"/>
+    <text x="350" y="60" font-size="12" text-anchor="middle" fill="#333">2025.6</text>
+    <text x="350" y="85" font-size="10" text-anchor="middle" fill="#666">现状</text>
+
+    <!-- 模型数量增长曲线 -->
+    <text x="30" y="120" font-size="14" font-weight="bold" fill="#333">开源模型数量:</text>
+    <path d="M 50,180 Q 120,170 200,150 T 350,110" fill="none" stroke="#f5222d" stroke-width="3"/>
+    <text x="50" y="195" font-size="10" text-anchor="middle" fill="#666">初始模型</text>
+    <text x="350" y="125" font-size="12" text-anchor="middle" font-weight="bold" fill="#f5222d">超7万个模型</text>
+    <text x="350" y="140" font-size="10" text-anchor="middle" fill="#666">增长200倍</text>
+
+    <!-- 用户数量增长曲线 -->
+    <text x="30" y="230" font-size="14" font-weight="bold" fill="#333">用户数量增长:</text>
+    <path d="M 50,250 Q 120,240 200,220 T 350,170" fill="none" stroke="#1890ff" stroke-width="3"/>
+    <text x="200" y="235" font-size="10" text-anchor="middle" fill="#666">100万用户</text>
+    <text x="350" y="165" font-size="12" text-anchor="middle" font-weight="bold" fill="#1890ff">1600万用户</text>
+    <text x="350" y="180" font-size="10" text-anchor="middle" fill="#666">16倍增长</text>
+
+    <!-- 额外数据点 (修复重叠问题) -->
+    <text x="30" y="270" font-size="14" font-weight="bold" fill="#333">覆盖全球:</text>
+    <text x="110" y="270" font-size="14" fill="#333">36个国家</text>
+
+    <text x="200" y="270" font-size="14" font-weight="bold" fill="#333">贡献机构:</text>
+    <text x="285" y="270" font-size="14" fill="#333">超过500家</text>
+  </g>
+
+  <!-- 底部开源大模型主要特点 (调整位置，保持与代码托管层30单位间距) -->
+  <g transform="translate(100, 610)">
+    <rect x="0" y="0" width="700" height="120" rx="10" fill="#fff" stroke="#333" stroke-width="1"/>
+    <text x="350" y="25" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">中国AI开源生态的主要特征</text>
+
+    <circle cx="30" cy="45" r="5" fill="#1890ff"/>
+    <text x="45" y="50" font-size="14" fill="#333">政策支持: "促进开源生态繁荣"被明确写入"人工智能+"行动</text>
+
+    <circle cx="30" cy="70" r="5" fill="#fa8c16"/>
+    <text x="45" y="75" font-size="14" fill="#333">开源比例: 2024年新发布基础模型中开源模型比例维持在65.7%</text>
+
+    <circle cx="30" cy="95" r="5" fill="#52c41a"/>
+    <text x="45" y="100" font-size="14" fill="#333">衍生特征: 开源基础模型(如DeepSeek)迅速分化出大量针对垂直领域的衍生模型</text>
+  </g>
+
+  <!-- 底部许可声明 -->
+  <text x="450" y="760" font-size="12" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

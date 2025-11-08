@@ -1,0 +1,73 @@
+<svg width="800" height="430" viewBox="0 0 800 430" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB" />
+    </marker>
+
+    <g id="icon-fusion" fill="#3B82F6"><path d="M12,3 C12.55,3 13,3.45 13,4 L13,10 C13,10.55 12.55,11 12,11 L4,11 C3.45,11 3,10.55 3,10 L3,9 L1,9 L1,6 L3,6 L3,4 C3,3.45 3.45,3 4,3 L12,3 Z M12,1 C2.64,1 1,2.64 1,4 L1,4 L1,5 L0,5 L0,7 L1,7 L1,8 L1,8 C1,9.36 2.64,13 12,13 L12,13 C12.93,13 14,12.15 14,11.25 L14,3.75 C14,2.85 12.93,1 12,1 Z"/><path d="M5.5,5.5 C6.33,5.5 7,6.17 7,7 C7,7.83 6.33,8.5 5.5,8.5 C4.67,8.5 4,7.83 4,7 C4,6.17 4.67,5.5 5.5,5.5 Z M9,8 L11,8 L11,7 L9,7 L9,8 Z M9,6 L11,6 L11,5 L9,5 L9,6 Z"/></g>
+    <g id="icon-treasure" fill="#34D399"><path d="M8,1 C4.13,1 1,4.13 1,8 C1,11.87 4.13,15 8,15 C11.87,15 15,11.87 15,8 C15,4.13 11.87,1 8,1 Z M8,13 C5.24,13 3,10.76 3,8 C3,5.24 5.24,3 8,3 C10.76,3 13,5.24 13,8 C13,10.76 10.76,13 8,13 Z"/><path d="M8.5,4 L7.5,4 L7.5,7.5 L4,7.5 L4,8.5 L7.5,8.5 L7.5,12 L8.5,12 L8.5,8.5 L12,8.5 L12,7.5 L8.5,7.5 L8.5,4 Z"/></g>
+    <g id="icon-gift" fill="#FACC15"><path d="M8.5,1 L6.5,1 L3,4.5 L3,9.5 L6.5,13 L8.5,13 L12,9.5 L12,4.5 L8.5,1 Z M11,8.79 L8,11.79 L4,8.79 L4,5.21 L7,2.21 L8,2.21 L11,5.21 L11,8.79 Z"/><path d="M7.29,7 L5.03,4.74 L4.32,5.45 L6.58,7.71 L4.32,9.97 L5.03,10.68 L7.29,8.42 L9.55,10.68 L10.26,9.97 L8,7.71 L10.26,5.45 L9.55,4.74 L7.29,7 Z"/></g>
+
+    <style>
+      /* 字体与通用样式 */
+      .diagram-text { font-family: "Noto Sans", sans-serif; text-anchor: middle; }
+
+      /* 配色方案 */
+      .box-main { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2px; rx: 8; ry: 8; }
+      .box-standard { fill: #F0FDF4; stroke: #34D399; stroke-width: 2px; rx: 8; ry: 8; }
+      .box-highlight { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2px; rx: 8; ry: 8; }
+      .connector { fill: none; stroke: #2563EB; stroke-width: 2px; }
+      .central-core { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2px; }
+
+      /* 字体规范 */
+      .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; }
+      .title-text { font-size: 16px; font-weight: bold; fill: #111827; }
+      .highlight-text { font-size: 12px; font-weight: bold; fill: #111827; }
+      .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+      .license-text { font-size: 12px; font-weight: normal; fill: #64748B; }
+    </style>
+  </defs>
+
+  <text x="400" y="45" class="diagram-text main-title-text">生成式思维的涌现</text>
+
+  <g id="central-core">
+    <path class="central-core" d="M 400 90 L 420 110 L 400 130 L 380 110 Z" />
+    <text class="diagram-text highlight-text" x="400" y="114">晶核 (Prompt)</text>
+  </g>
+
+  <path class="connector" d="M 400 130 Q 400 150, 160 170" />
+  <path class="connector" d="M 400 130 V 170" />
+  <path class="connector" d="M 400 130 Q 400 150, 640 170" />
+
+  <g id="emergence-fusion" transform="translate(40, 170)">
+    <rect class="box-main" x="0" y="0" width="240" height="180" />
+    <use href="#icon-fusion" x="104" y="20" width="32" height="32" />
+    <text class="diagram-text title-text" x="120" y="80">身份的融合</text>
+    <line x1="40" y1="100" x2="200" y2="100" stroke="#60A5FA" stroke-width="1" />
+    <text class="diagram-text highlight-text" x="120" y="125">对话者 &amp; 策展人</text>
+    <text class="diagram-text body-text" x="120" y="150">校准意图，定义价值</text>
+  </g>
+
+  <g id="emergence-treasure" transform="translate(280, 170)">
+    <rect class="box-standard" x="0" y="0" width="240" height="180" />
+    <use href="#icon-treasure" x="104" y="20" width="32" height="32" />
+    <text class="diagram-text title-text" x="120" y="80">过程的寻宝</text>
+    <line x1="320" y1="100" x2="480" y2="100" stroke="#34D399" stroke-width="1" />
+    <text class="diagram-text highlight-text" x="120" y="125">拥抱模糊 &amp; 享受探索</text>
+    <text class="diagram-text body-text" x="120" y="150">在不确定性中发现</text>
+  </g>
+
+  <g id="emergence-gift" transform="translate(520, 170)">
+    <rect class="box-highlight" x="0" y="0" width="240" height="180" />
+    <use href="#icon-gift" x="104" y="20" width="32" height="32" />
+    <text class="diagram-text title-text" x="120" y="80">素材的新生</text>
+    <line x1="560" y1="100" x2="720" y2="100" stroke="#FACC15" stroke-width="1" />
+    <text class="diagram-text highlight-text" x="120" y="125">意外为礼 &amp; 重构成金</text>
+    <text class="diagram-text body-text" x="120" y="150">化“失控”为创新机遇</text>
+  </g>
+
+  <text x="400" y="400" class="diagram-text license-text">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

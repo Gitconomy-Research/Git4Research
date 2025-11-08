@@ -1,0 +1,38 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600" style="background-color: white;">
+
+  <!-- 标题 -->
+  <text x="50%" y="50" font-family="Noto Sans, sans-serif" font-size="24" text-anchor="middle" fill="#333">人工智能数据工程导论 - 课程学习目标层次</text>
+
+  <!-- 金字塔结构  -->
+  <polygon points="380,120 80,500 680,500" fill="#e1f5fe" stroke="#2196f3" stroke-width="2" />
+
+  <!-- 金字塔层级  -->
+  <rect x="160" y="440" width="440" height="60" fill="#0d47a1" rx="5" ry="5" />
+  <rect x="190" y="380" width="380" height="60" fill="#1565c0" rx="5" ry="5" />
+  <rect x="220" y="320" width="320" height="60" fill="#1976d2" rx="5" ry="5" />
+  <rect x="250" y="260" width="260" height="60" fill="#1e88e5" rx="5" ry="5" />
+  <rect x="280" y="200" width="200" height="60" fill="#2196f3" rx="5" ry="5" />
+
+  <!-- 层级文字  -->
+  <text x="380" y="230" font-family="Noto Sans, sans-serif" font-size="20" text-anchor="middle" fill="white">思政教育</text>
+  <text x="380" y="290" font-family="Noto Sans, sans-serif" font-size="20" text-anchor="middle" fill="white">科技素养</text>
+  <text x="380" y="350" font-family="Noto Sans, sans-serif" font-size="20" text-anchor="middle" fill="white">思维能力</text>
+  <text x="380" y="410" font-family="Noto Sans, sans-serif" font-size="20" text-anchor="middle" fill="white">技能</text>
+  <text x="380" y="470" font-family="Noto Sans, sans-serif" font-size="20" text-anchor="middle" fill="white">知识</text>
+
+  <!-- 右侧说明文字 -->
+  <text x="700" y="230" font-family="Noto Sans, sans-serif" font-size="14" text-anchor="start" fill="#333">价值观、责任意识、伦理道德</text>
+  <text x="700" y="290" font-family="Noto Sans, sans-serif" font-size="14" text-anchor="start" fill="#333">前沿认知、创新意识、科技应用</text>
+  <text x="700" y="350" font-family="Noto Sans, sans-serif" font-size="14" text-anchor="start" fill="#333">分析能力、批判思考、解决问题</text>
+  <text x="700" y="410" font-family="Noto Sans, sans-serif" font-size="14" text-anchor="start" fill="#333">数据处理、模型训练、工程实践</text>
+  <text x="700" y="470" font-family="Noto Sans, sans-serif" font-size="14" text-anchor="start" fill="#333">基础理论、核心概念、技术原理</text>
+
+  <!-- 连接线  -->
+  <line x1="80" y1="520" x2="680" y2="520" stroke="#666" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="380" y1="520" x2="380" y2="500" stroke="#666" stroke-width="1" />
+  <text x="380" y="540" font-family="Noto Sans, sans-serif" font-size="16" text-anchor="middle" fill="#333">能力递进与伦理贯穿</text>
+
+  <!-- 许可声明  -->
+  <text x="50%" y="580" font-family="Noto Sans, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

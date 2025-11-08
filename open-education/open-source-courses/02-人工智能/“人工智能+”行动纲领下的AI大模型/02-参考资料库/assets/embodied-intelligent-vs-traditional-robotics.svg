@@ -1,0 +1,135 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <style>
+      .bg { fill: #f8f9fa; }
+      .title { font-size: 28px; font-weight: bold; text-anchor: middle; fill: #212937; }
+      .subtitle { font-size: 16px; text-anchor: middle; fill: #475569; }
+      .panel { fill: #ffffff; stroke: #dee2e6; stroke-width: 1.5; rx: 15; ry: 15; }
+      .panel-title { font-size: 22px; font-weight: bold; text-anchor: middle; }
+      .panel-subtitle { font-size: 14px; text-anchor: middle; fill: #6c757d; }
+      .flow-box { fill: #f8f9fa; stroke: #ced4da; stroke-width: 1; rx: 8; ry: 8; }
+      .flow-text { font-size: 14px; text-anchor: middle; fill: #343a40; }
+      .arrow { fill: #adb5bd; }
+      .highlight-text { font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .item-text { font-size: 14px; }
+      .case-box { fill: #f8f9fa; stroke: #ced4da; stroke-width: 1; rx: 8; ry: 8; }
+      .case-title { font-size: 14px; font-weight: bold; }
+      .license-text { font-size: 12px; text-anchor: middle; fill: #6c757d; }
+    </style>
+     <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="3" dy="3" stdDeviation="5" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="900" class="bg" />
+  <text x="700" y="50" class="title">具身认知与行动：从比特到原子</text>
+  <text x="700" y="80" class="subtitle">机器人技术从“实时高能耗规划”到“前期高能耗训练”的范式演进</text>
+
+  <g transform="translate(50, 120)" filter="url(#shadow)">
+    <rect width="600" height="720" class="panel" />
+    <text x="300" y="50" class="panel-title" style="fill: #6f42c1;">经典机器人范式 (SPA)</text>
+    <text x="300" y="75" class="panel-subtitle">高能耗规划与环境脆弱性</text>
+
+    <g transform="translate(150, 120)">
+      <rect width="300" height="80" class="flow-box" />
+      <text x="150" y="40" class="flow-text" font-weight="bold">感知 (Sense)</text>
+      <text x="150" y="60" class="flow-text" style="font-size:12px;">通过传感器构建显式世界表征</text>
+
+      <path d="M 150 85 L 150 115" stroke="#343a40" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <rect y="120" width="300" height="120" class="flow-box" style="fill:#fff3cd; stroke:#ffc107;" />
+      <text x="150" y="150" class="flow-text" font-weight="bold">规划 (Plan)</text>
+      <text x="150" y="170" class="flow-text" style="font-size:12px;">计算密集型显式规划，生成行动指令</text>
+      <text x="150" y="200" class="highlight-text" style="font-size:14px; fill:#dc3545;">(主要瓶颈: 缓慢且脆弱)</text>
+
+      <path d="M 150 245 L 150 275" stroke="#343a40" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <rect y="280" width="300" height="80" class="flow-box" />
+      <text x="150" y="310" class="flow-text" font-weight="bold">行动 (Act)</text>
+      <text x="150" y="330" class="flow-text" style="font-size:12px;">开环执行预计算计划，实时调整能力差</text>
+    </g>
+
+    <g transform="translate(40, 520)">
+        <text class="highlight-text" style="text-anchor:start; fill:#6f42c1;">核心逻辑：</text>
+        <foreignObject x="0" y="20" width="520" height="150">
+            <ul xmlns="http://www.w3.org/1999/xhtml" class="item-text">
+                <li>试图在行动前，通过**持续消耗巨大的实时计算能量**，创建一个完美的、低熵的物理世界数字孪生。</li>
+                <li>对模型的完整性和准确性高度依赖，当遇到模型未曾明确考虑的新情况（熵增）时，系统往往会**彻底失效**。</li>
+            </ul>
+        </foreignObject>
+    </g>
+  </g>
+
+  <path d="M 660 450 L 700 450 L 700 430 L 730 460 L 700 490 L 700 470 L 660 470 Z" class="arrow" />
+  <text x="700" y="530" class="highlight-text" style="font-size:14px; text-anchor:middle; fill:#475569;">范式演进</text>
+
+
+  <g transform="translate(750, 120)" filter="url(#shadow)">
+    <rect width="600" height="720" class="panel" />
+    <text x="300" y="50" class="panel-title" style="fill: #198754;">新范式：端到端学习</text>
+    <text x="300" y="75" class="panel-subtitle">前期高能耗训练，换取后期高效率行动</text>
+
+    <g transform="translate(20, 120)">
+      <rect x="0" y="50" width="120" height="80" class="flow-box"/>
+      <text x="60" y="80" class="flow-text">原始感官输入</text>
+      <text x="60" y="100" class="flow-text" style="font-size:12px;">(视频流、传感器)</text>
+
+      <path d="M 125 90 L 175 90" stroke="#343a40" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <rect x="180" y="50" width="200" height="80" class="flow-box" style="fill:#d4edda; stroke:#28a745;"/>
+      <text x="280" y="80" class="flow-text" font-weight="bold">端到端神经网络</text>
+      <text x="280" y="100" class="flow-text" style="font-size:12px;">(隐式世界模型)</text>
+
+      <path d="M 385 90 L 435 90" stroke="#343a40" stroke-width="2" marker-end="url(#arrow-black)"/>
+
+      <rect x="445" y="50" width="120" height="80" class="flow-box"/>
+      <text x="495" y="80" class="flow-text">行动指令</text>
+      <text x="495" y="100" class="flow-text" style="font-size:12px;">(电机控制)</text>
+
+      <path d="M 320 45 L 320 15" stroke="#343a40" stroke-width="2" marker-end="url(#arrow-black)"/>
+      <text x="320" y="0" class="highlight-text" style="font-size:12px; fill:#dc3545; text-anchor:middle;">前期高能耗训练 (数据+算力)</text>
+    </g>
+
+    <g transform="translate(40, 280)">
+        <text class="highlight-text" style="text-anchor:start; fill:#198754;">典型案例：</text>
+        <g transform="translate(0, 30)">
+            <rect x="0" y="0" width="520" height="120" class="case-box"/>
+            <text x="20" y="25" class="case-title">1. 谷歌RT-2 (VLA模型):</text>
+            <foreignObject x="30" y="35" width="480" height="80">
+                <p xmlns="http://www.w3.org/1999/xhtml" class="item-text">
+                    将机器人动作表征为文本符号(tokens)，利用网络规模的视觉语言数据和机器人轨迹数据进行联合训练，通过接入互联网的低熵语义知识，获得对新任务和新物体的泛化能力。
+                </p>
+            </foreignObject>
+        </g>
+
+        <g transform="translate(0, 170)">
+            <rect x="0" y="0" width="520" height="120" class="case-box"/>
+            <text x="20" y="25" class="case-title">2. 特斯拉 FSD / Optimus:</text>
+            <foreignObject x="30" y="35" width="480" height="80">
+                <p xmlns="http://www.w3.org/1999/xhtml" class="item-text">
+                    从30万行复杂的C++代码，演进为单一的端到端神经网络。通过学习数百万小时人类驾驶数据，将成功驾驶行为压缩成一个低熵、鲁棒的控制策略。
+                </p>
+            </foreignObject>
+        </g>
+
+        <g transform="translate(0, 310)">
+            <rect x="0" y="0" width="520" height="120" class="case-box"/>
+            <text x="20" y="25" class="case-title">3. Figure AI (解耦式认知):</text>
+            <foreignObject x="30" y="35" width="480" height="80">
+                <p xmlns="http://www.w3.org/1999/xhtml" class="item-text">
+                    采用“系统1(快)、系统2(慢)”的双系统架构。高能耗、慢速的VLM负责高级规划(降低语义熵)，低能耗、快速的策略网络负责实时反应式控制，高效管理能量预算。
+                </p>
+            </foreignObject>
+        </g>
+    </g>
+  </g>
+
+  <defs>
+    <marker id="arrow-black" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#343a40"/>
+    </marker>
+  </defs>
+
+  <text x="700" y="880" class="license-text">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

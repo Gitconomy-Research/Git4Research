@@ -1,0 +1,100 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c0392b" />
+    </marker>
+    <linearGradient id="fadeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;"/>
+      <stop offset="100%" style="stop-color:#bdc3c7;"/>
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#aed6f1" />
+      <stop offset="100%" stop-color="#3498db" />
+    </linearGradient>
+  </defs>
+
+  <text x="600" y="50" font-size="32" font-weight="bold" text-anchor="middle" fill="#2c3e50">塑造“临时性”：产生开源大赛潮汐现象的三大机制</text>
+
+  <g id="mechanism1">
+    <rect x="50" y="120" width="320" height="320" rx="15" fill="#f9f9f9" stroke="#3498db" stroke-width="2"/>
+    <text x="210" y="160" font-size="22" font-weight="bold" text-anchor="middle" fill="#3498db">1. 终点明确的“线性赛道”</text>
+
+    <rect x="80" y="200" width="260" height="80" rx="10" fill="#ecf0f1" stroke="#bdc3c7"/>
+    <path d="M 140 200 L 140 280 M 200 200 L 200 280 M 260 200 L 260 280" stroke="#bdc3c7" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="110" y="245" font-size="14" text-anchor="middle" fill="#34495e">报名</text>
+    <text x="170" y="245" font-size="14" text-anchor="middle" fill="#34495e">开发</text>
+    <text x="230" y="245" font-size="14" text-anchor="middle" fill="#34495e">评审</text>
+    <text x="310" y="245" font-size="16" font-weight="bold" text-anchor="middle" fill="#e74c3c">终点</text>
+    <path d="M 290 200 L 290 280" stroke="#e74c3c" stroke-width="3"/>
+
+    <foreignObject x="70" y="300" width="280" height="120">
+       <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 15px; color: #34495e; line-height: 1.6; text-align: center;">
+        <b>内在逻辑：</b><br/>
+        <span style="color: #c0392b;">冲刺 → 撞线 → 结束</span><br/>
+        <span style="text-decoration: line-through; color: #7f8c8d;">融入 → 贡献 → 成长</span>
+      </div>
+    </foreignObject>
+  </g>
+
+  <g id="mechanism2">
+    <rect x="440" y="120" width="320" height="320" rx="15" fill="#f9f9f9" stroke="#f39c12" stroke-width="2"/>
+    <text x="600" y="160" font-size="22" font-weight="bold" text-anchor="middle" fill="#f39c12">2. 演示驱动的“规则囚笼”</text>
+
+    <rect x="480" y="200" width="240" height="100" rx="10" fill="#ecf0f1"/>
+    <rect x="480" y="200" width="240" height="100" rx="10" fill="url(#fadeGradient)" opacity="0.6"/>
+    <path d="M 510 200 L 510 300 M 540 200 L 540 300 M 570 200 L 570 300 M 600 200 L 600 300 M 630 200 L 630 300 M 660 200 L 660 300 M 690 200 L 690 300" stroke="#34495e" stroke-width="2"/>
+    <text x="600" y="255" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">DEMO</text>
+
+    <foreignObject x="460" y="300" width="280" height="120">
+       <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 15px; color: #34495e; line-height: 1.6; text-align: center;">
+        <b>行为塑造：</b><br/>
+        <span style="color: #c0392b;">创造完美的“演示品”</span><br/>
+        <span style="text-decoration: line-through; color: #7f8c8d;">构建健壮、可持续的项目</span>
+      </div>
+    </foreignObject>
+  </g>
+
+  <g id="mechanism3">
+    <rect x="830" y="120" width="320" height="320" rx="15" fill="#f9f9f9" stroke="#2ecc71" stroke-width="2"/>
+    <text x="990" y="160" font-size="22" font-weight="bold" text-anchor="middle" fill="#2ecc71">3. 阅后即焚的“临时渠道”</text>
+
+    <g transform="translate(870, 200)">
+        <rect width="100" height="100" rx="10" fill="#2ecc71"/>
+        <circle cx="50" cy="50" r="15" fill="white"/>
+        <text x="50" y="85" font-size="14" fill="white" text-anchor="middle">赛期活跃社群</text>
+    </g>
+    <path d="M 980 250 L 1020 250" stroke="#c0392b" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <g transform="translate(1030, 200)">
+        <rect width="100" height="100" rx="10" fill="#bdc3c7"/>
+        <text x="50" y="55" font-size="14" fill="white" text-anchor="middle">赛后沉寂</text>
+    </g>
+
+    <foreignObject x="850" y="300" width="280" height="120">
+       <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 15px; color: #34495e; line-height: 1.6; text-align: center;">
+        <b>关系解构：</b><br/>
+        <span style="color: #c0392b;">社交网络瞬间中断</span><br/>
+        <span style="text-decoration: line-through; color: #7f8c8d;">持续合作的可能性</span>
+      </div>
+    </foreignObject>
+  </g>
+
+  <g id="tide-wave" opacity="0.8">
+    <path d="M 0 500 Q 150 470, 300 500 T 600 500 T 900 500 T 1200 500" fill="url(#waveGradient)" />
+    <path d="M 0 505 Q 120 525, 240 505 T 480 505 T 720 505 T 960 505 T 1200 505" fill="#aed6f1" opacity="0.6"/>
+  </g>
+
+  <g id="conclusion">
+    <rect x="250" y="550" width="700" height="180" rx="20" fill="#fff5f5" stroke="#c0392b" stroke-width="2.5"/>
+    <text x="600" y="600" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">三大机制共同作用</text>
+    <foreignObject x="270" y="620" width="660" height="100">
+       <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 18px; color: #34495e; line-height: 1.8; text-align: center;">
+        不断向参与者传递一个明确信号：<br/>
+        <span style="font-weight: bold; background-color: #ffe8e8; padding: 2px 6px; border-radius: 5px; color: #c0392b;">你的参与是暂时的，目标是“赢得比赛”，而非“加入社区”</span>
+      </div>
+    </foreignObject>
+  </g>
+
+  <text x="50%" y="780" font-size="12" text-anchor="middle" fill="#6c757d">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区
+  </text>
+</svg>

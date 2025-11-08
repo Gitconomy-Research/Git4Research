@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第五章：生态的共创——从技术使用者到价值贡献者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --line: #e5e7eb;
+            --brand: #004AAD;
+            --brand2: #0062D5;
+            --brand5: #CDE6FF;
+            --accent-green: #10b981;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) { .hero h1 { font-size: 40px } }
+        .hero .lead {
+            color: var(--brand5);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .site-footer {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 18px 16px;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+        .card {
+            background-color: var(--card);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(15,23,42,.06);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brand);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .step-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .step-number {
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--brand2);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-right: 1.5rem;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="hero">
+        <h1>第五章 生态的共创：从技术使用者到价值贡献者</h1>
+        <p class="lead">阐述中国AI开源生态的蓬勃发展，以及新一代开发者如何通过开源贡献，构建个人技术影响力，融入国家技术自主浪潮。</p>
+    </header>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <!-- 1. 两大里程碑 -->
+        <section class="card">
+            <h2 class="section-title">AI开源生态发展的两大里程碑</h2>
+            <p class="text-center text-[var(--muted)] mb-8">中国AI开源生态的突破性发展，由“国家战略”和“产业技术”两大里程碑事件共同驱动。</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500 text-center">
+                    <div class="text-5xl mb-4">🇨🇳</div>
+                    <h3 class="text-xl font-bold text-blue-800">“十四五”规划：国家战略定调</h3>
+                    <p class="text-[var(--muted)] mt-2">首次将“开源”提升至国家级顶层设计，确立其为推动技术创新、实现科技自立自强的国家级战略工具，为生态繁荣提供了前所未有的政策红利。</p>
+                </div>
+                <div class="p-6 bg-rose-50 rounded-lg border-l-4 border-rose-500 text-center">
+                    <div class="text-5xl mb-4">💥</div>
+                    <h3 class="text-xl font-bold text-rose-800">DeepSeek开源：技术冲击波</h3>
+                    <p class="text-[var(--muted)] mt-2">顶尖性能模型的开源，带来了“鲶鱼效应”，彻底打破了闭源垄断的认知，极大拉高了国内开源基准线，加速了整个行业的技术迭代。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 中国AI开源生态图谱 -->
+        <section class="card">
+            <h2 class="section-title">中国AI开源生态图谱</h2>
+            <p class="text-center text-[var(--muted)] mb-8">在两大里程碑的共同作用下，一个层次分明、充满活力的中国AI开源生态图谱得以形成。</p>
+            <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div class="p-4 bg-white rounded-lg shadow">
+                        <div class="text-4xl mb-3">🏛️</div>
+                        <h3 class="font-bold">开源基金会/社区</h3>
+                        <p class="text-xs text-[var(--muted)] mt-1">开放原子开源基金会, OpenI启智社区</p>
+                    </div>
+                     <div class="p-4 bg-white rounded-lg shadow">
+                        <div class="text-4xl mb-3">🧠</div>
+                        <h3 class="font-bold">AI框架层</h3>
+                        <p class="text-xs text-[var(--muted)] mt-1">华为MindSpore, 百度PaddlePaddle</p>
+                    </div>
+                     <div class="p-4 bg-white rounded-lg shadow">
+                        <div class="text-4xl mb-3">🤖</div>
+                        <h3 class="font-bold">大模型层</h3>
+                        <p class="text-xs text-[var(--muted)] mt-1">通义千问, ChatGLM, DeepSeek</p>
+                    </div>
+                     <div class="p-4 bg-white rounded-lg shadow">
+                        <div class="text-4xl mb-3">📦</div>
+                        <h3 class="font-bold">代码/模型中心</h3>
+                        <p class="text-xs text-[var(--muted)] mt-1">Gitee, ModelScope, Hugging Face</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 开发者角色转变与成长路径 -->
+        <section class="card">
+            <h2 class="section-title">开发者的成长路径：从使用者到贡献者</h2>
+            <p class="text-center text-[var(--muted)] mb-8">大模型时代，开发者的角色正从“从零构建者”向“模型应用与调优者”转变。通过参与开源，可以系统性地提升个人技术影响力。</p>
+            <div class="relative py-4">
+                <div class="absolute left-6 top-6 bottom-6 w-1 bg-gray-200"></div>
+                <div class="space-y-8">
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-0 h-12 w-12 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center font-bold text-xl">1</div>
+                        <h3 class="text-xl font-bold">技术使用者</h3>
+                        <p class="text-[var(--muted)]">学习和应用生态技术，利用现有模型和工具解决问题。</p>
+                    </div>
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-0 h-12 w-12 rounded-full bg-blue-200 text-blue-800 flex items-center justify-center font-bold text-xl">2</div>
+                        <h3 class="text-xl font-bold">社区参与者</h3>
+                        <p class="text-[var(--muted)]">在使用中发现Bug并提交Issue，参与社区讨论，帮助回答新手问题。</p>
+                    </div>
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-0 h-12 w-12 rounded-full bg-[var(--brand2)] text-white flex items-center justify-center font-bold text-xl">3</div>
+                        <h3 class="text-xl font-bold">价值贡献者</h3>
+                        <p class="text-[var(--muted)]">尝试修复Bug并提交第一个Pull Request (PR)，贡献新的模型实现或优化代码。</p>
+                    </div>
+                    <div class="relative pl-16">
+                        <div class="absolute left-0 top-0 h-12 w-12 rounded-full bg-[var(--accent-green)] text-white flex items-center justify-center font-bold text-xl">4</div>
+                        <h3 class="text-xl font-bold text-green-700">影响力构建者</h3>
+                        <p class="text-[var(--muted)]">成为核心贡献者或项目维护者，构建一份公开、可验证的工程能力档案，其价值正超越传统的学术论文。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 实践指南 -->
+        <section class="card">
+            <h2 class="section-title">实践指南：利用昇腾开源生态开展科研</h2>
+            <p class="text-center text-[var(--muted)] mb-8">昇腾AI全栈技术体系及其开源生态为科研人员提供了从学习到创新的完整路径。</p>
+            <div class="space-y-6">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3 class="text-xl font-bold">资源获取与学习</h3>
+                        <p class="text-[var(--muted)]">利用<span class="font-semibold text-gray-800">昇腾社区</span>获取文档教程，通过<span class="font-semibold text-gray-800">ModelArts平台</span>申请免费算力，在<span class="font-semibold text-gray-800">ModelZoo</span>下载基线模型。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3 class="text-xl font-bold">课题研究与实践</h3>
+                        <p class="text-[var(--muted)]">将前沿算法（如Mamba/MoE）在MindSpore中实现并优化；或微调多模态大模型，解决广西特色产业问题（如水果病虫害识别）。</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number bg-[var(--accent-green)]">3</div>
+                    <div>
+                        <h3 class="text-xl font-bold">融入社区与贡献</h3>
+                        <p class="text-[var(--muted)]">将研究成果（如优化后的模型、高性能算子）贡献给社区。每一次被合并的PR，都是一份闪亮的“技术名片”，是构建个人技术影响力的关键一步。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区
+    </footer>
+
+</body>
+</html>

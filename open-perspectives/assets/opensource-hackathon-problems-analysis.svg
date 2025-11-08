@@ -1,0 +1,56 @@
+<svg width="1200" height="525" viewBox="0 0 1200 525" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <text x="600" y="60" font-size="32" font-weight="bold" text-anchor="middle" fill="#2c3e50">开源大赛“价值失灵”的三大表现</text>
+
+  <g id="organizer-perspective" transform="translate(20, 120)">
+    <rect x="0" y="0" width="370" height="320" rx="15" fill="#f9f9f9" stroke="#3498db" stroke-width="2"/>
+    <rect x="0" y="0" width="370" height="50" rx="15" ry="15" fill="#3498db"/>
+    <text x="185" y="32" font-size="22" font-weight="bold" text-anchor="middle" fill="white">组织者视角</text>
+    <foreignObject x="15" y="65" width="340" height="240">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 16px; color: #34495e; line-height: 1.6;">
+        <p style="font-weight: bold; margin-top: 5px;">回报“短期化”</p>
+        <ul>
+          <li><b>机会浪费:</b> 运营动作“一次性”，放弃构建长期生态。</li>
+          <li><b>经验浪费:</b> “组织记忆”蒸发，宝贵经验随项目结束而流失。</li>
+          <li><b>资产浪费:</b> 巨大的预算投入未转化为可持续的社区资产和人才储备。</li>
+        </ul>
+      </div>
+    </foreignObject>
+  </g>
+
+  <g id="participant-perspective" transform="translate(415, 120)">
+    <rect x="0" y="0" width="370" height="320" rx="15" fill="#f9f9f9" stroke="#f39c12" stroke-width="2"/>
+    <rect x="0" y="0" width="370" height="50" rx="15" ry="15" fill="#f39c12"/>
+    <text x="185" y="32" font-size="22" font-weight="bold" text-anchor="middle" fill="white">参赛者视角</text>
+    <foreignObject x="15" y="65" width="340" height="240">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 16px; color: #34495e; line-height: 1.6;">
+        <p style="font-weight: bold; margin-top: 5px;">“价值断裂”</p>
+        <ul>
+          <li><b>成长幻觉:</b> 收获碎片化、难复用的技能，而非扎实的工程能力。</li>
+          <li><b>人脉速朽:</b> 临时的“弱连接”在赛后迅速瓦解，无法沉淀。</li>
+          <li><b>项目沉没:</b> 投入心血的项目因缺乏后续支持而被废弃。</li>
+        </ul>
+      </div>
+    </foreignObject>
+  </g>
+
+  <g id="ecosystem-perspective" transform="translate(810, 120)">
+    <rect x="0" y="0" width="370" height="320" rx="15" fill="#f9f9f9" stroke="#2ecc71" stroke-width="2"/>
+    <rect x="0" y="0" width="370" height="50" rx="15" ry="15" fill="#2ecc71"/>
+    <text x="185" y="32" font-size="22" font-weight="bold" text-anchor="middle" fill="white">社区生态视角</text>
+    <foreignObject x="15" y="65" width="340" height="240">
+       <div xmlns="http://www.w3.org/1999/xhtml" style="font-size: 16px; color: #34495e; line-height: 1.6;">
+        <p style="font-weight: bold; margin-top: 5px;">“缺乏飞轮效应”</p>
+        <ul>
+          <li><b>知识无法沉淀:</b> 宝贵的技术讨论和解决方案随临时渠道一同消散。</li>
+          <li><b>人才无法转化:</b> 人才涌入变成一次性的“抽水”，而非为社区注入“活水”。</li>
+          <li><b>失去“自我造血”:</b> 每次大赛都像冷启动，无法在前一次的基础上积累势能。</li>
+        </ul>
+      </div>
+    </foreignObject>
+  </g>
+
+  <text x="50%" y="500" font-size="12" text-anchor="middle" fill="#6c757d">
+    本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区
+  </text>
+</svg>

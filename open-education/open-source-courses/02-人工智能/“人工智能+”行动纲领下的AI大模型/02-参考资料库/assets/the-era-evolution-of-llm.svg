@@ -1,0 +1,134 @@
+<svg width="1400" height="700" viewBox="0 0 1400 730" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="14px">
+    <defs>
+        <style>
+           .title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #333; }
+           .era-title { font-size: 20px; font-weight: bold; text-anchor: middle; fill: #fff; }
+           .lane-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #555; }
+           .item-box { stroke: #ccc; stroke-width: 1; rx: 5; ry: 5; }
+           .item-title { font-weight: bold; fill: #333; }
+           .item-desc { fill: #666; font-size: 12px; }
+           .arrow { stroke: #e57373; stroke-width: 2; marker-end: url(#arrowhead); }
+           .arrow-text { fill: #c62828; font-size: 12px; font-weight: bold; text-anchor: middle; }
+        </style>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#e57373" />
+        </marker>
+    </defs>
+
+    <rect x="0" y="0" width="1400" height="700" fill="#f9f9f9"/>
+    <text x="700" y="40" class="title">大模型技术的时代演进</text>
+
+    <rect x="150" y="70" width="400" height="65" fill="#42a5f5" rx="10" ry="10"/>
+    <text x="350" y="100" class="era-title">规模时代 (Age of Scale)</text>
+    <text x="350" y="120" fill="#fff" font-size="12px" text-anchor="middle">(c. 2017-2023)</text>
+
+    <rect x="580" y="70" width="400" height="65" fill="#66bb6a" rx="10" ry="10"/>
+    <text x="780" y="100" class="era-title">效率时代 (Age of Efficiency)</text>
+    <text x="780" y="120" fill="#fff" font-size="12px" text-anchor="middle">(c. 2023-Present)</text>
+
+    <rect x="1010" y="70" width="340" height="65" fill="#ffa726" rx="10" ry="10"/>
+    <text x="1180" y="100" class="era-title">智能体时代 (Age of Agency)</text>
+    <text x="1180" y="120" fill="#fff" font-size="12px" text-anchor="middle">(Emerging)</text>
+
+    <text x="75" y="205" class="lane-title" transform="rotate(-90, 75, 205)">核心哲学</text>
+    <line x1="150" y1="205" x2="1350" y2="205" stroke="#ddd" stroke-width="1"/>
+
+    <text x="75" y="330" class="lane-title" transform="rotate(-90, 75, 330)">主导架构</text>
+    <line x1="150" y1="330" x2="1350" y2="330" stroke="#ddd" stroke-width="1"/>
+
+    <text x="75" y="455" class="lane-title" transform="rotate(-90, 75, 455)">关键技术</text>
+    <line x1="150" y1="455" x2="1350" y2="455" stroke="#ddd" stroke-width="1"/>
+
+    <text x="75" y="580" class="lane-title" transform="rotate(-90, 75, 580)">典型应用</text>
+    <line x1="150" y1="580" x2="1350" y2="580" stroke="#ddd" stroke-width="1"/>
+
+    <g id="era1-philosophy">
+        <rect x="180" y="160" width="340" height="80" fill="#e3f2fd" class="item-box"/>
+        <text x="350" y="180" class="item-title" text-anchor="middle">"越大越好" (Bigger is Better)</text>
+        <text x="350" y="200" class="item-desc" text-anchor="middle">通过指数级增加算力、数据和参数</text>
+        <text x="350" y="215" class="item-desc" text-anchor="middle">来换取模型性能的可预测提升。</text>
+    </g>
+    <g id="era1-architecture">
+        <rect x="180" y="285" width="340" height="80" fill="#e3f2fd" class="item-box"/>
+        <text x="350" y="305" class="item-title" text-anchor="middle">密集Transformer</text>
+        <text x="350" y="325" class="item-desc" text-anchor="middle">单一、庞大、通用的基础模型,</text>
+        <text x="350" y="340" class="item-desc" text-anchor="middle">所有参数被密集激活。</text>
+    </g>
+    <g id="era1-tech">
+        <rect x="180" y="410" width="340" height="80" fill="#e3f2fd" class="item-box"/>
+        <text x="350" y="430" class="item-title" text-anchor="middle">自注意力机制 &amp; 规模定律</text>
+        <text x="350" y="450" class="item-desc" text-anchor="middle">预训练 (PT) + 对齐 (SFT, RLHF)</text>
+        <text x="350" y="465" class="item-desc" text-anchor="middle">智能涌现 (Emergence)</text>
+    </g>
+    <g id="era1-apps">
+        <rect x="180" y="535" width="340" height="80" fill="#e3f2fd" class="item-box"/>
+        <text x="350" y="555" class="item-title" text-anchor="middle">内容生成 &amp; 基础问答</text>
+        <text x="350" y="575" class="item-desc" text-anchor="middle">文本续写、机器翻译、聊天机器人</text>
+        <text x="350" y="590" class="item-desc" text-anchor="middle">(e.g., GPT-3)</text>
+    </g>
+
+    <line x1="535" y1="160" x2="595" y2="160" class="arrow"/>
+    <text x="565" y="150" class="arrow-text">"规模之墙"</text>
+    <text x="565" y="175" class="arrow-text" font-size="10px">(成本, 能耗, 数据)</text>
+
+    <g id="era2-philosophy">
+        <rect x="610" y="160" width="340" height="80" fill="#e8f5e9" class="item-box"/>
+        <text x="780" y="180" class="item-title" text-anchor="middle">"效率为王" (Efficiency is Key)</text>
+        <text x="780" y="200" class="item-desc" text-anchor="middle">追求更高的性能/成本比,</text>
+        <text x="780" y="215" class="item-desc" text-anchor="middle">优化推理生命周期。</text>
+    </g>
+    <g id="era2-architecture">
+        <rect x="610" y="285" width="340" height="80" fill="#e8f5e9" class="item-box"/>
+        <text x="780" y="305" class="item-title" text-anchor="middle">效率架构工具箱</text>
+        <text x="780" y="325" class="item-desc" text-anchor="middle">Mamba (解绑计算), MoE (解绑参数),</text>
+        <text x="780" y="340" class="item-desc" text-anchor="middle">RAG (解绑知识)。</text>
+    </g>
+    <g id="era2-tech">
+        <rect x="610" y="410" width="340" height="80" fill="#e8f5e9" class="item-box"/>
+        <text x="780" y="430" class="item-title" text-anchor="middle">模型优化 &amp; 开源生态</text>
+        <text x="780" y="450" class="item-desc" text-anchor="middle">量化、剪枝、知识蒸馏</text>
+        <text x="780" y="465" class="item-desc" text-anchor="middle">Llama, DeepSeek等开源模型爆发</text>
+    </g>
+    <g id="era2-apps">
+        <rect x="610" y="535" width="340" height="80" fill="#e8f5e9" class="item-box"/>
+        <text x="780" y="555" class="item-title" text-anchor="middle">企业级应用 &amp; 垂直领域</text>
+        <text x="780" y="575" class="item-desc" text-anchor="middle">企业知识库、代码生成、金融风控</text>
+        <text x="780" y="590" class="item-desc" text-anchor="middle">(e.g., Perplexity AI, GitHub Copilot)</text>
+    </g>
+
+    <line x1="965" y1="330" x2="1025" y2="330" class="arrow"/>
+    <text x="995" y="320" class="arrow-text">能力融合</text>
+
+    <g id="era3-philosophy">
+        <rect x="1040" y="160" width="280" height="80" fill="#fff3e0" class="item-box"/>
+        <text x="1180" y="180" class="item-title" text-anchor="middle">"交互与行动" (Agency &amp; Interaction)</text>
+        <text x="1180" y="200" class="item-desc" text-anchor="middle">AI从被动工具进化为</text>
+        <text x="1180" y="215" class="item-desc" text-anchor="middle">能够主动完成任务的协作者。</text>
+    </g>
+    <g id="era3-architecture">
+        <rect x="1040" y="285" width="280" height="80" fill="#fff3e0" class="item-box"/>
+        <text x="1180" y="305" class="item-title" text-anchor="middle">智能体架构</text>
+        <text x="1180" y="325" class="item-desc" text-anchor="middle">融合感知、规划、记忆、行动</text>
+        <text x="1180" y="340" class="item-desc" text-anchor="middle">的循环决策框架。</text>
+    </g>
+    <g id="era3-tech">
+        <rect x="1040" y="410" width="280" height="80" fill="#fff3e0" class="item-box"/>
+        <text x="1180" y="430" class="item-title" text-anchor="middle">多模态 &amp; 具身智能</text>
+        <text x="1180" y="450" class="item-desc" text-anchor="middle">多模态融合 (GPT-4o), 工具调用 (ReAct)</text>
+        <text x="1180" y="465" class="item-desc" text-anchor="middle">端到端机器人控制 (RT-2)</text>
+    </g>
+    <g id="era3-apps">
+        <rect x="1040" y="535" width="280" height="80" fill="#fff3e0" class="item-box"/>
+        <text x="1180" y="555" class="item-title" text-anchor="middle">科学发现 &amp; 物理世界交互</text>
+        <text x="1180" y="575" class="item-desc" text-anchor="middle">AI for Science (AlphaFold), 自动驾驶,</text>
+        <text x="1180" y="590" class="item-desc" text-anchor="middle">人形机器人 (Optimus)</text>
+    </g>
+
+    <line x1="150" y1="650" x2="1350" y2="650" stroke="#333" stroke-width="2" marker-end="url(#arrowhead-black)"/>
+    <marker id="arrowhead-black" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#333" />
+    </marker>
+    <text x="750" y="670" font-size="16px" text-anchor="middle" fill="#333">技术迭代与能力演进 (Technology Iteration &amp; Capability Evolution)</text>
+
+    <text x="50%" y="710" font-family="Arial" font-size="10" text-anchor="middle" fill="#555">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

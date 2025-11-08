@@ -1,0 +1,157 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 860">
+  <!-- 背景 -->
+  <rect width="890" height="840" fill="#f8f9fa" rx="10" ry="10"/>
+
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">大教堂与市集：两种软件开发模式</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">基于Eric S. Raymond 1997年的经典著作</text>
+
+  <!-- 分隔线 -->
+  <line x1="400" y1="100" x2="400" y2="500" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- 左侧：大教堂模式 -->
+  <g transform="translate(200, 130)">
+    <!-- 大教堂图标 -->
+    <path d="M0,140 L0,60 L40,20 L80,60 L80,140 Z" fill="#6c5ce7" fill-opacity="0.2" stroke="#6c5ce7" stroke-width="2"/>
+    <path d="M30,140 L30,80 L40,70 L50,80 L50,140 Z" fill="#6c5ce7" fill-opacity="0.4" stroke="#6c5ce7" stroke-width="1"/>
+    <path d="M10,100 L20,90 L20,100 Z" fill="none" stroke="#6c5ce7" stroke-width="1"/>
+    <path d="M60,100 L70,90 L70,100 Z" fill="none" stroke="#6c5ce7" stroke-width="1"/>
+
+    <!-- 标题 -->
+    <text x="40" y="170" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#6c5ce7">大教堂模式</text>
+    <text x="40" y="190" font-family="Arial, sans-serif" font-size="16" font-style="italic" text-anchor="middle" fill="#666">Cathedral Model</text>
+  </g>
+
+  <!-- 右侧：市集模式 -->
+  <g transform="translate(600, 130)">
+    <!-- 市集图标 -->
+    <rect x="-60" y="20" width="30" height="30" fill="#e17055" fill-opacity="0.2" stroke="#e17055" stroke-width="1"/>
+    <rect x="-20" y="10" width="40" height="40" fill="#e17055" fill-opacity="0.3" stroke="#e17055" stroke-width="1"/>
+    <rect x="30" y="15" width="35" height="35" fill="#e17055" fill-opacity="0.2" stroke="#e17055" stroke-width="1"/>
+    <rect x="-40" y="60" width="25" height="25" fill="#e17055" fill-opacity="0.4" stroke="#e17055" stroke-width="1"/>
+    <rect x="-5" y="65" width="30" height="30" fill="#e17055" fill-opacity="0.3" stroke="#e17055" stroke-width="1"/>
+    <rect x="35" y="60" width="20" height="20" fill="#e17055" fill-opacity="0.5" stroke="#e17055" stroke-width="1"/>
+    <rect x="-55" y="95" width="35" height="35" fill="#e17055" fill-opacity="0.3" stroke="#e17055" stroke-width="1"/>
+    <rect x="-10" y="105" width="30" height="30" fill="#e17055" fill-opacity="0.4" stroke="#e17055" stroke-width="1"/>
+    <rect x="30" y="90" width="25" height="25" fill="#e17055" fill-opacity="0.2" stroke="#e17055" stroke-width="1"/>
+
+    <!-- 连线 -->
+    <line x1="-45" y1="35" x2="-20" y2="30" stroke="#e17055" stroke-width="1"/>
+    <line x1="20" y1="30" x2="30" y2="35" stroke="#e17055" stroke-width="1"/>
+    <line x1="-40" y1="60" x2="-20" y2="50" stroke="#e17055" stroke-width="1"/>
+    <line x1="20" y1="50" x2="35" y2="60" stroke="#e17055" stroke-width="1"/>
+    <line x1="-15" y1="65" x2="-5" y2="65" stroke="#e17055" stroke-width="1"/>
+    <line x1="25" y1="65" x2="35" y2="65" stroke="#e17055" stroke-width="1"/>
+    <line x1="-40" y1="85" x2="-20" y2="95" stroke="#e17055" stroke-width="1"/>
+    <line x1="-20" y1="95" x2="-10" y2="105" stroke="#e17055" stroke-width="1"/>
+    <line x1="20" y1="95" x2="30" y2="90" stroke="#e17055" stroke-width="1"/>
+
+    <!-- 标题 -->
+    <text x="0" y="170" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#e17055">市集模式</text>
+    <text x="0" y="190" font-family="Arial, sans-serif" font-size="16" font-style="italic" text-anchor="middle" fill="#666">Bazaar Model</text>
+  </g>
+
+  <!-- 特点比较：大教堂 -->
+  <g transform="translate(40, 350)">
+    <!-- 特点1 -->
+    <circle cx="20" cy="0" r="8" fill="#6c5ce7"/>
+    <text x="40" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">集中规划</text>
+    <text x="60" y="25" font-family="Arial, sans-serif" font-size="14" fill="#666">由核心架构师预先设计整体蓝图</text>
+
+    <!-- 特点2 -->
+    <circle cx="20" cy="50" r="8" fill="#6c5ce7"/>
+    <text x="40" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">层级结构</text>
+    <text x="60" y="75" font-family="Arial, sans-serif" font-size="14" fill="#666">明确的责任分工和决策链</text>
+
+    <!-- 特点3 -->
+    <circle cx="20" cy="100" r="8" fill="#6c5ce7"/>
+    <text x="40" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">周期性发布</text>
+    <text x="60" y="125" font-family="Arial, sans-serif" font-size="14" fill="#666">相对较长的开发周期，整体性发布</text>
+
+    <!-- 特点4 -->
+    <circle cx="20" cy="150" r="8" fill="#6c5ce7"/>
+    <text x="40" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">有限参与</text>
+    <text x="60" y="175" font-family="Arial, sans-serif" font-size="14" fill="#666">开发团队相对封闭</text>
+
+    <!-- 优势 -->
+    <rect x="0" y="210" width="320" height="30" rx="5" ry="5" fill="#6c5ce7" fill-opacity="0.1" stroke="#6c5ce7" stroke-width="1"/>
+    <text x="160" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">优势</text>
+
+    <circle cx="20" cy="260" r="6" fill="#6c5ce7" fill-opacity="0.6"/>
+    <text x="40" y="265" font-family="Arial, sans-serif" font-size="14" fill="#666">架构一致性高</text>
+
+    <circle cx="20" cy="290" r="6" fill="#6c5ce7" fill-opacity="0.6"/>
+    <text x="40" y="295" font-family="Arial, sans-serif" font-size="14" fill="#666">质量控制严格</text>
+
+    <circle cx="20" cy="320" r="6" fill="#6c5ce7" fill-opacity="0.6"/>
+    <text x="40" y="325" font-family="Arial, sans-serif" font-size="14" fill="#666">发展路径可预测</text>
+  </g>
+
+  <!-- 特点比较：市集 -->
+  <g transform="translate(440, 350)">
+    <!-- 特点1 -->
+    <circle cx="20" cy="0" r="8" fill="#e17055"/>
+    <text x="40" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">演进式发展</text>
+    <text x="60" y="25" font-family="Arial, sans-serif" font-size="14" fill="#666">"先发布，再完善"（Release early, release often）</text>
+
+    <!-- 特点2 -->
+    <circle cx="20" cy="50" r="8" fill="#e17055"/>
+    <text x="40" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">分散决策</text>
+    <text x="60" y="75" font-family="Arial, sans-serif" font-size="14" fill="#666">多中心、去中心化的协作网络</text>
+
+    <!-- 特点3 -->
+    <circle cx="20" cy="100" r="8" fill="#e17055"/>
+    <text x="40" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">频繁迭代</text>
+    <text x="60" y="125" font-family="Arial, sans-serif" font-size="14" fill="#666">快速、小步骤的持续改进</text>
+
+    <!-- 特点4 -->
+    <circle cx="20" cy="150" r="8" fill="#e17055"/>
+    <text x="40" y="155" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">开放参与</text>
+    <text x="60" y="175" font-family="Arial, sans-serif" font-size="14" fill="#666">"眼多bug浅"（Given enough eyeballs, all bugs are shallow）</text>
+
+    <!-- 优势 -->
+    <rect x="0" y="210" width="320" height="30" rx="5" ry="5" fill="#e17055" fill-opacity="0.1" stroke="#e17055" stroke-width="1"/>
+    <text x="160" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">优势</text>
+
+    <circle cx="20" cy="260" r="6" fill="#e17055" fill-opacity="0.6"/>
+    <text x="40" y="265" font-family="Arial, sans-serif" font-size="14" fill="#666">创新速度快</text>
+
+    <circle cx="20" cy="290" r="6" fill="#e17055" fill-opacity="0.6"/>
+    <text x="40" y="295" font-family="Arial, sans-serif" font-size="14" fill="#666">适应性强</text>
+
+    <circle cx="20" cy="320" r="6" fill="#e17055" fill-opacity="0.6"/>
+    <text x="40" y="325" font-family="Arial, sans-serif" font-size="14" fill="#666">广泛的社区参与</text>
+  </g>
+
+  <!-- 代表项目 -->
+  <g transform="translate(50, 180)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6c5ce7">典型代表:</text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" fill="#666">GNU Emacs (早期)</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" fill="#666">Apache HTTP Server</text>
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="#666">（早期）</text>
+  </g>
+
+  <g transform="translate(750, 180)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#e17055">典型代表:</text>
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="14" fill="#666">Linux内核</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" fill="#666">Python软件包生态</text>
+  </g>
+
+  <!-- 现代演变 -->
+  <rect x="150" y="700" width="500" height="100" rx="10" ry="10" fill="#f5f5f5" stroke="#ddd" stroke-width="2"/>
+  <text x="400" y="725" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">现代演变：边界模糊化</text>
+
+  <g transform="translate(200, 760)">
+    <circle cx="0" cy="0" r="6" fill="#333"/>
+    <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#333">混合模式：许多现代项目（如Kubernetes）兼具两种特性</text>
+  </g>
+
+  <g transform="translate(200,780)">
+    <circle cx="0" cy="0" r="6" fill="#333"/>
+    <text x="20" y="5" font-family="Arial, sans-serif" font-size="14" fill="#333">阶段性转换：项目在不同发展阶段可能在两种模式间切换</text>
+  </g>
+
+  <!-- 许可声明 - 更新后的版权信息 -->
+  <text x="400" y="840" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

@@ -1,0 +1,167 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, SimHei" font-size="24" text-anchor="middle" font-weight="bold" fill="#2c3e50">高校实施OSPO的参考路线图</text>
+
+  <!-- 月数标识 - 调整位置至标题下方50单位 -->
+  <text x="150" y="90" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="#3498db">0-3个月</text>
+  <text x="350" y="90" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="#27ae60">3-6个月</text>
+  <text x="550" y="90" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="#e67e22">6-12个月</text>
+  <text x="750" y="90" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="#8e44ad">12-24个月</text>
+
+  <!-- Main Road Path -->
+  <path d="M100,130 C150,110 200,150 250,130 C300,110 350,150 400,130 C450,110 500,150 550,130 C600,110 650,150 700,130 C750,110 800,150 850,130" stroke="#95a5a6" stroke-width="20" fill="none" />
+
+  <!-- Phase 1: Preparation and Planning (0-3 months) -->
+  <circle cx="150" cy="130" r="30" fill="#3498db" stroke="#ffffff" stroke-width="3" />
+  <text x="150" y="135" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="white">1</text>
+
+  <rect x="80" y="170" width="140" height="40" rx="5" fill="#3498db" />
+  <text x="150" y="195" font-family="Arial, SimHei" font-size="14" text-anchor="middle" fill="white">准备与规划阶段</text>
+
+  <rect x="50" y="230" width="200" height="140" rx="10" fill="#d4e6f1" stroke="#3498db" stroke-width="2" />
+  <text x="150" y="250" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">关键任务：</text>
+
+  <circle cx="80" cy="275" r="8" fill="#3498db" />
+  <text x="80" y="278" font-family="Arial" font-size="10" text-anchor="middle" fill="white">1</text>
+  <text x="95" y="278" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">成立筹备工作组</text>
+
+  <circle cx="80" cy="300" r="8" fill="#3498db" />
+  <text x="80" y="303" font-family="Arial" font-size="10" text-anchor="middle" fill="white">2</text>
+  <text x="95" y="303" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">开展需求调研与分析</text>
+
+  <circle cx="80" cy="325" r="8" fill="#3498db" />
+  <text x="80" y="328" font-family="Arial" font-size="10" text-anchor="middle" fill="white">3</text>
+  <text x="95" y="328" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">制定初步实施方案</text>
+
+  <circle cx="80" cy="350" r="8" fill="#3498db" />
+  <text x="80" y="353" font-family="Arial" font-size="10" text-anchor="middle" fill="white">4</text>
+  <text x="95" y="353" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">获取学校领导支持</text>
+
+  <!-- Phase 2: Setup and Structure (3-6 months) -->
+  <circle cx="350" cy="130" r="30" fill="#27ae60" stroke="#ffffff" stroke-width="3" />
+  <text x="350" y="135" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="white">2</text>
+
+  <rect x="280" y="170" width="140" height="40" rx="5" fill="#27ae60" />
+  <text x="350" y="195" font-family="Arial, SimHei" font-size="14" text-anchor="middle" fill="white">建立与构建阶段</text>
+
+  <rect x="250" y="230" width="200" height="140" rx="10" fill="#d5f5e3" stroke="#27ae60" stroke-width="2" />
+  <text x="350" y="250" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">关键任务：</text>
+
+  <circle cx="280" cy="275" r="8" fill="#27ae60" />
+  <text x="280" y="278" font-family="Arial" font-size="10" text-anchor="middle" fill="white">1</text>
+  <text x="295" y="278" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">正式组建OSPO团队</text>
+
+  <circle cx="280" cy="300" r="8" fill="#27ae60" />
+  <text x="280" y="303" font-family="Arial" font-size="10" text-anchor="middle" fill="white">2</text>
+  <text x="295" y="303" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">制定合规基本指南</text>
+
+  <circle cx="280" cy="325" r="8" fill="#27ae60" />
+  <text x="280" y="328" font-family="Arial" font-size="10" text-anchor="middle" fill="white">3</text>
+  <text x="295" y="328" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">开展初步培训与宣讲</text>
+
+  <circle cx="280" cy="350" r="8" fill="#27ae60" />
+  <text x="280" y="353" font-family="Arial" font-size="10" text-anchor="middle" fill="white">4</text>
+  <text x="295" y="353" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">建立代码与资源清单</text>
+
+  <!-- Phase 3: Process Development (6-12 months) -->
+  <circle cx="550" cy="130" r="30" fill="#e67e22" stroke="#ffffff" stroke-width="3" />
+  <text x="550" y="135" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="white">3</text>
+
+  <rect x="480" y="170" width="140" height="40" rx="5" fill="#e67e22" />
+  <text x="550" y="195" font-family="Arial, SimHei" font-size="14" text-anchor="middle" fill="white">流程发展阶段</text>
+
+  <rect x="450" y="230" width="200" height="140" rx="10" fill="#fdebd0" stroke="#e67e22" stroke-width="2" />
+  <text x="550" y="250" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">关键任务：</text>
+
+  <circle cx="480" cy="275" r="8" fill="#e67e22" />
+  <text x="480" y="278" font-family="Arial" font-size="10" text-anchor="middle" fill="white">1</text>
+  <text x="495" y="278" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">标准化审批与发布流程</text>
+
+  <circle cx="480" cy="300" r="8" fill="#e67e22" />
+  <text x="480" y="303" font-family="Arial" font-size="10" text-anchor="middle" fill="white">2</text>
+  <text x="495" y="303" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">推广统一协作平台</text>
+
+  <circle cx="480" cy="325" r="8" fill="#e67e22" />
+  <text x="480" y="328" font-family="Arial" font-size="10" text-anchor="middle" fill="white">3</text>
+  <text x="495" y="328" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">发布OER许可指南</text>
+
+  <circle cx="480" cy="350" r="8" fill="#e67e22" />
+  <text x="480" y="353" font-family="Arial" font-size="10" text-anchor="middle" fill="white">4</text>
+  <text x="495" y="353" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">建立InnerSource试点</text>
+
+  <!-- Phase 4: Scaling and Integration (12-24 months) -->
+  <circle cx="750" cy="130" r="30" fill="#8e44ad" stroke="#ffffff" stroke-width="3" />
+  <text x="750" y="135" font-family="Arial, SimHei" font-size="16" text-anchor="middle" font-weight="bold" fill="white">4</text>
+
+  <rect x="680" y="170" width="140" height="40" rx="5" fill="#8e44ad" />
+  <text x="750" y="195" font-family="Arial, SimHei" font-size="14" text-anchor="middle" fill="white">扩展与整合阶段</text>
+
+  <rect x="650" y="230" width="200" height="140" rx="10" fill="#ebdef0" stroke="#8e44ad" stroke-width="2" />
+  <text x="750" y="250" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="#2c3e50">关键任务：</text>
+
+  <circle cx="680" cy="275" r="8" fill="#8e44ad" />
+  <text x="680" y="278" font-family="Arial" font-size="10" text-anchor="middle" fill="white">1</text>
+  <text x="695" y="278" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">设立项目孵化中心</text>
+
+  <circle cx="680" cy="300" r="8" fill="#8e44ad" />
+  <text x="680" y="303" font-family="Arial" font-size="10" text-anchor="middle" fill="white">2</text>
+  <text x="695" y="303" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">整合评价与激励机制</text>
+
+  <circle cx="680" cy="325" r="8" fill="#8e44ad" />
+  <text x="680" y="328" font-family="Arial" font-size="10" text-anchor="middle" fill="white">3</text>
+  <text x="695" y="328" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">建设资源发布平台</text>
+
+  <circle cx="680" cy="350" r="8" fill="#8e44ad" />
+  <text x="680" y="353" font-family="Arial" font-size="10" text-anchor="middle" fill="white">4</text>
+  <text x="695" y="353" font-family="Arial, SimHei" font-size="12" text-anchor="start" fill="#2c3e50">发起跨校合作倡议</text>
+
+  <!-- Milestone Checkpoints - 调整大小以容纳里程碑卡片 -->
+  <rect x="50" y="390" width="800" height="180" rx="10" fill="#ecf0f1" stroke="#7f8c8d" stroke-width="2" />
+  <text x="450" y="410" font-family="Arial, SimHei" font-size="18" text-anchor="middle" font-weight="bold" fill="#2c3e50">关键里程碑检查点</text>
+
+  <!-- 里程碑卡片 - 重新调整确保在背景框内 -->
+  <!-- 第一行里程碑 -->
+  <rect x="100" y="430" width="160" height="30" rx="15" fill="#3498db" />
+  <circle cx="115" cy="445" r="10" fill="#ffffff" />
+  <text x="115" y="449" font-family="Arial" font-size="12" text-anchor="middle" fill="#3498db" font-weight="bold">M1</text>
+  <text x="180" y="449" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">OSPO方案获批</text>
+
+  <rect x="280" y="430" width="160" height="30" rx="15" fill="#27ae60" />
+  <circle cx="295" cy="445" r="10" fill="#ffffff" />
+  <text x="295" y="449" font-family="Arial" font-size="12" text-anchor="middle" fill="#27ae60" font-weight="bold">M2</text>
+  <text x="360" y="449" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">核心团队组建完成</text>
+
+  <rect x="460" y="430" width="160" height="30" rx="15" fill="#e67e22" />
+  <circle cx="475" cy="445" r="10" fill="#ffffff" />
+  <text x="475" y="449" font-family="Arial" font-size="12" text-anchor="middle" fill="#e67e22" font-weight="bold">M3</text>
+  <text x="540" y="449" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">基础政策体系完备</text>
+
+  <rect x="640" y="430" width="160" height="30" rx="15" fill="#8e44ad" />
+  <circle cx="655" cy="445" r="10" fill="#ffffff" />
+  <text x="655" y="449" font-family="Arial" font-size="12" text-anchor="middle" fill="#8e44ad" font-weight="bold">M4</text>
+  <text x="720" y="449" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">资源平台正式上线</text>
+
+  <!-- 第二行里程碑 - 调整位置 -->
+  <rect x="170" y="480" width="160" height="30" rx="15" fill="#16a085" />
+  <circle cx="185" cy="495" r="10" fill="#ffffff" />
+  <text x="185" y="499" font-family="Arial" font-size="12" text-anchor="middle" fill="#16a085" font-weight="bold">M5</text>
+  <text x="250" y="499" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">首批试点项目启动</text>
+
+  <rect x="370" y="480" width="160" height="30" rx="15" fill="#f39c12" />
+  <circle cx="385" cy="495" r="10" fill="#ffffff" />
+  <text x="385" y="499" font-family="Arial" font-size="12" text-anchor="middle" fill="#f39c12" font-weight="bold">M6</text>
+  <text x="450" y="499" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">评价激励机制落地</text>
+
+  <rect x="570" y="480" width="160" height="30" rx="15" fill="#c0392b" />
+  <circle cx="585" cy="495" r="10" fill="#ffffff" />
+  <text x="585" y="499" font-family="Arial" font-size="12" text-anchor="middle" fill="#c0392b" font-weight="bold">M7</text>
+  <text x="650" y="499" font-family="Arial, SimHei" font-size="12" text-anchor="middle" fill="white">首个跨校联盟成立</text>
+
+  <!-- Critical Success Factors -->
+  <rect x="100" y="530" width="700" height="30" rx="5" fill="#34495e" />
+  <text x="450" y="550" font-family="Arial, SimHei" font-size="14" text-anchor="middle" font-weight="bold" fill="white">成功关键因素：领导支持、资源保障、跨部门协同、持续培训、激励机制</text>
+
+  <!-- License Statement -->
+  <text x="450" y="620" font-family="Arial, SimHei" font-size="11" text-anchor="middle" fill="#666666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

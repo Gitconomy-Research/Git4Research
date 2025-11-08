@@ -1,0 +1,232 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 775" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <style>
+      .main-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #111827;
+      }
+      .section-title {
+        font-size: 20px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #111827;
+      }
+      .core-title {
+        font-size: 18px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #1F2937;
+      }
+      .function-title {
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #1F2937;
+      }
+      .dept-title {
+        font-size: 16px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: white;
+      }
+      .description-text {
+        font-size: 14px;
+        fill: #4B5563;
+        text-anchor: middle;
+      }
+      .function-text {
+        font-size: 12px;
+        fill: #1F2937;
+        text-anchor: middle;
+      }
+      .cooperation-title {
+        font-size: 14px;
+        font-weight: bold;
+        fill: #1F2937;
+        text-anchor: middle;
+      }
+      .cooperation-text {
+        font-size: 11px;
+        fill: #4B5563;
+        text-anchor: middle;
+      }
+      .highlight-text {
+        font-style: italic;
+        font-weight: bold;
+      }
+      .credit-text {
+        font-size: 11px;
+        fill: #6B7280;
+        text-anchor: middle;
+      }
+      .core-circle {
+        fill: #E0E7FF;
+        stroke: #93C5FD;
+        stroke-width: 3;
+      }
+      .core-function {
+        fill: white;
+        stroke: #3B82F6;
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .connector {
+        fill: none;
+        stroke: #9CA3AF;
+        stroke-width: 2;
+      }
+      .arrow {
+        fill: #9CA3AF;
+      }
+      .dept-box {
+        stroke-width: 2;
+        rx: 8;
+        ry: 8;
+      }
+      .function-box {
+        fill: #F9FAFB;
+        stroke: #E5E7EB;
+        stroke-width: 1;
+        rx: 6;
+        ry: 6;
+      }
+      .cooperation-box {
+        fill: #F3F4F6;
+        stroke: #D1D5DB;
+        stroke-width: 1;
+        rx: 6;
+        ry: 6;
+      }
+      .dept-it {
+        fill: #3B82F6;
+        stroke: #2563EB;
+      }
+      .dept-library {
+        fill: #10B981;
+        stroke: #059669;
+      }
+      .dept-research {
+        fill: #F59E0B;
+        stroke: #D97706;
+      }
+      .dept-legal {
+        fill: #EF4444;
+        stroke: #DC2626;
+      }
+    </style>
+  </defs>
+
+  <!-- 标题 -->
+  <text class="main-title" x="450" y="40">高校OSPO混合治理组织架构</text>
+
+  <!-- 1. 中心化核心 -->
+  <text class="section-title" x="450" y="85">中心化核心</text>
+
+  <!-- 中心圆 -->
+  <circle class="core-circle" cx="450" cy="200" r="100"/>
+  <text class="core-title" x="450" y="175">高校OSPO</text>
+  <text class="description-text" x="450" y="200">专职执行和战略规划机构</text>
+  <text class="description-text" x="450" y="225">小型、精干、高专业度团队</text>
+
+  <!-- 四个核心职能 - 增加与中心圆的间距，调整连接线 -->
+  <rect x="60" y="120" width="220" height="70" class="core-function"/>
+  <text class="function-title" x="170" y="145">战略与治理</text>
+  <text class="function-text" x="170" y="170">制定战略规划、年度计划、资源协调</text>
+  <path class="connector" d="M 280 155 C 320 155, 330 175, 350 175"/>
+
+  <rect x="60" y="210" width="220" height="70" class="core-function"/>
+  <text class="function-title" x="170" y="235">法律与合规管理</text>
+  <text class="function-text" x="170" y="260">许可政策和知识产权（IP）风险初审</text>
+  <path class="connector" d="M 280 245 C 320 245, 330 225, 350 225"/>
+
+  <rect x="620" y="120" width="220" height="70" class="core-function"/>
+  <text class="function-title" x="730" y="145">高层沟通与资源争取</text>
+  <text class="function-text" x="730" y="170">校级高层沟通、争取预算支持</text>
+  <path class="connector" d="M 620 155 C 580 155, 570 175, 550 175"/>
+
+  <rect x="620" y="210" width="220" height="70" class="core-function"/>
+  <text class="function-title" x="730" y="235">文化与培训</text>
+  <text class="function-text" x="730" y="260">设计和推广开源文化理念和最佳实践</text>
+  <path class="connector" d="M 620 245 C 580 245, 570 225, 550 225"/>
+
+  <!-- 2. 分布式执行网络 -->
+  <text class="section-title" x="450" y="350">分布式执行网络</text>
+
+  <!-- 中心到执行网络的连接线 -->
+  <line class="connector" x1="450" y1="300" x2="450" y2="370"/>
+  <polygon class="arrow" points="450,375 445,365 455,365"/>
+
+  <!-- 信息化办公室/网络中心 - 增加卡片宽度 -->
+  <rect x="90" y="400" width="190" height="60" class="dept-box dept-it"/>
+  <text class="dept-title" x="185" y="435">信息化办公室/网络中心</text>
+
+  <rect x="90" y="470" width="190" height="80" class="function-box"/>
+  <text class="function-title" x="185" y="490">平台和工具管理</text>
+  <text class="function-text" x="185" y="515">提供代码托管平台、镜像站、</text>
+  <text class="function-text" x="185" y="535">CI/CD工具和数据共享基础设施</text>
+
+  <rect x="90" y="560" width="190" height="90" class="cooperation-box"/>
+  <text class="cooperation-title" x="185" y="580">协作重点</text>
+  <text class="cooperation-text" x="185" y="600">确保平台满足开源协作的</text>
+  <text class="cooperation-text" x="185" y="620"><tspan class="highlight-text">标准化</tspan>要求，提供API支持</text>
+  <text class="cooperation-text" x="185" y="640"><tspan class="highlight-text">度量计量</tspan></text>
+
+  <!-- 大学图书馆 - 增加卡片宽度 -->
+  <rect x="285" y="400" width="190" height="60" class="dept-box dept-library"/>
+  <text class="dept-title" x="380" y="435">大学图书馆</text>
+
+  <rect x="285" y="470" width="190" height="80" class="function-box"/>
+  <text class="function-title" x="380" y="490">OER许可和知识管理</text>
+  <text class="function-text" x="380" y="515">负责OER资源收集、元数据管理、</text>
+  <text class="function-text" x="380" y="535">长期存档，提供CC许可咨询</text>
+
+  <rect x="285" y="560" width="190" height="90" class="cooperation-box"/>
+  <text class="cooperation-title" x="380" y="580">协作重点</text>
+  <text class="cooperation-text" x="380" y="600">联合制定OER资源的<tspan class="highlight-text">发布</tspan></text>
+  <text class="cooperation-text" x="380" y="620"><tspan class="highlight-text">规范</tspan>和<tspan class="highlight-text">生命周期管理</tspan>，</text>
+  <text class="cooperation-text" x="380" y="640">转化为<tspan class="highlight-text">可发现的开放资产</tspan></text>
+
+  <!-- 科研院/实验室 - 增加卡片宽度 -->
+  <rect x="480" y="400" width="190" height="60" class="dept-box dept-research"/>
+  <text class="dept-title" x="575" y="435">科研院/实验室</text>
+
+  <rect x="480" y="470" width="190" height="80" class="function-box"/>
+  <text class="function-title" x="575" y="490">项目孵化与科研转化</text>
+  <text class="function-text" x="575" y="515">推动科研项目采用开源治理模式，</text>
+  <text class="function-text" x="575" y="535">为InnerSource试点项目提供指导</text>
+
+  <rect x="480" y="560" width="190" height="90" class="cooperation-box"/>
+  <text class="cooperation-title" x="575" y="580">协作重点</text>
+  <text class="cooperation-text" x="575" y="600">制定<tspan class="highlight-text">"研究原型到开源项目"</tspan></text>
+  <text class="cooperation-text" x="575" y="620">的转化流程，为科研人员提供</text>
+  <text class="cooperation-text" x="575" y="640"><tspan class="highlight-text">项目治理模板</tspan>和技术支持</text>
+
+  <!-- 知识产权中心/法务部 - 增加卡片宽度 -->
+  <rect x="675" y="400" width="190" height="60" class="dept-box dept-legal"/>
+  <text class="dept-title" x="770" y="435">知识产权中心/法务部</text>
+
+  <rect x="675" y="470" width="190" height="80" class="function-box"/>
+  <text class="function-title" x="770" y="490">法律和IP合规</text>
+  <text class="function-text" x="770" y="515">负责最终的<tspan class="highlight-text">知识产权审核</tspan>，</text>
+  <text class="function-text" x="770" y="535">制定和解释校级<tspan class="highlight-text">开源IP政策</tspan></text>
+
+  <rect x="675" y="560" width="190" height="90" class="cooperation-box"/>
+  <text class="cooperation-title" x="770" y="580">协作重点</text>
+  <text class="cooperation-text" x="770" y="600">联合制定<tspan class="highlight-text">默认为开放</tspan>的IP</text>
+  <text class="cooperation-text" x="770" y="620">政策，建立<tspan class="highlight-text">简化的、低摩擦</tspan></text>
+  <text class="cooperation-text" x="770" y="640">的审批流程</text>
+
+  <!-- 架构说明 -->
+  <text class="function-text" x="180" y="685" text-anchor="middle" font-style="italic">中心化战略领导</text>
+  <text class="function-text" x="720" y="685" text-anchor="middle" font-style="italic">分散化专业执行</text>
+  <line class="connector" x1="270" y1="685" x2="630" y2="685"/>
+  <polygon class="arrow" points="630,685 620,680 620,690"/>
+  <polygon class="arrow" points="270,685 280,680 280,690"/>
+
+  <!-- 许可声明 -->
+  <text class="credit-text" x="50%" y="750">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

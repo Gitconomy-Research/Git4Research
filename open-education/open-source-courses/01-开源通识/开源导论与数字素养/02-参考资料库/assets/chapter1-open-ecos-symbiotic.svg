@@ -1,0 +1,169 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600">
+  <!-- 背景 -->
+  <rect width="940" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" fill="#333" text-anchor="middle" font-weight="bold">开放运动的融合与演变</text>
+
+  <!-- 时间轴背景 -->
+  <rect x="100" y="490" width="700" height="4" fill="#ddd" rx="2" ry="2"/>
+
+  <!-- 时间节点 -->
+  <circle cx="150" cy="492" r="8" fill="#4285f4"/>
+  <text x="150" y="520" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">1990s-2000s</text>
+  <text x="150" y="540" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">开源软件起步</text>
+
+  <circle cx="300" cy="492" r="8" fill="#4285f4"/>
+  <text x="300" y="520" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">2000s-2010s</text>
+  <text x="300" y="540" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">多领域扩展</text>
+
+  <circle cx="450" cy="492" r="8" fill="#4285f4"/>
+  <text x="450" y="520" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">2010s-2020s</text>
+  <text x="450" y="540" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">生态系统融合</text>
+
+  <circle cx="600" cy="492" r="8" fill="#4285f4"/>
+  <text x="600" y="520" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">2020s-2025+</text>
+  <text x="600" y="540" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">AI交织与制度化</text>
+
+  <circle cx="750" cy="492" r="8" fill="#4285f4"/>
+  <text x="750" y="520" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">2025+</text>
+  <text x="750" y="540" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">全球挑战解决方案</text>
+
+  <!-- 融合阶段 - 已调整垂直居中 - 移到其他元素下面 -->
+  <g>
+    <ellipse cx="480" cy="300" rx="130" ry="170" fill="#E8EFF9" stroke="#B0C4DE" stroke-width="2" opacity="0.7"/>
+    <text x="480" y="190" font-family="Arial, sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">开放创新生态系统</text>
+    <text x="480" y="215" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">各领域互相支持与共生</text>
+
+    <line x1="440" y1="240" x2="440" y2="380" stroke="#90a4ae" stroke-width="2" stroke-dasharray="5,3"/>
+    <circle cx="440" y="260" r="6" fill="#4285f4"/>
+    <circle cx="440" y="300" r="6" fill="#ea4335"/>
+    <circle cx="440" y="340" r="6" fill="#fbbc05"/>
+    <!-- 移除了绿色圆点 -->
+
+    <text x="455" y="265" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="start">开源软件提供科研工具</text>
+    <text x="455" y="305" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="start">开放科学产生开放数据</text>
+    <text x="455" y="345" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="start">开放数据促进教育普及</text>
+    <text x="455" y="385" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="start">开放教育培养新一代贡献者</text>
+  </g>
+
+  <!-- 开放领域及其演变 -->
+  <!-- 开源硬件 -->
+  <g>
+    <rect x="280" y="150" width="120" height="60" rx="10" ry="10" fill="#ea4335" opacity="0.8"/>
+    <text x="340" y="180" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">开源硬件</text>
+    <text x="340" y="200" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Open Hardware</text>
+  </g>
+
+  <!-- 开放教育 -->
+  <g>
+    <rect x="280" y="230" width="120" height="60" rx="10" ry="10" fill="#fbbc05" opacity="0.8"/>
+    <text x="340" y="260" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">开放教育</text>
+    <text x="340" y="280" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Open Education</text>
+  </g>
+
+  <!-- 开源软件 - 已重新定位居中 -->
+  <g>
+    <rect x="130" y="270" width="120" height="60" rx="10" ry="10" fill="#4285f4" opacity="0.8"/>
+    <text x="190" y="300" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">开源软件</text>
+    <text x="190" y="320" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Open Source</text>
+  </g>
+
+  <!-- 开放科学 -->
+  <g>
+    <rect x="280" y="310" width="120" height="60" rx="10" ry="10" fill="#34a853" opacity="0.8"/>
+    <text x="340" y="340" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">开放科学</text>
+    <text x="340" y="360" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Open Science</text>
+  </g>
+
+  <!-- 数字公共产品 -->
+  <g>
+    <rect x="280" y="390" width="120" height="60" rx="10" ry="10" fill="#9c27b0" opacity="0.8"/>
+    <text x="340" y="420" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">数字公共产品</text>
+    <text x="340" y="440" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Digital Public Goods</text>
+  </g>
+
+  <!-- 未来发展趋势 -->
+  <g>
+    <rect x="650" y="130" width="160" height="70" rx="10" ry="10" fill="#0056D6" opacity="0.8"/>
+    <text x="730" y="160" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">制度化与主流化</text>
+    <text x="730" y="180" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">从边缘走向核心</text>
+  </g>
+
+  <g>
+    <rect x="650" y="220" width="160" height="70" rx="10" ry="10" fill="#7E2E84" opacity="0.8"/>
+    <text x="730" y="250" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">开放治理模式</text>
+    <text x="730" y="270" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">可持续协作机制</text>
+  </g>
+
+  <g>
+    <rect x="650" y="310" width="160" height="70" rx="10" ry="10" fill="#E1701A" opacity="0.8"/>
+    <text x="730" y="340" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">AI与开放的交织</text>
+    <text x="730" y="360" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">重塑创新范式</text>
+  </g>
+
+  <g>
+    <rect x="650" y="400" width="160" height="70" rx="10" ry="10" fill="#3DA35D" opacity="0.8"/>
+    <text x="730" y="430" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" font-weight="bold">全球挑战解决方案</text>
+    <text x="730" y="450" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">气候变化、公共卫生</text>
+  </g>
+
+  <!-- 连接线 - 调整了开源软件的连接 -->
+  <!-- 从开源软件到其他领域 -->
+  <line x1="250" y1="300" x2="280" y2="180" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="250" y1="300" x2="280" y2="260" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="250" y1="300" x2="280" y2="340" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="250" y1="300" x2="280" y2="420" stroke="#90a4ae" stroke-width="2"/>
+
+  <!-- 从多领域到融合 -->
+  <line x1="400" y1="180" x2="440" y2="240" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="400" y1="260" x2="440" y2="270" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="400" y1="340" x2="440" y2="330" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="400" y1="420" x2="440" y2="370" stroke="#90a4ae" stroke-width="2"/>
+
+  <!-- 从融合到未来趋势 -->
+  <line x1="580" y1="230" x2="650" y2="165" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="580" y1="270" x2="650" y2="255" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="580" y1="330" x2="650" y2="345" stroke="#90a4ae" stroke-width="2"/>
+  <line x1="580" y1="380" x2="650" y2="435" stroke="#90a4ae" stroke-width="2"/>
+
+  <!-- 关键案例框 - 调整了位置 -->
+  <g>
+    <rect x="15" y="250" width="100" height="110" rx="5" ry="5" fill="#f0f0f0" stroke="#ddd" />
+    <text x="65" y="270" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">开源软件案例</text>
+    <text x="65" y="295" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+      <tspan x="65" dy="0">Linux</tspan>
+      <tspan x="65" dy="15">Apache</tspan>
+      <tspan x="65" dy="15">TensorFlow</tspan>
+      <tspan x="65" dy="15">Kubernetes</tspan>
+    </text>
+  </g>
+
+  <g>
+    <rect x="150" y="340" width="100" height="110" rx="5" ry="5" fill="#f0f0f0" stroke="#ddd" />
+    <text x="200" y="360" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">开放领域典范</text>
+    <text x="200" y="385" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+      <tspan x="200" dy="0">Arduino (硬件)</tspan>
+      <tspan x="200" dy="15">MIT OCW (教育)</tspan>
+      <tspan x="200" dy="15">Plan S (科学)</tspan>
+      <tspan x="200" dy="15">DHIS2 (公共产品)</tspan>
+    </text>
+  </g>
+
+  <g>
+    <rect x="830" y="230" width="100" height="110" rx="5" ry="5" fill="#f0f0f0" stroke="#ddd" />
+    <text x="880" y="250" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">未来趋势标志</text>
+    <text x="880" y="275" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+      <tspan x="880" dy="0">开源 LLM</tspan>
+      <tspan x="880" dy="15">开放气候数据</tspan>
+      <tspan x="880" dy="15">去中心化治理</tspan>
+      <tspan x="880" dy="15">全球开源基础设施</tspan>
+    </text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="450" y="580" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

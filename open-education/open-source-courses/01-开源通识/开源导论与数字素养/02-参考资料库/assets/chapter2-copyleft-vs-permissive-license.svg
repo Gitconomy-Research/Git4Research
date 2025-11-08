@@ -1,0 +1,80 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 770">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="1000" height="770" fill="#f8f9fa" />
+
+  <!-- 标题 -->
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">开源许可证类型比较</text>
+
+  <!-- 两个主要区域 -->
+  <rect x="50" y="80" width="425" height="630" rx="15" fill="#e6f3ff" stroke="#2b73b1" stroke-width="2" />
+  <rect x="525" y="80" width="425" height="630" rx="15" fill="#fff0e6" stroke="#d86b27" stroke-width="2" />
+
+  <!-- 标题 -->
+  <text x="262.5" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2b73b1">互惠型许可 (Copyleft)</text>
+  <text x="737.5" y="120" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#d86b27">宽松型许可 (Permissive)</text>
+
+  <!-- 传播型许可图标 -->
+  <circle cx="262.5" cy="170" r="30" fill="#2b73b1" />
+  <path d="M245.5 170 A17 17 0 1 0 262.5 153 L262.5 170 Z" fill="white" />
+  <path d="M279.5 170 A17 17 0 1 1 262.5 187 L262.5 170 Z" fill="white" />
+
+  <!-- 宽松型许可图标 - 新图标：开放的锁 -->
+  <circle cx="737.5" cy="170" r="30" fill="#d86b27" />
+  <g transform="translate(720, 156) scale(0.8)">
+    <!-- 锁身 -->
+    <rect x="12" y="18" width="22" height="20" rx="2" fill="white" />
+    <!-- 锁环 - 开放状态 -->
+    <path d="M8,18 L8,12 C8,5.5 14,0 23,0 C32,0 38,5.5 38,12 L38,18" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" />
+    <!-- 锁孔 -->
+    <circle cx="23" cy="26" r="3" fill="#d86b27" />
+  </g>
+
+  <!-- 传播型许可特点 -->
+  <text x="80" y="230" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">核心特性:</text>
+  <text x="100" y="260" font-family="Arial, sans-serif" font-size="16" fill="#333">• 衍生作品必须采用相同许可证发布</text>
+  <text x="100" y="290" font-family="Arial, sans-serif" font-size="16" fill="#333">• 强调代码的自由与共享</text>
+  <text x="100" y="320" font-family="Arial, sans-serif" font-size="16" fill="#333">• 具有"传染性"，确保衍生品保持开源</text>
+
+  <!-- 宽松型许可特点 -->
+  <text x="555" y="230" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">核心特性:</text>
+  <text x="575" y="260" font-family="Arial, sans-serif" font-size="16" fill="#333">• 施加限制最少，仅要求保留版权声明</text>
+  <text x="575" y="290" font-family="Arial, sans-serif" font-size="16" fill="#333">• 允许衍生作品以任何形式发布（含闭源）</text>
+  <text x="575" y="320" font-family="Arial, sans-serif" font-size="16" fill="#333">• 最大化软件的采用率和传播范围</text>
+
+  <!-- 传播型许可优势 -->
+  <text x="80" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">促进因素:</text>
+  <text x="100" y="400" font-family="Arial, sans-serif" font-size="16" fill="#333">• 确保所有改进回馈社区</text>
+  <text x="100" y="430" font-family="Arial, sans-serif" font-size="16" fill="#333">• 防止代码被私有化</text>
+  <text x="100" y="460" font-family="Arial, sans-serif" font-size="16" fill="#333">• 创建自我延续的自由软件生态</text>
+
+  <text x="80" y="500" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">限制因素:</text>
+  <text x="100" y="530" font-family="Arial, sans-serif" font-size="16" fill="#333">• 可能影响某些商业应用模式</text>
+  <text x="100" y="560" font-family="Arial, sans-serif" font-size="16" fill="#333">• 需考虑许可证兼容性问题</text>
+  <text x="100" y="590" font-family="Arial, sans-serif" font-size="16" fill="#333">• 企业集成时需更多法律审查</text>
+
+  <!-- 宽松型许可优势 -->
+  <text x="555" y="370" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">促进因素:</text>
+  <text x="575" y="400" font-family="Arial, sans-serif" font-size="16" fill="#333">• 便于商业公司采纳和参与</text>
+  <text x="575" y="430" font-family="Arial, sans-serif" font-size="16" fill="#333">• 支持多样化的使用场景</text>
+  <text x="575" y="460" font-family="Arial, sans-serif" font-size="16" fill="#333">• 较高的许可证兼容性</text>
+
+  <text x="555" y="500" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">考量因素:</text>
+  <text x="575" y="530" font-family="Arial, sans-serif" font-size="16" fill="#333">• 改进可能不会回馈到原始项目</text>
+  <text x="575" y="560" font-family="Arial, sans-serif" font-size="16" fill="#333">• 公共贡献可能被商业化而无需回报</text>
+  <text x="575" y="590" font-family="Arial, sans-serif" font-size="16" fill="#333">• 可能导致生态系统多样化发展</text>
+
+  <!-- 传播型许可典型例子 -->
+  <text x="80" y="630" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">代表许可证:</text>
+  <text x="100" y="660" font-family="Arial, sans-serif" font-size="16" fill="#333">• GPL系列 (GPLv2, GPLv3, AGPL)</text>
+  <text x="100" y="685" font-family="Arial, sans-serif" font-size="16" fill="#333">• 实例: Linux内核, WordPress, GNU工具</text>
+
+  <!-- 宽松型许可典型例子 -->
+  <text x="555" y="630" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">代表许可证:</text>
+  <text x="575" y="660" font-family="Arial, sans-serif" font-size="16" fill="#333">• MIT, Apache 2.0, BSD系列</text>
+  <text x="575" y="685" font-family="Arial, sans-serif" font-size="16" fill="#333">• 实例: React, Vue.js, Apache HTTP Server</text>
+
+  <!-- 许可声明 -->
+  <text x="50%" y="750" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

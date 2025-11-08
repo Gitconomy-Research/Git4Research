@@ -1,0 +1,177 @@
+<svg viewBox="0 0 1080 625" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">社交化编程（Social Coding）示意图</title>
+  <desc id="desc">展示从开发者到仓库的协作流程：Fork/Clone、提交与分支、Pull Request、代码评审、CI/CD、合并发布，并通过Issue与Discussion形成知识沉淀与社区共识的闭环。</desc>
+
+  <defs>
+    <style>
+      :root{
+        --bg:#ffffff;
+        --ink:#111827;          /* 主文字 */
+        --muted:#6B7280;        /* 次要文字 */
+        --primary:#2563EB;      /* 主题蓝 */
+        --success:#34D399;      /* 通过/健康 */
+        --warning:#F59E0B;      /* 等待/注意 */
+        --danger:#EF4444;       /* 失败/阻断 */
+        --surface:#F8FAFC;      /* 面板浅底（通用） */
+        --line:#CBD5E1;         /* 连接线 */
+        --accent:#9333EA;       /* 强调/知识沉淀 */
+      }
+      text{font-family: "Noto Sans SC", "Segoe UI", system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;}
+      .h1{font-size:22px; font-weight:700; fill:var(--ink);}
+      .h2{font-size:14px; font-weight:600; fill:var(--ink);}
+      .p{font-size:12px; fill:var(--muted);}
+      .mono{font-family: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;}
+      .card{fill:var(--surface); stroke:var(--primary); stroke-width:2; rx:14; ry:14;}
+      /* 新增：不同泳道的卡片配色 */
+      .card-personal{ fill:#EBF8FF; stroke:#38BDF8; }  /* 个人工作区：浅蓝底、青蓝描边 */
+      .card-hub{      fill:#F0FDF4; stroke:#34D399; }  /* 协作中枢：浅绿底、绿色描边 */
+      .soft{fill:#EEF2FF; stroke:#A5B4FC; stroke-width: 1.5;}
+      .ghost{fill:#F0FDFA; stroke:#99F6E4;}
+      .node{filter:url(#shadow);}
+      .pill{rx:12; ry:12;}
+      .kpi{font-size:11px; fill:var(--muted);}
+      .badge{font-size:11px; font-weight:700; fill:#ffffff;}
+      .edge{stroke:var(--primary); stroke-width:2.5; fill:none; marker-end:url(#arrow);}
+      .edge-dashed{stroke:var(--accent); stroke-dasharray:6 6; stroke-width:2; fill:none; marker-end:url(#arrowAccent);}
+      .edge-gray{stroke:var(--line); stroke-width:2; fill:none; marker-end:url(#arrowGray);}
+    </style>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--primary)"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--line)"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="20" width="940" height="60" fill="#EFF6FF" stroke="#BFDBFE" rx="12" ry="12"/>
+  <text class="h1" x="300" y="52">社交化编程：从代码协作到社区共识</text>
+  <text class="p" x="200" y="70">公开协作（Working in Public） · 代码即规则（Code is Law） · 评审即共识（Review as Social Protocol）</text>
+
+  <g opacity="0.5">
+    <rect x="20" y="96" width="940" height="134" fill="#F9FAFB" stroke="#E5E7EB" rx="8"/>
+    <text class="h2" x="32" y="118">个人工作区（本地/派生仓）</text>
+
+    <rect x="20" y="240" width="940" height="170" fill="#F9FAFB" stroke="#E5E7EB" rx="8"/>
+    <text class="h2" x="32" y="262">协作中枢（上游仓库）</text>
+
+    <rect x="20" y="420" width="940" height="180" fill="#F9FAFB" stroke="#E5E7EB" rx="8"/>
+    <text class="h2" x="32" y="442">社区与知识沉淀</text>
+  </g>
+
+  <!-- 顶部四张卡片：个人工作区（新增 card-personal） -->
+  <g class="node">
+    <rect class="card card-personal" x="60" y="130" width="170" height="80"/>
+    <text class="h2" x="80" y="160">开发者</text>
+    <text class="p"  x="80" y="180">编写代码 · 单元测试 · 提交</text>
+    <text class="kpi mono" x="80" y="198">git add · commit</text>
+  </g>
+
+  <g class="node">
+    <rect class="card card-personal" x="280" y="130" width="190" height="80"/>
+    <text class="h2" x="300" y="160">Fork / Clone</text>
+    <text class="p"  x="300" y="180">派生个人副本，建立远程追踪</text>
+    <text class="kpi mono" x="300" y="198">git clone · remote add</text>
+  </g>
+
+  <g class="node">
+    <rect class="card card-personal" x="520" y="130" width="200" height="80"/>
+    <text class="h2" x="540" y="160">分支与提交</text>
+    <text class="p"  x="540" y="180">特性分支 · 小步快跑 · 可回滚</text>
+    <text class="kpi mono" x="540" y="198">git switch -c feature/x</text>
+  </g>
+
+  <g class="node">
+    <rect class="card card-personal" x="760" y="130" width="180" height="80"/>
+    <text class="h2" x="780" y="160">Push &amp; Pull Request</text>
+    <text class="p"  x="780" y="180">提交上游进行合并提案</text>
+    <text class="kpi mono" x="780" y="198">git push · open PR</text>
+  </g>
+
+  <path class="edge" d="M230,170 C260,170 260,170 280,170"/>
+  <path class="edge" d="M470,170 C495,170 500,170 520,170"/>
+  <path class="edge" d="M720,170 C740,170 745,170 760,170"/>
+
+  <!-- 中间三张卡片：协作中枢（新增 card-hub） -->
+  <g class="node">
+    <rect class="card card-hub" x="80" y="290" width="220" height="90"/>
+    <text class="h2" x="100" y="318">代码评审（Review）</text>
+    <text class="p"  x="100" y="338">风格一致性 · 设计反馈 · 安全检查</text>
+    <rect x="100" y="346" width="54" height="20" class="pill" fill="var(--success)"/>
+    <text class="badge" x="107" y="360">LGTM</text>
+  </g>
+
+  <g class="node">
+    <rect class="card card-hub" x="360" y="290" width="230" height="90"/>
+    <text class="h2" x="380" y="318">CI / CD</text>
+    <text class="p"  x="380" y="338">自动化构建 · 测试 · 安全扫描</text>
+    <text class="kpi mono" x="380" y="356">checks: ✅ 128 · ❌ 2 · ⏳ 3</text>
+  </g>
+
+  <g class="node">
+    <rect class="card card-hub" x="650" y="290" width="240" height="90"/>
+    <text class="h2" x="670" y="318">合并主干 &amp; 发布</text>
+    <text class="p"  x="670" y="338">保护分支 · 语义化版本 · 产出制品</text>
+    <text class="kpi mono" x="670" y="356">merge → main · release v1.4.0</text>
+  </g>
+
+  <path class="edge-gray" d="M850,210 C850,240 720,240 700,280"/>
+  <path class="edge" d="M300,335 C320,335 340,335 358,335"/>
+  <path class="edge" d="M590,335 C610,335 640,335 648,335"/>
+
+  <text class="p" x="705" y="398">同步上游主干（rebase/merge）</text>
+
+  <!-- 底部知识沉淀（保持不变） -->
+  <g class="node">
+    <rect class="soft" x="60" y="480" width="260" height="90" rx="14" ry="14"/>
+    <text class="h2" x="80" y="508">Issue 跟踪 / 看板</text>
+    <text class="p"  x="80" y="528">需求 · 缺陷 · 里程碑 · 优先级</text>
+    <text class="kpi mono" x="80" y="546">labels: bug, feature, DevEx</text>
+    <text class="kpi mono" x="80" y="560">good-first-issue</text>
+  </g>
+
+  <g class="node">
+    <rect class="soft" x="360" y="480" width="260" height="90" rx="14" ry="14"/>
+    <text class="h2" x="380" y="508">Discussion / 文档与规范</text>
+    <text class="p"  x="380" y="528">设计提案 · 决策记录 · 贡献指南</text>
+    <text class="kpi mono" x="380" y="546">ADR · RFC · README · Wiki</text>
+  </g>
+
+  <g class="node">
+    <rect class="soft" x="660" y="480" width="260" height="90" rx="14" ry="14"/>
+    <text class="h2" x="680" y="508">Release / 包管理与分发</text>
+    <text class="p"  x="680" y="528">二进制 · 容器镜像 · 包仓库（PyPI/NPM）</text>
+    <text class="kpi mono" x="680" y="546">SBOM · 签名 · 可复现构建</text>
+  </g>
+
+  <path class="edge-gray" d="M320,525 H360"/>
+  <path class="edge-gray" d="M620,525 H660"/>
+
+  <path class="edge-dashed" d="M190,380 C190,420 190,440 190,480"/>
+  <path class="edge-dashed" d="M475,380 C475,420 475,440 475,480"/>
+  <path class="edge-dashed" d="M770,380 C770,420 770,440 770,480"/>
+  <text class="p" x="205" y="462" fill="var(--accent)">社会化协议：Review / Issue / Discussion</text>
+
+  <g transform="translate(970, 96)">
+    <rect width="100" height="100" fill="#FFF7ED" stroke="#FDBA74" rx="8"/>
+    <text class="h2" x="10" y="24">图例</text>
+
+    <rect x="10" y="40" width="18" height="10" fill="var(--primary)" rx="2"/>
+    <text class="p" x="34" y="49">主流程</text>
+
+    <rect x="10" y="60" width="18" height="10" fill="var(--accent)" rx="2"/>
+    <text class="p" x="34" y="69">社会化协议</text>
+
+    <rect x="10" y="80" width="18" height="10" class="soft" rx="2"/>
+    <text class="p" x="34" y="89">知识沉淀</text>
+  </g>
+
+  <text class="p" x="350" y="605">本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

@@ -1,0 +1,165 @@
+<svg width="1200" height="1340" viewBox="0 0 1200 1340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="grad-p" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;" />
+      <stop offset="100%" style="stop-color:#60a5fa;" />
+    </linearGradient>
+    <linearGradient id="grad-w" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;" />
+      <stop offset="100%" style="stop-color:#fb923c;" />
+    </linearGradient>
+    <linearGradient id="grad-s" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;" />
+      <stop offset="100%" style="stop-color:#f87171;" />
+    </linearGradient>
+     <linearGradient id="grad-tapr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;" />
+      <stop offset="100%" style="stop-color:#a78bfa;" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="3" dy="3" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .main-title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #111827; }
+    .section-title { font-size: 24px; font-weight: 600; text-anchor: middle; fill: #1f2937; }
+    .subsection-title { font-size: 20px; font-weight: 600; fill: #374151;}
+
+    .def-card { fill: #f9fafb; stroke: #d1d5db; stroke-width: 1.5; rx: 12; ry: 12; }
+    .def-card-title { font-size: 18px; font-weight: bold; fill: #1f2937; }
+    .def-card-text { font-size: 15px; fill: #374151; }
+    .def-card-highlight { font-weight: 600; fill: #111827; }
+
+    .license-header-box { rx: 8; ry: 8; }
+    .license-header-text { font-size: 20px; font-weight: 600; fill: white; text-anchor: middle; }
+    .license-card { fill: #ffffff; stroke-width: 1.5; rx: 8; ry: 8; }
+    .license-card-text { font-size: 15px; fill: #374151; }
+    .footer-text { font-size: 12px; text-anchor: middle; fill: #6b7280; }
+  </style>
+
+  <title>开源硬件许可的关键定义与类型</title>
+
+  <text x="600" y="50" class="main-title">开源硬件 (OSH) 许可的关键定义与类型</text>
+
+  <g id="definitions" transform="translate(50, 100)">
+    <text x="550" y="25" class="section-title">核心定义</text>
+    <rect x="0" y="50" width="1100" height="260" class="def-card" />
+
+    <g transform="translate(40, 75)">
+      <text x="0" y="20" class="def-card-title">1. 什么是开源硬件 (OSH)?</text>
+      <text class="def-card-text">
+        <tspan x="15" y="50">物理对象的设计规范，其许可方式允许任何人学习、修改、制造和分发这些设计及其衍生的实体产品。</tspan>
+        <tspan x="15" y="75">涵盖任何有形的物理制品，如机械、生物材料等，不仅限于电子设备。</tspan>
+        <tspan x="15" y="100">核心在于其<tspan class="def-card-highlight">“源文件”</tspan>的可及性 (如CAD文件、电路原理图等)。</tspan>
+      </text>
+    </g>
+
+    <g transform="translate(40, 190)">
+      <text x="0" y="20" class="def-card-title">2. 关键法律基础 (与软件许可的根本区别)</text>
+      <text class="def-card-text">
+        <tspan x="15" y="50">软件许可主要建立在<tspan class="def-card-highlight">版权法</tspan>之上，而硬件是<tspan class="def-card-highlight">版权与专利法</tspan>的双重结构。</tspan>
+        <tspan x="30" y="75">• <tspan class="def-card-highlight">版权</tspan>：保护硬件的“设计文档”(源文件)的表达形式。</tspan>
+        <tspan x="30" y="100">• <tspan class="def-card-highlight">专利</tspan>：保护功能性发明本身 (设备的工作原理)，是更强有力的法律工具。</tspan>
+      </text>
+    </g>
+  </g>
+
+  <g id="license-types" transform="translate(0, 450)">
+    <text x="600" y="25" class="section-title">主流开源硬件许可类型</text>
+
+    <g transform="translate(50, 80)">
+        <text y="0" class="subsection-title">互惠型 / Copyleft 许可</text>
+        <g transform="translate(0, 25)">
+            <g>
+              <rect width="350" height="50" fill="url(#grad-s)" class="license-header-box"/>
+              <text x="175" y="32" class="license-header-text">CERN-OHL-S (强互惠型)</text>
+              <rect y="50" width="350" height="280" class="license-card" stroke="#f87171" filter="url(#shadow)"/>
+              <text x="20" y="90" class="license-card-text">
+                <tspan x="20" y="90" font-weight="bold">核心特征:</tspan>
+                <tspan x="35" y="115">• 硬件领域的“强版”Copyleft。</tspan>
+                <tspan x="35" y="140">• 限制性最强的变体。</tspan>
+                <tspan x="20" y="175" font-weight="bold">衍生品规则:</tspan>
+                <tspan x="35" y="200">• 互惠义务<tspan font-weight="bold">延申</tspan>至集成了该组件</tspan>
+                <tspan x="35" y="225">  的<tspan font-weight="bold">整个大型硬件系统</tspan>。</tspan>
+              </text>
+            </g>
+            <g transform="translate(375, 0)">
+              <rect width="350" height="50" fill="url(#grad-w)" class="license-header-box"/>
+              <text x="175" y="32" class="license-header-text">CERN-OHL-W (弱互惠型)</text>
+              <rect y="50" width="350" height="280" class="license-card" stroke="#fb923c" filter="url(#shadow)"/>
+              <text x="20" y="90" class="license-card-text">
+                <tspan x="20" y="90" font-weight="bold">核心特征:</tspan>
+                <tspan x="35" y="115">• 引入“弱版”的Copyleft概念。</tspan>
+                <tspan x="20" y="150" font-weight="bold">衍生品规则:</tspan>
+                <tspan x="35" y="175">• 仅对<tspan font-weight="bold">许可组件本身</tspan>的修改需要开源。</tspan>
+                <tspan x="35" y="200">• 互惠义务<tspan font-weight="bold">不延申</tspan>至包含该组件的</tspan>
+                <tspan x="35" y="225">  更大型系统。</tspan>
+              </text>
+            </g>
+            <g transform="translate(750, 0)">
+              <rect width="350" height="50" fill="url(#grad-tapr)" class="license-header-box"/>
+              <text x="175" y="32" class="license-header-text">TAPR OHL</text>
+              <rect y="50" width="350" height="280" class="license-card" stroke="#a78bfa" filter="url(#shadow)"/>
+              <text x="20" y="90" class="license-card-text">
+                <tspan x="20" y="90" font-weight="bold">核心特征:</tspan>
+                <tspan x="35" y="115">• 受软件GPL启发，是经典的Copyleft许可。</tspan>
+                <tspan x="20" y="150" font-weight="bold">衍生品规则:</tspan>
+                <tspan x="35" y="175">• 要求任何修改或衍生作品</tspan>
+                <tspan x="35" y="200">  <tspan font-weight="bold">必须</tspan>在相同的TAPR OHL下发布。</tspan>
+                <tspan x="20" y="235" font-weight="bold">战略目标:</tspan>
+                <tspan x="35" y="260">• 确保硬件设计及其改进永久保持开放。</tspan>
+              </text>
+            </g>
+        </g>
+    </g>
+
+    <g transform="translate(50, 480)">
+        <text y="0" class="subsection-title">宽松型 / Permissive 许可</text>
+        <g transform="translate(0, 25)">
+            <g>
+              <rect width="537.5" height="50" fill="url(#grad-p)" class="license-header-box"/>
+              <text x="268.75" y="32" class="license-header-text">CERN-OHL-P (宽松型)</text>
+              <rect y="50" width="537.5" height="280" class="license-card" stroke="#60a5fa" filter="url(#shadow)"/>
+               <text x="20" y="90" class="license-card-text">
+                <tspan x="20" y="90" font-weight="bold">核心特征:</tspan>
+                <tspan x="35" y="115">• 限制最少的许可。</tspan>
+                <tspan x="35" y="140">• 核心要求是保留版权等声明。</tspan>
+                <tspan x="20" y="175" font-weight="bold">衍生品规则:</tspan>
+                <tspan x="35" y="200">• 允许基于开放设计创造并分发</tspan>
+                <tspan x="35" y="225">  <tspan font-weight="bold">闭源的、专有的</tspan>衍生硬件产品。</tspan>
+                <tspan x="20" y="260" font-weight="bold">战略目标:</tspan>
+                <tspan x="35" y="285">• 最大化行业采纳与商业集成。</tspan>
+              </text>
+            </g>
+            <g transform="translate(562.5, 0)">
+              <rect width="537.5" height="50" fill="url(#grad-p)" class="license-header-box"/>
+              <text x="268.75" y="32" class="license-header-text">Solderpad Hardware License</text>
+              <rect y="50" width="537.5" height="280" class="license-card" stroke="#60a5fa" filter="url(#shadow)"/>
+              <text x="20" y="90" class="license-card-text">
+                <tspan x="20" y="90" font-weight="bold">核心特征:</tspan>
+                <tspan x="35" y="115">• 基于Apache 2.0，商业友好。</tspan>
+                <tspan x="35" y="140">• 包含明确的<tspan font-weight="bold">专利授权</tspan>条款。</tspan>
+                <tspan x="20" y="175" font-weight="bold">衍生品规则:</tspan>
+                <tspan x="35" y="200">• <tspan font-weight="bold">不要求</tspan>衍生作品必须开源。</tspan>
+                <tspan x="35" y="225">• 允许将设计用于<tspan font-weight="bold">闭源的、专有的</tspan>产品。</tspan>
+                <tspan x="20" y="260" font-weight="bold">战略目标:</tspan>
+                <tspan x="35" y="285">• 降低商业公司使用的法律和合规门槛。</tspan>
+              </text>
+            </g>
+        </g>
+    </g>
+  </g>
+
+  <text x="600" y="1320" class="footer-text">本作品采用CC-BY-SA 4.0国际许可协议进行许可, 2025 Gitconomy Research社区。</text>
+
+</svg>

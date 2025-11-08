@@ -1,0 +1,214 @@
+
+<svg width="800" height="700" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <defs>
+        <style>
+            .center-circle {
+                fill: #EFF6FF;
+                stroke: #3B82F6;
+                stroke-width: 3;
+            }
+            .legal-box {
+                fill: #EDE9FE;
+                stroke: #8B5CF6;
+                stroke-width: 1.5;
+                rx: 8;
+                ry: 8;
+            }
+            .strategy-box {
+                fill: #ECFDF5;
+                stroke: #10B981;
+                stroke-width: 1.5;
+                rx: 8;
+                ry: 8;
+            }
+            .culture-box {
+                fill: #FEF2F2;
+                stroke: #EF4444;
+                stroke-width: 1.5;
+                rx: 8;
+                ry: 8;
+            }
+            .community-box {
+                fill: #FFF7ED;
+                stroke: #F97316;
+                stroke-width: 1.5;
+                rx: 8;
+                ry: 8;
+            }
+            .sub-box {
+                fill: #DBEAFE;
+                stroke: #60A5FA;
+                stroke-width: 1.5;
+                rx: 5;
+                ry: 5;
+            }
+            .highlight-box {
+                fill: #FEF9C3;
+                stroke: #FACC15;
+                stroke-width: 1.5;
+                rx: 5;
+                ry: 5;
+            }
+            .main-title-text {
+                font-size: 22px;
+                font-weight: 800;
+                text-anchor: middle;
+                fill: #111827;
+            }
+            .center-title {
+                font-size: 20px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1e40af;
+            }
+            .center-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #1e3a8a;
+            }
+            .function-title {
+                font-size: 16px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #065f46;
+            }
+            .sub-title {
+                font-size: 13px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1f2937;
+            }
+            .body-text {
+                font-size: 11px;
+                text-anchor: middle;
+                fill: #374151;
+            }
+            .cycle-arrow {
+                fill: none;
+                stroke: #2563EB;
+                stroke-width: 1.5;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+            .inner-connector {
+                fill: none;
+                stroke: #2563EB;
+                stroke-width: 1.8;
+                stroke-dasharray: 3,2;
+            }
+            .arrow-head {
+                fill: #2563EB;
+            }
+            .license-text {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #64748b;
+            }
+            .outcome-text {
+                font-size: 14px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1f2937;
+            }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head"/>
+        </marker>
+        <marker id="start-arrow" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M 10 0 L 0 5 L 10 10 z" class="arrow-head"/>
+        </marker>
+    </defs>
+
+    <!-- 标题 -->
+    <text x="400" y="30" class="main-title-text">OSPO 四大核心职能逻辑框架</text>
+
+    <!-- 中心OSPO圆形 -->
+    <circle cx="400" cy="300" r="80" class="center-circle" />
+    <text x="400" y="290" class="center-title">OSPO</text>
+    <text x="400" y="315" class="center-subtitle">开源项目办公室</text>
+
+    <!-- 1. 法律与合规 (左上) -->
+    <g id="legal-compliance">
+        <rect x="40" y="100" width="220" height="170" class="legal-box" />
+        <text x="150" y="125" class="function-title">法律与合规</text>
+        <text x="150" y="145" class="body-text">划定安全边界和底线</text>
+
+        <rect x="60" y="160" width="180" height="30" class="sub-box" />
+        <text x="150" y="178" class="body-text">制定开源使用与贡献政策</text>
+
+        <rect x="60" y="195" width="180" height="30" class="sub-box" />
+        <text x="150" y="213" class="body-text">引入SCA等自动化合规工具</text>
+
+        <rect x="60" y="230" width="180" height="30" class="sub-box" />
+        <text x="150" y="248" class="body-text">法律、安全与工程团队的桥梁</text>
+    </g>
+
+    <!-- 2. 战略与治理 (右上) -->
+    <g id="strategy-governance">
+        <rect x="540" y="100" width="220" height="170" class="strategy-box" />
+        <text x="650" y="125" class="function-title">战略与治理</text>
+        <text x="650" y="145" class="body-text">确保开源活动服务于组织目标</text>
+
+        <rect x="560" y="160" width="180" height="30" class="sub-box" />
+        <text x="650" y="178" class="body-text">提供开源项目选型建议</text>
+
+        <rect x="560" y="195" width="180" height="30" class="sub-box" />
+        <text x="650" y="213" class="body-text">制定对外贡献策略</text>
+
+        <rect x="560" y="230" width="180" height="30" class="sub-box" />
+        <text x="650" y="248" class="body-text">评估与指导内部项目开源</text>
+    </g>
+
+    <!-- 3. 文化与培训 (左下) -->
+    <g id="culture-training">
+        <rect x="40" y="400" width="220" height="170" class="culture-box" />
+        <text x="150" y="425" class="function-title">文化与培训</text>
+        <text x="150" y="445" class="body-text">在内部根植开源协作DNA</text>
+
+        <rect x="60" y="460" width="180" height="30" class="sub-box" />
+        <text x="150" y="478" class="body-text">提供开源许可与贡献流程培训</text>
+
+        <rect x="60" y="495" width="180" height="30" class="sub-box" />
+        <text x="150" y="513" class="body-text">推广开源协作模式与工具链</text>
+
+        <rect x="60" y="530" width="180" height="30" class="sub-box" />
+        <text x="150" y="548" class="body-text">宣传开源价值，营造开源氛围</text>
+    </g>
+
+    <!-- 4. 社区与生态 (右下) -->
+    <g id="community-ecosystem">
+        <rect x="540" y="400" width="220" height="170" class="community-box" />
+        <text x="650" y="425" class="function-title">社区与生态</text>
+        <text x="650" y="445" class="body-text">输出价值并汲取创新活力</text>
+
+        <rect x="560" y="460" width="180" height="30" class="sub-box" />
+        <text x="650" y="478" class="body-text">与基金会及项目社区建立关系</text>
+
+        <rect x="560" y="495" width="180" height="30" class="sub-box" />
+        <text x="650" y="513" class="body-text">制定社区治理规则，发展社群</text>
+
+        <rect x="560" y="530" width="180" height="30" class="sub-box" />
+        <text x="650" y="548" class="body-text">塑造优秀开源公民形象</text>
+    </g>
+
+    <!-- 闭环箭头 - 双箭头 -->
+    <path class="cycle-arrow" d="M 260 140 L 540 140" marker-end="url(#arrow)" marker-start="url(#start-arrow)" />
+    <path class="cycle-arrow" d="M 640 270 L 640 400" marker-end="url(#arrow)" marker-start="url(#start-arrow)" />
+    <path class="cycle-arrow" d="M 540 460 L 260 460" marker-end="url(#arrow)" marker-start="url(#start-arrow)" />
+    <path class="cycle-arrow" d="M 160 270 L 160 400" marker-end="url(#arrow)" marker-start="url(#start-arrow)" />
+
+    <!-- 内部连接线  -->
+    <path class="inner-connector" d="M 260 185 L 335 230" />
+    <path class="inner-connector" d="M 540 185 L 465 230" />
+    <path class="inner-connector" d="M 260 415 L 335 370" />
+    <path class="inner-connector" d="M 540 415 L 465 370" />
+
+    <!-- 转型成果框  -->
+    <rect x="250" y="600" width="300" height="50" class="highlight-box" />
+    <text x="400" y="630" class="outcome-text">从被动使用到主动引领开源生态</text>
+
+    <!-- 许可声明 -->
+    <text x="400" y="680" class="license-text">
+        本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+    </text>
+</svg>

@@ -1,0 +1,93 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" width="1000" height="750">
+  <!-- 背景 -->
+  <rect width="1000" height="750" fill="#f9f9f9" />
+
+  <!-- 标题 -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">生成式学习道场如何赋能三大方法论</text>
+
+  <!-- 渔夫与渔具隐喻 -->
+  <rect x="100" y="70" width="800" height="70" fill="#e9f5ff" stroke="#4285f4" stroke-width="1" rx="5" ry="5" />
+  <text x="500" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">从"渔具"到"渔夫"的隐喻</text>
+  <text x="500" y="120" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#555">三大方法论提供"渔具"和"捕鱼流程"，而道场从根本上升级"渔夫"本人</text>
+
+  <!-- 道场核心能力 -->
+  <rect x="100" y="150" width="800" height="90" fill="#e6f7e6" stroke="#34a853" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#34a853">道场核心能力</text>
+
+  <rect x="130" y="190" width="140" height="35" fill="#e6f7e6" stroke="#34a853" stroke-width="1" rx="15" ry="15" />
+  <text x="200" y="212" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">第一性原理</text>
+
+  <rect x="280" y="190" width="140" height="35" fill="#e6f7e6" stroke="#34a853" stroke-width="1" rx="15" ry="15" />
+  <text x="350" y="212" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">系统思维</text>
+
+  <rect x="430" y="190" width="140" height="35" fill="#e6f7e6" stroke="#34a853" stroke-width="1" rx="15" ry="15" />
+  <text x="500" y="212" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">MECE原则</text>
+
+  <rect x="580" y="190" width="140" height="35" fill="#e6f7e6" stroke="#34a853" stroke-width="1" rx="15" ry="15" />
+  <text x="650" y="212" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">JTBD框架</text>
+
+  <rect x="730" y="190" width="140" height="35" fill="#e6f7e6" stroke="#34a853" stroke-width="1" rx="15" ry="15" />
+  <text x="800" y="212" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">元认知</text>
+
+  <!-- 赋能场景 1: 设计思维 -->
+  <rect x="100" y="250" width="800" height="140" fill="#ffffff" stroke="#4285f4" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="275" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#4285f4">设计思维 + AI学习道场：从"共情"到"洞穿本质"</text>
+
+  <!-- 对比区域 -->
+  <rect x="120" y="290" width="370" height="90" fill="#f4f8fe" stroke="#4285f4" stroke-width="1" rx="5" ry="5" />
+  <rect x="510" y="290" width="370" height="90" fill="#f0f9f0" stroke="#34a853" stroke-width="1" rx="5" ry="5" />
+
+  <!-- 内容 -->
+  <text x="130" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4285f4">标准设计思考者:</text>
+  <text x="130" y="330" font-family="Arial, sans-serif" font-size="13" fill="#555">"用户反馈高级搜索功能太复杂，很难找到结果"</text>
+  <text x="130" y="350" font-family="Arial, sans-serif" font-size="13" fill="#555">"我们需要重新设计高级搜索页面，让它更易用"</text>
+  <text x="130" y="370" font-family="Arial, sans-serif" font-size="13" fill="#555">→ 优化一个功能</text>
+
+  <text x="520" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34a853">道场出身的设计思考者:</text>
+  <text x="520" y="330" font-family="Arial, sans-serif" font-size="13" fill="#555">应用JTBD和第一性原理识别本质需求</text>
+  <text x="520" y="350" font-family="Arial, sans-serif" font-size="13" fill="#555">"我们该如何让寻找答案的过程，感觉像是与专家对话？"</text>
+  <text x="520" y="370" font-family="Arial, sans-serif" font-size="13" fill="#555">→ 重塑用户体验范式</text>
+
+  <!-- 赋能场景 2: 敏捷开发 -->
+  <rect x="100" y="400" width="800" height="140" fill="#ffffff" stroke="#ea4335" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="425" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ea4335">敏捷开发 + AI学习道场：从"交付功能"到"构建健康系统"</text>
+
+  <!-- 对比区域 -->
+  <rect x="120" y="440" width="370" height="90" fill="#fdf1f0" stroke="#ea4335" stroke-width="1" rx="5" ry="5" />
+  <rect x="510" y="440" width="370" height="90" fill="#f0f9f0" stroke="#34a853" stroke-width="1" rx="5" ry="5" />
+
+  <!-- 内容 -->
+  <text x="130" y="460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ea4335">标准敏捷开发者:</text>
+  <text x="130" y="480" font-family="Arial, sans-serif" font-size="13" fill="#555">"这个方案技术上可行，工作量是8个故事点"</text>
+  <text x="130" y="500" font-family="Arial, sans-serif" font-size="13" fill="#555">"我们可以在这个Sprint内完成"</text>
+  <text x="130" y="520" font-family="Arial, sans-serif" font-size="13" fill="#555">→ 高效的代码执行者</text>
+
+  <text x="520" y="460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34a853">道场出身的敏捷开发者:</text>
+  <text x="520" y="480" font-family="Arial, sans-serif" font-size="13" fill="#555">应用系统思维预见技术决策的长远影响</text>
+  <text x="520" y="500" font-family="Arial, sans-serif" font-size="13" fill="#555">运用MECE原则优化Story拆分和验收标准</text>
+  <text x="520" y="520" font-family="Arial, sans-serif" font-size="13" fill="#555">→ 预见和管理系统性风险的技术架构师</text>
+
+  <!-- 赋能场景 3: 精益创业 -->
+  <rect x="100" y="550" width="800" height="140" fill="#ffffff" stroke="#fbbc05" stroke-width="2" rx="10" ry="10" />
+  <text x="500" y="575" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#fbbc05">精益创业 + AI学习道场：从"测试假设"到"构建根本性假设"</text>
+
+  <!-- 对比区域 -->
+  <rect x="120" y="590" width="370" height="90" fill="#fffbeb" stroke="#fbbc05" stroke-width="1" rx="5" ry="5" />
+  <rect x="510" y="590" width="370" height="90" fill="#f0f9f0" stroke="#34a853" stroke-width="1" rx="5" ry="5" />
+
+  <!-- 内容 -->
+  <text x="130" y="610" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fbbc05">标准精益创业者:</text>
+  <text x="130" y="630" font-family="Arial, sans-serif" font-size="13" fill="#555">"核心假设是用户愿意为AI自动生成报告付费"</text>
+  <text x="130" y="650" font-family="Arial, sans-serif" font-size="13" fill="#555">"开发一个MVP测量付费转化率"</text>
+  <text x="130" y="670" font-family="Arial, sans-serif" font-size="13" fill="#555">→ 验证表层假设</text>
+
+  <text x="520" y="610" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#34a853">道场出身的精益创业者:</text>
+  <text x="520" y="630" font-family="Arial, sans-serif" font-size="13" fill="#555">应用第一性原理发现用户付费的根本驱动力</text>
+  <text x="520" y="650" font-family="Arial, sans-serif" font-size="13" fill="#555">寻找系统杠杆点设计最低成本的验证实验</text>
+  <text x="520" y="670" font-family="Arial, sans-serif" font-size="13" fill="#555">→ 验证根本假设，提升创业成功率</text>
+
+  <text x="50%" y="730" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

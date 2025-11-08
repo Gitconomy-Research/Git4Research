@@ -1,0 +1,89 @@
+<svg width="1000" height="950" viewBox="0 0 1000 950" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+    <defs>
+        <!-- Gradients for layers -->
+        <linearGradient id="grad-layer1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#E3F2FD"/><stop offset="100%" stop-color="#BBDEFB"/></linearGradient>
+        <linearGradient id="grad-layer2" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#F3E5F5"/><stop offset="100%" stop-color="#E1BEE7"/></linearGradient>
+        <linearGradient id="grad-layer3" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FFF3E0"/><stop offset="100%" stop-color="#FFE0B2"/></linearGradient>
+        <linearGradient id="grad-layer4" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#E8F5E9"/><stop offset="100%" stop-color="#C8E6C9"/></linearGradient>
+
+        <!-- Icons -->
+        <symbol id="icon-compute-stack" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-5h16V6H4v2z"/></symbol>
+        <symbol id="icon-data-db" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4zm0 2c3.31 0 6 1.34 6 3s-2.69 3-6 3-6-1.34-6-3 2.69-3 6-3zm0 6c-4.42 0-8 1.79-8 4v4c0 2.21 3.58 4 8 4s8-1.79 8-4v-4c0-2.21-3.58-4-8-4zm0 2c3.31 0 6 1.34 6 3v1c0 1.66-2.69 3-6 3s-6-1.34-6-3v-1c0-1.66 2.69-3 6-3z"/></symbol>
+        <symbol id="icon-model-brain" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></symbol>
+        <symbol id="icon-code-tag" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6l6 6l1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6l-6 6l-1.4-1.4z"/></symbol>
+        <symbol id="icon-talent-group" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05c1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></symbol>
+        <symbol id="icon-copilot" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v-.07zM13 4.07c.78.12 1.5.33 2.15.63L13 7V4.07zM4.26 10.21c-.13-.58-.21-1.17-.21-1.79 0-3.53 2.51-6.43 5.86-7.14l-1.9 1.9c-.31.31-.31.82 0 1.13L10 6.54l-1.9 1.9c-.31.31-.31.82 0 1.13L10 11.41l-4.59-4.59c-.31-.31-.82-.31-1.14 0l-1.01 1.01c-.32.31-.42.78-.28 1.18zM13 15v-1l4-4h-3V8.89l-2-2V8h-2v1.11l-4-4l1.13-1.13L10.54 6l1.9-1.9L14.29 2.2c.3-.1.61-.15.93-.18C19.49 2.51 22 5.6 22 9.42c0 1.3-.33 2.5-.89 3.58l-6.11 6.11V15z"/></symbol>
+    </defs>
+
+    <rect width="1000" height="950" fill="#F8FAFC"/>
+
+    <text x="500" y="50" font-size="32px" font-weight="bold" text-anchor="middle" fill="#1E293B">ORP系统架构示意图</text>
+
+    <!-- Layers -->
+    <g id="layer-4">
+        <rect x="50" y="100" width="900" height="150" fill="url(#grad-layer4)" rx="10" stroke="#A5D6A7"/>
+        <text x="70" y="130" font-size="18px" font-weight="bold" fill="#1B5E20">第四层: 应用与智能体层 (Value Realization)</text>
+        <g transform="translate(250, 180)"><use href="#icon-copilot" width="40" height="40" x="-20" y="-20" color="#388E3C"/><text text-anchor="middle" y="40" font-size="16px" fill="#1B5E20">领域 Copilot</text></g>
+        <g transform="translate(500, 180)"><text font-size="40px" text-anchor="middle" y="5">🤖</text><text text-anchor="middle" y="40" font-size="16px" fill="#1B5E20">数据分析 Agent</text></g>
+        <g transform="translate(750, 180)"><text font-size="40px" text-anchor="middle" y="5">📈</text><text text-anchor="middle" y="40" font-size="16px" fill="#1B5E20">业务价值应用</text></g>
+    </g>
+
+    <g id="layer-3">
+        <rect x="50" y="280" width="900" height="150" fill="url(#grad-layer3)" rx="10" stroke="#FFCC80"/>
+        <text x="70" y="310" font-size="18px" font-weight="bold" fill="#E65100">第三层: 能力与运营层 (Capability &amp; Operations)</text>
+        <rect x="110" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="185" y="380" text-anchor="middle" font-size="16px" fill="#E65100">LLMOps</text>
+        <rect x="320" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="395" y="380" text-anchor="middle" font-size="16px" fill="#E65100">AgenticOps</text>
+        <rect x="530" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="605" y="380" text-anchor="middle" font-size="16px" fill="#E65100">MLOps</text>
+        <rect x="740" y="350" width="150" height="50" rx="5" fill="#FFF" stroke="#FB8C00"/><text x="815" y="380" text-anchor="middle" font-size="16px" fill="#E65100">DataOps</text>
+    </g>
+
+    <g id="layer-2">
+        <rect x="50" y="460" width="900" height="150" fill="url(#grad-layer2)" rx="10" stroke="#CE93D8"/>
+        <text x="70" y="490" font-size="18px" font-weight="bold" fill="#4A148C">第二层: 统一控制平面 (Unified Control Plane)</text>
+        <g transform="translate(110, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">资源抽象</text></g>
+        <g transform="translate(320, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">统一调度</text></g>
+        <g transform="translate(530, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">访问控制</text></g>
+        <g transform="translate(740, 545)"><rect width="150" height="40" fill="#F3E5F5" stroke="#AB47BC" rx="5"/><text x="75" y="25" text-anchor="middle" font-size="14px" font-weight="500" fill="#6A1B9A">成本计量</text></g>
+    </g>
+
+    <g id="layer-1">
+        <rect x="50" y="640" width="900" height="230" fill="url(#grad-layer1)" rx="10" stroke="#90CAF9"/>shi yi tu
+        <text x="70" y="670" font-size="18px" font-weight="bold" fill="#0D47A1">第一层: 资源基础设施层 (Heterogeneous Infrastructure)</text>
+        <g transform="translate(140, 750)"><use href="#icon-compute-stack" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">算力资源</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">混合云, 本地, 边缘</text></g>
+        <g transform="translate(320, 750)"><use href="#icon-data-db" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">数据资源</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">数据湖, 向量库</text></g>
+        <g transform="translate(500, 750)"><use href="#icon-model-brain" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">算法与模型</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">开源, 自研, API</text></g>
+        <g transform="translate(680, 750)"><use href="#icon-code-tag" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">代码与工具</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">框架, SDK, 插件</text></g>
+        <g transform="translate(860, 750)"><use href="#icon-talent-group" width="40" height="40" x="-20" y="-20" color="#1976D2"/><text text-anchor="middle" y="40" font-size="16px" fill="#1565C0">人才与知识</text><text text-anchor="middle" y="60" font-size="12px" fill="#42A5F5">社区, 内部专家</text></g>
+    </g>
+
+    <!-- Connecting Arrows -->
+    <g id="center-arrows">
+        <line x1="500" y1="250" x2="500" y2="280" stroke="#BDBDBD" stroke-width="2"/>
+        <path d="M495 270 L 500 280 L 505 270 Z" fill="#455A64" />
+
+        <line x1="500" y1="430" x2="500" y2="460" stroke="#BDBDBD" stroke-width="2"/>
+        <path d="M495 450 L 500 460 L 505 450 Z" fill="#455A64" />
+
+        <line x1="500" y1="610" x2="500" y2="640" stroke="#BDBDBD" stroke-width="2"/>
+        <path d="M495 630 L 500 640 L 505 630 Z" fill="#455A64" />
+    </g>
+
+    <!-- Collaborative Sidebars -->
+    <g id="collaboration" stroke="#37474F" stroke-width="1" fill="#37474F">
+        <!-- Left Sidebar: Value Flow -->
+        <line x1="20" y1="175" x2="20" y2="790" />
+        <path d="M20 175 L 15 185 L 25 185 Z" /> <!-- Up Arrow -->
+        <path d="M20 790 L 15 780 L 25 780 Z" /> <!-- Down Arrow -->
+        <text transform="rotate(-90 45 482.5)" x="45" y="482.5" font-size="16px" text-anchor="middle" fill="#1E293B">数据 &amp; 价值流</text>
+
+        <!-- Right Sidebar: Governance -->
+        <line x1="980" y1="175" x2="980" y2="790" />
+        <path d="M980 175 L 975 185 L 985 185 Z" /> <!-- Up Arrow -->
+        <path d="M980 790 L 975 780 L 985 780 Z" /> <!-- Down Arrow -->
+        <text transform="rotate(90 955 482.5)" x="955" y="482.5" font-size="16px" text-anchor="middle" fill="#1E293B">治理 &amp; 安全</text>
+    </g>
+
+    <text x="500" y="920" font-size="12px" text-anchor="middle" fill="#6C757D">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, © 2025 Gitconomy Research社区
+    </text>
+</svg>

@@ -1,0 +1,134 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760">
+  <!-- 背景 -->
+  <rect width="800" height="760" fill="#f8f9fa" rx="10" ry="10"/>
+
+  <!-- 标题 -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">道路与桥梁：云计算时代的开源新挑战</text>
+  <text x="400" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">基于Nadia Eghbal的开创性研究</text>
+
+  <!-- 主要隐喻图解 -->
+  <!-- 桥梁和道路背景 -->
+  <rect x="100" y="120" width="600" height="160" fill="#e3f2fd" rx="5" ry="5"/>
+
+  <!-- 桥梁 -->
+  <path d="M150,160 C150,140 250,140 250,160" fill="none" stroke="#0277bd" stroke-width="10"/>
+  <path d="M250,160 C250,140 350,140 350,160" fill="none" stroke="#0277bd" stroke-width="10"/>
+  <path d="M350,160 C350,140 450,140 450,160" fill="none" stroke="#0277bd" stroke-width="10"/>
+  <path d="M450,160 C450,140 550,140 550,160" fill="none" stroke="#0277bd" stroke-width="10"/>
+  <line x1="150" y1="160" x2="150" y2="240" stroke="#0277bd" stroke-width="10"/>
+  <line x1="550" y1="160" x2="550" y2="240" stroke="#0277bd" stroke-width="10"/>
+
+  <!-- 道路 -->
+  <rect x="100" y="240" width="600" height="40" fill="#90a4ae"/>
+  <line x1="100" y1="260" x2="700" y2="260" stroke="white" stroke-width="2" stroke-dasharray="20,20"/>
+
+  <!-- 云服务卡车 -->
+  <g transform="translate(600, 230)">
+    <rect x="-40" y="-20" width="80" height="30" fill="#673ab7" rx="5" ry="5"/>
+    <rect x="-50" y="10" width="100" height="20" fill="#673ab7"/>
+    <circle cx="-30" cy="30" r="10" fill="#424242"/>
+    <circle cx="30" cy="30" r="10" fill="#424242"/>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">云服务商</text>
+    <text x="0" y="23" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">$$$ 利润</text>
+  </g>
+
+  <!-- 中小公司汽车 -->
+  <g transform="translate(500, 245)">
+    <rect x="-25" y="-15" width="50" height="25" fill="#2196f3" rx="5" ry="5"/>
+    <circle cx="-15" cy="10" r="5" fill="#424242"/>
+    <circle cx="15" cy="10" r="5" fill="#424242"/>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">企业用户</text>
+  </g>
+
+  <!-- 个人用户小车 -->
+  <g transform="translate(420, 245)">
+    <rect x="-20" y="-10" width="40" height="20" fill="#4caf50" rx="5" ry="5"/>
+    <circle cx="-10" cy="10" r="4" fill="#424242"/>
+    <circle cx="10" cy="10" r="4" fill="#424242"/>
+    <text x="0" y="3" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="white">个人用户</text>
+  </g>
+
+  <!-- 维护者角色 -->
+  <g transform="translate(180, 270)">
+    <circle cx="0" cy="0" r="15" fill="#f44336"/>
+    <rect x="-10" y="-20" width="20" height="15" fill="#f44336"/>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#f44336">志愿维护者</text>
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#666">(极少数)</text>
+  </g>
+
+  <!-- 隐喻解释 -->
+  <g transform="translate(400, 340)">
+    <rect x="-300" y="-15" width="600" height="70" rx="5" ry="5" fill="#eeeeee"/>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">
+      开源项目如同公共基础设施，被广泛使用但维护资源严重不足
+    </text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">
+      云服务商从开源中获取巨额利润，但往往没有为其维护提供对等回馈
+    </text>
+  </g>
+
+  <!-- 三大挑战版块 -->
+  <g transform="translate(100, 420)">
+    <!-- 看不见的劳动 -->
+    <rect x="0" y="0" width="150" height="130" rx="5" ry="5" fill="#ffebee" stroke="#f44336" stroke-width="2"/>
+    <text x="75" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f44336">看不见的劳动</text>
+    <text x="75" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">关键项目往往由</text>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">极少数志愿者维护</text>
+    <text x="75" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">导致维护者普遍</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">职业倦怠</text>
+  </g>
+
+  <g transform="translate(325, 420)">
+    <!-- 公地悲剧 -->
+    <rect x="0" y="0" width="150" height="130" rx="5" ry="5" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+    <text x="75" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4caf50">公地悲剧</text>
+    <text x="75" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">商业公司广泛受益</text>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">却很少系统性回馈</text>
+    <text x="75" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">典型的"搭便车"</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">问题</text>
+  </g>
+
+  <g transform="translate(550, 420)">
+    <!-- 系统性风险 -->
+    <rect x="0" y="0" width="150" height="130" rx="5" ry="5" fill="#fff3e0" stroke="#ff9800" stroke-width="2"/>
+    <text x="75" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ff9800">系统性风险</text>
+    <text x="75" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">基础设施失修</text>
+    <text x="75" y="70" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">导致严重安全漏洞</text>
+    <text x="75" y="90" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">如Heartbleed和</text>
+    <text x="75" y="110" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">Log4j事件</text>
+  </g>
+
+  <!-- 实例：Heartbleed -->
+  <g transform="translate(250, 195)">
+    <circle cx="0" cy="0" r="20" fill="#f44336" fill-opacity="0.2" stroke="#f44336" stroke-width="2"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#f44336">漏洞</text>
+    <text x="100" y="0" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f44336">OpenSSL Heartbleed</text>
+    <text x="100" y="20" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">全球2/3的网络服务器受影响</text>
+    <text x="100" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">仅由少数志愿者维护</text>
+  </g>
+
+  <!-- 未来方向 -->
+  <rect x="150" y="670" width="500" height="30" rx="5" ry="5" fill="#e8eaf6" stroke="#3f51b5" stroke-width="1"/>
+  <text x="400" y="690" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3f51b5">
+    迫切需要建立可持续的、公平的维护和回馈机制
+  </text>
+
+  <!-- 许可证演变 -->
+  <g transform="translate(400, 590)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">许可证的演变</text>
+    <line x1="-200" y1="15" x2="200" y2="15" stroke="#ddd" stroke-width="2"/>
+    <circle cx="-150" cy="15" r="8" fill="#4caf50"/>
+    <circle cx="0" cy="15" r="8" fill="#ff9800"/>
+    <circle cx="150" cy="15" r="8" fill="#f44336"/>
+    <text x="-150" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">传统开源许可证</text>
+    <text x="-150" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">(GPL, MIT)</text>
+    <text x="0" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">云时代新挑战</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">"分发"义务被规避</text>
+    <text x="150" y="35" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">新型许可证尝试</text>
+    <text x="150" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">(MongoDB SSPL)</text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="400" y="740" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

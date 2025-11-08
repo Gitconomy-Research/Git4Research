@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第四章：产业的变革——“人工智能+”的产业图景</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --line: #e5e7eb;
+            --brand: #004AAD;
+            --brand2: #0062D5;
+            --brand5: #CDE6FF;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) { .hero h1 { font-size: 40px } }
+        .hero .lead {
+            color: var(--brand5);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .site-footer {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 18px 16px;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+        .card {
+            background-color: var(--card);
+            border-radius: 14px;
+            box-shadow: 0 6px 20px rgba(15,23,42,.06);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brand);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -33px; /* Adjust based on line position */
+            top: 0;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: var(--brand2);
+            border: 4px solid var(--bg);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="hero">
+        <h1>第四章 产业的变革：“人工智能+”的产业图景</h1>
+        <p class="lead">探讨AI如何作为一种新的“信息能源”，在国家战略指引下，渗透到各行百业，引发深刻的产业变革。</p>
+    </header>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <!-- 1. 前沿技术趋势 -->
+        <section class="card">
+            <h2 class="section-title">AI应用的前沿技术趋势</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-5 bg-slate-50 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2 text-purple-700">多模态融合 & AI智能体</h3>
+                    <p class="text-sm text-[var(--muted)]">AI正从被动的“应答机器”进化为能感知、规划、行动的主动“协作者”。</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2 text-rose-700">生成式搜索</h3>
+                    <p class="text-sm text-[var(--muted)]">从“链接列表”到“综合答案”，信息服务模式被颠覆，极大降低用户认知负担。</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-lg">
+                    <h3 class="font-bold text-lg mb-2 text-amber-700">具身智能</h3>
+                    <p class="text-sm text-[var(--muted)]">AI与机器人结合，将智能从数字世界(比特)延伸至物理世界(原子)的感知与行动。</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-lg col-span-1 md:col-span-2 lg:col-span-3">
+                    <h3 class="font-bold text-lg mb-2 text-teal-700">科学发现新范式 (AI for Science)</h3>
+                    <p class="text-sm text-[var(--muted)]">AI正成为继实验、理论、计算科学之后的“第四范式”，通过从海量数据中学习规律，极大加速蛋白质折叠、新材料发现等领域的科学探索进程。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 国家战略指引 -->
+        <section class="card">
+            <h2 class="section-title">国家战略指引：政策的演进</h2>
+            <div class="relative pl-8 py-4">
+                <div class="absolute left-8 top-0 bottom-0 w-1 bg-gray-200"></div>
+                <div class="space-y-12">
+                    <div class="relative timeline-item">
+                        <h3 class="font-bold text-xl text-[var(--brand2)]">2015年: “互联网+”</h3>
+                        <p class="text-[var(--muted)]">核心是“连接”，推动互联网与经济社会各领域的深度融合，为后续战略奠定基础。</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="font-bold text-xl text-[var(--brand2)]">2017年: 《新一代人工智能发展规划》</h3>
+                        <p class="text-[var(--muted)]">标志着人工智能正式成为国家战略的核心，确立“三步走”目标。</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="font-bold text-xl text-[var(--brand)]">2024年: “人工智能+”行动</h3>
+                        <p class="text-[var(--muted)]">战略重点转向“赋能”，强调AI与实体经济深度融合，旨在培育“新质生产力”。</p>
+                    </div>
+                    <div class="relative timeline-item">
+                        <h3 class="font-bold text-xl text-[var(--brand)]">《人工智能全球治理行动计划》</h3>
+                        <p class="text-[var(--muted)]">提出中国关于人工智能治理的方案，倡导发展与安全并重。</p>
+                    </div>
+                    <div class="relative timeline-item">
+                         <h3 class="font-bold text-xl text-[var(--brand)]">《关于深入实施“人工智能+”行动的意见》</h3>
+                         <p class="text-[var(--muted)]">通过明确具体行动和基础支撑能力，系统性解决产业应用中的实际问题，让更多企业“跑出加速度”。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 落地实践 -->
+        <section class="card">
+            <h2 class="section-title">落地实践：以广西为例</h2>
+            <div class="text-center mb-8">
+                 <h3 class="text-xl font-bold mb-2">核心应用范式：为物理世界构建“智能数字孪生”</h3>
+                 <p class="text-[var(--muted)] max-w-3xl mx-auto">AI赋能实体经济的核心模式，是通过吸收物理世界的多模态数据，创建一个高保真、动态且具备预测能力的数字映射，并在此之上进行优化、预测和决策。</p>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-lg flex flex-col lg:flex-row items-center justify-center gap-8 mb-8">
+                <div class="text-center">
+                    <div class="text-6xl">🌍</div>
+                    <h3 class="text-2xl font-bold mt-2 text-slate-700">物理世界</h3>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-[var(--brand2)] transform lg:rotate-0 rotate-90">&harr;</div>
+                    <p class="text-sm font-semibold text-[var(--brand)] mt-2">数据采集 & 智能决策</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl">💻</div>
+                    <h3 class="text-2xl font-bold mt-2 text-[var(--brand)]">智能数字孪生</h3>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-center p-4 bg-green-50 rounded-lg">
+                    <div class="text-4xl mr-4">🌾</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-green-800">智慧农业</h4>
+                        <p class="text-sm text-green-700">为糖业、水果种植构建数字孪生，实现精准灌溉与病虫害防治。</p>
+                    </div>
+                </div>
+                 <div class="flex items-center p-4 bg-sky-50 rounded-lg">
+                    <div class="text-4xl mr-4">🏞️</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-sky-800">智慧文旅</h4>
+                        <p class="text-sm text-sky-700">实现景区客流的智能监控与个性化推荐。</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-slate-50 rounded-lg">
+                    <div class="text-4xl mr-4">🏭</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-slate-800">关键工业</h4>
+                        <p class="text-sm text-slate-700">为核电站构建智能知识库，提升运维效率与安全。</p>
+                    </div>
+                </div>
+                 <div class="flex items-center p-4 bg-indigo-50 rounded-lg">
+                    <div class="text-4xl mr-4">🌊</div>
+                    <div>
+                        <h4 class="font-bold text-lg text-indigo-800">智慧海洋</h4>
+                        <p class="text-sm text-indigo-700">为“海洋牧场”构建生态数字孪生，实现科学养殖。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" style="background-color: white;">
+  <!-- 标题 -->
+  <text x="50%" y="40" text-anchor="middle" font-family="'Noto Sans', sans-serif" font-size="22" font-weight="800" fill="#111827">90分钟工作坊模式详解</text>
+
+  <!-- 垂直时间轴 -->
+  <line x1="80" y1="80" x2="80" y2="480" stroke="#2563EB" stroke-width="3"/>
+  <text x="40" y="70" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="bold" fill="#374151">0分钟</text>
+  <text x="40" y="130" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">10分钟</text>
+  <text x="40" y="200" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">25分钟</text>
+  <text x="40" y="250" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">30分钟</text>
+  <text x="40" y="330" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">65分钟</text>
+  <text x="40" y="410" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">85分钟</text>
+  <text x="40" y="480" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="12" font-weight="bold" fill="#374151">90分钟</text>
+
+  <!-- 时间轴标记 -->
+  <line x1="75" y1="130" x2="85" y2="130" stroke="#2563EB" stroke-width="2"/>
+  <line x1="75" y1="200" x2="85" y2="200" stroke="#2563EB" stroke-width="2"/>
+  <line x1="75" y1="250" x2="85" y2="250" stroke="#2563EB" stroke-width="2"/>
+  <line x1="75" y1="330" x2="85" y2="330" stroke="#2563EB" stroke-width="2"/>
+  <line x1="75" y1="410" x2="85" y2="410" stroke="#2563EB" stroke-width="2"/>
+
+  <!-- 阶段1：破冰与悬念 (0-10分钟) -->
+  <rect x="100" y="80" width="700" height="50" rx="5" ry="5" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2" />
+  <text x="130" y="110" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">阶段一：破冰与悬念 (0-10分钟)</text>
+  <text x="720" y="110" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="11" font-style="italic" fill="#6B7280">10分钟</text>
+
+  <!-- 阶段2：概念揭秘 (10-25分钟) -->
+  <rect x="150" y="150" width="650" height="50" rx="5" ry="5" fill="#F0FDF4" stroke="#34D399" stroke-width="2" />
+  <text x="180" y="180" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">阶段二：概念揭秘 (10-25分钟)</text>
+  <text x="720" y="180" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="11" font-style="italic" fill="#6B7280">15分钟</text>
+
+  <!-- 阶段3：快速校验 (25-30分钟) -->
+  <rect x="200" y="220" width="600" height="50" rx="5" ry="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2" />
+  <text x="230" y="250" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">阶段三：快速校验 (25-30分钟)</text>
+  <text x="720" y="250" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="11" font-style="italic" fill="#6B7280">5分钟</text>
+
+  <!-- 阶段4：核心活动 (30-65分钟) -->
+  <rect x="250" y="280" width="550" height="50" rx="5" ry="5" fill="#FEF9C3" stroke="#FACC15" stroke-width="3" />
+  <text x="280" y="310" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">阶段四：核心活动：小组工作坊 (30-65分钟)</text>
+  <text x="720" y="310" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="11" font-weight="bold" font-style="italic" fill="#6B7280">35分钟</text>
+
+  <!-- 阶段5：成果分享与整合 (65-85分钟) -->
+  <rect x="300" y="360" width="500" height="50" rx="5" ry="5" fill="#F0FDF4" stroke="#34D399" stroke-width="2" />
+  <text x="330" y="390" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">阶段五：成果分享与整合 (65-85分钟)</text>
+  <text x="720" y="390" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="11" font-style="italic" fill="#6B7280">20分钟</text>
+
+  <!-- 阶段6：总结与衔接 (85-90分钟) -->
+  <rect x="350" y="430" width="450" height="50" rx="5" ry="5" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2" />
+  <text x="380" y="460" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">阶段六：总结与衔接 (85-90分钟)</text>
+  <text x="720" y="460" text-anchor="end" font-family="'Noto Sans', sans-serif" font-size="11" font-style="italic" fill="#6B7280">5分钟</text>
+
+  <!-- 教师角色卡片 -->
+  <rect x="100" y="500" width="350" height="130" rx="5" ry="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2" />
+  <text x="275" y="525" text-anchor="middle" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">教师角色</text>
+  <line x1="130" y1="540" x2="420" y2="540" stroke="#3B82F6" stroke-width="1"/>
+  <text x="130" y="560" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段一：故事讲述者、问题提出者</text>
+  <text x="130" y="580" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段二：概念翻译官、视觉化设计师</text>
+  <text x="130" y="600" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段三：互动引导者</text>
+  <text x="130" y="620" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段四：学习教练、资源提供者</text>
+
+  <!-- 学生角色卡片 -->
+  <rect x="470" y="500" width="350" height="130" rx="5" ry="5" fill="#F0FDF4" stroke="#34D399" stroke-width="2" />
+  <text x="645" y="525" text-anchor="middle" font-family="'Noto Sans', sans-serif" font-size="16" font-weight="bold" fill="#111827">学生角色</text>
+  <line x1="500" y1="540" x2="790" y2="540" stroke="#34D399" stroke-width="1"/>
+  <text x="500" y="560" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段一：倾听故事、代入情境、产生好奇心</text>
+  <text x="500" y="580" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段二：主动聆听、构建直觉、记录核心类比</text>
+  <text x="500" y="600" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段三：参与在线投票、与同伴快速讨论</text>
+  <text x="500" y="620" font-family="'Noto Sans', sans-serif" font-size="12" fill="#374151">• 阶段四：围绕案例进行讨论、设计与产出</text>
+
+  <!-- 底部许可声明 -->
+  <text x="50%" y="675" text-anchor="middle" font-family="'Noto Sans', sans-serif" font-size="12" fill="#64748B">本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

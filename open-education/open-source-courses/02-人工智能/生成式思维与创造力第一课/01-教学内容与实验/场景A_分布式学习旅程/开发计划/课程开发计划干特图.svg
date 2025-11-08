@@ -1,0 +1,213 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720">
+  <!-- 背景和网格 -->
+  <rect width="1600" height="720" fill="#f9f9f9"/>
+  <g id="grid">
+    <!-- 垂直日期分隔线 -->
+    <line x1="200" y1="125" x2="200" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="240" y1="125" x2="240" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="280" y1="125" x2="280" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="320" y1="125" x2="320" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="360" y1="125" x2="360" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="400" y1="125" x2="400" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="440" y1="125" x2="440" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="480" y1="125" x2="480" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="520" y1="125" x2="520" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="560" y1="125" x2="560" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="600" y1="125" x2="600" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="640" y1="125" x2="640" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="680" y1="125" x2="680" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="720" y1="125" x2="720" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="760" y1="125" x2="760" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="800" y1="125" x2="800" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="840" y1="125" x2="840" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="880" y1="125" x2="880" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="920" y1="125" x2="920" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="960" y1="125" x2="960" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1000" y1="125" x2="1000" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1040" y1="125" x2="1040" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1080" y1="125" x2="1080" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1120" y1="125" x2="1120" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1160" y1="125" x2="1160" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1200" y1="125" x2="1200" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1240" y1="125" x2="1240" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1280" y1="125" x2="1280" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1320" y1="125" x2="1320" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+    <line x1="1360" y1="125" x2="1360" y2="630" stroke="#e0e0e0" stroke-width="1"/>
+  </g>
+
+  <!-- 标题 -->
+  <text x="800" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">《AI思维与创造力第一课——分布式学习旅程》课程开发执行计划</text>
+
+  <!-- 周标记 -->
+  <g id="weeks" font-family="Arial" font-size="14" font-weight="bold">
+    <rect x="200" y="65" width="160" height="20" fill="#e6f7ff" opacity="0.7"/>
+    <text x="280" y="80" text-anchor="middle">第一周：框架与基础建设</text>
+
+    <rect x="360" y="65" width="200" height="20" fill="#e6ffe6" opacity="0.7"/>
+    <text x="460" y="80" text-anchor="middle">第二周：核心技术与内容开发</text>
+
+    <rect x="560" y="65" width="200" height="20" fill="#fff0e6" opacity="0.7"/>
+    <text x="660" y="80" text-anchor="middle">第三周：高级模块与资源整合</text>
+
+    <rect x="760" y="65" width="200" height="20" fill="#ffe6e6" opacity="0.7"/>
+    <text x="860" y="80" text-anchor="middle">第四周：审查、适配与发布</text>
+
+    <rect x="960" y="65" width="200" height="20" fill="#e6f7ff" opacity="0.7"/>
+    <text x="1060" y="80" text-anchor="middle">第五周：后续发展</text>
+
+    <rect x="1160" y="65" width="200" height="20" fill="#e6ffe6" opacity="0.7"/>
+    <text x="1260" y="80" text-anchor="middle">第六周：未来计划</text>
+  </g>
+
+  <!-- 日期标签 -->
+  <g id="dates" font-family="Arial" font-size="12" text-anchor="middle">
+    <text x="200" y="115">Day 1</text>
+    <text x="240" y="115">Day 2</text>
+    <text x="280" y="115">Day 3</text>
+    <text x="320" y="115">Day 4</text>
+    <text x="360" y="115">Day 5</text>
+    <text x="400" y="115">Day 6</text>
+    <text x="440" y="115">Day 7</text>
+    <text x="480" y="115">Day 8</text>
+    <text x="520" y="115">Day 9</text>
+    <text x="560" y="115">Day 10</text>
+    <text x="600" y="115">Day 11</text>
+    <text x="640" y="115">Day 12</text>
+    <text x="680" y="115">Day 13</text>
+    <text x="720" y="115">Day 14</text>
+    <text x="760" y="115">Day 15</text>
+    <text x="800" y="115">Day 16</text>
+    <text x="840" y="115">Day 17</text>
+    <text x="880" y="115">Day 18</text>
+    <text x="920" y="115">Day 19</text>
+    <text x="960" y="115">Day 20</text>
+    <text x="1000" y="115">Day 21</text>
+    <text x="1040" y="115">Day 22</text>
+    <text x="1080" y="115">Day 23</text>
+    <text x="1120" y="115">Day 24</text>
+    <text x="1160" y="115">Day 25</text>
+    <text x="1200" y="115">Day 26</text>
+    <text x="1240" y="115">Day 27</text>
+    <text x="1280" y="115">Day 28</text>
+    <text x="1320" y="115">Day 29</text>
+    <text x="1360" y="115">Day 30</text>
+  </g>
+
+  <!-- 任务条和标签 -->
+  <g id="tasks">
+    <!-- T1.1 -->
+    <rect x="200" y="140" width="40" height="25" rx="3" ry="3" fill="#4a86e8" opacity="0.8"/>
+    <text x="180" y="157" font-family="Arial" font-size="12" text-anchor="end">T1.1</text>
+    <text x="250" y="157" font-family="Arial" font-size="10" text-anchor="start">设计并最终确定课前调研问卷与投票流程</text>
+
+    <!-- T1.2 -->
+    <rect x="200" y="170" width="160" height="25" rx="3" ry="3" fill="#4a86e8" opacity="0.8"/>
+    <text x="180" y="187" font-family="Arial" font-size="12" text-anchor="end">T1.2</text>
+    <text x="370" y="187" font-family="Arial" font-size="10" text-anchor="start">开发案例无关的核心理论模块讲义 (M1-M5)</text>
+
+    <!-- T1.3 -->
+    <rect x="280" y="200" width="80" height="25" rx="3" ry="3" fill="#4a86e8" opacity="0.8"/>
+    <text x="180" y="217" font-family="Arial" font-size="12" text-anchor="end">T1.3</text>
+    <text x="370" y="217" font-family="Arial" font-size="10" text-anchor="start">搭建GitCode学习平台模板与使用手册</text>
+
+    <!-- T1.4 -->
+    <rect x="280" y="230" width="80" height="25" rx="3" ry="3" fill="#4a86e8" opacity="0.8"/>
+    <text x="180" y="247" font-family="Arial" font-size="12" text-anchor="end">T1.4</text>
+    <text x="370" y="247" font-family="Arial" font-size="10" text-anchor="start">设计通用评估框架与评分细则(Rubric)</text>
+
+    <!-- T2.1 -->
+    <rect x="400" y="260" width="80" height="25" rx="3" ry="3" fill="#6aa84f" opacity="0.8"/>
+    <text x="180" y="277" font-family="Arial" font-size="12" text-anchor="end">T2.1</text>
+    <text x="490" y="277" font-family="Arial" font-size="10" text-anchor="start">开发模块1-2的标准化Code Lab</text>
+
+    <!-- T2.2 -->
+    <rect x="400" y="290" width="160" height="25" rx="3" ry="3" fill="#6aa84f" opacity="0.8"/>
+    <text x="180" y="307" font-family="Arial" font-size="12" text-anchor="end">T2.2</text>
+    <text x="570" y="307" font-family="Arial" font-size="10" text-anchor="start">录制核心理论模块的预习短视频</text>
+
+    <!-- T2.3 -->
+    <rect x="520" y="320" width="40" height="25" rx="3" ry="3" fill="#6aa84f" opacity="0.8"/>
+    <text x="180" y="337" font-family="Arial" font-size="12" text-anchor="end">T2.3</text>
+    <text x="570" y="337" font-family="Arial" font-size="10" text-anchor="start">准备"案例启动工具包"(SOP)</text>
+
+    <!-- T3.1 -->
+    <rect x="600" y="350" width="120" height="25" rx="3" ry="3" fill="#e69138" opacity="0.8"/>
+    <text x="180" y="367" font-family="Arial" font-size="12" text-anchor="end">T3.1</text>
+    <text x="730" y="367" font-family="Arial" font-size="10" text-anchor="start">开发模块3-4的标准化Code Lab</text>
+
+    <!-- T3.2 -->
+    <rect x="680" y="380" width="80" height="25" rx="3" ry="3" fill="#e69138" opacity="0.8"/>
+    <text x="180" y="397" font-family="Arial" font-size="12" text-anchor="end">T3.2</text>
+    <text x="770" y="397" font-family="Arial" font-size="10" text-anchor="start">整合所有讲义、视频、Code Lab到GitCode平台</text>
+
+    <!-- T3.3 -->
+    <rect x="600" y="410" width="40" height="25" rx="3" ry="3" fill="#e69138" opacity="0.8"/>
+    <text x="180" y="427" font-family="Arial" font-size="12" text-anchor="end">T3.3</text>
+    <text x="650" y="427" font-family="Arial" font-size="10" text-anchor="start">设计具身认知游戏的操作指南</text>
+
+    <!-- T4.1 -->
+    <rect x="800" y="440" width="40" height="25" rx="3" ry="3" fill="#cc0000" opacity="0.8"/>
+    <text x="180" y="457" font-family="Arial" font-size="12" text-anchor="end">T4.1</text>
+    <text x="850" y="457" font-family="Arial" font-size="10" text-anchor="start">内部审查与交叉测试所有教学资产</text>
+
+    <!-- T4.2 -->
+    <rect x="880" y="470" width="40" height="25" rx="3" ry="3" fill="#cc0000" opacity="0.8"/>
+    <text x="180" y="487" font-family="Arial" font-size="12" text-anchor="end">T4.2</text>
+    <text x="930" y="487" font-family="Arial" font-size="10" text-anchor="start">(模拟) 执行"案例适配"流程</text>
+
+    <!-- T4.3 -->
+    <rect x="960" y="500" width="0" height="25" rx="3" ry="3" fill="#cc0000" opacity="0.8"/>
+    <rect x="960" y="500" width="20" height="25" rx="3" ry="3" fill="#cc0000" opacity="0.8"/>
+    <text x="180" y="517" font-family="Arial" font-size="12" text-anchor="end">T4.3</text>
+    <text x="990" y="517" font-family="Arial" font-size="10" text-anchor="start">最终版教学框架V1.0发布</text>
+  </g>
+
+  <!-- 图例 -->
+  <g id="legend" transform="translate(1200, 550)">
+    <rect width="250" height="120" fill="white" stroke="#ccc" rx="5" ry="5"/>
+    <text x="125" y="20" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">图例</text>
+
+    <rect x="10" y="30" width="30" height="15" rx="3" ry="3" fill="#4a86e8" opacity="0.8"/>
+    <text x="50" y="42" font-family="Arial" font-size="12">第一周任务</text>
+
+    <rect x="10" y="50" width="30" height="15" rx="3" ry="3" fill="#6aa84f" opacity="0.8"/>
+    <text x="50" y="62" font-family="Arial" font-size="12">第二周任务</text>
+
+    <rect x="10" y="70" width="30" height="15" rx="3" ry="3" fill="#e69138" opacity="0.8"/>
+    <text x="50" y="82" font-family="Arial" font-size="12">第三周任务</text>
+
+    <rect x="10" y="90" width="30" height="15" rx="3" ry="3" fill="#cc0000" opacity="0.8"/>
+    <text x="50" y="102" font-family="Arial" font-size="12">第四周任务</text>
+  </g>
+
+  <!-- 信息板 -->
+  <g id="info_board" transform="translate(250, 550)">
+    <rect width="500" height="120" fill="white" stroke="#ccc" rx="5" ry="5"/>
+    <text x="250" y="20" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">课程开发执行计划信息</text>
+
+    <text x="20" y="45" font-family="Arial" font-size="12" font-weight="bold">总计划周期:</text>
+    <text x="120" y="45" font-family="Arial" font-size="12">30天 (6周)</text>
+
+    <text x="20" y="65" font-family="Arial" font-size="12" font-weight="bold">关键里程碑:</text>
+    <text x="120" y="65" font-family="Arial" font-size="12">平台搭建 (Day 5)</text>
+    <text x="120" y="85" font-family="Arial" font-size="12">内容开发 (Day 15)</text>
+    <text x="120" y="105" font-family="Arial" font-size="12">最终发布 (Day 20)</text>
+
+    <text x="300" y="45" font-family="Arial" font-size="12" font-weight="bold">任务总数:</text>
+    <text x="370" y="45" font-family="Arial" font-size="12">12个任务</text>
+
+    <text x="300" y="65" font-family="Arial" font-size="12" font-weight="bold">依赖关系:</text>
+    <text x="300" y="85" font-family="Arial" font-size="10">详见计划文档</text>
+  </g>
+
+  <!-- 周数标记 -->
+  <g id="week_numbers" font-family="Arial" font-size="11" fill="#666" text-anchor="middle">
+    <text x="280" y="105">周1</text>
+    <text x="460" y="105">周2</text>
+    <text x="660" y="105">周3</text>
+    <text x="860" y="105">周4</text>
+    <text x="1060" y="105">周5</text>
+    <text x="1260" y="105">周6</text>
+  </g>
+</svg>

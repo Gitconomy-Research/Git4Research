@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', Arial, sans-serif">
+
+  <!-- ====== Defs: filters, markers, styles ====== -->
+  <defs>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Arrow marker (size reduced) -->
+    <marker id="arrowRight" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f172a"/>
+    </marker>
+
+    <!-- Styles -->
+    <style><![CDATA[
+      .title { font-size: 30px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-size: 16px; fill: #475569; }
+      .kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; fill: #334155; }
+      .panel-title { font-size: 18px; font-weight: 700; fill: #0b1220; }
+      .item { font-size: 14px; fill: #0b1220; }
+      .chip { font-size: 12px; fill: #0b1220; }
+      .legend { font-size: 12px; fill: #334155; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; font-size: 12px; fill: #0b1220; }
+      .license { font-size: 12px; fill: #334155; }
+    ]]></style>
+  </defs>
+
+  <!-- ====== Background & Header ====== -->
+  <rect x="0" y="0" width="1200" height="900" fill="#f8fafc"/>
+  <g transform="translate(0,56)">
+    <text class="title" x="600" text-anchor="middle">上下文学习（In-context Learning）示意图</text>
+    <text class="subtitle" x="600" y="32" text-anchor="middle">无需重新训练，仅在提示（Prompt）中给出少量示例，模型即可学会新任务</text>
+  </g>
+
+  <!-- ====== Ribbon: 0/1/few-shot 标签（与副标题保持50单位间距） ====== -->
+  <g transform="translate(80,138)">
+    <rect x="0" y="-10" rx="8" ry="8" width="420" height="44" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="legend" x="10" y="20">模式：0-shot / 1-shot / few-shot · 只改变输入提示，不更新模型参数</text>
+  </g>
+
+  <!-- ====== Main: Prompt → LLM(冻结) → Output ====== -->
+  <!-- 主容器顶部：138 + 44 + 20 = 202 -->
+  <g transform="translate(80,202)">
+    <rect x="0" y="0" rx="16" ry="16" width="1040" height="360" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="kicker" x="16" y="20">PIPELINE · 从输入到结论</text>
+
+    <!-- 左：PROMPT（保持与容器上边距文字距离20） -->
+    <g transform="translate(20,70)" filter="url(#soft)">
+      <rect x="0" y="0" rx="14" ry="14" width="320" height="260" fill="#E0F2FE"/>
+      <text class="kicker" x="12" y="20">PROMPT · 提示（含示例）</text>
+      <g transform="translate(12,34)">
+        <rect x="-10" y="-4" rx="10" ry="10" width="64" height="24" fill="#fff"/><text class="chip" x="10" y="12">指令</text>
+        <rect x="64" y="-4" rx="10" ry="10" width="88" height="24" fill="#fff"/><text class="chip" x="84" y="12">格式约束</text>
+        <rect x="162" y="-4" rx="10" ry="10" width="118" height="24" fill="#fff"/><text class="chip" x="182" y="12">少量示例示范</text>
+      </g>
+      <g transform="translate(12,68)">
+        <rect x="0" y="0" rx="10" ry="10" width="296" height="50" fill="#ffffff"/>
+        <text class="mono" x="10" y="20">示例 #1</text>
+        <text class="mono" x="10" y="38">Input: “A+B= ?” → Output: 3</text>
+
+        <rect x="0" y="60" rx="10" ry="10" width="296" height="50" fill="#ffffff"/>
+        <text class="mono" x="10" y="80">示例 #2</text>
+        <text class="mono" x="10" y="98">Input: “2×C= ?” → Output: 8</text>
+
+        <rect x="0" y="120" rx="10" ry="10" width="296" height="50" fill="#ffffff"/>
+        <text class="mono" x="10" y="140">示例 #3</text>
+        <text class="mono" x="10" y="158">Input: “D−1= ?” → Output: 5</text>
+      </g>
+      <g transform="translate(12,206)">
+        <rect x="0" y="0" rx="10" ry="10" width="296" height="28" fill="#ffffff" stroke="#e5e7eb"/>
+        <text class="mono" x="10" y="19">新输入（需模型类比推断）</text>
+      </g>
+    </g>
+
+    <!-- 中：LLM（把间距调成30：Prompt右缘340 → LLM左缘370） -->
+    <g transform="translate(370,70)" filter="url(#soft)">
+      <rect x="0" y="0" rx="14" ry="14" width="280" height="260" fill="#E8F5E9"/>
+      <text class="kicker" x="12" y="20">LLM · 模型（权重冻结）</text>
+      <g transform="translate(228,8)">
+        <rect x="0" y="0" rx="6" ry="6" width="36" height="28" fill="#ffffff" stroke="#0f172a"/>
+        <rect x="10" y="-12" rx="6" ry="6" width="16" height="16" fill="#ffffff" stroke="#0f172a"/>
+      </g>
+      <g transform="translate(12,56)">
+        <text class="item" x="0" y="0">• 不更新参数（No Gradient / No Training）</text>
+        <text class="item" x="0" y="24">• 在提示内进行“模式归纳/函数拟合”</text>
+        <text class="item" x="0" y="48">• 注意力对齐：从示例中提取输入→输出映射</text>
+        <text class="item" x="0" y="72">• 位置与顺序敏感（Priming/Order Effects）</text>
+      </g>
+      <g transform="translate(30,160)">
+        <circle cx="0" cy="0" r="6" fill="#0f172a" opacity=".2"/>
+        <circle cx="40" cy="-10" r="6" fill="#0f172a" opacity=".2"/>
+        <circle cx="90" cy="10" r="6" fill="#0f172a" opacity=".2"/>
+        <circle cx="140" cy="-6" r="6" fill="#0f172a" opacity=".2"/>
+        <circle cx="190" cy="8" r="6" fill="#0f172a" opacity=".2"/>
+        <line x1="0" y1="0" x2="190" y2="8" stroke="#0f172a" stroke-width="1" opacity=".35"/>
+        <line x1="40" y1="-10" x2="140" y2="-6" stroke="#0f172a" stroke-width="1" opacity=".35"/>
+        <line x1="90" y1="10" x2="190" y2="8" stroke="#0f172a" stroke-width="1" opacity=".35"/>
+      </g>
+    </g>
+
+    <!-- 右：INFERENCE（保持与LLM右缘间距30：LLM右缘650 → 右盒左缘680） -->
+    <g transform="translate(680,60)" filter="url(#soft)">
+      <rect x="0" y="10" rx="14" ry="14" width="340" height="260" fill="#F3E8FF"/>
+      <text class="kicker" x="12" y="30">INFERENCE · 推断输出</text>
+      <g transform="translate(12,36)">
+        <rect x="0" y="0" rx="10" ry="10" width="316" height="46" fill="#ffffff"/>
+        <text class="mono" x="10" y="18">新输入：</text>
+        <text class="mono" x="10" y="34">“B×2= ?”</text>
+
+        <rect x="0" y="62" rx="10" ry="10" width="316" height="46" fill="#ffffff"/>
+        <text class="mono" x="10" y="80">预测输出：</text>
+        <text class="mono" x="10" y="96">根据示例学到的模式进行映射</text>
+
+        <rect x="0" y="124" rx="10" ry="10" width="316" height="46" fill="#ffffff"/>
+        <text class="mono" x="10" y="142">可选：思维链 Few-shot（展示推理步骤）</text>
+
+        <rect x="0" y="186" rx="10" ry="10" width="316" height="28" fill="#ffffff" stroke="#e5e7eb"/>
+        <text class="chip" x="10" y="205">评估：格式一致性 · 正确率 · 置信与不确定性</text>
+      </g>
+    </g>
+
+    <!-- 连接箭头（位置随30间距调整，线宽也略减） -->
+    <!-- Prompt → LLM：340 → 370 -->
+    <line x1="340" y1="190" x2="370" y2="190" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+    <!-- LLM → Output：650 → 680 -->
+    <line x1="650" y1="190" x2="680" y2="190" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arrowRight)"/>
+
+    <!-- 说明文字与上边框的距离保持20 -->
+    <text class="legend" x="20" y="40">核心：把“学习”放到输入序列里，让模型在上下文中即时对齐与泛化（无需训练/部署新权重）。</text>
+  </g>
+
+  <!-- ====== Bottom: 最佳实践 / 风险与对比 ====== -->
+  <g transform="translate(80,582)">
+    <rect x="0" y="0" rx="16" ry="16" width="1040" height="240" fill="#ffffff" stroke="#e5e7eb"/>
+    <text class="kicker" x="16" y="20">GUIDE · 示例设计与风险缓解 · 与微调的对比</text>
+
+    <g transform="translate(16,40)" filter="url(#soft)">
+      <rect x="0"   y="0" rx="12" ry="12" width="320" height="180" fill="#E8F5E9"/>
+      <rect x="340" y="0" rx="12" ry="12" width="320" height="180" fill="#FEF3C7"/>
+      <rect x="680" y="0" rx="12" ry="12" width="320" height="180" fill="#E0F2FE"/>
+    </g>
+
+    <g transform="translate(16,60)">
+      <text class="panel-title" x="16"  y="24">示例设计（Prompt Engineering）</text>
+      <text class="item" x="26"  y="48">• 任务同分布：示例与目标样本尽量相似。</text>
+      <text class="item" x="26"  y="70">• 少而精：2–5 个高质量示例，覆盖边界。</text>
+      <text class="item" x="26"  y="92">• 格式统一：I/O 模板一致，避免歧义。</text>
+      <text class="item" x="26"  y="114">• 顺序/位置：重要示例前置并靠近测试样本。</text>
+      <text class="item" x="26"  y="136">• 可选 CoT：给出示范性推理步骤。</text>
+
+      <text class="panel-title" x="366" y="24">注意事项与风险</text>
+      <text class="item" x="376" y="48">• 提示注入/泄露：限制系统指令，隔离示例。</text>
+      <text class="item" x="376" y="70">• 长度限制与成本：控制 token 与冗余。</text>
+      <text class="item" x="376" y="92">• 顺序敏感：打乱或置换可能影响效果。</text>
+      <text class="item" x="376" y="114">• 错误放大：示例错误会被模仿与泛化。</text>
+      <text class="item" x="376" y="136">• 评估：留出样本进行盲评与A/B。</text>
+
+      <text class="panel-title" x="706" y="24">与微调（Fine-tuning）的对比</text>
+      <text class="item" x="716"  y="48">• 上下文学习：零部署改动，实时对齐。</text>
+      <text class="item" x="716"  y="70">• 微调：需训练与版本管理，稳定但成本高。</text>
+      <text class="item" x="716"  y="92">• 组合：先 ICL 试错，成熟后再微调固化。</text>
+      <text class="item" x="716"  y="114">• 场景：高变场景→ICL；稳定批量→微调。</text>
+    </g>
+  </g>
+
+  <!-- ====== License footer ====== -->
+  <text class="license" x="600" y="886" text-anchor="middle">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,135 @@
+<svg width="1250" height="800" viewBox="0 0 1250 800" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#60a5fa; stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16a34a; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ade80; stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fb923c; stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .main-title { font-size: 32px; font-weight: bold; text-anchor: middle; fill: #1f2937; }
+    .subtitle { font-size: 18px; text-anchor: middle; fill: #4b5563; }
+    .center-box { fill: #f9fafb; stroke: #6b7280; stroke-width: 2; rx:15; ry:15; filter: url(#shadow); }
+    .center-title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #111827; }
+    .center-desc { font-size: 14px; font-style: italic; text-anchor: middle; fill: #4b5563; }
+    .branch-title-box { rx: 8; ry: 8; }
+    .branch-title { font-size: 20px; font-weight: 600; fill: white; text-anchor: middle; }
+    .card { fill: #ffffff; stroke: #e5e7eb; stroke-width: 1.5; rx: 8; ry: 8; }
+    .card-title { font-size: 17px; font-weight: 600; fill: #1f2937; }
+    .card-text { font-size: 14px; fill: #4b5563; }
+    .card-highlight { font-weight: 600; fill: #374151; }
+    .connector { stroke: #9ca3af; stroke-width: 2.5; fill: none; }
+  </style>
+
+  <title>开源许可证如何塑造协作与商业</title>
+
+  <text x="625" y="50" class="main-title">开源许可证如何塑造协作与商业</text>
+  <text x="625" y="80" class="subtitle">许可证的条款在开源协作与商业的动态平衡中发挥着决定性作用</text>
+
+  <g id="foundation-hub" transform="translate(475, 120)">
+    <rect width="300" height="130" class="center-box" />
+    <path d="M 120 40 L 140 60 L 120 80 M 180 40 L 160 60 L 180 80" stroke="#374151" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text x="150" y="105" class="center-title">开源许可证</text>
+  </g>
+
+  <path class="connector" d="M 625 250 V 280 L 225 280 V 310"/>
+  <path class="connector" d="M 625 250 V 310"/>
+  <path class="connector" d="M 625 250 V 280 L 1025 280 V 310"/>
+
+  <g id="collaboration-column" transform="translate(75, 320)">
+    <rect width="300" height="45" fill="url(#grad-blue)" class="branch-title-box"/>
+    <text x="150" y="30" class="branch-title">协作的法律架构</text>
+    <g transform="translate(0, 55)">
+      <rect width="300" height="360" class="card"/>
+      <g transform="translate(15, 15)">
+        <path d="M 15 10 L 15 25 L 5 15 L 25 15 Z M 15 0 C 23.28 0, 30 6.72, 30 15 C 30 23.28, 23.28 30, 15 30 C 6.72 30, 0 23.28, 0 15 C 0 6.72, 6.72 0, 15 0 Z" fill="#3b82f6" opacity="0.2"/>
+        <text x="35" y="18" class="card-title">1. 创建“法律安全港”</text>
+        <text class="card-text">
+          <tspan x="35" y="43">明确IP归属与使用权限，消除</tspan>
+          <tspan x="35" y="61">因版权默认归属贡献者个人</tspan>
+          <tspan x="35" y="79">而产生的法律风险。</tspan>
+        </text>
+      </g>
+       <g transform="translate(15, 125)">
+        <path d="M 5 5 L 15 15 M 15 5 L 5 15 M 25 25 L 30 20 M 20 30 L 25 25" stroke="#3b82f6" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+        <text x="35" y="18" class="card-title">2. 降低交易成本</text>
+        <text class="card-text">
+          <tspan x="35" y="43">作为<tspan class="card-highlight">“通用合同”</tspan>，避免单独</tspan>
+          <tspan x="35" y="61">的法律谈判，使大规模协作成为可能。</tspan>
+        </text>
+      </g><!-- 许可声明 -->
+  <text x="50%" y="750" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+    </g>
+  </g>
+
+  <g id="business-column" transform="translate(475, 320)">
+    <rect width="300" height="45" fill="url(#grad-green)" class="branch-title-box"/>
+    <text x="150" y="30" class="branch-title">商业的引擎</text>
+    <rect x="0" y="55" width="300" height="360" class="card"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="15" class="card-title">1. 开放核心 (Open Core)</text>
+      <text class="card-text">
+        <tspan x="15" y="40">依赖: <tspan class="card-highlight">宽松型许可 (如 Apache 2.0)</tspan></tspan>
+        <tspan x="15" y="58">允许在开源核心上构建闭源商业产品。</tspan>
+      </text>
+    </g>
+    <g transform="translate(15, 170)">
+      <text x="0" y="15" class="card-title">2. 双重许可 (Dual-Licensing)</text>
+      <text class="card-text">
+        <tspan x="15" y="40">依赖: <tspan class="card-highlight">强Copyleft许可 (如 GPL)</tspan></tspan>
+        <tspan x="15" y="58">将GPL的“限制性”作为商业杠杆。</tspan>
+        <tspan x="15" y="76">案例: <tspan class="card-highlight">MySQL</tspan></tspan>
+      </text>
+    </g>
+    <g transform="translate(15, 275)">
+      <text x="0" y="15" class="card-title">3. 付费支持与服务</text>
+      <text class="card-text">
+        <tspan x="15" y="40">依赖: <tspan class="card-highlight">许可选择灵活</tspan></tspan>
+        <tspan x="15" y="58">软件本身开源,围绕其提供专业服务。</tspan>
+        <tspan x="15" y="76">案例: <tspan class="card-highlight">Red Hat</tspan></tspan>
+      </text>
+    </g>
+  </g>
+
+  <g id="governance-column" transform="translate(875, 320)">
+    <rect width="300" height="45" fill="url(#grad-orange)" class="branch-title-box"/>
+    <text x="150" y="30" class="branch-title">赋能治理与社区</text>
+    <rect x="0" y="55" width="300" height="360" class="card"/>
+    <g transform="translate(15, 70)">
+      <text x="0" y="15" class="card-title">设定“游戏规则”，影响社区文化</text>
+      <text class="card-text">
+        <tspan x="15" y="43">• <tspan class="card-highlight">仁慈的独裁者 (BDFL):</tspan> 体现创始人</tspan>
+        <tspan x="28" y="61">哲学理念 (如 Linus 与 GPLv2)。</tspan>
+        <tspan x="15" y="86">• <tspan class="card-highlight">精英治理 (Meritocracy):</tspan> 为企业参与</tspan>
+        <tspan x="28" y="104">提供法律保障 (如 ASF 与 Apache 2.0)。</tspan>
+        <tspan x="15" y="129">• <tspan class="card-highlight">基金会模式:</tspan> 提供中立法律实体。</tspan>
+        <tspan x="15" y="146">• <tspan class="card-highlight">企业主导模式:</tspan> 公司主导开源项目的</tspan>
+        <tspan x="28" y="164">开发和决策。</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="50%" y="780" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

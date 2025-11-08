@@ -1,0 +1,200 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <!-- 样式定义 -->
+  <defs>
+    <style>
+      .bg-rect {
+        fill: none;
+        stroke: none;
+      }
+      .main-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-anchor: middle;
+        fill: #111827;
+      }
+      .center-node {
+        fill: #FEF2F2;
+        stroke: #EF4444;
+        stroke-width: 2.5;
+      }
+      .center-text {
+        font-size: 18px;
+        font-weight: bold;
+        fill: #7F1D1D;
+        text-anchor: middle;
+      }
+      .main-node {
+        fill: #DBEAFE;
+        stroke: #3B82F6;
+        stroke-width: 2;
+      }
+      .main-text {
+        font-size: 16px;
+        font-weight: bold;
+        fill: #1E40AF;
+        text-anchor: middle;
+      }
+      .sub-node {
+        fill: #F9FAFB;
+        stroke: #3B82F6;
+        stroke-width: 1.5;
+        rx: 6;
+        ry: 6;
+      }
+      .sub-text {
+        font-size: 14px;
+        fill: #1F2937;
+        text-anchor: middle;
+      }
+      .connector {
+        stroke: #4B5563;
+        stroke-width: 2;
+        fill: none;
+        marker-end: url(#arrow);
+      }
+      .sub-connector {
+        stroke: #60A5FA;
+        stroke-width: 1.5;
+        stroke-dasharray: 4,3;
+        fill: none;
+      }
+      .description-text {
+        font-size: 12px;
+        fill: #4B5563;
+        text-anchor: middle;
+      }
+      .license-text {
+        font-size: 11px;
+        fill: #6B7280;
+        text-anchor: middle;
+      }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- 标题  -->
+  <text class="main-title" x="400" y="40" text-anchor="middle">4.3 高校OSPO实践需要关注的关键要素</text>
+
+  <!-- 治理框架子节点 -->
+  <line class="sub-connector" x1="400" y1="130" x2="260" y2="110"/>
+  <rect class="sub-node" x="200" y="70" width="120" height="40"/>
+  <text class="sub-text" x="260" y="95">组织架构设计</text>
+
+  <line class="sub-connector" x1="400" y1="130" x2="400" y2="110"/>
+  <rect class="sub-node" x="340" y="70" width="120" height="40"/>
+  <text class="sub-text" x="400" y="95">合作协调机制</text>
+
+  <line class="sub-connector" x1="400" y1="130" x2="540" y2="110"/>
+  <rect class="sub-node" x="480" y="70" width="120" height="40"/>
+  <text class="sub-text" x="540" y="95">决策机制</text>
+
+  <!-- 主要节点和连接线 - 治理框架 -->
+  <path class="connector" d="M 400 280 L 400 210"/>
+  <circle class="main-node" cx="400" cy="170" r="40"/>
+  <text class="main-text" x="400" y="170">治理框架</text>
+
+  <!-- 中心节点 -->
+  <circle class="center-node" cx="400" cy="320" r="60"/>
+  <text class="center-text" x="400" y="315">高校OSPO</text>
+  <text class="center-text" x="400" y="340">关键要素</text>
+
+  <!-- 主要节点和连接线 - 人才培养 -->
+  <path class="connector" d="M 452 357 L 580 420"/>
+  <circle class="main-node" cx="630" cy="440" r="40"/>
+  <text class="main-text" x="630" y="435">人才培养</text>
+  <text class="main-text" x="630" y="455">机制</text>
+
+  <!-- 人才培养子节点 -->
+  <line class="sub-connector" x1="670" y1="420" x2="740" y2="380"/>
+  <rect class="sub-node" x="690" y="360" width="100" height="40"/>
+  <text class="sub-text" x="740" y="385">课程体系</text>
+
+  <line class="sub-connector" x1="670" y1="440" x2="740" y2="440"/>
+  <rect class="sub-node" x="690" y="420" width="100" height="40"/>
+  <text class="sub-text" x="740" y="445">实践项目</text>
+
+  <line class="sub-connector" x1="670" y1="460" x2="740" y2="500"/>
+  <rect class="sub-node" x="690" y="480" width="100" height="40"/>
+  <text class="sub-text" x="740" y="505">学分认定</text>
+
+  <!-- 主要节点和连接线 - 资源支持 -->
+  <path class="connector" d="M 348 343 L 230 380"/>
+  <circle class="main-node" cx="190" cy="390" r="40"/>
+  <text class="main-text" x="190" y="385">资源支持</text>
+  <text class="main-text" x="190" y="405">系统</text>
+
+  <!-- 资源支持子节点 -->
+  <line class="sub-connector" x1="150" y1="370" x2="80" y2="330"/>
+  <rect class="sub-node" x="30" y="310" width="100" height="40"/>
+  <text class="sub-text" x="80" y="335">经费保障</text>
+
+  <line class="sub-connector" x1="150" y1="390" x2="80" y2="390"/>
+  <rect class="sub-node" x="30" y="370" width="100" height="40"/>
+  <text class="sub-text" x="80" y="395">基础设施</text>
+
+  <line class="sub-connector" x1="150" y1="410" x2="80" y2="450"/>
+  <rect class="sub-node" x="30" y="430" width="100" height="40"/>
+  <text class="sub-text" x="80" y="455">技术支持</text>
+
+  <!-- 主要节点和连接线 - 学术评价 -->
+  <path class="connector" d="M 400 380 L 400 470"/>
+  <circle class="main-node" cx="400" cy="510" r="40"/>
+  <text class="main-text" x="400" y="505">学术评价</text>
+  <text class="main-text" x="400" y="525">体系</text>
+
+  <!-- 学术评价子节点 - 调整与学术评价体系的垂直间距为20单位 -->
+  <line class="sub-connector" x1="400" y1="550" x2="260" y2="590"/>
+  <rect class="sub-node" x="200" y="570" width="120" height="40"/>
+  <text class="sub-text" x="260" y="595">开源贡献认可</text>
+
+  <line class="sub-connector" x1="400" y1="550" x2="540" y2="590"/>
+  <rect class="sub-node" x="480" y="570" width="120" height="40"/>
+  <text class="sub-text" x="540" y="595">教师评价机制</text>
+
+  <!-- 主要节点和连接线 - 产学研协作 -->
+  <path class="connector" d="M 452 283 L 580 220"/>
+  <circle class="main-node" cx="630" cy="200" r="40"/>
+  <text class="main-text" x="630" y="195">产学研</text>
+  <text class="main-text" x="630" y="215">协作模式</text>
+
+  <!-- 产学研协作子节点 -->
+  <line class="sub-connector" x1="670" y1="180" x2="740" y2="140"/>
+  <rect class="sub-node" x="690" y="120" width="100" height="40"/>
+  <text class="sub-text" x="740" y="145">企业合作</text>
+
+  <line class="sub-connector" x1="670" y1="200" x2="740" y2="200"/>
+  <rect class="sub-node" x="690" y="180" width="100" height="40"/>
+  <text class="sub-text" x="740" y="205">社区互动</text>
+
+  <line class="sub-connector" x1="670" y1="220" x2="740" y2="260"/>
+  <rect class="sub-node" x="690" y="240" width="100" height="40"/>
+  <text class="sub-text" x="740" y="265">成果转化</text>
+
+  <!-- 主要节点和连接线 - 文化建设 -->
+  <path class="connector" d="M 348 283 L 230 220"/>
+  <circle class="main-node" cx="190" cy="200" r="40"/>
+  <text class="main-text" x="190" y="195">开源文化</text>
+  <text class="main-text" x="190" y="215">建设</text>
+
+  <!-- 文化建设子节点 -->
+  <line class="sub-connector" x1="150" y1="180" x2="80" y2="140"/>
+  <rect class="sub-node" x="30" y="120" width="100" height="40"/>
+  <text class="sub-text" x="80" y="145">价值观培育</text>
+
+  <line class="sub-connector" x1="150" y1="200" x2="80" y2="200"/>
+  <rect class="sub-node" x="30" y="180" width="100" height="40"/>
+  <text class="sub-text" x="80" y="205">活动支持</text>
+
+  <line class="sub-connector" x1="150" y1="220" x2="80" y2="260"/>
+  <rect class="sub-node" x="30" y="240" width="100" height="40"/>
+  <text class="sub-text" x="80" y="265">激励机制</text>
+
+  <!-- 注释说明 -->
+  <text class="description-text" x="50%" y="650">注：高校OSPO实践需要多维度协同，平衡内外部资源与发展目标</text>
+
+  <!-- 许可声明 -->
+  <text class="license-text" x="50%" y="675">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

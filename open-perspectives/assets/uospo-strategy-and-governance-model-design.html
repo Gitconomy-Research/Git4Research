@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高校开源项目办公室 (U-OSPO) 战略与治理蓝图</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--
+    Narrative Plan:
+    The infographic tells a story, starting with the "Why" (Core Mission), moving to the "What" (Strategic Roles), then the "How" (Governance and Roadmap), highlighting key data points, and ending with the critical success factor (The Challenge). This logical flow guides the user from concept to implementation.
+
+    Visualization Choices:
+    1.  OER Growth Chart: Goal: Change. Chosen Visualization: Bar Chart. Implemented with Chart.js (Canvas). NO SVG.
+    2.  AI Contribution Chart: Goal: Compare/Inform. Chosen Visualization: Doughnut Chart. Implemented with Chart.js (Canvas). NO SVG.
+    3.  OSPO Evolution: Goal: Organize/Process. Chosen Visualization: Stepped Flow Diagram. Implemented with structured HTML/CSS using Tailwind. NO SVG, NO MERMAID JS.
+    4.  OSPO Four Core Functions: Goal: Organize/Inform. Chosen Visualization: Four-Quadrant Grid. Implemented with structured HTML/CSS using Tailwind. NO SVG, NO MERMAID JS.
+    5.  U-OSPO vs. Enterprise OSPO Differences: Goal: Relationships/Compare. Chosen Visualization: Radar Chart. Implemented with Chart.js (Canvas). NO SVG.
+    6.  U-OSPO Governance Quadrant: Goal: Organize/Relationships. Chosen Visualization: Quadrant Grid (Structured HTML/CSS). NO SVG, NO MERMAID JS.
+    7.  Governance Model: Goal: Organize/Relationships. Chosen Visualization: Flow Chart/Diagram. Implemented with structured HTML/CSS using Tailwind's flexbox and border utilities. NO SVG, NO MERMAID JS.
+    8.  Roadmap: Goal: Change/Organize. Chosen Visualization: Timeline. Implemented with structured HTML/CSS and Tailwind. NO SVG.
+
+    Constraint Confirmation:
+    NEITHER Mermaid JS NOR SVG were used anywhere in this output. All visualizations are rendered via Chart.js on Canvas or constructed with standard HTML elements and styled with Tailwind CSS.
+
+    Color Palette:
+    Brand (Adopted from reference): #004AAD (Brand Blue), #CDE6FF (Brand Light)
+    Vibrant Accents (Retained for content): #58508d, #bc5090, #ff6361, #ffa600
+    -->
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --line: #e5e7eb;
+            --brand: #004AAD;
+            --brand-light: #CDE6FF;
+            /* Retained U-OSPO Vibrant Accents */
+            --uospo-purple: #58508d;
+            --uospo-magenta: #bc5090;
+            --uospo-red: #ff6361;
+            --uospo-orange: #ffa600;
+        }
+        body {
+            font-family: 'Noto Sans SC', 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) {
+            .hero h1 {
+                font-size: 40px
+            }
+        }
+        .hero .lead {
+            color: var(--brand-light);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 700;
+            text-align: center;
+            color: var(--ink);
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            font-size: 1.25rem; /* 20px */
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 3rem;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 1.25rem;
+            left: -0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 9999px;
+            background-color: var(--uospo-red);
+            border: 2px solid white;
+            z-index: 10;
+        }
+        .timeline-line {
+            position: absolute;
+            top: 1.25rem;
+            left: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: var(--line);
+        }
+        /* NOTE: The following evolution-step and evolution-arrow styles are now obsolete
+           but kept in the custom style block for documentation, though no longer used in the HTML. */
+        .evolution-step {
+            position: relative;
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+
+    <!-- Section 1: Header (Adopted Layout/Color) -->
+    <header class="hero">
+        <h1>高校OSPO战略规划与治理蓝图理论框架构建</h1>
+        <p class="lead">推动学术开放与教育创新新范式</p>
+    </header>
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <section id="core" class="mb-16">
+            <h2 class="section-title">高校OSPO核心定位与使命</h2>
+            <p class="section-subtitle max-w-3xl mx-auto">
+                高校开源项目办公室（U-OSPO）是一个<span class="font-bold text-[#bc5090]">中立的、跨职能的引擎</span>，系统性地管理知识开放、协调跨院系协作，将外部战略机遇转化为内部创新生产力。
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[var(--uospo-purple)]">
+                    <h3 class="text-xl font-bold flex items-center mb-2 text-[var(--uospo-purple)]"><span class="text-2xl mr-3">🌊</span>全球开放知识浪潮</h3>
+                    <p class="text-gray-700">由<span class="font-semibold">开放科学 (Open Science)</span> 与 <span class="font-semibold">开放教育资源 (OER)</span> 驱动，旨在将知识视为公共产品，最大化其社会价值。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-6 border-l-4 border-[var(--uospo-red)]">
+                    <h3 class="text-xl font-bold flex items-center mb-2 text-[var(--uospo-red)]"><span class="text-2xl mr-3">🇨🇳</span>国家技术战略</h3>
+                    <p class="text-gray-700">开源是破解<span class="font-semibold">“卡脖子”</span>技术难题、实现技术自主可控的核心战略路径。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ospo-evolution" class="mb-16">
+            <h2 class="section-title">OSPO职能演进：从合规到战略创新</h2>
+            <p class="section-subtitle">从被动使用开源转向主动、战略性参与和领导开源生态。</p>
+            <div class="bg-white rounded-2xl shadow-xl p-8 overflow-hidden">
+                <!-- MODIFIED: Restructured to place arrows explicitly in the gaps using flexbox -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+
+                    <!-- Step 1: 合规 -->
+                    <div class="text-center bg-gray-50 p-4 rounded-lg border border-gray-200 md:w-1/4 w-full">
+                        <p class="text-xl font-extrabold text-[var(--brand)] mb-1">合规</p>
+                        <p class="text-sm text-gray-500">早期职能：许可证审查、风险控制。</p>
+                    </div>
+
+                    <!-- Arrow 1 -->
+                    <div class="flex-shrink-0 flex items-center justify-center text-3xl font-black text-[var(--uospo-purple)]">
+                        <span class="hidden md:block">→</span>
+                        <span class="block md:hidden">↓</span>
+                    </div>
+
+                    <!-- Step 2: 战略 -->
+                    <div class="text-center bg-gray-50 p-4 rounded-lg border border-gray-200 md:w-1/4 w-full">
+                        <p class="text-xl font-extrabold text-[var(--uospo-purple)] mb-1">战略</p>
+                        <p class="text-sm text-gray-500">制定对外贡献策略、项目选型建议。</p>
+                    </div>
+
+                    <!-- Arrow 2 -->
+                    <div class="flex-shrink-0 flex items-center justify-center text-3xl font-black text-[var(--uospo-magenta)]">
+                        <span class="hidden md:block">→</span>
+                        <span class="block md:hidden">↓</span>
+                    </div>
+
+                    <!-- Step 3: 创新 -->
+                    <div class="text-center bg-gray-50 p-4 rounded-lg border border-gray-200 md:w-1/4 w-full">
+                        <p class="text-xl font-extrabold text-[var(--uospo-magenta)] mb-1">创新</p>
+                        <p class="text-sm text-gray-500">推动 InnerSource、加速产品开发周期。</p>
+                    </div>
+
+                    <!-- Arrow 3 -->
+                    <div class="flex-shrink-0 flex items-center justify-center text-3xl font-black text-[var(--uospo-red)]">
+                        <span class="hidden md:block">→</span>
+                        <span class="block md:hidden">↓</span>
+                    </div>
+
+                    <!-- Step 4: 生态 -->
+                    <div class="text-center bg-gray-50 p-4 rounded-lg border border-gray-200 md:w-1/4 w-full">
+                        <p class="text-xl font-extrabold text-[var(--uospo-red)] mb-1">生态</p>
+                        <p class="text-sm text-gray-500">全球社区领导力、治理模式输出。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="data-highlights" class="mb-16">
+             <h2 class="section-title">关键数据洞察</h2>
+             <p class="section-subtitle">全球开放浪潮与中国技术力量在教育和AI领域的体现。</p>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div class="bg-white rounded-2xl shadow-xl p-6">
+                     <h3 class="text-xl font-bold text-center mb-4 text-[var(--uospo-purple)]">开放教育资源(OER)采用率激增</h3>
+                     <p class="text-center text-gray-600 mb-4">报告指出，在2019至2023年间，美国高校将OER作为必修课程材料的比例几乎翻了一番，显示了开放教育的强劲势头。</p>
+                     <div class="chart-container h-64 md:h-80">
+                         <canvas id="oerGrowthChart"></canvas>
+                     </div>
+                 </div>
+                 <div class="bg-white rounded-2xl shadow-xl p-6">
+                     <h3 class="text-xl font-bold text-center mb-4 text-[var(--uospo-purple)]">中国在全球AI开源领域的贡献</h3>
+                     <p class="text-center text-gray-600 mb-4">在AI领域，中国已成为全球第二大开源贡献国，贡献比例达18.7%，为构建世界级创新生态提供了机遇。</p>
+                     <div class="chart-container h-64 md:h-80">
+                         <canvas id="aiContributionChart"></canvas>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <section id="comparison" class="mb-16">
+            <h2 class="section-title">高校OSPO与企业OSPO战略差异对比</h2>
+            <p class="section-subtitle max-w-3xl mx-auto">由于组织目标和激励体系的根本不同，高校无法简单复制企业模式。雷达图展示了两者在核心维度的侧重差异。</p>
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container lg:col-span-1 h-80 md:h-96">
+                        <canvas id="ospoComparisonRadarChart"></canvas>
+                    </div>
+                    <div class="lg:col-span-1 p-4">
+                        <h3 class="text-xl font-bold text-[var(--uospo-magenta)] mb-3">核心差异解读</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-[var(--uospo-red)] mr-3 mt-1">●</span>
+                                <span class="font-semibold">核心目标：</span>企业OSPO服务于商业竞争力；高校OSPO服务于学术使命和公共利益。
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[var(--uospo-purple)] mr-3 mt-1">●</span>
+                                <span class="font-semibold">知识产权 (IP)：</span>企业侧重风险控制；高校侧重最大化知识传播与影响力（宽松许可）。
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[var(--uospo-orange)] mr-3 mt-1">●</span>
+                                <span class="font-semibold">激励体系：</span>企业依赖薪酬与奖金；高校依赖学术声望、职称晋升等制度性变革。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="governance-quadrant" class="mb-16">
+            <h2 class="section-title">高校OSPO治理实践模式对比分析</h2>
+            <p class="section-subtitle max-w-3xl mx-auto">基于“治理模式”和“核心驱动力”双轴，定位不同高校在开放战略上的侧重。</p>
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+
+                <!-- Axis Y+ Label -->
+                <div class="flex justify-center mb-4">
+                    <span class="text-lg font-bold text-[var(--uospo-red)]">人才培养 / 教育驱动 (Y+)</span>
+                </div>
+
+                <div class="grid grid-cols-2 border border-gray-300">
+                    <!-- Quadrant 1: Education - Centralized -->
+                    <div class="p-4 border-r border-b border-gray-300 h-64 bg-blue-50/50">
+                        <h3 class="text-xl font-bold text-[var(--brand)] mb-1">集中治理型</h3>
+                        <p class="text-sm text-gray-700">校级主导，将开源活动系统性融入<span class="font-semibold">正式课程</span>。</p>
+                        <div class="mt-4 p-2 bg-white/70 rounded-lg border-l-2 border-[var(--brand)]">
+                            <p class="font-bold text-sm">典范: RIT (罗切斯特理工学院)</p>
+                            <p class="text-xs text-gray-500">集中式、教育驱动的OSPO典范</p>
+                        </div>
+                    </div>
+
+                    <!-- Quadrant 2: Education - Distributed -->
+                    <div class="p-4 border-b border-gray-300 h-64 bg-green-50/50">
+                        <h3 class="text-xl font-bold text-[var(--uospo-purple)] mb-1">文化驱动型</h3>
+                        <p class="text-sm text-gray-700">分布式支持，侧重最大化<span class="font-semibold">知识的公共价值</span>和学术开放性。</p>
+                        <div class="mt-4 p-2 bg-white/70 rounded-lg border-l-2 border-[var(--uospo-purple)]">
+                            <p class="font-bold text-sm">典范: MIT (麻省理工学院)</p>
+                            <p class="text-xs text-gray-500">开放课程项目(OCW)先驱</p>
+                        </div>
+                    </div>
+
+                    <!-- Quadrant 3: Research - Centralized -->
+                    <div class="p-4 border-r border-gray-300 h-64 bg-orange-50/50">
+                        <h3 class="text-xl font-bold text-[var(--uospo-orange)] mb-1">产学研孵化型</h3>
+                        <p class="text-sm text-gray-700">集中孵化，将学术原型转化为<span class="font-semibold">产业界可接受的开源项目</span>。</p>
+                        <div class="mt-4 p-2 bg-white/70 rounded-lg border-l-2 border-[var(--uospo-orange)]">
+                            <p class="font-bold text-sm">典范: UCSC (加州大学圣克鲁兹分校)</p>
+                            <p class="text-xs text-gray-500">CROSS研究中心/LaunchPad计划</p>
+                        </div>
+                    </div>
+
+                    <!-- Quadrant 4: Research - Distributed (Chinese Focus) -->
+                    <div class="p-4 h-64 bg-pink-50/50">
+                        <h3 class="text-xl font-bold text-[var(--uospo-magenta)] mb-1">中国探索实践</h3>
+                        <p class="text-sm text-gray-700">顶尖实验室/项目驱动，实现<span class="font-semibold">高价值科研成果国际转化</span>。</p>
+                        <div class="mt-4 p-2 bg-white/70 rounded-lg border-l-2 border-[var(--uospo-magenta)]">
+                            <p class="font-bold text-sm">典范: 清华/浙大/华师大</p>
+                            <p class="text-xs text-gray-500">IoTDB项目、太乙平台、OpenDigger</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Axis X Labels (Bottom) -->
+                <div class="flex justify-between mt-4 text-center text-sm font-bold text-[var(--muted)]">
+                    <span class="w-1/2 text-left pl-2 text-[var(--brand)]">集中式 / 校级主导 (X-)</span>
+                    <span class="w-1/2 text-right pr-2 text-[var(--uospo-purple)]">分布式 / 文化驱动 (X+)</span>
+                </div>
+                <!-- Axis Y- Label (Bottom Center) -->
+                <div class="flex justify-center mt-2">
+                    <span class="text-lg font-bold text-[var(--uospo-orange)]">科研 / 产业转化驱动 (Y-)</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="core-elements" class="mb-16">
+            <h2 class="section-title">高校OSPO实践关键要素：六大维度</h2>
+            <p class="section-subtitle max-w-3xl mx-auto">U-OSPO的成功运行需要多维度协同，平衡内部资源与外部发展目标。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Element 1: 治理框架 -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-sky-500">
+                    <h3 class="text-xl font-bold text-sky-700 mb-2 flex items-center"><span class="text-2xl mr-2">🏛️</span> 治理框架</h3>
+                    <p class="text-gray-600 mb-3">U-OSPO稳固运行的基础，确保跨部门协同。</p>
+                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside ml-4">
+                        <li>组织架构设计 (归属部门)</li>
+                        <li>合作协调机制 (跨院系/部门)</li>
+                        <li>战略决策委员会</li>
+                    </ul>
+                </div>
+
+                <!-- Element 2: 产学研协作模式 -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-emerald-500">
+                    <h3 class="text-xl font-bold text-emerald-700 mb-2 flex items-center"><span class="text-2xl mr-2">🔗</span> 产学研协作模式</h3>
+                    <p class="text-gray-600 mb-3">提供外部连接与资源整合能力，实现社会价值。</p>
+                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside ml-4">
+                        <li>企业合作伙伴计划</li>
+                        <li>国际基金会与社区互动</li>
+                        <li>知识产权与开源许可策略</li>
+                    </ul>
+                </div>
+
+                <!-- Element 3: 资源支持系统 -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-amber-500">
+                    <h3 class="text-xl font-bold text-amber-700 mb-2 flex items-center"><span class="text-2xl mr-2">💰</span> 资源支持系统</h3>
+                    <p class="text-gray-600 mb-3">为OSPO的运行提供物质保障，确保可持续性。</p>
+                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside ml-4">
+                        <li>设立专项经费 (校内/外)</li>
+                        <li>技术基础设施建设 (CI/CD)</li>
+                        <li>专业技术支持团队</li>
+                    </ul>
+                </div>
+
+                <!-- Element 4: 开源文化建设 -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-fuchsia-500">
+                    <h3 class="text-xl font-bold text-fuchsia-700 mb-2 flex items-center"><span class="text-2xl mr-2">💡</span> 开源文化建设</h3>
+                    <p class="text-gray-600 mb-3">是OSPO长期成功的土壤，推广协作与共享价值观。</p>
+                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside ml-4">
+                        <li>推广开源精神与价值观</li>
+                        <li>组织黑客马拉松/开源日</li>
+                        <li>支持校内开源社团发展</li>
+                    </ul>
+                </div>
+
+                <!-- Element 5: 人才培养机制 -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-red-500">
+                    <h3 class="text-xl font-bold text-red-700 mb-2 flex items-center"><span class="text-2xl mr-2">🎓</span> 人才培养机制</h3>
+                    <p class="text-gray-600 mb-3">区别于企业的核心特色，培养复合型创新人才。</p>
+                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside ml-4">
+                        <li>开发开源技术与实践课程</li>
+                        <li>提供真实开源项目实践机会</li>
+                        <li>建立开源贡献学分认定</li>
+                    </ul>
+                </div>
+
+                <!-- Element 6: 学术评价体系创新 -->
+                <div class="bg-white rounded-2xl shadow-xl p-6 border-l-4 border-indigo-500">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2 flex items-center"><span class="text-2xl mr-2">🎖️</span> 学术评价体系创新</h3>
+                    <p class="text-gray-600 mb-3">推动开源实践可持续发展的**关键杠杆**。</p>
+                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside ml-4">
+                        <li>开源代码贡献纳入成果认定</li>
+                        <li>教师职称评定纳入开源指标</li>
+                        <li>建立开源贡献评价标准</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="core-functions" class="mb-16">
+            <h2 class="section-title">OSPO四大核心职能逻辑框架</h2>
+            <p class="section-subtitle">构成了企业或机构拥抱开源的完整闭环，共同驱动组织战略参与和领导开源生态。</p>
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-indigo-50 p-6 rounded-xl border-b-4 border-[var(--uospo-purple)] text-center">
+                        <div class="text-5xl mb-3">⚖️</div>
+                        <h3 class="text-xl font-bold text-[var(--uospo-purple)] mb-2">法律与合规</h3>
+                        <p class="text-gray-600">制定许可政策，管理 SCA 工具，控制许可证合规和供应链安全风险。</p>
+                    </div>
+                    <div class="bg-pink-50 p-6 rounded-xl border-b-4 border-[var(--uospo-magenta)] text-center">
+                        <div class="text-5xl mb-3">📈</div>
+                        <h3 class="text-xl font-bold text-[var(--uospo-magenta)] mb-2">战略与治理</h3>
+                        <p class="text-gray-600">确保开源活动与组织战略一致，制定对外贡献和内部项目开源策略。</p>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-xl border-b-4 border-[var(--uospo-red)] text-center">
+                        <div class="text-5xl mb-3">👨‍🏫</div>
+                        <h3 class="text-xl font-bold text-[var(--uospo-red)] mb-2">文化与培训</h3>
+                        <p class="text-gray-600">提供许可证、贡献流程培训，推广开源协作模式，根植开源文化DNA。</p>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl border-b-4 border-[var(--uospo-orange)] text-center">
+                        <div class="text-5xl mb-3">🤝</div>
+                        <h3 class="text-xl font-bold text-[var(--uospo-orange)] mb-2">社区与生态建设</h3>
+                        <p class="text-gray-600">建立外部关系，制定社区治理规则，塑造优秀开源公民形象。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roles" class="mb-16">
+            <h2 class="section-title">高校OSPO四大战略角色</h2>
+            <p class="section-subtitle">高校OSPO成为融合学术、教育、人才与产业功能的关键桥梁。</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300 border-t-4 border-[var(--brand)]">
+                    <div class="text-5xl mb-4 text-[var(--uospo-purple)]">📘</div>
+                    <h3 class="text-xl font-bold text-[var(--brand)] mb-2">学术定位</h3>
+                    <p class="font-semibold text-gray-700 mb-3">开放科学执行中心</p>
+                    <p class="text-gray-600">规范共享研究代码与数据，提升科研成果的<span class="font-bold">可复现性</span>。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300 border-t-4 border-[var(--brand)]">
+                    <div class="text-5xl mb-4 text-[var(--uospo-magenta)]">💡</div>
+                    <h3 class="text-xl font-bold text-[var(--brand)] mb-2">教育定位</h3>
+                    <p class="font-semibold text-gray-700 mb-3">OER转型引擎</p>
+                    <p class="text-gray-600">推动教学资源转向<span class="font-bold">动态知识生态系统</span>，引入开源协作模式。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300 border-t-4 border-[var(--brand)]">
+                    <div class="text-5xl mb-4 text-[var(--uospo-red)]">🚀</div>
+                    <h3 class="text-xl font-bold text-[var(--brand)] mb-2">人才定位</h3>
+                    <p class="font-semibold text-gray-700 mb-3">下一代创新人才孵化器</p>
+                    <p class="text-gray-600">培养<span class="font-bold">工程实践</span>、<span class="font-bold">协作能力</span>和<span class="font-bold">开源文化</span>。</p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-6 text-center transform hover:scale-105 transition-transform duration-300 border-t-4 border-[var(--brand)]">
+                    <div class="text-5xl mb-4 text-[var(--uospo-orange)]">🔗</div>
+                    <h3 class="text-xl font-bold text-[var(--brand)] mb-2">产业定位</h3>
+                    <p class="font-semibold text-gray-700 mb-3">产教融合的技术桥梁</p>
+                    <p class="text-gray-600">对接企业真实技术需求，促进高校智力成果向<span class="font-bold">产业转化</span>。</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="governance" class="mb-16">
+            <h2 class="section-title">治理与运作：混合架构模式</h2>
+            <p class="section-subtitle max-w-3xl mx-auto">采用“中心化战略”与“分布式执行”相结合的模式，确保政策执行力与跨部门协同能力。</p>
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div class="flex-shrink-0 w-full md:w-1/3 text-center p-6 bg-[var(--brand-light)] rounded-xl border-2 border-dashed border-[var(--uospo-purple)]">
+                        <h3 class="text-2xl font-bold text-[var(--brand)] mb-4">中央核心团队</h3>
+                        <p class="text-gray-700 font-medium mb-4">小型、精干、战略聚焦</p>
+                        <ul class="text-left space-y-2 list-disc list-inside text-sm text-slate-700">
+                            <li>战略与治理</li>
+                            <li>法律与合规管理</li>
+                            <li>文化与培训</li>
+                        </ul>
+                    </div>
+                    <div class="hidden md:block text-5xl text-gray-400 font-black">→</div>
+                     <div class="block md:hidden text-5xl text-gray-400 font-black">↓</div>
+                    <div class="flex-grow w-full md:w-2/3 p-6 bg-gray-50 rounded-xl">
+                        <h3 class="text-2xl font-bold text-[var(--ink)] mb-4 text-center">分布式执行网络</h3>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <div class="p-3 bg-white rounded-lg shadow-sm border border-[var(--line)]">
+                                <p class="font-bold text-sm text-[var(--brand)]">科研院/实验室</p>
+                                <p class="text-xs text-gray-500">项目孵化与转化</p>
+                            </div>
+                            <div class="p-3 bg-white rounded-lg shadow-sm border border-[var(--line)]">
+                                <p class="font-bold text-sm text-[var(--brand)]">信息化办公室</p>
+                                <p class="text-xs text-gray-500">平台与工具管理</p>
+                            </div>
+                            <div class="p-3 bg-white rounded-lg shadow-sm border border-[var(--line)]">
+                                <p class="font-bold text-sm text-[var(--brand)]">大学图书馆</p>
+                                <p class="text-xs text-gray-500">OER许可与知识管理</p>
+                            </div>
+                            <div class="p-3 bg-white rounded-lg shadow-sm border border-[var(--line)]">
+                                <p class="font-bold text-sm text-[var(--brand)]">知识产权中心/法务部</p>
+                                <p class="text-xs text-gray-500">最终IP审核与风险处理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="mb-16">
+            <h2 class="section-title">实施路径：三阶段演进路线图 (36个月)</h2>
+            <p class="section-subtitle">从内部实践走向生态引领，实现系统性、阶段性的能力建设。</p>
+            <div class="relative pl-4">
+                <div class="timeline-line"></div>
+                <div class="space-y-12">
+                    <div class="relative timeline-item pl-8">
+                        <div class="p-6 bg-white rounded-2xl shadow-xl border-l-4 border-[var(--uospo-purple)]">
+                            <p class="text-sm font-semibold text-[var(--uospo-purple)]">1-12 个月</p>
+                            <h3 class="text-xl font-bold mb-2 text-[var(--brand)]">阶段一: 孵化与内部开源 (InnerSource)</h3>
+                            <p class="text-gray-600 mb-3"><span class="font-bold">核心焦点:</span> 建立内部信任、流程与文化，通过低风险试点项目证明价值。</p>
+                            <p class="font-semibold text-gray-800">关键交付: 功能性内部代码门户、开源IP政策草案。</p>
+                        </div>
+                    </div>
+                    <div class="relative timeline-item pl-8">
+                        <div class="p-6 bg-white rounded-2xl shadow-xl border-l-4 border-[var(--uospo-magenta)]">
+                            <p class="text-sm font-semibold text-[var(--uospo-magenta)]">13-24 个月</p>
+                            <h3 class="text-xl font-bold mb-2 text-[var(--brand)]">阶段二: 战略开源与社区构建</h3>
+                            <p class="text-gray-600 mb-3"><span class="font-bold">核心焦点:</span> 有选择地将优质项目对外开源；构建外部社区。</p>
+                            <p class="font-semibold text-gray-800">关键交付: 至少2个学校官方开源项目发布，启动校级OER开发资助计划。</p>
+                        </div>
+                    </div>
+                    <div class="relative timeline-item pl-8">
+                        <div class="p-6 bg-white rounded-2xl shadow-xl border-l-4 border-[var(--uospo-red)]">
+                            <p class="text-sm font-semibold text-[var(--uospo-red)]">25-36 个月</p>
+                            <h3 class="text-xl font-bold mb-2 text-[var(--brand)]">阶段三: 生态领导力与开放教育</h3>
+                            <p class="text-gray-600 mb-3"><span class="font-bold">核心焦点:</span> 确立领域领导地位，**规模化推广开放教育**。</p>
+                            <p class="font-semibold text-gray-800">关键交付: **开源贡献正式纳入职称评定体系的政策文件**。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenge" class="mb-8">
+            <div class="bg-gradient-to-r from-amber-400 to-orange-500 rounded-2xl shadow-2xl p-8 text-white">
+                 <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="text-6xl">⚠️</div>
+                    <div class="flex-grow text-center md:text-left">
+                        <h2 class="text-3xl font-extrabold mb-2">关键成功要素：攻坚激励机制难题</h2>
+                        <p class="text-lg mb-4">高校OSPO成功的<span class="font-black underline decoration-wavy">“关键”</span>在于直面并解决学术评价体系的<span class="font-black">激励错位</span>。</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-amber-900">
+                             <div class="bg-white/80 p-3 rounded-lg"><span class="font-bold">价值化：</span>将开源贡献转化为可认可的显性指标。</div>
+                             <div class="bg-white/80 p-3 rounded-lg"><span class="font-bold">制度化：</span>纳入学术成果认定，与论文、专利并重。</div>
+                             <div class="bg-white/80 p-3 rounded-lg"><span class="font-bold">量化：</span>追踪软件引用、OER采纳数、贡献者数量。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer (License Update) -->
+    <footer class="bg-[var(--brand)] text-center py-6 mt-16">
+        <p class="text-xs text-[var(--brand-light)] opacity-80 mb-1">
+            本作品采用CC-BY-SA 4.0国际许可协议进行许可, &copy; 2025 Gitconomy Research社区
+        </p>
+    </footer>
+
+    <script>
+        const chartColors = {
+            brand: '#004AAD',
+            purple: '#58508d',
+            magenta: '#bc5090',
+            red: '#ff6361',
+            orange: '#ffa600',
+            gray: '#cbd5e1'
+        };
+
+        const defaultChartOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                     labels: {
+                        color: '#374151',
+                        font: {
+                            family: "'Noto Sans SC', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: { color: '#6b7280' }
+                },
+                x: {
+                    ticks: { color: '#6b7280' }
+                }
+            }
+        };
+
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        function createOerGrowthChart() {
+            const ctx = document.getElementById('oerGrowthChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['2019', '2023'],
+                    datasets: [{
+                        label: 'OER作为必修材料的课程比例 (%)',
+                        data: [15, 29],
+                        backgroundColor: [chartColors.purple, chartColors.red],
+                        borderColor: '#ffffff',
+                        borderWidth: 2,
+                        borderRadius: 5,
+                    }]
+                },
+                options: {
+                    ...defaultChartOptions,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 35,
+                             ticks: {
+                                color: '#6b7280',
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        },
+                        x: {
+                             ticks: { color: '#6b7280' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createAiContributionChart() {
+            const ctx = document.getElementById('aiContributionChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['美国', '中国', '其他'],
+                    datasets: [{
+                        label: '贡献比例',
+                        data: [37.4, 18.7, 43.9],
+                        backgroundColor: [
+                            chartColors.brand,
+                            chartColors.red,
+                            chartColors.gray
+                        ],
+                        borderColor: '#ffffff',
+                        borderWidth: 3,
+                    }]
+                },
+                options: {
+                     ...defaultChartOptions,
+                }
+            });
+        }
+
+        function createOspoComparisonRadarChart() {
+            const ctx = document.getElementById('ospoComparisonRadarChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        '商业利益',
+                        '学术声望',
+                        'IP风险控制',
+                        '知识影响力最大化',
+                        '内部工程师中心',
+                        '多元学者/学生中心'
+                    ],
+                    datasets: [{
+                        label: '企业 OSPO',
+                        data: [5, 1, 5, 1, 5, 1],
+                        backgroundColor: 'rgba(0, 74, 173, 0.4)', // Uses Brand Blue
+                        borderColor: chartColors.brand,
+                        pointBackgroundColor: chartColors.brand,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: chartColors.brand,
+                        borderWidth: 2
+                    }, {
+                        label: '高校 U-OSPO',
+                        data: [1, 5, 2, 5, 1, 5],
+                        backgroundColor: 'rgba(255, 99, 97, 0.4)',
+                        borderColor: chartColors.red,
+                        pointBackgroundColor: chartColors.red,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: chartColors.red,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    ...defaultChartOptions,
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true,
+                                color: chartColors.gray
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 5,
+                            ticks: {
+                                display: false
+                            },
+                            pointLabels: {
+                                color: '#374151',
+                                font: {
+                                    size: 14
+                                }
+                            },
+                            grid: {
+                                color: chartColors.gray
+                            }
+                        }
+                    },
+                    plugins: {
+                        ...defaultChartOptions.plugins,
+                        tooltip: {
+                             callbacks: {
+                                title: function(tooltipItems) {
+                                    const item = tooltipItems[0];
+                                    return item.label;
+                                },
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += Math.round(context.parsed.r * 10) / 10;
+                                    return label + ' (焦点度)';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            createOerGrowthChart();
+            createAiContributionChart();
+            createOspoComparisonRadarChart();
+        });
+
+    </script>
+</body>
+</html>

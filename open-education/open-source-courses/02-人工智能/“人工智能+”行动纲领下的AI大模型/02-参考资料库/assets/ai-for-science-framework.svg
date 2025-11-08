@@ -1,0 +1,112 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680">
+  <!-- 背景和箭头定义 -->
+  <defs>
+    <!-- 箭头标记，尺寸减半 -->
+    <marker id="arrowhead" markerWidth="5" markerHeight="3.5" refX="4.5" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#333" />
+    </marker>
+
+    <marker id="red-arrowhead" markerWidth="5" markerHeight="3.5" refX="4.5" refY="1.75" orient="auto">
+      <polygon points="0 0, 5 1.75, 0 3.5" fill="#E74C3C" />
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="900" height="680" fill="#f5f7fa" />
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" fill="#333" text-anchor="middle" font-weight="bold">科学发现的新范式：AI for Science</text>
+
+  <!-- 四个科学范式的时间轴 -->
+  <line x1="100" y1="120" x2="800" y2="120" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)" />
+  <text x="820" y="120" font-family="Arial, sans-serif" font-size="14" fill="#666">时间</text>
+
+  <!-- 第一范式：经验科学 -->
+  <rect x="130" y="100" width="120" height="40" rx="5" ry="5" fill="#F1C40F" />
+  <text x="190" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">经验科学</text>
+  <text x="190" y="80" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">数千年前</text>
+  <text x="190" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">观察与记录自然现象</text>
+
+  <!-- 第二范式：理论科学 -->
+  <rect x="280" y="100" width="120" height="40" rx="5" ry="5" fill="#2ECC71" />
+  <text x="340" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">理论科学</text>
+  <text x="340" y="80" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">几百年前</text>
+  <text x="340" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">构建模型与定律</text>
+
+  <!-- 第三范式：计算科学 -->
+  <rect x="430" y="100" width="120" height="40" rx="5" ry="5" fill="#3498DB" />
+  <text x="490" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">计算科学</text>
+  <text x="490" y="80" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">几十年前</text>
+  <text x="490" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">模拟与数值计算</text>
+
+  <!-- 第四范式：数据密集型科学 -->
+  <rect x="580" y="100" width="170" height="40" rx="5" ry="5" fill="#9B59B6" />
+  <text x="665" y="125" font-family="Arial, sans-serif" font-size="14" fill="#333" text-anchor="middle">数据密集型科学</text>
+  <text x="665" y="80" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">当代</text>
+  <text x="665" y="155" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">从海量数据中提取知识</text>
+
+  <!-- AI for Science的核心位置 -->
+  <rect x="300" y="200" width="300" height="60" rx="10" ry="10" fill="#E74C3C" />
+  <text x="450" y="225" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">AI for Science</text>
+  <text x="450" y="245" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">加速熵减的科学发现引擎</text>
+
+  <!-- 连接线 -->
+  <line x1="450" y1="260" x2="450" y2="300" stroke="#E74C3C" stroke-width="3" stroke-dasharray="5,5" marker-end="url(#red-arrowhead)" />
+
+  <!-- 传统科学方法 vs AI驱动科学方法 对比区域 -->
+  <rect x="100" y="300" width="300" height="300" rx="10" ry="10" fill="#f5f5f5" stroke="#ccc" stroke-width="2" />
+  <text x="250" y="330" font-family="Arial, sans-serif" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">传统科学方法</text>
+
+  <rect x="500" y="300" width="300" height="300" rx="10" ry="10" fill="#f5f5f5" stroke="#E74C3C" stroke-width="2" />
+  <text x="650" y="330" font-family="Arial, sans-serif" font-size="18" fill="#E74C3C" text-anchor="middle" font-weight="bold">AI驱动科学方法</text>
+
+  <!-- 传统科学方法中的元素 -->
+  <circle cx="150" cy="380" r="25" fill="#F1C40F" />
+  <text x="150" y="385" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">假设</text>
+
+  <circle cx="250" cy="380" r="25" fill="#2ECC71" />
+  <text x="250" y="385" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">实验</text>
+
+  <circle cx="350" cy="380" r="25" fill="#3498DB" />
+  <text x="350" y="385" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">分析</text>
+
+  <circle cx="250" cy="450" r="25" fill="#9B59B6" />
+  <text x="250" y="455" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">理论</text>
+
+  <!-- 传统方法的连线 -->
+  <path d="M175 380 L225 380" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M275 380 L325 380" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M350 405 L275 435" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M225 450 L150 405" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)" />
+
+  <text x="250" y="500" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">周期长、资源密集、人工驱动</text>
+  <text x="250" y="530" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">线性搜索空间</text>
+  <text x="250" y="560" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">高熵、低效率</text>
+
+  <!-- AI驱动科学方法中的元素 -->
+  <circle cx="550" cy="380" r="25" fill="#F1C40F" />
+  <text x="550" y="385" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">数据</text>
+
+  <circle cx="650" cy="380" r="25" fill="#E74C3C" />
+  <text x="650" y="385" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle">AI模型</text>
+
+  <circle cx="750" cy="380" r="25" fill="#3498DB" />
+  <text x="750" y="385" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">预测</text>
+
+  <circle cx="650" cy="450" r="25" fill="#9B59B6" />
+  <text x="650" y="455" font-family="Arial, sans-serif" font-size="12" fill="#333" text-anchor="middle">验证</text>
+
+  <!-- AI方法的连线 -->
+  <path d="M575 380 L625 380" stroke="#E74C3C" stroke-width="2" marker-end="url(#red-arrowhead)" />
+  <path d="M675 380 L725 380" stroke="#E74C3C" stroke-width="2" marker-end="url(#red-arrowhead)" />
+  <path d="M750 405 L675 435" stroke="#E74C3C" stroke-width="2" marker-end="url(#red-arrowhead)" />
+  <path d="M625 450 L550 405" stroke="#E74C3C" stroke-width="2" marker-end="url(#red-arrowhead)" />
+
+  <text x="650" y="500" font-family="Arial, sans-serif" font-size="14" fill="#E74C3C" text-anchor="middle">周期短、计算密集、AI辅助</text>
+  <text x="650" y="530" font-family="Arial, sans-serif" font-size="14" fill="#E74C3C" text-anchor="middle">并行搜索巨大空间</text>
+  <text x="650" y="560" font-family="Arial, sans-serif" font-size="14" fill="#E74C3C" text-anchor="middle">低熵、高效率</text>
+
+  <!-- 版权声明 -->
+  <text x="450" y="665" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

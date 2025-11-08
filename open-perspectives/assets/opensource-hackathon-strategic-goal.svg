@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 650" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <!-- 样式：透明背景、分支配色 -->
+    <style>
+      .card { stroke: #94a3b8; stroke-width: 1.5; rx: 12; ry: 12; }
+      .card-goal { fill: #EDE9FE; }   /* 目标：淡紫 */
+      .card-left { fill: #E0F2FE; }   /* 左支：淡天蓝（成长路径） */
+      .card-right{ fill: #FFE4E6; }   /* 右支：淡玫红（社区路径） */
+      .title { font-size: 18px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font-size: 16px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .link  { stroke: #2563eb; stroke-width: 2.2; fill: none; }
+      .foot  { font-size: 12px; fill: #64748b; text-anchor: middle; }
+    </style>
+
+    <!-- 阴影 -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- 箭头 -->
+    <marker id="arrow" viewBox="0 0 10 10" markerWidth="5" markerHeight="5" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- 连接线 -->
+  <path class="link" d="M550,132 L300,192" marker-end="url(#arrow)"/>
+  <path class="link" d="M550,132 L800,192" marker-end="url(#arrow)"/>
+  <path class="link" d="M300,252 L300,328" marker-end="url(#arrow)"/>
+  <path class="link" d="M800,252 L800,328" marker-end="url(#arrow)"/>
+  <path class="link" d="M300,372 L300,458" marker-end="url(#arrow)"/>
+  <path class="link" d="M800,372 L800,458" marker-end="url(#arrow)"/>
+
+  <!-- 节点 A：目标（淡紫） -->
+  <g transform="translate(550,90)">
+    <rect class="card card-goal" x="-320" y="-42" width="640" height="84" filter="url(#shadow)"/>
+    <text class="title" x="0" y="-6">🎯 终极目标</text>
+    <text class="small"  x="0" y="18">构建可持续的学生开发者开源生态</text>
+  </g>
+
+  <!-- 节点 B：左支（淡天蓝） -->
+  <g transform="translate(300,230)">
+    <rect class="card card-left" x="-190" y="-32" width="380" height="64" filter="url(#shadow)"/>
+    <text class="small" x="0" y="0">📌 中间目标1: 开发者持续成长</text>
+  </g>
+
+  <!-- 节点 C：右支（淡玫红） -->
+  <g transform="translate(800,230)">
+    <rect class="card card-right" x="-190" y="-32" width="380" height="64" filter="url(#shadow)"/>
+    <text class="small" x="0" y="0">📌 中间目标2: 社区持续活跃</text>
+  </g>
+
+  <!-- 节点 D：左支细化 -->
+  <g transform="translate(300,360)">
+    <rect class="card card-left" x="-160" y="-32" width="320" height="64" filter="url(#shadow)"/>
+    <text class="small" x="0" y="0">技能提升 &amp; 项目实践</text>
+  </g>
+
+  <!-- 节点 E：右支细化 -->
+  <g transform="translate(800,360)">
+    <rect class="card card-right" x="-160" y="-32" width="320" height="64" filter="url(#shadow)"/>
+    <text class="small" x="0" y="0">归属感 &amp; 参与感</text>
+  </g>
+
+  <!-- 节点 F：左支结果 -->
+  <g transform="translate(300,490)">
+    <rect class="card card-left" x="-210" y="-32" width="420" height="64" filter="url(#shadow)"/>
+    <text class="small" x="0" y="0">🌱 初级 → 中级 → 高级开发者梯队</text>
+  </g>
+
+  <!-- 节点 G：右支结果 -->
+  <g transform="translate(800,490)">
+    <rect class="card card-right" x="-210" y="-32" width="420" height="64" filter="url(#shadow)"/>
+    <text class="small" x="0" y="0">👥 活跃贡献者 → 核心维护者</text>
+  </g>
+
+  <!-- 许可声明（底部居中） -->
+  <text class="foot" x="50%" y="580">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

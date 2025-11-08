@@ -1,0 +1,78 @@
+<svg width="800" height="750" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+    <defs>
+        <style>
+            /* 字体规范 - 根据规范统一调整 */
+            .main-title-text { font-family: sans-serif; font-size: 22px; font-weight: 800; fill: #111827; text-anchor: middle; }
+            .title-text { font-family: sans-serif; font-size: 16px; font-weight: bold; fill: #111827; }
+            .body-text { font-family: sans-serif; font-size: 12px; font-weight: normal; fill: #374151; }
+            .small-text { font-family: sans-serif; font-size: 11px; font-weight: normal; fill: #6B7280; } /* 使用规范中的 #6B7280 */
+            .license-text { font-family: sans-serif; font-size: 12px; font-weight: normal; fill: #64748B; text-anchor: middle; }
+            .swatch-text-sample { font-family: sans-serif; font-size: 48px; font-weight: bold; text-anchor: middle; }
+        </style>
+    </defs>
+
+    <text x="400" y="50" class="main-title-text">Gitconomy社区图形即代码标准配色方案</text>
+
+    <g transform="translate(50, 100)">
+        <rect width="100" height="60" rx="5" ry="5" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+        <text x="120" y="25" class="title-text">主概念框 (.main-box)</text>
+        <text x="120" y="50" class="body-text">填充 (Fill): #EFF6FF</text>
+        <text x="300" y="50" class="body-text">描边 (Stroke): #60A5FA 边框宽度（Stroke Width):2</text>
+    </g>
+
+    <g transform="translate(50, 180)">
+        <rect width="100" height="60" rx="5" ry="5" fill="#F0FDF4" stroke="#34D399" stroke-width="2"/>
+        <text x="120" y="25" class="title-text">标准信息框 (.box)</text>
+        <text x="120" y="50" class="body-text">填充 (Fill): #F0FDF4</text>
+        <text x="300" y="50" class="body-text">描边 (Stroke): #34D399 边框宽度（Stroke Width):2</text>
+    </g>
+
+    <g transform="translate(50, 260)">
+        <rect width="100" height="60" rx="5" ry="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+        <text x="120" y="25" class="title-text">分组卡片背景 (.card-background)</text>
+        <text x="120" y="50" class="body-text">填充 (Fill): #DBEAFE</text>
+        <text x="300" y="50" class="body-text">描边 (Stroke): #3B82F6 边框宽度（Stroke Width):2</text>
+    </g>
+
+    <g transform="translate(50, 340)">
+        <rect width="100" height="60" rx="5" ry="5" fill="#FEF9C3" stroke="#FACC15" stroke-width="2"/>
+        <text x="120" y="25" class="title-text">高亮/强调框 (.highlight-box)</text>
+        <text x="120" y="50" class="body-text">填充 (Fill): #FEF9C3</text>
+        <text x="300" y="50" class="body-text">描边 (Stroke): #FACC15 边框宽度（Stroke Width):2</text>
+    </g>
+
+    <g transform="translate(50, 420)">
+        <line x1="0" y1="30" x2="100" y2="30" stroke="#2563EB" stroke-width="2"/>
+        <polygon points="100,25 110,30 100,35" fill="#2563EB"/>
+        <text x="120" y="25" class="title-text">标准连接线 (.elbow-connector)</text>
+        <text x="120" y="50" class="body-text">颜色 (Stroke): #2563EB 宽度（Stroke Width):2</text>
+    </g>
+
+    <g transform="translate(50, 500)">
+        <line x1="0" y1="30" x2="100" y2="30" stroke="#FACC15" stroke-width="2"/>
+        <polygon points="100,25 110,30 100,35" fill="#FACC15"/>
+        <text x="120" y="25" class="title-text">高亮连接线 (.highlight-connector)</text>
+        <text x="120" y="50" class="body-text">颜色 (Stroke): #FACC15 宽度（Stroke Width):2</text>
+    </g>
+
+
+    <g transform="translate(50, 580)">
+        <rect width="700" height="120" rx="5" ry="5" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+        <text x="20" y="30" class="title-text">文本颜色</text>
+
+        <text x="75" y="80" class="swatch-text-sample" fill="#111827">Aa</text>
+        <text x="75" y="105" text-anchor="middle" class="small-text">主标题/主要文本: #111827</text>
+
+        <text x="225" y="80" class="swatch-text-sample" fill="#374151">Aa</text>
+        <text x="225" y="105" text-anchor="middle" class="small-text">正文 (.body-text): #374151</text>
+
+        <text x="375" y="80" class="swatch-text-sample" fill="#6B7280">Aa</text>
+        <text x="375" y="105" text-anchor="middle" class="small-text">注释 (.small-text): #6B7280</text>
+
+        <text x="525" y="80" class="swatch-text-sample" fill="#64748B">Aa</text>
+        <text x="525" y="105" text-anchor="middle" class="small-text">许可 (.license-text): #64748B</text>
+    </g>
+
+    <text x="400" y="730" class="license-text">本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+
+</svg>

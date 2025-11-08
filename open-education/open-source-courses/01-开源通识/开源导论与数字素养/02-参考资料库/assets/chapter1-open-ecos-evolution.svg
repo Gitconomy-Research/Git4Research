@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 1200 850" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #111; text-anchor: middle; }
+    .subtitle { font-size: 14px; fill: #444; text-anchor: middle; }
+    .field-title { font-size: 18px; font-weight: bold; fill: #005A9C; }
+    .category-title { font-size: 14px; font-weight: bold; fill: #333; }
+    .item-text { font-size: 13px; fill: #444; }
+    .info-box { stroke: #ccc; stroke-width: 1; }
+    .connector { stroke: #555; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    .license-text { font-size: 14px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#555" />
+    </marker>
+  </defs>
+
+  <g id="central-hub">
+    <rect x="450" y="325" width="300" height="150" rx="10" ry="10" fill="#f5f5f5" class="info-box" />
+    <text x="600" y="380" class="title">开源精神与方法</text>
+    <text x="600" y="405" class="subtitle">
+      <tspan x="600">透明、协作、用户自由</tspan>
+      <tspan x="600" dy="1.4em">等核心原则</tspan>
+    </text>
+  </g>
+
+  <line x1="450" y1="350" x2="380" y2="260" class="connector" />
+  <line x1="750" y1="350" x2="820" y2="260" class="connector" />
+  <line x1="450" y1="450" x2="380" y2="540" class="connector" />
+  <line x1="750" y1="450" x2="820" y2="540" class="connector" />
+
+  <g id="osh">
+    <rect x="50" y="50" width="450" height="210" rx="8" ry="8" fill="#E8F8F5" class="info-box" />
+    <text x="70" y="80" class="field-title">1. 开源硬件 (Open Source Hardware, OSH)</text>
+    <text x="70" y="110" class="category-title">理念延伸:</text>
+    <text x="80" y="130" class="item-text">
+        <tspan x="80" dy="0em">• “源代码”表现为产品的设计文件（电路图、机械制图等）。</tspan>
+    </text>
+    <text x="70" y="155" class="category-title">意义与影响:</text>
+    <text x="80" y="175" class="item-text">
+        <tspan x="80" dy="0em">• 民主化实体制造，点燃全球“创客运动”。</tspan>
+    </text>
+    <text x="70" y="200" class="category-title">典型案例:</text>
+    <text x="80" y="220" class="item-text">• Arduino</text>
+  </g>
+
+  <g id="oer">
+    <rect x="700" y="50" width="450" height="210" rx="8" ry="8" fill="#FEF9E7" class="info-box" />
+    <text x="720" y="80" class="field-title">2. 开放教育资源 (OER)</text>
+    <text x="720" y="110" class="category-title">理念延伸:</text>
+    <text x="730" y="130" class="item-text">
+        <tspan x="730" dy="0em">• “源代码”是教学材料本身（教科书、课程大纲等）。</tspan>
+    </text>
+    <text x="720" y="155" class="category-title">精神与方法:</text>
+    <text x="730" y="175" class="item-text">
+        <tspan x="730" dy="0em">• 核心精神是知识普惠，方法被精炼为“5R”原则。</tspan>
+    </text>
+    <text x="720" y="200" class="category-title">典型案例:</text>
+    <text x="730" y="220" class="item-text">• MIT OpenCourseWare</text>
+  </g>
+
+  <g id="science">
+    <rect x="50" y="540" width="450" height="210" rx="8" ry="8" fill="#F4ECF7" class="info-box" />
+    <text x="70" y="570" class="field-title">3. 开放科学 (Open Science)</text>
+    <text x="70" y="600" class="category-title">理念延伸:</text>
+    <text x="80" y="620" class="item-text">
+        <tspan x="80" dy="0em">• 整个科研流程（方法、数据、出版物）都成为可被审视的“源代码”。</tspan>
+    </text>
+    <text x="70" y="645" class="category-title">意义与影响:</text>
+    <text x="80" y="665" class="item-text">
+        <tspan x="80" dy="0em">• 对科研“可复现性危机”的直接回应，通过全球协作加速创新。</tspan>
+    </text>
+    <text x="70" y="690" class="category-title">典型案例:</text>
+    <text x="80" y="710" class="item-text">• Plan S 倡议</text>
+  </g>
+
+  <g id="dpg">
+    <rect x="700" y="540" width="450" height="210" rx="8" ry="8" fill="#FDEDEC" class="info-box" />
+    <text x="720" y="570" class="field-title">4. 数字公共产品 (DPG)</text>
+    <text x="720" y="600" class="category-title">理念延伸:</text>
+    <text x="730" y="620" class="item-text">
+        <tspan x="730" dy="0em">• 有助于实现联合国可持续发展目标的开源软件、数据、AI模型等。</tspan>
+    </text>
+    <text x="720" y="645" class="category-title">意义与影响:</text>
+    <text x="730" y="665" class="item-text">
+        <tspan x="730" dy="0em">• 为中低收入国家提供构建数字基础设施的蓝图，避免技术锁定。</tspan>
+    </text>
+    <text x="720" y="690" class="category-title">典型案例:</text>
+    <text x="730" y="710" class="item-text">• DHIS2 (全球公共卫生管理平台)</text>
+  </g>
+
+  <text x="600" y="820" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+
+</svg>

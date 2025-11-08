@@ -1,0 +1,134 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="825">
+  <defs>
+    <style>
+      .title{font:700 20px/1.3 system-ui,Segoe UI,Arial}
+      .sub{font:600 14px/1.3 system-ui,Segoe UI,Arial; fill:#334155}
+      .cap{font:12px system-ui,Arial; fill:#334155}
+      .node{font:12px system-ui,Arial; fill:#0f172a}
+      .box{rx:10; ry:10; stroke:#0f172a; stroke-width:1}
+      .cat1{fill:#eef2ff} /* 蓝色背景 - 核心技术 */
+      .cat2{fill:#f0fdf4} /* 绿色背景 - AI软件栈 */
+      .cat3{fill:#fef2f2} /* 红色背景 - 开源项目 */
+      .cat4{fill:#fdf2f8} /* 粉色背景 - 框架适配 */
+      .cat5{fill:#fff7ed} /* 橙色背景 - 合作伙伴 */
+      .cat6{fill:#f0f9ff} /* 天蓝背景 - 应用场景 */
+      .cat7{fill:#f5f3ff} /* 紫色背景 - 技术关系 */
+      .light{fill:#f1f5f9}
+      .note{font:11px system-ui,Arial; fill:#475569}
+      .license{font:10px system-ui,Arial; fill:#64748b}
+      .link{stroke:#64748b; stroke-width:1.5; fill:none; marker-end:url(#arrow)}
+      .highlight{fill:#f0f9ff}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- 标题 -->
+  <text x="450" y="50" class="title">华为昇腾开源战略与生态布局示意图</text>
+
+  <!-- 左上：核心技术 -->
+  <rect x="20" y="90" width="260" height="180" class="box cat1"/>
+  <text x="30" y="115" class="sub">昇腾核心技术</text>
+  <g class="node">
+    <rect x="30" y="130" width="240" height="28" class="box light"/><text x="40" y="149">昇腾处理器芯片（NPU）</text>
+    <rect x="30" y="165" width="240" height="28" class="box light"/><text x="40" y="184">CANN 异构计算架构</text>
+    <rect x="30" y="200" width="240" height="28" class="box light"/><text x="40" y="219">Atlas 智能计算平台</text>
+    <rect x="30" y="235" width="240" height="28" class="box light"/><text x="40" y="254">昇腾芯片算子库</text>
+  </g>
+
+  <!-- 左下：昇腾AI软件栈 -->
+  <rect x="20" y="290" width="260" height="180" class="box cat2"/>
+  <text x="30" y="315" class="sub">昇腾AI软件栈</text>
+  <g class="node">
+    <rect x="30" y="330" width="240" height="28" class="box light"/><text x="40" y="349">MindSpore（昇思）开源框架</text>
+    <rect x="30" y="365" width="240" height="28" class="box light"/><text x="40" y="384">ModelArts（模型训练/部署平台）</text>
+    <rect x="30" y="400" width="240" height="28" class="box light"/><text x="40" y="419">昇腾开发者套件（CANN SDK）</text>
+    <rect x="30" y="435" width="240" height="28" class="box light"/><text x="40" y="454">昇腾AI处理器库（AIPL）</text>
+  </g>
+
+  <!-- 中上：开源项目 -->
+  <rect x="300" y="90" width="280" height="220" class="box cat3"/>
+  <text x="310" y="115" class="sub">昇腾开源项目生态</text>
+  <g class="node">
+    <rect x="310" y="130" width="260" height="28" class="box highlight"/><text x="320" y="149">MindSpore（昇思深度学习框架）</text>
+    <rect x="310" y="165" width="260" height="28" class="box light"/><text x="320" y="184">OpenHarmony（鸿蒙开源项目）</text>
+    <rect x="310" y="200" width="260" height="28" class="box light"/><text x="320" y="219">OpenEuler（欧拉开源操作系统）</text>
+    <rect x="310" y="235" width="260" height="28" class="box light"/><text x="320" y="254">OpenGauss（高斯数据库）</text>
+    <rect x="310" y="270" width="260" height="28" class="box light"/><text x="320" y="289">MindStudio（昇腾开发工具）</text>
+  </g>
+
+  <!-- 中下：框架适配与社区 -->
+  <rect x="300" y="330" width="280" height="180" class="box cat4"/>
+  <text x="310" y="355" class="sub">框架适配与社区建设</text>
+  <g class="node">
+    <rect x="310" y="370" width="260" height="28" class="box light"/><text x="320" y="389">昇腾开发者社区</text>
+    <rect x="310" y="405" width="260" height="28" class="box light"/><text x="320" y="424">PyTorch/TensorFlow适配</text>
+    <rect x="310" y="440" width="260" height="28" class="box light"/><text x="320" y="459">ACL（昇腾计算库）</text>
+    <rect x="310" y="475" width="260" height="28" class="box light"/><text x="320" y="494">开源模型移植工具链</text>
+  </g>
+
+  <!-- 右上：合作伙伴生态 -->
+  <rect x="600" y="90" width="480" height="180" class="box cat5"/>
+  <text x="610" y="115" class="sub">昇腾合作伙伴生态</text>
+  <g class="node">
+    <rect x="610" y="130" width="220" height="28" class="box light"/><text x="620" y="149">应用开发伙伴（ISV）</text>
+    <rect x="840" y="130" width="230" height="28" class="box light"/><text x="850" y="149">基础设施伙伴（IHV）</text>
+    <rect x="610" y="165" width="220" height="28" class="box light"/><text x="620" y="184">系统集成商（SI）</text>
+    <rect x="840" y="165" width="230" height="28" class="box light"/><text x="850" y="184">云服务提供商</text>
+    <rect x="610" y="200" width="220" height="28" class="box light"/><text x="620" y="219">教育科研机构</text>
+    <rect x="840" y="200" width="230" height="28" class="box light"/><text x="850" y="219">开源基金会与社区</text>
+  </g>
+
+  <!-- 右中：技术整合与应用 -->
+  <rect x="600" y="290" width="480" height="180" class="box cat6"/>
+  <text x="610" y="315" class="sub">技术整合与应用场景</text>
+  <g class="node">
+    <rect x="610" y="330" width="220" height="28" class="box light"/><text x="620" y="349">智能城市与公共服务</text>
+    <rect x="840" y="330" width="230" height="28" class="box light"/><text x="850" y="349">工业智能与智能制造</text>
+    <rect x="610" y="365" width="220" height="28" class="box light"/><text x="620" y="384">智慧金融与风控</text>
+    <rect x="840" y="365" width="230" height="28" class="box light"/><text x="850" y="384">智慧医疗与健康</text>
+    <rect x="610" y="400" width="220" height="28" class="box light"/><text x="620" y="419">AI大模型推理与训练</text>
+    <rect x="840" y="400" width="230" height="28" class="box light"/><text x="850" y="419">边缘计算与物联网</text>
+  </g>
+
+  <!-- 技术关系图 - 与"框架适配与社区建设"保持20单位间距 -->
+  <rect x="20" y="530" width="1060" height="130" class="box cat7"/>
+  <text x="30" y="555" class="sub">昇腾与其他技术关系</text>
+  <g class="node">
+    <rect x="30" y="570" width="200" height="28" class="box light"/><text x="40" y="589">华为云基础设施</text>
+    <rect x="240" y="570" width="200" height="28" class="box light"/><text x="250" y="589">大数据与分析平台</text>
+    <rect x="450" y="570" width="200" height="28" class="box light"/><text x="460" y="589">人工智能算法与模型</text>
+    <rect x="660" y="570" width="200" height="28" class="box light"/><text x="670" y="589">边缘计算解决方案</text>
+    <rect x="870" y="570" width="200" height="28" class="box light"/><text x="880" y="589">行业应用解决方案</text>
+    <rect x="240" y="610" width="200" height="28" class="box light"/><text x="250" y="629">鲲鹏计算平台</text>
+    <rect x="450" y="610" width="200" height="28" class="box light"/><text x="460" y="629">昇腾训推一体化</text>
+    <rect x="660" y="610" width="200" height="28" class="box light"/><text x="670" y="629">鸿蒙操作系统</text>
+  </g>
+
+  <!-- 连接：核心技术->开源项目 -->
+  <path class="link" d="M280,150 C290,150 295,150 300,150"/>
+  <path class="link" d="M280,175 C290,175 295,175 300,175"/>
+
+  <!-- 连接：AI软件栈->框架适配 -->
+  <path class="link" d="M280,345 C290,345 295,345 300,370"/>
+  <path class="link" d="M280,380 C290,380 295,380 300,405"/>
+
+  <!-- 连接：开源项目->合作伙伴 -->
+  <path class="link" d="M580,150 C590,150 595,150 600,150"/>
+  <path class="link" d="M580,175 C590,175 595,175 600,175"/>
+
+  <!-- 连接：框架适配->技术整合 -->
+  <path class="link" d="M580,385 C590,385 595,385 600,365"/>
+  <path class="link" d="M580,440 C590,440 595,440 600,400"/>
+
+  <!-- 许可与策略 -->
+  <rect x="20" y="680" width="1060" height="80" class="box" style="fill:#fffbeb; stroke:#fb923c"/>
+  <text x="30" y="705" class="sub" style="fill:#9a3412">开源战略与商业策略</text>
+  <text x="30" y="730" class="note">• 昇腾生态采用开源+商业双轨策略：核心框架（如MindSpore）采用Apache 2.0许可开源，硬件加速库提供商业版本</text>
+  <text x="30" y="750" class="note">• 构建"硬件+框架+应用"全栈生态，通过开源社区扩大开发者基础，商业合作深化产业应用</text>
+
+  <!-- 版权声明 -->
+  <text x="450" y="800" class="license">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

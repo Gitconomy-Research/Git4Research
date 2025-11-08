@@ -1,0 +1,128 @@
+<svg width="1100" height="820" viewBox="0 0 1100 820" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <style>
+            .title { font-size: 28px; font-weight: bold; text-anchor: middle; fill: #2c3e50; }
+            .subtitle { font-size: 18px; font-weight: bold; fill: #34495e; }
+            .card { fill: #ffffff; stroke: #ecf0f1; stroke-width: 1; rx: 10; ry: 10; }
+            .card-title { font-size: 16px; font-weight: bold; text-anchor: middle; fill: #2980b9; }
+            .card-text { font-size: 13px; text-anchor: middle; fill: #34495e; }
+            .arrow { fill: none; stroke: #bdc3c7; stroke-width: 2; marker-end: url(#arrowhead); }
+            .flow-step { fill: #3498db; stroke: #2980b9; stroke-width: 1.5; rx: 8; ry: 8; }
+            .flow-text { font-size: 14px; font-weight: bold; fill: white; text-anchor: middle; dominant-baseline: central; }
+            .flow-time { font-size: 12px; fill: white; text-anchor: middle; dominant-baseline: central; }
+            .risk-text { font-size: 12px; fill: #c0392b; }
+            .solution-text { font-size: 12px; fill: #27ae60; }
+            .footer-text { font-size: 12px; fill: #7f8c8d; text-anchor: middle; }
+        </style>
+        <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#bdc3c7" />
+        </marker>
+    </defs>
+
+    <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+    <text x="500" y="50" class="title">课程战术手册</text>
+
+    <g id="prep-section">
+        <rect x="50" y="90" width="900" height="140" class="card"/>
+        <text x="500" y="120" class="subtitle" text-anchor="middle">1. 课前准备 (Pre-Class Prep)</text>
+        <g transform="translate(80, 150)">
+            <circle cx="0" cy="0" r="4" fill="#3498db"/>
+            <text x="15" y="5">搭建课程平台：在 GitCode 创建专属组织和仓库，建立交流社群。</text>
+        </g>
+        <g transform="translate(80, 180)">
+            <circle cx="0" cy="0" r="4" fill="#3498db"/>
+            <text x="15" y="5">准备教学资源：定制Syllabus，完成前三周教学材料。</text>
+        </g>
+        <g transform="translate(80, 210)">
+            <circle cx="0" cy="0" r="4" fill="#3498db"/>
+            <text x="15" y="5">协调外部资源：预筛选“微贡献”项目，确认嘉宾。</text>
+        </g>
+    </g>
+
+    <g id="delivery-model-section" transform="translate(0, 40)">
+        <text x="500" y="240" class="subtitle" text-anchor="middle">2. 课堂交付模型 (2x50min)</text>
+        <rect x="50" y="270" width="140" height="60" class="flow-step"/>
+        <text x="120" y="293" class="flow-text">闪电问答</text>
+        <text x="120" y="315" class="flow-time">(0-10 min)</text>
+
+        <rect x="250" y="270" width="160" height="60" class="flow-step" style="fill:#2980b9;"/>
+        <text x="330" y="293" class="flow-text">案例故事+点睛</text>
+        <text x="330" y="315" class="flow-time">(10-30 min)</text>
+
+        <rect x="470" y="270" width="140" height="60" class="flow-step"/>
+        <text x="540" y="293" class="flow-text">分组实操</text>
+        <text x="540" y="315" class="flow-time">(30-60 min)</text>
+
+        <rect x="670" y="270" width="140" height="60" class="flow-step" style="fill:#2980b9;"/>
+        <text x="740" y="293" class="flow-text">成果快闪</text>
+        <text x="740" y="315" class="flow-time">(60-75 min)</text>
+
+        <rect x="870" y="270" width="140" height="60" class="flow-step"/>
+        <text x="940" y="293" class="flow-text">总结+布置任务</text>
+        <text x="940" y="315" class="flow-time">(75-90 min)</text>
+
+        <path d="M 190 300 H 250" class="arrow"/>
+        <path d="M 410 300 H 470" class="arrow"/>
+        <path d="M 610 300 H 670" class="arrow"/>
+        <path d="M 810 300 H 870" class="arrow"/>
+    </g>
+
+    <g id="practice-and-tools-section" transform="translate(0, 410)">
+        <g id="activities">
+            <rect x="50" y="0" width="430" height="220" class="card"/>
+            <text x="265" y="30" class="subtitle" text-anchor="middle">3. 核心实践活动</text>
+
+            <rect x="70" y="60" width="390" height="40" fill="#f2f4f6" rx="5"/>
+            <text x="265" y="82" font-size="14" fill="#2c3e50" text-anchor="middle">🎭 “许可证情景剧”角色扮演</text>
+
+            <rect x="70" y="110" width="390" height="40" fill="#f2f4f6" rx="5"/>
+            <text x="265" y="132" font-size="14" fill="#2c3e50" text-anchor="middle">🚀 “Git密室逃脱”线上闯关</text>
+
+            <rect x="70" y="160" width="390" height="40" fill="#f2f4f6" rx="5"/>
+            <text x="265" y="182" font-size="14" fill="#2c3e50" text-anchor="middle">🎯 “错别字猎人”微贡献行动</text>
+        </g>
+
+        <g id="toolbox">
+            <rect x="520" y="0" width="430" height="220" class="card"/>
+            <text x="735" y="30" class="subtitle" text-anchor="middle">4. 推荐教学工具箱</text>
+            <text x="550" y="70" class="card-title" text-anchor="start">协作托管:</text>
+            <text x="680" y="70" class="card-text" text-anchor="start">GitCode (主), GitHub (辅)</text>
+
+            <text x="550" y="100" class="card-title" text-anchor="start">互动反馈:</text>
+            <text x="680" y="100" class="card-text" text-anchor="start">Mentimeter, 雨课堂</text>
+
+            <text x="550" y="130" class="card-title" text-anchor="start">AI 平台:</text>
+            <text x="680" y="130" class="card-text" text-anchor="start">ModelScope魔搭, Hugging Face</text>
+
+            <text x="550" y="160" class="card-title" text-anchor="start">知识管理:</text>
+            <text x="680" y="160" class="card-text" text-anchor="start">Typora, Logseq, 飞书文档</text>
+
+            <text x="550" y="190" class="card-title" text-anchor="start">交流社群:</text>
+            <text x="680" y="190" class="card-text" text-anchor="start">微信群, Discord/Slack</text>
+        </g>
+    </g>
+
+    <g id="risk-management-section" transform="translate(0, 660)">
+        <rect x="50" y="0" width="900" height="110" class="card"/>
+        <text x="500" y="30" class="subtitle" text-anchor="middle">5. 风险预案 (Risk Management)</text>
+
+        <text x="80" y="60" class="risk-text">风险: 零基础学生掉队</text>
+        <path d="M 230 57 H 260" class="arrow"/>
+        <text x="270" y="60" class="solution-text">预案: 开设“周三晚诊所” + 3分钟短视频教程</text>
+
+        <text x="80" y="90" class="risk-text">风险: 开源项目无响应</text>
+        <path d="M 230 87 H 260" class="arrow"/>
+        <text x="270" y="90" class="solution-text">预案: 教师提前fork项目备份，确保PR可被合并</text>
+
+        <text x="550" y="60" class="risk-text">风险: AI算力不足</text>
+        <path d="M 670 57 H 700" class="arrow"/>
+        <text x="710" y="60" class="solution-text">预案: 提供ModelScope镜像账号</text>
+
+        <text x="550" y="90" class="risk-text">风险: 平台服务中断</text>
+        <path d="M 670 87 H 700" class="arrow"/>
+        <text x="710" y="90" class="solution-text">预案: 准备备用平台(GitHub)教程</text>
+    </g>
+
+    <text x="500" y="800" class="footer-text">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

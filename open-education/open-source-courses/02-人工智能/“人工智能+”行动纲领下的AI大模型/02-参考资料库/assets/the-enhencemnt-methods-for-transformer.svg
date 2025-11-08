@@ -1,0 +1,93 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850">
+  <!-- 背景 -->
+  <rect width="1000" height="850" fill="#f8f9fa" />
+
+  <!-- 标题 -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Transformer架构的多维度改进：Mamba、MoE与RAG的协同作用</text>
+
+  <!-- 传统Transformer的问题（中心位置） -->
+  <circle cx="500" cy="180" r="100" fill="#ffcccc" stroke="#cc0000" stroke-width="3" />
+  <text x="500" y="155" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">Transformer</text>
+  <text x="500" y="185" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">计算复杂度 O(N²)</text>
+  <text x="500" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">所有参数密集激活</text>
+  <text x="500" y="225" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">推理与知识存储混同</text>
+
+  <!-- 箭头指向三个改进方向 -->
+  <!-- 左侧箭头 - Mamba -->
+  <path d="M410 230 L260 330" stroke="#0066cc" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <!-- 右侧箭头 - MoE -->
+  <path d="M590 230 L740 330" stroke="#6aa84f" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <!-- 下方箭头 - RAG -->
+  <path d="M500 280 L500 380" stroke="#e69138" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+
+  <!-- Mamba 改进（左侧） -->
+  <rect x="160" y="330" width="200" height="120" rx="20" ry="20" fill="#cfe2f3" stroke="#0066cc" stroke-width="3" />
+  <text x="260" y="360" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">Mamba</text>
+  <text x="260" y="385" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">线性计算复杂度 O(N)</text>
+  <text x="260" y="405" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">状态空间模型 (SSM)</text>
+  <text x="260" y="425" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">解决序列长度伸缩问题</text>
+
+  <!-- MoE 改进（右侧） -->
+  <rect x="640" y="330" width="200" height="120" rx="20" ry="20" fill="#d9ead3" stroke="#6aa84f" stroke-width="3" />
+  <text x="740" y="360" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">MoE</text>
+  <text x="740" y="385" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">专家混合模型</text>
+  <text x="740" y="405" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">仅激活部分参数</text>
+  <text x="740" y="425" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">参数量与计算量解耦</text>
+
+  <!-- RAG 改进（下方） -->
+  <rect x="400" y="380" width="200" height="120" rx="20" ry="20" fill="#fce5cd" stroke="#e69138" stroke-width="3" />
+  <text x="500" y="410" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">RAG</text>
+  <text x="500" y="435" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">检索增强生成</text>
+  <text x="500" y="455" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">外部知识库查询</text>
+  <text x="500" y="475" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">知识与参数解耦</text>
+
+  <!-- 三种改进融合的箭头 -->
+  <path d="M260 450 L330 530" stroke="#0066cc" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  <path d="M500 500 L500 530" stroke="#e69138" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+  <path d="M740 450 L670 530" stroke="#6aa84f" stroke-width="3" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead)" />
+
+  <!-- 混合架构（中心下方） -->
+  <rect x="350" y="530" width="300" height="80" rx="20" ry="20" fill="#d9d2e9" stroke="#674ea7" stroke-width="3" />
+  <text x="500" y="565" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">混合高效架构</text>
+  <text x="500" y="590" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Mamba骨干网络 + MoE层 + RAG框架</text>
+
+  <!-- 从"模型即制品"到"系统即服务"的演变（底部） -->
+  <rect x="100" y="620" width="800" height="100" rx="10" ry="10" fill="#f5f5f5" stroke="#666666" stroke-width="2" />
+  <line x1="200" y1="680" x2="800" y2="680" stroke="#666666" stroke-width="2" stroke-dasharray="5,5" />
+  <text x="500" y="645" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">AI范式转变</text>
+
+  <!-- 左侧：模型即制品 -->
+  <text x="200" y="670" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">模型即制品</text>
+  <text x="200" y="695" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">静态</text>
+  <text x="200" y="715" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">功能固定</text>
+
+  <!-- 右侧：系统即服务 -->
+  <text x="800" y="670" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">系统即服务</text>
+  <text x="800" y="695" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">动态</text>
+  <text x="800" y="715" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">状态依赖</text>
+
+  <!-- 中间：转变过程 -->
+  <polygon points="350,680 400,650 450,680 400,710" fill="#cfe2f3" stroke="#0066cc" stroke-width="2" />
+  <text x="400" y="683" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Mamba</text>
+
+  <polygon points="500,680 550,650 600,680 550,710" fill="#d9ead3" stroke="#6aa84f" stroke-width="2" />
+  <text x="550" y="683" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">MoE</text>
+
+  <polygon points="650,680 700,650 750,680 700,710" fill="#fce5cd" stroke="#e69138" stroke-width="2" />
+  <text x="700" y="683" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">RAG</text>
+
+  <!-- 软硬件系统集成需求说明 -->
+  <rect x="100" y="740" width="800" height="30" rx="5" ry="5" fill="#ffffcc" stroke="#cccc00" stroke-width="2" />
+  <text x="500" y="760" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">需要深度整合的软硬件技术栈：分布式计算、高效索引、低延迟推理和大规模存储</text>
+
+  <!-- 许可声明 -->
+  <text x="500" y="825" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="825" viewBox="0 0 1200 825" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>运营体系优化：构建可持续社区的核心支柱</title>
+  <desc>六大支柱采用不同背景色；左卡与上下背景框左边距20；右卡与上下背景框右边距20；中卡居中；卡片内描述文本下移20。</desc>
+
+  <defs>
+    <style>
+      .h1{font-size:30px;font-weight:800;fill:#0f172a;text-anchor:middle}
+      .h2{font-size:16px;font-weight:700;fill:#334155;text-anchor:middle}
+      .section-title{font-size:18px;font-weight:800;fill:#0f172a;text-anchor:middle}
+      .card-title{font-size:16px;font-weight:700;fill:#0f172a}
+      .card-sub{font-size:13.2px;fill:#334155}
+      .kpi{font-size:13px;fill:#0b3c74;text-anchor:middle}
+      .license{font-size:12px;fill:#64748b;text-anchor:middle}
+      .box{rx:16;ry:16;stroke-width:2}
+      .band{rx:14;ry:14;stroke-width:2}
+      .grid-card{rx:12;ry:12;stroke-width:1.5;fill:#fff}
+
+      .z{fill:#EFF6FF;stroke:#60A5FA}
+      .band-fill{fill:#FFF1F2;stroke:#FB7185}
+
+      .pillar1{fill:#E0F7FA;stroke:#00ACC1}
+      .pillar2{fill:#FFF8E1;stroke:#FBC02D}
+      .pillar3{fill:#EDE7F6;stroke:#673AB7}
+      .pillar4{fill:#F1F8E9;stroke:#689F38}
+      .pillar5{fill:#FBE9E7;stroke:#E64A19}
+      .pillar6{fill:#E3F2FD;stroke:#1976D2}
+
+      .shadow{filter:url(#shadow)}
+    </style>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 顶部标题区 -->
+  <g transform="translate(60,30)">
+    <rect class="box z shadow" width="1080" height="100"/>
+    <text class="h1" x="540" y="48">运营体系优化：构建可持续社区的六大支柱</text>
+    <text class="h2" x="540" y="80">从“办赛”到“营人”的战略转型 · MECE六支柱 × 数据驱动增长引擎</text>
+  </g>
+
+  <!-- 六大支柱：列位于 80 / 440 / 800（绝对），对应相对位移 0 / 360 / 720 在内层偏移20下 -->
+  <g transform="translate(60,180)">
+    <g transform="translate(20,0)">
+      <!-- 支柱一（左：距背景框左边20） -->
+      <g transform="translate(0,0)">
+        <rect class="grid-card pillar1 shadow" width="320" height="170"/>
+        <text x="20" y="35" font-size="18">📦</text>
+        <text class="card-title" x="50" y="35">支柱一：项目与代码</text>
+        <text class="card-sub" x="25" y="78">• 官方组织集中管理，沉淀可复用资产</text>
+        <text class="card-sub" x="25" y="102">• 模板化工程：许可证、README、CI/CD</text>
+        <text class="card-sub" x="25" y="126">• 规范化流：Issue/PR 与标签体系</text>
+      </g>
+
+      <!-- 支柱二（中：页面居中） -->
+      <g transform="translate(360,0)">
+        <rect class="grid-card pillar2 shadow" width="320" height="170"/>
+        <text x="20" y="35" font-size="18">📚</text>
+        <text class="card-title" x="50" y="35">支柱二：学习与认证</text>
+        <text class="card-sub" x="25" y="78">• 开源知识库：微课程、手册、练习</text>
+        <text class="card-sub" x="25" y="102">• 可视化认证与徽章：课程完成、首个PR</text>
+        <text class="card-sub" x="25" y="126">• 成长历程可展示、可验证</text>
+      </g>
+
+      <!-- 支柱三（右：距背景框右边20） -->
+      <g transform="translate(720,0)">
+        <rect class="grid-card pillar3 shadow" width="320" height="170"/>
+        <text x="20" y="35" font-size="18">🧑‍🏫</text>
+        <text class="card-title" x="50" y="35">支柱三：导师与支持</text>
+        <text class="card-sub" x="25" y="78">• L1 通用培训 → L2 小组辅导 → L3 深度导师</text>
+        <text class="card-sub" x="25" y="102">• 每周 Office Hours；问答 SLA（24h）</text>
+        <text class="card-sub" x="25" y="126">• 提升新人留存</text>
+      </g>
+
+      <!-- 第二行 -->
+      <g transform="translate(0,230)">
+        <rect class="grid-card pillar4 shadow" width="320" height="170"/>
+        <text x="20" y="35" font-size="18">🎉</text>
+        <text class="card-title" x="50" y="35">支柱四：活动与展示</text>
+        <text class="card-sub" x="25" y="78">• 活动日历：双周会、月度Demo Day、黑客松</text>
+        <text class="card-sub" x="25" y="102">• 年度开源峰会，线上线下结合</text>
+        <text class="card-sub" x="25" y="126">• 多元展示：布道、文档、运营</text>
+      </g>
+
+      <g transform="translate(360,230)">
+        <rect class="grid-card pillar5 shadow" width="320" height="170"/>
+        <text x="20" y="35" font-size="18">🏆</text>
+        <text class="card-title" x="50" y="35">支柱五：激励与声誉</text>
+        <text class="card-sub" x="25" y="78">• 全周期激励：首个PR纪念、荣誉榜</text>
+        <text class="card-sub" x="25" y="102">• 社区荣誉墙、推荐信、背书</text>
+        <text class="card-sub" x="25" y="126">• 企业合作：实习与内推通道</text>
+      </g>
+
+      <g transform="translate(720,230)">
+        <rect class="grid-card pillar6 shadow" width="320" height="170"/>
+        <text x="20" y="35" font-size="18">⚖️</text>
+        <text class="card-title" x="50" y="35">支柱六：治理与合规</text>
+        <text class="card-sub" x="25" y="78">• 许可证与 DCO/CLA；行为准则</text>
+        <text class="card-sub" x="25" y="102">• 治理结构：PMC/贡献者自治</text>
+        <text class="card-sub" x="25" y="126">• 安全与隐私保护</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 横向数据与增长引擎：底部，保持与卡片紧凑间距 -->
+  <g transform="translate(60,640)">
+    <rect class="band band-fill shadow" width="1080" height="90"/>
+    <text class="section-title" x="540" y="38">横向支撑：数据与增长引擎</text>
+    <text class="kpi" x="540" y="66">北极星指标：赛后6个月留存率 · 参与度 · 成长度 · 健康度 · 影响力</text>
+  </g>
+
+  <!-- 底部许可声明（居中） -->
+  <text class="license" x="50%" y="800">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

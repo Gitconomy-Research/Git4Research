@@ -1,0 +1,161 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 670">
+  <!-- 背景 -->
+  <rect width="900" height="670" fill="#f8f9fa" />
+
+  <!-- 标题 -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold" fill="#333">开源协作的整体法律框架：出站许可与入站贡献</text>
+
+  <!-- 中心项目 -->
+  <rect x="375" y="200" width="150" height="100" rx="10" fill="#4285f4" />
+  <text x="450" y="245" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="white" font-weight="bold">开源项目</text>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">代码库</text>
+
+  <!-- 贡献者 -->
+  <rect x="125" y="210" width="120" height="80" rx="10" fill="#34a853" />
+  <text x="185" y="250" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">贡献者</text>
+  <text x="185" y="270" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">个人/企业开发者</text>
+
+  <!-- 用户 -->
+  <rect x="655" y="210" width="120" height="80" rx="10" fill="#ea4335" />
+  <text x="715" y="250" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="white" font-weight="bold">用户</text>
+  <text x="715" y="270" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">个人/企业/衍生项目</text>
+
+  <!-- 入站贡献箭头 -->
+  <path d="M245 250 L375 250" stroke="#34a853" stroke-width="3" fill="none" marker-end="url(#greenArrow)" />
+  <text x="310" y="235" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#34a853" font-weight="bold">入站贡献</text>
+  <text x="310" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34a853" font-style="italic">"我该如何</text>
+  <text x="310" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#34a853" font-style="italic">向你贡献代码？"</text>
+
+  <!-- 出站许可箭头 -->
+  <path d="M525 250 L655 250" stroke="#ea4335" stroke-width="3" fill="none" marker-end="url(#redArrow)" />
+  <text x="590" y="235" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ea4335" font-weight="bold">出站许可</text>
+  <text x="590" y="280" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea4335" font-style="italic">"你可以用</text>
+  <text x="590" y="295" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#ea4335" font-style="italic">我的代码做什么？"</text>
+
+  <!-- 法律API标签 -->
+  <rect x="375" y="320" width="150" height="25" rx="12" fill="#673ab7" fill-opacity="0.7" />
+  <text x="450" y="337" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white" font-weight="bold">项目的"法律API"</text>
+
+  <!-- 箭头标记定义 -->
+  <defs>
+    <marker id="greenArrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34a853" />
+    </marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ea4335" />
+    </marker>
+    <marker id="blueArrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4285f4" />
+    </marker>
+    <marker id="purpleArrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#673ab7" />
+    </marker>
+  </defs>
+
+  <!-- 入站贡献机制详情 -->
+  <rect x="40" y="370" width="330" height="200" rx="10" fill="#e8f5e9" stroke="#34a853" stroke-width="2" />
+  <text x="205" y="395" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">入站贡献机制</text>
+  <text x="205" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555" font-style="italic">项目的"贡献之门"与"法律防火墙"</text>
+
+  <!-- 中间的文字描述区域 -->
+  <rect x="380" y="370" width="140" height="200" rx="10" fill="#f0f0f0" stroke="#673ab7" stroke-width="1" stroke-dasharray="5,3" />
+  <text x="450" y="395" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">宪法性质</text>
+  <text x="450" y="420" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">双向法律阀门</text>
+  <text x="450" y="445" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">• 定义社区用户权利</text>
+  <text x="450" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">• 规定贡献规则</text>
+  <text x="450" y="495" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">• 构建治理结构</text>
+  <text x="450" y="520" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">• 确立商业准则</text>
+  <text x="450" y="545" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">• 控制代码流动</text>
+
+  <!-- CLA部分 - 调整边距 -->
+  <rect x="60" y="430" width="140" height="130" rx="5" fill="#c8e6c9" stroke="#34a853" stroke-width="1" />
+  <text x="130" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">CLA</text>
+  <text x="130" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">贡献者许可协议</text>
+  <text x="130" y="490" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 高法律确定性</text>
+  <text x="130" y="510" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 版权许可/转让</text>
+  <text x="130" y="530" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 专利授权</text>
+  <text x="130" y="550" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 企业友好</text>
+
+  <!-- DCO部分 - 调整边距 -->
+  <rect x="210" y="430" width="140" height="130" rx="5" fill="#c8e6c9" stroke="#34a853" stroke-width="1" />
+  <text x="280" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">DCO</text>
+  <text x="280" y="470" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">开发者原创声明</text>
+  <text x="280" y="490" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 低贡献门槛</text>
+  <text x="280" y="510" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 逐次提交认证</text>
+  <text x="280" y="530" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• 社区友好</text>
+  <text x="280" y="550" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• "Signed-off-by"</text>
+
+  <!-- 出站许可机制详情 -->
+  <rect x="530" y="370" width="330" height="200" rx="10" fill="#fce4ec" stroke="#ea4335" stroke-width="2" />
+  <text x="695" y="395" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">出站许可类型</text>
+  <text x="695" y="415" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555" font-style="italic">项目的"公开声明"与"产品包装"</text>
+
+  <!-- 宽松型许可 - 调整边距 -->
+  <rect x="550" y="430" width="90" height="130" rx="5" fill="#f8bbd0" stroke="#ea4335" stroke-width="1" />
+  <text x="595" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">宽松型</text>
+  <text x="595" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">(Permissive)</text>
+  <text x="595" y="490" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• MIT</text>
+  <text x="595" y="510" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• Apache 2.0</text>
+  <text x="595" y="530" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• BSD</text>
+  <text x="595" y="550" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">最大化采用</text>
+
+  <!-- 弱互惠型许可 - 调整边距 -->
+  <rect x="650" y="430" width="90" height="130" rx="5" fill="#f8bbd0" stroke="#ea4335" stroke-width="1" />
+  <text x="695" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">弱互惠型</text>
+  <text x="695" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">(Weak Copyleft)</text>
+  <text x="695" y="490" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• LGPL</text>
+  <text x="695" y="510" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• MPL</text>
+  <text x="695" y="530" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• EPL</text>
+  <text x="695" y="550" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">平衡采用与共享</text>
+
+  <!-- 强互惠型许可 - 调整边距 -->
+  <rect x="750" y="430" width="90" height="130" rx="5" fill="#f8bbd0" stroke="#ea4335" stroke-width="1" />
+  <text x="795" y="450" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">强互惠型</text>
+  <text x="795" y="470" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">(Strong Copyleft)</text>
+  <text x="795" y="490" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• GPL</text>
+  <text x="795" y="510" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• AGPL</text>
+  <text x="795" y="530" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#333">• SSPL</text>
+  <text x="795" y="550" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#333">强制代码共享</text>
+
+  <!-- 宪法功能 -->
+  <rect x="375" y="130" width="150" height="30" rx="15" fill="#673ab7" />
+  <text x="450" y="150" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white" font-weight="bold">项目"宪法"功能</text>
+
+  <!-- 宪法功能元素 - 文字分两行 -->
+  <circle cx="350" cy="90" r="25" fill="#673ab7" />
+  <text x="350" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">定义</text>
+  <text x="350" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">权利</text>
+
+  <circle cx="400" cy="90" r="25" fill="#673ab7" />
+  <text x="400" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">规定</text>
+  <text x="400" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">规则</text>
+
+  <circle cx="450" cy="90" r="25" fill="#673ab7" />
+  <text x="450" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">构建</text>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">治理</text>
+
+  <circle cx="500" cy="90" r="25" fill="#673ab7" />
+  <text x="500" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">确立</text>
+  <text x="500" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">商业</text>
+
+  <circle cx="550" cy="90" r="25" fill="#673ab7" />
+  <text x="550" y="85" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">控制</text>
+  <text x="550" y="100" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white" font-weight="bold">流动</text>
+
+  <!-- 连接线 -->
+  <path d="M350 115 L370 130" stroke="#673ab7" stroke-width="2" fill="none" />
+  <path d="M400 115 L400 130" stroke="#673ab7" stroke-width="2" fill="none" />
+  <path d="M450 115 L450 130" stroke="#673ab7" stroke-width="2" fill="none" />
+  <path d="M500 115 L500 130" stroke="#673ab7" stroke-width="2" fill="none" />
+  <path d="M550 115 L530 130" stroke="#673ab7" stroke-width="2" fill="none" />
+
+  <path d="M450 160 L450 200" stroke="#4285f4" stroke-width="2" fill="none" marker-end="url(#blueArrow)" />
+
+  <!-- 协同关系区域 -->
+  <rect x="75" y="590" width="750" height="30" rx="15" fill="#4285f4" fill-opacity="0.1" stroke="#4285f4" stroke-width="1" />
+  <text x="450" y="610" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">核心原则：入站权利必须支撑出站承诺</text>
+
+  <!-- 版权声明 -->
+  <text x="450" y="650" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666" font-style="italic">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

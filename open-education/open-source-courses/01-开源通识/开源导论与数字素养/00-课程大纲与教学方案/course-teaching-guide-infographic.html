@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《开源导论与数字素养》课程信息图</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --card: #ffffff;
+            --line: #e5e7eb;
+            --brand: #004AAD;
+            --brand2: #0062D5;
+            --brand5: #CDE6FF;
+        }
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+        }
+        .hero {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 56px 16px 64px;
+        }
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 32px;
+            line-height: 1.2;
+            font-weight: 900;
+        }
+        @media (min-width:768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+        .hero .lead {
+            color: var(--brand5);
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .site-footer {
+            background: var(--brand);
+            color: #fff;
+            text-align: center;
+            padding: 18px 16px;
+            margin-top: 24px;
+            font-size: 14px;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flow-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .flow-icon {
+            flex-shrink: 0;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        .flow-content {
+            margin-left: 1rem;
+        }
+        .flow-line {
+            width: 2px;
+            height: 2rem;
+            margin-left: 1.45rem;
+        }
+    </style>
+</head>
+<body class="text-[#0f172a]">
+
+    <header class="hero">
+        <h1>开源导论与数字素养——课程战术手册</h1>
+        <p class="lead">覆盖"设计→内容→实施→实践→评估"全教学生命周期的行动指导框架</p>
+    </header>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl mt-8">
+
+        <section class="mb-16 bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold text-center text-[var(--brand2)] mb-6">课程哲学：启蒙、引导与赋能</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-6xl mb-4">💡</div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#FF6B6B]">启蒙</h3>
+                    <p class="text-sm text-[var(--muted)]">打开通往开源世界的大门，激发学生对开放、协作、共享精神的好奇心与认同感。</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-6xl mb-4">🗺️</div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#4D96FF]">引导</h3>
+                    <p class="text-sm text-[var(--muted)]">绘制清晰的“开源世界地图”，系统介绍理念、文化、生态及工具，并指明参与路径。</p>
+                </div>
+                <div class="p-4">
+                    <div class="text-6xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#6BCB77]">赋能</h3>
+                    <p class="text-sm text-[var(--muted)]">通过实践掌握基本技能，培养自主学习、团队协作和创新思维能力，为未来赋能。</p>
+                </div>
+            </div>
+        </section>
+---
+        <section class="mb-16">
+             <h2 class="text-2xl font-bold text-center text-[var(--brand2)] mb-6">四维整合学习目标</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-semibold mb-3 text-[#FF6B6B]">知识与素养目标</h3>
+                    <p class="mb-4 text-sm text-[var(--muted)]">本课程旨在让学生系统地理解开源的定义、历史、许可证规则以及社区的运作模式。学生将能够识别全球及中国本土的主要开源生态系统，并初步掌握开源人工智能框架和新兴技术的基础知识。同时，课程致力于培养学生开放、协作、共享的开源精神和负责任的数字公民意识。</p>
+                    <div class="chart-container h-64 md:h-80 flex-grow">
+                        <canvas id="knowledgeChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+                    <h3 class="text-xl font-semibold mb-3 text-[#4D96FF]">能力与思政目标</h3>
+                    <p class="mb-4 text-sm text-[var(--muted)]">学生将熟练运用Git及主流协作平台，掌握查找、评估和参与开源项目的方法，并具备初步的贡献能力。课程将引导学生理解开源创新与国家发展战略的联系，增强其科技自信与社会责任感，培养国际视野和法治精神，激励他们为构建开放包容的技术生态贡献力量。</p>
+                     <div class="chart-container h-64 md:h-80 flex-grow">
+                        <canvas id="abilityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-center text-[var(--brand2)] mb-6">坚实的教育理论基础</h2>
+            <p class="text-center max-w-3xl mx-auto mb-8 text-sm text-[var(--muted)]">本课程的设计深度融合了多种先进的教育理论，采用建构主义作为哲学基础，通过项目式学习和翻转课堂等教学模式，将学生置于情境化的开源社区环境中，通过经验学习的循环，促进他们在社会协作中成长，并最终培养其适应数字时代的联通主义学习能力。</p>
+            <div class="overflow-x-auto">
+                <table class="w-full min-w-max text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[var(--brand2)] text-white">
+                            <th class="p-3 font-semibold text-sm border border-[var(--line)]">教育理论核心思想</th>
+                            <th class="p-3 font-semibold text-sm border border-[var(--line)]">在课程中的具体实践</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-100">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[#FF6B6B]">建构主义 (Constructivism)</td>
+                            <td class="p-3 border border-[var(--line)]">学习者主动构建知识，通过动手实践（写代码、做项目）来理解抽象概念。</td>
+                        </tr>
+                        <tr class="hover:bg-gray-100">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[#4D96FF]">社会建构主义 (Social Constructivism)</td>
+                            <td class="p-3 border border-[var(--line)]">学习在社会互动中发生，体现在团队项目、同伴代码审查（Peer Review）、社区互动。</td>
+                        </tr>---
+                        <tr class="hover:bg-gray-100">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[#6BCB77]">情境学习理论 (Situated Learning)</td>
+                            <td class="p-3 border border-[var(--line)]">在真实“实践社群”中学习，使用真实的GitCode/Gitee平台，向真实开源项目贡献。</td>
+                        </tr>
+                         <tr class="hover:bg-gray-100">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[#FFD93D]">经验学习理论 (Experiential Learning)</td>
+                            <td class="p-3 border border-[var(--line)]">经验-反思-概念-实验的循环，“微贡献”作业要求记录过程并进行反思总结。</td>
+                        </tr>
+                         <tr class="hover:bg-gray-100">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[#495057]">联通主义 (Connectivism)</td>
+                            <td class="p-3 border border-[var(--line)]">学习是构建和导航网络，培养信息素养，利用丰富的在线开放资源自主学习。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-center text-[var(--brand2)] mb-6">16周学习之旅：探索开源通识的“知识地图”</h2>
+            <div class="bg-white rounded-lg shadow-md p-8">
+                <div>
+                    <div class="flow-step">
+                        <div class="flow-icon bg-[#FF6B6B]">1</div>
+                        <div class="flow-content">
+                            <h4 class="font-bold text-lg">模块一：开源理念与文化 (1-2周)</h4>
+                            <p class="text-sm text-[var(--muted)]">奠定理论基础，通过故事化教学和辩论赛建立核心认知。</p>
+                        </div>
+                    </div>
+                    <div class="flow-line bg-[#FF6B6B]"></div>
+                    <div class="flow-step">
+                        <div class="flow-icon bg-[#4D96FF]">2</div>
+                        <div class="flow-content">
+                            <h4 class="font-bold text-lg">模块二：开源工具与平台 (3-6周)</h4>
+                            <p class="text-sm text-[var(--muted)]">掌握Git、GitCode等核心工具，通过翻转课堂和即时体验扫清实践障碍。</p>
+                        </div>
+                    </div>
+                    <div class="flow-line bg-[#4D96FF]"></div>
+                    <div class="flow-step">
+                        <div class="flow-icon bg-[#6BCB77]">3</div>
+                        <div class="flow-content">
+                            <h4 class="font-bold text-lg">模块三：开源项目生态图谱 (7-10周)</h4>
+                            <p class="text-sm text-[var(--muted)]">拓宽视野，通过嘉宾分享和探究性作业认知全球与中国本土的开源生态。</p>
+                        </div>
+                    </div>
+                    <div class="flow-line bg-[#6BCB77]"></div>
+                     <div class="flow-step">
+                        <div class="flow-icon bg-[#FFD93D]">4</div>
+                        <div class="flow-content">
+                            <h4 class="font-bold text-lg">模块四：开源项目贡献实践 (11-14周)</h4>
+                            <p class="text-sm text-[var(--muted)]">从了解到参与，通过“微贡献”工作坊和团队项目完成“第一次贡献”。</p>
+                        </div>
+                    </div>
+                    <div class="flow-line bg-[#FFD93D]"></div>
+                    <div class="flow-step">
+                        <div class="flow-icon bg-[#495057]">5</div>
+                        <div class="flow-content">
+                            <h4 class="font-bold text-lg">模块五：社会价值与全球化视野 (15-16周)</h4>
+                            <p class="text-sm text-[var(--muted)]">升华认知，通过“世界咖啡馆”讨论和制定个人规划，思考未来趋势。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16 bg-white rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-bold text-center text-[var(--brand2)] mb-6">科学、全面的评估体系</h2>
+            <p class="text-center max-w-3xl mx-auto mb-8 text-sm text-[var(--muted)]">我们采用过程性与成果导向相结合的评估方式，旨在全面客观地评价学生的学习成效与综合素养的提升。这不仅关注最终结果，更重视学生在学习过程中的参与、实践与成长。</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-[var(--brand2)] text-white">
+                            <th class="p-3 font-semibold text-sm border border-[var(--line)]">评估类别</th>
+                            <th class="p-3 font-semibold text-sm border border-[var(--line)]">评估项</th>
+                            <th class="p-3 font-semibold text-sm border border-[var(--line)] text-center">权重</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-blue-50">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[var(--brand2)] align-top" rowspan="2">过程性评估</td>
+                            <td class="p-3 border border-[var(--line)]">
+                                <strong class="text-[#FF6B6B]">课堂参与、互动与同伴互评</strong>
+                                <p class="text-xs text-[var(--muted)] mt-1">基于出勤、发言、协作与社区互动。</p>
+                            </td>
+                            <td class="p-3 border border-[var(--line)] text-center font-bold text-lg">30%</td>
+                        </tr>
+                        <tr class="bg-blue-50">
+                            <td class="p-3 border border-[var(--line)]">
+                                <strong class="text-[#4D96FF]">实践作业与挑战</strong>
+                                <ul class="list-disc list-inside mt-2 space-y-1 pl-2 text-xs text-[var(--muted)]">
+                                    <li>Git/GitCode基础操作考核 (15%)</li>
+                                    <li>“微贡献”尝试记录与反思 (15%)</li>
+                                    <li>在线知识小测验 (10%)</li>
+                                </ul>
+                            </td>
+                            <td class="p-3 border border-[var(--line)] text-center font-bold text-lg">40%</td>
+                        </tr>
+                        <tr class="bg-red-50">
+                            <td class="p-3 border border-[var(--line)] font-semibold text-[var(--brand2)]">终结性评估</td>
+                            <td class="p-3 border border-[var(--line)]">
+                                <strong class="text-[#FF6B6B]">期末综合项目/报告</strong>
+                                <p class="text-xs text-[var(--muted)] mt-1">“7选1”菜单式选题，允许多学科组队，需进行课堂展示。</p>
+                            </td>
+                            <td class="p-3 border border-[var(--line)] text-center font-bold text-lg">30%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[var(--brand)] mb-10">附录：推荐资源与项目</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-[var(--brand2)] mb-2">附录一：推荐的长期微贡献项目列表</h3>
+                    <p class="text-sm text-[var(--muted)] mb-6">鼓励学生立足本土完成首次贡献，探索全球机会。</p>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg shadow-md p-5">
+                            <h4 class="text-lg font-bold text-[var(--brand2)] mb-3">1. GitCode官方</h4>
+                            <div class="space-y-2 text-sm">
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">入口:</strong> <code class="text-xs bg-gray-100 p-1 rounded">gitcode.com → 探索 → 任务/悬赏</code></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">任务类型:</strong> <span class="text-[var(--muted)]">每周刷新海量微任务</span></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">示例:</strong> <span class="text-[var(--muted)]">“给国产数据库补一条 SQL 示例”</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-5">
+                             <h4 class="text-lg font-bold text-[var(--brand2)] mb-3">2. OpenHarmony社区</h4>
+                             <div class="space-y-2 text-sm">
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">入口:</strong> <code class="text-xs bg-gray-100 p-1 rounded">openatom.cn/projects → Issues</code></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">任务类型:</strong> <span class="text-[var(--muted)]">文档改错、翻译、单元测试</span></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">示例:</strong> <span class="text-[var(--muted)]">OpenHarmony 文档错别字</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-5">
+                             <h4 class="text-lg font-bold text-[var(--brand2)] mb-3">3. openEuler 社区</h4>
+                             <div class="space-y-2 text-sm">
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">入口:</strong> <code class="text-xs bg-gray-100 p-1 rounded">gitcode.com/openeuler → Issues</code></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">任务类型:</strong> <span class="text-[var(--muted)]">Shell 脚本、文档、测试</span></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">示例:</strong> <span class="text-[var(--muted)]">“给 openEuler 22.03 安装脚本加一行注释”</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-5">
+                             <h4 class="text-lg font-bold text-[var(--brand2)] mb-3">4. MindSpore社区</h4>
+                             <div class="space-y-2 text-sm">
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">入口:</strong> <code class="text-xs bg-gray-100 p-1 rounded">gitcode.com/mindspore → Issues</code></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">任务类型:</strong> <span class="text-[var(--muted)]">API 翻译、测试用例、教程补图</span></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">示例:</strong> <span class="text-[var(--muted)]">“把 5 个英文 API 描述翻译成中文”</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-md p-5">
+                             <h4 class="text-lg font-bold text-[var(--brand2)] mb-3">5. ModelScope魔搭</h4>
+                             <div class="space-y-2 text-sm">
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">入口:</strong> <code class="text-xs bg-gray-100 p-1 rounded">modelscope.cn → 任务广场</code></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">任务类型:</strong> <span class="text-[var(--muted)]">模型体验报告、示例代码</span></p>
+                                <p><strong class="font-semibold text-gray-700 w-20 inline-block">示例:</strong> <span class="text-[var(--muted)]">跑通中文 Stable Diffusion 并提交体验截图</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-[var(--brand2)] mb-2">附录二：推荐的教学和学习资源</h3>
+                    <p class="text-sm tex---t-[var(--muted)] mb-6">为教学团队备课和学生深度自学提供支持。</p>
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h4 class="text-lg font-bold text-[var(--brand2)] mb-4">📚 经典阅读</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-[var(--muted)]">
+                                <li>《大教堂与集市》</li>
+                                <li>《只是为了好玩：Linux之父林纳斯自传》</li>
+                                <li>《自由软件，自由社会：理查德·斯托曼选集》</li>
+                                <li>《Pro Git》（中文版）</li>
+                            </ul>
+                            <hr class="my-4 border-[var(--line)]">
+                            <h5 class="font-semibold text-gray-700 mb-2">拓展建议:</h5>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-[var(--muted)]">
+                                <li>《Working in Public》</li>
+                                <li>《The Pragmatic Programmer》</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h4 class="text-lg font-bold text-[var(--brand2)] mb-4">🎓 在线课程与实验</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-[var(--muted)]">
+                                <li>freeCodeCamp (中文社区)</li>
+                                <li>华东师范大学《开源引论》课程资源</li>
+                                <li>The Linux Foundation Training</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h4 class="text-lg font-bold text-[var(--brand2)] mb-4">🌐 社区、资讯与博客</h4>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-[var(--muted)]">
+                                <li>Gitee 开源指北</li>
+                                <li>OSCHINA (开源中国)</li>
+                                <li>阮一峰的网络日志</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区。
+    </footer>
+
+    <script>
+        function wrapLabels(label) {
+            const maxLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + ' ' + word).trim().length > maxLength) {
+                    if (currentLine) lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            }
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines.length > 0 ? lines : [label];
+        }
+
+        const tooltipTitleCallback = function(tooltipItems) {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
+            }
+        };
+
+        const commonChartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        padding: 20,
+                        font: {
+                            family: "'Noto Sans SC', sans-serif",
+                            size: 12
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    bodyFont: {
+                        family: "'Noto Sans SC', sans-serif"
+                    },
+                    titleFont: {
+                        family: "'Noto Sans SC', sans-serif"
+                    }
+                }
+            }
+        };
+
+        const knowledgeData = {
+            labels: ['开源定义与历史', '许可证原则', '社区运作模式', '全球与本土生态', '开源AI框架', '新兴开源技术'].map(wrapLabels),
+            datasets: [{
+                label: '知识点覆盖',
+                data: [20, 15, 15, 25, 15, 10],
+                backgroundColor: [
+                    'rgba(255, 107, 107, 0.6)',
+                    'rgba(77, 150, 255, 0.6)',
+                    'rgba(107, 203, 119, 0.6)',
+                    'rgba(255, 217, 61, 0.6)',
+                    'rgba(255, 159, 67, 0.6)',
+                    'rgba(153, 102, 255, 0.6)'
+                ],
+                borderColor: [
+                    '#FF6B6B',
+                    '#4D96FF',
+                    '#6BCB77',
+                    '#FFD93D',
+                    '#FF9F43',
+                    '#9966FF'
+                ],
+                borderWidth: 1
+            }]
+        };
+        new Chart(document.getElementById('knowledgeChart'), {
+            type: 'polarArea',
+            data: knowledgeData,
+            options: commonChartOptions
+        });
+
+        const abilityData = {
+            labels: ['Git与协作平台运用', '项目评估与查找', '代码贡献实践', '非代码贡献实践', '团队协作能力', '批判性思维'].map(wrapLabels),
+            datasets: [{
+                label: '能力点雷达图',
+                data: [90, 80, 70, 85, 95, 75],
+                fill: true,
+                backgroundColor: 'rgba(77, 150, 255, 0.2)',
+                borderColor: '#4D96FF',
+                pointBackgroundColor: '#4D96FF',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: '#4D96FF'
+            }]
+        };
+        new Chart(document.getElementById('abilityChart'), {
+            type: 'radar',
+            data: abilityData,
+            options: { ...commonChartOptions, scales: { r: { beginAtZero: true, suggestedMax: 100 } } }
+        });
+
+    </script>
+</body>
+</html>

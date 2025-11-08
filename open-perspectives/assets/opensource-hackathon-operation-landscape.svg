@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="775" viewBox="0 0 1200 775" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>开源大赛开发者生态运营的全景图</title>
+  <defs>
+    <style>
+      .h1{font-size:30px;font-weight:800;fill:#0f172a;text-anchor:middle}
+      .section-title{font-size:18px;font-weight:700;fill:#0f172a;text-anchor:middle}
+      .pill-title{font-size:16px;font-weight:700;fill:#0b3c74;text-anchor:middle}
+      .item-title{font-size:15px;font-weight:700;fill:#0f172a;text-anchor:middle}
+      .item-sub{font-size:13.5px;fill:#334155;text-anchor:middle}
+      .license{font-size:12px;fill:#64748b;text-anchor:middle}
+      .box{rx:16;ry:16;stroke-width:2}
+      .z{fill:#EFF6FF;stroke:#60A5FA}
+      .a{fill:#DBEAFE;stroke:#3B82F6}
+      .s{fill:#F0FDF4;stroke:#34D399}
+      .p{fill:#FFF7ED;stroke:#FB923C}
+      .card{rx:12;ry:12;stroke-width:1.5;fill:#fff}
+      .card-s{stroke:#34D399}
+      .card-p{stroke:#FB923C}
+      .arrow{stroke:#2563eb;stroke-width:2;fill:none;stroke-linecap:round}
+      .shadow{filter:url(#shadow)}
+    </style>
+
+    <!-- 箭头 -->
+    <marker id="arrowSm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+
+    <!-- 阴影 -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 顶部标题 -->
+  <text class="h1" x="600" y="44">开源大赛开发者生态运营的全景图</text>
+
+  <!-- Z：终极目标 -->
+  <g transform="translate(60,80)">
+    <rect class="box z shadow" width="1080" height="140"/>
+    <text class="section-title" x="540" y="36">🎯 终极目标：可持续开源生态</text>
+    <g transform="translate(540,90)">
+      <rect class="box a" x="-320" y="-24" width="640" height="48"/>
+      <text class="pill-title" x="0" y="-2">运营飞轮：吸引 → 赋能 → 留存 → 成长 → 反哺</text>
+    </g>
+  </g>
+
+  <!-- S：四大支柱 -->
+  <g transform="translate(60,260)">
+    <rect class="box s shadow" width="1080" height="220"/>
+    <text class="section-title" x="540" y="36">四大支柱</text>
+    <g transform="translate(40,74)">
+      <g transform="translate(0,0)">
+        <rect class="card card-s" width="220" height="120"/>
+        <text class="item-title" x="110" y="28">1️⃣ 基础设施</text>
+        <text class="item-sub" x="110" y="56">代码托管 · CI/CD · 包仓库</text>
+        <text class="item-sub" x="110" y="80">账号体系 · 权限 · 审计</text>
+        <text class="item-sub" x="110" y="104">数据看板 · 监控</text>
+      </g>
+      <g transform="translate(260,0)">
+        <rect class="card card-s" width="220" height="120"/>
+        <text class="item-title" x="110" y="28">2️⃣ 内容赋能</text>
+        <text class="item-sub" x="110" y="56">入门课程 · 实战训练营</text>
+        <text class="item-sub" x="110" y="80">导师辅导 · 项目孵化</text>
+        <text class="item-sub" x="110" y="104">案例库 · 文档模板</text>
+      </g>
+      <g transform="translate(520,0)">
+        <rect class="card card-s" width="220" height="120"/>
+        <text class="item-title" x="110" y="28">3️⃣ 社群网络</text>
+        <text class="item-sub" x="110" y="56">Git 组织 · 论坛/Discord</text>
+        <text class="item-sub" x="110" y="80">高校俱乐部 · 城市站</text>
+        <text class="item-sub" x="110" y="104">参赛 → 导师 → 组织者</text>
+      </g>
+      <g transform="translate(780,0)">
+        <rect class="card card-s" width="220" height="120"/>
+        <text class="item-title" x="110" y="28">4️⃣ 运营机制</text>
+        <text class="item-sub" x="110" y="56">分层运营 · 成长阶梯</text>
+        <text class="item-sub" x="110" y="80">积分/证书/推荐/实习</text>
+        <text class="item-sub" x="110" y="104">内容日历 · 峰会/项目秀</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- P：三大关键路径（卡片不越界；箭头居于间距中央） -->
+  <g transform="translate(60,500)">
+    <rect class="box p shadow" width="1080" height="180"/>
+    <text class="section-title" x="540" y="36">三大关键路径</text>
+
+    <!-- 内容区：左右各 40 内边距，可用宽度 1000 -->
+    <!-- 三卡片：300 + 300 + 300 = 900；两间距 gap = 50 + 50；总宽 1000，正好不越界 -->
+    <g transform="translate(40,70)">
+      <!-- 卡片尺寸 -->
+      <!-- cardW=300, cardH=80, gap=50 -->
+
+      <!-- P1 新手路径（x=0） -->
+      <g transform="translate(0,0)">
+        <rect class="card card-p" width="300" height="80"/>
+        <text class="item-title" x="150" y="32">🟢 新手路径</text>
+        <text class="item-sub" x="150" y="58">参赛 → 学习 → 加入社群</text>
+      </g>
+
+      <!-- 箭头 P1 -> P2：位于 gap1 (x=300..350) 的中央，长度 36，垂直居中 y=40 -->
+      <path class="arrow" d="M307,40 H343" marker-end="url(#arrowSm)"/>
+
+      <!-- P2 进阶路径（x=350） -->
+      <g transform="translate(350,0)">
+        <rect class="card card-p" width="300" height="80"/>
+        <text class="item-title" x="150" y="32">🟡 进阶路径</text>
+        <text class="item-sub" x="150" y="58">维护项目 → 成为导师 → 技术分享</text>
+      </g>
+
+      <!-- 箭头 P2 -> P3：位于 gap2 (x=650..700) 的中央，长度 36，垂直居中 y=40 -->
+      <path class="arrow" d="M657,40 H693" marker-end="url(#arrowSm)"/>
+
+      <!-- P3 核心路径（x=700） -->
+      <g transform="translate(700,0)">
+        <rect class="card card-p" width="300" height="80"/>
+        <text class="item-title" x="150" y="32">🔴 核心路径</text>
+        <text class="item-sub" x="150" y="58">组织活动 → 影响他人 → 成为社区领袖</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 底部许可声明 -->
+  <text class="license" x="50%" y="750">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

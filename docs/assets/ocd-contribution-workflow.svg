@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 575" style="background-color: white;">
+  <!-- 标题 -->
+  <text x="400" y="50" class="main-title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="22px" font-weight="800" fill="#111827">Gitconomy开放课程贡献流程</text>
+
+  <!-- 步骤1：Fork仓库 -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="180" height="70" rx="5" ry="5" class="main-box" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <text x="90" y="30" class="title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="16px" font-weight="bold" fill="#111827">1. Fork仓库</text>
+    <text x="90" y="50" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">将官方课程仓库Fork到</text>
+    <text x="90" y="65" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">自己的账户下</text>
+  </g>
+
+  <!-- 步骤2：创建分支 -->
+  <g transform="translate(100, 200)">
+    <rect x="0" y="0" width="180" height="70" rx="5" ry="5" class="box" fill="#F0FDF4" stroke="#34D399" stroke-width="2"/>
+    <text x="90" y="30" class="title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="16px" font-weight="bold" fill="#111827">2. 创建分支</text>
+    <text x="90" y="50" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">从main分支创建新的</text>
+    <text x="90" y="65" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">特性分支</text>
+  </g>
+
+  <!-- 步骤3：提交修改 -->
+  <g transform="translate(100, 300)">
+    <rect x="0" y="0" width="180" height="70" rx="5" ry="5" class="box" fill="#F0FDF4" stroke="#34D399" stroke-width="2"/>
+    <text x="90" y="30" class="title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="16px" font-weight="bold" fill="#111827">3. 提交修改</text>
+    <text x="90" y="50" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">在新分支上进行修改，</text>
+    <text x="90" y="65" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">确保提交信息规范</text>
+  </g>
+
+  <!-- 步骤4：发起Pull Request -->
+  <g transform="translate(400, 300)">
+    <rect x="0" y="0" width="180" height="70" rx="5" ry="5" class="box" fill="#F0FDF4" stroke="#34D399" stroke-width="2"/>
+    <text x="90" y="30" class="title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="16px" font-weight="bold" fill="#111827">4. 发起PR</text>
+    <text x="90" y="50" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">向上游仓库main分支</text>
+    <text x="90" y="65" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">发起Pull Request</text>
+  </g>
+
+  <!-- 步骤5：代码评审 -->
+  <g transform="translate(400, 200)">
+    <rect x="0" y="0" width="180" height="70" rx="5" ry="5" class="box" fill="#F0FDF4" stroke="#34D399" stroke-width="2"/>
+    <text x="90" y="30" class="title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="16px" font-weight="bold" fill="#111827">5. 代码评审</text>
+    <text x="90" y="50" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">至少一位维护者评审，</text>
+    <text x="90" y="65" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">根据意见进行修改</text>
+  </g>
+
+  <!-- 步骤6：合并 -->
+  <g transform="translate(400, 100)">
+    <rect x="0" y="0" width="180" height="70" rx="5" ry="5" class="highlight-box" fill="#FEF9C3" stroke="#FACC15" stroke-width="2"/>
+    <text x="90" y="30" class="title-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="16px" font-weight="bold" fill="#111827">6. 合并</text>
+    <text x="90" y="50" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">PR被批准后，</text>
+    <text x="90" y="65" class="body-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">由维护者合并到主分支</text>
+  </g>
+
+  <!-- 连接线 - 步骤1到步骤2 -->
+  <path d="M190,170 L190,200" class="elbow-connector" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="190,200 185,190 195,190" fill="#2563EB"/>
+
+  <!-- 连接线 - 步骤2到步骤3 -->
+  <path d="M190,270 L190,300" class="elbow-connector" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="190,300 185,290 195,290" fill="#2563EB"/>
+
+  <!-- 连接线 - 步骤3到步骤4 -->
+  <path d="M280,335 L400,335" class="elbow-connector" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="400,335 390,330 390,340" fill="#2563EB"/>
+
+  <!-- 连接线 - 步骤4到步骤5 -->
+  <path d="M490,300 L490,270" class="elbow-connector" fill="none" stroke="#2563EB" stroke-width="2"/>
+  <polygon points="490,270 485,280 495,280" fill="#2563EB"/>
+
+  <!-- 连接线 - 步骤5到步骤6 -->
+  <path d="M490,200 L490,170" class="highlight-connector" fill="none" stroke="#FACC15" stroke-width="2"/>
+  <polygon points="490,170 485,180 495,180" fill="#FACC15"/>
+
+  <!-- 框住开发者部分 -->
+  <rect x="80" y="80" width="220" height="310" rx="10" ry="10" class="card-background" fill="#DBEAFE" fill-opacity="0.3" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="190" y="420" class="small-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="11px" fill="#6B7280">开发者工作区</text>
+
+  <!-- 框住维护者部分 -->
+  <rect x="380" y="80" width="220" height="310" rx="10" ry="10" class="card-background" fill="#DBEAFE" fill-opacity="0.3" stroke="#3B82F6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="490" y="420" class="small-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="11px" fill="#6B7280">维护者工作区</text>
+
+  <!-- 说明文本 -->
+  <g transform="translate(100, 440)">
+    <text class="body-text" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">注意：</text>
+    <text x="0" y="20" class="body-text" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">1. 所有贡献者应严格遵循此工作流程，确保协作有序进行</text>
+    <text x="0" y="40" class="body-text" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">2. 提交时使用描述性的分支名称（如 fix/typo-in-chapter-1 或 feat/add-docker-example）</text>
+    <text x="0" y="60" class="body-text" font-family="Noto Sans, sans-serif" font-size="12px" fill="#374151">3. PR中应清晰说明修改内容及解决的问题，以便维护者高效评审</text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text x="50%" y="550" class="license-text" text-anchor="middle" font-family="Noto Sans, sans-serif" font-size="12px" fill="#64748B">本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

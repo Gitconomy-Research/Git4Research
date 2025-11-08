@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 700" font-family="Arial, sans-serif">
+  <!-- Background -->
+  <rect width="1100" height="700" fill="#f9fafb" />
+
+  <!-- Title -->
+  <text x="550" y="50" font-size="24" font-weight="bold" text-anchor="middle" fill="#111827">持久价值的指导原则：课程之"道"</text>
+  <text x="550" y="80" font-size="16" text-anchor="middle" fill="#4b5563">认知操作系统构建的哲学基础</text>
+
+  <!-- Outer Container Frame  -->
+  <rect x="40" y="130" width="1020" height="480" rx="20" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="10,5" />
+  <text x="550" y="180" font-size="18" font-weight="bold" text-anchor="middle" fill="#b45309">认知操作系统的内核</text>
+
+  <!-- Central Connecting Circle -->
+  <circle cx="550" cy="300" r="80" fill="#fff7ed" stroke="#f59e0b" stroke-width="2.5" />
+  <text x="550" y="290" font-size="22" font-weight="bold" text-anchor="middle" fill="#b45309">动态系统</text>
+  <text x="550" y="320" font-size="16" text-anchor="middle" fill="#b45309">自我强化循环</text>
+
+  <!-- Principle 1: Value Retention -->
+  <rect x="100" y="175" width="260" height="250" rx="15" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+  <text x="230" y="210" font-size="20" font-weight="bold" text-anchor="middle" fill="#1d4ed8">原则一：价值留存</text>
+  <line x1="180" y1="220" x2="280" y2="220" stroke="#1d4ed8" stroke-width="1" />
+
+  <!-- Value Retention Content -->
+  <text x="230" y="245" font-size="14" text-anchor="middle" fill="#6b7280">"骨骼"与"插件"的比喻</text>
+
+  <!-- Skeleton Box -->
+  <rect x="140" y="260" width="180" height="100" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" />
+  <text x="230" y="285" font-size="16" font-weight="bold" text-anchor="middle" fill="#1d4ed8">底层认知框架（骨骼）</text>
+  <text x="230" y="305" font-size="12" text-anchor="middle" fill="#6b7280">• 高度可迁移性的心智模型</text>
+  <text x="230" y="325" font-size="12" text-anchor="middle" fill="#6b7280">• 长期留存的思维方法</text>
+  <text x="230" y="345" font-size="12" text-anchor="middle" fill="#6b7280">• 支撑学员持续独立生长</text>
+
+  <!-- Plugins Indicator -->
+  <rect x="140" y="370" width="80" height="20" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1" />
+  <text x="180" y="385" font-size="12" text-anchor="middle" fill="#1d4ed8">具体案例</text>
+
+  <rect x="230" y="370" width="90" height="20" rx="4" fill="#bfdbfe" stroke="#3b82f6" stroke-width="1" />
+  <text x="275" y="385" font-size="12" text-anchor="middle" fill="#1d4ed8">工具与练习</text>
+
+  <text x="230" y="415" font-size="12" text-anchor="middle" fill="#6b7280">课程成功的关键在于底层框架</text>
+
+  <!-- Principle 2: Self-Learning -->
+  <rect x="740" y="175" width="260" height="250" rx="15" fill="#ecfdf5" stroke="#16a34a" stroke-width="2" />
+  <text x="870" y="210" font-size="20" font-weight="bold" text-anchor="middle" fill="#166534">原则二：自主学习</text>
+  <line x1="820" y1="220" x2="920" y2="220" stroke="#166534" stroke-width="1" />
+
+  <!-- Self-Learning Content -->
+  <text x="870" y="245" font-size="14" text-anchor="middle" fill="#6b7280">学习者为"认知发展的首席架构师"</text>
+
+  <!-- Roles Box -->
+  <rect x="780" y="260" width="180" height="100" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1" />
+  <text x="870" y="285" font-size="16" font-weight="bold" text-anchor="middle" fill="#166534">课程的角色转变</text>
+  <text x="870" y="305" font-size="12" text-anchor="middle" fill="#6b7280">• 蓝图提供者</text>
+  <text x="870" y="325" font-size="12" text-anchor="middle" fill="#6b7280">• 脚手架搭建者</text>
+  <text x="870" y="345" font-size="12" text-anchor="middle" fill="#6b7280">• "认知健身房"创建者</text>
+
+  <!-- From Passive to Active Learning -->
+  <rect x="780" y="370" width="80" height="20" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1" />
+  <text x="820" y="385" font-size="12" text-anchor="middle" fill="#166534">被动接收</text>
+
+  <!-- Arrow Symbol -->
+  <text x="870" y="385" font-size="14" text-anchor="middle" fill="#166534">→</text>
+
+  <rect x="880" y="370" width="80" height="20" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1" />
+  <text x="920" y="385" font-size="12" text-anchor="middle" fill="#166534">主动建构</text>
+
+  <text x="870" y="415" font-size="12" text-anchor="middle" fill="#6b7280">鼓励学习者从被动接收到主动建构</text>
+
+  <!-- Connecting Arrows -->
+  <!-- From Value Retention to Center -->
+  <line x1="360" y1="300" x2="470" y2="300" stroke="#3b82f6" stroke-width="2" />
+  <polygon points="465,295 470,300 465,305" fill="#3b82f6" />
+
+  <!-- From Self-Learning to Center -->
+  <line x1="740" y1="300" x2="630" y2="300" stroke="#16a34a" stroke-width="2" />
+  <polygon points="635,295 630,300 635,305" fill="#16a34a" />
+
+  <!-- Evidence Portfolio Label -->
+  <rect x="420" y="450" width="260" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2" />
+  <text x="550" y="475" font-size="16" font-weight="bold" text-anchor="middle" fill="#b91c1c">证据组合包：两大原则的直接体现</text>
+
+  <!-- Key Points at the Bottom - INSIDE FRAME -->
+  <text x="550" y="520" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b7280">核心特点</text>
+  <text x="550" y="545" font-size="14" text-anchor="middle" fill="#6b7280">• 两大原则相互依存、互为因果</text>
+  <text x="550" y="570" font-size="14" text-anchor="middle" fill="#6b7280">• 形成自我强化的动态系统</text>
+  <text x="550" y="595" font-size="14" text-anchor="middle" fill="#6b7280">• 共同构成课程设计的哲学内核</text>
+
+  <text x="50%" y="680" text-anchor="middle" font-size="14" fill="#9ca3af">
+    本作品采用 CC-BY-NC-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

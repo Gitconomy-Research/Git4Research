@@ -1,0 +1,239 @@
+
+<svg width="800" height="680" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <defs>
+        <style>
+            .bg-rect {
+                fill: #F9FAFB;
+                stroke: #E5E7EB;
+                stroke-width: 1;
+                rx: 8;
+                ry: 8;
+            }
+            .main-title {
+                font-size: 24px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #111827;
+            }
+            .section-title {
+                font-size: 18px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1F2937;
+            }
+            .box-title {
+                font-size: 16px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1F2937;
+            }
+            .box-subtitle {
+                font-size: 12px;
+                text-anchor: middle;
+                font-style: italic;
+                fill: #4B5563;
+            }
+            .body-text {
+                font-size: 12px;
+                fill: #374151;
+            }
+            .company-logo {
+                font-size: 14px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1E40AF;
+            }
+            .flow-arrow {
+                fill: none;
+                stroke: #3B82F6;
+                stroke-width: 2;
+                marker-end: url(#arrow);
+            }
+            .dashed-connect {
+                fill: none;
+                stroke: #60A5FA;
+                stroke-width: 1.5;
+                stroke-dasharray: 4,3;
+            }
+            .phase-box {
+                rx: 6;
+                ry: 6;
+                stroke-width: 1.5;
+            }
+            .strategic-box {
+                fill: #EFF6FF;
+                stroke: #3B82F6;
+                rx: 6;
+                ry: 6;
+                stroke-width: 1.5;
+            }
+            .pattern-box {
+                fill: #ECFDF5;
+                stroke: #10B981;
+                rx: 6;
+                ry: 6;
+                stroke-width: 1.5;
+            }
+            .essence-box {
+                fill: #FEF2F2;
+                stroke: #EF4444;
+                rx: 8;
+                ry: 8;
+                stroke-width: 2;
+            }
+            .arrow-head {
+                fill: #3B82F6;
+            }
+            .number-circle {
+                fill: white;
+                stroke: #3B82F6;
+                stroke-width: 1.5;
+            }
+            .number-text {
+                font-size: 12px;
+                font-weight: bold;
+                text-anchor: middle;
+                dominant-baseline: central;
+                fill: #3B82F6;
+            }
+            .company-box {
+                fill: #F3F4F6;
+                stroke: #D1D5DB;
+                rx: 4;
+                ry: 4;
+                stroke-width: 1;
+            }
+            .credit-text {
+                font-size: 11px;
+                text-anchor: middle;
+                fill: #6B7280;
+            }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head"/>
+        </marker>
+    </defs>
+
+    <!-- 背景矩形 -->
+    <rect width="800" height="660" class="bg-rect"/>
+
+    <!-- 标题 -->
+    <text x="400" y="35" class="main-title">企业InnerSource实践借鉴</text>
+
+    <!-- 从传统到开源的渐进路径 -->
+    <g id="transition-path">
+        <rect x="80" y="70" width="640" height="70" fill="#F0F9FF" stroke="#93C5FD" rx="6" ry="6"/>
+        <text x="400" y="95" class="box-title">从传统组织到开源生态的渐进路径</text>
+
+        <rect x="100" y="105" width="140" height="25" class="phase-box" fill="#FEF3C7" stroke="#FBBF24"/>
+        <text x="170" y="121" class="body-text" text-anchor="middle">传统组织模式</text>
+
+        <rect x="320" y="105" width="140" height="25" class="phase-box" fill="#DBEAFE" stroke="#60A5FA"/>
+        <text x="390" y="121" class="body-text" text-anchor="middle">InnerSource 阶段</text>
+
+        <rect x="540" y="105" width="140" height="25" class="phase-box" fill="#D1FAE5" stroke="#34D399"/>
+        <text x="610" y="121" class="body-text" text-anchor="middle">完全开源参与</text>
+
+        <path d="M 240 118 L 320 118" class="flow-arrow"/>
+        <path d="M 460 118 L 540 118" class="flow-arrow"/>
+    </g>
+
+    <!-- 企业案例 -->
+    <g id="company-examples">
+        <rect x="160" y="150" width="80" height="25" class="company-box"/>
+        <text x="200" y="166" class="company-logo">微软</text>
+
+        <rect x="260" y="150" width="80" height="25" class="company-box"/>
+        <text x="300" y="166" class="company-logo">Meta</text>
+
+        <rect x="360" y="150" width="80" height="25" class="company-box"/>
+        <text x="400" y="166" class="company-logo">IBM</text>
+
+        <rect x="460" y="150" width="80" height="25" class="company-box"/>
+        <text x="500" y="166" class="company-logo">Google</text>
+
+        <rect x="560" y="150" width="80" height="25" class="company-box"/>
+        <text x="600" y="166" class="company-logo">华为</text>
+    </g>
+
+    <!-- 战略意义 -->
+    <text x="400" y="200" class="section-title">InnerSource 的三大战略意义</text>
+
+    <g id="strategic-values">
+        <rect x="80" y="220" width="200" height="100" class="strategic-box"/>
+        <text x="180" y="245" class="box-title">文化变革的"安全沙箱"</text>
+        <text x="180" y="265" class="body-text" text-anchor="middle">相对安全、可控的环境</text>
+        <text x="180" y="285" class="body-text" text-anchor="middle">信任成本低，沟通障碍少</text>
+        <text x="180" y="305" class="body-text" text-anchor="middle">培养协作技能与思维</text>
+
+        <rect x="300" y="220" width="200" height="100" class="strategic-box"/>
+        <text x="400" y="245" class="box-title">快速价值验证</text>
+        <text x="400" y="265" class="body-text" text-anchor="middle">促进内部代码复用</text>
+        <text x="400" y="285" class="body-text" text-anchor="middle">减少重复开发，提高效率</text>
+        <text x="400" y="305" class="body-text" text-anchor="middle">建立开源成功案例</text>
+
+        <rect x="520" y="220" width="200" height="100" class="strategic-box"/>
+        <text x="620" y="245" class="box-title">人才能力的"训练场"</text>
+        <text x="620" y="265" class="body-text" text-anchor="middle">培养面向社区的编程习惯</text>
+        <text x="620" y="285" class="body-text" text-anchor="middle">锻炼跨团队沟通技巧</text>
+        <text x="620" y="305" class="body-text" text-anchor="middle">为参与外部开源做准备</text>
+    </g>
+
+    <!-- 核心实践模式 -->
+    <text x="400" y="350" class="section-title">InnerSource 五大核心实践模式</text>
+
+    <g id="core-patterns">
+        <rect x="60" y="370" width="130" height="110" class="pattern-box"/>
+        <circle cx="125" cy="390" r="12" class="number-circle"/>
+        <text x="125" y="390" class="number-text">1</text>
+        <text x="125" y="420" class="box-title">提升可发现性</text>
+        <text x="125" y="440" class="body-text" text-anchor="middle">内部代码门户</text>
+        <text x="125" y="460" class="body-text" text-anchor="middle">项目索引与搜索</text>
+
+        <rect x="200" y="370" width="130" height="110" class="pattern-box"/>
+        <circle cx="265" cy="390" r="12" class="number-circle"/>
+        <text x="265" y="390" class="number-text">2</text>
+        <text x="265" y="420" class="box-title">降低贡献门槛</text>
+        <text x="265" y="440" class="body-text" text-anchor="middle">完善的文档</text>
+        <text x="265" y="460" class="body-text" text-anchor="middle">清晰的贡献指南</text>
+
+        <rect x="340" y="370" width="130" height="110" class="pattern-box"/>
+        <circle cx="405" cy="390" r="12" class="number-circle"/>
+        <text x="405" y="390" class="number-text">3</text>
+        <text x="405" y="420" class="box-title">推广异步沟通</text>
+        <text x="405" y="440" class="body-text" text-anchor="middle">公共沟通渠道</text>
+        <text x="405" y="460" class="body-text" text-anchor="middle">可归档的讨论</text>
+
+        <rect x="480" y="370" width="130" height="110" class="pattern-box"/>
+        <circle cx="545" cy="390" r="12" class="number-circle"/>
+        <text x="545" y="390" class="number-text">4</text>
+        <text x="545" y="420" class="box-title">信任提交者角色</text>
+        <text x="545" y="440" class="body-text" text-anchor="middle">指导新贡献者</text>
+        <text x="545" y="460" class="body-text" text-anchor="middle">代码审查与合并</text>
+
+        <rect x="620" y="370" width="130" height="110" class="pattern-box"/>
+        <circle cx="685" cy="390" r="12" class="number-circle"/>
+        <text x="685" y="390" class="number-text">5</text>
+        <text x="685" y="420" class="box-title">从试点项目开始</text>
+        <text x="685" y="440" class="body-text" text-anchor="middle">选择2-3个团队</text>
+        <text x="685" y="460" class="body-text" text-anchor="middle">逐步扩大应用</text>
+    </g>
+
+    <!-- InnerSource本质 -->
+    <g id="essence">
+        <rect x="120" y="510" width="560" height="110" class="essence-box"/>
+        <text x="400" y="535" class="section-title">InnerSource的本质</text>
+        <text x="400" y="555" class="box-subtitle">不仅是技术或流程改进项目</text>
+        <text x="400" y="585" class="box-title">以技术为载体的组织文化变革管理项目</text>
+        <text x="400" y="610" class="body-text" text-anchor="middle">从"我的代码"到"我们的代码"的思维转变</text>
+    </g>
+
+    <!-- 连接线 -->
+    <path d="M 180 320 L 180 370" class="dashed-connect"/>
+    <path d="M 400 320 L 400 370" class="dashed-connect"/>
+    <path d="M 620 320 L 620 370" class="dashed-connect"/>
+    <path d="M 400 480 L 400 510" class="dashed-connect"/>
+
+    <!-- 版权声明 -->
+    <text x="50%" y="660" class="credit-text">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

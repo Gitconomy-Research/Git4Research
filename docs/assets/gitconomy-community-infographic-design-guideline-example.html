@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitconomy社区信息图实现范例</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* 全局样式与布局 */
+        body {
+            font-family: 'Noto Sans SC', 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .infographic-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+        }
+
+        /* 1. 设计系统: CSS变量 (Design Tokens) */
+        :root {
+            /* 颜色变量 */
+            --color-main-box-fill: #EFF6FF;
+            --color-main-box-stroke: #60A5FA;
+            --color-card-background-fill: #DBEAFE;
+            --color-card-background-stroke: #3B82F6;
+            --color-highlight-box-fill: #FEF9C3;
+            --color-highlight-box-stroke: #FACC15;
+            --color-connector-standard: #2563EB;
+            --color-text-main-title: #111827;
+            --color-text-section-title: #374151;
+            --color-text-card-title: #1E40AF;
+            --color-text-body: #374151;
+            --color-text-license: #64748B;
+            --color-icon: #3B82F6;
+            --color-data-viz-track: #E5E7EB;
+            --color-data-viz-progress: var(--color-main-box-stroke);
+
+            /* 字体变量 */
+            --font-family-sans: 'Noto Sans SC', 'Inter', sans-serif;
+            --font-size-main-title: 24px;
+            --font-size-section-title: 18px;
+            --font-size-card-title: 14px;
+            --font-size-body: 12px;
+            --font-size-license: 12px;
+            --font-weight-main-title: 800;
+            --font-weight-bold: 700;
+            --font-weight-medium: 500;
+            --font-weight-normal: 400;
+        }
+
+        /* 2. SVG及HTML元素样式类定义 */
+        .card-background { fill: var(--color-card-background-fill); stroke: var(--color-card-background-stroke); stroke-width: 1.5px; }
+        .elbow-connector { fill: none; stroke: var(--color-connector-standard); stroke-width: 2px; }
+        .icon-style { fill: var(--color-icon); }
+
+        /* 文本样式 */
+        .section-title-text { font-family: var(--font-family-sans); font-size: var(--font-size-section-title); font-weight: var(--font-weight-bold); fill: var(--color-text-section-title); }
+        .card-title-text { font-family: var(--font-family-sans); font-size: var(--font-size-card-title); font-weight: var(--font-weight-bold); fill: var(--color-text-card-title); }
+        .body-text { font-family: var(--font-family-sans); font-size: var(--font-size-body); font-weight: var(--font-weight-normal); fill: var(--color-text-body); }
+
+        /* 数据可视化样式 */
+        .data-viz-track { fill: none; stroke: var(--color-data-viz-track); }
+        .data-viz-progress { fill: none; stroke: var(--color-data-viz-progress); transition: stroke-dashoffset 0.5s ease-in-out; }
+        .data-viz-text { font-family: var(--font-family-sans); font-size: 24px; font-weight: var(--font-weight-main-title); fill: var(--color-text-main-title); text-anchor: middle; }
+
+        /* HTML元素样式 */
+        .main-title { font-family: var(--font-family-sans); font-size: var(--font-size-main-title); font-weight: var(--font-weight-main-title); color: var(--color-text-main-title); text-align: center; margin-bottom: 2rem; }
+        .license-text { font-family: var(--font-family-sans); font-size: var(--font-size-license); color: var(--color-text-license); text-align: center; margin-top: 2rem; }
+        svg { width: 100%; height: auto; }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="infographic-container">
+
+        <header>
+            <h1 class="main-title">Gitconomy社区信息图实现范例</h1>
+        </header>
+
+        <main>
+            <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagramTitle diagramDesc">
+
+                <title id="diagramTitle">Gitconomy核心工作流与特性图</title>
+                <desc id="diagramDesc">此图分为两部分。左侧展示了从“规划设计”到“开发实现”再到“审查合并”的三步工作流程。右侧通过一个环形图和列表展示了项目的关键特性。</desc>
+
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="var(--color-connector-standard)" />
+                    </marker>
+                </defs>
+
+                <g id="workflow-section">
+                    <text x="180" y="50" class="section-title-text" text-anchor="middle">核心三步流程</text>
+
+                    <g transform="translate(50, 100)">
+                        <rect width="260" height="100" rx="8" class="card-background"/>
+                        <circle cx="40" cy="50" r="20" fill="white"/>
+                        <text x="40" y="56" font-size="18" font-weight="bold" fill="var(--color-icon)" text-anchor="middle">1</text>
+                        <g class="icon-style" transform="translate(80, 35) scale(1.2)">
+                            <path d="M12.9 6.1a1 1 0 0 0-1.8 0l-1.1 2.3-2.5.4a1 1 0 0 0-.6 1.7l1.8 1.8-.4 2.5a1 1 0 0 0 1.5 1.1l2.2-1.2 2.2 1.2a1 1 0 0 0 1.5-1.1l-.4-2.5 1.8-1.8a1 1 0 0 0-.6-1.7l-2.5-.4-1.1-2.3z"/>
+                        </g>
+                        <text x="110" y="45" class="card-title-text">规划设计</text>
+                        <text x="110" y="65" class="body-text">明确需求，制定技术方案。</text>
+                    </g>
+
+                    <g transform="translate(50, 250)">
+                        <rect width="260" height="100" rx="8" class="card-background"/>
+                        <circle cx="40" cy="50" r="20" fill="white"/>
+                        <text x="40" y="56" font-size="18" font-weight="bold" fill="var(--color-icon)" text-anchor="middle">2</text>
+                        <g class="icon-style" transform="translate(80, 35) scale(1.2)">
+                           <path d="M14.2 9.8a1 1 0 0 1 1.6 1.2l-2.4 4.5a1 1 0 0 1-1.6-1.2l2.4-4.5zM4.2 9.8a1 1 0 0 0 1.6 1.2l2.4-4.5a1 1 0 0 0-1.6-1.2L4.2 9.8zM12 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1z"/>
+                        </g>
+                        <text x="110" y="45" class="card-title-text">开发实现</text>
+                        <text x="110" y="65" class="body-text">编写高质量、可维护的代码。</text>
+                    </g>
+
+                    <g transform="translate(50, 400)">
+                        <rect width="260" height="100" rx="8" class="card-background"/>
+                        <circle cx="40" cy="50" r="20" fill="white"/>
+                        <text x="40" y="56" font-size="18" font-weight="bold" fill="var(--color-icon)" text-anchor="middle">3</text>
+                        <g class="icon-style" transform="translate(80, 35) scale(1.2)">
+                           <path d="M16.3 5.7a1 1 0 0 0-1-1.6l-4 2a1 1 0 0 0-1 .6l-3 7a1 1 0 0 0 1.6 1l3-7-2.4 1.2a1 1 0 1 0 1 1.6l4-2a1 1 0 0 0 .4-1.6l-3-7 2.4-1.2z"/>
+                        </g>
+                        <text x="110" y="45" class="card-title-text">审查合并</text>
+                        <text x="110" y="65" class="body-text">通过同行评审确保代码质量。</text>
+                    </g>
+
+                    <path d="M180,200 v 30" class="elbow-connector" marker-end="url(#arrowhead)"/>
+                    <path d="M180,350 v 30" class="elbow-connector" marker-end="url(#arrowhead)"/>
+                </g>
+
+                <g id="features-section" transform="translate(400, 0)">
+                    <text x="200" y="50" class="section-title-text" text-anchor="middle">关键特性解析</text>
+
+                    <g transform="translate(200, 180)">
+                        <circle cx="0" cy="0" r="60" stroke-width="20" class="data-viz-track" />
+                        <circle cx="0" cy="0" r="60" stroke-width="20" class="data-viz-progress"
+                                transform="rotate(-90)"
+                                stroke-dasharray="377"
+                                stroke-dashoffset="94.25" />
+                        <text y="10" class="data-viz-text">75%</text>
+                    </g>
+                    <text x="200" y="280" text-anchor="middle" class="body-text">社区贡献率</text>
+
+                    <g transform="translate(80, 350)">
+                        <text x="0" y="0" class="section-title-text">核心优势</text>
+
+                        <circle cx="10" cy="40" r="3" fill="var(--color-icon)"/>
+                        <text x="25" y="45" class="body-text">开放透明的治理模式</text>
+
+                        <circle cx="10" cy="70" r="3" fill="var(--color-icon)"/>
+                        <text x="25" y="75" class="body-text">代码即价值的贡献账本</text>
+
+                        <circle cx="10" cy="100" r="3" fill="var(--color-icon)"/>
+                        <text x="25" y="105" class="body-text">自动化的激励分配机制</text>
+
+                        <circle cx="10" cy="130" r="3" fill="var(--color-icon)"/>
+                        <text x="25" y="135" class="body-text">高度可扩展的插件架构</text>
+                    </g>
+                </g>
+            </svg>
+        </main>
+    </div>
+
+    <footer>
+        <p class="license-text">
+            本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+        </p>
+    </footer>
+
+</body>
+</html>

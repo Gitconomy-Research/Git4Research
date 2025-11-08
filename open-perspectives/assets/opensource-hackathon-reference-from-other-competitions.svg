@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="825" viewBox="0 0 1000 825" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <title>竞技驱动的生态潜能启示</title>
+  <desc>以 RoboMaster、ACM-ICPC、Kaggle 为代表，提炼竞技驱动模式的共性机制与生态飞轮。</desc>
+
+  <defs>
+    <style>
+      .h1{font-size:26px;font-weight:800;fill:#0f172a;text-anchor:middle}
+      .h2{font-size:14px;fill:#475569;text-anchor:middle}
+      .col-title{font-size:18px;font-weight:800;fill:#0f172a;text-anchor:middle}
+      .point{font-size:13px;fill:#334155}
+      .band-title{font-size:16px;font-weight:800;fill:#0f172a;text-anchor:middle}
+      .band-sub{font-size:13px;fill:#0b3c74;text-anchor:middle}
+      .license{font-size:12px;fill:#64748b;text-anchor:middle}
+
+      .box{rx:12;ry:12;stroke-width:1.8;fill:#fff}
+      .b1{stroke:#3B82F6;fill:#EFF6FF}
+      .b2{stroke:#10B981;fill:#ECFDF5}
+      .b3{stroke:#F59E0B;fill:#FFFBEB}
+      .mech{stroke:#64748B;fill:#F8FAFC}
+      .fly{stroke:#2563EB;fill:#DBEAFE}
+
+      .arrow{stroke:#475569;stroke-width:2;fill:none;stroke-linecap:round}
+      .arrowB{stroke:#2563EB;stroke-width:2.2;fill:none;stroke-linecap:round}
+      .chip{rx:10;ry:10;stroke:#CBD5E1;fill:#FFFFFF}
+
+      .shadow{filter:url(#shadow)}
+    </style>
+
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#475569"/>
+    </marker>
+    <marker id="arrB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563EB"/>
+    </marker>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- 标题 -->
+  <text class="h1" x="500" y="44">竞技驱动的生态潜能启示</text>
+  <text class="h2" x="500" y="70">将一次性竞赛转化为长期人才生态：体验产品化 × 知识传承 × 反馈与声望 × 职业链接</text>
+
+  <!-- 三列案例 -->
+  <g transform="translate(50,100)">
+    <!-- RoboMaster -->
+    <rect class="box b1 shadow" x="0" y="0" width="280" height="220"/>
+    <text class="col-title" x="140" y="28">RoboMaster</text>
+    <text class="point" x="16" y="60">• 一年期备赛，系统工程与团队协作</text>
+    <text class="point" x="16" y="86">• 观赏性强：直播、解说、舞台化</text>
+    <text class="point" x="16" y="112">• 战队/实验室为单位，文化传承</text>
+    <text class="point" x="16" y="138">• 荣誉与归属驱动，精神向心力</text>
+
+    <!-- ACM-ICPC -->
+    <rect class="box b2 shadow" x="310" y="0" width="280" height="220"/>
+    <text class="col-title" x="450" y="28">ACM-ICPC</text>
+    <text class="point" x="326" y="60">• 漏斗式精英选拔，长期备赛训练</text>
+    <text class="point" x="326" y="86">• 传帮带：教练-队员知识网络</text>
+    <text class="point" x="326" y="112">• 题库/解法沉淀，开放共享</text>
+    <text class="point" x="326" y="138">• 竞赛驱动通用CS底层能力</text>
+
+    <!-- Kaggle -->
+    <rect class="box b3 shadow" x="620" y="0" width="280" height="220"/>
+    <text class="col-title" x="760" y="28">Kaggle</text>
+    <text class="point" x="636" y="60">• 真实业务数据集，问题即场景</text>
+    <text class="point" x="636" y="86">• 公共榜单即时反馈，持续迭代</text>
+    <text class="point" x="636" y="112">• Notebook/论坛共享，在赛中学习</text>
+    <text class="point" x="636" y="138">• 段位/奖牌=职业声望与机会</text>
+  </g>
+
+  <!-- 向下引导箭头 -->
+  <path class="arrow" d="M190,320 V360" marker-end="url(#arr)"/>
+  <path class="arrow" d="M500,320 V360" marker-end="url(#arr)"/>
+  <path class="arrow" d="M810,320 V360" marker-end="url(#arr)"/>
+
+  <!-- 共性机制层 -->
+  <g transform="translate(50,360)">
+    <rect class="box mech shadow" x="0" y="0" width="850" height="150"/>
+    <text class="band-title" x="425" y="32">共性机制（Mechanisms）</text>
+
+    <!-- 三块机制 chip -->
+    <g transform="translate(20,56)">
+      <rect class="chip" x="0" y="0" width="250" height="70"/>
+      <text class="band-title" x="125" y="24">体验产品化</text>
+      <text class="h2" x="125" y="48">舞台感/叙事/直播/观众参与</text>
+    </g>
+    <g transform="translate(300,56)">
+      <rect class="chip" x="0" y="0" width="250" height="70"/>
+      <text class="band-title" x="125" y="24">知识传承</text>
+      <text class="h2" x="125" y="48">题库/案例/战队与校友网络</text>
+    </g>
+    <g transform="translate(580,56)">
+      <rect class="chip" x="0" y="0" width="250" height="70"/>
+      <text class="band-title" x="125" y="24">反馈与声望</text>
+      <text class="h2" x="125" y="48">即时榜单/徽章/对接招聘</text>
+    </g>
+  </g>
+
+  <!-- 向下引导箭头到飞轮 -->
+  <path class="arrowB" d="M475,510 V550" marker-end="url(#arrB)"/>
+
+  <!-- 生态飞轮 -->
+  <g transform="translate(50,560)">
+    <rect class="box fly shadow" x="0" y="0" width="900" height="160"/>
+    <text class="band-title" x="450" y="28">生态飞轮（Attract → Build → Showcase → Reputation → Career → Sustain）</text>
+
+    <!-- 六步路径，用胶囊与箭头串联 -->
+    <g transform="translate(20,60)">
+      <rect class="chip" x="0" y="0" width="120" height="40"/>
+      <text class="h2" x="60" y="25">吸引（Attract）</text>
+    </g>
+    <path class="arrowB" d="M140,80 H170" marker-end="url(#arrB)"/>
+
+    <g transform="translate(180,60)">
+      <rect class="chip" x="0" y="0" width="120" height="40"/>
+      <text class="h2" x="60" y="25">训练（Build）</text>
+    </g>
+    <path class="arrowB" d="M300,80 H330" marker-end="url(#arrB)"/>
+
+    <g transform="translate(340,60)">
+      <rect class="chip" x="0" y="0" width="120" height="40"/>
+      <text class="h2" x="60" y="25">展示（Showcase）</text>
+    </g>
+    <path class="arrowB" d="M460,80 H490" marker-end="url(#arrB)"/>
+
+    <g transform="translate(500,60)">
+      <rect class="chip" x="0" y="0" width="120" height="40"/>
+      <text class="h2" x="60" y="25">声望（Reputation）</text>
+    </g>
+    <path class="arrowB" d="M620,80 H650" marker-end="url(#arrB)"/>
+
+    <g transform="translate(660,60)">
+      <rect class="chip" x="0" y="0" width="120" height="40"/>
+      <text class="h2" x="60" y="25">职业（Career）</text>
+    </g>
+    <path class="arrowB" d="M780,80 H810" marker-end="url(#arrB)"/>
+
+    <g transform="translate(820,60)">
+      <rect class="chip" x="0" y="0" width="40" height="40"/>
+      <text class="h2" x="20" y="25">∞</text>
+    </g>
+
+    <text class="h2" x="450" y="135">回流：校友导师化 / 社区贡献 / 新赛季种子用户</text>
+  </g>
+
+  <!-- 许可声明 -->
+  <text class="license" x="50%" y="800">本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区</text>
+</svg>

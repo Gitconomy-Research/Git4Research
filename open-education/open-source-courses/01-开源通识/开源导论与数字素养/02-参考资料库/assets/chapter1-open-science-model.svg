@@ -1,0 +1,82 @@
+<svg width="100%" height="100%" viewBox="0 0 800 870" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <style>
+    .main-title { font-size: 24px; font-weight: bold; text-anchor: middle; fill: #333; }
+    .center-text { font-size: 24px; fill: white; text-anchor: middle; font-weight: bold; }
+    .center-subtext { font-size: 16px; fill: white; text-anchor: middle; }
+    .node-text { font-size: 16px; fill: white; text-anchor: middle; font-weight: bold; }
+    .node-subtext { font-size: 12px; fill: white; text-anchor: middle; }
+    .annotation-text { font-size: 11px; fill: #666; }
+    .connector { stroke: #90a4ae; stroke-width: 2; }
+    .license-text { font-size: 12px; fill: #666; text-anchor: middle; }
+  </style>
+
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <text x="400" y="60" class="main-title">开放科学关键特征</text>
+
+  <g id="center">
+    <circle cx="400" cy="430" r="100" fill="#4285f4" />
+    <text x="400" y="425" class="center-text">开放科学</text>
+    <text x="400" y="450" class="center-subtext">Open Science</text>
+  </g>
+
+  <g id="node-group">
+    <line x1="400" y1="330" x2="400" y2="240" class="connector" />
+    <circle cx="400" cy="180" r="60" fill="#ea4335" />
+    <text x="400" y="175" class="node-text">开放获取</text>
+    <text x="400" y="195" class="node-subtext">Open Access</text>
+    <text x="400" y="110" class="annotation-text" text-anchor="middle">研究出版物免费，不设付费墙</text>
+
+    <line x1="479" y1="370" x2="574" y2="299" class="connector" />
+    <circle cx="600" cy="270" r="60" fill="#fbbc05" />
+    <text x="600" y="265" class="node-text">开放数据</text>
+    <text x="600" y="285" class="node-subtext">Open Data</text>
+    <text x="680" y="250" class="annotation-text" text-anchor="start">
+        <tspan x="680" dy="0">遵循FAIR原则:</tspan>
+        <tspan x="680" dy="1.2em">(可查找、可访问、</tspan>
+        <tspan x="680" dy="1.2em">可互操作、可重用)</tspan>
+    </text>
+
+    <line x1="495" y1="455" x2="594" y2="520" class="connector" />
+    <circle cx="620" cy="550" r="60" fill="#fbbc05" />
+    <text x="620" y="545" class="node-text">公民科学</text>
+    <text x="620" y="565" class="node-subtext">Citizen Science</text>
+    <text x="690" y="545" class="annotation-text" text-anchor="start">
+        <tspan x="690" dy="0">公众参与</tspan>
+        <tspan x="690" dy="1.2em">科学过程</tspan>
+    </text>
+
+    <line x1="443" y1="521" x2="482" y2="628" class="connector" />
+    <circle cx="490" cy="660" r="60" fill="#34a853" />
+    <text x="490" y="655" class="node-text">开放方法</text>
+    <text x="490" y="675" class="node-subtext">Open Methods</text>
+    <text x="490" y="750" class="annotation-text" text-anchor="middle">研究设计与实验过程透明化</text>
+
+    <line x1="357" y1="521" x2="318" y2="628" class="connector" />
+    <circle cx="310" cy="660" r="60" fill="#4285f4" />
+    <text x="310" y="655" class="node-text">开放源码</text>
+    <text x="310" y="675" class="node-subtext">Open Source</text>
+    <text x="310" y="750" class="annotation-text" text-anchor="middle">科研软件和分析工具代码开源</text>
+
+    <line x1="305" y1="455" x2="206" y2="520" class="connector" />
+    <circle cx="180" cy="550" r="60" fill="#ea4335" />
+    <text x="180" y="540" class="node-text">
+        <tspan x="180">开放同行评审</tspan>
+    </text>
+    <text x="180" y="565" class="node-subtext">Open Peer Review</text>
+    <text x="110" y="550" class="annotation-text" text-anchor="end">透明的评审过程</text>
+
+    <line x1="321" y1="370" x2="226" y2="299" class="connector" />
+    <circle cx="200" cy="270" r="60" fill="#34a853" />
+    <text x="200" y="265" class="node-text">开放教育</text>
+    <text x="200" y="285" class="node-subtext">Open Education</text>
+    <text x="120" y="260" class="annotation-text" text-anchor="end">
+        <tspan x="120" dy="0">教学材料可自由</tspan>
+        <tspan x="120" dy="1.2em">访问与再分发</tspan>
+    </text>
+  </g>
+
+  <text x="400" y="820" class="license-text">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

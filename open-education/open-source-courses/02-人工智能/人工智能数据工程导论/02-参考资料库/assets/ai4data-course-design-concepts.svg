@@ -1,0 +1,54 @@
+<svg width="900" height="750" viewBox="0 0 900 750" xmlns="http://www.w3.org/2000/svg" style="background-color: white;">
+    <style>
+        .main-box { fill: #EFF6FF; stroke: #60A5FA; stroke-width: 2; }
+        .box { fill: #F0FDF4; stroke: #34D399; stroke-width: 1.5; }
+        .highlight-box { fill: #FEF9C3; stroke: #FACC15; stroke-width: 2; }
+
+        .main-title-text { font-size: 22px; font-weight: 800; fill: #111827; }
+        .title-text { font-size: 20px; font-weight: bold; fill: #111827; }
+        .body-text { font-size: 12px; font-weight: normal; fill: #374151; }
+        .license-text { font-size: 12px; font-weight: normal; fill: #64748B; }
+        .emoji-text { font-size: 24px; } /* 用于表情符号 */
+        .purpose-text { font-size: 14px; font-weight: bold; fill: #3B82F6; }
+    </style>
+
+    <text x="450" y="40" text-anchor="middle" class="main-title-text">
+        《人工智能数据工程导论》三大核心教学理念
+    </text>
+
+    <circle cx="450" cy="240" r="150" class="main-box" style="opacity: 0.8; fill: #EFF6FF;" />
+    <text x="450" y="205" text-anchor="middle" class="emoji-text">💡</text>
+    <text x="450" y="230" text-anchor="middle" class="title-text" style="fill: #60A5FA;">
+        应用驱动学习
+    </text>
+    <text x="450" y="250" text-anchor="middle" class="body-text" style="fill: #60A5FA;">
+        (问题先行，方案在后)
+    </text>
+
+    <circle cx="350" cy="465" r="150" class="highlight-box" style="opacity: 0.7; fill: #FEF9C3;" />
+    <text x="350" y="430" text-anchor="middle" class="emoji-text">✨</text>
+    <text x="350" y="455" text-anchor="middle" class="title-text" style="fill: #FACC15;">
+        祛魅而非灌输
+    </text>
+    <text x="350" y="475" text-anchor="middle" class="body-text">
+        (AI后台探秘)
+    </text>
+
+    <circle cx="550" cy="465" r="150" class="box" style="opacity: 0.7; fill: #F0FDF4;" />
+    <text x="550" y="430" text-anchor="middle" class="emoji-text">🤔</text>
+    <text x="550" y="455" text-anchor="middle" class="title-text" style="fill: #34D399;">
+        直觉优先于公式
+    </text>
+    <text x="550" y="475" text-anchor="middle" class="body-text">
+        (建构心智模型)
+    </text>
+
+    <text x="450" y="670" text-anchor="middle" class="purpose-text">
+        教学目标：提升学生自信心、好奇心、揭开AI神秘面纱
+    </text>
+
+    <text x="50%" y="720" text-anchor="middle" class="license-text">
+        本作品采用CC-BY-SA 4.0国际许可协议进行许可，© 2025 Gitconomy Research社区
+    </text>
+
+</svg>

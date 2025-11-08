@@ -1,0 +1,130 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="1000" height="780" fill="#f8f9fa" />
+
+  <!-- 标题 - Y坐标保持50 -->
+  <text x="500" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">开源许可证的本质与作用</text>
+
+  <!-- 中心元素：许可证文档 - Y坐标调整为更下方 -->
+  <g transform="translate(435, 250)">
+    <!-- 许可证文档背景 -->
+    <rect x="0" y="0" width="130" height="170" rx="5" fill="#fff" stroke="#333" stroke-width="2" />
+    <!-- 文档内容线条 -->
+    <line x1="15" y1="30" x2="115" y2="30" stroke="#333" stroke-width="1.5" />
+    <line x1="15" y1="50" x2="115" y2="50" stroke="#333" stroke-width="1.5" />
+    <line x1="15" y1="70" x2="115" y2="70" stroke="#333" stroke-width="1.5" />
+    <line x1="15" y1="90" x2="115" y2="90" stroke="#333" stroke-width="1.5" />
+    <line x1="15" y1="110" x2="115" y2="110" stroke="#333" stroke-width="1.5" />
+    <line x1="15" y1="130" x2="80" y2="130" stroke="#333" stroke-width="1.5" />
+    <!-- 许可证印章 -->
+    <circle cx="90" cy="140" r="15" fill="#e74c3c" />
+    <text x="90" y="145" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="white">OSI</text>
+  </g>
+
+  <!-- 许可证标签 -->
+  <text x="500" y="450" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">开源许可证</text>
+  <text x="500" y="475" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#555">从版权默认到明确授权的法律桥梁</text>
+
+  <!-- 四个关键作用（围绕中心的四个方向） -->
+
+  <!-- 1. 法律合同 -->
+  <g transform="translate(250, 170)">
+    <!-- 背景圆形 -->
+    <circle cx="0" cy="0" r="100" fill="#3498db" fill-opacity="0.2" stroke="#3498db" stroke-width="2" />
+    <!-- 图标：天平 -->
+    <g transform="translate(-30, -40) scale(0.12)">
+      <rect x="0" y="160" width="500" height="20" rx="10" fill="#3498db" />
+      <rect x="230" y="0" width="40" height="160" rx="5" fill="#3498db" />
+      <circle cx="125" cy="200" r="50" fill="#3498db" />
+      <circle cx="375" cy="200" r="50" fill="#3498db" />
+    </g>
+    <!-- 标题 -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#3498db">法律合同</text>
+    <!-- 描述 -->
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">建立权利义务关系</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">明确授权和责任边界</text>
+  </g>
+
+  <!-- 2. 社会契约 -->
+  <g transform="translate(750, 170)">
+    <!-- 背景圆形 -->
+    <circle cx="0" cy="0" r="100" fill="#2ecc71" fill-opacity="0.2" stroke="#2ecc71" stroke-width="2" />
+    <!-- 图标：握手 -->
+    <g transform="translate(-35, -30) scale(0.7)">
+      <path d="M0,0 C20,10 40,20 50,40 C60,20 80,10 100,0" fill="none" stroke="#2ecc71" stroke-width="8" stroke-linecap="round" />
+    </g>
+    <!-- 标题 -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2ecc71">社会契约</text>
+    <!-- 描述 -->
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">宣告项目价值观</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">定义期望的协作模式</text>
+  </g>
+
+  <!-- 3. 风险管理工具 -->
+  <g transform="translate(250, 530)">
+    <!-- 背景圆形 -->
+    <circle cx="0" cy="0" r="100" fill="#e67e22" fill-opacity="0.2" stroke="#e67e22" stroke-width="2" />
+    <!-- 图标：盾牌 -->
+    <g transform="translate(-10, -45) scale(0.5)">
+      <path d="M0,0 L50,0 L50,60 L25,80 L0,60 Z" fill="none" stroke="#e67e22" stroke-width="8" />
+    </g>
+    <!-- 标题 -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e67e22">风险管理工具</text>
+    <!-- 描述 -->
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">提供可预测的法律环境</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">降低协作的法律摩擦</text>
+  </g>
+
+  <!-- 4. 哲学宣言 -->
+  <g transform="translate(750, 530)">
+    <!-- 背景圆形 -->
+    <circle cx="0" cy="0" r="100" fill="#9b59b6" fill-opacity="0.2" stroke="#9b59b6" stroke-width="2" />
+    <!-- 图标：思想灯泡 -->
+    <g transform="translate(-10, -45) scale(0.5)">
+      <circle cx="25" cy="25" r="25" fill="none" stroke="#9b59b6" stroke-width="8" />
+      <line x1="25" y1="60" x2="25" y2="80" stroke="#9b59b6" stroke-width="8" stroke-linecap="round" />
+    </g>
+    <!-- 标题 -->
+    <text x="0" y="20" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#9b59b6">哲学宣言</text>
+    <!-- 描述 -->
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">反映对自由与共享的理解</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#333">体现创建者的价值观</text>
+  </g>
+
+  <!-- 连接线 - 调整端点以避免重叠 -->
+  <line x1="430" y1="305" x2="330" y2="225" stroke="#3498db" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="570" y1="305" x2="665" y2="225" stroke="#2ecc71" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="430" y1="360" x2="330" y2="475" stroke="#e67e22" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="570" y1="360" x2="665" y2="475" stroke="#9b59b6" stroke-width="2" stroke-dasharray="5,5" />
+
+  <!-- 知识产权三要素 -->
+  <g transform="translate(500, 600)">
+    <text x="0" y="-10" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">知识产权三要素</text>
+
+    <!-- 版权圆圈 -->
+    <circle cx="-120" cy="50" r="40" fill="#f1c40f" fill-opacity="0.2" stroke="#f1c40f" stroke-width="2" />
+    <text x="-120" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">版权</text>
+    <text x="-120" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">基础</text>
+
+    <!-- 专利圆圈 -->
+    <circle cx="0" cy="50" r="40" fill="#f1c40f" fill-opacity="0.2" stroke="#f1c40f" stroke-width="2" />
+    <text x="0" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">专利</text>
+    <text x="0" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">主动防御</text>
+
+    <!-- 商标圆圈 -->
+    <circle cx="120" cy="50" r="40" fill="#f1c40f" fill-opacity="0.2" stroke="#f1c40f" stroke-width="2" />
+    <text x="120" y="45" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#333">商标</text>
+    <text x="120" y="65" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">保留权利</text>
+  </g>
+
+  <!-- 底部说明 -->
+  <text x="500" y="720" font-family="Arial, sans-serif" font-size="14" font-style="italic" text-anchor="middle" fill="#777">
+    "开源许可证不仅是法律文件，更是开源社区为应对不断变化的商业和法律环境而进化出的动态治理工具"
+  </text>
+
+  <!-- 许可说明 -->
+  <text x="500" y="760" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#555">
+    本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+  </text>
+</svg>

@@ -1,0 +1,183 @@
+
+<svg width="800" height="640" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans SC, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+    <defs>
+        <style>
+            /* 采用新的配色方案 */
+            .box {
+                fill: #F0FDF4;
+                stroke: #34D399;
+                stroke-width: 1.5;
+                rx: 5;
+                ry: 5;
+            }
+            .main-box {
+                fill: #EFF6FF;
+                stroke: #60A5FA;
+                stroke-width: 2;
+            }
+            .elbow-connector {
+                fill: none;
+                stroke: #2563EB;
+                stroke-width: 1.8;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+            .dashed-connector {
+                fill: none;
+                stroke: #2563EB;
+                stroke-width: 1.5;
+                stroke-dasharray: 5,3;
+            }
+            .card-background {
+                fill: #DBEAFE;
+                stroke: #3B82F6;
+                stroke-width: 2;
+                rx: 8;
+                ry: 8;
+            }
+            .arrow-head {
+                fill: #2563EB;
+            }
+            .title-text {
+                font-size: 16px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1f2937;
+            }
+            .main-title-text {
+                font-size: 22px;
+                font-weight: 800;
+                text-anchor: middle;
+                fill: #111827;
+            }
+            .body-text {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #374151;
+            }
+            .small-text {
+                font-size: 11px;
+                text-anchor: middle;
+                fill: #6b7280;
+            }
+            .highlight-box {
+                fill: #FEF9C3;
+                stroke: #FACC15;
+            }
+            .highlight-text {
+                font-size: 12px;
+                font-weight: bold;
+                text-anchor: middle;
+                fill: #1f2937;
+            }
+            .license-text {
+                font-size: 12px;
+                text-anchor: middle;
+                fill: #64748b;
+            }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" class="arrow-head"/>
+        </marker>
+        <marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+            <circle cx="5" cy="5" r="4" fill="#2563EB" />
+        </marker>
+    </defs>
+
+    <text x="400" y="30" class="main-title-text">开放教育资源 (OER) 要素框架</text>
+
+    <g id="central-oer">
+        <rect x="275" y="60" width="250" height="50" class="main-box"/>
+        <text x="400" y="80" class="title-text">开放教育资源 (OER)</text>
+        <text x="400" y="98" class="body-text">教学、学习及研究材料</text>
+    </g>
+
+    <!-- 核心原则卡片 -->
+    <g id="core-principles">
+        <!-- 卡片背景 -->
+        <rect x="15" y="140" width="230" height="180" class="card-background"/>
+
+        <rect x="40" y="150" width="180" height="35" class="box"/>
+        <text x="130" y="172" class="title-text">核心原则 (5R)</text>
+
+        <rect x="20" y="200" width="100" height="30" class="box"/>
+        <text x="70" y="218" class="body-text">保留 (Retain)</text>
+        <rect x="140" y="200" width="100" height="30" class="box"/>
+        <text x="190" y="218" class="body-text">重用 (Reuse)</text>
+        <rect x="20" y="240" width="100" height="30" class="box"/>
+        <text x="70" y="258" class="body-text">修改 (Revise)</text>
+        <rect x="140" y="240" width="100" height="30" class="box"/>
+        <text x="190" y="258" class="body-text">混合 (Remix)</text>
+        <!-- 增加"再分发"文字框的宽度 -->
+        <rect x="65" y="280" width="130" height="30" class="box"/>
+        <text x="130" y="298" class="body-text">再分发 (Redistribute)</text>
+    </g>
+
+    <!-- 主要驱动力卡片 -->
+    <g id="primary-drivers">
+        <!-- 卡片背景 -->
+        <rect x="555" y="140" width="210" height="180" class="card-background"/>
+
+        <rect x="570" y="150" width="180" height="35" class="box"/>
+        <text x="660" y="172" class="title-text">主要驱动力</text>
+        <rect x="590" y="200" width="140" height="30" class="box"/>
+        <text x="660" y="218" class="body-text">降低教育成本</text>
+        <rect x="590" y="240" width="140" height="30" class="box"/>
+        <text x="660" y="258" class="body-text">促进教育公平</text>
+        <rect x="590" y="280" width="140" height="30" class="box"/>
+        <text x="660" y="298" class="body-text">提供高质量替代教材</text>
+    </g>
+
+    <!-- 正确的肘型连接线 -->
+    <path class="elbow-connector" d="M 275 85 L 130 85 L 130 140" marker-end="url(#arrow)"/>
+    <path class="elbow-connector" d="M 525 85 L 660 85 L 660 140" marker-end="url(#arrow)"/>
+
+    <!-- 垂直连接线 -->
+    <path class="dashed-connector" d="M 400 110 L 400 330" marker-start="url(#dot)" marker-end="url(#arrow)"/>
+
+    <g id="paradigm-shift">
+        <text x="400" y="350" class="title-text">范式革命：从静态到动态</text>
+
+        <rect x="100" y="380" width="180" height="50" class="box"/>
+        <text x="190" y="400" class="body-text">静态内容</text>
+        <text x="190" y="418" class="small-text">(如：传统固化教科书)</text>
+
+        <rect x="520" y="380" width="180" height="50" class="box"/>
+        <text x="610" y="400" class="body-text">动态知识生态</text>
+        <text x="610" y="418" class="small-text">(交互、演进、参与)</text>
+
+        <rect x="330" y="365" width="140" height="30" class="highlight-box"/>
+        <text x="400" y="383" class="highlight-text">由生成式AI赋能</text>
+
+        <!-- 转变连接线 -->
+        <path class="elbow-connector" d="M 280 405 L 520 405" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- 关键成果部分 - 统一宽度 -->
+    <g id="key-outcomes">
+        <path class="elbow-connector" d="M 610 430 L 610 460" marker-end="url(#arrow)"/>
+
+        <rect x="520" y="460" width="180" height="35" class="box"/>
+        <text x="610" y="482" class="title-text">关键成果</text>
+
+        <!-- 统一三个成果框的宽度为140 -->
+        <rect x="370" y="510" width="140" height="30" class="box"/>
+        <text x="440" y="528" class="body-text">提升学习参与度</text>
+
+        <rect x="540" y="510" width="140" height="30" class="box"/>
+        <text x="610" y="528" class="body-text">增强学习有效性</text>
+
+        <rect x="710" y="510" width="140" height="30" class="box"/>
+        <text x="780" y="528" class="body-text">构建参与式平台</text>
+
+        <!-- 调整连接线终点 -->
+        <path class="elbow-connector" d="M 610 495 L 610 500 L 440 500 L 440 510" marker-end=""/>
+        <path class="elbow-connector" d="M 610 495 L 610 510" marker-end=""/>
+        <path class="elbow-connector" d="M 610 495 L 610 500 L 780 500 L 780 510" marker-end=""/>
+    </g>
+
+    <!-- 许可声明 -->
+    <text x="50%" y="620" class="license-text">
+        本作品采用 CC-BY-SA 4.0 国际许可协议进行许可，© 2025 Gitconomy Research社区
+    </text>
+</svg>
